@@ -1,0 +1,204 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "step_outro",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "collect_container/collection_items": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "collect_container/collection_items/largeStrawberry@2x": {
+        "props": {}
+      },
+      "progress_container/progress_icons": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1,
+              "value": true
+            }
+          ]
+        }
+      },
+      "buttons/button_claim": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        },
+        "comps": {
+          "cc.Button": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": false
+              }
+            ]
+          }
+        }
+      },
+      "progress_container/reward_fill_assets/reward_types": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.5,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "progress_container/how_to_play": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "timer": {
+        "props": {}
+      },
+      "collect_container/blender/blender_static": {
+        "props": {},
+        "comps": {
+          "cc.Sprite": {},
+          "sp.Skeleton": {}
+        }
+      },
+      "progress_container/reward_fill_assets/reward_types/reward_type_01": {
+        "props": {}
+      },
+      "award_container/award_label_steps": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "award_container/award_label_final": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "progress_container/progress_label": {
+        "props": {}
+      },
+      "award_container": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "progress_container/collected_labels": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "collect_container/blender/blender_anim": {
+        "comps": {
+          "sp.Skeleton": {}
+        }
+      },
+      "buttons/play/button_play": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    "props": {},
+    "comps": {
+      "MissionProgressMeter": {
+        "freezeProgress": [
+          {
+            "frame": 0,
+            "value": true
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

@@ -1,0 +1,25 @@
+{
+  "name": "sakit-preview-server",
+  "version": "1.2.2",
+  "description": "A package for running a preview build server on localhost:3457",
+  "author": "Self Aware Games",
+  "main": "main.js",
+  "scene-script": "scene.js",
+  "main-menu": {
+    "Self Aware/Preview/Build": {
+      "message": "sakit-preview-server:build-for-preview"
+    },
+    "Self Aware/Preview/Launch Preview Scene": {
+      "message": "sakit-preview-server:launch-preview-scene"
+    },
+    "Self Aware/Preview/Launch Game Scene": {
+      "message": "sakit-preview-server:launch-game-scene"
+    },
+    "Developer/Self Aware/Get Preview Launch Data": {
+      "message": "sakit-preview-server:get-preview-launch-data"
+    }
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0"
+  }
+}

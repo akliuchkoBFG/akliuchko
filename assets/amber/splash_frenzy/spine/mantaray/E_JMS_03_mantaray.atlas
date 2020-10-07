@@ -1,0 +1,118 @@
+
+E_JMS_03_mantaray.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+head
+  rotate: true
+  xy: 2, 30
+  size: 224, 325
+  orig: 224, 325
+  offset: 0, 0
+  index: -1
+left_eye_light
+  rotate: false
+  xy: 579, 106
+  size: 9, 6
+  orig: 9, 6
+  offset: 0, 0
+  index: -1
+left_eye_opened
+  rotate: false
+  xy: 445, 68
+  size: 27, 27
+  orig: 27, 27
+  offset: 0, 0
+  index: -1
+left_eye_sclera
+  rotate: false
+  xy: 763, 129
+  size: 27, 49
+  orig: 27, 49
+  offset: 0, 0
+  index: -1
+left_eye_shadow
+  rotate: true
+  xy: 329, 33
+  size: 29, 50
+  orig: 29, 50
+  offset: 0, 0
+  index: -1
+left_eyelid_closed
+  rotate: true
+  xy: 394, 67
+  size: 28, 49
+  orig: 28, 49
+  offset: 0, 0
+  index: -1
+left_eyelid_semi_closed
+  rotate: true
+  xy: 860, 227
+  size: 27, 45
+  orig: 27, 45
+  offset: 0, 0
+  index: -1
+left_fin
+  rotate: true
+  xy: 329, 97
+  size: 157, 248
+  orig: 157, 248
+  offset: 0, 0
+  index: -1
+mouth
+  rotate: false
+  xy: 329, 64
+  size: 63, 31
+  orig: 63, 31
+  offset: 0, 0
+  index: -1
+right_eye_light
+  rotate: false
+  xy: 48, 22
+  size: 8, 6
+  orig: 8, 6
+  offset: 0, 0
+  index: -1
+right_eye_opened
+  rotate: false
+  xy: 907, 227
+  size: 27, 27
+  orig: 27, 27
+  offset: 0, 0
+  index: -1
+right_eye_sclera
+  rotate: false
+  xy: 763, 180
+  size: 46, 35
+  orig: 46, 35
+  offset: 0, 0
+  index: -1
+right_eye_shadow
+  rotate: false
+  xy: 763, 217
+  size: 47, 37
+  orig: 47, 37
+  offset: 0, 0
+  index: -1
+right_eyelid_closed
+  rotate: false
+  xy: 812, 219
+  size: 46, 35
+  orig: 46, 35
+  offset: 0, 0
+  index: -1
+right_eyelid_semi_closed
+  rotate: false
+  xy: 2, 2
+  size: 44, 26
+  orig: 44, 26
+  offset: 0, 0
+  index: -1
+right_fin
+  rotate: false
+  xy: 579, 114
+  size: 182, 140
+  orig: 182, 140
+  offset: 0, 0
+  index: -1

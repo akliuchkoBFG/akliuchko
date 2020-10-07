@@ -1,0 +1,39 @@
+<div id="wrap" class="wrap">
+	<header>
+		<span>Process assets before adding them to the project</span>
+		<ui-prop name="Lossy Compression" tooltip="Uncheck this box to reduce image compression artifacts in exchange for a larger file size">
+			<ui-checkbox id="lossyCompression" v-value="lossyCompression"></ui-checkbox>
+		</ui-prop>
+		<ui-prop name="Downsample" tooltip="Downsample images from 4x assets. This adds asset processing time, so import assets that are already at 2x resolution whenever possible.">
+			<ui-checkbox id="downsample" v-value="downsample"></ui-checkbox>
+		</ui-prop>
+	</header>
+	<section class="wrapper layout vertical">
+		<ui-drop-area
+			v-el:file-drop
+			v-show="state === STATES.READY"
+			class="box flex-1"
+			droppable="file" 
+			multi
+		>
+			Drag file(s) here to import assets
+		</ui-drop-area>
+		<div
+			v-show="state === STATES.UPLOADING"
+		>
+			<span>Uploading {{files.length}} asset{{files.length > 1 ? 's' : ''}} to Pigbee.</span>
+			<ui-progress :value="uploadProgress" class="massive"></ui-progress>
+			<br />
+			<div>
+			<span>Files:</span>
+			<ul v-for="file in files">{{file.name}}</ul>
+			</div>
+		</div>
+		<div
+			v-show="state === STATES.DOWNLOADING"
+		>
+			<span>Importing assets</span>
+			<ui-progress :value="downloadProgress" class="massive"></ui-progress>
+		</div>
+	</section>
+</div>

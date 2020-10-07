@@ -1,0 +1,26 @@
+<div id="wrap" class="wrap">
+    <header>
+        <h2>User build settings</h2>
+        <span>Custom asset zip build settings used for builds triggered via: Self Aware (menu) => Upload to Pigbee</span> 
+    </header>
+    <section>
+        <div v-if="showDebugInPanel">{{userSettings | json}}</div>
+        <ul>
+            <li v-for="(key, value) in userSettings">
+                <ui-prop v-if="key !== 'previewEnv' && key !== 'missionEnv'" :name="key" class="box flex-1">
+                    <ui-input class="box flex-1" v-if="typeof value === 'string'" v-value="value"></ui-input>
+                    <ui-checkbox v-if="typeof value === 'boolean'" v-value="value"></ui-checkbox>
+                </ui-prop>
+            </li>
+            <ui-prop name="Preview Environment" class="box flex-1">
+                <ui-select v-value="prevEnvSelected">
+                    <option v-for="env in prevEnvironments" v-bind:value="env.value">{{env.text}}</option>
+                </ui-select>
+            </ui-prop>
+        </ul>
+    </section>
+    <div id="buttons" class="wrapper layout horizontal justified">
+        <ui-button class="red" @click="resetToDefaults">Reset to defaults</ui-button>
+        <ui-button class="green" @click="save">Save</ui-button>
+    </div>
+</div>

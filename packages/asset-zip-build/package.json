@@ -1,0 +1,29 @@
+{
+  "name": "asset-zip-build",
+  "version": "1.3.0",
+  "description": "Build asset zips in editor",
+  "author": "Self Aware Games",
+  "main": "main.js",
+  "scene-script": "scene.js",
+  "main-menu": {
+    "Self Aware/Marketing Popup: Publish to Dev": {
+      "message": "asset-zip-build:start-build-marketing-dev"
+    },
+    "Self Aware/Marketing Popup: Publish To Prod": {
+      "message": "asset-zip-build:start-build-marketing-prod"
+    },
+    "Developer/Self Aware/Build Settings": {
+      "message": "asset-zip-build:open-settings-panel"
+    },
+    "Developer/Delete All Temp Files" : {
+      "message": "asset-zip-build:delete-temp-directory"
+    }
+  },
+  "panel": {
+    "main": "panel/build-settings.js",
+    "type": "dockable",
+    "title": "build-settings",
+    "width": 600,
+    "height": 600
+  }
+}

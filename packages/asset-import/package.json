@@ -1,0 +1,22 @@
+{
+  "name": "asset-import",
+  "version": "2.0.0",
+  "description": "A panel for processing assets before importing them into the project.",
+  "author": "Self Aware Games",
+  "main": "main.js",
+  "main-menu": {
+    "Panel/Self Aware/Asset Import": {
+      "message": "asset-import:open"
+    }
+  },
+  "panel": {
+    "main": "panel/asset-import.js",
+    "type": "dockable",
+    "title": "Import Assets",
+    "width": 400,
+    "height": 300
+  },
+  "dependencies": {
+    "replacestream": "^4.0.3"
+  }
+}

@@ -1,0 +1,160 @@
+
+E_JMS_03_undermad_fish.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+back fin
+  rotate: true
+  xy: 197, 132
+  size: 122, 195
+  orig: 122, 195
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 85
+  size: 193, 169
+  orig: 193, 169
+  offset: 0, 0
+  index: -1
+iris_L
+  rotate: true
+  xy: 469, 125
+  size: 36, 41
+  orig: 36, 41
+  offset: 0, 0
+  index: -1
+iris_R
+  rotate: false
+  xy: 308, 96
+  size: 29, 34
+  orig: 29, 34
+  offset: 0, 0
+  index: -1
+left eyelid
+  rotate: false
+  xy: 262, 2
+  size: 42, 29
+  orig: 42, 29
+  offset: 0, 0
+  index: -1
+left shadow
+  rotate: false
+  xy: 197, 87
+  size: 53, 43
+  orig: 53, 43
+  offset: 0, 0
+  index: -1
+left_eyelid_closed
+  rotate: false
+  xy: 469, 84
+  size: 39, 39
+  orig: 39, 39
+  offset: 0, 0
+  index: -1
+left_eyelid_semi_closed
+  rotate: false
+  xy: 306, 2
+  size: 37, 29
+  orig: 37, 29
+  offset: 0, 0
+  index: -1
+leftt fin
+  rotate: true
+  xy: 2, 5
+  size: 78, 95
+  orig: 78, 95
+  offset: 0, 0
+  index: -1
+light_L
+  rotate: false
+  xy: 99, 4
+  size: 12, 9
+  orig: 12, 9
+  offset: 0, 0
+  index: -1
+light_R
+  rotate: false
+  xy: 113, 6
+  size: 9, 7
+  orig: 9, 7
+  offset: 0, 0
+  index: -1
+pupil_L
+  rotate: true
+  xy: 480, 230
+  size: 24, 30
+  orig: 24, 30
+  offset: 0, 0
+  index: -1
+pupil_R
+  rotate: false
+  xy: 480, 200
+  size: 29, 28
+  orig: 29, 28
+  offset: 0, 0
+  index: -1
+right eyelid
+  rotate: false
+  xy: 480, 181
+  size: 26, 17
+  orig: 26, 17
+  offset: 0, 0
+  index: -1
+right eyelid_closed
+  rotate: true
+  xy: 262, 33
+  size: 57, 48
+  orig: 57, 48
+  offset: 0, 0
+  index: -1
+right eyelid_semi_closed
+  rotate: false
+  xy: 252, 92
+  size: 54, 38
+  orig: 54, 38
+  offset: 0, 0
+  index: -1
+right fin
+  rotate: false
+  xy: 394, 163
+  size: 84, 91
+  orig: 84, 91
+  offset: 0, 0
+  index: -1
+right shadow
+  rotate: false
+  xy: 480, 163
+  size: 26, 16
+  orig: 26, 16
+  offset: 0, 0
+  index: -1
+sclera_L
+  rotate: true
+  xy: 199, 16
+  size: 69, 61
+  orig: 69, 61
+  offset: 0, 0
+  index: -1
+sclera_R
+  rotate: true
+  xy: 339, 84
+  size: 46, 52
+  orig: 46, 52
+  offset: 0, 0
+  index: -1
+upper fin back
+  rotate: true
+  xy: 99, 15
+  size: 68, 98
+  orig: 68, 98
+  offset: 0, 0
+  index: -1
+upper fin frontal
+  rotate: false
+  xy: 394, 99
+  size: 73, 62
+  orig: 73, 62
+  offset: 0, 0
+  index: -1

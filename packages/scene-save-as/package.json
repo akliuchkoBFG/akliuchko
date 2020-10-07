@@ -1,0 +1,13 @@
+{
+	"name": "scene-save-as",
+	"version": "1.0.0",
+	"description": "Save the current scene as a new scene",
+	"author": "Self Aware Games",
+	"main": "main.js",
+	"scene-script": "scene.js",
+	"main-menu": {
+		"File/Copy Scene": {
+			"message": "scene-save-as:copy-scene"
+		}
+	}
+}

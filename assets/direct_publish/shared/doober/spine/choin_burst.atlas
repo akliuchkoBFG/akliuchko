@@ -1,0 +1,27 @@
+
+choin_burst.png
+size: 164,164
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+coinface
+  rotate: false
+  xy: 2, 83
+  size: 79, 79
+  orig: 79, 79
+  offset: 0, 0
+  index: -1
+coinface2
+  rotate: false
+  xy: 2, 2
+  size: 79, 79
+  orig: 79, 79
+  offset: 0, 0
+  index: -1
+coinsliver
+  rotate: false
+  xy: 83, 83
+  size: 1, 79
+  orig: 1, 79
+  offset: 0, 0
+  index: -1

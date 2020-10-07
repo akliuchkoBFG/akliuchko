@@ -1,0 +1,824 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "step1",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "MissionStep/ProgressContainer/Fruit/Strawberry": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "MissionStep/ProgressContainer/Fruit/Watermelon": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "MissionStep/CompleteContainer/BlenderMask/FillContainerParent": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 161
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/collection_items/largeWatermelon@2x": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": true
+              }
+            ]
+          }
+        }
+      },
+      "mission_step/collect_container/collection_items": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/collection_items/largeStrawberry@2x": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/collection_items/largeGrapes@2x": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/collection_items/largeCherries@2x": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/collection_items/largeBanana@2x": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/progress_container/progress_icons/panelStrawberry@2x": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/progress_container/progress_icons/panelWatermelon@2x": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/progress_container/progress_icons/panelGrape@2x": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/progress_container/progress_icons/panelCherry@2x": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/progress_container/progress_icons/panelBanana@2x": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/progress_container/how_to_play": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/progress_container/how_to_play/how_to_play_strawberries": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/progress_container/how_to_play/how_to_play_watermelon": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/progress_container/how_to_play/how_to_play_grapes": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/progress_container/how_to_play/how_to_play_cherries": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/progress_container/how_to_play/how_to_play_bananas": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/buttons/button_claim": {
+        "props": {}
+      },
+      "mission_step/buttons/button_play": {
+        "props": {}
+      },
+      "mission_step/collect_container/doober_reward_fillers/doobers_reward_01": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        },
+        "comps": {
+          "DooberComponent": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": false
+              }
+            ],
+            "emitting": [
+              {
+                "frame": 0,
+                "value": false
+              }
+            ]
+          }
+        }
+      },
+      "mission_step/collect_container/doober_reward_fillers/doobers_reward_02": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        },
+        "comps": {
+          "DooberComponent": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": true
+              }
+            ],
+            "emitting": [
+              {
+                "frame": 0,
+                "value": true
+              }
+            ]
+          }
+        }
+      },
+      "mission_step/collect_container/doober_reward_fillers/doobers_reward_03": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        },
+        "comps": {
+          "DooberComponent": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": true
+              }
+            ],
+            "emitting": [
+              {
+                "frame": 0,
+                "value": false
+              }
+            ]
+          }
+        }
+      },
+      "mission_step/collect_container/doober_reward_fillers/doobers_reward_04": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        },
+        "comps": {
+          "DooberComponent": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": false
+              }
+            ],
+            "emitting": [
+              {
+                "frame": 0,
+                "value": false
+              }
+            ]
+          }
+        }
+      },
+      "mission_step/collect_container/doober_reward_fillers/doobers_reward_05": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/progress_container/collected_labels": {
+        "props": {}
+      },
+      "mission_step/progress_container/collected_labels/collected_watermelons": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/progress_container/collected_labels/collected_strawberries": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/progress_container/collected_labels/collected_grapes": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/progress_container/collected_labels/collected_cherries": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/progress_container/collected_labels/collected_bananas": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/complete_container": {
+        "props": {}
+      },
+      "mission_step/collect_container": {
+        "props": {}
+      },
+      "mission_step/progress_container/reward_fill_assets/reward_types/reward_type_01": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/progress_container/reward_fill_assets/reward_types/reward_type_02": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/progress_container/reward_fill_assets/reward_types/reward_type_03": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/progress_container/reward_fill_assets/reward_types/reward_type_04": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/mask_fill": {
+        "comps": {
+          "cc.ProgressBar": {}
+        }
+      },
+      "mission_step/collect_container/mask_fill/fill": {
+        "comps": {
+          "cc.Sprite": {
+            "fillRange": [
+              {
+                "frame": 0,
+                "value": 0.15
+              },
+              {
+                "frame": 1,
+                "value": 0.25
+              }
+            ]
+          }
+        }
+      },
+      "steps_final/mission_step/collect_container/doober_reward_fillers/doobers_reward_01": {
+        "props": {},
+        "comps": {
+          "DooberComponent": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": false
+              }
+            ],
+            "emitting": [
+              {
+                "frame": 0,
+                "value": false
+              }
+            ]
+          }
+        }
+      },
+      "steps_final/mission_step/collect_container/doober_reward_fillers/doobers_reward_02": {
+        "comps": {
+          "DooberComponent": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": true
+              }
+            ],
+            "emitting": [
+              {
+                "frame": 0,
+                "value": true
+              }
+            ]
+          }
+        }
+      },
+      "steps_final/mission_step/collect_container/doober_reward_fillers/doobers_reward_03": {
+        "comps": {
+          "DooberComponent": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": false
+              }
+            ],
+            "emitting": [
+              {
+                "frame": 0,
+                "value": false
+              }
+            ]
+          }
+        }
+      },
+      "steps_final/mission_step/collect_container/collection_items/largeWatermelon@2x": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/collect_container/collection_items/largeStrawberry@2x": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/collect_container/collection_items": {
+        "props": {}
+      },
+      "steps_final/mission_step/collect_container/collection_items/largeGrapes@2x": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/collect_container/collection_items/largeCherries@2x": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/collect_container/collection_items/largeBanana@2x": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/collect_container/mask_fill/fill": {
+        "comps": {
+          "cc.Sprite": {}
+        }
+      },
+      "steps_final/mission_step/progress_container/progress_icons/panelStrawberry@2x": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/progress_container/progress_icons/panelWatermelon@2x": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/progress_container/progress_icons/panelGrape@2x": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/progress_container/progress_icons/panelCherry@2x": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/progress_container/progress_icons/panelBanana@2x": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/progress_container/reward_fill_assets/reward_types/reward_type_01": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/progress_container/reward_fill_assets/reward_types/reward_type_02": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/progress_container/reward_fill_assets/reward_types/reward_type_03": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/progress_container/reward_fill_assets/reward_types/reward_type_04": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/progress_container/how_to_play/how_to_play_strawberries": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/progress_container/how_to_play/how_to_play_watermelon": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/progress_container/how_to_play/how_to_play_grapes": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/progress_container/how_to_play/how_to_play_cherries": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/progress_container/how_to_play/how_to_play_bananas": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/progress_container/collected_labels/collected_strawberries": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/progress_container/collected_labels/collected_watermelons": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/progress_container/collected_labels/collected_grapes": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/progress_container/collected_labels/collected_cherries": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/progress_container/collected_labels/collected_bananas": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/collect_container/doober_reward_fillers/doobers_reward_04": {
+        "comps": {
+          "DooberComponent": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": false
+              }
+            ],
+            "emitting": [
+              {
+                "frame": 0,
+                "value": false
+              }
+            ]
+          }
+        }
+      },
+      "steps_final/mission_step/collect_container/doober_reward_fillers/doobers_reward_05": {
+        "comps": {
+          "DooberComponent": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": false
+              }
+            ],
+            "emitting": [
+              {
+                "frame": 0,
+                "value": false
+              }
+            ]
+          }
+        }
+      },
+      "steps_final/mission_step/progress_container/reward_fill_assets/reward_types/reward_type_05": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/buttons/play": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

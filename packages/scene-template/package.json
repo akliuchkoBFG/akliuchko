@@ -1,0 +1,20 @@
+{
+	"name": "scene-template",
+	"version": "1.0.0",
+	"description": "Create a scene from a template scene.",
+	"author": "Self Aware Games",
+	"main": "main.js",
+	"scene-script": "scene.js",
+	"main-menu": {
+		"Panel/Self Aware/Scene Templates": {
+			"message": "scene-template:create-scene"
+		}
+	},
+	"panel": {
+	"main": "panel/index.js",
+	"type": "dockable",
+	"title": "Scene Templates",
+	"width": 400,
+	"height": 300
+	}
+}

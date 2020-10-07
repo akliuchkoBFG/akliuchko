@@ -1,0 +1,239 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "step_claim",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 4,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "buttons/button_claim": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 1.5,
+              "value": 255
+            },
+            {
+              "frame": 2,
+              "value": 0
+            }
+          ]
+        },
+        "comps": {
+          "cc.Button": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": false
+              }
+            ]
+          }
+        }
+      },
+      "collect_container": {
+        "props": {}
+      },
+      "collect_container/doober_reward_fillers": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.48333333333333334,
+              "value": true
+            }
+          ]
+        }
+      },
+      "collect_container/doober_reward_fillers/doobers_reward_01": {
+        "props": {},
+        "comps": {
+          "DooberComponent": {}
+        }
+      },
+      "progress_container/collected_labels": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.5,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "progress_container/reward_fill_assets/reward_types": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1.9666666666666666,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 1.9666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 2.4833333333333334,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "progress_container/reward_fill_assets": {
+        "props": {}
+      },
+      "collect_container/collection_items": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1,
+              "value": false
+            },
+            {
+              "frame": 4,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.5,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "award_container": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 2,
+              "value": 0
+            },
+            {
+              "frame": 2.4833333333333334,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "award_container/award_label_steps": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "award_container/award_label_final": {
+        "props": {}
+      },
+      "progress_container/how_to_play": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "collect_container/mask_fill": {
+        "comps": {
+          "cc.ProgressBar": {}
+        }
+      },
+      "collect_container/mask_fill/fill": {
+        "comps": {
+          "cc.Sprite": {}
+        },
+        "props": {}
+      },
+      "buttons/play/button_play": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        },
+        "comps": {
+          "cc.Button": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": false
+              }
+            ]
+          }
+        }
+      }
+    },
+    "comps": {
+      "MissionProgressMeter": {
+        "fillRange": [
+          {
+            "frame": 1.5,
+            "value": 0
+          },
+          {
+            "frame": 1.9833333333333334,
+            "value": 1
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

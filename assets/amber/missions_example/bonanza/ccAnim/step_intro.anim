@@ -1,0 +1,206 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "step_intro",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 2,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "collect_container/collection_items": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 2,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.5166666666666667,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "collect_container/collection_items/largeStrawberry@2x": {
+        "props": {}
+      },
+      "progress_container/progress_icons": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "buttons/button_claim": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        },
+        "comps": {
+          "cc.Button": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": false
+              }
+            ]
+          }
+        }
+      },
+      "progress_container/reward_fill_assets/reward_types": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "collect_container/doober_reward_fillers": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "award_container/award_label_steps": {
+        "props": {}
+      },
+      "award_container/award_label_final": {
+        "props": {}
+      },
+      "progress_container/how_to_play": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "progress_container/collected_labels": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "collect_container/mask_fill": {
+        "props": {},
+        "comps": {
+          "cc.ProgressBar": {}
+        }
+      },
+      "timer": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "buttons/play/button_play": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        },
+        "comps": {
+          "cc.Button": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    "props": {
+      "scaleX": [
+        {
+          "frame": 0,
+          "value": 1
+        }
+      ],
+      "scaleY": [
+        {
+          "frame": 0,
+          "value": 1
+        }
+      ],
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 255
+        }
+      ]
+    },
+    "comps": {
+      "MissionProgressMeter": {
+        "fillRange": [
+          {
+            "frame": 0,
+            "value": 0
+          }
+        ],
+        "freezeProgress": [
+          {
+            "frame": 0,
+            "value": false
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

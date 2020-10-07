@@ -1,0 +1,160 @@
+
+E_JMS_03_jellyfish.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+collar
+  rotate: false
+  xy: 498, 78
+  size: 106, 48
+  orig: 106, 48
+  offset: 0, 0
+  index: -1
+hat
+  rotate: false
+  xy: 498, 128
+  size: 202, 126
+  orig: 202, 126
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 702, 144
+  size: 129, 110
+  orig: 129, 110
+  offset: 0, 0
+  index: -1
+left_eye_iris
+  rotate: false
+  xy: 22, 5
+  size: 25, 24
+  orig: 25, 24
+  offset: 0, 0
+  index: -1
+left_eye_light
+  rotate: false
+  xy: 1007, 245
+  size: 9, 9
+  orig: 9, 9
+  offset: 0, 0
+  index: -1
+left_eye_shadow
+  rotate: false
+  xy: 954, 183
+  size: 32, 26
+  orig: 32, 26
+  offset: 0, 0
+  index: -1
+left_eyelid_closed
+  rotate: true
+  xy: 246, 87
+  size: 32, 28
+  orig: 32, 28
+  offset: 0, 0
+  index: -1
+left_eyelid_open
+  rotate: false
+  xy: 246, 34
+  size: 29, 19
+  orig: 29, 19
+  offset: 0, 0
+  index: -1
+left_eyelid_semi_closed
+  rotate: false
+  xy: 276, 55
+  size: 32, 20
+  orig: 32, 20
+  offset: 0, 0
+  index: -1
+left_sclera
+  rotate: false
+  xy: 606, 89
+  size: 35, 37
+  orig: 35, 37
+  offset: 0, 0
+  index: -1
+mouth
+  rotate: false
+  xy: 702, 128
+  size: 16, 14
+  orig: 16, 14
+  offset: 0, 0
+  index: -1
+right_eye_iris
+  rotate: false
+  xy: 954, 157
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+right_eye_light
+  rotate: false
+  xy: 606, 79
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+right_eye_shadow
+  rotate: false
+  xy: 643, 100
+  size: 32, 26
+  orig: 32, 26
+  offset: 0, 0
+  index: -1
+right_eyelid_closed
+  rotate: true
+  xy: 246, 55
+  size: 30, 28
+  orig: 30, 28
+  offset: 0, 0
+  index: -1
+right_eyelid_open
+  rotate: true
+  xy: 2, 2
+  size: 27, 18
+  orig: 27, 18
+  offset: 0, 0
+  index: -1
+right_eyelid_semi_closed
+  rotate: false
+  xy: 310, 57
+  size: 30, 18
+  orig: 30, 18
+  offset: 0, 0
+  index: -1
+right_sclera
+  rotate: false
+  xy: 954, 211
+  size: 51, 43
+  orig: 51, 43
+  offset: 0, 0
+  index: -1
+tentacle_a
+  rotate: true
+  xy: 2, 31
+  size: 88, 242
+  orig: 88, 242
+  offset: 0, 0
+  index: -1
+tentacle_b
+  rotate: true
+  xy: 2, 121
+  size: 133, 272
+  orig: 133, 272
+  offset: 0, 0
+  index: -1
+tentacle_c
+  rotate: true
+  xy: 276, 77
+  size: 177, 220
+  orig: 177, 220
+  offset: 0, 0
+  index: -1
+tentacle_d
+  rotate: false
+  xy: 833, 144
+  size: 119, 110
+  orig: 119, 110
+  offset: 0, 0
+  index: -1

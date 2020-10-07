@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "9659453e-167c-4d79-9de1-932e314d735b",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "E_JMS_03_jellyfish": {
+      "ver": "1.0.3",
+      "uuid": "c6e3d942-1bd7-4050-90c2-944c0fcc6745",
+      "rawTextureUuid": "9659453e-167c-4d79-9de1-932e314d735b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -3,
+      "offsetY": 0,
+      "trimX": 3,
+      "trimY": 3,
+      "width": 1012,
+      "height": 250,
+      "rawWidth": 1024,
+      "rawHeight": 256,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
