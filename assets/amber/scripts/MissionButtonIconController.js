@@ -49,6 +49,7 @@ cc.Class({
                     switch (stepStatus) {
                         case 'active': 
                             isActive = true;
+                            isCompleted = false;
                             break;
                         case 'complete':
                             isCompleted = true;

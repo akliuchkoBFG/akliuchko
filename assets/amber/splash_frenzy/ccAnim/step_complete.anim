@@ -1,9 +1,25 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "",
+  "_name": "step_complete",
   "_objFlags": 0,
+  "_rawFiles": null,
   "_duration": 0,
   "sample": 60,
-  "curveData": {},
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "collect_container/animated_items/jellyfish_anim": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      }
+    }
+  },
   "events": []
 }

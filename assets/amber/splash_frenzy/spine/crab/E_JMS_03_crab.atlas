@@ -1,0 +1,286 @@
+
+E_JMS_03_crab.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 27
+  size: 198, 99
+  orig: 198, 99
+  offset: 0, 0
+  index: -1
+left_back_leg01
+  rotate: false
+  xy: 846, 42
+  size: 35, 33
+  orig: 35, 33
+  offset: 0, 0
+  index: -1
+left_back_leg02
+  rotate: true
+  xy: 25, 4
+  size: 21, 31
+  orig: 21, 31
+  offset: 0, 0
+  index: -1
+left_back_leg03
+  rotate: true
+  xy: 525, 3
+  size: 26, 29
+  orig: 26, 29
+  offset: 0, 0
+  index: -1
+left_eye
+  rotate: false
+  xy: 961, 22
+  size: 28, 34
+  orig: 28, 34
+  offset: 0, 0
+  index: -1
+left_eye_shadow
+  rotate: true
+  xy: 927, 58
+  size: 31, 66
+  orig: 31, 66
+  offset: 0, 0
+  index: -1
+left_eye_white
+  rotate: true
+  xy: 927, 91
+  size: 35, 67
+  orig: 35, 67
+  offset: 0, 0
+  index: -1
+left_eyebranch
+  rotate: true
+  xy: 771, 29
+  size: 50, 29
+  orig: 50, 29
+  offset: 0, 0
+  index: -1
+left_eyelid_closed
+  rotate: true
+  xy: 422, 28
+  size: 37, 70
+  orig: 37, 70
+  offset: 0, 0
+  index: -1
+left_eyelid_semi_closed
+  rotate: true
+  xy: 995, 52
+  size: 32, 27
+  orig: 32, 27
+  offset: 0, 0
+  index: -1
+left_eyelight
+  rotate: false
+  xy: 572, 66
+  size: 9, 9
+  orig: 9, 9
+  offset: 0, 0
+  index: -1
+left_eyesocket
+  rotate: true
+  xy: 586, 83
+  size: 43, 72
+  orig: 43, 72
+  offset: 0, 0
+  index: -1
+left_front_leg01
+  rotate: false
+  xy: 422, 2
+  size: 35, 24
+  orig: 35, 24
+  offset: 0, 0
+  index: -1
+left_front_leg02
+  rotate: false
+  xy: 884, 4
+  size: 37, 37
+  orig: 37, 37
+  offset: 0, 0
+  index: -1
+left_front_leg03
+  rotate: false
+  xy: 315, 25
+  size: 105, 101
+  orig: 105, 101
+  offset: 0, 0
+  index: -1
+left_front_legthumb
+  rotate: false
+  xy: 802, 42
+  size: 42, 40
+  orig: 42, 40
+  offset: 0, 0
+  index: -1
+left_mid_leg01
+  rotate: false
+  xy: 514, 31
+  size: 56, 44
+  orig: 56, 44
+  offset: 0, 0
+  index: -1
+left_mid_leg02
+  rotate: true
+  xy: 864, 77
+  size: 49, 61
+  orig: 49, 61
+  offset: 0, 0
+  index: -1
+left_mid_legthumb
+  rotate: false
+  xy: 459, 2
+  size: 21, 24
+  orig: 21, 24
+  offset: 0, 0
+  index: -1
+left_pupil
+  rotate: true
+  xy: 991, 22
+  size: 28, 30
+  orig: 28, 30
+  offset: 0, 0
+  index: -1
+mouth
+  rotate: false
+  xy: 422, 67
+  size: 90, 59
+  orig: 90, 59
+  offset: 0, 0
+  index: -1
+right_back_leg01
+  rotate: false
+  xy: 643, 36
+  size: 46, 45
+  orig: 46, 45
+  offset: 0, 0
+  index: -1
+right_back_leg02
+  rotate: false
+  xy: 996, 86
+  size: 26, 40
+  orig: 26, 40
+  offset: 0, 0
+  index: -1
+right_back_leg03
+  rotate: false
+  xy: 2, 2
+  size: 21, 23
+  orig: 21, 23
+  offset: 0, 0
+  index: -1
+right_eye
+  rotate: true
+  xy: 883, 43
+  size: 32, 37
+  orig: 32, 37
+  offset: 0, 0
+  index: -1
+right_eye_shadow
+  rotate: false
+  xy: 845, 2
+  size: 37, 38
+  orig: 37, 38
+  offset: 0, 0
+  index: -1
+right_eye_white
+  rotate: true
+  xy: 797, 84
+  size: 42, 65
+  orig: 42, 65
+  offset: 0, 0
+  index: -1
+right_eyebranch
+  rotate: true
+  xy: 691, 33
+  size: 48, 32
+  orig: 48, 32
+  offset: 0, 0
+  index: -1
+right_eyelid_closed
+  rotate: true
+  xy: 660, 83
+  size: 43, 68
+  orig: 43, 68
+  offset: 0, 0
+  index: -1
+right_eyelid_semi_closed
+  rotate: false
+  xy: 923, 24
+  size: 36, 32
+  orig: 36, 32
+  offset: 0, 0
+  index: -1
+right_eyelight
+  rotate: false
+  xy: 482, 17
+  size: 10, 9
+  orig: 10, 9
+  offset: 0, 0
+  index: -1
+right_eyesocket
+  rotate: true
+  xy: 514, 77
+  size: 49, 70
+  orig: 49, 70
+  offset: 0, 0
+  index: -1
+right_front_leg01
+  rotate: true
+  xy: 494, 2
+  size: 27, 29
+  orig: 27, 29
+  offset: 0, 0
+  index: -1
+right_front_leg02
+  rotate: false
+  xy: 725, 35
+  size: 44, 44
+  orig: 44, 44
+  offset: 0, 0
+  index: -1
+right_front_leg03
+  rotate: true
+  xy: 202, 27
+  size: 99, 111
+  orig: 99, 111
+  offset: 0, 0
+  index: -1
+right_front_legthumb
+  rotate: false
+  xy: 802, 2
+  size: 41, 38
+  orig: 41, 38
+  offset: 0, 0
+  index: -1
+right_mid_leg01
+  rotate: false
+  xy: 586, 39
+  size: 55, 42
+  orig: 55, 42
+  offset: 0, 0
+  index: -1
+right_mid_leg02
+  rotate: true
+  xy: 730, 81
+  size: 45, 65
+  orig: 45, 65
+  offset: 0, 0
+  index: -1
+right_mid_legthumb
+  rotate: false
+  xy: 494, 39
+  size: 17, 26
+  orig: 17, 26
+  offset: 0, 0
+  index: -1
+right_pupil
+  rotate: true
+  xy: 58, 3
+  size: 22, 25
+  orig: 22, 25
+  offset: 0, 0
+  index: -1
