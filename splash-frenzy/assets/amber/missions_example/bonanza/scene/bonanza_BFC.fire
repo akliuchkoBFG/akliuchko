@@ -2411,7 +2411,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 63
@@ -3354,7 +3354,7 @@
       "__id__": 84
     },
     "_enabled": true,
-    "_N$string": "<color=#746F57 ><b></color><outline color=#FBD2CC width=1></outline>",
+    "_N$string": "<color=#746F57 ><b></color><outline color=#FBD2CC width=1>0</outline>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 35,
     "_N$font": {
@@ -3372,9 +3372,9 @@
       "__id__": 84
     },
     "_enabled": true,
-    "_validPreview": false,
+    "_validPreview": true,
     "_N$templateString": "<color=#746F57 ><b></color><outline color=#FBD2CC width=1>{progress}</outline>",
-    "_N$testData": "{\"progress\": , \"max\": }"
+    "_N$testData": "{\"progress\": 0, \"max\": 20}"
   },
   {
     "__type__": "23502j7Bf5B6Y1q8d/cK1uD",
@@ -3404,8 +3404,7 @@
     ],
     "predecessorSteps": [],
     "useActiveStepIDOnly": true,
-    "_N$stepID": "0",
-    "_N$stepProgress": 0
+    "_N$stepID": "0"
   },
   {
     "__type__": "47dfbesbERA9a42f9WJKo9X",
@@ -4038,7 +4037,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 249.24,
+      "width": 278.05,
       "height": 112
     },
     "_rotationX": 0,
@@ -4602,7 +4601,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 259.99,
+      "width": 248.52999999999997,
       "height": 90
     },
     "_rotationX": 0,
@@ -5753,7 +5752,8 @@
     "missionStepInterface": {
       "__id__": 88
     },
-    "buyInID": 0
+    "buyInID": 656,
+    "index": 0
   },
   {
     "__type__": "cc.Node",
@@ -5984,23 +5984,29 @@
       0.7,
       0.8
     ],
-    "freezeProgress": false
+    "freezeProgress": true
   },
   {
     "__type__": "babf3o3YqlCO6LNj0O/sje9",
     "_name": "",
-    "_objFlags": 0,
+    "_objFlags": 16,
     "node": {
       "__id__": 3
     },
     "_enabled": true,
-    "characterID": "18974510",
+    "editorOnly": true,
     "instantiationSource": "test01",
-    "templateID": 85,
-    "templateName": "Banana Bonanza Mission Test (Group A)",
+    "templateID": 2,
+    "templateName": "Banana Bonanza Mission (Group A)",
     "missionDataIndex": 0,
-    "stepUpdateIndex": 0,
-    "_N$missionJSONString": "{\"templateID\":85,\"templateVersion\":28,\"id\":1180,\"mission\":{\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepBingo\",\"data\":{\"max\":\"10\",\"progress\":0,\"id\":0,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"500000\"}]},\"awarded\":false,\"buyInIDs\":[656],\"eventName\":\"slots.bingo.mark\",\"minPlayers\":1,\"state\":\"active\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Mark Bingo board {max} times on slot {slotname}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":\"1000000\",\"progress\":0,\"id\":1,\"award\":{\"ProductPackageItemCollectionChest\":[{\"amount\":1,\"tier\":\"1\"}]},\"awarded\":false,\"buyInIDs\":[656],\"state\":\"locked\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Bet a total of {max} on slot {slotname}\"}},{\"class\":\"MissionStepGiftGiving\",\"data\":{\"max\":\"10\",\"progress\":0,\"id\":2,\"award\":{\"ProductPackageItemFreeSpins\":[{\"buyInID\":656,\"betSize\":\"2500\",\"amount\":4}]},\"awarded\":false,\"state\":\"locked\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Give {max} {giftname}\"}},{\"class\":\"MissionStepBingo\",\"data\":{\"max\":\"2\",\"progress\":0,\"id\":3,\"award\":{\"ProductPackageItemCollectionChest\":[{\"amount\":1,\"tier\":\"1\"}]},\"awarded\":false,\"buyInIDs\":[656],\"eventName\":\"slots.bingo.mark\",\"minPlayers\":1,\"state\":\"locked\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Mark Bingo board {max} times on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"100\",\"progress\":0,\"id\":4,\"award\":{\"ProductPackageItemCollectionFrames\":[{\"frameID\":\"promo2020BFC.bananasmoothie\",\"amount\":\"1\"}]},\"awarded\":false,\"buyInIDs\":[656],\"minBet\":125000,\"state\":\"locked\",\"edges\":[],\"predecessors\":[3],\"formatString\":\"Spin {max} times with a minimum bet of 125000 on slot {slotname}\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[]],\"predecessors\":[[],[0],[1],[2],[3]]}},\"awardData\":null,\"requireAwarded\":true,\"awarded\":false},\"secondsActive\":3,\"secondsRemaining\":259197,\"slotsData\":{\"656\":{\"name\":\"Banana Bonanza VIP\",\"customData\":{\"buyInID\":656,\"theme2_1\":\"bananabonanza\"}}}}"
+    "missionInterface": {
+      "__id__": 89
+    },
+    "_N$missionJSONString": "{\"templateID\":2,\"templateVersion\":6,\"id\":131,\"mission\":{\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepBingo\",\"data\":{\"max\":\"20\",\"progress\":0,\"id\":0,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"1000000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"1000000000\"}}]},\"awarded\":false,\"buyInIDs\":[656],\"eventName\":\"slots.bingo.mark\",\"state\":\"active\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Mark Bingo board {max} times on slot {slotname}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":\"10000000\",\"progress\":0,\"id\":1,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"500\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"500\"}}]},\"awarded\":false,\"buyInIDs\":[656],\"state\":\"locked\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Bet a total of {max} on slot {slotname}\"}},{\"class\":\"MissionStepGiftGiving\",\"data\":{\"max\":\"10\",\"progress\":0,\"id\":2,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"1000000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"1000000000\"}}]},\"awarded\":false,\"buyInIDs\":[656],\"giftIDs\":[282],\"state\":\"locked\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Give {max} {giftname}\"}},{\"class\":\"MissionStepBingo\",\"data\":{\"max\":\"40\",\"progress\":0,\"id\":3,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"1000000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"1000000000\"}}]},\"awarded\":false,\"buyInIDs\":[656],\"eventName\":\"slots.bingo.mark\",\"state\":\"locked\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Mark Bingo board {max} times on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"75\",\"progress\":0,\"id\":4,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"1000000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"1000000000\"}}]},\"awarded\":false,\"buyInIDs\":[656],\"minBet\":125000,\"state\":\"locked\",\"edges\":[],\"predecessors\":[3],\"formatString\":\"Spin {max} times with a minimum bet of 125000 on slot {slotname}\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[]],\"predecessors\":[[],[0],[1],[2],[3]]}},\"awardData\":null,\"requireAwarded\":true,\"awarded\":false},\"secondsActive\":90,\"secondsRemaining\":3510,\"slotsData\":{\"656\":{\"name\":\"Banana Bonanza VIP\",\"customData\":{\"buyInID\":656,\"theme2_1\":\"bananabonanza\"}}},\"giftsData\":{\"282\":{\"name\":\"Cat\"}}}",
+    "_N$instantiateMissionTrigger": true,
+    "_N$retrieveMissionTrigger": false,
+    "_N$updatePreviewDataTrigger": false,
+    "_N$componentUpdateCallbackTrigger": true
   },
   {
     "__type__": "cc.Animation",
@@ -6052,7 +6058,8 @@
       "step4"
     ],
     "claimMissionAwardState": "",
-    "completedMissionState": "step_final"
+    "completedMissionState": "step_final",
+    "finalMissionState": ""
   },
   {
     "__type__": "08edaYrF4hJ1pM/wAvOeByb",

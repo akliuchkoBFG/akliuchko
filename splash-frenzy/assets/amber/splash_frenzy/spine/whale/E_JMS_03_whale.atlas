@@ -1,0 +1,69 @@
+
+E_JMS_03_whale.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 209
+  size: 397, 296
+  orig: 397, 296
+  offset: 0, 0
+  index: -1
+eye
+  rotate: false
+  xy: 127, 93
+  size: 53, 56
+  orig: 53, 56
+  offset: 0, 0
+  index: -1
+eye_white
+  rotate: false
+  xy: 401, 295
+  size: 53, 56
+  orig: 53, 56
+  offset: 0, 0
+  index: -1
+eyelid_closed
+  rotate: false
+  xy: 127, 151
+  size: 53, 56
+  orig: 53, 56
+  offset: 0, 0
+  index: -1
+eyelid_down
+  rotate: false
+  xy: 2, 2
+  size: 52, 27
+  orig: 52, 27
+  offset: 0, 0
+  index: -1
+left_fin
+  rotate: false
+  xy: 2, 31
+  size: 123, 176
+  orig: 123, 176
+  offset: 0, 0
+  index: -1
+pupil_down
+  rotate: false
+  xy: 401, 266
+  size: 34, 27
+  orig: 34, 27
+  offset: 0, 0
+  index: -1
+pupil_up
+  rotate: false
+  xy: 182, 176
+  size: 31, 31
+  orig: 31, 31
+  offset: 0, 0
+  index: -1
+right_fin
+  rotate: true
+  xy: 401, 353
+  size: 152, 88
+  orig: 152, 88
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "519be726-65c6-40cd-8079-cdaac030688c",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "E_JMS_03_whale": {
+      "ver": "1.0.3",
+      "uuid": "648bac52-ce1d-43ac-b264-a5130d56baa9",
+      "rawTextureUuid": "519be726-65c6-40cd-8079-cdaac030688c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -10.5,
+      "offsetY": 2.5,
+      "trimX": 3,
+      "trimY": 3,
+      "width": 485,
+      "height": 501,
+      "rawWidth": 512,
+      "rawHeight": 512,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

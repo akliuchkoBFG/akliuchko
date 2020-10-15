@@ -1,5 +1,4 @@
 const MissionInterface = require('MissionInterface');
-
 cc.Class({
     extends: cc.Component,
     properties: {
@@ -26,40 +25,53 @@ cc.Class({
     },
 
     onLoad: function () {
+        this.missionAnimationComp = this.missionInterface.node.getComponent(cc.Animation);
         const missionInterfaceComp = this.node.getComponent('MissionInterface');
+        const missionStepInterfaceComp = this.missonStepNode.getComponent('MissionStepInterface');
+
         if (missionInterfaceComp) {
             this.missionInterface = missionInterfaceComp;
             this.missionInterface.on('updateMissionDataEvent', this.toggleMissionInfoPopoup, this);
+        }
+        if (missionStepInterfaceComp) {
+            this.missionStepInterface = missionStepInterfaceComp;
+            missionStepInterfaceComp.on('updateMissionStepDataEvent', this.clearMissionStepAnimation, this);
+        }
+    },
+
+    clearMissionStepAnimation: function () {
+        const stepAnimComp = this.missonStepNode.getComponent(cc.Animation);
+        if (stepAnimComp && this.missionStepInterface.stepID == 0) {
+            stepAnimComp.stop();
+        }
+    },
+
+    clearMissionAnimation: function () {
+        if (this.missionAnimationComp) {
+            this.missionAnimationComp.stop();
         }
     },
 
     toggleMissionInfoPopoup: function() {
         const firstStepData = this.missionInterface.getStepData(this.firstStep);
-        if (firstStepData) {
-            if (firstStepData.data && 
-                firstStepData.data.progress === 0 &&
-                firstStepData.data.state == 'active') {
+        if (firstStepData &&
+            firstStepData.data && 
+            firstStepData.data.progress === 0 &&
+            firstStepData.data.state == 'active') {
 
-                    // Case No Progress made in mission and step is 0;
-                    this.missonStepNode.opacity = 0;
-                    this.missonInfoNode.active = true;
-                    const stepIDs = this.missionInterface.getActiveStepIDs();
-                    const comp = this.getComponent(cc.Animation);
-
-                    // *TO DO* refactor this';
-                    if (stepIDs) {
-                        this._toggleAnimationPlay('step0', comp, true);
-                    }
-                    if (this.missionEventHandler) {
-                        let data = {
-                            animationName: 'info_intro',
-                        };
-                        this.missionEventHandler.emit([JSON.stringify(data)]);
-                    }
-                    this._toggleAnimationPlay('mission_info', comp, false);
-            } else {
-                this.goToProgressPopup();
-            }
+                // Case No Progress made in mission and step is 0;
+                this.missonStepNode.opacity = 0;
+                this.missonInfoNode.active = true;
+                this.clearMissionAnimation();
+                if (this.missionEventHandler) {
+                    let data = {
+                        animationName: 'info_intro',
+                    };
+                    this.missionEventHandler.emit([JSON.stringify(data)]);
+                }
+                this._play('mission_info', this.missionAnimationComp);
+        } else {
+            this.goToProgressPopup();
         }
     },
 
@@ -74,16 +86,11 @@ cc.Class({
             }
             this.missonStepNode.opacity = 255;
         }
-        const missionComp = this.missionInterface;
-        const missionCompAnim = missionComp.node.getComponent(cc.Animation);
-         // *TO DO*
-        this._toggleAnimationPlay('step0', missionCompAnim, false);
+        this._play('step0', this.missionAnimationComp);
     },
 
-    _toggleAnimationPlay: function(anim, node, stop) {
-        if (stop && node) {
-            node.stop(anim);
-        } else if (anim !== '' && node) {
+    _play: function(anim, node) {
+        if (anim !== '' && node) {
 			node.play(anim);
 		}
 	},

@@ -8,7 +8,7 @@ cc.Class({
         default: function () {
           return new NodeReference();
         },
-        visible: true,
+        visible: false,
         type: NodeReference,
       }
     },

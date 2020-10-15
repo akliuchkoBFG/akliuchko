@@ -10,14 +10,7 @@
   "curveData": {
     "paths": {
       "collect_container/animated_items/jellyfish_anim": {
-        "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": true
-            }
-          ]
-        }
+        "props": {}
       }
     }
   },
