@@ -25,24 +25,24 @@ cc.Class({
     },
 
     onLoad: function () {
-        this.missionAnimationComp = this.missionInterface.node.getComponent(cc.Animation);
         const missionInterfaceComp = this.node.getComponent('MissionInterface');
         const missionStepInterfaceComp = this.missonStepNode.getComponent('MissionStepInterface');
+        this.missionAnimationComp = this.missionInterface.node.getComponent(cc.Animation);
 
         if (missionInterfaceComp) {
             this.missionInterface = missionInterfaceComp;
             this.missionInterface.on('updateMissionDataEvent', this.toggleMissionInfoPopoup, this);
         }
         if (missionStepInterfaceComp) {
+            this.missionStepAnimationComp = this.missonStepNode.getComponent(cc.Animation);
             this.missionStepInterface = missionStepInterfaceComp;
             missionStepInterfaceComp.on('updateMissionStepDataEvent', this.clearMissionStepAnimation, this);
         }
     },
 
     clearMissionStepAnimation: function () {
-        const stepAnimComp = this.missonStepNode.getComponent(cc.Animation);
-        if (stepAnimComp && this.missionStepInterface.stepID == 0) {
-            stepAnimComp.stop();
+        if (this.missionStepAnimationComp && this.missionStepInterface.stepID == 0) {
+            this.missionStepAnimationComp.stop();
         }
     },
 
@@ -77,6 +77,7 @@ cc.Class({
 
     goToProgressPopup: function() {
         if (this.missonInfoNode.active) {
+
             this.missonInfoNode.active = false;
             if (this.missionEventHandler) {
                 let data = {
@@ -84,9 +85,14 @@ cc.Class({
                 };
                 this.missionEventHandler.emit([JSON.stringify(data)]);
             }
+
             this.missonStepNode.opacity = 255;
+            
+            // redo animations in mission and mission_step nodes;
+            this._play('step0', this.missionAnimationComp);
+            this._play('step_intro', this.missionStepAnimationComp);
         }
-        this._play('step0', this.missionAnimationComp);
+        return
     },
 
     _play: function(anim, node) {

@@ -1,50 +1,77 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "step_complete",
+  "_name": "step_milestone_0",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 3.42,
+  "_duration": 9,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
   "curveData": {
     "paths": {
       "collect_container/animated_items/jellyfish_anim": {
-        "props": {}
-      },
-      "award_container/reward_types": {
         "props": {
           "active": [
             {
-              "frame": 0,
+              "frame": 3.5,
+              "value": false
+            },
+            {
+              "frame": 3.5,
               "value": true
             },
             {
-              "frame": 3.4166666666666665,
+              "frame": 8.5,
               "value": false
             }
           ],
           "opacity": [
             {
-              "frame": 0,
-              "value": 0
-            },
-            {
-              "frame": 0.4166666666666667,
+              "frame": 8.416666666666666,
               "value": 255
             },
             {
-              "frame": 3,
-              "value": 255
-            },
-            {
-              "frame": 3.4166666666666665,
+              "frame": 8.5,
               "value": 0
             }
           ]
         }
       },
+      "collect_container/static_items": {
+        "props": {
+          "active": [
+            {
+              "frame": 9,
+              "value": true
+            },
+            {
+              "frame": 9,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 8.5,
+              "value": 0
+            },
+            {
+              "frame": 9,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "collect_container/static_items/static_jellyfish": {
+        "props": {}
+      },
       "award_container/reward_labels": {
+        "props": {}
+      },
+      "award_container/milestone_labels": {
         "props": {
           "active": [
             {
@@ -52,7 +79,7 @@
               "value": true
             },
             {
-              "frame": 3.4166666666666665,
+              "frame": 3,
               "value": false
             }
           ],
@@ -62,15 +89,15 @@
               "value": 0
             },
             {
-              "frame": 0.4166666666666667,
+              "frame": 0.3333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 2.6666666666666665,
               "value": 255
             },
             {
               "frame": 3,
-              "value": 255
-            },
-            {
-              "frame": 3.4166666666666665,
               "value": 0
             }
           ]

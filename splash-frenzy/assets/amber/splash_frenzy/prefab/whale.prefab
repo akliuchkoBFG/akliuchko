@@ -51,7 +51,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": -420
+      "y": -480
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -74,7 +74,7 @@
     "loop": false,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "3e9d35a4-8dee-422a-9bdd-33bb1fb6a727"
+      "__uuid__": "bed6264a-60eb-410b-8c9e-90cc88a2fbff"
     },
     "_N$timeScale": 1,
     "_N$debugSlots": false,

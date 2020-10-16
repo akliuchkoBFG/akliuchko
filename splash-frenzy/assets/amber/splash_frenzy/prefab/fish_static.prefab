@@ -10,7 +10,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "crab",
+    "_name": "fish-static",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
@@ -70,11 +70,11 @@
     "_enabled": true,
     "_paused": false,
     "defaultSkin": "",
-    "defaultAnimation": "crab_popup",
+    "defaultAnimation": "fish_static",
     "loop": false,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "b999ac57-1e7a-4a29-a264-a91843d162cd"
+      "__uuid__": "1667251b-b63e-488b-90b2-0e3552023326"
     },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
@@ -86,7 +86,7 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "4256eefe-9571-4892-87bb-875ea30f9de8"
+      "__uuid__": "26670a3a-a585-4c00-bc07-b860fdc9c251"
     },
     "fileId": "440QfazyVGP5OH4YfEx+yn",
     "sync": false

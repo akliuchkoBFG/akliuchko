@@ -1,14 +1,14 @@
 {
   "ver": "1.0.0",
-  "uuid": "89dad84c-e3e5-4e4a-9a64-f0ad19f5110b",
+  "uuid": "1ecb158c-f7dd-4a39-aac7-6763e8140782",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
     "E_JMS_03_mantaray": {
       "ver": "1.0.3",
-      "uuid": "f156c55f-7311-4e6d-bc28-a9c7639ccab1",
-      "rawTextureUuid": "89dad84c-e3e5-4e4a-9a64-f0ad19f5110b",
+      "uuid": "7df9a57d-d202-4dc8-b0ee-a953517c3d40",
+      "rawTextureUuid": "1ecb158c-f7dd-4a39-aac7-6763e8140782",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

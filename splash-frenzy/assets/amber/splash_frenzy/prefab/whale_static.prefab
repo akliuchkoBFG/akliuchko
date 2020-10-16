@@ -10,7 +10,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "crab",
+    "_name": "whale",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
@@ -70,11 +70,11 @@
     "_enabled": true,
     "_paused": false,
     "defaultSkin": "",
-    "defaultAnimation": "crab_popup",
+    "defaultAnimation": "whale_static",
     "loop": false,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "b999ac57-1e7a-4a29-a264-a91843d162cd"
+      "__uuid__": "bed6264a-60eb-410b-8c9e-90cc88a2fbff"
     },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
@@ -86,7 +86,7 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "4256eefe-9571-4892-87bb-875ea30f9de8"
+      "__uuid__": "3cac997e-6a98-406c-8074-9580e74d2ff6"
     },
     "fileId": "440QfazyVGP5OH4YfEx+yn",
     "sync": false

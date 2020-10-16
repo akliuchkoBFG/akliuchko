@@ -1,14 +1,14 @@
 {
   "ver": "1.0.0",
-  "uuid": "9659453e-167c-4d79-9de1-932e314d735b",
+  "uuid": "f08cf4a2-2101-40e9-a344-2ffc8e3af2b9",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
     "E_JMS_03_jellyfish": {
       "ver": "1.0.3",
-      "uuid": "c6e3d942-1bd7-4050-90c2-944c0fcc6745",
-      "rawTextureUuid": "9659453e-167c-4d79-9de1-932e314d735b",
+      "uuid": "e65ece91-ca92-4fa2-8737-c3f4ca564c17",
+      "rawTextureUuid": "f08cf4a2-2101-40e9-a344-2ffc8e3af2b9",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
