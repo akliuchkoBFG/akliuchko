@@ -22,6 +22,8 @@ cc.Class({
         },
     },
 
+    // TEST TEXT FOR GIT TESING CHANGE; remove this.
+
     onLoad: function () {
         this.missionStepInterface.on('updateMissionStepDataEvent', this.isIconInCurrentStepBlock, this);
         this.missionStepInterface.getComponent(cc.Animation).on('finished', this.onStepClaimAnimation, this);
