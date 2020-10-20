@@ -3,7 +3,7 @@
   "_name": "step1",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 2.42,
+  "_duration": 4,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -21,162 +21,134 @@
         "props": {}
       },
       "mission_step/progress_container/progress_buttons/progress_bar": {
-        "props": {
-          "opacity": [
-            {
-              "frame": 0.16666666666666666,
-              "value": 0
-            },
-            {
-              "frame": 0.5,
-              "value": 255
-            }
-          ]
-        }
+        "props": {}
       },
       "mission_step/progress_container/progress_buttons/progress_bar/progress_fill": {
-        "props": {
-          "opacity": [
-            {
-              "frame": 0.16666666666666666,
-              "value": 0
-            },
-            {
-              "frame": 0.5,
-              "value": 255
-            }
-          ]
-        }
+        "props": {}
       },
       "mission_step/progress_container/progress_buttons/block0_icon": {
-        "props": {
-          "opacity": [
-            {
-              "frame": 0.16666666666666666,
-              "value": 0
-            },
-            {
-              "frame": 0.5,
-              "value": 255
-            }
-          ]
-        }
+        "props": {}
       },
       "mission_step/progress_container/progress_buttons/block1_icon": {
         "props": {
-          "opacity": [
-            {
-              "frame": 0.16666666666666666,
-              "value": 0
-            },
-            {
-              "frame": 0.5,
-              "value": 255
-            }
-          ],
           "scaleX": [
             {
-              "frame": 0.4166666666666667,
+              "frame": 0,
               "value": 0.8
             },
             {
-              "frame": 0.75,
+              "frame": 0.3333333333333333,
               "value": 0.9
             },
             {
-              "frame": 1.0833333333333333,
+              "frame": 0.6666666666666666,
               "value": 1
             },
             {
-              "frame": 1.4166666666666667,
+              "frame": 1,
               "value": 0.9
             },
             {
-              "frame": 1.75,
+              "frame": 1.3333333333333333,
               "value": 0.8
             },
             {
-              "frame": 2.0833333333333335,
+              "frame": 1.6666666666666667,
               "value": 0.9
             },
             {
-              "frame": 2.4166666666666665,
+              "frame": 2,
               "value": 1
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": 0.9
+            },
+            {
+              "frame": 2.6666666666666665,
+              "value": 0.8
+            },
+            {
+              "frame": 3,
+              "value": 0.9
+            },
+            {
+              "frame": 3.3333333333333335,
+              "value": 0.9989999999999999
+            },
+            {
+              "frame": 3.6666666666666665,
+              "value": 0.9
+            },
+            {
+              "frame": 4,
+              "value": 0.8
             }
           ],
           "scaleY": [
             {
-              "frame": 0.4166666666666667,
+              "frame": 0,
               "value": 0.8
             },
             {
-              "frame": 0.75,
+              "frame": 0.3333333333333333,
               "value": 0.9
             },
             {
-              "frame": 1.0833333333333333,
+              "frame": 0.6666666666666666,
               "value": 1
             },
             {
-              "frame": 1.4166666666666667,
+              "frame": 1,
               "value": 0.9
             },
             {
-              "frame": 1.75,
+              "frame": 1.3333333333333333,
               "value": 0.8
             },
             {
-              "frame": 2.0833333333333335,
+              "frame": 1.6666666666666667,
               "value": 0.9
             },
             {
-              "frame": 2.4166666666666665,
+              "frame": 2,
               "value": 1
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": 0.9
+            },
+            {
+              "frame": 2.6666666666666665,
+              "value": 0.8
+            },
+            {
+              "frame": 3,
+              "value": 0.9
+            },
+            {
+              "frame": 3.3333333333333335,
+              "value": 1
+            },
+            {
+              "frame": 3.6666666666666665,
+              "value": 0.9
+            },
+            {
+              "frame": 4,
+              "value": 0.8
             }
           ]
         }
       },
       "mission_step/progress_container/progress_buttons/block2_icon": {
-        "props": {
-          "opacity": [
-            {
-              "frame": 0.16666666666666666,
-              "value": 0
-            },
-            {
-              "frame": 0.5,
-              "value": 255
-            }
-          ]
-        }
+        "props": {}
       },
       "mission_step/progress_container/progress_buttons/block3_icon": {
-        "props": {
-          "opacity": [
-            {
-              "frame": 0.16666666666666666,
-              "value": 0
-            },
-            {
-              "frame": 0.5,
-              "value": 255
-            }
-          ]
-        }
+        "props": {}
       },
       "mission_step/progress_container/progress_buttons/block4_icon": {
-        "props": {
-          "opacity": [
-            {
-              "frame": 0.16666666666666666,
-              "value": 0
-            },
-            {
-              "frame": 0.5,
-              "value": 255
-            }
-          ]
-        }
+        "props": {}
       },
       "mission_step/buttons/play/button_play": {
         "props": {
@@ -188,6 +160,196 @@
             {
               "frame": 0.5,
               "value": 255
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/animated_items/whale_anim": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/animated_items/fish_anim": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/animated_items/jellyfish_anim": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/animated_items/crab_anim": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/animated_items/mantaray_anim": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/award_container/reward_types/reward_type_01": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/award_container/reward_types/reward_type_02": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/award_container/reward_types/reward_type_03": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/award_container/reward_types/reward_type_04": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/award_container/reward_types/reward_type_05": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/award_container/reward_labels/award_label_steps": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/award_container/reward_labels/award_label_final": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/award_container/milestone_labels/label_milestone": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/static_jellyfish/jellyfish": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/static_jellyfish": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/static_crab/crab": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/static_fish/fish": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/static_mantaray/mantaray": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/static_whale/whale": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
             }
           ]
         }

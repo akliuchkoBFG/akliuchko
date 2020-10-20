@@ -24,6 +24,25 @@ cc.Class({
 
     onLoad: function () {
         this.missionStepInterface.on('updateMissionStepDataEvent', this.isIconInCurrentStepBlock, this);
+        this.missionStepInterface.getComponent(cc.Animation).on('finished', this.onStepClaimAnimation, this);
+    },
+    
+    update: function () {
+        if (this.freezeProgress) {
+            return;
+        }
+        if (this.isUpdate) {
+            this.updateStepBlockIcon(this.fullRange);
+        }
+    },
+
+    onStepClaimAnimation: function (e) {
+        if (!e.detail || !e.detail.name) {
+			return;
+        }
+        if (e.detail.name == 'step_claim') {
+            this.isUpdate = true;
+        }
     },
 
     updateStepBlockIcon: function (range) {
@@ -39,9 +58,9 @@ cc.Class({
                     }
                 }
             }
-    
             this.fillSprite.fillRange = amount;
         }
+        this.isUpdate = false;
     },
 
     isIconInCurrentStepBlock: function() {
@@ -49,11 +68,12 @@ cc.Class({
         const lastStepInBlock = this.includedSteps[this.includedSteps.length -1];
 
         if (currentStepNumber > lastStepInBlock) {
-            this.updateStepBlockIcon(1);
+            this.fullRange = 1;
+            this.updateStepBlockIcon(this.fullRange);
         } else if (this.includedSteps && this.missionStepInterface.stepID) {
             this.prevStep = this.missionStepInterface.stepID * 1 - 1;
             if (this.includedSteps.indexOf(this.prevStep) !== -1) {
-                this.updateStepBlockIcon(0);
+                this.fullRange = 0;
             }
         }
     }

@@ -122,7 +122,6 @@ cc.Class({
 		if (anim !== '') {
 			const comp = this.getComponent(cc.Animation);
 			comp.play(anim);
-			cc.log('MISSION ANIM: ', anim);
 		}
 	}
 });

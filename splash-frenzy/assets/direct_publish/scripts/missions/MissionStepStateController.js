@@ -96,7 +96,6 @@ cc.Class({
 	_play: function(anim) {
 		const comp = this.getComponent(cc.Animation);
 		comp.play(anim);
-		cc.log('STEP ANIM: ', anim);
 	},
 
 });

@@ -32,18 +32,20 @@ cc.Class({
         const eventName = event.detail.name.toString();
 
         // TODO refactor this;
-        if (this.missionStepInterface && event.detail.name == 'step_complete') {
-            if (this.milestoneSteps.indexOf(stepID * 1) !== -1) {
-                this.onMilestoneStepAnimation(stepID);
-            } else {
+        if (this.missionStepInterface) {
+            const isMilestoneStep =  this.milestoneSteps.indexOf(stepID * 1) !== -1;
+            const isMilestoneStepEventFinished = eventName.includes('step_milestone');
+            if (event.detail.name == 'step_complete' && isMilestoneStep) {
+                cc.log('step_complete', 'isMilestoneStep:', isMilestoneStep);
+                this.playMilestoneStepAnimation(stepID);
+            } else if (event.detail.name == 'step_complete' || isMilestoneStepEventFinished) {
+                cc.log('DEFAULT CALAIM', isMilestoneStep);
                 this.missionStepInterface.claimAward();
             }
-        } else if (this.missionStepInterface && eventName.includes('step_milestone')) {
-            this.missionStepInterface.claimAward();
-        }
+        } 
     },
 
-    onMilestoneStepAnimation(step) {
+    playMilestoneStepAnimation(step) {
         const comp = this.getComponent(cc.Animation);
         const milestoneName = 'step_milestone_'.concat(step);
 

@@ -1,6 +1,6 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "step0",
+  "_name": "step2",
   "_objFlags": 0,
   "_rawFiles": null,
   "_duration": 4,
@@ -27,11 +27,14 @@
         "props": {}
       },
       "mission_step/progress_container/progress_buttons/block0_icon": {
+        "props": {}
+      },
+      "mission_step/progress_container/progress_buttons/block1_icon": {
         "props": {
           "scaleX": [
             {
               "frame": 0,
-              "value": 0.8000000000000002
+              "value": 0.8
             },
             {
               "frame": 0.3333333333333333,
@@ -85,7 +88,7 @@
           "scaleY": [
             {
               "frame": 0,
-              "value": 0.8000000000000002
+              "value": 0.8
             },
             {
               "frame": 0.3333333333333333,
@@ -137,9 +140,6 @@
             }
           ]
         }
-      },
-      "mission_step/progress_container/progress_buttons/block1_icon": {
-        "props": {}
       },
       "mission_step/progress_container/progress_buttons/block2_icon": {
         "props": {}
@@ -294,7 +294,6 @@
           ]
         }
       },
-      "mission_step/collect_container/static_jellyfish": {},
       "mission_step/collect_container/static_jellyfish/jellyfish": {
         "props": {
           "active": [
@@ -310,7 +309,7 @@
           "active": [
             {
               "frame": 0,
-              "value": false
+              "value": true
             }
           ]
         }
@@ -336,6 +335,26 @@
         }
       },
       "mission_step/collect_container/static_whale/whale": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/static_jellyfish": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/award_container/milestone_labels": {
         "props": {
           "active": [
             {

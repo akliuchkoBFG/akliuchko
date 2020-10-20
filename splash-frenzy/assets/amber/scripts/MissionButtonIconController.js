@@ -36,6 +36,45 @@ cc.Class({
         if (missionInterfaceComp) {
             this.missionInterface.on('updateMissionDataEvent', this.checkIncludedSteps, this);
         }
+        this.missionInterface.getComponent(cc.Animation).on('finished', this.onMissionAnimationFinished, this);
+    },
+    onMissionAnimationFinished: function (e) {
+        if (!e.detail || !e.detail.name) {
+			return;
+        }
+        if (this._isStepActive) {
+            const node = this.node.getComponent(cc.Animation);
+            let iconAnimationName = '';
+            switch(e.detail.name) {
+                case 'step0':
+                    iconAnimationName = 'block0_scale_up';
+                    break;
+                case 'step1':
+                case 'step2':
+                    iconAnimationName = 'block1_scale_up';
+                    break; 
+                case 'step3':
+                case 'step4':
+                case 'step5':
+                    iconAnimationName = 'block2_scale_up';
+                    break;
+                case 'step6':
+                case 'step7':
+                case 'step8':
+                case 'step9':
+                    iconAnimationName = 'block3_scale_up';
+                    break;
+                case 'step10':
+                case 'step11':
+                case 'step12':
+                case 'step13':
+                    iconAnimationName = 'block4_scale_up';
+                    break;    
+            }
+            if (node && iconAnimationName) {
+                node.play(iconAnimationName);
+            }
+        }
     },
 
     checkIncludedSteps: function() {
@@ -58,11 +97,10 @@ cc.Class({
                 }
             });
             if (isActive) {
-                this.setStepIconActive();
+                this._isStepActive = isActive;
             }
-    
             if (isCompleted){
-                this.setStepIconCompleted();
+                this._isStepCompleted = isCompleted;
             }
         }
     },
@@ -77,13 +115,17 @@ cc.Class({
     setStepIconActive: function() {
         const sprite = this.node.getComponent(cc.Sprite);
         sprite.spriteFrame = this.iconDefault;
-        this.node.setScale(1,1);
+        // this.node.setScale(1,1);
     },
 
     // Set Setep Icon sprite to completed/redeem state.
     setStepIconCompleted: function() {
         const sprite = this.node.getComponent(cc.Sprite);
         sprite.spriteFrame = this.iconCompleted;
+    },
+
+    animateIconActive(comp) {
+
     },
 
     //Trigger popUpWinddow linked to step block icon.
