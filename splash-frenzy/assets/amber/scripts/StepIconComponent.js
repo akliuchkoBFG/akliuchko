@@ -31,6 +31,7 @@ cc.Class({
                     sprite.spriteFrame = this.iconActive;
                     break;
                 case 'complete':
+                case 'redeemed':
                     sprite.spriteFrame = this.iconCompleted;
                     break;
                 case 'locked':
