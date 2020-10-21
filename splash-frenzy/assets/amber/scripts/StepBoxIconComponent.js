@@ -1,5 +1,5 @@
 
-const StepStatusComponent = require('StepStatusComponent');
+const StepBoxComponent = require('StepBoxComponent');
 
 cc.Class({
     extends: cc.Component,
@@ -7,7 +7,7 @@ cc.Class({
     properties: {
         stepIdNode: {
 			default: null,
-            type: StepStatusComponent,
+            type: StepBoxComponent,
         },
         iconStatus: 'locked',
         iconActive: cc.SpriteFrame,
@@ -16,9 +16,9 @@ cc.Class({
     },
 
     start: function() {
-        const stepStatusComp = this.stepIdNode;
-        if (stepStatusComp) {
-            this.iconStatus = stepStatusComp.stepStatus;
+        const stepBoxComp = this.stepIdNode;
+        if (stepBoxComp) {
+            this.iconStatus = stepBoxComp.stepStatus;
             this.updateIconSprite();
         }
     },

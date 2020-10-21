@@ -63,10 +63,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 374
+        "__id__": 402
       },
       {
-        "__id__": 375
+        "__id__": 403
       }
     ],
     "_prefab": null,
@@ -118,29 +118,29 @@
         "__id__": 4
       },
       {
-        "__id__": 341
+        "__id__": 369
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 369
+        "__id__": 397
       },
       {
         "__id__": 88
       },
       {
-        "__id__": 370
+        "__id__": 398
       },
       {
-        "__id__": 371
+        "__id__": 399
       },
       {
         "__id__": 89
       },
       {
-        "__id__": 372
+        "__id__": 400
       }
     ],
     "_prefab": null,
@@ -216,10 +216,10 @@
         "__id__": 81
       },
       {
-        "__id__": 294
+        "__id__": 322
       },
       {
-        "__id__": 320
+        "__id__": 348
       }
     ],
     "_tag": -1,
@@ -229,16 +229,16 @@
         "__id__": 87
       },
       {
-        "__id__": 337
+        "__id__": 365
       },
       {
-        "__id__": 338
+        "__id__": 366
       },
       {
-        "__id__": 339
+        "__id__": 367
       },
       {
-        "__id__": 340
+        "__id__": 368
       }
     ],
     "_prefab": null,
@@ -2683,7 +2683,7 @@
         "__id__": 90
       },
       {
-        "__id__": 225
+        "__id__": 253
       },
       {
         "__id__": 94
@@ -2742,7 +2742,7 @@
       }
     ],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [],
     "_prefab": null,
     "_id": "d7BkyiKjdPsruga9UC/1Lk",
@@ -2821,7 +2821,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 300,
-      "height": 50
+      "height": 78
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -2830,7 +2830,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": 280
+      "y": 270
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -2847,14 +2847,14 @@
       "__id__": 83
     },
     "_enabled": true,
-    "_N$string": "<color=#FEF6B6><b></color><outline color=#82140D width=2>Bet a total of 10M on slot Wrath of Kong</outline>",
+    "_N$string": "<color=#FEF6B6><b></color><outline color=#82140D width=2>Bet a total of 10M on slot Wrath of Kong </outline>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 24,
     "_N$font": {
       "__uuid__": "9f96be92-50d8-4513-900d-b45c0084c083"
     },
     "_N$maxWidth": 300,
-    "_N$lineHeight": 25,
+    "_N$lineHeight": 26,
     "_N$imageAtlas": null
   },
   {
@@ -2866,11 +2866,11 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#FEF6B6><b></color><outline color=#82140D width=2>Bet a total of {max} on slot {slotname}</outline>",
+    "_N$templateString": "<color=#FEF6B6><b></color><outline color=#82140D width=2>Bet a total of {max} on slot {slotname} </outline>",
     "_N$testData": "{\"progress\":\"0\",\"max\":\"10M\",\"slotname\":\"Wrath of Kong\",\"minbet\":\"0\",\"currencyUpper\":\"CHIPS\",\"currencyLower\":\"chips\"}"
   },
   {
-    "__type__": "7fac4uD0npKXpWkApNeqDnt",
+    "__type__": "9ef13KAG8RCLbO/cAA+eAX2",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -3066,19 +3066,19 @@
         "__id__": 95
       },
       {
-        "__id__": 107
+        "__id__": 109
       },
       {
-        "__id__": 125
+        "__id__": 131
       },
       {
-        "__id__": 151
+        "__id__": 163
       },
       {
-        "__id__": 185
+        "__id__": 205
       },
       {
-        "__id__": 219
+        "__id__": 247
       }
     ],
     "_tag": -1,
@@ -3141,7 +3141,7 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 106
+        "__id__": 108
       }
     ],
     "_prefab": null,
@@ -3204,7 +3204,7 @@
       }
     ],
     "_prefab": {
-      "__id__": 105
+      "__id__": 107
     },
     "_id": "caR5WqqrBL6qE4iGVinZYo",
     "_opacity": 255,
@@ -3382,10 +3382,16 @@
     "_components": [
       {
         "__id__": 103
+      },
+      {
+        "__id__": 104
+      },
+      {
+        "__id__": 105
       }
     ],
     "_prefab": {
-      "__id__": 104
+      "__id__": 106
     },
     "_id": "a7ftD8g1NFdYWGyjwuv4FF",
     "_opacity": 255,
@@ -3431,13 +3437,42 @@
       "__id__": 102
     },
     "_enabled": true,
-    "_N$string": "<color=#034d4e><b>Step in machine_name</color>",
+    "_N$string": "<color=#8a8a8a><b>Step in Wrath of Kong</color>",
     "_N$horizontalAlign": 0,
     "_N$fontSize": 20,
     "_N$font": null,
     "_N$maxWidth": 275,
     "_N$lineHeight": 30,
     "_N$imageAtlas": null
+  },
+  {
+    "__type__": "4bf8cm03WNCh7XDMRiJI+nk",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 102
+    },
+    "_enabled": true,
+    "_validPreview": true,
+    "_N$templateString": "<color={color}><b>Step in {slotname}</color>",
+    "_N$testData": "{\"slotname\":\"Wrath of Kong\",\"color\":\"#8a8a8a\"}"
+  },
+  {
+    "__type__": "a79abMdihNLI7NhirLiGm1S",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 102
+    },
+    "_enabled": true,
+    "missionStepInterface": {
+      "__id__": 87
+    },
+    "stepIdNode": {
+      "__id__": 100
+    },
+    "colorLock": "#8a8a8a",
+    "colorCompleted": "#034d4e"
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -3488,17 +3523,17 @@
     },
     "_children": [
       {
-        "__id__": 108
+        "__id__": 110
       },
       {
-        "__id__": 116
+        "__id__": 120
       }
     ],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 124
+        "__id__": 130
       }
     ],
     "_prefab": null,
@@ -3543,21 +3578,21 @@
     "_name": "step1",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 107
+      "__id__": 109
     },
     "_children": [
       {
-        "__id__": 109
+        "__id__": 111
       },
       {
-        "__id__": 114
+        "__id__": 116
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 112
+        "__id__": 114
       }
     ],
     "_prefab": null,
@@ -3602,21 +3637,21 @@
     "_name": "icon",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 108
+      "__id__": 110
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 110
+        "__id__": 112
       },
       {
-        "__id__": 111
+        "__id__": 113
       }
     ],
     "_prefab": {
-      "__id__": 113
+      "__id__": 115
     },
     "_id": "c4ucRvpdFGzq+NaVseuDyK",
     "_opacity": 255,
@@ -3659,7 +3694,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 109
+      "__id__": 111
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -3685,11 +3720,11 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 109
+      "__id__": 111
     },
     "_enabled": true,
     "stepIdNode": {
-      "__id__": 112
+      "__id__": 114
     },
     "iconStatus": "locked",
     "iconActive": {
@@ -3707,7 +3742,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 108
+      "__id__": 110
     },
     "_enabled": true,
     "stepId": 1,
@@ -3729,14 +3764,20 @@
     "_name": "description",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 108
+      "__id__": 110
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 115
+        "__id__": 117
+      },
+      {
+        "__id__": 118
+      },
+      {
+        "__id__": 119
       }
     ],
     "_prefab": null,
@@ -3781,10 +3822,10 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 114
+      "__id__": 116
     },
     "_enabled": true,
-    "_N$string": "<color=#034d4e><b>long_textlong_textlong_textt</color>",
+    "_N$string": "<color=#8a8a8a><b>Step in Wrath of Kong</color>",
     "_N$horizontalAlign": 0,
     "_N$fontSize": 20,
     "_N$font": null,
@@ -3793,25 +3834,54 @@
     "_N$imageAtlas": null
   },
   {
+    "__type__": "4bf8cm03WNCh7XDMRiJI+nk",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 116
+    },
+    "_enabled": true,
+    "_validPreview": true,
+    "_N$templateString": "<color={color}><b>Step in {slotname}</color>",
+    "_N$testData": "{\"slotname\":\"Wrath of Kong\",\"color\":\"#8a8a8a\"}"
+  },
+  {
+    "__type__": "a79abMdihNLI7NhirLiGm1S",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 116
+    },
+    "_enabled": true,
+    "missionStepInterface": {
+      "__id__": 87
+    },
+    "stepIdNode": {
+      "__id__": 114
+    },
+    "colorLock": "#8a8a8a",
+    "colorCompleted": "#034d4e"
+  },
+  {
     "__type__": "cc.Node",
     "_name": "step2",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 107
+      "__id__": 109
     },
     "_children": [
       {
-        "__id__": 117
+        "__id__": 121
       },
       {
-        "__id__": 122
+        "__id__": 126
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 120
+        "__id__": 124
       }
     ],
     "_prefab": null,
@@ -3856,21 +3926,21 @@
     "_name": "icon",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 116
+      "__id__": 120
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 118
+        "__id__": 122
       },
       {
-        "__id__": 119
+        "__id__": 123
       }
     ],
     "_prefab": {
-      "__id__": 121
+      "__id__": 125
     },
     "_id": "acWfWqPyxOmKTG7LcIsD2m",
     "_opacity": 255,
@@ -3913,7 +3983,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 117
+      "__id__": 121
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -3939,11 +4009,11 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 117
+      "__id__": 121
     },
     "_enabled": true,
     "stepIdNode": {
-      "__id__": 120
+      "__id__": 124
     },
     "iconStatus": "locked",
     "iconActive": {
@@ -3961,7 +4031,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 116
+      "__id__": 120
     },
     "_enabled": true,
     "stepId": 2,
@@ -3983,14 +4053,20 @@
     "_name": "description",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 116
+      "__id__": 120
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 123
+        "__id__": 127
+      },
+      {
+        "__id__": 128
+      },
+      {
+        "__id__": 129
       }
     ],
     "_prefab": null,
@@ -4035,10 +4111,10 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 122
+      "__id__": 126
     },
     "_enabled": true,
-    "_N$string": "<color=#034d4e><b>Step in machine_name</color>",
+    "_N$string": "<color=#8a8a8a><b>Step in Wrath of Kong</color>",
     "_N$horizontalAlign": 0,
     "_N$fontSize": 20,
     "_N$font": null,
@@ -4047,11 +4123,40 @@
     "_N$imageAtlas": null
   },
   {
+    "__type__": "4bf8cm03WNCh7XDMRiJI+nk",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 126
+    },
+    "_enabled": true,
+    "_validPreview": true,
+    "_N$templateString": "<color={color}><b>Step in {slotname}</color>",
+    "_N$testData": "{\"slotname\":\"Wrath of Kong\",\"color\":\"#8a8a8a\"}"
+  },
+  {
+    "__type__": "a79abMdihNLI7NhirLiGm1S",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 126
+    },
+    "_enabled": true,
+    "missionStepInterface": {
+      "__id__": 87
+    },
+    "stepIdNode": {
+      "__id__": 124
+    },
+    "colorLock": "#8a8a8a",
+    "colorCompleted": "#034d4e"
+  },
+  {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 107
+      "__id__": 109
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -4081,20 +4186,20 @@
     },
     "_children": [
       {
-        "__id__": 126
-      },
-      {
-        "__id__": 134
+        "__id__": 132
       },
       {
         "__id__": 142
+      },
+      {
+        "__id__": 152
       }
     ],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 150
+        "__id__": 162
       }
     ],
     "_prefab": null,
@@ -4139,21 +4244,21 @@
     "_name": "step3",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 125
+      "__id__": 131
     },
     "_children": [
       {
-        "__id__": 127
+        "__id__": 133
       },
       {
-        "__id__": 132
+        "__id__": 138
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 130
+        "__id__": 136
       }
     ],
     "_prefab": null,
@@ -4198,21 +4303,21 @@
     "_name": "icon",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 126
+      "__id__": 132
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 128
+        "__id__": 134
       },
       {
-        "__id__": 129
+        "__id__": 135
       }
     ],
     "_prefab": {
-      "__id__": 131
+      "__id__": 137
     },
     "_id": "a86iurZLdOI7R0ujvZwTUi",
     "_opacity": 255,
@@ -4255,7 +4360,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 127
+      "__id__": 133
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -4281,11 +4386,11 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 127
+      "__id__": 133
     },
     "_enabled": true,
     "stepIdNode": {
-      "__id__": 130
+      "__id__": 136
     },
     "iconStatus": "locked",
     "iconActive": {
@@ -4303,7 +4408,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 126
+      "__id__": 132
     },
     "_enabled": true,
     "stepId": 3,
@@ -4325,14 +4430,20 @@
     "_name": "description",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 126
+      "__id__": 132
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 133
+        "__id__": 139
+      },
+      {
+        "__id__": 140
+      },
+      {
+        "__id__": 141
       }
     ],
     "_prefab": null,
@@ -4377,10 +4488,10 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 132
+      "__id__": 138
     },
     "_enabled": true,
-    "_N$string": "<color=#034d4e><b>Step in machine_name</color>",
+    "_N$string": "<color=#8a8a8a><b>Step in Wrath of Kong</color>",
     "_N$horizontalAlign": 0,
     "_N$fontSize": 20,
     "_N$font": null,
@@ -4389,25 +4500,54 @@
     "_N$imageAtlas": null
   },
   {
+    "__type__": "4bf8cm03WNCh7XDMRiJI+nk",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 138
+    },
+    "_enabled": true,
+    "_validPreview": true,
+    "_N$templateString": "<color={color}><b>Step in {slotname}</color>",
+    "_N$testData": "{\"slotname\":\"Wrath of Kong\",\"color\":\"#8a8a8a\"}"
+  },
+  {
+    "__type__": "a79abMdihNLI7NhirLiGm1S",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 138
+    },
+    "_enabled": true,
+    "missionStepInterface": {
+      "__id__": 87
+    },
+    "stepIdNode": {
+      "__id__": 136
+    },
+    "colorLock": "#8a8a8a",
+    "colorCompleted": "#034d4e"
+  },
+  {
     "__type__": "cc.Node",
     "_name": "step4",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 125
+      "__id__": 131
     },
     "_children": [
       {
-        "__id__": 135
+        "__id__": 143
       },
       {
-        "__id__": 140
+        "__id__": 148
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 138
+        "__id__": 146
       }
     ],
     "_prefab": null,
@@ -4452,260 +4592,6 @@
     "_name": "icon",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 134
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 136
-      },
-      {
-        "__id__": 137
-      }
-    ],
-    "_prefab": {
-      "__id__": 139
-    },
-    "_id": "c1IgvSbVBAfagKybuCQ8Bk",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 50,
-      "height": 50
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 0.8,
-    "_scaleY": 0.8,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": -135,
-      "y": 153
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 135
-    },
-    "_enabled": true,
-    "_spriteFrame": {
-      "__uuid__": "c7f29270-6285-4f84-8424-cc6b5a51a5f9"
-    },
-    "_type": 0,
-    "_sizeMode": 2,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_atlas": null
-  },
-  {
-    "__type__": "3a84dncXtNKtYdyTtJQk545",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 135
-    },
-    "_enabled": true,
-    "stepIdNode": {
-      "__id__": 138
-    },
-    "iconStatus": "locked",
-    "iconActive": {
-      "__uuid__": "a08d0cc5-62cb-4b04-a304-2900fa570171"
-    },
-    "iconCompleted": {
-      "__uuid__": "9fe7195e-b6f9-4f84-8b7b-83b94c412523"
-    },
-    "iconLocked": {
-      "__uuid__": "c7f29270-6285-4f84-8424-cc6b5a51a5f9"
-    }
-  },
-  {
-    "__type__": "5c8c4fo4zFJl4sp2htaKSxs",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 134
-    },
-    "_enabled": true,
-    "stepId": 4,
-    "missionInterface": {
-      "__id__": 88
-    },
-    "currentStep": null,
-    "stepStatus": "locked"
-  },
-  {
-    "__type__": "cc.PrefabInfo",
-    "root": null,
-    "asset": null,
-    "fileId": "6ebsznvvFEo4QOge2NLCUN",
-    "sync": false
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "description",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 134
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 141
-      }
-    ],
-    "_prefab": null,
-    "_id": "c7u2o8ijpFEZfXH2EOekq9",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 275,
-      "height": 30
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 30,
-      "y": 155
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.RichText",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 140
-    },
-    "_enabled": true,
-    "_N$string": "<color=#034d4e><b>Step in machine_name</color>",
-    "_N$horizontalAlign": 0,
-    "_N$fontSize": 20,
-    "_N$font": null,
-    "_N$maxWidth": 275,
-    "_N$lineHeight": 30,
-    "_N$imageAtlas": null
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "step5",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 125
-    },
-    "_children": [
-      {
-        "__id__": 143
-      },
-      {
-        "__id__": 148
-      }
-    ],
-    "_tag": -1,
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 146
-      }
-    ],
-    "_prefab": null,
-    "_id": "93ThloNvFFRpQorjvzYaQZ",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 0,
-      "height": 0
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": -189
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "icon",
-    "_objFlags": 0,
-    "_parent": {
       "__id__": 142
     },
     "_children": [],
@@ -4722,7 +4608,7 @@
     "_prefab": {
       "__id__": 147
     },
-    "_id": "41DTIqoZJO3b3lcVGoyw8y",
+    "_id": "c1IgvSbVBAfagKybuCQ8Bk",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -4814,7 +4700,7 @@
       "__id__": 142
     },
     "_enabled": true,
-    "stepId": 5,
+    "stepId": 4,
     "missionInterface": {
       "__id__": 88
     },
@@ -4841,10 +4727,16 @@
     "_components": [
       {
         "__id__": 149
+      },
+      {
+        "__id__": 150
+      },
+      {
+        "__id__": 151
       }
     ],
     "_prefab": null,
-    "_id": "73QuOi4tZApIVZOz+O+G5W",
+    "_id": "c7u2o8ijpFEZfXH2EOekq9",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -4888,7 +4780,7 @@
       "__id__": 148
     },
     "_enabled": true,
-    "_N$string": "<color=#034d4e><b>Step in machine_name</color>",
+    "_N$string": "<color=#8a8a8a><b>Step in Big Fortune Valley</color>",
     "_N$horizontalAlign": 0,
     "_N$fontSize": 20,
     "_N$font": null,
@@ -4897,102 +4789,40 @@
     "_N$imageAtlas": null
   },
   {
-    "__type__": "cc.Sprite",
+    "__type__": "4bf8cm03WNCh7XDMRiJI+nk",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 125
+      "__id__": 148
     },
     "_enabled": true,
-    "_spriteFrame": {
-      "__uuid__": "c75dc0ab-820f-42f1-9ce6-2520a4edf15c"
+    "_validPreview": true,
+    "_N$templateString": "<color={color}><b>Step in {slotname}</color>",
+    "_N$testData": "{\"slotname\":\"Big Fortune Valley\",\"color\":\"#8a8a8a\"}"
+  },
+  {
+    "__type__": "a79abMdihNLI7NhirLiGm1S",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 148
     },
-    "_type": 0,
-    "_sizeMode": 0,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
+    "_enabled": true,
+    "missionStepInterface": {
+      "__id__": 87
     },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_atlas": null
+    "stepIdNode": {
+      "__id__": 146
+    },
+    "colorLock": "#8a8a8a",
+    "colorCompleted": "#034d4e"
   },
   {
     "__type__": "cc.Node",
-    "_name": "block3_popup",
+    "_name": "step5",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 94
-    },
-    "_children": [
-      {
-        "__id__": 152
-      },
-      {
-        "__id__": 160
-      },
-      {
-        "__id__": 168
-      },
-      {
-        "__id__": 176
-      }
-    ],
-    "_tag": -1,
-    "_active": false,
-    "_components": [
-      {
-        "__id__": 184
-      }
-    ],
-    "_prefab": null,
-    "_id": "8boNK4adhD7J2PctMJiDyG",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 395,
-      "height": 263
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": -40,
-      "y": 80
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "step6",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 151
+      "__id__": 131
     },
     "_children": [
       {
@@ -5010,7 +4840,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "bbiYNZfItMiogzwJWJ+jga",
+    "_id": "93ThloNvFFRpQorjvzYaQZ",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -5037,7 +4867,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": -82
+      "y": -189
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -5067,7 +4897,7 @@
     "_prefab": {
       "__id__": 157
     },
-    "_id": "a63aE0jfVHi5ops58H8Y1j",
+    "_id": "41DTIqoZJO3b3lcVGoyw8y",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -5094,7 +4924,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": -135,
-      "y": 149
+      "y": 153
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -5159,7 +4989,7 @@
       "__id__": 152
     },
     "_enabled": true,
-    "stepId": 6,
+    "stepId": 5,
     "missionInterface": {
       "__id__": 88
     },
@@ -5186,6 +5016,392 @@
     "_components": [
       {
         "__id__": 159
+      },
+      {
+        "__id__": 160
+      },
+      {
+        "__id__": 161
+      }
+    ],
+    "_prefab": null,
+    "_id": "73QuOi4tZApIVZOz+O+G5W",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 275,
+      "height": 30
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 30,
+      "y": 155
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.RichText",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 158
+    },
+    "_enabled": true,
+    "_N$string": "<color=#8a8a8a><b>Step in Big Fortune Valley</color>",
+    "_N$horizontalAlign": 0,
+    "_N$fontSize": 20,
+    "_N$font": null,
+    "_N$maxWidth": 275,
+    "_N$lineHeight": 30,
+    "_N$imageAtlas": null
+  },
+  {
+    "__type__": "4bf8cm03WNCh7XDMRiJI+nk",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 158
+    },
+    "_enabled": true,
+    "_validPreview": true,
+    "_N$templateString": "<color={color}><b>Step in {slotname}</color>",
+    "_N$testData": "{\"slotname\":\"Big Fortune Valley\",\"color\":\"#8a8a8a\"}"
+  },
+  {
+    "__type__": "a79abMdihNLI7NhirLiGm1S",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 158
+    },
+    "_enabled": true,
+    "missionStepInterface": {
+      "__id__": 87
+    },
+    "stepIdNode": {
+      "__id__": 156
+    },
+    "colorLock": "#8a8a8a",
+    "colorCompleted": "#034d4e"
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 131
+    },
+    "_enabled": true,
+    "_spriteFrame": {
+      "__uuid__": "c75dc0ab-820f-42f1-9ce6-2520a4edf15c"
+    },
+    "_type": 0,
+    "_sizeMode": 0,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_atlas": null
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "block3_popup",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 94
+    },
+    "_children": [
+      {
+        "__id__": 164
+      },
+      {
+        "__id__": 174
+      },
+      {
+        "__id__": 184
+      },
+      {
+        "__id__": 194
+      }
+    ],
+    "_tag": -1,
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 204
+      }
+    ],
+    "_prefab": null,
+    "_id": "8boNK4adhD7J2PctMJiDyG",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 395,
+      "height": 263
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -40,
+      "y": 80
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "step6",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 163
+    },
+    "_children": [
+      {
+        "__id__": 165
+      },
+      {
+        "__id__": 170
+      }
+    ],
+    "_tag": -1,
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 168
+      }
+    ],
+    "_prefab": null,
+    "_id": "bbiYNZfItMiogzwJWJ+jga",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": -82
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "icon",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 164
+    },
+    "_children": [],
+    "_tag": -1,
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 166
+      },
+      {
+        "__id__": 167
+      }
+    ],
+    "_prefab": {
+      "__id__": 169
+    },
+    "_id": "a63aE0jfVHi5ops58H8Y1j",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 50,
+      "height": 50
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 0.8,
+    "_scaleY": 0.8,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -135,
+      "y": 149
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 165
+    },
+    "_enabled": true,
+    "_spriteFrame": {
+      "__uuid__": "c7f29270-6285-4f84-8424-cc6b5a51a5f9"
+    },
+    "_type": 0,
+    "_sizeMode": 2,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_atlas": null
+  },
+  {
+    "__type__": "3a84dncXtNKtYdyTtJQk545",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 165
+    },
+    "_enabled": true,
+    "stepIdNode": {
+      "__id__": 168
+    },
+    "iconStatus": "locked",
+    "iconActive": {
+      "__uuid__": "a08d0cc5-62cb-4b04-a304-2900fa570171"
+    },
+    "iconCompleted": {
+      "__uuid__": "9fe7195e-b6f9-4f84-8b7b-83b94c412523"
+    },
+    "iconLocked": {
+      "__uuid__": "c7f29270-6285-4f84-8424-cc6b5a51a5f9"
+    }
+  },
+  {
+    "__type__": "5c8c4fo4zFJl4sp2htaKSxs",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 164
+    },
+    "_enabled": true,
+    "stepId": 6,
+    "missionInterface": {
+      "__id__": 88
+    },
+    "currentStep": null,
+    "stepStatus": "locked"
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": null,
+    "asset": null,
+    "fileId": "6ebsznvvFEo4QOge2NLCUN",
+    "sync": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "description",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 164
+    },
+    "_children": [],
+    "_tag": -1,
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 171
+      },
+      {
+        "__id__": 172
+      },
+      {
+        "__id__": 173
       }
     ],
     "_prefab": null,
@@ -5230,10 +5446,10 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 158
+      "__id__": 170
     },
     "_enabled": true,
-    "_N$string": "<color=#034d4e><b>Step in machine_name</color>",
+    "_N$string": "<color=#8a8a8a><b>Step in Wrath of Kong</color>",
     "_N$horizontalAlign": 0,
     "_N$fontSize": 20,
     "_N$font": null,
@@ -5242,25 +5458,54 @@
     "_N$imageAtlas": null
   },
   {
+    "__type__": "4bf8cm03WNCh7XDMRiJI+nk",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 170
+    },
+    "_enabled": true,
+    "_validPreview": true,
+    "_N$templateString": "<color={color}><b>Step in {slotname}</color>",
+    "_N$testData": "{\"slotname\":\"Wrath of Kong\",\"color\":\"#8a8a8a\"}"
+  },
+  {
+    "__type__": "a79abMdihNLI7NhirLiGm1S",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 170
+    },
+    "_enabled": true,
+    "missionStepInterface": {
+      "__id__": 87
+    },
+    "stepIdNode": {
+      "__id__": 168
+    },
+    "colorLock": "#8a8a8a",
+    "colorCompleted": "#034d4e"
+  },
+  {
     "__type__": "cc.Node",
     "_name": "step7",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 151
+      "__id__": 163
     },
     "_children": [
       {
-        "__id__": 161
+        "__id__": 175
       },
       {
-        "__id__": 166
+        "__id__": 180
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 164
+        "__id__": 178
       }
     ],
     "_prefab": null,
@@ -5305,21 +5550,21 @@
     "_name": "icon",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 160
+      "__id__": 174
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 162
+        "__id__": 176
       },
       {
-        "__id__": 163
+        "__id__": 177
       }
     ],
     "_prefab": {
-      "__id__": 165
+      "__id__": 179
     },
     "_id": "00fXNdZxhPVKgwZrAsHjF7",
     "_opacity": 255,
@@ -5362,7 +5607,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 161
+      "__id__": 175
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -5388,11 +5633,11 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 161
+      "__id__": 175
     },
     "_enabled": true,
     "stepIdNode": {
-      "__id__": 164
+      "__id__": 178
     },
     "iconStatus": "locked",
     "iconActive": {
@@ -5410,7 +5655,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 160
+      "__id__": 174
     },
     "_enabled": true,
     "stepId": 7,
@@ -5432,14 +5677,20 @@
     "_name": "description",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 160
+      "__id__": 174
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 167
+        "__id__": 181
+      },
+      {
+        "__id__": 182
+      },
+      {
+        "__id__": 183
       }
     ],
     "_prefab": null,
@@ -5484,10 +5735,10 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 166
+      "__id__": 180
     },
     "_enabled": true,
-    "_N$string": "<color=#034d4e><b>Step in machine_name</color>",
+    "_N$string": "<color=#8a8a8a><b>Step in Wrath of Kong</color>",
     "_N$horizontalAlign": 0,
     "_N$fontSize": 20,
     "_N$font": null,
@@ -5496,25 +5747,54 @@
     "_N$imageAtlas": null
   },
   {
+    "__type__": "4bf8cm03WNCh7XDMRiJI+nk",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 180
+    },
+    "_enabled": true,
+    "_validPreview": true,
+    "_N$templateString": "<color={color}><b>Step in {slotname}</color>",
+    "_N$testData": "{\"slotname\":\"Wrath of Kong\",\"color\":\"#8a8a8a\"}"
+  },
+  {
+    "__type__": "a79abMdihNLI7NhirLiGm1S",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 180
+    },
+    "_enabled": true,
+    "missionStepInterface": {
+      "__id__": 87
+    },
+    "stepIdNode": {
+      "__id__": 178
+    },
+    "colorLock": "#8a8a8a",
+    "colorCompleted": "#034d4e"
+  },
+  {
     "__type__": "cc.Node",
     "_name": "step8",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 151
+      "__id__": 163
     },
     "_children": [
       {
-        "__id__": 169
+        "__id__": 185
       },
       {
-        "__id__": 174
+        "__id__": 190
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 172
+        "__id__": 188
       }
     ],
     "_prefab": null,
@@ -5559,21 +5839,21 @@
     "_name": "icon",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 168
+      "__id__": 184
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 170
+        "__id__": 186
       },
       {
-        "__id__": 171
+        "__id__": 187
       }
     ],
     "_prefab": {
-      "__id__": 173
+      "__id__": 189
     },
     "_id": "5aZzxwSENPTptO19jONCFY",
     "_opacity": 255,
@@ -5616,7 +5896,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 169
+      "__id__": 185
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -5642,11 +5922,11 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 169
+      "__id__": 185
     },
     "_enabled": true,
     "stepIdNode": {
-      "__id__": 172
+      "__id__": 188
     },
     "iconStatus": "locked",
     "iconActive": {
@@ -5664,7 +5944,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 168
+      "__id__": 184
     },
     "_enabled": true,
     "stepId": 8,
@@ -5686,14 +5966,20 @@
     "_name": "description",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 168
+      "__id__": 184
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 175
+        "__id__": 191
+      },
+      {
+        "__id__": 192
+      },
+      {
+        "__id__": 193
       }
     ],
     "_prefab": null,
@@ -5738,10 +6024,10 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 174
+      "__id__": 190
     },
     "_enabled": true,
-    "_N$string": "<color=#034d4e><b>Step in machine_name</color>",
+    "_N$string": "<color=#8a8a8a><b>Step in Big Fortune Valley</color>",
     "_N$horizontalAlign": 0,
     "_N$fontSize": 20,
     "_N$font": null,
@@ -5750,25 +6036,54 @@
     "_N$imageAtlas": null
   },
   {
+    "__type__": "4bf8cm03WNCh7XDMRiJI+nk",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 190
+    },
+    "_enabled": true,
+    "_validPreview": true,
+    "_N$templateString": "<color={color}><b>Step in {slotname}</color>",
+    "_N$testData": "{\"slotname\":\"Big Fortune Valley\",\"color\":\"#8a8a8a\"}"
+  },
+  {
+    "__type__": "a79abMdihNLI7NhirLiGm1S",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 190
+    },
+    "_enabled": true,
+    "missionStepInterface": {
+      "__id__": 87
+    },
+    "stepIdNode": {
+      "__id__": 188
+    },
+    "colorLock": "#8a8a8a",
+    "colorCompleted": "#034d4e"
+  },
+  {
     "__type__": "cc.Node",
     "_name": "step9",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 151
+      "__id__": 163
     },
     "_children": [
       {
-        "__id__": 177
+        "__id__": 195
       },
       {
-        "__id__": 182
+        "__id__": 200
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 180
+        "__id__": 198
       }
     ],
     "_prefab": null,
@@ -5813,21 +6128,21 @@
     "_name": "icon",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 176
+      "__id__": 194
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 178
+        "__id__": 196
       },
       {
-        "__id__": 179
+        "__id__": 197
       }
     ],
     "_prefab": {
-      "__id__": 181
+      "__id__": 199
     },
     "_id": "00aB321zxCv4Pqja7YAqbN",
     "_opacity": 255,
@@ -5857,605 +6172,6 @@
       "__type__": "cc.Vec2",
       "x": -135,
       "y": 153
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 177
-    },
-    "_enabled": true,
-    "_spriteFrame": {
-      "__uuid__": "c7f29270-6285-4f84-8424-cc6b5a51a5f9"
-    },
-    "_type": 0,
-    "_sizeMode": 2,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_atlas": null
-  },
-  {
-    "__type__": "3a84dncXtNKtYdyTtJQk545",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 177
-    },
-    "_enabled": true,
-    "stepIdNode": {
-      "__id__": 180
-    },
-    "iconStatus": "locked",
-    "iconActive": {
-      "__uuid__": "a08d0cc5-62cb-4b04-a304-2900fa570171"
-    },
-    "iconCompleted": {
-      "__uuid__": "9fe7195e-b6f9-4f84-8b7b-83b94c412523"
-    },
-    "iconLocked": {
-      "__uuid__": "c7f29270-6285-4f84-8424-cc6b5a51a5f9"
-    }
-  },
-  {
-    "__type__": "5c8c4fo4zFJl4sp2htaKSxs",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 176
-    },
-    "_enabled": true,
-    "stepId": 9,
-    "missionInterface": {
-      "__id__": 88
-    },
-    "currentStep": null,
-    "stepStatus": "locked"
-  },
-  {
-    "__type__": "cc.PrefabInfo",
-    "root": null,
-    "asset": null,
-    "fileId": "6ebsznvvFEo4QOge2NLCUN",
-    "sync": false
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "description",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 176
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 183
-      }
-    ],
-    "_prefab": null,
-    "_id": "7fL+6BjW9IMay2O1Laq0yY",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 275,
-      "height": 30
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 30,
-      "y": 155
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.RichText",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 182
-    },
-    "_enabled": true,
-    "_N$string": "<color=#034d4e><b>Step in machine_name</color>",
-    "_N$horizontalAlign": 0,
-    "_N$fontSize": 20,
-    "_N$font": null,
-    "_N$maxWidth": 275,
-    "_N$lineHeight": 30,
-    "_N$imageAtlas": null
-  },
-  {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 151
-    },
-    "_enabled": true,
-    "_spriteFrame": {
-      "__uuid__": "c75dc0ab-820f-42f1-9ce6-2520a4edf15c"
-    },
-    "_type": 0,
-    "_sizeMode": 0,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_atlas": null
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "block4_popup",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 94
-    },
-    "_children": [
-      {
-        "__id__": 186
-      },
-      {
-        "__id__": 194
-      },
-      {
-        "__id__": 202
-      },
-      {
-        "__id__": 210
-      }
-    ],
-    "_tag": -1,
-    "_active": false,
-    "_components": [
-      {
-        "__id__": 218
-      }
-    ],
-    "_prefab": null,
-    "_id": "53AFYRb9FMb5ibZwvZ6GT1",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 395,
-      "height": 263
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": -40,
-      "y": 205
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "step10",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 185
-    },
-    "_children": [
-      {
-        "__id__": 187
-      },
-      {
-        "__id__": 192
-      }
-    ],
-    "_tag": -1,
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 190
-      }
-    ],
-    "_prefab": null,
-    "_id": "4bhlhfWBBMwaCaZVmXwwDE",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 0,
-      "height": 0
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": -82
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "icon",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 186
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 188
-      },
-      {
-        "__id__": 189
-      }
-    ],
-    "_prefab": {
-      "__id__": 191
-    },
-    "_id": "80SQCOsKBNZ6PyjRDBapSv",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 50,
-      "height": 50
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 0.8,
-    "_scaleY": 0.8,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": -135,
-      "y": 155
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 187
-    },
-    "_enabled": true,
-    "_spriteFrame": {
-      "__uuid__": "c7f29270-6285-4f84-8424-cc6b5a51a5f9"
-    },
-    "_type": 0,
-    "_sizeMode": 2,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_atlas": null
-  },
-  {
-    "__type__": "3a84dncXtNKtYdyTtJQk545",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 187
-    },
-    "_enabled": true,
-    "stepIdNode": {
-      "__id__": 190
-    },
-    "iconStatus": "locked",
-    "iconActive": {
-      "__uuid__": "a08d0cc5-62cb-4b04-a304-2900fa570171"
-    },
-    "iconCompleted": {
-      "__uuid__": "9fe7195e-b6f9-4f84-8b7b-83b94c412523"
-    },
-    "iconLocked": {
-      "__uuid__": "c7f29270-6285-4f84-8424-cc6b5a51a5f9"
-    }
-  },
-  {
-    "__type__": "5c8c4fo4zFJl4sp2htaKSxs",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 186
-    },
-    "_enabled": true,
-    "stepId": 10,
-    "missionInterface": {
-      "__id__": 88
-    },
-    "currentStep": null,
-    "stepStatus": "locked"
-  },
-  {
-    "__type__": "cc.PrefabInfo",
-    "root": null,
-    "asset": null,
-    "fileId": "6ebsznvvFEo4QOge2NLCUN",
-    "sync": false
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "description",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 186
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 193
-      }
-    ],
-    "_prefab": null,
-    "_id": "b6014BLZNECaZAinqlhNz/",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 275,
-      "height": 30
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 30,
-      "y": 155
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.RichText",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 192
-    },
-    "_enabled": true,
-    "_N$string": "<color=#034d4e><b>Step in machine_name</color>",
-    "_N$horizontalAlign": 0,
-    "_N$fontSize": 20,
-    "_N$font": null,
-    "_N$maxWidth": 275,
-    "_N$lineHeight": 30,
-    "_N$imageAtlas": null
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "step11",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 185
-    },
-    "_children": [
-      {
-        "__id__": 195
-      },
-      {
-        "__id__": 200
-      }
-    ],
-    "_tag": -1,
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 198
-      }
-    ],
-    "_prefab": null,
-    "_id": "6fF4wKgPJDw65zKlMb5d/E",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 0,
-      "height": 0
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": -130
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "icon",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 194
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 196
-      },
-      {
-        "__id__": 197
-      }
-    ],
-    "_prefab": {
-      "__id__": 199
-    },
-    "_id": "0akfRIlvRKiIi+GbrCgH9m",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 50,
-      "height": 50
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 0.8,
-    "_scaleY": 0.8,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": -135,
-      "y": 160
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -6520,7 +6236,7 @@
       "__id__": 194
     },
     "_enabled": true,
-    "stepId": 11,
+    "stepId": 9,
     "missionInterface": {
       "__id__": 88
     },
@@ -6547,6 +6263,681 @@
     "_components": [
       {
         "__id__": 201
+      },
+      {
+        "__id__": 202
+      },
+      {
+        "__id__": 203
+      }
+    ],
+    "_prefab": null,
+    "_id": "7fL+6BjW9IMay2O1Laq0yY",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 275,
+      "height": 30
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 30,
+      "y": 155
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.RichText",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 200
+    },
+    "_enabled": true,
+    "_N$string": "<color=#8a8a8a><b>Step in Wrath of Kong</color>",
+    "_N$horizontalAlign": 0,
+    "_N$fontSize": 20,
+    "_N$font": null,
+    "_N$maxWidth": 275,
+    "_N$lineHeight": 30,
+    "_N$imageAtlas": null
+  },
+  {
+    "__type__": "4bf8cm03WNCh7XDMRiJI+nk",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 200
+    },
+    "_enabled": true,
+    "_validPreview": true,
+    "_N$templateString": "<color={color}><b>Step in {slotname}</color>",
+    "_N$testData": "{\"slotname\":\"Wrath of Kong\",\"color\":\"#8a8a8a\"}"
+  },
+  {
+    "__type__": "a79abMdihNLI7NhirLiGm1S",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 200
+    },
+    "_enabled": true,
+    "missionStepInterface": {
+      "__id__": 87
+    },
+    "stepIdNode": {
+      "__id__": 198
+    },
+    "colorLock": "#8a8a8a",
+    "colorCompleted": "#034d4e"
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 163
+    },
+    "_enabled": true,
+    "_spriteFrame": {
+      "__uuid__": "c75dc0ab-820f-42f1-9ce6-2520a4edf15c"
+    },
+    "_type": 0,
+    "_sizeMode": 0,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_atlas": null
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "block4_popup",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 94
+    },
+    "_children": [
+      {
+        "__id__": 206
+      },
+      {
+        "__id__": 216
+      },
+      {
+        "__id__": 226
+      },
+      {
+        "__id__": 236
+      }
+    ],
+    "_tag": -1,
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 246
+      }
+    ],
+    "_prefab": null,
+    "_id": "53AFYRb9FMb5ibZwvZ6GT1",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 395,
+      "height": 263
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -40,
+      "y": 205
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "step10",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 205
+    },
+    "_children": [
+      {
+        "__id__": 207
+      },
+      {
+        "__id__": 212
+      }
+    ],
+    "_tag": -1,
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 210
+      }
+    ],
+    "_prefab": null,
+    "_id": "4bhlhfWBBMwaCaZVmXwwDE",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": -82
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "icon",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 206
+    },
+    "_children": [],
+    "_tag": -1,
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 208
+      },
+      {
+        "__id__": 209
+      }
+    ],
+    "_prefab": {
+      "__id__": 211
+    },
+    "_id": "80SQCOsKBNZ6PyjRDBapSv",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 50,
+      "height": 50
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 0.8,
+    "_scaleY": 0.8,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -135,
+      "y": 155
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 207
+    },
+    "_enabled": true,
+    "_spriteFrame": {
+      "__uuid__": "c7f29270-6285-4f84-8424-cc6b5a51a5f9"
+    },
+    "_type": 0,
+    "_sizeMode": 2,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_atlas": null
+  },
+  {
+    "__type__": "3a84dncXtNKtYdyTtJQk545",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 207
+    },
+    "_enabled": true,
+    "stepIdNode": {
+      "__id__": 210
+    },
+    "iconStatus": "locked",
+    "iconActive": {
+      "__uuid__": "a08d0cc5-62cb-4b04-a304-2900fa570171"
+    },
+    "iconCompleted": {
+      "__uuid__": "9fe7195e-b6f9-4f84-8b7b-83b94c412523"
+    },
+    "iconLocked": {
+      "__uuid__": "c7f29270-6285-4f84-8424-cc6b5a51a5f9"
+    }
+  },
+  {
+    "__type__": "5c8c4fo4zFJl4sp2htaKSxs",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 206
+    },
+    "_enabled": true,
+    "stepId": 10,
+    "missionInterface": {
+      "__id__": 88
+    },
+    "currentStep": null,
+    "stepStatus": "locked"
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": null,
+    "asset": null,
+    "fileId": "6ebsznvvFEo4QOge2NLCUN",
+    "sync": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "description",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 206
+    },
+    "_children": [],
+    "_tag": -1,
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 213
+      },
+      {
+        "__id__": 214
+      },
+      {
+        "__id__": 215
+      }
+    ],
+    "_prefab": null,
+    "_id": "b6014BLZNECaZAinqlhNz/",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 275,
+      "height": 30
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 30,
+      "y": 155
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.RichText",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 212
+    },
+    "_enabled": true,
+    "_N$string": "<color=#8a8a8a><b>Step in Wrath of Kong</color>",
+    "_N$horizontalAlign": 0,
+    "_N$fontSize": 20,
+    "_N$font": null,
+    "_N$maxWidth": 275,
+    "_N$lineHeight": 30,
+    "_N$imageAtlas": null
+  },
+  {
+    "__type__": "4bf8cm03WNCh7XDMRiJI+nk",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 212
+    },
+    "_enabled": true,
+    "_validPreview": true,
+    "_N$templateString": "<color={color}><b>Step in {slotname}</color>",
+    "_N$testData": "{\"slotname\":\"Wrath of Kong\",\"color\":\"#8a8a8a\"}"
+  },
+  {
+    "__type__": "a79abMdihNLI7NhirLiGm1S",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 212
+    },
+    "_enabled": true,
+    "missionStepInterface": {
+      "__id__": 87
+    },
+    "stepIdNode": {
+      "__id__": 210
+    },
+    "colorLock": "#8a8a8a",
+    "colorCompleted": "#034d4e"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "step11",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 205
+    },
+    "_children": [
+      {
+        "__id__": 217
+      },
+      {
+        "__id__": 222
+      }
+    ],
+    "_tag": -1,
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 220
+      }
+    ],
+    "_prefab": null,
+    "_id": "6fF4wKgPJDw65zKlMb5d/E",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": -130
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "icon",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 216
+    },
+    "_children": [],
+    "_tag": -1,
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 218
+      },
+      {
+        "__id__": 219
+      }
+    ],
+    "_prefab": {
+      "__id__": 221
+    },
+    "_id": "0akfRIlvRKiIi+GbrCgH9m",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 50,
+      "height": 50
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 0.8,
+    "_scaleY": 0.8,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -135,
+      "y": 160
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 217
+    },
+    "_enabled": true,
+    "_spriteFrame": {
+      "__uuid__": "c7f29270-6285-4f84-8424-cc6b5a51a5f9"
+    },
+    "_type": 0,
+    "_sizeMode": 2,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_atlas": null
+  },
+  {
+    "__type__": "3a84dncXtNKtYdyTtJQk545",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 217
+    },
+    "_enabled": true,
+    "stepIdNode": {
+      "__id__": 220
+    },
+    "iconStatus": "locked",
+    "iconActive": {
+      "__uuid__": "a08d0cc5-62cb-4b04-a304-2900fa570171"
+    },
+    "iconCompleted": {
+      "__uuid__": "9fe7195e-b6f9-4f84-8b7b-83b94c412523"
+    },
+    "iconLocked": {
+      "__uuid__": "c7f29270-6285-4f84-8424-cc6b5a51a5f9"
+    }
+  },
+  {
+    "__type__": "5c8c4fo4zFJl4sp2htaKSxs",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 216
+    },
+    "_enabled": true,
+    "stepId": 11,
+    "missionInterface": {
+      "__id__": 88
+    },
+    "currentStep": null,
+    "stepStatus": "locked"
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": null,
+    "asset": null,
+    "fileId": "6ebsznvvFEo4QOge2NLCUN",
+    "sync": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "description",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 216
+    },
+    "_children": [],
+    "_tag": -1,
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 223
+      },
+      {
+        "__id__": 224
+      },
+      {
+        "__id__": 225
       }
     ],
     "_prefab": null,
@@ -6591,10 +6982,10 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 200
+      "__id__": 222
     },
     "_enabled": true,
-    "_N$string": "<color=#034d4e><b>Step in machine_name</color>",
+    "_N$string": "<color=#8a8a8a><b>Step in Wrath of Kong</color>",
     "_N$horizontalAlign": 0,
     "_N$fontSize": 20,
     "_N$font": null,
@@ -6603,25 +6994,54 @@
     "_N$imageAtlas": null
   },
   {
+    "__type__": "4bf8cm03WNCh7XDMRiJI+nk",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 222
+    },
+    "_enabled": true,
+    "_validPreview": true,
+    "_N$templateString": "<color={color}><b>Step in {slotname}</color>",
+    "_N$testData": "{\"slotname\":\"Wrath of Kong\",\"color\":\"#8a8a8a\"}"
+  },
+  {
+    "__type__": "a79abMdihNLI7NhirLiGm1S",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 222
+    },
+    "_enabled": true,
+    "missionStepInterface": {
+      "__id__": 87
+    },
+    "stepIdNode": {
+      "__id__": 220
+    },
+    "colorLock": "#8a8a8a",
+    "colorCompleted": "#034d4e"
+  },
+  {
     "__type__": "cc.Node",
     "_name": "step12",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 185
+      "__id__": 205
     },
     "_children": [
       {
-        "__id__": 203
+        "__id__": 227
       },
       {
-        "__id__": 208
+        "__id__": 232
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 206
+        "__id__": 230
       }
     ],
     "_prefab": null,
@@ -6666,21 +7086,21 @@
     "_name": "icon",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 202
+      "__id__": 226
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 204
+        "__id__": 228
       },
       {
-        "__id__": 205
+        "__id__": 229
       }
     ],
     "_prefab": {
-      "__id__": 207
+      "__id__": 231
     },
     "_id": "8787YCT/dCfoLvFSu4QOxD",
     "_opacity": 255,
@@ -6723,7 +7143,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 203
+      "__id__": 227
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -6749,11 +7169,11 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 203
+      "__id__": 227
     },
     "_enabled": true,
     "stepIdNode": {
-      "__id__": 206
+      "__id__": 230
     },
     "iconStatus": "locked",
     "iconActive": {
@@ -6771,7 +7191,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 202
+      "__id__": 226
     },
     "_enabled": true,
     "stepId": 12,
@@ -6793,14 +7213,20 @@
     "_name": "description",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 202
+      "__id__": 226
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 209
+        "__id__": 233
+      },
+      {
+        "__id__": 234
+      },
+      {
+        "__id__": 235
       }
     ],
     "_prefab": null,
@@ -6845,10 +7271,10 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 208
+      "__id__": 232
     },
     "_enabled": true,
-    "_N$string": "<color=#034d4e><b>Step in machine_name</color>",
+    "_N$string": "<color=#8a8a8a><b>Step in Big Fortune Valley</color>",
     "_N$horizontalAlign": 0,
     "_N$fontSize": 20,
     "_N$font": null,
@@ -6857,25 +7283,54 @@
     "_N$imageAtlas": null
   },
   {
+    "__type__": "4bf8cm03WNCh7XDMRiJI+nk",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 232
+    },
+    "_enabled": true,
+    "_validPreview": true,
+    "_N$templateString": "<color={color}><b>Step in {slotname}</color>",
+    "_N$testData": "{\"slotname\":\"Big Fortune Valley\",\"color\":\"#8a8a8a\"}"
+  },
+  {
+    "__type__": "a79abMdihNLI7NhirLiGm1S",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 232
+    },
+    "_enabled": true,
+    "missionStepInterface": {
+      "__id__": 87
+    },
+    "stepIdNode": {
+      "__id__": 230
+    },
+    "colorLock": "#8a8a8a",
+    "colorCompleted": "#034d4e"
+  },
+  {
     "__type__": "cc.Node",
     "_name": "step13",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 185
+      "__id__": 205
     },
     "_children": [
       {
-        "__id__": 211
+        "__id__": 237
       },
       {
-        "__id__": 216
+        "__id__": 242
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 214
+        "__id__": 240
       }
     ],
     "_prefab": null,
@@ -6920,21 +7375,21 @@
     "_name": "icon",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 210
+      "__id__": 236
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 212
+        "__id__": 238
       },
       {
-        "__id__": 213
+        "__id__": 239
       }
     ],
     "_prefab": {
-      "__id__": 215
+      "__id__": 241
     },
     "_id": "b0SMP7scBDFINCew+f3eLL",
     "_opacity": 255,
@@ -6977,7 +7432,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 211
+      "__id__": 237
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -7003,11 +7458,11 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 211
+      "__id__": 237
     },
     "_enabled": true,
     "stepIdNode": {
-      "__id__": 214
+      "__id__": 240
     },
     "iconStatus": "locked",
     "iconActive": {
@@ -7025,7 +7480,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 210
+      "__id__": 236
     },
     "_enabled": true,
     "stepId": 13,
@@ -7047,14 +7502,20 @@
     "_name": "description",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 210
+      "__id__": 236
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 217
+        "__id__": 243
+      },
+      {
+        "__id__": 244
+      },
+      {
+        "__id__": 245
       }
     ],
     "_prefab": null,
@@ -7099,10 +7560,10 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 216
+      "__id__": 242
     },
     "_enabled": true,
-    "_N$string": "<color=#034d4e><b>Step in machine_name</color>",
+    "_N$string": "<color=#8a8a8a><b>Step in Wrath of Kong</color>",
     "_N$horizontalAlign": 0,
     "_N$fontSize": 20,
     "_N$font": null,
@@ -7111,11 +7572,40 @@
     "_N$imageAtlas": null
   },
   {
+    "__type__": "4bf8cm03WNCh7XDMRiJI+nk",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 242
+    },
+    "_enabled": true,
+    "_validPreview": true,
+    "_N$templateString": "<color={color}><b>Step in {slotname}</color>",
+    "_N$testData": "{\"slotname\":\"Wrath of Kong\",\"color\":\"#8a8a8a\"}"
+  },
+  {
+    "__type__": "a79abMdihNLI7NhirLiGm1S",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 242
+    },
+    "_enabled": true,
+    "missionStepInterface": {
+      "__id__": 87
+    },
+    "stepIdNode": {
+      "__id__": 240
+    },
+    "colorLock": "#8a8a8a",
+    "colorCompleted": "#034d4e"
+  },
+  {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 185
+      "__id__": 205
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -7145,10 +7635,10 @@
     },
     "_children": [
       {
-        "__id__": 220
+        "__id__": 248
       },
       {
-        "__id__": 222
+        "__id__": 250
       }
     ],
     "_tag": -1,
@@ -7196,14 +7686,14 @@
     "_name": "chest_popup_background",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 219
+      "__id__": 247
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 221
+        "__id__": 249
       }
     ],
     "_prefab": null,
@@ -7248,7 +7738,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 220
+      "__id__": 248
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -7274,17 +7764,17 @@
     "_name": "chest_popup_text",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 219
+      "__id__": 247
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 223
+        "__id__": 251
       },
       {
-        "__id__": 224
+        "__id__": 252
       }
     ],
     "_prefab": null,
@@ -7329,7 +7819,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 222
+      "__id__": 250
     },
     "_enabled": true,
     "_N$string": "<color=#c24185><b>Complete the image to win the </c><b><color=#7203c9>GRAND PRIZE!</c>\n<color=#7203c9><b>50000 </c></color><color=#c24185><color=#c24185>COINS!</c>",
@@ -7347,7 +7837,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 222
+      "__id__": 250
     },
     "_enabled": true,
     "_validPreview": true,
@@ -7363,25 +7853,25 @@
     },
     "_children": [
       {
-        "__id__": 226
-      },
-      {
-        "__id__": 232
-      },
-      {
-        "__id__": 243
-      },
-      {
         "__id__": 254
       },
       {
-        "__id__": 265
+        "__id__": 260
       },
       {
-        "__id__": 276
+        "__id__": 271
       },
       {
-        "__id__": 287
+        "__id__": 282
+      },
+      {
+        "__id__": 293
+      },
+      {
+        "__id__": 304
+      },
+      {
+        "__id__": 315
       }
     ],
     "_tag": -1,
@@ -7429,18 +7919,18 @@
     "_name": "progress_bar",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 225
+      "__id__": 253
     },
     "_children": [
       {
-        "__id__": 227
+        "__id__": 255
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 231
+        "__id__": 259
       }
     ],
     "_prefab": null,
@@ -7485,20 +7975,20 @@
     "_name": "progress_fill",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 226
+      "__id__": 254
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 228
+        "__id__": 256
       },
       {
-        "__id__": 229
+        "__id__": 257
       },
       {
-        "__id__": 230
+        "__id__": 258
       }
     ],
     "_prefab": null,
@@ -7543,7 +8033,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 227
+      "__id__": 255
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -7569,7 +8059,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 227
+      "__id__": 255
     },
     "_enabled": true,
     "_defaultClip": null,
@@ -7581,14 +8071,14 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 227
+      "__id__": 255
     },
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 87
     },
     "fillSprite": {
-      "__id__": 228
+      "__id__": 256
     },
     "fillRange": 0,
     "stepEndPoints": [
@@ -7597,11 +8087,11 @@
       0.25,
       0.5,
       0.5,
+      0.5,
       0.75,
       0.75,
       0.75,
       0.75,
-      1,
       1,
       1,
       1,
@@ -7614,7 +8104,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 226
+      "__id__": 254
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -7640,27 +8130,27 @@
     "_name": "block0_icon",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 225
+      "__id__": 253
     },
     "_children": [
       {
-        "__id__": 233
+        "__id__": 261
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 237
+        "__id__": 265
       },
       {
-        "__id__": 238
+        "__id__": 266
       },
       {
-        "__id__": 240
+        "__id__": 268
       },
       {
-        "__id__": 242
+        "__id__": 270
       }
     ],
     "_prefab": null,
@@ -7705,20 +8195,20 @@
     "_name": "icon_fill",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 232
+      "__id__": 260
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 234
+        "__id__": 262
       },
       {
-        "__id__": 235
+        "__id__": 263
       },
       {
-        "__id__": 236
+        "__id__": 264
       }
     ],
     "_prefab": null,
@@ -7749,7 +8239,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": 0
+      "y": 3
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -7763,7 +8253,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 233
+      "__id__": 261
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -7789,14 +8279,14 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 233
+      "__id__": 261
     },
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 87
     },
     "fillSprite": {
-      "__id__": 234
+      "__id__": 262
     },
     "fillRange": 0,
     "includedSteps": [
@@ -7809,7 +8299,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 233
+      "__id__": 261
     },
     "_enabled": true,
     "_defaultClip": {
@@ -7827,7 +8317,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 232
+      "__id__": 260
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -7853,7 +8343,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 232
+      "__id__": 260
     },
     "_enabled": true,
     "transition": 0,
@@ -7877,7 +8367,7 @@
     "hoverSprite": null,
     "clickEvents": [
       {
-        "__id__": 239
+        "__id__": 267
       }
     ],
     "_N$interactable": true,
@@ -7899,13 +8389,13 @@
     "_N$normalSprite": null,
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 232
+      "__id__": 260
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 232
+      "__id__": 260
     },
     "component": "MissionButtonIconController",
     "handler": "toggleLinkedPopupWindow",
@@ -7916,7 +8406,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 232
+      "__id__": 260
     },
     "_enabled": true,
     "iconDefault": {
@@ -7929,7 +8419,7 @@
       "__id__": 95
     },
     "popupEventHandler": {
-      "__id__": 241
+      "__id__": 269
     },
     "missionInterface": {
       "__id__": 88
@@ -7952,7 +8442,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 232
+      "__id__": 260
     },
     "_enabled": true,
     "_defaultClip": null,
@@ -7968,27 +8458,27 @@
     "_name": "block1_icon",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 225
+      "__id__": 253
     },
     "_children": [
       {
-        "__id__": 244
+        "__id__": 272
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 248
+        "__id__": 276
       },
       {
-        "__id__": 249
+        "__id__": 277
       },
       {
-        "__id__": 251
+        "__id__": 279
       },
       {
-        "__id__": 253
+        "__id__": 281
       }
     ],
     "_prefab": null,
@@ -8033,20 +8523,20 @@
     "_name": "icon_fill",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 243
+      "__id__": 271
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 245
+        "__id__": 273
       },
       {
-        "__id__": 246
+        "__id__": 274
       },
       {
-        "__id__": 247
+        "__id__": 275
       }
     ],
     "_prefab": null,
@@ -8091,7 +8581,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 244
+      "__id__": 272
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -8117,7 +8607,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 244
+      "__id__": 272
     },
     "_enabled": true,
     "_defaultClip": null,
@@ -8129,14 +8619,14 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 244
+      "__id__": 272
     },
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 87
     },
     "fillSprite": {
-      "__id__": 245
+      "__id__": 273
     },
     "fillRange": 0,
     "includedSteps": [
@@ -8150,7 +8640,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 243
+      "__id__": 271
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -8176,7 +8666,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 243
+      "__id__": 271
     },
     "_enabled": true,
     "transition": 0,
@@ -8200,7 +8690,7 @@
     "hoverSprite": null,
     "clickEvents": [
       {
-        "__id__": 250
+        "__id__": 278
       }
     ],
     "_N$interactable": true,
@@ -8222,13 +8712,13 @@
     "_N$normalSprite": null,
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 243
+      "__id__": 271
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 243
+      "__id__": 271
     },
     "component": "MissionButtonIconController",
     "handler": "toggleLinkedPopupWindow",
@@ -8239,7 +8729,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 243
+      "__id__": 271
     },
     "_enabled": true,
     "iconDefault": {
@@ -8249,10 +8739,10 @@
       "__uuid__": "ef1acc4d-8f84-411d-a64b-14622db1adff"
     },
     "linkedNode": {
-      "__id__": 107
+      "__id__": 109
     },
     "popupEventHandler": {
-      "__id__": 252
+      "__id__": 280
     },
     "missionInterface": {
       "__id__": 88
@@ -8276,7 +8766,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 243
+      "__id__": 271
     },
     "_enabled": true,
     "_defaultClip": null,
@@ -8292,27 +8782,27 @@
     "_name": "block2_icon",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 225
+      "__id__": 253
     },
     "_children": [
       {
-        "__id__": 255
+        "__id__": 283
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 259
+        "__id__": 287
       },
       {
-        "__id__": 260
+        "__id__": 288
       },
       {
-        "__id__": 262
+        "__id__": 290
       },
       {
-        "__id__": 264
+        "__id__": 292
       }
     ],
     "_prefab": null,
@@ -8357,20 +8847,20 @@
     "_name": "icon_fill",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 254
+      "__id__": 282
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 256
+        "__id__": 284
       },
       {
-        "__id__": 257
+        "__id__": 285
       },
       {
-        "__id__": 258
+        "__id__": 286
       }
     ],
     "_prefab": null,
@@ -8415,7 +8905,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 255
+      "__id__": 283
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -8441,7 +8931,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 255
+      "__id__": 283
     },
     "_enabled": true,
     "_defaultClip": null,
@@ -8453,14 +8943,14 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 255
+      "__id__": 283
     },
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 87
     },
     "fillSprite": {
-      "__id__": 256
+      "__id__": 284
     },
     "fillRange": 0,
     "includedSteps": [
@@ -8475,7 +8965,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 254
+      "__id__": 282
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -8501,7 +8991,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 254
+      "__id__": 282
     },
     "_enabled": true,
     "transition": 0,
@@ -8525,7 +9015,7 @@
     "hoverSprite": null,
     "clickEvents": [
       {
-        "__id__": 261
+        "__id__": 289
       }
     ],
     "_N$interactable": true,
@@ -8547,13 +9037,13 @@
     "_N$normalSprite": null,
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 254
+      "__id__": 282
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 254
+      "__id__": 282
     },
     "component": "MissionButtonIconController",
     "handler": "toggleLinkedPopupWindow",
@@ -8564,7 +9054,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 254
+      "__id__": 282
     },
     "_enabled": true,
     "iconDefault": {
@@ -8574,10 +9064,10 @@
       "__uuid__": "dbed4d42-f56f-4ffd-9aea-992c1fa91959"
     },
     "linkedNode": {
-      "__id__": 125
+      "__id__": 131
     },
     "popupEventHandler": {
-      "__id__": 263
+      "__id__": 291
     },
     "missionInterface": {
       "__id__": 88
@@ -8602,7 +9092,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 254
+      "__id__": 282
     },
     "_enabled": true,
     "_defaultClip": null,
@@ -8618,27 +9108,27 @@
     "_name": "block3_icon",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 225
+      "__id__": 253
     },
     "_children": [
       {
-        "__id__": 266
+        "__id__": 294
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 270
+        "__id__": 298
       },
       {
-        "__id__": 271
+        "__id__": 299
       },
       {
-        "__id__": 273
+        "__id__": 301
       },
       {
-        "__id__": 275
+        "__id__": 303
       }
     ],
     "_prefab": null,
@@ -8683,20 +9173,20 @@
     "_name": "icon_fill",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 265
+      "__id__": 293
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 267
+        "__id__": 295
       },
       {
-        "__id__": 268
+        "__id__": 296
       },
       {
-        "__id__": 269
+        "__id__": 297
       }
     ],
     "_prefab": null,
@@ -8741,7 +9231,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 266
+      "__id__": 294
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -8767,7 +9257,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 266
+      "__id__": 294
     },
     "_enabled": true,
     "_defaultClip": null,
@@ -8779,14 +9269,14 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 266
+      "__id__": 294
     },
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 87
     },
     "fillSprite": {
-      "__id__": 267
+      "__id__": 295
     },
     "fillRange": 0,
     "includedSteps": [
@@ -8802,7 +9292,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 265
+      "__id__": 293
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -8828,7 +9318,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 265
+      "__id__": 293
     },
     "_enabled": true,
     "transition": 0,
@@ -8852,7 +9342,7 @@
     "hoverSprite": null,
     "clickEvents": [
       {
-        "__id__": 272
+        "__id__": 300
       }
     ],
     "_N$interactable": true,
@@ -8874,13 +9364,13 @@
     "_N$normalSprite": null,
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 265
+      "__id__": 293
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 265
+      "__id__": 293
     },
     "component": "MissionButtonIconController",
     "handler": "toggleLinkedPopupWindow",
@@ -8891,7 +9381,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 265
+      "__id__": 293
     },
     "_enabled": true,
     "iconDefault": {
@@ -8901,10 +9391,10 @@
       "__uuid__": "69a2f9d2-0fea-45e5-8b0a-4a3d67cf1135"
     },
     "linkedNode": {
-      "__id__": 151
+      "__id__": 163
     },
     "popupEventHandler": {
-      "__id__": 274
+      "__id__": 302
     },
     "missionInterface": {
       "__id__": 88
@@ -8930,7 +9420,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 265
+      "__id__": 293
     },
     "_enabled": true,
     "_defaultClip": null,
@@ -8946,27 +9436,27 @@
     "_name": "block4_icon",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 225
+      "__id__": 253
     },
     "_children": [
       {
-        "__id__": 277
+        "__id__": 305
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 281
+        "__id__": 309
       },
       {
-        "__id__": 282
+        "__id__": 310
       },
       {
-        "__id__": 284
+        "__id__": 312
       },
       {
-        "__id__": 286
+        "__id__": 314
       }
     ],
     "_prefab": null,
@@ -9011,20 +9501,20 @@
     "_name": "icon_fill",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 276
+      "__id__": 304
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 278
+        "__id__": 306
       },
       {
-        "__id__": 279
+        "__id__": 307
       },
       {
-        "__id__": 280
+        "__id__": 308
       }
     ],
     "_prefab": null,
@@ -9069,7 +9559,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 277
+      "__id__": 305
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -9095,7 +9585,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 277
+      "__id__": 305
     },
     "_enabled": true,
     "_defaultClip": null,
@@ -9107,14 +9597,14 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 277
+      "__id__": 305
     },
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 87
     },
     "fillSprite": {
-      "__id__": 278
+      "__id__": 306
     },
     "fillRange": 0,
     "includedSteps": [
@@ -9130,7 +9620,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 276
+      "__id__": 304
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -9156,7 +9646,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 276
+      "__id__": 304
     },
     "_enabled": true,
     "transition": 0,
@@ -9180,7 +9670,7 @@
     "hoverSprite": null,
     "clickEvents": [
       {
-        "__id__": 283
+        "__id__": 311
       }
     ],
     "_N$interactable": true,
@@ -9202,13 +9692,13 @@
     "_N$normalSprite": null,
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 276
+      "__id__": 304
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 276
+      "__id__": 304
     },
     "component": "MissionButtonIconController",
     "handler": "toggleLinkedPopupWindow",
@@ -9219,7 +9709,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 276
+      "__id__": 304
     },
     "_enabled": true,
     "iconDefault": {
@@ -9229,10 +9719,10 @@
       "__uuid__": "8e78c8f1-4fe0-4a2f-83d1-972bbbe57803"
     },
     "linkedNode": {
-      "__id__": 185
+      "__id__": 205
     },
     "popupEventHandler": {
-      "__id__": 285
+      "__id__": 313
     },
     "missionInterface": {
       "__id__": 88
@@ -9258,7 +9748,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 276
+      "__id__": 304
     },
     "_enabled": true,
     "_defaultClip": null,
@@ -9274,11 +9764,11 @@
     "_name": "chest_info",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 225
+      "__id__": 253
     },
     "_children": [
       {
-        "__id__": 288
+        "__id__": 316
       }
     ],
     "_tag": -1,
@@ -9326,20 +9816,20 @@
     "_name": "chest_button",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 287
+      "__id__": 315
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 289
+        "__id__": 317
       },
       {
-        "__id__": 290
+        "__id__": 318
       },
       {
-        "__id__": 292
+        "__id__": 320
       }
     ],
     "_prefab": null,
@@ -9384,7 +9874,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 288
+      "__id__": 316
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -9410,7 +9900,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 288
+      "__id__": 316
     },
     "_enabled": true,
     "transition": 2,
@@ -9436,7 +9926,7 @@
     "hoverSprite": null,
     "clickEvents": [
       {
-        "__id__": 291
+        "__id__": 319
       }
     ],
     "_N$interactable": true,
@@ -9460,13 +9950,13 @@
     },
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 288
+      "__id__": 316
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 288
+      "__id__": 316
     },
     "component": "MissionButtonIconController",
     "handler": "toggleLinkedPopupWindow",
@@ -9477,7 +9967,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 288
+      "__id__": 316
     },
     "_enabled": true,
     "iconDefault": {
@@ -9487,10 +9977,10 @@
       "__uuid__": "35881dd2-c8ac-4e00-ab23-d68f3b750190"
     },
     "linkedNode": {
-      "__id__": 219
+      "__id__": 247
     },
     "popupEventHandler": {
-      "__id__": 293
+      "__id__": 321
     },
     "missionInterface": {
       "__id__": 88
@@ -9515,13 +10005,13 @@
     },
     "_children": [
       {
-        "__id__": 295
+        "__id__": 323
       },
       {
-        "__id__": 306
+        "__id__": 334
       },
       {
-        "__id__": 315
+        "__id__": 343
       }
     ],
     "_tag": -1,
@@ -9569,23 +10059,23 @@
     "_name": "reward_types",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 294
+      "__id__": 322
     },
     "_children": [
       {
-        "__id__": 296
+        "__id__": 324
       },
       {
-        "__id__": 298
+        "__id__": 326
       },
       {
-        "__id__": 300
+        "__id__": 328
       },
       {
-        "__id__": 302
+        "__id__": 330
       },
       {
-        "__id__": 304
+        "__id__": 332
       }
     ],
     "_tag": -1,
@@ -9633,14 +10123,14 @@
     "_name": "reward_type_01",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 295
+      "__id__": 323
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 297
+        "__id__": 325
       }
     ],
     "_prefab": null,
@@ -9685,7 +10175,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 296
+      "__id__": 324
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -9711,14 +10201,14 @@
     "_name": "reward_type_02",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 295
+      "__id__": 323
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 299
+        "__id__": 327
       }
     ],
     "_prefab": null,
@@ -9763,7 +10253,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 298
+      "__id__": 326
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -9789,14 +10279,14 @@
     "_name": "reward_type_03",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 295
+      "__id__": 323
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 301
+        "__id__": 329
       }
     ],
     "_prefab": null,
@@ -9841,7 +10331,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 300
+      "__id__": 328
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -9867,14 +10357,14 @@
     "_name": "reward_type_04",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 295
+      "__id__": 323
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 303
+        "__id__": 331
       }
     ],
     "_prefab": null,
@@ -9919,7 +10409,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 302
+      "__id__": 330
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -9945,14 +10435,14 @@
     "_name": "reward_type_05",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 295
+      "__id__": 323
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 305
+        "__id__": 333
       }
     ],
     "_prefab": null,
@@ -9997,7 +10487,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 304
+      "__id__": 332
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -10023,14 +10513,14 @@
     "_name": "reward_labels",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 294
+      "__id__": 322
     },
     "_children": [
       {
-        "__id__": 307
+        "__id__": 335
       },
       {
-        "__id__": 311
+        "__id__": 339
       }
     ],
     "_tag": -1,
@@ -10078,20 +10568,20 @@
     "_name": "award_label_steps",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 306
+      "__id__": 334
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 308
+        "__id__": 336
       },
       {
-        "__id__": 309
+        "__id__": 337
       },
       {
-        "__id__": 310
+        "__id__": 338
       }
     ],
     "_prefab": null,
@@ -10136,7 +10626,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 307
+      "__id__": 335
     },
     "_enabled": true,
     "_N$string": "<color=#FEF6B6><b></color><outline color=#82140D width=2>CONGRATULATIONS!</outline> \n<color=#FEF6B6><b></color><outline color=#82140D width=2>YOU'VE WON </outline>\n<color=#FEF6B6><b></color><outline color=#82140D width=2> 500 Chips</outline>",
@@ -10154,7 +10644,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 307
+      "__id__": 335
     },
     "_enabled": true,
     "_validPreview": true,
@@ -10166,7 +10656,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 307
+      "__id__": 335
     },
     "_enabled": true,
     "missionStepInterface": {
@@ -10178,20 +10668,20 @@
     "_name": "award_label_final",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 306
+      "__id__": 334
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 312
+        "__id__": 340
       },
       {
-        "__id__": 313
+        "__id__": 341
       },
       {
-        "__id__": 314
+        "__id__": 342
       }
     ],
     "_prefab": null,
@@ -10236,7 +10726,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 311
+      "__id__": 339
     },
     "_enabled": true,
     "_N$string": "<color=#FEF6B6><b></color><outline color=#82140D width=2>CONGRATULATIONS!</outline> \n<color=#FEF6B6><b></color><outline color=#82140D width=2>YOU'VE COMPLETED </outline>\n<color=#FEF6B6><b></color><outline color=#82140D width=2>THE MISSION!</outline>",
@@ -10254,7 +10744,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 311
+      "__id__": 339
     },
     "_enabled": true,
     "_validPreview": true,
@@ -10266,7 +10756,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 311
+      "__id__": 339
     },
     "_enabled": true,
     "missionStepInterface": {
@@ -10278,11 +10768,11 @@
     "_name": "milestone_labels",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 294
+      "__id__": 322
     },
     "_children": [
       {
-        "__id__": 316
+        "__id__": 344
       }
     ],
     "_tag": -1,
@@ -10330,20 +10820,20 @@
     "_name": "label_milestone",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 315
+      "__id__": 343
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 317
+        "__id__": 345
       },
       {
-        "__id__": 318
+        "__id__": 346
       },
       {
-        "__id__": 319
+        "__id__": 347
       }
     ],
     "_prefab": null,
@@ -10388,7 +10878,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 316
+      "__id__": 344
     },
     "_enabled": true,
     "_N$string": "<color=#FEF6B6><b></color><outline color=#82140D width=2>CONGRATULATIONS!</outline> \n<color=#FEF6B6><b></color><outline color=#82140D width=2>YOU'VE UNLOCKED </outline>\n<color=#FEF6B6><b></color><outline color=#82140D width=2>A SPLASH FRENZY CHARACTER!</outline>",
@@ -10406,7 +10896,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 316
+      "__id__": 344
     },
     "_enabled": true,
     "_validPreview": true,
@@ -10418,7 +10908,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 316
+      "__id__": 344
     },
     "_enabled": true,
     "missionStepInterface": {
@@ -10434,13 +10924,13 @@
     },
     "_children": [
       {
-        "__id__": 321
+        "__id__": 349
       },
       {
-        "__id__": 326
+        "__id__": 354
       },
       {
-        "__id__": 332
+        "__id__": 360
       }
     ],
     "_tag": -1,
@@ -10488,20 +10978,20 @@
     "_name": "button_claim",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 320
+      "__id__": 348
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 322
+        "__id__": 350
       },
       {
-        "__id__": 323
+        "__id__": 351
       },
       {
-        "__id__": 325
+        "__id__": 353
       }
     ],
     "_prefab": null,
@@ -10546,7 +11036,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 321
+      "__id__": 349
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -10572,7 +11062,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 321
+      "__id__": 349
     },
     "_enabled": true,
     "transition": 2,
@@ -10598,7 +11088,7 @@
     "hoverSprite": null,
     "clickEvents": [
       {
-        "__id__": 324
+        "__id__": 352
       }
     ],
     "_N$interactable": true,
@@ -10622,13 +11112,13 @@
     },
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 321
+      "__id__": 349
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 321
+      "__id__": 349
     },
     "component": "MissionStepClaimButton",
     "handler": "performMissionStepAction",
@@ -10639,7 +11129,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 321
+      "__id__": 349
     },
     "_enabled": true,
     "missionStepInterface": {
@@ -10651,11 +11141,11 @@
     "_name": "play",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 320
+      "__id__": 348
     },
     "_children": [
       {
-        "__id__": 327
+        "__id__": 355
       }
     ],
     "_tag": -1,
@@ -10703,20 +11193,20 @@
     "_name": "button_play",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 326
+      "__id__": 354
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 328
+        "__id__": 356
       },
       {
-        "__id__": 329
+        "__id__": 357
       },
       {
-        "__id__": 331
+        "__id__": 359
       }
     ],
     "_prefab": null,
@@ -10761,7 +11251,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 327
+      "__id__": 355
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -10787,7 +11277,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 327
+      "__id__": 355
     },
     "_enabled": true,
     "transition": 2,
@@ -10813,7 +11303,7 @@
     "hoverSprite": null,
     "clickEvents": [
       {
-        "__id__": 330
+        "__id__": 358
       }
     ],
     "_N$interactable": true,
@@ -10839,13 +11329,13 @@
       "__uuid__": "8845bb47-5768-4f77-9e81-dec7e07f0ff4"
     },
     "_N$target": {
-      "__id__": 327
+      "__id__": 355
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 327
+      "__id__": 355
     },
     "component": "MissionStepPlayButton",
     "handler": "performMissionStepAction",
@@ -10856,7 +11346,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 327
+      "__id__": 355
     },
     "_enabled": true,
     "missionStepInterface": {
@@ -10870,20 +11360,20 @@
     "_name": "button_close_orange",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 320
+      "__id__": 348
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 333
+        "__id__": 361
       },
       {
-        "__id__": 334
+        "__id__": 362
       },
       {
-        "__id__": 336
+        "__id__": 364
       }
     ],
     "_prefab": null,
@@ -10928,7 +11418,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 332
+      "__id__": 360
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -10954,7 +11444,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 332
+      "__id__": 360
     },
     "_enabled": true,
     "transition": 2,
@@ -10980,7 +11470,7 @@
     "hoverSprite": null,
     "clickEvents": [
       {
-        "__id__": 335
+        "__id__": 363
       }
     ],
     "_N$interactable": true,
@@ -11004,13 +11494,13 @@
     },
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 332
+      "__id__": 360
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 332
+      "__id__": 360
     },
     "component": "DispatchActionClose",
     "handler": "performAction",
@@ -11021,7 +11511,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 332
+      "__id__": 360
     },
     "_enabled": true,
     "_actionName": "close",
@@ -11058,7 +11548,9 @@
       {
         "__uuid__": "2cce001d-0aa2-48d6-ac31-2a6a2b8e7ff4"
       },
-      null,
+      {
+        "__uuid__": "044f49f4-95ad-44a3-968e-842d2d9a1254"
+      },
       null,
       null
     ],
@@ -11121,26 +11613,26 @@
     },
     "_children": [
       {
-        "__id__": 342
+        "__id__": 370
       },
       {
-        "__id__": 344
+        "__id__": 372
       },
       {
-        "__id__": 346
+        "__id__": 374
       },
       {
-        "__id__": 355
+        "__id__": 383
       }
     ],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 367
+        "__id__": 395
       },
       {
-        "__id__": 368
+        "__id__": 396
       }
     ],
     "_prefab": null,
@@ -11185,14 +11677,14 @@
     "_name": "background",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 341
+      "__id__": 369
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 343
+        "__id__": 371
       }
     ],
     "_prefab": null,
@@ -11237,7 +11729,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 342
+      "__id__": 370
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -11263,14 +11755,14 @@
     "_name": "logo",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 341
+      "__id__": 369
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 345
+        "__id__": 373
       }
     ],
     "_prefab": null,
@@ -11315,7 +11807,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 344
+      "__id__": 372
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -11341,17 +11833,17 @@
     "_name": "timer_item",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 341
+      "__id__": 369
     },
     "_children": [
       {
-        "__id__": 347
+        "__id__": 375
       },
       {
-        "__id__": 349
+        "__id__": 377
       },
       {
-        "__id__": 352
+        "__id__": 380
       }
     ],
     "_tag": -1,
@@ -11399,14 +11891,14 @@
     "_name": "progress_back",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 346
+      "__id__": 374
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 348
+        "__id__": 376
       }
     ],
     "_prefab": null,
@@ -11451,7 +11943,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 347
+      "__id__": 375
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -11477,17 +11969,17 @@
     "_name": "timer_label",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 346
+      "__id__": 374
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 350
+        "__id__": 378
       },
       {
-        "__id__": 351
+        "__id__": 379
       }
     ],
     "_prefab": null,
@@ -11532,7 +12024,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 349
+      "__id__": 377
     },
     "_enabled": true,
     "_N$string": "<color=#FEF6B6><b></color><outline color=#82140D width=2>PROMOTION ENDS IN: </outline>",
@@ -11550,7 +12042,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 349
+      "__id__": 377
     },
     "_enabled": true,
     "_validPreview": true,
@@ -11562,17 +12054,17 @@
     "_name": "timer_countdown",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 346
+      "__id__": 374
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 353
+        "__id__": 381
       },
       {
-        "__id__": 354
+        "__id__": 382
       }
     ],
     "_prefab": null,
@@ -11617,7 +12109,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 352
+      "__id__": 380
     },
     "_enabled": true,
     "_useOriginalSize": false,
@@ -11641,7 +12133,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 352
+      "__id__": 380
     },
     "_enabled": true,
     "onFinished": [],
@@ -11655,14 +12147,14 @@
     "_name": "buttons",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 341
+      "__id__": 369
     },
     "_children": [
       {
-        "__id__": 356
+        "__id__": 384
       },
       {
-        "__id__": 362
+        "__id__": 390
       }
     ],
     "_tag": -1,
@@ -11710,20 +12202,20 @@
     "_name": "button_see_progress",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 355
+      "__id__": 383
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 357
+        "__id__": 385
       },
       {
-        "__id__": 358
+        "__id__": 386
       },
       {
-        "__id__": 360
+        "__id__": 388
       }
     ],
     "_prefab": null,
@@ -11768,7 +12260,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 356
+      "__id__": 384
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -11794,7 +12286,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 356
+      "__id__": 384
     },
     "_enabled": true,
     "transition": 2,
@@ -11820,7 +12312,7 @@
     "hoverSprite": null,
     "clickEvents": [
       {
-        "__id__": 359
+        "__id__": 387
       }
     ],
     "_N$interactable": true,
@@ -11844,13 +12336,13 @@
     },
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 356
+      "__id__": 384
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 356
+      "__id__": 384
     },
     "component": "MissionInfoStatusController",
     "handler": "goToProgressPopup",
@@ -11861,11 +12353,11 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 356
+      "__id__": 384
     },
     "_enabled": true,
     "missonInfoNode": {
-      "__id__": 341
+      "__id__": 369
     },
     "missonStepNode": {
       "__id__": 4
@@ -11875,13 +12367,13 @@
     },
     "firstStep": 0,
     "missionEventHandler": {
-      "__id__": 361
+      "__id__": 389
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 356
+      "__id__": 384
     },
     "component": "MissionInfoStatusController",
     "handler": "",
@@ -11892,20 +12384,20 @@
     "_name": "button_close_orange",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 355
+      "__id__": 383
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 363
+        "__id__": 391
       },
       {
-        "__id__": 364
+        "__id__": 392
       },
       {
-        "__id__": 366
+        "__id__": 394
       }
     ],
     "_prefab": null,
@@ -11950,7 +12442,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 362
+      "__id__": 390
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -11976,7 +12468,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 362
+      "__id__": 390
     },
     "_enabled": true,
     "transition": 2,
@@ -12002,7 +12494,7 @@
     "hoverSprite": null,
     "clickEvents": [
       {
-        "__id__": 365
+        "__id__": 393
       }
     ],
     "_N$interactable": true,
@@ -12026,13 +12518,13 @@
     },
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 362
+      "__id__": 390
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 362
+      "__id__": 390
     },
     "component": "DispatchActionClose",
     "handler": "performAction",
@@ -12043,7 +12535,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 362
+      "__id__": 390
     },
     "_enabled": true,
     "_actionName": "close",
@@ -12054,7 +12546,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 341
+      "__id__": 369
     },
     "_enabled": true,
     "_defaultClip": null,
@@ -12073,7 +12565,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 341
+      "__id__": 369
     },
     "_enabled": true
   },
@@ -12093,11 +12585,11 @@
     "missionInterface": {
       "__id__": 88
     },
-    "_N$missionJSONString": "{\"templateID\":4,\"templateVersion\":15,\"id\":190,\"mission\":{\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepBet\",\"data\":{\"max\":\"10000000\",\"progress\":0,\"id\":0,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"500\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"500\"}}]},\"awarded\":false,\"buyInIDs\":[618],\"state\":\"active\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Bet a total of {max} on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"75\",\"progress\":0,\"id\":1,\"award\":{\"ProductPackageItemChips\":[{\"amount\":150000,\"promoData\":{\"name\":\"Chips\",\"amount\":150000}}]},\"awarded\":false,\"buyInIDs\":[618],\"minBet\":125000,\"state\":\"locked\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Spin {max} times with a minimum bet of 125000 on slot {slotname}\"}},{\"class\":\"MissionStepWinsThreshold\",\"data\":{\"max\":\"10000\",\"progress\":0,\"id\":2,\"award\":{\"ProductPackageItemChips\":[{\"amount\":150000,\"promoData\":{\"name\":\"Chips\",\"amount\":150000}}]},\"awarded\":false,\"buyInIDs\":[618],\"threshold\":2000,\"state\":\"locked\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Collect {max} wins over {threshold} on slot {slotname}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"10000\",\"progress\":0,\"id\":3,\"award\":{\"ProductPackageItemChips\":[{\"amount\":150000,\"promoData\":{\"name\":\"Chips\",\"amount\":150000}}]},\"awarded\":false,\"buyInIDs\":[618],\"spinCount\":5,\"wins\":[],\"state\":\"locked\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Win {max} chipsin {spinCount} consecutive spins on slot {slotname}\"}},{\"class\":\"MissionStepBigWins\",\"data\":{\"max\":\"2\",\"progress\":0,\"id\":4,\"award\":{\"ProductPackageItemChips\":[{\"amount\":150000,\"promoData\":{\"name\":\"Chips\",\"amount\":150000}}]},\"awarded\":false,\"buyInIDs\":[573],\"state\":\"locked\",\"edges\":[5],\"predecessors\":[3],\"formatString\":\"Collect {max} big wins on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"75\",\"progress\":0,\"id\":5,\"award\":{\"ProductPackageItemChips\":[{\"amount\":150000,\"promoData\":{\"name\":\"Chips\",\"amount\":150000}}]},\"awarded\":false,\"buyInIDs\":[573],\"minBet\":0,\"state\":\"locked\",\"edges\":[6],\"predecessors\":[4],\"formatString\":\"Spin {max} times on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"75\",\"progress\":0,\"id\":6,\"award\":{\"ProductPackageItemChips\":[{\"amount\":150000,\"promoData\":{\"name\":\"Chips\",\"amount\":150000}}]},\"awarded\":false,\"buyInIDs\":[618,573],\"minBet\":1000,\"state\":\"locked\",\"edges\":[7],\"predecessors\":[5],\"formatString\":\"Spin {max} times with a minimum bet of 1000 on slot {slotname}\"}},{\"class\":\"MissionStepGiftGiving\",\"data\":{\"max\":\"10\",\"progress\":0,\"id\":7,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"500\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"500\"}}]},\"awarded\":false,\"buyInIDs\":[618],\"giftIDs\":[282],\"state\":\"locked\",\"edges\":[8],\"predecessors\":[6],\"formatString\":\"Give {max} {giftname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"75\",\"progress\":0,\"id\":8,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"500\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"500\"}}]},\"awarded\":false,\"buyInIDs\":[573],\"minBet\":125000,\"state\":\"locked\",\"edges\":[9],\"predecessors\":[7],\"formatString\":\"Spin {max} times with a minimum bet of 125000 on slot {slotname}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":\"10000000\",\"progress\":0,\"id\":9,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"0\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"0\"}}]},\"awarded\":false,\"buyInIDs\":[618],\"state\":\"locked\",\"edges\":[10],\"predecessors\":[8],\"formatString\":\"Bet a total of {max} on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"75\",\"progress\":0,\"id\":10,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"500\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"500\"}}]},\"awarded\":false,\"buyInIDs\":[618],\"minBet\":0,\"state\":\"locked\",\"edges\":[11],\"predecessors\":[9],\"formatString\":\"Spin {max} times on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"75\",\"progress\":0,\"id\":11,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"500\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"500\"}}]},\"awarded\":false,\"buyInIDs\":[618],\"minBet\":0,\"state\":\"locked\",\"edges\":[12],\"predecessors\":[10],\"formatString\":\"Spin {max} times on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"75\",\"progress\":0,\"id\":12,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"500\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"500\"}}]},\"awarded\":false,\"buyInIDs\":[573],\"minBet\":0,\"state\":\"locked\",\"edges\":[13],\"predecessors\":[11],\"formatString\":\"Spin {max} times on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"10\",\"progress\":0,\"id\":13,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"500\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"500\"}}]},\"awarded\":false,\"buyInIDs\":[618],\"minBet\":1000,\"state\":\"locked\",\"edges\":[],\"predecessors\":[12],\"formatString\":\"Spin {max} times with a minimum bet of 1000 on slot {slotname}\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12],[13],[]],\"predecessors\":[[],[0],[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12]]}},\"awardData\":null,\"requireAwarded\":true,\"awarded\":false},\"secondsActive\":2,\"secondsRemaining\":3598,\"slotsData\":{\"573\":{\"name\":\"Big Fortune Valley\",\"customData\":{\"buyInID\":573,\"theme2_1\":\"fortunevalley\"}},\"618\":{\"name\":\"Wrath of Kong\",\"customData\":{\"buyInID\":618,\"theme2_1\":\"kong\"}}},\"giftsData\":{\"282\":{\"name\":\"Cat\"}}}",
-    "_N$instantiateMissionTrigger": true,
+    "_N$missionJSONString": "{\"templateID\":4,\"templateVersion\":15,\"id\":224,\"mission\":{\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepBet\",\"data\":{\"max\":\"10000000\",\"progress\":0,\"id\":0,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"500\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"500\"}}]},\"awarded\":false,\"buyInIDs\":[618],\"state\":\"active\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Bet a total of {max} on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"75\",\"progress\":0,\"id\":1,\"award\":{\"ProductPackageItemChips\":[{\"amount\":150000,\"promoData\":{\"name\":\"Chips\",\"amount\":150000}}]},\"awarded\":false,\"buyInIDs\":[618],\"minBet\":125000,\"state\":\"locked\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Spin {max} times with a minimum bet of 125000 on slot {slotname}\"}},{\"class\":\"MissionStepWinsThreshold\",\"data\":{\"max\":\"10000\",\"progress\":0,\"id\":2,\"award\":{\"ProductPackageItemChips\":[{\"amount\":150000,\"promoData\":{\"name\":\"Chips\",\"amount\":150000}}]},\"awarded\":false,\"buyInIDs\":[618],\"threshold\":2000,\"state\":\"locked\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Collect {max} wins over {threshold} on slot {slotname}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"10000\",\"progress\":0,\"id\":3,\"award\":{\"ProductPackageItemChips\":[{\"amount\":150000,\"promoData\":{\"name\":\"Chips\",\"amount\":150000}}]},\"awarded\":false,\"buyInIDs\":[618],\"spinCount\":5,\"wins\":[],\"state\":\"locked\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Win {max} chipsin {spinCount} consecutive spins on slot {slotname}\"}},{\"class\":\"MissionStepBigWins\",\"data\":{\"max\":\"2\",\"progress\":0,\"id\":4,\"award\":{\"ProductPackageItemChips\":[{\"amount\":150000,\"promoData\":{\"name\":\"Chips\",\"amount\":150000}}]},\"awarded\":false,\"buyInIDs\":[573],\"state\":\"locked\",\"edges\":[5],\"predecessors\":[3],\"formatString\":\"Collect {max} big wins on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"75\",\"progress\":0,\"id\":5,\"award\":{\"ProductPackageItemChips\":[{\"amount\":150000,\"promoData\":{\"name\":\"Chips\",\"amount\":150000}}]},\"awarded\":false,\"buyInIDs\":[573],\"minBet\":0,\"state\":\"locked\",\"edges\":[6],\"predecessors\":[4],\"formatString\":\"Spin {max} times on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"75\",\"progress\":0,\"id\":6,\"award\":{\"ProductPackageItemChips\":[{\"amount\":150000,\"promoData\":{\"name\":\"Chips\",\"amount\":150000}}]},\"awarded\":false,\"buyInIDs\":[618,573],\"minBet\":1000,\"state\":\"locked\",\"edges\":[7],\"predecessors\":[5],\"formatString\":\"Spin {max} times with a minimum bet of 1000 on slot {slotname}\"}},{\"class\":\"MissionStepGiftGiving\",\"data\":{\"max\":\"10\",\"progress\":0,\"id\":7,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"500\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"500\"}}]},\"awarded\":false,\"buyInIDs\":[618],\"giftIDs\":[282],\"state\":\"locked\",\"edges\":[8],\"predecessors\":[6],\"formatString\":\"Give {max} {giftname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"75\",\"progress\":0,\"id\":8,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"500\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"500\"}}]},\"awarded\":false,\"buyInIDs\":[573],\"minBet\":125000,\"state\":\"locked\",\"edges\":[9],\"predecessors\":[7],\"formatString\":\"Spin {max} times with a minimum bet of 125000 on slot {slotname}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":\"10000000\",\"progress\":0,\"id\":9,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"0\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"0\"}}]},\"awarded\":false,\"buyInIDs\":[618],\"state\":\"locked\",\"edges\":[10],\"predecessors\":[8],\"formatString\":\"Bet a total of {max} on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"75\",\"progress\":0,\"id\":10,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"500\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"500\"}}]},\"awarded\":false,\"buyInIDs\":[618],\"minBet\":0,\"state\":\"locked\",\"edges\":[11],\"predecessors\":[9],\"formatString\":\"Spin {max} times on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"75\",\"progress\":0,\"id\":11,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"500\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"500\"}}]},\"awarded\":false,\"buyInIDs\":[618],\"minBet\":0,\"state\":\"locked\",\"edges\":[12],\"predecessors\":[10],\"formatString\":\"Spin {max} times on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"75\",\"progress\":0,\"id\":12,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"500\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"500\"}}]},\"awarded\":false,\"buyInIDs\":[573],\"minBet\":0,\"state\":\"locked\",\"edges\":[13],\"predecessors\":[11],\"formatString\":\"Spin {max} times on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"10\",\"progress\":0,\"id\":13,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"500\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"500\"}}]},\"awarded\":false,\"buyInIDs\":[618],\"minBet\":1000,\"state\":\"locked\",\"edges\":[],\"predecessors\":[12],\"formatString\":\"Spin {max} times with a minimum bet of 1000 on slot {slotname}\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12],[13],[]],\"predecessors\":[[],[0],[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12]]}},\"awardData\":null,\"requireAwarded\":true,\"awarded\":false},\"secondsActive\":208,\"secondsRemaining\":3392,\"slotsData\":{\"573\":{\"name\":\"Big Fortune Valley\",\"customData\":{\"buyInID\":573,\"theme2_1\":\"fortunevalley\"}},\"618\":{\"name\":\"Wrath of Kong\",\"customData\":{\"buyInID\":618,\"theme2_1\":\"kong\"}}},\"giftsData\":{\"282\":{\"name\":\"Cat\"}}}",
+    "_N$instantiateMissionTrigger": false,
     "_N$retrieveMissionTrigger": false,
     "_N$updatePreviewDataTrigger": false,
-    "_N$componentUpdateCallbackTrigger": false
+    "_N$componentUpdateCallbackTrigger": true
   },
   {
     "__type__": "cc.Animation",
@@ -12121,9 +12613,15 @@
       {
         "__uuid__": "ea9f2695-0834-4885-a4dc-228d2972b32b"
       },
-      null,
-      null,
-      null,
+      {
+        "__uuid__": "b9894e8b-034a-4584-bc20-a254e3022539"
+      },
+      {
+        "__uuid__": "1056334c-cff0-46f7-9917-bbef642597b7"
+      },
+      {
+        "__uuid__": "b26dacdf-2130-4065-8f6c-4674c1cc7bda"
+      },
       null,
       null,
       null,
@@ -12175,7 +12673,7 @@
     },
     "_enabled": true,
     "missonInfoNode": {
-      "__id__": 341
+      "__id__": 369
     },
     "missonStepNode": {
       "__id__": 4
@@ -12185,13 +12683,13 @@
     },
     "firstStep": 0,
     "missionEventHandler": {
-      "__id__": 373
+      "__id__": 401
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 341
+      "__id__": 369
     },
     "component": "MissionInfoComponent",
     "handler": "ontriggerMissionInfoNode",

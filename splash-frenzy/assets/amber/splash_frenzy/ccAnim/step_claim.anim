@@ -3,7 +3,7 @@
   "_name": "step_claim",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 1.5,
+  "_duration": 1.15,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -19,7 +19,7 @@
                 "value": 0
               },
               {
-                "frame": 1.1666666666666667,
+                "frame": 1,
                 "value": 1
               }
             ]
@@ -49,11 +49,11 @@
           "StepIconProgressComponent": {
             "fillRange": [
               {
-                "frame": 0.3333333333333333,
+                "frame": 0.25,
                 "value": 0
               },
               {
-                "frame": 0.5,
+                "frame": 0.4166666666666667,
                 "value": 1
               }
             ]
@@ -66,11 +66,11 @@
           "StepIconProgressComponent": {
             "fillRange": [
               {
-                "frame": 0.6666666666666666,
+                "frame": 0.5,
                 "value": 0
               },
               {
-                "frame": 0.8333333333333334,
+                "frame": 0.6666666666666666,
                 "value": 1
               }
             ]
@@ -83,11 +83,11 @@
           "StepIconProgressComponent": {
             "fillRange": [
               {
-                "frame": 1,
+                "frame": 0.75,
                 "value": 0
               },
               {
-                "frame": 1.1666666666666667,
+                "frame": 0.9166666666666666,
                 "value": 1
               }
             ]
@@ -100,11 +100,11 @@
           "StepIconProgressComponent": {
             "fillRange": [
               {
-                "frame": 1.3333333333333333,
+                "frame": 0.9833333333333333,
                 "value": 0
               },
               {
-                "frame": 1.5,
+                "frame": 1.15,
                 "value": 1
               }
             ]

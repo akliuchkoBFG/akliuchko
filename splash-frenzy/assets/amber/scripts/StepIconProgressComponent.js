@@ -22,8 +22,6 @@ cc.Class({
         },
     },
 
-    // TEST TEXT FOR GIT TESING CHANGE; remove this.
-
     onLoad: function () {
         this.missionStepInterface.on('updateMissionStepDataEvent', this.isIconInCurrentStepBlock, this);
         this.missionStepInterface.getComponent(cc.Animation).on('finished', this.onStepClaimAnimation, this);
@@ -34,7 +32,7 @@ cc.Class({
             return;
         }
         if (this.isUpdate) {
-            this.updateStepBlockIcon(this.fullRange);
+            this.updateStepBlockIcon();
         }
     },
 
@@ -47,17 +45,15 @@ cc.Class({
         }
     },
 
-    updateStepBlockIcon: function (range) {
-        let amount = range;
+    updateStepBlockIcon: function () {
+        let amount = 0;
         if (this.fillSprite) {
-            if (!range) {
-                const numberOfIncludedSteps = this.includedSteps.length;
-                const fillRangePortion = 1 / numberOfIncludedSteps;
-                if (this.prevStep) {
-                    let position = this.includedSteps.indexOf(this.prevStep * 1);
-                    if (position !== -1) {
-                        amount = (position + 1) * fillRangePortion;
-                    }
+            const numberOfIncludedSteps = this.includedSteps.length;
+            const fillRangePortion = 1 / numberOfIncludedSteps;
+            if (this.prevStep) {
+                let position = this.includedSteps.indexOf(this.prevStep * 1);
+                if (position !== -1) {
+                    amount = (position + 1) * fillRangePortion;
                 }
             }
             this.fillSprite.fillRange = amount;
@@ -70,12 +66,12 @@ cc.Class({
         const lastStepInBlock = this.includedSteps[this.includedSteps.length -1];
 
         if (currentStepNumber > lastStepInBlock) {
-            this.fullRange = 1;
-            this.updateStepBlockIcon(this.fullRange);
+            this.fillSprite.fillRange = 1;
         } else if (this.includedSteps && this.missionStepInterface.stepID) {
             this.prevStep = this.missionStepInterface.stepID * 1 - 1;
             if (this.includedSteps.indexOf(this.prevStep) !== -1) {
-                this.fullRange = 0;
+                this.fillSprite.fillRange = 0;
+                this.isUpdate = true;
             }
         }
     }
