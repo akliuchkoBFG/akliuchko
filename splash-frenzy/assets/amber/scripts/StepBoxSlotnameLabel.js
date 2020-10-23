@@ -43,7 +43,7 @@ cc.Class({
 			stepBoxComp.missionInterface._stepData[stepId].data;
 
 		if (this.stepBoxData) {
-			let currentStepBuyInID = this.stepBoxData.buyInIDs[0];
+			const currentStepBuyInID = this._getStepBuyinId(this.stepBoxData);
 			this.slotName = this._getSlotName(currentStepBuyInID);
 			this.activeColor = stepBoxComp.stepStatus == 'locked' ? this.colorLock : this.colorCompleted;
 
@@ -53,6 +53,22 @@ cc.Class({
 	
 			this._populateRTData(rtLabel);
 		}
+	},
+
+	_getStepBuyinId: function (stepData) {
+		let firstBuyInID = '';
+		const slotsData = this.missionStepInterface &&
+						this.missionStepInterface.missionInterface &&
+						this.missionStepInterface.missionInterface._missionData &&
+						this.missionStepInterface.missionInterface._missionData.slotsData;
+		if (stepData.hasOwnProperty('buyInIDs')) {
+			firstBuyInID = stepData.buyInIDs[0];
+		} else if (slotsData) {
+			// get the fist buyInID from Slotsdata if there are no buyInID's in step;
+			const slot = slotsData[Object.keys(slotsData)[0]];
+			firstBuyInID = slot.customData.buyInID;
+		}
+		return firstBuyInID;
 	},
 
 	_getSlotName: function(buyInID) {

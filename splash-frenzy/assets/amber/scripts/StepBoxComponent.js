@@ -22,7 +22,7 @@ cc.Class({
         },
     },
 
-    start: function () {
+    onLoad: function () {
         const missionInterfaceComp = this.missionInterface;
         if (missionInterfaceComp) {
             this.currentStep = missionInterfaceComp.getStepData(this.stepId);

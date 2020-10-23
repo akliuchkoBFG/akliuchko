@@ -1,6 +1,6 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "step3",
+  "_name": "step5",
   "_objFlags": 0,
   "_rawFiles": null,
   "_duration": 4,
@@ -271,7 +271,7 @@
           "active": [
             {
               "frame": 0,
-              "value": false
+              "value": true
             }
           ]
         }
@@ -322,6 +322,16 @@
             {
               "frame": 0,
               "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/static_fish": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
             }
           ]
         }

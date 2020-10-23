@@ -1,0 +1,140 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "win_chips",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 3.9,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "collect_container/animated_items/jellyfish_anim": {
+        "props": {}
+      },
+      "award_container/reward_types": {
+        "props": {
+          "active": [
+            {
+              "frame": 0.48333333333333334,
+              "value": true
+            },
+            {
+              "frame": 3.9,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.48333333333333334,
+              "value": 0
+            },
+            {
+              "frame": 0.9,
+              "value": 255
+            },
+            {
+              "frame": 3.4833333333333334,
+              "value": 255
+            },
+            {
+              "frame": 3.9,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "award_container/reward_labels": {
+        "props": {
+          "active": [
+            {
+              "frame": 0.48333333333333334,
+              "value": true
+            },
+            {
+              "frame": 3.9,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.48333333333333334,
+              "value": 0
+            },
+            {
+              "frame": 0.9,
+              "value": 255
+            },
+            {
+              "frame": 3.4833333333333334,
+              "value": 255
+            },
+            {
+              "frame": 3.9,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "progress_container/how_to_play": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "award_container/reward_types/reward_type_03": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "award_container/reward_types/reward_type_02": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "award_container/reward_types/reward_type_04": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "award_container/reward_types/reward_type_01": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

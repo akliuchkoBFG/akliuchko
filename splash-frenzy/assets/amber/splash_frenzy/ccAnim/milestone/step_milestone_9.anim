@@ -1,6 +1,6 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "step_milestone_5",
+  "_name": "step_milestone_9",
   "_objFlags": 0,
   "_rawFiles": null,
   "_duration": 9.5,
@@ -60,28 +60,7 @@
         "props": {}
       },
       "collect_container/static_fish": {
-        "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": true
-            }
-          ],
-          "opacity": [
-            {
-              "frame": 0,
-              "value": 0
-            },
-            {
-              "frame": 8.516666666666667,
-              "value": 0
-            },
-            {
-              "frame": 9.016666666666667,
-              "value": 255
-            }
-          ]
-        }
+        "props": {}
       },
       "collect_container/animated_items/fish_anim": {
         "props": {
@@ -111,10 +90,63 @@
           ]
         }
       },
-      "progress_container/progress_buttons/block3_icon": {
-        "props": {}
+      "collect_container/static_mantaray": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 8.516666666666667,
+              "value": 0
+            },
+            {
+              "frame": 9.016666666666667,
+              "value": 255
+            }
+          ]
+        }
       },
-      "progress_container/progress_buttons/block2_icon": {
+      "collect_container/animated_items/mantaray_anim": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 3.5,
+              "value": true
+            },
+            {
+              "frame": 8.6,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 3.5,
+              "value": 255
+            },
+            {
+              "frame": 8.35,
+              "value": 255
+            },
+            {
+              "frame": 8.6,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "progress_container/progress_buttons/block3_icon": {
         "props": {
           "scaleX": [
             {

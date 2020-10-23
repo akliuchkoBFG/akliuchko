@@ -239,22 +239,12 @@
           "active": [
             {
               "frame": 0,
-              "value": false
+              "value": true
             }
           ]
         }
       },
       "mission_step/award_container/reward_types/reward_type_04": {
-        "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": false
-            }
-          ]
-        }
-      },
-      "mission_step/award_container/reward_types/reward_type_05": {
         "props": {
           "active": [
             {

@@ -63,10 +63,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 402
+        "__id__": 400
       },
       {
-        "__id__": 403
+        "__id__": 401
       }
     ],
     "_prefab": null,
@@ -118,29 +118,29 @@
         "__id__": 4
       },
       {
-        "__id__": 369
+        "__id__": 367
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 397
+        "__id__": 395
       },
       {
         "__id__": 88
       },
       {
-        "__id__": 398
+        "__id__": 396
       },
       {
-        "__id__": 399
+        "__id__": 397
       },
       {
         "__id__": 89
       },
       {
-        "__id__": 400
+        "__id__": 398
       }
     ],
     "_prefab": null,
@@ -219,7 +219,7 @@
         "__id__": 322
       },
       {
-        "__id__": 348
+        "__id__": 347
       }
     ],
     "_tag": -1,
@@ -229,16 +229,16 @@
         "__id__": 87
       },
       {
+        "__id__": 364
+      },
+      {
         "__id__": 365
       },
       {
         "__id__": 366
       },
       {
-        "__id__": 367
-      },
-      {
-        "__id__": 368
+        "__id__": 337
       }
     ],
     "_prefab": null,
@@ -2536,7 +2536,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": -7
+      "y": -6
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -2821,7 +2821,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 300,
-      "height": 78
+      "height": 52
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -2847,7 +2847,7 @@
       "__id__": 83
     },
     "_enabled": true,
-    "_N$string": "<color=#FEF6B6><b></color><outline color=#82140D width=2>Bet a total of 10M on slot Wrath of Kong </outline>",
+    "_N$string": "<color=#FEF6B6><b></color><outline color=#82140D width=2>Bet a total of 10K on slot Party Wave </outline>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 24,
     "_N$font": {
@@ -2867,7 +2867,7 @@
     "_enabled": true,
     "_validPreview": true,
     "_N$templateString": "<color=#FEF6B6><b></color><outline color=#82140D width=2>Bet a total of {max} on slot {slotname} </outline>",
-    "_N$testData": "{\"progress\":\"0\",\"max\":\"10M\",\"slotname\":\"Wrath of Kong\",\"minbet\":\"0\",\"currencyUpper\":\"CHIPS\",\"currencyLower\":\"chips\"}"
+    "_N$testData": "{\"progress\":\"0\",\"max\":\"10K\",\"slotname\":\"Party Wave\",\"minbet\":\"0\",\"currencyUpper\":\"CHIPS\",\"currencyLower\":\"chips\"}"
   },
   {
     "__type__": "9ef13KAG8RCLbO/cAA+eAX2",
@@ -8091,7 +8091,7 @@
       0.75,
       0.75,
       0.75,
-      0.75,
+      1,
       1,
       1,
       1,
@@ -8302,14 +8302,8 @@
       "__id__": 261
     },
     "_enabled": true,
-    "_defaultClip": {
-      "__uuid__": "3ea24cf2-1585-483c-b3c4-b442350fe4e8"
-    },
-    "_clips": [
-      {
-        "__uuid__": "3ea24cf2-1585-483c-b3c4-b442350fe4e8"
-      }
-    ],
+    "_defaultClip": null,
+    "_clips": [],
     "playOnLoad": false
   },
   {
@@ -9158,8 +9152,8 @@
     "_scaleY": 0.8,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -260.00000000000006,
-      "y": 90
+      "x": -260,
+      "y": 92
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -10008,10 +10002,10 @@
         "__id__": 323
       },
       {
-        "__id__": 334
+        "__id__": 332
       },
       {
-        "__id__": 343
+        "__id__": 342
       }
     ],
     "_tag": -1,
@@ -10073,9 +10067,6 @@
       },
       {
         "__id__": 330
-      },
-      {
-        "__id__": 332
       }
     ],
     "_tag": -1,
@@ -10127,7 +10118,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 325
@@ -10312,8 +10303,8 @@
     },
     "_rotationX": 0,
     "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
+    "_scaleX": 0.8,
+    "_scaleY": 0.8,
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -10432,84 +10423,6 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "reward_type_05",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 323
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": false,
-    "_components": [
-      {
-        "__id__": 333
-      }
-    ],
-    "_prefab": null,
-    "_id": "bfd5tpdH1Pyqh1w/Fumxp5",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 223,
-      "height": 191
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 332
-    },
-    "_enabled": true,
-    "_spriteFrame": {
-      "__uuid__": "34c1b6ed-8385-480b-a807-7d9fb8541f9c"
-    },
-    "_type": 0,
-    "_sizeMode": 0,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_atlas": null
-  },
-  {
-    "__type__": "cc.Node",
     "_name": "reward_labels",
     "_objFlags": 0,
     "_parent": {
@@ -10517,10 +10430,10 @@
     },
     "_children": [
       {
-        "__id__": 335
+        "__id__": 333
       },
       {
-        "__id__": 339
+        "__id__": 338
       }
     ],
     "_tag": -1,
@@ -10568,20 +10481,20 @@
     "_name": "award_label_steps",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 334
+      "__id__": 332
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
+        "__id__": 334
+      },
+      {
+        "__id__": 335
+      },
+      {
         "__id__": 336
-      },
-      {
-        "__id__": 337
-      },
-      {
-        "__id__": 338
       }
     ],
     "_prefab": null,
@@ -10602,8 +10515,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 247.72,
-      "height": 105
+      "width": 150.7,
+      "height": 70
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -10626,10 +10539,10 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 335
+      "__id__": 333
     },
     "_enabled": true,
-    "_N$string": "<color=#FEF6B6><b></color><outline color=#82140D width=2>CONGRATULATIONS!</outline> \n<color=#FEF6B6><b></color><outline color=#82140D width=2>YOU'VE WON </outline>\n<color=#FEF6B6><b></color><outline color=#82140D width=2> 500 Chips</outline>",
+    "_N$string": "<color=#FEF6B6><b></color><outline color=#82140D width=2>YOU'VE WON</outline>\n<color=#FEF6B6><b></color><outline color=#82140D width=2>10M Chips</outline>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 30,
     "_N$font": {
@@ -10644,44 +10557,72 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 335
+      "__id__": 333
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#FEF6B6><b></color><outline color=#82140D width=2>CONGRATULATIONS!</outline> \n<color=#FEF6B6><b></color><outline color=#82140D width=2>YOU'VE WON </outline>\n<color=#FEF6B6><b></color><outline color=#82140D width=2> {amount} {name}</outline>",
-    "_N$testData": "{\"name\":\"Chips\",\"amount\":\"500\"}"
+    "_N$templateString": "<color=#FEF6B6><b></color><outline color=#82140D width=2>YOU'VE WON</outline>\n<color=#FEF6B6><b></color><outline color=#82140D width=2>{amount} {name}</outline>",
+    "_N$testData": "{\"name\":\"Chips\",\"amount\":\"10M\"}"
   },
   {
-    "__type__": "4acd458PPBHt5NhFM+gTkbE",
+    "__type__": "417cbrX72tB8Jemtqnr9JV/",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 335
+      "__id__": 333
     },
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 87
-    }
+    },
+    "missionStepAutoClaimController": {
+      "__id__": 337
+    },
+    "awardIndex": 0,
+    "activeAwardKey": ""
+  },
+  {
+    "__type__": "c7669JrNMFPgbRziPJnJq6k",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 4
+    },
+    "_enabled": true,
+    "missionStepInterface": {
+      "__id__": 87
+    },
+    "milestoneSteps": [
+      0,
+      2,
+      5,
+      9,
+      13
+    ],
+    "awardAnimationIndex": 0,
+    "awardAnimationActive": false,
+    "claimDone": false,
+    "awardAnimationKey": ""
   },
   {
     "__type__": "cc.Node",
     "_name": "award_label_final",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 334
+      "__id__": 332
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
+        "__id__": 339
+      },
+      {
         "__id__": 340
       },
       {
         "__id__": 341
-      },
-      {
-        "__id__": 342
       }
     ],
     "_prefab": null,
@@ -10726,7 +10667,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 339
+      "__id__": 338
     },
     "_enabled": true,
     "_N$string": "<color=#FEF6B6><b></color><outline color=#82140D width=2>CONGRATULATIONS!</outline> \n<color=#FEF6B6><b></color><outline color=#82140D width=2>YOU'VE COMPLETED </outline>\n<color=#FEF6B6><b></color><outline color=#82140D width=2>THE MISSION!</outline>",
@@ -10744,19 +10685,19 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 339
+      "__id__": 338
     },
     "_enabled": true,
     "_validPreview": true,
     "_N$templateString": "<color=#FEF6B6><b></color><outline color=#82140D width=2>CONGRATULATIONS!</outline> \n<color=#FEF6B6><b></color><outline color=#82140D width=2>YOU'VE COMPLETED </outline>\n<color=#FEF6B6><b></color><outline color=#82140D width=2>THE MISSION!</outline>",
-    "_N$testData": "{\"name\":\"Chips\",\"amount\":\"500\"}"
+    "_N$testData": "{\"name\":\"Chips\",\"amount\":\"10M\"}"
   },
   {
     "__type__": "4acd458PPBHt5NhFM+gTkbE",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 339
+      "__id__": 338
     },
     "_enabled": true,
     "missionStepInterface": {
@@ -10772,7 +10713,7 @@
     },
     "_children": [
       {
-        "__id__": 344
+        "__id__": 343
       }
     ],
     "_tag": -1,
@@ -10820,20 +10761,20 @@
     "_name": "label_milestone",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 343
+      "__id__": 342
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
+        "__id__": 344
+      },
+      {
         "__id__": 345
       },
       {
         "__id__": 346
-      },
-      {
-        "__id__": 347
       }
     ],
     "_prefab": null,
@@ -10878,7 +10819,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 344
+      "__id__": 343
     },
     "_enabled": true,
     "_N$string": "<color=#FEF6B6><b></color><outline color=#82140D width=2>CONGRATULATIONS!</outline> \n<color=#FEF6B6><b></color><outline color=#82140D width=2>YOU'VE UNLOCKED </outline>\n<color=#FEF6B6><b></color><outline color=#82140D width=2>A SPLASH FRENZY CHARACTER!</outline>",
@@ -10896,19 +10837,19 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 344
+      "__id__": 343
     },
     "_enabled": true,
     "_validPreview": true,
     "_N$templateString": "<color=#FEF6B6><b></color><outline color=#82140D width=2>CONGRATULATIONS!</outline> \n<color=#FEF6B6><b></color><outline color=#82140D width=2>YOU'VE UNLOCKED </outline>\n<color=#FEF6B6><b></color><outline color=#82140D width=2>A SPLASH FRENZY CHARACTER!</outline>",
-    "_N$testData": "{\"name\":\"Chips\",\"amount\":\"500\"}"
+    "_N$testData": "{\"name\":\"Chips\",\"amount\":\"10M\"}"
   },
   {
     "__type__": "4acd458PPBHt5NhFM+gTkbE",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 344
+      "__id__": 343
     },
     "_enabled": true,
     "missionStepInterface": {
@@ -10924,13 +10865,13 @@
     },
     "_children": [
       {
-        "__id__": 349
+        "__id__": 348
       },
       {
-        "__id__": 354
+        "__id__": 353
       },
       {
-        "__id__": 360
+        "__id__": 359
       }
     ],
     "_tag": -1,
@@ -10978,20 +10919,20 @@
     "_name": "button_claim",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 348
+      "__id__": 347
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
+        "__id__": 349
+      },
+      {
         "__id__": 350
       },
       {
-        "__id__": 351
-      },
-      {
-        "__id__": 353
+        "__id__": 352
       }
     ],
     "_prefab": null,
@@ -11036,7 +10977,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 349
+      "__id__": 348
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -11062,7 +11003,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 349
+      "__id__": 348
     },
     "_enabled": true,
     "transition": 2,
@@ -11088,7 +11029,7 @@
     "hoverSprite": null,
     "clickEvents": [
       {
-        "__id__": 352
+        "__id__": 351
       }
     ],
     "_N$interactable": true,
@@ -11112,13 +11053,13 @@
     },
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 349
+      "__id__": 348
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 349
+      "__id__": 348
     },
     "component": "MissionStepClaimButton",
     "handler": "performMissionStepAction",
@@ -11129,7 +11070,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 349
+      "__id__": 348
     },
     "_enabled": true,
     "missionStepInterface": {
@@ -11141,11 +11082,11 @@
     "_name": "play",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 348
+      "__id__": 347
     },
     "_children": [
       {
-        "__id__": 355
+        "__id__": 354
       }
     ],
     "_tag": -1,
@@ -11193,20 +11134,20 @@
     "_name": "button_play",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 354
+      "__id__": 353
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
+        "__id__": 355
+      },
+      {
         "__id__": 356
       },
       {
-        "__id__": 357
-      },
-      {
-        "__id__": 359
+        "__id__": 358
       }
     ],
     "_prefab": null,
@@ -11251,7 +11192,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 355
+      "__id__": 354
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -11277,7 +11218,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 355
+      "__id__": 354
     },
     "_enabled": true,
     "transition": 2,
@@ -11303,7 +11244,7 @@
     "hoverSprite": null,
     "clickEvents": [
       {
-        "__id__": 358
+        "__id__": 357
       }
     ],
     "_N$interactable": true,
@@ -11329,13 +11270,13 @@
       "__uuid__": "8845bb47-5768-4f77-9e81-dec7e07f0ff4"
     },
     "_N$target": {
-      "__id__": 355
+      "__id__": 354
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 355
+      "__id__": 354
     },
     "component": "MissionStepPlayButton",
     "handler": "performMissionStepAction",
@@ -11346,13 +11287,13 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 355
+      "__id__": 354
     },
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 87
     },
-    "buyInID": 618,
+    "buyInID": 551,
     "index": 0
   },
   {
@@ -11360,20 +11301,20 @@
     "_name": "button_close_orange",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 348
+      "__id__": 347
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
+        "__id__": 360
+      },
+      {
         "__id__": 361
       },
       {
-        "__id__": 362
-      },
-      {
-        "__id__": 364
+        "__id__": 363
       }
     ],
     "_prefab": null,
@@ -11418,7 +11359,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 360
+      "__id__": 359
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -11444,7 +11385,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 360
+      "__id__": 359
     },
     "_enabled": true,
     "transition": 2,
@@ -11470,7 +11411,7 @@
     "hoverSprite": null,
     "clickEvents": [
       {
-        "__id__": 363
+        "__id__": 362
       }
     ],
     "_N$interactable": true,
@@ -11494,13 +11435,13 @@
     },
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 360
+      "__id__": 359
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 360
+      "__id__": 359
     },
     "component": "DispatchActionClose",
     "handler": "performAction",
@@ -11511,7 +11452,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 360
+      "__id__": 359
     },
     "_enabled": true,
     "_actionName": "close",
@@ -11551,8 +11492,24 @@
       {
         "__uuid__": "044f49f4-95ad-44a3-968e-842d2d9a1254"
       },
-      null,
-      null
+      {
+        "__uuid__": "2b28b387-7331-45c0-a00a-2ba3218d2915"
+      },
+      {
+        "__uuid__": "4b2d2c75-bbb1-4dc7-9916-c46a2f035e02"
+      },
+      {
+        "__uuid__": "c3944390-f190-411a-aab2-9baa9534ef18"
+      },
+      {
+        "__uuid__": "31de3e65-ff1c-4396-99f2-aee0534d630f"
+      },
+      {
+        "__uuid__": "2b3498b6-280b-409a-a708-dde202cef562"
+      },
+      {
+        "__uuid__": "34a13388-fd10-4025-97ca-bb4ffadc991a"
+      }
     ],
     "playOnLoad": false
   },
@@ -11586,25 +11543,6 @@
     }
   },
   {
-    "__type__": "c7669JrNMFPgbRziPJnJq6k",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 4
-    },
-    "_enabled": true,
-    "missionStepInterface": {
-      "__id__": 87
-    },
-    "milestoneSteps": [
-      0,
-      2,
-      5,
-      9,
-      13
-    ]
-  },
-  {
     "__type__": "cc.Node",
     "_name": "mission_info",
     "_objFlags": 0,
@@ -11613,26 +11551,26 @@
     },
     "_children": [
       {
+        "__id__": 368
+      },
+      {
         "__id__": 370
       },
       {
         "__id__": 372
       },
       {
-        "__id__": 374
-      },
-      {
-        "__id__": 383
+        "__id__": 381
       }
     ],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 395
+        "__id__": 393
       },
       {
-        "__id__": 396
+        "__id__": 394
       }
     ],
     "_prefab": null,
@@ -11677,14 +11615,14 @@
     "_name": "background",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 369
+      "__id__": 367
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 371
+        "__id__": 369
       }
     ],
     "_prefab": null,
@@ -11729,7 +11667,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 370
+      "__id__": 368
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -11755,14 +11693,14 @@
     "_name": "logo",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 369
+      "__id__": 367
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 373
+        "__id__": 371
       }
     ],
     "_prefab": null,
@@ -11807,7 +11745,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 372
+      "__id__": 370
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -11833,17 +11771,17 @@
     "_name": "timer_item",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 369
+      "__id__": 367
     },
     "_children": [
+      {
+        "__id__": 373
+      },
       {
         "__id__": 375
       },
       {
-        "__id__": 377
-      },
-      {
-        "__id__": 380
+        "__id__": 378
       }
     ],
     "_tag": -1,
@@ -11891,14 +11829,14 @@
     "_name": "progress_back",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 374
+      "__id__": 372
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 376
+        "__id__": 374
       }
     ],
     "_prefab": null,
@@ -11943,7 +11881,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 375
+      "__id__": 373
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -11969,17 +11907,17 @@
     "_name": "timer_label",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 374
+      "__id__": 372
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 378
+        "__id__": 376
       },
       {
-        "__id__": 379
+        "__id__": 377
       }
     ],
     "_prefab": null,
@@ -12024,7 +11962,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 377
+      "__id__": 375
     },
     "_enabled": true,
     "_N$string": "<color=#FEF6B6><b></color><outline color=#82140D width=2>PROMOTION ENDS IN: </outline>",
@@ -12042,7 +11980,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 377
+      "__id__": 375
     },
     "_enabled": true,
     "_validPreview": true,
@@ -12054,17 +11992,17 @@
     "_name": "timer_countdown",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 374
+      "__id__": 372
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 381
+        "__id__": 379
       },
       {
-        "__id__": 382
+        "__id__": 380
       }
     ],
     "_prefab": null,
@@ -12109,7 +12047,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 380
+      "__id__": 378
     },
     "_enabled": true,
     "_useOriginalSize": false,
@@ -12133,7 +12071,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 380
+      "__id__": 378
     },
     "_enabled": true,
     "onFinished": [],
@@ -12147,14 +12085,14 @@
     "_name": "buttons",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 369
+      "__id__": 367
     },
     "_children": [
       {
-        "__id__": 384
+        "__id__": 382
       },
       {
-        "__id__": 390
+        "__id__": 388
       }
     ],
     "_tag": -1,
@@ -12202,20 +12140,20 @@
     "_name": "button_see_progress",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 383
+      "__id__": 381
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 385
+        "__id__": 383
+      },
+      {
+        "__id__": 384
       },
       {
         "__id__": 386
-      },
-      {
-        "__id__": 388
       }
     ],
     "_prefab": null,
@@ -12260,7 +12198,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 384
+      "__id__": 382
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -12286,7 +12224,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 384
+      "__id__": 382
     },
     "_enabled": true,
     "transition": 2,
@@ -12312,7 +12250,7 @@
     "hoverSprite": null,
     "clickEvents": [
       {
-        "__id__": 387
+        "__id__": 385
       }
     ],
     "_N$interactable": true,
@@ -12336,13 +12274,13 @@
     },
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 384
+      "__id__": 382
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 384
+      "__id__": 382
     },
     "component": "MissionInfoStatusController",
     "handler": "goToProgressPopup",
@@ -12353,11 +12291,11 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 384
+      "__id__": 382
     },
     "_enabled": true,
     "missonInfoNode": {
-      "__id__": 369
+      "__id__": 367
     },
     "missonStepNode": {
       "__id__": 4
@@ -12367,13 +12305,13 @@
     },
     "firstStep": 0,
     "missionEventHandler": {
-      "__id__": 389
+      "__id__": 387
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 384
+      "__id__": 382
     },
     "component": "MissionInfoStatusController",
     "handler": "",
@@ -12384,20 +12322,20 @@
     "_name": "button_close_orange",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 383
+      "__id__": 381
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 391
+        "__id__": 389
+      },
+      {
+        "__id__": 390
       },
       {
         "__id__": 392
-      },
-      {
-        "__id__": 394
       }
     ],
     "_prefab": null,
@@ -12442,7 +12380,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 390
+      "__id__": 388
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -12468,7 +12406,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 390
+      "__id__": 388
     },
     "_enabled": true,
     "transition": 2,
@@ -12494,7 +12432,7 @@
     "hoverSprite": null,
     "clickEvents": [
       {
-        "__id__": 393
+        "__id__": 391
       }
     ],
     "_N$interactable": true,
@@ -12518,13 +12456,13 @@
     },
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 390
+      "__id__": 388
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 390
+      "__id__": 388
     },
     "component": "DispatchActionClose",
     "handler": "performAction",
@@ -12535,7 +12473,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 390
+      "__id__": 388
     },
     "_enabled": true,
     "_actionName": "close",
@@ -12546,7 +12484,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 369
+      "__id__": 367
     },
     "_enabled": true,
     "_defaultClip": null,
@@ -12565,7 +12503,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 369
+      "__id__": 367
     },
     "_enabled": true
   },
@@ -12579,15 +12517,15 @@
     "_enabled": true,
     "editorOnly": true,
     "instantiationSource": "test01",
-    "templateID": 4,
-    "templateName": "[ROUGH] 15 step mission - Claim Not Required",
+    "templateID": 9,
+    "templateName": "14 step mission with proper actions + rewards - Claim Required (Amber Copy)",
     "missionDataIndex": 0,
     "missionInterface": {
       "__id__": 88
     },
-    "_N$missionJSONString": "{\"templateID\":4,\"templateVersion\":15,\"id\":224,\"mission\":{\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepBet\",\"data\":{\"max\":\"10000000\",\"progress\":0,\"id\":0,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"500\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"500\"}}]},\"awarded\":false,\"buyInIDs\":[618],\"state\":\"active\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Bet a total of {max} on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"75\",\"progress\":0,\"id\":1,\"award\":{\"ProductPackageItemChips\":[{\"amount\":150000,\"promoData\":{\"name\":\"Chips\",\"amount\":150000}}]},\"awarded\":false,\"buyInIDs\":[618],\"minBet\":125000,\"state\":\"locked\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Spin {max} times with a minimum bet of 125000 on slot {slotname}\"}},{\"class\":\"MissionStepWinsThreshold\",\"data\":{\"max\":\"10000\",\"progress\":0,\"id\":2,\"award\":{\"ProductPackageItemChips\":[{\"amount\":150000,\"promoData\":{\"name\":\"Chips\",\"amount\":150000}}]},\"awarded\":false,\"buyInIDs\":[618],\"threshold\":2000,\"state\":\"locked\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Collect {max} wins over {threshold} on slot {slotname}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"10000\",\"progress\":0,\"id\":3,\"award\":{\"ProductPackageItemChips\":[{\"amount\":150000,\"promoData\":{\"name\":\"Chips\",\"amount\":150000}}]},\"awarded\":false,\"buyInIDs\":[618],\"spinCount\":5,\"wins\":[],\"state\":\"locked\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Win {max} chipsin {spinCount} consecutive spins on slot {slotname}\"}},{\"class\":\"MissionStepBigWins\",\"data\":{\"max\":\"2\",\"progress\":0,\"id\":4,\"award\":{\"ProductPackageItemChips\":[{\"amount\":150000,\"promoData\":{\"name\":\"Chips\",\"amount\":150000}}]},\"awarded\":false,\"buyInIDs\":[573],\"state\":\"locked\",\"edges\":[5],\"predecessors\":[3],\"formatString\":\"Collect {max} big wins on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"75\",\"progress\":0,\"id\":5,\"award\":{\"ProductPackageItemChips\":[{\"amount\":150000,\"promoData\":{\"name\":\"Chips\",\"amount\":150000}}]},\"awarded\":false,\"buyInIDs\":[573],\"minBet\":0,\"state\":\"locked\",\"edges\":[6],\"predecessors\":[4],\"formatString\":\"Spin {max} times on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"75\",\"progress\":0,\"id\":6,\"award\":{\"ProductPackageItemChips\":[{\"amount\":150000,\"promoData\":{\"name\":\"Chips\",\"amount\":150000}}]},\"awarded\":false,\"buyInIDs\":[618,573],\"minBet\":1000,\"state\":\"locked\",\"edges\":[7],\"predecessors\":[5],\"formatString\":\"Spin {max} times with a minimum bet of 1000 on slot {slotname}\"}},{\"class\":\"MissionStepGiftGiving\",\"data\":{\"max\":\"10\",\"progress\":0,\"id\":7,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"500\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"500\"}}]},\"awarded\":false,\"buyInIDs\":[618],\"giftIDs\":[282],\"state\":\"locked\",\"edges\":[8],\"predecessors\":[6],\"formatString\":\"Give {max} {giftname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"75\",\"progress\":0,\"id\":8,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"500\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"500\"}}]},\"awarded\":false,\"buyInIDs\":[573],\"minBet\":125000,\"state\":\"locked\",\"edges\":[9],\"predecessors\":[7],\"formatString\":\"Spin {max} times with a minimum bet of 125000 on slot {slotname}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":\"10000000\",\"progress\":0,\"id\":9,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"0\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"0\"}}]},\"awarded\":false,\"buyInIDs\":[618],\"state\":\"locked\",\"edges\":[10],\"predecessors\":[8],\"formatString\":\"Bet a total of {max} on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"75\",\"progress\":0,\"id\":10,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"500\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"500\"}}]},\"awarded\":false,\"buyInIDs\":[618],\"minBet\":0,\"state\":\"locked\",\"edges\":[11],\"predecessors\":[9],\"formatString\":\"Spin {max} times on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"75\",\"progress\":0,\"id\":11,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"500\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"500\"}}]},\"awarded\":false,\"buyInIDs\":[618],\"minBet\":0,\"state\":\"locked\",\"edges\":[12],\"predecessors\":[10],\"formatString\":\"Spin {max} times on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"75\",\"progress\":0,\"id\":12,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"500\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"500\"}}]},\"awarded\":false,\"buyInIDs\":[573],\"minBet\":0,\"state\":\"locked\",\"edges\":[13],\"predecessors\":[11],\"formatString\":\"Spin {max} times on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"10\",\"progress\":0,\"id\":13,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"500\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"500\"}}]},\"awarded\":false,\"buyInIDs\":[618],\"minBet\":1000,\"state\":\"locked\",\"edges\":[],\"predecessors\":[12],\"formatString\":\"Spin {max} times with a minimum bet of 1000 on slot {slotname}\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12],[13],[]],\"predecessors\":[[],[0],[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12]]}},\"awardData\":null,\"requireAwarded\":true,\"awarded\":false},\"secondsActive\":208,\"secondsRemaining\":3392,\"slotsData\":{\"573\":{\"name\":\"Big Fortune Valley\",\"customData\":{\"buyInID\":573,\"theme2_1\":\"fortunevalley\"}},\"618\":{\"name\":\"Wrath of Kong\",\"customData\":{\"buyInID\":618,\"theme2_1\":\"kong\"}}},\"giftsData\":{\"282\":{\"name\":\"Cat\"}}}",
+    "_N$missionJSONString": "{\"templateID\":9,\"templateVersion\":2,\"id\":294,\"mission\":{\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepBet\",\"data\":{\"max\":\"10000\",\"progress\":0,\"id\":0,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemFreeSpins\":[{\"buyInID\":618,\"betSize\":\"500\",\"amount\":5,\"promoData\":{\"name\":\"Free Spins\",\"amount\":5,\"launchData\":{\"buyInID\":618,\"theme2_1\":\"kong\"},\"gridButton\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null},\"buyInID\":618,\"slotMachine\":\"Wrath of Kong\",\"betValue\":\"25,000\"}}]},\"awarded\":false,\"buyInIDs\":[551],\"state\":\"active\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Bet a total of {max} on slot {slotname}\"}},{\"class\":\"MissionStepBigWins\",\"data\":{\"max\":\"2\",\"progress\":0,\"id\":1,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}]},\"awarded\":false,\"state\":\"locked\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Collect {max} big wins on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"2\",\"progress\":0,\"id\":2,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemCollectionChest\":[{\"tier\":\"1\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Large\",\"tier\":\"1\"}}]},\"awarded\":false,\"minBet\":0,\"state\":\"locked\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Spin {max} times on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"3\",\"progress\":0,\"id\":3,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}]},\"awarded\":false,\"buyInIDs\":[603,604,605],\"minBet\":0,\"state\":\"locked\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Spin {max} times on slot {slotname}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":\"10000\",\"progress\":0,\"id\":4,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}]},\"awarded\":false,\"buyInIDs\":[573,574,575],\"state\":\"locked\",\"edges\":[5],\"predecessors\":[3],\"formatString\":\"Bet a total of {max} on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"2\",\"progress\":0,\"id\":5,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemFreeSpins\":[{\"buyInID\":618,\"betSize\":\"500\",\"amount\":5,\"promoData\":{\"name\":\"Free Spins\",\"amount\":5,\"launchData\":{\"buyInID\":618,\"theme2_1\":\"kong\"},\"gridButton\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null},\"buyInID\":618,\"slotMachine\":\"Wrath of Kong\",\"betValue\":\"25,000\"}}]},\"awarded\":false,\"minBet\":0,\"state\":\"locked\",\"edges\":[6],\"predecessors\":[4],\"formatString\":\"Spin {max} times on slot {slotname}\"}},{\"class\":\"MissionStepBigWins\",\"data\":{\"max\":\"2\",\"progress\":0,\"id\":6,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}]},\"awarded\":false,\"state\":\"locked\",\"edges\":[7],\"predecessors\":[5],\"formatString\":\"Collect {max} big wins on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"2\",\"progress\":0,\"id\":7,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}]},\"awarded\":false,\"minBet\":0,\"state\":\"locked\",\"edges\":[8],\"predecessors\":[6],\"formatString\":\"Spin {max} times on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"3\",\"progress\":0,\"id\":8,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}]},\"awarded\":false,\"buyInIDs\":[652,653,654],\"minBet\":0,\"state\":\"locked\",\"edges\":[9],\"predecessors\":[7],\"formatString\":\"Spin {max} times on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"2\",\"progress\":0,\"id\":9,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemCollectionChest\":[{\"tier\":\"1\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Large\",\"tier\":\"1\"}}]},\"awarded\":false,\"minBet\":0,\"state\":\"locked\",\"edges\":[10],\"predecessors\":[8],\"formatString\":\"Spin {max} times on slot {slotname}\"}},{\"class\":\"MissionStepGiftGiving\",\"data\":{\"max\":\"2\",\"progress\":0,\"id\":10,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}]},\"awarded\":false,\"giftIDs\":[282],\"state\":\"locked\",\"edges\":[11],\"predecessors\":[9],\"formatString\":\"Give {max} {giftname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"3\",\"progress\":0,\"id\":11,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}]},\"awarded\":false,\"buyInIDs\":[551,552,553],\"minBet\":0,\"state\":\"locked\",\"edges\":[12],\"predecessors\":[10],\"formatString\":\"Spin {max} times on slot {slotname}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":\"10000\",\"progress\":0,\"id\":12,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}]},\"awarded\":false,\"buyInIDs\":[630,631,632],\"state\":\"locked\",\"edges\":[13],\"predecessors\":[11],\"formatString\":\"Bet a total of {max} on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"2\",\"progress\":0,\"id\":13,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemCollectionChest\":[{\"tier\":\"1\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Large\",\"tier\":\"1\"}}],\"ProductPackageItemCollectionFrames\":[{\"amount\":\"1\",\"frameID\":\"promo.newYears2020\",\"promoData\":{\"name\":\"Collection Frames\",\"amount\":\"1\"}}]},\"awarded\":false,\"minBet\":0,\"state\":\"locked\",\"edges\":[],\"predecessors\":[12],\"formatString\":\"Spin {max} times on slot {slotname}\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12],[13],[]],\"predecessors\":[[],[0],[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12]]}},\"awardData\":null,\"requireAwarded\":true,\"awarded\":false},\"secondsActive\":71,\"secondsRemaining\":10729,\"slotsData\":{\"551\":{\"name\":\"Party Wave\",\"customData\":{\"buyInID\":551,\"theme2_1\":\"surfing\"}},\"552\":{\"name\":\"Party Wave VIP\",\"customData\":{\"buyInID\":552,\"theme2_1\":\"surfing\"}},\"553\":{\"name\":\"High Roller Gala - Party Wave VIP\",\"customData\":{\"buyInID\":553,\"theme2_1\":\"surfing\"}},\"573\":{\"name\":\"Big Fortune Valley\",\"customData\":{\"buyInID\":573,\"theme2_1\":\"fortunevalley\"}},\"574\":{\"name\":\"Big Fortune Valley VIP\",\"customData\":{\"buyInID\":574,\"theme2_1\":\"fortunevalley\"}},\"575\":{\"name\":\"High Roller Gala - Big Fortune Valley VIP\",\"customData\":{\"buyInID\":575,\"theme2_1\":\"fortunevalley\"}},\"603\":{\"name\":\"Raging Reels\",\"customData\":{\"buyInID\":603,\"theme2_1\":\"billionaire\"}},\"604\":{\"name\":\"Raging Reels VIP\",\"customData\":{\"buyInID\":604,\"theme2_1\":\"billionaire\"}},\"605\":{\"name\":\"High Roller Gala - Raging Reels VIP\",\"customData\":{\"buyInID\":605,\"theme2_1\":\"billionaire\"}},\"630\":{\"name\":\"Tiger Coin Wilds\",\"customData\":{\"buyInID\":630,\"theme2_1\":\"tigercoins\"}},\"631\":{\"name\":\"Tiger Coin Wilds VIP\",\"customData\":{\"buyInID\":631,\"theme2_1\":\"tigercoins\"}},\"632\":{\"name\":\"High Roller Gala - Tiger Coin Wilds VIP\",\"customData\":{\"buyInID\":632,\"theme2_1\":\"tigercoins\"}},\"652\":{\"name\":\"Kodiak Wilds\",\"customData\":{\"buyInID\":652,\"theme2_1\":\"kodiakwilds\"}},\"653\":{\"name\":\"Kodiak Wilds VIP\",\"customData\":{\"buyInID\":653,\"theme2_1\":\"kodiakwilds\"}},\"654\":{\"name\":\"High Roller Gala - Kodiak Wilds VIP\",\"customData\":{\"buyInID\":654,\"theme2_1\":\"kodiakwilds\"}}},\"giftsData\":{\"282\":{\"name\":\"Cat\"}}}",
     "_N$instantiateMissionTrigger": false,
-    "_N$retrieveMissionTrigger": false,
+    "_N$retrieveMissionTrigger": true,
     "_N$updatePreviewDataTrigger": false,
     "_N$componentUpdateCallbackTrigger": true
   },
@@ -12622,14 +12560,33 @@
       {
         "__uuid__": "b26dacdf-2130-4065-8f6c-4674c1cc7bda"
       },
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
+      {
+        "__uuid__": "44aea8f3-f0dd-46c0-9990-e68d2307ad8c"
+      },
+      {
+        "__uuid__": "26f6c539-0210-4aa1-8f21-46ea0eb436f2"
+      },
+      {
+        "__uuid__": "3ae4e3f2-b75b-4ad6-89af-7c142e465b14"
+      },
+      {
+        "__uuid__": "21aa5569-09ec-476d-853f-954153448240"
+      },
+      {
+        "__uuid__": "05330911-1a2c-4cb1-8308-6eb7256d36f4"
+      },
+      {
+        "__uuid__": "f6a39e73-7bf7-4a08-b8dd-e1d80200ba02"
+      },
+      {
+        "__uuid__": "6ea5580f-100e-490e-b1f0-61b3a10714b0"
+      },
+      {
+        "__uuid__": "9e84fd1b-58e4-4745-ac26-3397ad99c319"
+      },
+      {
+        "__uuid__": "06622d61-d7ab-4b00-a34a-71a072b1bb08"
+      }
     ],
     "playOnLoad": true
   },
@@ -12673,7 +12630,7 @@
     },
     "_enabled": true,
     "missonInfoNode": {
-      "__id__": 369
+      "__id__": 367
     },
     "missonStepNode": {
       "__id__": 4
@@ -12683,13 +12640,13 @@
     },
     "firstStep": 0,
     "missionEventHandler": {
-      "__id__": 401
+      "__id__": 399
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 369
+      "__id__": 367
     },
     "component": "MissionInfoComponent",
     "handler": "ontriggerMissionInfoNode",

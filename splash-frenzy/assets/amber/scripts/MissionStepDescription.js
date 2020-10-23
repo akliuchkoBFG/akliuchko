@@ -43,7 +43,7 @@ cc.Class({
         let description = this.missionStepInterface.getFormatString();
         let templateClassType = this.missionStepInterface && 
                                 this.missionStepInterface._stepData &&
-                                this.missionStepInterface._stepData.class;
+								this.missionStepInterface._stepData.class;
         let templateType = this.setTemplateString(templateClassType.toString());
 
 		if (!templateType && (!rtLabel.templateString || rtLabel.templateString == '')) {
@@ -71,7 +71,7 @@ cc.Class({
     },
 
     setTemplateString: function (type) {
-        let value = '';
+		let value = '';
         switch (type) {
             case 'MissionStepBet':
                 value = '<color=#FEF6B6><b></color><outline color=#82140D width=2>Bet a total of {max} on slot {slotname} </outline>'
@@ -80,21 +80,21 @@ cc.Class({
                 value = '<color=#FEF6B6><b></color><outline color=#82140D width=2>Spin {max} times with a minimum bet of 125000 on slot {slotname} </outline>'
                 break;
             case 'MissionStepWinsThreshold':
-                '<color=#FEF6B6><b></color><outline color=#82140D width=2>Collect {max} wins over {threshold} on slot {slotname} </outline>'
+                value = '<color=#FEF6B6><b></color><outline color=#82140D width=2>Collect {max} wins over {threshold} on slot {slotname} </outline>'
                 break;
             case 'MissionStepWins':
-                '<color=#FEF6B6><b></color><outline color=#82140D width=2>Win {max} chipsin {spinCount} consecutive spins on slot {slotname} </outline>'
+                value = '<color=#FEF6B6><b></color><outline color=#82140D width=2>Win {max} chipsin {spinCount} consecutive spins on slot {slotname} </outline>'
                 break;
             case 'MissionStepBigWins':
-                '<color=#FEF6B6><b></color><outline color=#82140D width=2>Collect {max} big wins on slot {slotname} </outline>'
+                value = '<color=#FEF6B6><b></color><outline color=#82140D width=2>Collect {max} big wins </outline>'
                 break;
             case 'MissionStepGiftGiving':
-                '<color=#FEF6B6><b></color><outline color=#82140D width=2>Give {max} {giftname} </outline>'
+                value = '<color=#FEF6B6><b></color><outline color=#82140D width=2>Give {max} {giftname} </outline>'
                 break;
-
             default:
+				value = '<color=#FEF6B6><b></color><outline color=#82140D width=2>Step in {slotname} </outline>'
                 break;
-        }
+		}
         return value;
     }
 });

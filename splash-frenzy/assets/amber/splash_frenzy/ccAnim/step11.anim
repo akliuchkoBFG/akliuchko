@@ -1,6 +1,6 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "step4",
+  "_name": "step10",
   "_objFlags": 0,
   "_rawFiles": null,
   "_duration": 4,
@@ -33,6 +33,12 @@
         "props": {}
       },
       "mission_step/progress_container/progress_buttons/block2_icon": {
+        "props": {}
+      },
+      "mission_step/progress_container/progress_buttons/block3_icon": {
+        "props": {}
+      },
+      "mission_step/progress_container/progress_buttons/block4_icon": {
         "props": {
           "scaleX": [
             {
@@ -95,12 +101,6 @@
             }
           ]
         }
-      },
-      "mission_step/progress_container/progress_buttons/block3_icon": {
-        "props": {}
-      },
-      "mission_step/progress_container/progress_buttons/block4_icon": {
-        "props": {}
       },
       "mission_step/buttons/play/button_play": {
         "props": {
@@ -181,7 +181,7 @@
           "active": [
             {
               "frame": 0,
-              "value": true
+              "value": false
             }
           ]
         }
@@ -191,7 +191,7 @@
           "active": [
             {
               "frame": 0,
-              "value": true
+              "value": false
             }
           ]
         }
@@ -201,7 +201,7 @@
           "active": [
             {
               "frame": 0,
-              "value": true
+              "value": false
             }
           ]
         }
@@ -261,7 +261,7 @@
           "active": [
             {
               "frame": 0,
-              "value": false
+              "value": true
             }
           ]
         }
@@ -271,7 +271,7 @@
           "active": [
             {
               "frame": 0,
-              "value": false
+              "value": true
             }
           ]
         }
@@ -307,6 +307,26 @@
         }
       },
       "mission_step/collect_container/static_crab": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/static_fish": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/static_mantaray": {
         "props": {
           "active": [
             {

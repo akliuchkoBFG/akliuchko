@@ -1,6 +1,6 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "step_milestone_5",
+  "_name": "step_milestone_13",
   "_objFlags": 0,
   "_rawFiles": null,
   "_duration": 9.5,
@@ -60,6 +60,12 @@
         "props": {}
       },
       "collect_container/static_fish": {
+        "props": {}
+      },
+      "collect_container/animated_items/fish_anim": {
+        "props": {}
+      },
+      "collect_container/static_whale": {
         "props": {
           "active": [
             {
@@ -73,7 +79,7 @@
               "value": 0
             },
             {
-              "frame": 8.516666666666667,
+              "frame": 8.5,
               "value": 0
             },
             {
@@ -83,7 +89,7 @@
           ]
         }
       },
-      "collect_container/animated_items/fish_anim": {
+      "collect_container/animated_items/whale_anim": {
         "props": {
           "active": [
             {
@@ -95,7 +101,7 @@
               "value": true
             },
             {
-              "frame": 8.583333333333334,
+              "frame": 8.6,
               "value": false
             }
           ],
@@ -105,16 +111,13 @@
               "value": 255
             },
             {
-              "frame": 8.583333333333334,
+              "frame": 8.6,
               "value": 0
             }
           ]
         }
       },
-      "progress_container/progress_buttons/block3_icon": {
-        "props": {}
-      },
-      "progress_container/progress_buttons/block2_icon": {
+      "progress_container/progress_buttons/block4_icon": {
         "props": {
           "scaleX": [
             {
