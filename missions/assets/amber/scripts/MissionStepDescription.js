@@ -23,19 +23,31 @@ cc.Class({
 		max = ProductPackageItemConfig.numberAsShortString(max, '', true);
 		let minBet = this.missionStepInterface.getMinBet() || 0;
 		minBet = ProductPackageItemConfig.numberAsShortString(minBet, '', true);
+		let remaining = this.setRemaining();
 
 		const data = {
 			progress: progress, 
-			max: max, 
-			slotname: slotName, 
+			max: max,
+			remaining: remaining,
+			slotname: slotName.toUpperCase(), 
 			giftname: giftName,
 			minbet: minBet, 
 			currencyUpper: currency,
-			currencyLower: currency.toLowerCase()
+			currencyLower: currency.toLowerCase(),
 		};
 		rtLabel.setData(data);
 		// Set the editor mode properties
 		rtLabel.testData = JSON.stringify(data);
+	},
+
+	setRemaining: function () {
+		let remainingAmount = 0;
+		let progress = this.missionStepInterface.getProgressAmount();
+		let max = this.missionStepInterface.getProgressMax();
+
+		remainingAmount = progress && max ? max - progress : max;
+		remainingAmount = ProductPackageItemConfig.numberAsShortString(remainingAmount, '', true);
+		return remainingAmount;
 	},
 
 	onUpdateMissionStepData: function() {
@@ -44,7 +56,15 @@ cc.Class({
         let templateClassType = this.missionStepInterface && 
                                 this.missionStepInterface._stepData &&
 								this.missionStepInterface._stepData.class;
-        let templateType = this.setTemplateString(templateClassType.toString());
+		this.isProgress = this.missionStepInterface &&
+						  this.missionStepInterface._stepData &&
+						  this.missionStepInterface._stepData.data.progress != 0;
+
+		const templateClassTypeStr = templateClassType.toString();
+		
+		let templateType = this.isProgress ? 
+			this.setProgressTemplateString(templateClassTypeStr) : 
+			this.setTemplateString(templateClassTypeStr);
 
 		if (!templateType && (!rtLabel.templateString || rtLabel.templateString == '')) {
 			rtLabel.templateString = description;
@@ -85,16 +105,16 @@ cc.Class({
 		const outlineColor = '#0b1336';
         switch (type) {
             case 'MissionStepBet':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>Bet a total of {max} on slot {slotname} </outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>Bet a total of {max} {currencyUpper} on slot {slotname} </outline>`
                 break;
             case 'MissionStepSpin':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>Spin {max} times with a minimum bet of 125000 on slot {slotname} </outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>Spin {max} times with a minimum bet of {minBet} on slot {slotname} </outline>`
                 break;
             case 'MissionStepWinsThreshold':
                 value = `<color=${color}><b></color><outline color=${outlineColor} width=2>Collect {max} wins over {threshold} on slot {slotname} </outline>`
                 break;
             case 'MissionStepWins':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>Win {max} chipsin {spinCount} consecutive spins on slot {slotname} </outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>Win {max} {currencyUpper} in {spinCount} consecutive spins on slot {slotname} </outline>`
                 break;
             case 'MissionStepBigWins':
                 value = `<color=${color}><b></color><outline color=${outlineColor} width=2>Collect {max} big wins on slot {slotname}</outline>`
@@ -104,6 +124,36 @@ cc.Class({
                 break;
             default:
 				value = `<color=${color}><b></color><outline color=${outlineColor} width=2>Step in {slotname} </outline>`
+                break;
+		}
+        return value;
+	},
+	
+	setProgressTemplateString: function (type) {
+		let value = '';
+		const color = '#fff447';
+		const outlineColor = '#0b1336';
+        switch (type) {
+            case 'MissionStepBet':
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>BET ANOTHER  {remaining} {currencyUpper} ON SLOT {slotname}, TO COMPLETE THIS STEP!</outline>`
+                break;
+            case 'MissionStepSpin':
+				value = `<color=${color}><b></color><outline color=${outlineColor} width=2>SPIN {remaining} TIME WITH A MINIMUM BET OF {minBet} ON SLOT {slotname}, TO COMPLETE THIS STEP!</outline>`
+                break;
+            case 'MissionStepWinsThreshold':
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>COLLECT ANOTHER {remaining} WINS OVER {threshold} ON SLOT {slotname}, TO COMPLETE THIS STEP!</outline>`
+                break;
+            case 'MissionStepWins':
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>WIN {max} {currencyUpper} IN, SPIN {spinCount} CONSECUTIVE SPINS ON SLOT {slotname}</outline>`
+                break;
+            case 'MissionStepBigWins':
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>COLLECT ANOTHER {remaining} BIG WINS ON SLOT {slotname}, TO COMPLETE THIS STEP!</outline>`
+                break;
+            case 'MissionStepGiftGiving':
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>GIVE {remaining} MORE {giftname}, TO COMPLETE THIS STEP!</outline>`
+                break;
+            default:
+				value = `<color=${color}><b></color><outline color=${outlineColor} width=2>COMPLETE THIS STEP IN SLOT {slotname}!</outline>`
                 break;
 		}
         return value;

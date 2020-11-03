@@ -39,7 +39,7 @@ cc.Class({
 		this._super();
         this.getComponent(cc.Animation).on('finished', this.onCompleteStepAnimFinished, this);
     },
-    
+
     setAwardsData: function () {
         const dataAwards = this.missionStepInterface._stepData &&
                     this.missionStepInterface._stepData.data &&
@@ -58,13 +58,11 @@ cc.Class({
         const stepID = this.missionStepInterface.stepID;
         const eventName = event.detail.name.toString();
         const isAwardAnimationFinished = this.awardAnimationIndex >= this.numberOfAwards;
-        cc.log('EVENT NAME IN STEP, ', eventName);
         const missionSteps = this.missionStepInterface.missionInterface && this.missionStepInterface.missionInterface._stepData;
         const lastStep = missionSteps && missionSteps[Object.keys(missionSteps).length -1];
         
         if (lastStep && lastStep.data.awarded) {
             cc.log('finalStep');
-            // *TO DO
             return;
         }
         // Trigger Claim method after the 'step_complete' animation is successful. 

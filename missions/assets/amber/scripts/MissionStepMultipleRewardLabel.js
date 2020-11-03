@@ -9,7 +9,6 @@ cc.Class({
 	editor: CC_EDITOR && {
 		requireComponent: DataTemplateRichTextLabel,
 		executeInEditMode: true,
-		// menu: 'Add Mission Component/Step Reward Label',
     },
     
     properties: {
@@ -62,7 +61,8 @@ cc.Class({
 	},
 
 	_getAwardFromProductPackage(packageType, packageData) {
-		const configData = ProductPackageItemConfig[packageType];
+        const configData = ProductPackageItemConfig[packageType];
+        
 		// Attempt to grab the package info based on the award type
 		if (configData.default) {
 			return configData.default;

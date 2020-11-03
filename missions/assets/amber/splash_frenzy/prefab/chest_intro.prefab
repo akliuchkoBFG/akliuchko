@@ -70,7 +70,7 @@
     "_enabled": true,
     "_paused": false,
     "defaultSkin": "chest7",
-    "defaultAnimation": "intro6",
+    "defaultAnimation": "chest_static",
     "loop": false,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {

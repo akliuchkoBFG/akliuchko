@@ -31,7 +31,6 @@ cc.Class({
 		progress = ProductPackageItemConfig.numberAsShortString(progress, '', true);
 		max = ProductPackageItemConfig.numberAsShortString(max, '', true);
 		rtLabel.setData({progress: progress, max: max});
-
 		// Set the editor mode properties
 		rtLabel.testData = `{"progress": ${progress}, "max": ${max}}`;
 	}

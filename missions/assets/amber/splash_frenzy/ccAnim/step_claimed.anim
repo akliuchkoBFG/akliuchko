@@ -1,9 +1,9 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "step_final",
+  "_name": "step_claimed",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 9,
+  "_duration": 6.816666666666666,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -148,29 +148,18 @@
           ]
         }
       },
-      "mission_step/progress_container/progress_buttons/chest_info/chest_button": {
+      "mission_step/background_chest/chest": {
         "props": {
           "active": [
             {
-              "frame": 3.4833333333333334,
-              "value": true
-            },
-            {
-              "frame": 4.483333333333333,
+              "frame": 0,
               "value": false
-            }
-          ],
-          "opacity": [
-            {
-              "frame": 3.4833333333333334,
-              "value": 255
-            },
-            {
-              "frame": 4.483333333333333,
-              "value": 0
             }
           ]
         }
+      },
+      "mission_step/progress_container/progress_buttons/chest_info/chest_button": {
+        "props": {}
       },
       "mission_step/award_container/final_labels": {
         "props": {
@@ -186,33 +175,33 @@
         "props": {
           "active": [
             {
-              "frame": 0.5,
+              "frame": 0,
               "value": false
             },
             {
-              "frame": 1,
+              "frame": 0.5,
               "value": true
             },
             {
-              "frame": 3.5166666666666666,
+              "frame": 3.0166666666666666,
               "value": false
             }
           ],
           "opacity": [
             {
-              "frame": 1,
+              "frame": 0.5,
               "value": 0
             },
             {
-              "frame": 1.1666666666666667,
+              "frame": 0.6666666666666666,
               "value": 255
             },
             {
-              "frame": 3.35,
+              "frame": 2.85,
               "value": 255
             },
             {
-              "frame": 3.5166666666666666,
+              "frame": 3.0166666666666666,
               "value": 0
             }
           ]
@@ -222,88 +211,38 @@
         "props": {
           "active": [
             {
-              "frame": 6.983333333333333,
-              "value": true
-            }
-          ],
-          "opacity": [
-            {
-              "frame": 6.983333333333333,
-              "value": 0
-            },
-            {
-              "frame": 7.483333333333333,
-              "value": 255
+              "frame": 6.816666666666666,
+              "value": false
             }
           ]
         }
       },
       "mission_step/collect_container/animated_items/chest_bounce": {
-        "props": {
-          "active": [
-            {
-              "frame": 0.48333333333333334,
-              "value": false
-            },
-            {
-              "frame": 4.483333333333333,
-              "value": true
-            },
-            {
-              "frame": 8.483333333333333,
-              "value": false
-            }
-          ],
-          "opacity": [
-            {
-              "frame": 8.483333333333333,
-              "value": 0
-            }
-          ]
-        }
+        "props": {}
       },
       "mission_step/collect_container/animated_items/chest_idle": {
-        "props": {
-          "active": [
-            {
-              "frame": 0.48333333333333334,
-              "value": false
-            },
-            {
-              "frame": 8.483333333333333,
-              "value": true
-            },
-            {
-              "frame": 9,
-              "value": true
-            }
-          ]
-        }
+        "props": {}
       },
       "mission_step/collect_container/splash_screen": {
         "props": {
-          "opacity": [
-            {
-              "frame": 3.5,
-              "value": 0
-            },
-            {
-              "frame": 4,
-              "value": 75
-            },
-            {
-              "frame": 7.516666666666667,
-              "value": 75
-            },
-            {
-              "frame": 8,
-              "value": 0
-            }
-          ],
           "active": [
             {
               "frame": 0,
               "value": true
+            },
+            {
+              "frame": 0.6333333333333333,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 75
+            },
+            {
+              "frame": 0.6333333333333333,
+              "value": 0
             }
           ]
         }
@@ -313,72 +252,6 @@
           "active": [
             {
               "frame": 0,
-              "value": true
-            },
-            {
-              "frame": 0.5,
-              "value": false
-            }
-          ],
-          "opacity": [
-            {
-              "frame": 0,
-              "value": 255
-            },
-            {
-              "frame": 0.5,
-              "value": 0
-            }
-          ]
-        }
-      },
-      "tapable_chest": {
-        "props": {
-          "active": [
-            {
-              "frame": 3.95,
-              "value": true
-            },
-            {
-              "frame": 4.033333333333333,
-              "value": false
-            }
-          ],
-          "opacity": [
-            {
-              "frame": 3.95,
-              "value": 255
-            },
-            {
-              "frame": 4.033333333333333,
-              "value": 0
-            }
-          ]
-        }
-      },
-      "mission_step/background_chest/tapable_chest": {
-        "props": {
-          "opacity": [
-            {
-              "frame": 4.5,
-              "value": 255
-            },
-            {
-              "frame": 4.816666666666666,
-              "value": 0
-            }
-          ]
-        }
-      },
-      "mission_step/background_chest": {
-        "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": true
-            },
-            {
-              "frame": 4.5,
               "value": false
             }
           ]

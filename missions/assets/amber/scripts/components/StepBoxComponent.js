@@ -25,9 +25,16 @@ cc.Class({
     onLoad: function () {
         const missionInterfaceComp = this.missionInterface;
         if (missionInterfaceComp) {
-            this.currentStep = missionInterfaceComp.getStepData(this.stepId);
-            this.updateStepStatus()
+            missionInterfaceComp.on('updateMissionDataEvent', this.updateIconInStepBox, this);
+            this.updateIconInStepBox();
+            cc.log(1);
         }
+    },
+
+    updateIconInStepBox: function() {
+        cc.log(2);
+        this.currentStep = this.missionInterface.getStepData(this.stepId);
+        this.updateStepStatus();
     },
 
     updateStepStatus: function() {

@@ -1,0 +1,71 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "chest_tap",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 3.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "animated_chest": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 3.5,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 3.4833333333333334,
+              "value": 255
+            },
+            {
+              "frame": 3.5,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "animated_chest/chest_tap": {
+        "comps": {
+          "AnimatedItemComponent": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": true
+              },
+              {
+                "frame": 3.5,
+                "value": true
+              }
+            ]
+          }
+        },
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 3.5,
+              "value": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

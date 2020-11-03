@@ -68,8 +68,86 @@
             }
           ]
         }
+      },
+      "progress_container/progress_buttons/block4_icon": {
+        "comps": {
+          "StepProgressIconFillComponent": {
+            "fillRange": [
+              {
+                "frame": 0,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "progress_container/progress_buttons/block3_icon": {
+        "comps": {
+          "StepProgressIconFillComponent": {
+            "fillRange": [
+              {
+                "frame": 0,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "progress_container/progress_buttons/block2_icon": {
+        "comps": {
+          "StepProgressIconFillComponent": {
+            "fillRange": [
+              {
+                "frame": 0,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "progress_container/progress_buttons/block1_icon": {
+        "comps": {
+          "StepProgressIconFillComponent": {
+            "fillRange": [
+              {
+                "frame": 0,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "progress_container/progress_buttons/block0_icon": {
+        "comps": {
+          "StepProgressIconFillComponent": {
+            "fillRange": [
+              {
+                "frame": 0,
+                "value": 0
+              }
+            ]
+          }
+        }
+      }
+    },
+    "comps": {
+      "StepProgressBarFillComponent": {
+        "fillRange": [
+          {
+            "frame": 0,
+            "value": 0
+          }
+        ]
       }
     }
   },
-  "events": []
+  "events": [
+    {
+      "frame": -0.016666666666666666,
+      "func": "onStartAnimation",
+      "params": [
+        "'step_intro'"
+      ]
+    }
+  ]
 }

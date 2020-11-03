@@ -79,7 +79,7 @@
               "value": 0
             },
             {
-              "frame": 8.516666666666667,
+              "frame": 8.75,
               "value": 0
             },
             {
@@ -101,22 +101,8 @@
               "value": true
             },
             {
-              "frame": 8.6,
+              "frame": 9.5,
               "value": false
-            }
-          ],
-          "opacity": [
-            {
-              "frame": 3.5,
-              "value": 255
-            },
-            {
-              "frame": 8.35,
-              "value": 255
-            },
-            {
-              "frame": 8.6,
-              "value": 0
             }
           ]
         }

@@ -123,11 +123,7 @@ cc.Class({
         const sprite = this.node.getComponent(cc.Sprite);
         sprite.spriteFrame = this.iconCompleted;
     },
-
-    animateIconActive(comp) {
-
-    },
-
+    
     //Trigger popUpWinddow linked to step block icon.
     toggleLinkedPopupWindow: function() {
         if (this.linkedNode) {

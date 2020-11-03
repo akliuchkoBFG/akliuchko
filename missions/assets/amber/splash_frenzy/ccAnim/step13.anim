@@ -3,7 +3,7 @@
   "_name": "step13",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 4,
+  "_duration": 2.67,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -60,14 +60,6 @@
             {
               "frame": 2.6666666666666665,
               "value": 0.8
-            },
-            {
-              "frame": 3.3333333333333335,
-              "value": 1
-            },
-            {
-              "frame": 4,
-              "value": 0.8
             }
           ],
           "scaleY": [
@@ -89,14 +81,6 @@
             },
             {
               "frame": 2.6666666666666665,
-              "value": 0.8
-            },
-            {
-              "frame": 3.3333333333333335,
-              "value": 1
-            },
-            {
-              "frame": 4,
               "value": 0.8
             }
           ]
@@ -281,7 +265,7 @@
           "active": [
             {
               "frame": 0,
-              "value": false
+              "value": true
             }
           ]
         }
@@ -347,6 +331,16 @@
         }
       },
       "mission_step/award_container/reward_labels/award_label_chest": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/static_whale": {
         "props": {
           "active": [
             {
