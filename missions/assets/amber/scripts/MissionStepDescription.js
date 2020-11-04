@@ -12,6 +12,12 @@ cc.Class({
 		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SPP/pages/562692173/Mission+Step+Description+Label'
 	},
 
+	properties: {
+		textColor: '#fff447',
+		outlineColor: '#0b1336',
+		outlineWidth: '2',
+	},
+
 	_populateRTData: function(rtLabel) {
 		// Grab the mission data using the interface
 		const slotName = this._getSlotName();
@@ -52,7 +58,7 @@ cc.Class({
 
 	onUpdateMissionStepData: function() {
 		let rtLabel = this.getComponent('DataTemplateRichTextLabel');
-        let description = this.missionStepInterface.getFormatString();
+		let description = this.missionStepInterface.getFormatString();
         let templateClassType = this.missionStepInterface && 
                                 this.missionStepInterface._stepData &&
 								this.missionStepInterface._stepData.class;
@@ -62,15 +68,16 @@ cc.Class({
 
 		const templateClassTypeStr = templateClassType.toString();
 		
-		let templateType = this.isProgress ? 
+		let staticTemplateTypeString = this.isProgress ? 
 			this.setProgressTemplateString(templateClassTypeStr) : 
 			this.setTemplateString(templateClassTypeStr);
 
-		if (!templateType && (!rtLabel.templateString || rtLabel.templateString == '')) {
-			rtLabel.templateString = description;
+		if (!this.isProgress && staticTemplateTypeString) {
+			let styledDescription = this.styleDescriptionString(description);
+			rtLabel.templateString = description ? styledDescription : staticTemplateTypeString;
         } else {
-            rtLabel.templateString = templateType;
-        }
+            rtLabel.templateString = staticTemplateTypeString;
+		}
 
 		this._populateRTData(rtLabel);
 	},
@@ -98,32 +105,42 @@ cc.Class({
 		}
     },
 
-	// TO DO * refactor this;
+	styleDescriptionString: function (text) {
+		let color = this.textColor;
+		let outline = this.outlineColor;
+		let outlineWidth = this.outlineWidth;
+		if (text) {
+			return `<color=${color}><b></color><outline color=${outline} width=${outlineWidth}>${text}</outline>`;
+		}
+	},
+
+	// TO DO * refactor this hardcoded text;
     setTemplateString: function (type) {
 		let value = '';
-		const color = '#fff447';
-		const outlineColor = '#0b1336';
+		const color = this.textColor;
+		const outlineColor = this.outlineColor;
+		const outlineWidth = this.outlineWidth;
         switch (type) {
             case 'MissionStepBet':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>Bet a total of {max} {currencyUpper} on slot {slotname} </outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Bet a total of {max} {currencyUpper} on slot {slotname} </outline>`
                 break;
             case 'MissionStepSpin':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>Spin {max} times with a minimum bet of {minBet} on slot {slotname} </outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Spin {max} times with a minimum bet of {minBet} on slot {slotname} </outline>`
                 break;
             case 'MissionStepWinsThreshold':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>Collect {max} wins over {threshold} on slot {slotname} </outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Collect {max} wins over {threshold} on slot {slotname} </outline>`
                 break;
             case 'MissionStepWins':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>Win {max} {currencyUpper} in {spinCount} consecutive spins on slot {slotname} </outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Win {max} {currencyUpper} in {spinCount} consecutive spins on slot {slotname} </outline>`
                 break;
             case 'MissionStepBigWins':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>Collect {max} big wins on slot {slotname}</outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Collect {max} big wins on slot {slotname}</outline>`
                 break;
             case 'MissionStepGiftGiving':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>Give {max} {giftname} </outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Give {max} {giftname} </outline>`
                 break;
             default:
-				value = `<color=${color}><b></color><outline color=${outlineColor} width=2>Step in {slotname} </outline>`
+				value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Step in {slotname} </outline>`
                 break;
 		}
         return value;
@@ -131,29 +148,30 @@ cc.Class({
 	
 	setProgressTemplateString: function (type) {
 		let value = '';
-		const color = '#fff447';
-		const outlineColor = '#0b1336';
+		const color = this.textColor;
+		const outlineColor = this.outlineColor;
+		const outlineWidth = this.outlineWidth;
         switch (type) {
             case 'MissionStepBet':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>BET ANOTHER  {remaining} {currencyUpper} ON SLOT {slotname}, TO COMPLETE THIS STEP!</outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>BET ANOTHER  {remaining} {currencyUpper} ON SLOT {slotname}, TO COMPLETE THIS STEP!</outline>`
                 break;
             case 'MissionStepSpin':
-				value = `<color=${color}><b></color><outline color=${outlineColor} width=2>SPIN {remaining} TIME WITH A MINIMUM BET OF {minBet} ON SLOT {slotname}, TO COMPLETE THIS STEP!</outline>`
+				value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>SPIN {remaining} TIME WITH A MINIMUM BET OF {minBet} ON SLOT {slotname}, TO COMPLETE THIS STEP!</outline>`
                 break;
             case 'MissionStepWinsThreshold':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>COLLECT ANOTHER {remaining} WINS OVER {threshold} ON SLOT {slotname}, TO COMPLETE THIS STEP!</outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>COLLECT ANOTHER {remaining} WINS OVER {threshold} ON SLOT {slotname}, TO COMPLETE THIS STEP!</outline>`
                 break;
             case 'MissionStepWins':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>WIN {max} {currencyUpper} IN, SPIN {spinCount} CONSECUTIVE SPINS ON SLOT {slotname}</outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>WIN {max} {currencyUpper} IN, SPIN {spinCount} CONSECUTIVE SPINS ON SLOT {slotname}</outline>`
                 break;
             case 'MissionStepBigWins':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>COLLECT ANOTHER {remaining} BIG WINS ON SLOT {slotname}, TO COMPLETE THIS STEP!</outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>COLLECT ANOTHER {remaining} BIG WINS ON SLOT {slotname}, TO COMPLETE THIS STEP!</outline>`
                 break;
             case 'MissionStepGiftGiving':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>GIVE {remaining} MORE {giftname}, TO COMPLETE THIS STEP!</outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>GIVE {remaining} MORE {giftname}, TO COMPLETE THIS STEP!</outline>`
                 break;
             default:
-				value = `<color=${color}><b></color><outline color=${outlineColor} width=2>COMPLETE THIS STEP IN SLOT {slotname}!</outline>`
+				value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>COMPLETE THIS STEP IN SLOT {slotname}!</outline>`
                 break;
 		}
         return value;

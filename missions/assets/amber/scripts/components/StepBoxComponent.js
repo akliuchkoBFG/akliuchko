@@ -24,17 +24,32 @@ cc.Class({
 
     onLoad: function () {
         const missionInterfaceComp = this.missionInterface;
+        this.boxDataUpdated = false;
         if (missionInterfaceComp) {
-            missionInterfaceComp.on('updateMissionDataEvent', this.updateIconInStepBox, this);
+            missionInterfaceComp.on('updateMissionDataEvent', this.onUpdateStepData, this);
             this.updateIconInStepBox();
-            cc.log(1);
         }
     },
 
+    onDisable: function() {
+        this.boxUpdateNeeded = true;
+    },
+
+    update: function () {
+        if (this.node.active && this.boxUpdateNeeded) {
+            this.updateIconInStepBox();
+        }
+    },
+
+    onUpdateStepData: function () {
+        this.boxUpdateNeeded = true;
+    }, 
+
     updateIconInStepBox: function() {
-        cc.log(2);
         this.currentStep = this.missionInterface.getStepData(this.stepId);
-        this.updateStepStatus();
+        if (this.currentStep) {
+            this.updateStepStatus();
+        }
     },
 
     updateStepStatus: function() {
@@ -44,5 +59,6 @@ cc.Class({
             this.stepMax = this.currentStep.data.max || null;
             this.stepSlotName = this.currentStep.class || '';
         }
+        this.boxUpdateNeeded = false;
     },
 });

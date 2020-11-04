@@ -15,16 +15,23 @@ cc.Class({
         iconLocked: cc.SpriteFrame,
     },
 
-    start: function() {
+    update: function () {
+        if (this.stepIdNode && this.iconStatus !== this.stepIdNode.stepStatus) {
+            this.updateIconSprite();
+        }
+    },
+
+    onEnable: function() {
         const stepBoxComp = this.stepIdNode;
         if (stepBoxComp) {
-            this.iconStatus = stepBoxComp.stepStatus;
             this.updateIconSprite();
         }
     },
 
     updateIconSprite: function() {
         const sprite = this.node.getComponent(cc.Sprite);
+
+        this.iconStatus = this.stepIdNode.stepStatus;
         if (sprite) {
             switch (this.iconStatus) {
                 case 'active': 
