@@ -33,8 +33,8 @@ cc.Class({
         }
         
         if (this.missionStepAutoClaimController) {
-            this.awardIndex = this.missionStepAutoClaimController.awardAnimationIndex;
-            this.numberOfAwards = this.missionStepAutoClaimController.awardItems.length;
+            this.awardIndex = this.missionStepAutoClaimController.playedAwardAnimationIndex;
+            this.numberOfAwards = this.missionStepAutoClaimController.awardItems && this.missionStepAutoClaimController.awardItems.length;
             this.activeAwardKey = this.missionStepAutoClaimController.awardAnimationKey;
         }
 		this._populateRTData(rtLabel);

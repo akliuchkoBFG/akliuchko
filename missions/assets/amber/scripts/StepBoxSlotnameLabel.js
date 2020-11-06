@@ -21,6 +21,19 @@ cc.Class({
 		colorCompleted: '',
 	},
 
+	onEnable: function() {
+        const stepBoxComp = this.stepIdNode;
+        if (stepBoxComp) {
+            this.updateStepDescriptionLabel();
+        }
+	},
+
+	update: function () {
+        if (this.stepIdNode && this.iconStatus !== this.stepIdNode.stepStatus) {
+            this.updateStepDescriptionLabel();
+        }
+    },
+
 	_populateRTData: function(rtLabel) {
 		let slotName = this.slotName;
 		let color = this.activeColor;
@@ -33,7 +46,7 @@ cc.Class({
 		rtLabel.testData = JSON.stringify(data);
 	},
 
-	onUpdateMissionStepData: function() {
+	updateStepDescriptionLabel: function() {
 		let rtLabel = this.getComponent('DataTemplateRichTextLabel');
 		let stepBoxComp = this.stepIdNode;
 		const stepId = stepBoxComp.stepId;

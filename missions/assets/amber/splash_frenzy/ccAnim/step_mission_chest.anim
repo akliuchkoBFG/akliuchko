@@ -1,9 +1,9 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "step_final",
+  "_name": "step_mission_chest",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 9,
+  "_duration": 12.5,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -234,6 +234,14 @@
             {
               "frame": 7.483333333333333,
               "value": 255
+            },
+            {
+              "frame": 12.016666666666667,
+              "value": 255
+            },
+            {
+              "frame": 12.5,
+              "value": 0
             }
           ]
         }
@@ -274,7 +282,7 @@
               "value": true
             },
             {
-              "frame": 9,
+              "frame": 12,
               "value": true
             }
           ]
@@ -316,7 +324,7 @@
               "value": true
             },
             {
-              "frame": 0.5,
+              "frame": 0.016666666666666666,
               "value": false
             }
           ],
@@ -326,48 +334,27 @@
               "value": 255
             },
             {
-              "frame": 0.5,
-              "value": 0
-            }
-          ]
-        }
-      },
-      "tapable_chest": {
-        "props": {
-          "active": [
-            {
-              "frame": 3.95,
-              "value": true
-            },
-            {
-              "frame": 4.033333333333333,
-              "value": false
-            }
-          ],
-          "opacity": [
-            {
-              "frame": 3.95,
-              "value": 255
-            },
-            {
-              "frame": 4.033333333333333,
+              "frame": 0.016666666666666666,
               "value": 0
             }
           ]
         }
       },
       "mission_step/background_chest/tapable_chest": {
-        "props": {
-          "opacity": [
-            {
-              "frame": 4.5,
-              "value": 255
-            },
-            {
-              "frame": 4.816666666666666,
-              "value": 0
-            }
-          ]
+        "props": {},
+        "comps": {
+          "cc.Button": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": true
+              },
+              {
+                "frame": 4.5,
+                "value": true
+              }
+            ]
+          }
         }
       },
       "mission_step/background_chest": {

@@ -22,7 +22,7 @@ cc.Class({
         },
     },
 
-    onLoad: function () {
+    onEnable: function () {
         const missionInterfaceComp = this.missionInterface;
         this.boxDataUpdated = false;
         if (missionInterfaceComp) {
@@ -35,7 +35,7 @@ cc.Class({
         this.boxUpdateNeeded = true;
     },
 
-    update: function () {
+    update: function () { 
         if (this.node.active && this.boxUpdateNeeded) {
             this.updateIconInStepBox();
         }

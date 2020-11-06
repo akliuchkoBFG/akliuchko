@@ -8,8 +8,6 @@ cc.Class({
 	editor: CC_EDITOR && {
 		requireComponent: DataTemplateRichTextLabel,
 		executeInEditMode: true,
-		menu: 'Add Mission Component/Step Description Label',
-		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SPP/pages/562692173/Mission+Step+Description+Label'
 	},
 
 	properties: {
@@ -27,7 +25,7 @@ cc.Class({
 		progress = ProductPackageItemConfig.numberAsShortString(progress, '', true);
 		let max = this.missionStepInterface.getProgressMax();
 		max = ProductPackageItemConfig.numberAsShortString(max, '', true);
-		let minBet = this.missionStepInterface.getMinBet() || 0;
+		let minBet = this.missionStepInterface.getMinBet() || '1000';
 		minBet = ProductPackageItemConfig.numberAsShortString(minBet, '', true);
 		let remaining = this.setRemaining();
 
@@ -53,6 +51,7 @@ cc.Class({
 
 		remainingAmount = progress && max ? max - progress : max;
 		remainingAmount = ProductPackageItemConfig.numberAsShortString(remainingAmount, '', true);
+
 		return remainingAmount;
 	},
 
@@ -67,7 +66,9 @@ cc.Class({
 						  this.missionStepInterface._stepData.data.progress != 0;
 
 		const templateClassTypeStr = templateClassType.toString();
-		
+		let remaining = this.setRemaining();
+		this.singularAmount = remaining == 1;
+
 		let staticTemplateTypeString = this.isProgress ? 
 			this.setProgressTemplateString(templateClassTypeStr) : 
 			this.setTemplateString(templateClassTypeStr);
@@ -125,7 +126,7 @@ cc.Class({
                 value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Bet a total of {max} {currencyUpper} on slot {slotname} </outline>`
                 break;
             case 'MissionStepSpin':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Spin {max} times with a minimum bet of {minBet} on slot {slotname} </outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Spin {max} times on slot {slotname}</outline>`
                 break;
             case 'MissionStepWinsThreshold':
                 value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Collect {max} wins over {threshold} on slot {slotname} </outline>`
@@ -138,7 +139,10 @@ cc.Class({
                 break;
             case 'MissionStepGiftGiving':
                 value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Give {max} {giftname} </outline>`
-                break;
+				break;
+			case 'MissionStepBingo':
+				value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Mark Bingo board {max} times on slot {slotname} </outline>`
+				break;
             default:
 				value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Step in {slotname} </outline>`
                 break;
@@ -151,25 +155,31 @@ cc.Class({
 		const color = this.textColor;
 		const outlineColor = this.outlineColor;
 		const outlineWidth = this.outlineWidth;
+		const timeString = this.singularAmount ? 'TIME' : 'TIMES';
+		const winString = this.singularAmount ? 'WIN' : 'WINS';
+
         switch (type) {
             case 'MissionStepBet':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>BET ANOTHER  {remaining} {currencyUpper} ON SLOT {slotname}, TO COMPLETE THIS STEP!</outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>BET ANOTHER {remaining} {currencyUpper} <br/>ON SLOT {slotname} <br/>TO COMPLETE THIS STEP!</outline>`
                 break;
             case 'MissionStepSpin':
-				value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>SPIN {remaining} TIME WITH A MINIMUM BET OF {minBet} ON SLOT {slotname}, TO COMPLETE THIS STEP!</outline>`
+				value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>SPIN AGAIN {remaining} ${timeString} <br/>ON SLOT {slotname} <br/>TO COMPLETE THIS STEP!</outline>`
                 break;
             case 'MissionStepWinsThreshold':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>COLLECT ANOTHER {remaining} WINS OVER {threshold} ON SLOT {slotname}, TO COMPLETE THIS STEP!</outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>COLLECT ANOTHER {remaining} ${winString} <br/>OVER {threshold} ON SLOT {slotname} <br/>TO COMPLETE THIS STEP!</outline>`
                 break;
             case 'MissionStepWins':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>WIN {max} {currencyUpper} IN, SPIN {spinCount} CONSECUTIVE SPINS ON SLOT {slotname}</outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>WIN {max} {currencyUpper} <br/>SPIN {spinCount} CONSECUTIVE SPINS ON SLOT {slotname}</outline>`
                 break;
             case 'MissionStepBigWins':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>COLLECT ANOTHER {remaining} BIG WINS ON SLOT {slotname}, TO COMPLETE THIS STEP!</outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>COLLECT {remaining} MORE BIG ${winString} <br/>ON SLOT {slotname} <br/>TO COMPLETE THIS STEP!</outline>`
                 break;
             case 'MissionStepGiftGiving':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>GIVE {remaining} MORE {giftname}, TO COMPLETE THIS STEP!</outline>`
-                break;
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>GIVE {remaining} MORE {giftname} <br/>TO COMPLETE THIS STEP!</outline>`
+				break;
+			case 'MissionStepBingo':
+				value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>MARK BINGO BOARD ANOTHER {remaining} ${timeString} ON SLOT {slotname} <br/>TO COMPLETE THIS STEP!</outline>`
+				break;
             default:
 				value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>COMPLETE THIS STEP IN SLOT {slotname}!</outline>`
                 break;

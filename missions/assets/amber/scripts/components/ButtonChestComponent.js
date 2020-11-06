@@ -13,6 +13,7 @@ cc.Class({
             this.animatedChestComp = this.animatedChestContainer.getComponent(cc.Animation);
             this.chestButtonAniamtion = this.node.getComponent(cc.Animation);
             this.animatedChestComp.on('finished', this.onCompleteChestTapAnimation, this);
+            this.node.getComponent(cc.Button).interactable = true;
         }
     },
 
@@ -33,5 +34,12 @@ cc.Class({
             this.chestButtonAniamtion.play('chest_button_off');
             this.node.getComponent(cc.Button).interactable = false;
         }
-    }
+    },
+
+    toggleButtonInteractable: function () {
+        const buttonComp = this.node.getComponent(cc.Button)
+        if (buttonComp && buttonComp.interactable) {
+            buttonComp.interactable =  !buttonComp.interactable;
+        }
+    },
 });

@@ -24,6 +24,10 @@
           "opacity": [
             {
               "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
               "value": 0
             }
           ]
@@ -31,26 +35,9 @@
       },
       "animated_chest/chest_tap": {
         "comps": {
-          "AnimatedItemComponent": {
-            "enabled": [
-              {
-                "frame": 0,
-                "value": true
-              }
-            ]
-          }
+          "AnimatedItemComponent": {}
         },
         "props": {
-          "opacity": [
-            {
-              "frame": 0,
-              "value": 255
-            },
-            {
-              "frame": 0.5,
-              "value": 0
-            }
-          ],
           "active": [
             {
               "frame": 0,

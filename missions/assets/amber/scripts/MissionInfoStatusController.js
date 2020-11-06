@@ -1,18 +1,21 @@
-const MissionInterface = require('MissionInterface');
+const BaseMissionComponent = require('BaseMissionComponent');
+const ButtonChestComponent = require('ButtonChestComponent');
+
 cc.Class({
-    extends: cc.Component,
+    extends: BaseMissionComponent,
+
+    editor: CC_EDITOR && {
+		requireComponent: cc.Animation,
+    },
+    
     properties: {
-        missonInfoNode:  {
+        missonInfoNode: {
             default: null,
             type: cc.Node
         },
-        missonStepNode:  {
+        missonStepNode: {
             default: null,
             type: cc.Node
-        },
-		missionInterface: {
-			default: null,
-            type: MissionInterface,
         },
         firstStep: {
             default: 0,
@@ -22,21 +25,54 @@ cc.Class({
             default: null,
             type: cc.Component.EventHandler,
         },
+        finalAwardClaimed: {
+            default: false,
+            visible: false,
+        },
+        chestButton: {
+            default: null,
+            type: ButtonChestComponent,
+        }
     },
 
     onLoad: function () {
-        const missionInterfaceComp = this.node.getComponent('MissionInterface');
-        const missionStepInterfaceComp = this.missonStepNode.getComponent('MissionStepInterface');
+        this.missonStepNode.opacity = 255;
         this.missionAnimationComp = this.missionInterface.node.getComponent(cc.Animation);
-
-        if (missionInterfaceComp) {
-            this.missionInterface = missionInterfaceComp;
+        if (this.missionInterface) {
             this.missionInterface.on('updateMissionDataEvent', this.toggleMissionInfoPopoup, this);
+            this.missionInterface.on('claimedMissionAward', this.onClaim, this);
         }
+
+        const missionStepInterfaceComp = this.missonStepNode.getComponent('MissionStepInterface');
+
         if (missionStepInterfaceComp) {
             this.missionStepAnimationComp = this.missonStepNode.getComponent(cc.Animation);
             this.missionStepInterface = missionStepInterfaceComp;
             missionStepInterfaceComp.on('updateMissionStepDataEvent', this.clearMissionStepAnimation, this);
+        }
+    },
+
+    onClaim: function () {
+        if (this.isFinalStep) {
+            this.finalStepClaimed = true;
+            this.chestButton.toggleButtonInteractable();
+        }
+    },
+
+    onUpdateMissionData: function () {
+        if (this.finalStepClaimed && this.isFinalStep) {
+            this.finalAwardClaimed = true;
+        }
+    },
+
+    onFinalStepEvent: function () {
+        if (!this.isFinalStep) {
+            return;
+        } else {
+            let allAwarded = this.missionInterface.isAllStepsComplete();
+            if (allAwarded) {
+                this.missionInterface.claimMissionAward();
+            }
         }
     },
 
@@ -52,30 +88,43 @@ cc.Class({
         }
     },
 
-    toggleMissionInfoPopoup: function() {
+    isFinalMissionStep: function () {
+        const lastStep = this.missionInterface.getFinalStepID();
+        const currentStep = this.missionStepInterface.stepID;
+
+        return currentStep == lastStep;
+    },
+
+    toggleMissionInfoPopoup: function () {
         const firstStepData = this.missionInterface.getStepData(this.firstStep);
+        this.isFinalStep = this.isFinalMissionStep();
+
+        if (this.isFinalStep) {
+            this.onFinalStepEvent();
+        }
+
         if (firstStepData &&
-            firstStepData.data && 
+            firstStepData.data &&
             firstStepData.data.progress === 0 &&
             firstStepData.data.state == 'active') {
 
-                // Case No Progress made in mission and step is 0;
-                this.missonStepNode.opacity = 0;
-                this.missonInfoNode.active = true;
-                this.clearMissionAnimation();
-                if (this.missionEventHandler) {
-                    let data = {
-                        animationName: 'info_intro',
-                    };
-                    this.missionEventHandler.emit([JSON.stringify(data)]);
-                }
-                this._play('mission_info', this.missionAnimationComp);
+            // Case No Progress made in mission and step is 0;
+            this.missonStepNode.opacity = 0;
+            this.missonInfoNode.active = true;
+            this.clearMissionAnimation();
+            if (this.missionEventHandler) {
+                let data = {
+                    animationName: 'info_intro',
+                };
+                this.missionEventHandler.emit([JSON.stringify(data)]);
+            }
+            this._play('mission_info', this.missionAnimationComp);
         } else {
             this.goToProgressPopup();
         }
     },
 
-    goToProgressPopup: function() {
+    goToProgressPopup: function () {
         if (this.missonInfoNode.active) {
 
             this.missonInfoNode.active = false;
@@ -87,7 +136,7 @@ cc.Class({
             }
 
             this.missonStepNode.opacity = 255;
-            
+
             // redo animations in mission and mission_step nodes;
             this._play('step0', this.missionAnimationComp);
             this._play('step_intro', this.missionStepAnimationComp);
@@ -95,9 +144,9 @@ cc.Class({
         return
     },
 
-    _play: function(anim, node) {
+    _play: function (anim, node) {
         if (anim !== '' && node) {
-			node.play(anim);
-		}
-	},
+            node.play(anim);
+        }
+    },
 });

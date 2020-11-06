@@ -63,10 +63,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 428
+        "__id__": 427
       },
       {
-        "__id__": 429
+        "__id__": 428
       }
     ],
     "_prefab": null,
@@ -125,22 +125,22 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 423
+        "__id__": 422
       },
       {
         "__id__": 112
       },
       {
-        "__id__": 424
+        "__id__": 423
       },
       {
-        "__id__": 425
+        "__id__": 424
       },
       {
         "__id__": 113
       },
       {
-        "__id__": 426
+        "__id__": 425
       }
     ],
     "_prefab": null,
@@ -246,7 +246,7 @@
     ],
     "_prefab": null,
     "_id": "40OJHaaKhEE6KTn6xnyVJV",
-    "_opacity": 255,
+    "_opacity": 0,
     "_color": {
       "__type__": "cc.Color",
       "r": 255,
@@ -742,7 +742,7 @@
         "__id__": 18
       }
     ],
-    "_N$interactable": true,
+    "_N$interactable": false,
     "_N$enableAutoGrayEffect": false,
     "_N$normalColor": {
       "__type__": "cc.Color",
@@ -769,7 +769,7 @@
     "target": {
       "__id__": 8
     },
-    "component": "ChestComponent",
+    "component": "ButtonChestComponent",
     "handler": "triggerTapChestAnimation",
     "customEventData": ""
   },
@@ -1580,7 +1580,7 @@
     ],
     "_prefab": null,
     "_id": "64GlcdSwRGkpKs00ZTekhj",
-    "_opacity": 90,
+    "_opacity": 75,
     "_color": {
       "__type__": "cc.Color",
       "r": 255,
@@ -3536,11 +3536,11 @@
       }
     ],
     "_tag": -1,
-    "_active": false,
+    "_active": true,
     "_components": [],
     "_prefab": null,
     "_id": "d7BkyiKjdPsruga9UC/1Lk",
-    "_opacity": 255,
+    "_opacity": 178.06395000006887,
     "_color": {
       "__type__": "cc.Color",
       "r": 255,
@@ -3615,7 +3615,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 300,
-      "height": 52
+      "height": 78
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -3641,7 +3641,7 @@
       "__id__": 107
     },
     "_enabled": true,
-    "_N$string": "<color=#fff447><b></color><outline color=#0b1336 width=2>SPIN 0 TIME WITH A MINIMUM BET OF  ON SLOT JACKPOT CITY DELUXE, TO COMPLETE THIS STEP!</outline>",
+    "_N$string": "<color=#fff447><b></color><outline color=#0b1336 width=2>Spin 5 times with a minimum bet of 1000 on slot UNDYING LOVE</outline>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 24,
     "_N$font": {
@@ -3660,8 +3660,8 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#fff447><b></color><outline color=#0b1336 width=2>SPIN {remaining} TIME WITH A MINIMUM BET OF {minBet} ON SLOT {slotname}, TO COMPLETE THIS STEP!</outline>",
-    "_N$testData": "{\"progress\":\"2\",\"max\":\"2\",\"remaining\":\"0\",\"slotname\":\"JACKPOT CITY DELUXE\",\"minbet\":\"0\",\"currencyUpper\":\"CHIPS\",\"currencyLower\":\"chips\"}"
+    "_N$templateString": "<color=#fff447><b></color><outline color=#0b1336 width=2>Spin {max} times with a minimum bet of 1000 on slot {slotname}</outline>",
+    "_N$testData": "{\"progress\":\"0\",\"max\":\"5\",\"remaining\":\"5\",\"slotname\":\"UNDYING LOVE\",\"minbet\":\"1K\",\"currencyUpper\":\"CHIPS\",\"currencyLower\":\"chips\"}"
   },
   {
     "__type__": "9ef13KAG8RCLbO/cAA+eAX2",
@@ -10928,7 +10928,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 347
@@ -11084,7 +11084,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 351
@@ -11322,7 +11322,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 150.7,
+      "width": 155.86,
       "height": 70
     },
     "_rotationX": 0,
@@ -11349,7 +11349,7 @@
       "__id__": 355
     },
     "_enabled": true,
-    "_N$string": "<color=#fff447><b></color><outline color=#0b1336  width=2>YOU'VE WON</outline>\n<color=#fff447><b></color><outline color=#0b1336  width=2>10M Chips</outline>",
+    "_N$string": "<color=#fff447><b></color><outline color=#0b1336  width=2>YOU'VE WON</outline>\n<color=#fff447><b></color><outline color=#0b1336  width=2>5 Free Spins</outline>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 30,
     "_N$font": {
@@ -11369,7 +11369,7 @@
     "_enabled": true,
     "_validPreview": true,
     "_N$templateString": "<color=#fff447><b></color><outline color=#0b1336  width=2>YOU'VE WON</outline>\n<color=#fff447><b></color><outline color=#0b1336  width=2>{amount} {name}</outline>",
-    "_N$testData": "{\"name\":\"Chips\",\"amount\":\"10M\"}"
+    "_N$testData": "{\"name\":\"Free Spins\",\"amount\":5}"
   },
   {
     "__type__": "417cbrX72tB8Jemtqnr9JV/",
@@ -11386,7 +11386,7 @@
       "__id__": 359
     },
     "awardIndex": 0,
-    "activeAwardKey": ""
+    "activeAwardKey": "ProductPackageItemFreeSpins"
   },
   {
     "__type__": "c7669JrNMFPgbRziPJnJq6k",
@@ -11406,10 +11406,11 @@
       9,
       13
     ],
-    "awardAnimationIndex": 0,
-    "awardAnimationActive": false,
+    "playedAwardAnimationIndex": 0,
+    "awardAnimationActive": true,
     "claimDone": false,
-    "awardAnimationKey": ""
+    "awardAnimationKey": "ProductPackageItemFreeSpins",
+    "finalMissionAnimationPlayed": false
   },
   {
     "__type__": "cc.Node",
@@ -12114,7 +12115,7 @@
     ],
     "_prefab": null,
     "_id": "bd4AF6OxJFtaqRLLRwCbFT",
-    "_opacity": 255,
+    "_opacity": 178.06395000006887,
     "_color": {
       "__type__": "cc.Color",
       "r": 255,
@@ -12225,9 +12226,7 @@
       "b": 124,
       "a": 255
     },
-    "_N$normalSprite": {
-      "__uuid__": "8845bb47-5768-4f77-9e81-dec7e07f0ff4"
-    },
+    "_N$normalSprite": null,
     "_N$disabledSprite": {
       "__uuid__": "8845bb47-5768-4f77-9e81-dec7e07f0ff4"
     },
@@ -12255,7 +12254,7 @@
     "missionStepInterface": {
       "__id__": 111
     },
-    "buyInID": 551,
+    "buyInID": 656,
     "index": 0
   },
   {
@@ -12549,13 +12548,13 @@
       }
     ],
     "_tag": -1,
-    "_active": false,
+    "_active": true,
     "_components": [
       {
-        "__id__": 421
+        "__id__": 420
       },
       {
-        "__id__": 422
+        "__id__": 421
       }
     ],
     "_prefab": null,
@@ -13077,7 +13076,7 @@
         "__id__": 410
       },
       {
-        "__id__": 416
+        "__id__": 415
       }
     ],
     "_tag": -1,
@@ -13143,7 +13142,7 @@
     ],
     "_prefab": null,
     "_id": "25dPglFFRLioTkE0+9Ky5x",
-    "_opacity": 255,
+    "_opacity": 0,
     "_color": {
       "__type__": "cc.Color",
       "r": 255,
@@ -13267,40 +13266,21 @@
     "target": {
       "__id__": 410
     },
-    "component": "MissionInfoStatusController",
-    "handler": "goToProgressPopup",
+    "component": "ButtonSeeProgressComponent",
+    "handler": "performSeeProgressAction",
     "customEventData": ""
   },
   {
-    "__type__": "25bb5grc1NPEqGO6iQu49bt",
+    "__type__": "5d82aAbfitBUaxdqZNQxISK",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 410
     },
     "_enabled": true,
-    "missonInfoNode": {
-      "__id__": 395
-    },
-    "missonStepNode": {
-      "__id__": 4
-    },
-    "missionInterface": {
-      "__id__": 112
-    },
-    "firstStep": 0,
-    "missionEventHandler": {
-      "__id__": 415
+    "missionNode": {
+      "__id__": 3
     }
-  },
-  {
-    "__type__": "cc.ClickEvent",
-    "target": {
-      "__id__": 410
-    },
-    "component": "MissionInfoStatusController",
-    "handler": "",
-    "customEventData": ""
   },
   {
     "__type__": "cc.Node",
@@ -13314,13 +13294,13 @@
     "_active": true,
     "_components": [
       {
+        "__id__": 416
+      },
+      {
         "__id__": 417
       },
       {
-        "__id__": 418
-      },
-      {
-        "__id__": 420
+        "__id__": 419
       }
     ],
     "_prefab": null,
@@ -13365,7 +13345,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 416
+      "__id__": 415
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -13391,7 +13371,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 416
+      "__id__": 415
     },
     "_enabled": true,
     "transition": 2,
@@ -13417,7 +13397,7 @@
     "hoverSprite": null,
     "clickEvents": [
       {
-        "__id__": 419
+        "__id__": 418
       }
     ],
     "_N$interactable": true,
@@ -13441,13 +13421,13 @@
     },
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 416
+      "__id__": 415
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 416
+      "__id__": 415
     },
     "component": "DispatchActionClose",
     "handler": "performAction",
@@ -13458,7 +13438,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 416
+      "__id__": 415
     },
     "_enabled": true,
     "_actionName": "close",
@@ -13502,17 +13482,17 @@
     "_enabled": true,
     "editorOnly": true,
     "instantiationSource": "test01",
-    "templateID": 9,
-    "templateName": "14 step mission with proper actions + rewards - Claim Required (Amber Copy)",
+    "templateID": 10,
+    "templateName": "14 step mission with updated actions + rewards - Claim Required",
     "missionDataIndex": 0,
     "missionInterface": {
       "__id__": 112
     },
-    "_N$missionJSONString": "{\"templateID\":9,\"templateVersion\":11,\"id\":623,\"mission\":{\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepBet\",\"data\":{\"max\":\"10000\",\"progress\":0,\"id\":0,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemFreeSpins\":[{\"buyInID\":618,\"betSize\":\"500\",\"amount\":5,\"promoData\":{\"name\":\"Free Spins\",\"amount\":5,\"launchData\":{\"buyInID\":618,\"theme2_1\":\"kong\"},\"gridButton\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null},\"buyInID\":618,\"slotMachine\":\"Wrath of Kong\",\"betValue\":\"25,000\"}}]},\"awarded\":false,\"buyInIDs\":[551],\"state\":\"active\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Bet a total of {max} on slot {slotname}\"}},{\"class\":\"MissionStepBigWins\",\"data\":{\"max\":\"2\",\"progress\":0,\"id\":1,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}]},\"awarded\":false,\"buyInIDs\":[551],\"state\":\"locked\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Collect {max} big wins on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"2\",\"progress\":0,\"id\":2,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemCollectionChest\":[{\"tier\":\"1\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Large\",\"tier\":\"1\"}}]},\"awarded\":false,\"buyInIDs\":[551],\"minBet\":0,\"state\":\"locked\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Spin {max} times on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"3\",\"progress\":0,\"id\":3,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}]},\"awarded\":false,\"buyInIDs\":[681,682,683],\"minBet\":0,\"state\":\"locked\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Spin {max} times on slot {slotname}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":\"10000\",\"progress\":0,\"id\":4,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}]},\"awarded\":false,\"buyInIDs\":[545,546,547],\"state\":\"locked\",\"edges\":[5],\"predecessors\":[3],\"formatString\":\"Bet a total of {max} on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"2\",\"progress\":0,\"id\":5,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemFreeSpins\":[{\"buyInID\":618,\"betSize\":\"500\",\"amount\":5,\"promoData\":{\"name\":\"Free Spins\",\"amount\":5,\"launchData\":{\"buyInID\":618,\"theme2_1\":\"kong\"},\"gridButton\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null},\"buyInID\":618,\"slotMachine\":\"Wrath of Kong\",\"betValue\":\"25,000\"}}]},\"awarded\":false,\"buyInIDs\":[551],\"minBet\":0,\"state\":\"locked\",\"edges\":[6],\"predecessors\":[4],\"formatString\":\"Spin {max} times on slot {slotname}\"}},{\"class\":\"MissionStepBigWins\",\"data\":{\"max\":\"2\",\"progress\":0,\"id\":6,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}]},\"awarded\":false,\"buyInIDs\":[551],\"state\":\"locked\",\"edges\":[7],\"predecessors\":[5],\"formatString\":\"Collect {max} big wins on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"2\",\"progress\":0,\"id\":7,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}]},\"awarded\":false,\"buyInIDs\":[551],\"minBet\":0,\"state\":\"locked\",\"edges\":[8],\"predecessors\":[6],\"formatString\":\"Spin {max} times on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"3\",\"progress\":0,\"id\":8,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}]},\"awarded\":false,\"buyInIDs\":[652,653,654],\"minBet\":0,\"state\":\"locked\",\"edges\":[9],\"predecessors\":[7],\"formatString\":\"Spin {max} times on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"2\",\"progress\":0,\"id\":9,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemCollectionChest\":[{\"tier\":\"1\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Large\",\"tier\":\"1\"}}]},\"awarded\":false,\"minBet\":0,\"state\":\"locked\",\"edges\":[10],\"predecessors\":[8],\"formatString\":\"Spin {max} times on slot {slotname}\"}},{\"class\":\"MissionStepGiftGiving\",\"data\":{\"max\":\"2\",\"progress\":0,\"id\":10,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}]},\"awarded\":false,\"buyInIDs\":[545],\"giftIDs\":[282],\"state\":\"locked\",\"edges\":[11],\"predecessors\":[9],\"formatString\":\"Give {max} {giftname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"3\",\"progress\":0,\"id\":11,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}]},\"awarded\":false,\"buyInIDs\":[551],\"minBet\":0,\"state\":\"locked\",\"edges\":[12],\"predecessors\":[10],\"formatString\":\"Spin {max} times on slot {slotname}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":\"10000\",\"progress\":0,\"id\":12,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}]},\"awarded\":false,\"buyInIDs\":[630,631,632],\"state\":\"locked\",\"edges\":[13],\"predecessors\":[11],\"formatString\":\"Bet a total of {max} on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"2\",\"progress\":0,\"id\":13,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemCollectionChest\":[{\"tier\":\"1\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Large\",\"tier\":\"1\"}}],\"ProductPackageItemCollectionFrames\":[{\"amount\":\"1\",\"frameID\":\"promo.newYears2020\",\"promoData\":{\"name\":\"Collection Frames\",\"amount\":\"1\"}}]},\"awarded\":false,\"buyInIDs\":[545],\"minBet\":0,\"state\":\"locked\",\"edges\":[],\"predecessors\":[12],\"formatString\":\"Spin {max} times on slot {slotname}\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12],[13],[]],\"predecessors\":[[],[0],[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12]]}},\"awardData\":null,\"requireAwarded\":true,\"awarded\":false},\"secondsActive\":3,\"secondsRemaining\":10797,\"slotsData\":{\"545\":{\"name\":\"Jackpot City Deluxe\",\"customData\":{\"buyInID\":545,\"theme2_1\":\"jpcdeluxe\"}},\"546\":{\"name\":\"Jackpot City Deluxe VIP\",\"customData\":{\"buyInID\":546,\"theme2_1\":\"jpcdeluxe\"}},\"547\":{\"name\":\"High Roller Gala - Jackpot City Deluxe VIP\",\"customData\":{\"buyInID\":547,\"theme2_1\":\"jpcdeluxe\"}},\"551\":{\"name\":\"Party Wave\",\"customData\":{\"buyInID\":551,\"theme2_1\":\"surfing\"}},\"630\":{\"name\":\"Tiger Coin Wilds\",\"customData\":{\"buyInID\":630,\"theme2_1\":\"tigercoins\"}},\"631\":{\"name\":\"Tiger Coin Wilds VIP\",\"customData\":{\"buyInID\":631,\"theme2_1\":\"tigercoins\"}},\"632\":{\"name\":\"High Roller Gala - Tiger Coin Wilds VIP\",\"customData\":{\"buyInID\":632,\"theme2_1\":\"tigercoins\"}},\"652\":{\"name\":\"Kodiak Wilds\",\"customData\":{\"buyInID\":652,\"theme2_1\":\"kodiakwilds\"}},\"653\":{\"name\":\"Kodiak Wilds VIP\",\"customData\":{\"buyInID\":653,\"theme2_1\":\"kodiakwilds\"}},\"654\":{\"name\":\"High Roller Gala - Kodiak Wilds VIP\",\"customData\":{\"buyInID\":654,\"theme2_1\":\"kodiakwilds\"}},\"681\":{\"name\":\"Raging Reels 3\",\"customData\":{\"buyInID\":681,\"theme2_1\":\"ragingreels3\"}},\"682\":{\"name\":\"Raging Reels 3 VIP\",\"customData\":{\"buyInID\":682,\"theme2_1\":\"ragingreels3\"}},\"683\":{\"name\":\"High Roller Gala - Raging Reels 3 VIP\",\"customData\":{\"buyInID\":683,\"theme2_1\":\"ragingreels3\"}}},\"giftsData\":{\"282\":{\"name\":\"Cat\"}}}",
-    "_N$instantiateMissionTrigger": false,
-    "_N$retrieveMissionTrigger": false,
-    "_N$updatePreviewDataTrigger": false,
-    "_N$componentUpdateCallbackTrigger": true
+    "_N$missionJSONString": "{\"templateID\":10,\"templateVersion\":3,\"id\":793,\"source\":\"test01\",\"mission\":{\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":0,\"id\":0,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemFreeSpins\":[{\"buyInID\":618,\"betSize\":\"500\",\"amount\":5,\"promoData\":{\"name\":\"Free Spins\",\"amount\":5,\"launchData\":{\"buyInID\":618,\"theme2_1\":\"kong\"},\"gridButton\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null},\"buyInID\":618,\"slotMachine\":\"Wrath of Kong\",\"betValue\":\"25,000\"}}]},\"awarded\":false,\"minBet\":1000,\"state\":\"active\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Spin {max} times with a minimum bet of 1000 on slot {slotname}\"}},{\"class\":\"MissionStepGiftGiving\",\"data\":{\"max\":\"2\",\"progress\":0,\"id\":1,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}]},\"awarded\":false,\"state\":\"locked\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Give {max} {giftname}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"10000\",\"progress\":0,\"id\":2,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemCollectionChest\":[{\"tier\":\"1\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Large\",\"tier\":\"1\"}}]},\"awarded\":false,\"spinCount\":0,\"wins\":[],\"state\":\"locked\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Win {max} chips on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":0,\"id\":3,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}]},\"awarded\":false,\"minBet\":1000,\"state\":\"locked\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Spin {max} times with a minimum bet of 1000 on slot {slotname}\"}},{\"class\":\"MissionStepGiftGiving\",\"data\":{\"max\":\"2\",\"progress\":0,\"id\":4,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}]},\"awarded\":false,\"state\":\"locked\",\"edges\":[5],\"predecessors\":[3],\"formatString\":\"Give {max} {giftname}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"10000\",\"progress\":0,\"id\":5,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemFreeSpins\":[{\"buyInID\":618,\"betSize\":\"500\",\"amount\":5,\"promoData\":{\"name\":\"Free Spins\",\"amount\":5,\"launchData\":{\"buyInID\":618,\"theme2_1\":\"kong\"},\"gridButton\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null},\"buyInID\":618,\"slotMachine\":\"Wrath of Kong\",\"betValue\":\"25,000\"}}]},\"awarded\":false,\"spinCount\":0,\"wins\":[],\"state\":\"locked\",\"edges\":[6],\"predecessors\":[4],\"formatString\":\"Win {max} chips on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":0,\"id\":6,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}]},\"awarded\":false,\"buyInIDs\":[656,657,655],\"minBet\":1000,\"state\":\"locked\",\"edges\":[7],\"predecessors\":[5],\"formatString\":\"Spin {max} times with a minimum bet of 1000 on slot {slotname}\"}},{\"class\":\"MissionStepBingo\",\"data\":{\"max\":\"3\",\"progress\":0,\"id\":7,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}]},\"awarded\":false,\"buyInIDs\":[656,657,655],\"eventName\":\"slots.bingo.mark\",\"state\":\"locked\",\"edges\":[8],\"predecessors\":[6],\"formatString\":\"Mark Bingo board {max} times on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":0,\"id\":8,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}]},\"awarded\":false,\"buyInIDs\":[662,663,661],\"minBet\":1000,\"state\":\"locked\",\"edges\":[9],\"predecessors\":[7],\"formatString\":\"Spin {max} times with a minimum bet of 1000 on slot {slotname}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":\"10000\",\"progress\":0,\"id\":9,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemCollectionChest\":[{\"tier\":\"1\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Large\",\"tier\":\"1\"}}]},\"awarded\":false,\"buyInIDs\":[662,663,661],\"state\":\"locked\",\"edges\":[10],\"predecessors\":[8],\"formatString\":\"Bet a total of {max} on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":0,\"id\":10,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}]},\"awarded\":false,\"buyInIDs\":[222,423,221],\"minBet\":1000,\"state\":\"locked\",\"edges\":[11],\"predecessors\":[9],\"formatString\":\"Spin {max} times with a minimum bet of 1000 on slot {slotname}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"10000\",\"progress\":0,\"id\":11,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}]},\"awarded\":false,\"buyInIDs\":[222,423,221],\"spinCount\":0,\"wins\":[],\"state\":\"locked\",\"edges\":[12],\"predecessors\":[10],\"formatString\":\"Win {max} chips on slot {slotname}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":0,\"id\":12,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}]},\"awarded\":false,\"buyInIDs\":[656,657,655],\"minBet\":1000,\"state\":\"locked\",\"edges\":[13],\"predecessors\":[11],\"formatString\":\"Spin {max} times with a minimum bet of 1000 on slot {slotname}\"}},{\"class\":\"MissionStepBingo\",\"data\":{\"max\":\"3\",\"progress\":0,\"id\":13,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemCollectionChest\":[{\"tier\":\"1\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Large\",\"tier\":\"1\"}}],\"ProductPackageItemCollectionFrames\":[{\"amount\":\"1\",\"frameID\":\"promo.newYears2020\",\"promoData\":{\"name\":\"Collection Frames\",\"amount\":\"1\"}}]},\"awarded\":false,\"buyInIDs\":[656,657,655],\"eventName\":\"slots.bingo.mark\",\"state\":\"locked\",\"edges\":[],\"predecessors\":[12],\"formatString\":\"Mark Bingo board {max} times on slot {slotname}\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12],[13],[]],\"predecessors\":[[],[0],[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12]]}},\"awardData\":null,\"requireAwarded\":true,\"awarded\":false},\"secondsActive\":3,\"secondsRemaining\":10797,\"slotsData\":{\"221\":{\"name\":\"Undying Love\",\"customData\":{\"buyInID\":221,\"theme2_1\":\"undyinglove\"}},\"222\":{\"name\":\"Undying Love VIP\",\"customData\":{\"buyInID\":222,\"theme2_1\":\"undyinglove\"}},\"423\":{\"name\":\"High Roller Gala - Undying Love VIP\",\"customData\":{\"buyInID\":\"423\",\"theme2_1\":\"undyinglove\"}},\"655\":{\"name\":\"Banana Bonanza\",\"customData\":{\"buyInID\":655,\"theme2_1\":\"bananabonanza\"}},\"656\":{\"name\":\"Banana Bonanza VIP\",\"customData\":{\"buyInID\":656,\"theme2_1\":\"bananabonanza\"}},\"657\":{\"name\":\"High Roller Gala - Banana Bonanza VIP\",\"customData\":{\"buyInID\":657,\"theme2_1\":\"bananabonanza\"}},\"661\":{\"name\":\"Aloha Fortunes\",\"customData\":{\"buyInID\":661,\"theme2_1\":\"n129\"}},\"662\":{\"name\":\"Aloha Fortunes VIP\",\"customData\":{\"buyInID\":662,\"theme2_1\":\"n129\"}},\"663\":{\"name\":\"High Roller Gala - Aloha Fortunes VIP\",\"customData\":{\"buyInID\":663,\"theme2_1\":\"n129\"}}},\"giftsData\":[],\"queueData\":[]}",
+    "_N$instantiateMissionTrigger": true,
+    "_N$retrieveMissionTrigger": true,
+    "_N$updatePreviewDataTrigger": true,
+    "_N$componentUpdateCallbackTrigger": false
   },
   {
     "__type__": "cc.Animation",
@@ -13571,6 +13551,9 @@
       },
       {
         "__uuid__": "06622d61-d7ab-4b00-a34a-71a072b1bb08"
+      },
+      {
+        "__uuid__": "a1666426-31c1-4812-a058-35c80271e12e"
       }
     ],
     "playOnLoad": true
@@ -13602,9 +13585,9 @@
       "step12",
       "step13"
     ],
-    "claimMissionAwardState": "",
-    "completedMissionState": "",
-    "finalMissionState": "step_final"
+    "claimMissionAwardState": "step_mission_chest",
+    "completedMissionState": "step_mission_chest",
+    "finalMissionState": "step_mission_ended"
   },
   {
     "__type__": "25bb5grc1NPEqGO6iQu49bt",
@@ -13614,18 +13597,22 @@
       "__id__": 3
     },
     "_enabled": true,
+    "missionInterface": {
+      "__id__": 112
+    },
     "missonInfoNode": {
       "__id__": 395
     },
     "missonStepNode": {
       "__id__": 4
     },
-    "missionInterface": {
-      "__id__": 112
-    },
     "firstStep": 0,
     "missionEventHandler": {
-      "__id__": 427
+      "__id__": 426
+    },
+    "finalAwardClaimed": false,
+    "chestButton": {
+      "__id__": 10
     }
   },
   {

@@ -16,7 +16,7 @@ cc.Class({
             multiline: true,
             tooltip: 'Steps that contain a special reward item',
         },
-        awardAnimationIndex: {
+        playedAwardAnimationIndex: {
             default: 0,
             type: cc.Integer,
             visible:false
@@ -32,12 +32,22 @@ cc.Class({
         awardAnimationKey: {
             default: 'ProductPackageItemChips',
             visible: false,
+        },
+        finalMissionAnimationPlayed: {
+            default: false,
+            visible: false,
         }
     },
 
 	onLoad: function () {
 		this._super();
+        this.playedAwardAnimationIndex = 0;
+        this.currentStepCompleted = false;
+
         this.getComponent(cc.Animation).on('finished', this.onCompleteStepAnimFinished, this);
+        if (this.missionStepInterface && this.missionStepInterface.missionInterface) {
+            this.missionStepInterface.missionInterface.on('updateMissionDataEvent', this.onUpdateMissionData, this);
+        }
     },
 
     setAwardsData: function () {
@@ -46,49 +56,56 @@ cc.Class({
                     this.missionStepInterface._stepData.data.award;
         if (dataAwards) {
             this.awardItems = this.handleAwardsData(dataAwards);
-            this.numberOfAwards = this.awardItems.length;
+            this.numberOfAwards = this.awardItems && this.awardItems.length;
             this.awardAnimationActive =  true;
         }
     },
 
+    onUpdateMissionData: function() {
+        this.allStepsCompleted = this.missionStepInterface.missionInterface.isAllStepsComplete();
+	},
+
     onCompleteStepAnimFinished: function(event) {
-		if (!event.detail || !event.detail.name) {
+		if (!event.detail || !event.detail.name || this.allStepsCompleted) {
+            cc.log('MISSION ENDED');
 			return;
         }
-        const stepID = this.missionStepInterface.stepID;
-        const eventName = event.detail.name.toString();
-        const isAwardAnimationFinished = this.awardAnimationIndex >= this.numberOfAwards;
-        const missionSteps = this.missionStepInterface.missionInterface && this.missionStepInterface.missionInterface._stepData;
-        const lastStep = missionSteps && missionSteps[Object.keys(missionSteps).length -1];
-        
-        if (lastStep && lastStep.data.awarded) {
-            cc.log('finalStep');
-            return;
-        }
+
+       
         // Trigger Claim method after the 'step_complete' animation is successful. 
-        if (event.detail.name == 'step_complete' && !isAwardAnimationFinished) {
+        if (event.detail.name == 'step_complete') {
+            this.currentStepCompleted = true;
             this.setAwardsData();
         }
+        
+        if (this.currentStepCompleted) {
+            const stepID = this.missionStepInterface.stepID;
+            const eventName = event.detail.name.toString();
+            const isAwardAnimationFinished = this.playedAwardAnimationIndex >= this.numberOfAwards;
 
-        // Trigger Award animations one by one.
-        if (this.awardAnimationActive && !isAwardAnimationFinished) {
-            this.awardAnimationKey = this.awardItems[this.awardAnimationIndex].name;
-            let awardAnimationName = this.getAwardAnimationName(this.awardAnimationKey);
-
-            this.playStepAnimation(awardAnimationName, false);
-            this.awardAnimationIndex += 1;
-        }
-
-        // Trigger milestone animation.
-        if (isAwardAnimationFinished && !this.claimDone) {
-            const isMilestoneStepEventFinished = eventName.includes('step_milestone');
-            const isMilestoneStep =  this.milestoneSteps.indexOf(stepID * 1) !== -1;
-
-            if (isMilestoneStep && !isMilestoneStepEventFinished) {
-                this.playStepAnimation(stepID, true);
-            } else {
-                this.missionStepInterface.claimAward();
-                this.claimDone= true;
+            // Trigger Award animations one by one.
+            if (this.awardAnimationActive && !isAwardAnimationFinished) {
+    
+                this.awardAnimationKey = this.awardItems && this.awardItems[this.playedAwardAnimationIndex].name;
+                let awardAnimationName = this.getAwardAnimationName(this.awardAnimationKey);
+    
+                if (this.awardAnimationKey && awardAnimationName) {
+                    this.playStepAnimation(awardAnimationName, false);
+                    this.playedAwardAnimationIndex += 1;
+                }
+            }
+    
+            // Trigger milestone animation.
+            if (isAwardAnimationFinished && !this.claimDone) {
+                const isMilestoneStepEventFinished = eventName.includes('step_milestone');
+                const isMilestoneStep =  this.milestoneSteps.indexOf(stepID * 1) !== -1;
+    
+                if (isMilestoneStep && !isMilestoneStepEventFinished) {
+                    this.playStepAnimation(stepID, true);
+                } else {
+                    this.missionStepInterface.claimAward();
+                    this.claimDone= true;
+                }
             }
         }
     },

@@ -1,9 +1,9 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "step_claimed",
+  "_name": "step_mission_ended",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 6.816666666666666,
+  "_duration": 1.4833333333333334,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -148,16 +148,6 @@
           ]
         }
       },
-      "mission_step/background_chest/chest": {
-        "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": false
-            }
-          ]
-        }
-      },
       "mission_step/progress_container/progress_buttons/chest_info/chest_button": {
         "props": {}
       },
@@ -173,36 +163,24 @@
       },
       "mission_step/award_container/final_labels/award_label_final": {
         "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": false
-            },
-            {
-              "frame": 0.5,
-              "value": true
-            },
-            {
-              "frame": 3.0166666666666666,
-              "value": false
-            }
-          ],
           "opacity": [
             {
-              "frame": 0.5,
+              "frame": 1.3166666666666667,
               "value": 0
             },
             {
-              "frame": 0.6666666666666666,
+              "frame": 1.4833333333333334,
               "value": 255
+            }
+          ],
+          "active": [
+            {
+              "frame": 0.65,
+              "value": false
             },
             {
-              "frame": 2.85,
-              "value": 255
-            },
-            {
-              "frame": 3.0166666666666666,
-              "value": 0
+              "frame": 1.3166666666666667,
+              "value": true
             }
           ]
         }
@@ -211,7 +189,7 @@
         "props": {
           "active": [
             {
-              "frame": 6.816666666666666,
+              "frame": 0,
               "value": false
             }
           ]
@@ -227,27 +205,55 @@
         "props": {
           "active": [
             {
-              "frame": 0,
+              "frame": 0.9833333333333333,
               "value": true
             },
             {
-              "frame": 0.6333333333333333,
+              "frame": 1.4833333333333334,
               "value": false
             }
           ],
           "opacity": [
             {
-              "frame": 0,
+              "frame": 0.9833333333333333,
               "value": 75
             },
             {
-              "frame": 0.6333333333333333,
+              "frame": 1.4833333333333334,
               "value": 0
             }
           ]
         }
       },
       "mission_step/progress_container": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/chest_tap_anime/animated_chest/chest_tap": {
+        "props": {}
+      },
+      "mission_step/background_chest/tapable_chest": {
+        "comps": {
+          "cc.Button": {}
+        }
+      },
+      "mission_step/chest_tap_anime/animated_chest": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/background_chest": {
         "props": {
           "active": [
             {
