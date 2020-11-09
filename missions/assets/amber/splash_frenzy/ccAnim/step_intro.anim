@@ -31,12 +31,6 @@
       },
       "buttons/play/button_play": {
         "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": true
-            }
-          ],
           "opacity": [
             {
               "frame": 0,

@@ -85,15 +85,23 @@ cc.Class({
 
 	_getSlotName: function() {
 		const buyInIDs = this.missionStepInterface.getBuyInIDs();
+		const anySlotMachineLabel = 'Any Slot Machine';
 		let slotData;
-		
+
 		if (buyInIDs) {
 			slotData = buyInIDs && this.missionStepInterface.getSlotData(buyInIDs[0]);
 		} else {
-			const allSlotData = this.missionStepInterface.missionInterface._missionData && 
-				this.missionStepInterface.missionInterface._missionData.slotsData;
-			slotData = allSlotData && allSlotData[Object.keys(allSlotData)[0]];
+
+			// Get the first element that is available in missionInterface slotsData;
+
+			// const allSlotData = this.missionStepInterface.missionInterface._missionData && 
+			// 	this.missionStepInterface.missionInterface._missionData.slotsData;
+			// slotData = allSlotData && allSlotData[Object.keys(allSlotData)[0]];
+
+			// Set the label to 'Any Slot Machine' if no buyInID is configured on step.
+			return anySlotMachineLabel;
 		}
+		
 		return slotData && slotData.name;
 	},
 

@@ -200,16 +200,6 @@
           ]
         }
       },
-      "mission_step/award_container/reward_labels/award_label_final": {
-        "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": false
-            }
-          ]
-        }
-      },
       "mission_step/award_container/milestone_labels/label_milestone": {
         "props": {
           "active": [
@@ -330,7 +320,7 @@
           ]
         }
       },
-      "mission_step/award_container/reward_labels/award_label_chest": {
+      "mission_step/collect_container/static_whale": {
         "props": {
           "active": [
             {
@@ -340,12 +330,22 @@
           ]
         }
       },
-      "mission_step/collect_container/static_whale": {
+      "mission_step/award_container/final_labels/award_label_chest": {
         "props": {
           "active": [
             {
               "frame": 0,
-              "value": false
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/award_container/final_labels/award_label_final": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
             }
           ]
         }

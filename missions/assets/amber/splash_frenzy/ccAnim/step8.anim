@@ -200,16 +200,6 @@
           ]
         }
       },
-      "mission_step/award_container/reward_labels/award_label_final": {
-        "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": false
-            }
-          ]
-        }
-      },
       "mission_step/award_container/milestone_labels/label_milestone": {
         "props": {
           "active": [

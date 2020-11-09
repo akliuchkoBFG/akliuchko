@@ -36,7 +36,8 @@ cc.Class({
         finalMissionAnimationPlayed: {
             default: false,
             visible: false,
-        }
+        },
+        playButton: cc.Node,
     },
 
 	onLoad: function () {
@@ -44,10 +45,44 @@ cc.Class({
         this.playedAwardAnimationIndex = 0;
         this.currentStepCompleted = false;
 
-        this.getComponent(cc.Animation).on('finished', this.onCompleteStepAnimFinished, this);
+        const animationComp = this.getComponent(cc.Animation);
+
+        animationComp.on('finished', this.onCompleteStepAnimFinished, this);
+
         if (this.missionStepInterface && this.missionStepInterface.missionInterface) {
             this.missionStepInterface.missionInterface.on('updateMissionDataEvent', this.onUpdateMissionData, this);
         }
+
+        let currentAppState;
+        const appState = {
+            background: 'in_background',
+            foreground: 'in_foreground',
+        }
+
+        // For event when the app entering background
+        cc.game.on(cc.game.EVENT_HIDE, function () {
+            currentAppState = appState.background;
+            overrideAnimationBehavior(currentAppState);
+        });
+
+        // For event when the app entering foreground
+        cc.game.on(cc.game.EVENT_SHOW, function () {
+            currentAppState = appState.foreground;
+            overrideAnimationBehavior(currentAppState);
+        });
+
+        const overrideAnimationBehavior = (state) => {
+            const anim = this.animationState;
+            if (anim && anim.isPlaying && state == appState.background) {
+                animationComp.pause();
+            } else if (anim && state == appState.foreground) {
+                animationComp.resume();
+            }
+        }
+    },
+
+    onEnable: function () {
+        this.togglePlayButton();
     },
 
     setAwardsData: function () {
@@ -71,6 +106,7 @@ cc.Class({
 			return;
         }
 
+        this.animationState = null;
        
         // Trigger Claim method after the 'step_complete' animation is successful. 
         if (event.detail.name == 'step_complete') {
@@ -119,7 +155,8 @@ cc.Class({
         }
 
         if (animationName && comp) {
-            comp.play(animationName);
+            const animState = comp.play(animationName);
+            this.setAnimationSpecs(animState);
         }
     },
 
@@ -157,4 +194,21 @@ cc.Class({
         }
         return name;
     },
+
+    // Showe / Hide Play button if NO buyInId's are availabe in the current Step.
+    togglePlayButton: function() {
+        const buyInIDs = this.missionStepInterface.getBuyInIDs();
+        
+        if (!buyInIDs && this.playButton.active) {
+            this.playButton.active = false;
+        } else {
+            this.playButton.active = true;
+        }
+    },
+
+    setAnimationSpecs: function (specs) {
+        if (specs) {
+            this.animationState = specs;
+        }
+    }
 });
