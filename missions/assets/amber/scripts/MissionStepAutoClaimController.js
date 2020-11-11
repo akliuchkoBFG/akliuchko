@@ -81,10 +81,6 @@ cc.Class({
         }
     },
 
-    onEnable: function () {
-        this.togglePlayButton();
-    },
-
     setAwardsData: function () {
         const dataAwards = this.missionStepInterface._stepData &&
                     this.missionStepInterface._stepData.data &&
@@ -98,6 +94,7 @@ cc.Class({
 
     onUpdateMissionData: function() {
         this.allStepsCompleted = this.missionStepInterface.missionInterface.isAllStepsComplete();
+        this.togglePlayButton();
 	},
 
     onCompleteStepAnimFinished: function(event) {
@@ -198,7 +195,7 @@ cc.Class({
     // Showe / Hide Play button if NO buyInId's are availabe in the current Step.
     togglePlayButton: function() {
         const buyInIDs = this.missionStepInterface.getBuyInIDs();
-        
+
         if (!buyInIDs && this.playButton.active) {
             this.playButton.active = false;
         } else {

@@ -39,7 +39,8 @@ cc.Class({
 
     onUpdateStep: function () {
         this.stepID = this.missionStepInterface && this.missionStepInterface.stepID * 1;
-        this.setStepRangePoint();
+        this.updateOnComplete = false;
+        this.targetRange = this.getStepRangePoint(this.stepID);
     },
 
     onStepCompleteAnimation: function (e) {
@@ -47,22 +48,21 @@ cc.Class({
 			return;
         }
         if (e.detail.name == 'step_complete') {
-            // advance on next step for fillbar;
+            this.updateOnComplete = true;
             
+            // advance on next step for fillbar;
             this.lastStep = this.milestoneSteps[this.milestoneSteps.length - 1];
             const isLastStep = this.lastStep == this.stepID;
             this.stepID = isLastStep ? this.missionStepInterface.stepID * 1 : this.missionStepInterface.stepID * 1 + 1;
-            this.setStepRangePoint();
+            this.targetRange = this.getStepRangePoint(this.stepID);
         }
     },
 
-    getStepRangePoint: function () {
-        return this.targetRange;
-    },
-
-    setStepRangePoint: function(e) {
+    getStepRangePoint: function(currentStep, isPrevStepNeeded) {
         let rangeValue;
-        switch (this.stepID) {
+        const actionStep = isPrevStepNeeded ? currentStep - 1 : currentStep;
+
+        switch (actionStep) {
             case 1:
             case 2:
                 rangeValue = this.stepEndPoints[0];
@@ -88,19 +88,44 @@ cc.Class({
                 rangeValue = 0;
                 break;
         }
-        this.targetRange = rangeValue;
-        this.isUpdate = true;
+
+        if (!isPrevStepNeeded) {
+            this.isUpdate = true;
+        }
+
+        return rangeValue;
     },
 
-    updateProgressFillBar: function (id) {
+    _getStepStartPoint: function(stepID) {
+        const prevStepNeeded = true;
+        if (stepID > 0) {
+            return this.getStepRangePoint(stepID, prevStepNeeded);
+        }
+        return 0;
+    },
+
+    updateProgressFillBar: function () {
+
         if (this.freezeProgress) {
             return;
         }
-        const range = this.getStepRangePoint();
+
+        const start = this._getStepStartPoint(this.stepID);
+        const range = this.getStepRangePoint(this.stepID);
+
+        if (start != range && this.updateOnComplete) {
+            this.missionStepInterface.getComponent(cc.Animation).play('fill_bar');
+        }
+
+        const amount = start == range || !this.updateOnComplete ? 
+            range : start + Math.min(this.fillSprite.fillRange - start, 1.0) + 0.01;
 
         if (this.fillSprite) {
-            this.fillSprite.fillRange = range;
+            this.fillSprite.fillRange = amount;
         }
-        this.isUpdate = false;
+        
+        if (amount >= range) {
+            this.isUpdate = false;
+        }
     },
 });
