@@ -94,7 +94,9 @@ cc.Class({
 
     onUpdateMissionData: function() {
         this.allStepsCompleted = this.missionStepInterface.missionInterface.isAllStepsComplete();
-        this.togglePlayButton();
+        if (!this.playButton.active) {
+            this.togglePlayButton();
+        }
 	},
 
     onCompleteStepAnimFinished: function(event) {
@@ -200,6 +202,8 @@ cc.Class({
             this.playButton.active = false;
         } else {
             this.playButton.active = true;
+            // full opacity will be triggered in 'step_intro'animation;
+            this.playButton.setOpacity = 0;
         }
     },
 
