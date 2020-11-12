@@ -40,7 +40,9 @@ const PreviewCharacters = {
 			existingCharacters = [];
 		}
 		existingCharacters.unshift(characterData);
-		const uniqueCharacters = _.uniqBy(existingCharacters, 'characterID');
+		const uniqueCharacters = (typeof _.uniqBy === 'function')
+			? _.uniqBy(existingCharacters, 'characterID')
+			: _.uniq(existingCharacters, 'characterID');
 		this._saveCharactersListToCache(env, uniqueCharacters);
 		this._saveCacheToFile();
 	},
