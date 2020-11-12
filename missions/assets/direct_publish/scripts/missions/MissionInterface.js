@@ -14,13 +14,13 @@ cc.Class({
 		menu: 'Add Mission Component/Mission Interface',
 		executeInEditMode: true,
 		disallowMultiple: true,
-		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SPP/pages/495616500/Mission+Interface'
+		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/495616500/Mission+Interface'
 	},
 
 	properties: {
 		missionDataProvider: {
 			default: null,
-			type: MissionDataProviderLoadData,
+			type: MissionDataProvider,
 			tooltip: "Reference to the missions data provider (defaults to use MissionDataProviderLoadData on the root)",
 			notify: function(prevDataProvider) {
 				if (CC_EDITOR && prevDataProvider !== this.missionDataProvider) {
@@ -66,8 +66,8 @@ cc.Class({
 						break;
 					} else {
 						const parent = node.getParent();
-						// if we are at the top level node with no provider... add load as as the default
-						if (parent instanceof cc.Scene) {
+						// if we are at the top level node with no provider... add load data as as the default
+						if (parent instanceof cc.Scene || !parent) {
 							const loadData = node.addComponent(MissionDataProviderLoadData);
 							this.missionDataProvider = loadData;
 							break;
@@ -127,11 +127,28 @@ cc.Class({
 	},
 
 	updateProgressForStep: function(stepID, stepProgress) {
-
 		if(this._stepData[stepID])
 		{
 			var boundedProgress = Math.min(this._stepData[stepID].data.max,stepProgress);
 			this._stepData[stepID].data.progress = boundedProgress;
+		}
+	},
+
+	updateProgressForStepWithNotice: function(stepID, stepProgress) {
+		this.updateProgressForStep(stepID, stepProgress);
+		this.emit('updateMissionDataEvent', null);
+	},
+
+	updateStepStateWithNotice: function(stepID, stepState) {
+		if (this._stepData[stepID]) {
+			this._stepData[stepID].data.state = stepState;
+			this.emit('updateMissionDataEvent', null);
+		}
+	},
+
+	markStepAsAwarded: function(stepID) {
+		if (this._stepData[stepID]) {
+			this._stepData[stepID].data.awarded = true;
 		}
 	},
 
@@ -214,6 +231,32 @@ cc.Class({
 		return this._missionData && this._missionData.giftsData;
 	},
 
+	getTrayIcon() {
+		let iconName = '';
+		if (!this._missionData) {
+			return Promise.resolve(iconName);
+		}
+		const tags = this._missionData.tags;
+		const ICON_IDENTIFIER = 'icon.';
+		tags.forEach((tag) => {
+			if (tag.indexOf(ICON_IDENTIFIER) === 0) {
+				iconName = tag.replace(ICON_IDENTIFIER, '');
+			}
+		});
+		if (!iconName) {
+			return Promise.resolve('');
+		}
+		const configLoader = PremiumItemModel.createWithData({
+			type: 'asset',
+			group: 'mission_icons_temp',
+			name: iconName,
+		});
+		return configLoader.loadConfig()
+		.then(() => {
+			return configLoader.getClientConfigValue('images.asset');
+		});
+	},
+
 	isMissionAwardClaimed: function() {
 		if (this._missionData && this._missionData.mission) {
 			if (!this._missionData.mission.awardData) {
@@ -225,11 +268,29 @@ cc.Class({
 	},
 
 	claimMissionAward: function() {
-		// TODO: call into the claim for the mission
+		const comboID = CasinoCharacterService.playerCharacter.getComboID();
+		const missionID = this.getMissionID();
+		const type = 'player';  // default type for missions
+		const params = [comboID, type, missionID];
 
-		// Send notice that claim request was completed
-		this.emit('claimedMissionAward', {});
-		SANotificationCenter.getInstance().postNotification('lobby.shouldRequestLobbyData');
+		return SANetworkInterface.serverRequest({
+			controller: 'mission',
+			method: 'awardMission',
+			params: params,
+			encoding: 'Params',
+		}).then((result) => {
+			if (result.missionData) {
+				this._stepData = {};
+				var boundedIndex = Math.max(0, Math.min(this.missionDataIndex, result.missionData.length-1));
+				this.updateMissionData(result.missionData[boundedIndex]);
+			}
+			// Send notice that claim request was completed
+			this.emit('claimedMissionAward', {});
+			SANotificationCenter.getInstance().postNotification('lobby.shouldRequestLobbyData');
+
+		}).catch((error) => {
+			this.log.e('ClaimMissionAward failed, ' + error);
+		});
 	},
 
 	claimStepAward: function(stepID) {

@@ -50,6 +50,7 @@ return Vue.component('preview-character-select', {
 			defaultTooltip: "Select from recently used characters.\nIf no characters are listed launch the preview scene and refresh the list",
 			previewCharacters: [],
 			showAdvanced: false,
+			manualRefresh: false,
 		};
 	},
 
@@ -88,6 +89,22 @@ return Vue.component('preview-character-select', {
 
 	created() {
 		this.refreshCharacterOptions();
+		Editor.Profile.load("profile://local/environment-settings.json", (err, profile) => {
+			if (err) {
+				// Failed to get environment profile for automatic character list refreshing
+				// Show button for manual refresh
+				this.manualRefresh = true;
+				return;
+			}
+			this.envProfile = profile;
+			this.envProfile.addListener('changed', this.refreshCharacterOptions);
+		});
+	},
+
+	destroyed() {
+		if (this.envProfile) {
+			this.envProfile.removeListener('changed', this.refreshCharacterOptions);
+		}
 	},
 
 	methods: {

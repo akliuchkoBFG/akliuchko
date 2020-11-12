@@ -7,7 +7,7 @@ cc.Class({
 
 	editor: {
 		menu: 'Add Button Action/Launch Slots',
-		inspector: 'packages://self-aware-components/components/dispatch-action-launch-slots.js',
+		inspector: Editor.SAG.ComponentInspector('dispatch-action-launch-slots'),
 		disallowMultiple: true,
 	},
 

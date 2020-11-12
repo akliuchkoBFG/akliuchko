@@ -1,0 +1,1 @@
+{"version":"1.2.1","sourceCommitHash":"978dd76e81cfe4ed21f0aecaa90faf86cd65b398","assets":{"package.json":"5e91d834","main.js":"a4268a19","LegacySync.js":"5174c223","lib/jszip.min.js":"5f4e98ef","secrets.json":"3faab11f"},"hash":"2f215c3e","pathInProject":"packages/self-aware-sync","bundleName":"extension___self-aware-sync"}

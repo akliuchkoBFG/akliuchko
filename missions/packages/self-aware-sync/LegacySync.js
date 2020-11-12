@@ -11,7 +11,9 @@ const async = require('async');
 const exec = require('child_process').exec;
 const TEMP_FOLDER = Editor.url("profile://local/self-aware-sync-tmp/");
 
-const BuildSettings = require(Editor.url('packages://asset-zip-build/BuildSettings.js'));
+const curSettings = {
+	syncURL: 'https://casino-admin.qa.bigfishgames.com/files',
+};
 
 function reloadAllPackages(packagesDir) {
 	Editor.log("Reloading all packages");
@@ -98,7 +100,6 @@ function unzip_remote_file(source, dest){
 }
 
 function unzip_direct_publish() {
-	const curSettings = BuildSettings.getSettings();
 	const sourceURL = curSettings.syncURL + "/direct_publish_shared.tar";
 	const destPath = Editor.url("db://assets/direct_publish");
 	return unzip_remote_file(sourceURL, destPath)
@@ -111,7 +112,6 @@ function unzip_direct_publish() {
 }
 
 function unzip_shared_packages() {
-	const curSettings = BuildSettings.getSettings();
 	const packagesDir = Editor.url('packages://self-aware-sync/../');
 	return Promise.resolve()
 	.then(() => {

@@ -19,7 +19,12 @@ cc.Class({
 	},
 
 	_getFillPercentage: function() {
-		return this._getCarryOverSpins() / this._spinsPerEntry;
+		var userSpins = this._numSpins;
+		if(this._numSpins > this._spinsPerEntry)
+		{
+			userSpins = this._getCarryOverSpins();
+		}
+		return userSpins / this._spinsPerEntry;
 	},
 
 	update: function (dt) {

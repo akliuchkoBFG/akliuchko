@@ -11,10 +11,9 @@ cc.Class({
 	mixins: [ComponentLog],
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Mission Load Data',
 		executeInEditMode: true,
 		disallowMultiple: true,
-		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SPP/pages/495583770/Mission+Data+Provider'
+		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/495583770/Mission+Data+Provider'
 	},
 
 	properties: {

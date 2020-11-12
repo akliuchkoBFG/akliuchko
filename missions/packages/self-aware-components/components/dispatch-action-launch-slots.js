@@ -12,24 +12,26 @@ const slotData = {
 	},
 };
 
-const BUY_IN_OPTIONS_URL = 'https://casino-tools.qa.bigfishgames.com:8080/cocos_creator/getBuyInOptions';
-const request = require('request');
 function updateBuyInData(silent) {
-	request.get({
-		url: BUY_IN_OPTIONS_URL,
-	}, (err, respObj, response) => {
-		if (err) {
-			return Editor.error("Can't connect with the tools environment to update slots list");
-		}
+	Editor.SAG.PigbeeRequest.get({
+		env: 'qa',
+		app: 'bfc',
+		controller: 'cocos_creator',
+		action: 'getBuyInOptions',
+	})
+	.then((response) => {
 		try {
 			const buyIns = JSON.parse(response);
 			Object.assign(slotData, buyIns);
 			if (!silent) {
 				Editor.success("Finished reloading slots list options");
 			}
-		} catch(e) {
-			Editor.error("Can't update slots list, unexpected data response");
+		} catch(err) {
+			Editor.error("Can't update slots list, unexpected data response\n" + err);
 		}
+	})
+	.catch((err) => {
+		Editor.error("Can't connect with the qa environment to update slots list\n" + err);
 	});
 }
 // Make a silent initial request for buy in data

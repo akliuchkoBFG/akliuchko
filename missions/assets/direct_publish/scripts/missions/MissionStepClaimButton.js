@@ -7,7 +7,7 @@ cc.Class({
 		menu: 'Add Mission Component/Claim Button',
 		requireComponent: cc.Button,
 		executeInEditMode: true,
-		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SPP/pages/519635201/Mission+Step+Claim+Button'
+		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/519635201/Mission+Step+Claim+Button'
 	},
 
 	performMissionStepAction: function() {

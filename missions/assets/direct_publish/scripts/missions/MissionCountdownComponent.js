@@ -6,7 +6,7 @@ cc.Class({
 	editor: CC_EDITOR && {
 		menu: 'Add Mission Component/Countdown Timer',
 		requireComponent: CountdownComponent,
-		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SPP/pages/562659403/Mission+Countdown+Component',
+		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/562659403/Mission+Countdown+Component',
 	},
 
 	onUpdateMissionData: function() {

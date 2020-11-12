@@ -1,6 +1,4 @@
 (() => {
-const bogusTemplateID = "CocosCreatorBogus";
-
 const componentDataContainer = { 
 	// This property key must exist to get watcher updates when slot data refreshes
 	// Consequently data refreshes must always update the data for this key to trigger a redraw
@@ -8,44 +6,32 @@ const componentDataContainer = {
 	templates: {},
 };
 
-// Pull the missions environment from the sag build settings panel
-const BuildSettings = require(Editor.url('packages://asset-zip-build/BuildSettings.js'));
-const TEMPLATE_OPTIONS_URL = '.bigfishgames.com:8080/cocos_creator/getMissionTemplatesWithIDs';	// authless pigbee access
-const request = require('request');
 function updateTemplateData(myCallback) {
-	const settings = BuildSettings.getSettings();	// These may have changed since this component was loaded
-	const endpoint = 'https://'+settings.previewEnv+TEMPLATE_OPTIONS_URL;
-	request.get({
-		url: endpoint,
-	}, (err, respObj, response) => {
-		if (err) {
-			return Editor.error("Can't connect with the tools environment to update template list");
-		}
+	Editor.SAG.PigbeeRequest.get({
+		env: 'dev',
+		controller: 'cocos_creator',
+		action: 'getMissionTemplatesWithIDs',
+	})
+	.then((response) => {
 		try {
 			// Editor.success(response);
 			const templates = JSON.parse(response);
 			componentDataContainer.templates = templates;
 			componentDataContainer.initial = false;
 			if (myCallback) {
-				Editor.success("Finished template list");
+				Editor.success("Updated template list");
 				myCallback();
 			}
 		} catch(e) {
 			Editor.error([
-			    "Can't update templates, unexpected data response",
-			    "Response: " + response,
-			    "Error: " + e,
+				"Can't update templates, unexpected data response",
+				"Response: " + response,
+				"Error: " + e,
 			].join("\n"));
 		}
+	}).catch((err) => {
+		Editor.error("Can't connect to Pigbee to update mission template list\n" + err);
 	});
-	Editor.log(endpoint);
-}
-
-function validateTemplateVersion(templateID) {
-	var tVersion = componentDataContainer.templates[templateID].mission.version;
-	if(componentDataContainer.missionJSON !== null && componentDataContainer.missionJSON.templateVersion !== tVersion) {
-		Editor.log("Template version ("+tVersion+")"+" doesn't match retrieved instantiated mission ("+componentDataContainer.missionJSON.templateVersion+")!");
-	}
 }
 
 // Make a silent initial request for template data

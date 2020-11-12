@@ -31,12 +31,8 @@ cc.Class({
 
 	// use this for initialization
 	onLoad: function () {
-		if (CC_EDITOR) {
-			this.missionInterface = this.missionInterface || MissionInterface.findInterfaceInScene(this);
-			if(this.missionInterface) {
-				this.missionInterface.on('updateMissionDataEvent', this.onUpdateMissionData, this);
-			}
-		} else {
+		this.missionInterface = this.missionInterface || MissionInterface.findInterfaceInScene(this);
+		if (this.missionInterface) {
 			this.missionInterface.on('updateMissionDataEvent', this.onUpdateMissionData, this);
 		}
 	},

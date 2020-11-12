@@ -9,7 +9,7 @@ cc.Class({
 		requireComponent: DataTemplateRichTextLabel,
 		executeInEditMode: true,
 		menu: 'Add Mission Component/Progress Label',
-		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SPP/pages/562593870/Mission+Progress+Label'
+		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/562593870/Mission+Progress+Label'
 	},
 
 	start: function() {
@@ -30,8 +30,10 @@ cc.Class({
 		let max = this.missionStepInterface.getProgressMax();
 		progress = ProductPackageItemConfig.numberAsShortString(progress, '', true);
 		max = ProductPackageItemConfig.numberAsShortString(max, '', true);
-		rtLabel.setData({progress: progress, max: max});
+		let data = {progress: progress, max: max};
+		rtLabel.setData(data);
+
 		// Set the editor mode properties
-		rtLabel.testData = `{"progress": ${progress}, "max": ${max}}`;
+		rtLabel.testData = JSON.stringify(data, null, '\t');
 	}
 });

@@ -7,9 +7,14 @@ const requestProgress = require('request-progress');
 const async = require('async');
 const _ = require('lodash');
 const AssetProcessors = Editor.require('packages://asset-import/AssetProcessors.js');
+const PigbeeRequest = Editor.require('packages://pigbee-utils/PigbeeRequest.js');
 /* eslint-enable global-require */
 
-const PIGBEE_URL = 'https://casino-tools.qa.bigfishgames.com:8080/cocos_creator/';
+const PIGBEE_REQUEST_PARAMS = Object.freeze({
+	env: 'tools',
+	app: 'bfc',
+	controller: 'cocos_creator',
+});
 const TEMP_DIR = path.join(Editor.projectInfo.path, 'assets', 'imports');
 
 const FILES = {
@@ -79,7 +84,7 @@ return Editor.Panel.extend({
 					};
 					this.uploadAssets(files, uploadOptions);
 				},
-				uploadAssets(files, uploadOptions) {
+				uploadAssets(files, uploadProcessingOptions) {
 					this.downloads = [];
 					this.files = files;
 					this.state = STATES.UPLOADING;
@@ -94,23 +99,33 @@ return Editor.Panel.extend({
 						// Delete existing directory prior to uploading new assets
 						(next) => {
 							this.uploadProgress = 5;
-							request.post({
-								url: '/deleteDirectoryByPost',
-								baseUrl: PIGBEE_URL,
+							const deleteDirOptions = Object.assign({
+								action: 'deleteDirectoryByPost',
 								formData: dirPostData,
-							}, next);
+							}, PIGBEE_REQUEST_PARAMS);
+							PigbeeRequest.post(deleteDirOptions, next);
 						},
 						// Recreate the temp directory
-						(respObj, response, next) => {
+						(response, next) => {
 							this.uploadProgress = 10;
-							request.post({
-								url: '/createDirectoryByPost',
-								baseUrl: PIGBEE_URL,
+							const createDirOptions = Object.assign({
+								action: 'createDirectoryByPost',
 								formData: dirPostData,
-							}, next);
+							}, PIGBEE_REQUEST_PARAMS);
+							PigbeeRequest.post(createDirOptions, next);
+						},
+						// Prepare for upload by getting PigbeeRequest pieces needed to make the request
+						(response, next) => {
+							let uploadOptions = Object.assign({
+								action: 'uploadFileByPost',
+							}, PIGBEE_REQUEST_PARAMS);
+							uploadOptions = PigbeeRequest.getRequestOptions(uploadOptions);
+							PigbeeRequest.getRequestModule(uploadOptions, (err, pigbeeRequest) => {
+								next(err, pigbeeRequest, uploadOptions);
+							});
 						},
 						// Upload assets
-						(respObj, response, next) => {
+						(pigbeeRequest, uploadOptions, next) => {
 							const progressStart = 15;
 							// Chunk of the progress bar for the file uploads
 							// The rest of the progress bar is for previous steps and server processing
@@ -120,10 +135,7 @@ return Editor.Panel.extend({
 							let intervalID;
 							this.uploadProgress = progressStart;
 							let totalBytes = 1e10;
-							const upload = request.post({
-								url: '/uploadFileByPost',
-								baseUrl: PIGBEE_URL,
-							}, next);
+							const upload = pigbeeRequest.post(uploadOptions, next);
 							upload.on('response', () => {
 								this.uploadProgress = 100;
 								clearInterval(intervalID);
@@ -135,7 +147,7 @@ return Editor.Panel.extend({
 								const filePath = files[i].path;
 								form.append('asset' + i, fs.createReadStream(filePath));
 							}
-							_.forOwn(uploadOptions, (value, key) => {
+							_.forOwn(uploadProcessingOptions, (value, key) => {
 								form.append(key, value);
 							});
 							let bytesUploaded = 0;

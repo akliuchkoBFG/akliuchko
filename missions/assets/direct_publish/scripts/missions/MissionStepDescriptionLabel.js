@@ -9,7 +9,7 @@ cc.Class({
 		requireComponent: DataTemplateRichTextLabel,
 		executeInEditMode: true,
 		menu: 'Add Mission Component/Step Description Label',
-		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SPP/pages/562692173/Mission+Step+Description+Label'
+		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/562692173/Mission+Step+Description+Label'
 	},
 
 	_populateRTData: function(rtLabel) {
@@ -35,7 +35,7 @@ cc.Class({
 		};
 		rtLabel.setData(data);
 		// Set the editor mode properties
-		rtLabel.testData = JSON.stringify(data);
+		rtLabel.testData = JSON.stringify(data, null, '\t');
 	},
 
 	onUpdateMissionStepData: function() {
