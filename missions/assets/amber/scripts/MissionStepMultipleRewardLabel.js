@@ -29,7 +29,7 @@ cc.Class({
 	onUpdateMissionStepData: function() {
 		let rtLabel = this.getComponent('DataTemplateRichTextLabel');
 		if (!rtLabel.templateString || rtLabel.templateString == '') {
-			rtLabel.templateString = 'You Won: {amount} {name}';
+			rtLabel.templateString = 'You Won: {amount} {name} in {slotname}!';
         }
         
         if (this.missionStepAutoClaimController) {
@@ -52,8 +52,14 @@ cc.Class({
             if (packageInfo) {
                 const name = packageInfo.nameText;
                 const amount = packageInfo.amountText(packageData);
+                const slotName = this._getSlotName();
+
                 // Set both the template data and test data for previewing
-                const data = {name: name, amount: amount};
+                const data = {
+                    name: name,
+                    amount: amount,
+                    slotname: slotName,
+                };
                 rtLabel.setData(data);
                 rtLabel.testData = JSON.stringify(data);
             }
@@ -73,5 +79,19 @@ cc.Class({
 				return configData[packageData[typeKey]];
 			}
 		}
+    },
+    
+    _getSlotName: function() {
+		const buyInIDs = this.missionStepInterface.getBuyInIDs();
+		const anySlotMachineLabel = 'Any Slot Machine';
+		let slotData;
+
+		if (buyInIDs) {
+			slotData = buyInIDs && this.missionStepInterface.getSlotData(buyInIDs[0]);
+		} else {
+			return anySlotMachineLabel;
+		}
+		
+		return slotData && slotData.name;
 	},
 });

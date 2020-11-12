@@ -2,7 +2,7 @@
 
 function getCurrencyAmount(productPackageData) {
 	var result = formatNumber(productPackageData.amount);
-	if (result.length > 8) {
+	if (result.length > 4) {
 		result = numberAsShortString(productPackageData.amount, '', true);
 	}
 	return result;

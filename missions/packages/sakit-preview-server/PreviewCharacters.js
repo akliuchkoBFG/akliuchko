@@ -5,23 +5,10 @@ const _ = require('lodash');
 const SAVED_CHARACTER_DATA = Editor.url("profile://local/preview-characters.json");
 // Map of environment to array of {characterID, handle} ordered by most recently used
 let charactersCached = null;
-// Global state for current environment parameters
-let platform = 'sakit';
-let server = 'casino-tools.qa.bigfishgames.com';
+// Profile for current environment parameters
+const EnvProfile = Editor.Profile.load("profile://local/environment-settings.json");
 
 const PreviewCharacters = {
-	listenAndInitialize(listener, currentPlatform, currentServer) {
-		platform = currentPlatform;
-		server = currentServer;
-		try {
-			listener.on('preview-controls:platform-changed', (evt, newPlatform) => {
-				platform = newPlatform;
-			});
-			// TODO add listener to build settings change? Or wait for a refactored environment panel?
-		} catch (e) {
-			Editor.error(e);
-		}
-	},
 	_loadFromFile() {
 		let characters = {};
 		try {
@@ -53,7 +40,9 @@ const PreviewCharacters = {
 			existingCharacters = [];
 		}
 		existingCharacters.unshift(characterData);
-		const uniqueCharacters = _.uniqBy(existingCharacters, 'characterID');
+		const uniqueCharacters = (typeof _.uniqBy === 'function')
+			? _.uniqBy(existingCharacters, 'characterID')
+			: _.uniq(existingCharacters, 'characterID');
 		this._saveCharactersListToCache(env, uniqueCharacters);
 		this._saveCacheToFile();
 	},
@@ -74,8 +63,9 @@ const PreviewCharacters = {
 		return charactersCached;
 	},
 	_getCurrentEnvironment() {
-		const app = platform.includes("jms") ? 'jms' : 'bfc';
-		return this._getEnvId(server, app);
+		const app = EnvProfile.data.app;
+		const serverURL = url.parse(EnvProfile.data.envs.dev.serverURL);
+		return this._getEnvId(serverURL.host, app);
 	},
 	getForCurrentEnvironment() {
 		const env = this._getCurrentEnvironment();

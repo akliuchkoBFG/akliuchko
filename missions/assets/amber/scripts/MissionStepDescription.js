@@ -74,7 +74,7 @@ cc.Class({
 			this.setTemplateString(templateClassTypeStr);
 
 		if (!this.isProgress && staticTemplateTypeString) {
-			let styledDescription = this.styleDescriptionString(description);
+			let styledDescription = this.styleDescriptionAddMachine(description);
 			rtLabel.templateString = description ? styledDescription : staticTemplateTypeString;
         } else {
             rtLabel.templateString = staticTemplateTypeString;
@@ -114,12 +114,13 @@ cc.Class({
 		}
     },
 
-	styleDescriptionString: function (text) {
+	styleDescriptionAddMachine: function (text) {
 		let color = this.textColor;
 		let outline = this.outlineColor;
 		let outlineWidth = this.outlineWidth;
+		const inSlotnameLabel = ' in {slotname} to win a reward!'
 		if (text) {
-			return `<color=${color}><b></color><outline color=${outline} width=${outlineWidth}>${text}</outline>`;
+			return `<color=${color}><b></color><outline color=${outline} width=${outlineWidth}>${text}${inSlotnameLabel}</outline>`;
 		}
 	},
 
@@ -131,28 +132,28 @@ cc.Class({
 		const outlineWidth = this.outlineWidth;
         switch (type) {
             case 'MissionStepBet':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Bet a total of {max} {currencyUpper} on slot {slotname} </outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Bet a total of {max} {currencyUpper} in {slotname} to win a reward!</outline>`
                 break;
             case 'MissionStepSpin':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Spin {max} times on slot {slotname}</outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Spin {max} times with a minimum bet of {minBet} in {slotname} to win a reward!</outline>`
                 break;
             case 'MissionStepWinsThreshold':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Collect {max} wins over {threshold} on slot {slotname} </outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Collect {max} wins over {threshold} in {slotname} to win a reward!</outline>`
                 break;
             case 'MissionStepWins':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Win {max} {currencyUpper} in {spinCount} consecutive spins on slot {slotname} </outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Win {max} {currencyUpper} in {slotname} to win a reward!</outline>`
                 break;
             case 'MissionStepBigWins':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Collect {max} big wins on slot {slotname}</outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Collect {max} big wins in {slotname} to win a reward!</outline>`
                 break;
             case 'MissionStepGiftGiving':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Give {max} {giftname} </outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Give {max} {giftname} to win a reward!</outline>`
 				break;
 			case 'MissionStepBingo':
-				value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Mark Bingo board {max} times on slot {slotname} </outline>`
+				value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Mark Bingo board {max} times in {slotname} to win a reward!</outline>`
 				break;
             default:
-				value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Step in {slotname} </outline>`
+				value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Step in {slotname} to win a reward!</outline>`
                 break;
 		}
         return value;
@@ -168,28 +169,28 @@ cc.Class({
 
         switch (type) {
             case 'MissionStepBet':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>BET ANOTHER {remaining} {currencyUpper} <br/>ON SLOT {slotname} <br/>TO COMPLETE THIS STEP!</outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>BET {remaining} {currencyUpper} MORE<br/>IN {slotname} <br/>TO COMPLETE THIS STEP!</outline>`
                 break;
             case 'MissionStepSpin':
-				value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>SPIN AGAIN {remaining} ${timeString} <br/>ON SLOT {slotname} <br/>TO COMPLETE THIS STEP!</outline>`
+				value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>SPIN {remaining} MORE ${timeString} <br/>IN {slotname} <br/>TO COMPLETE THIS STEP!</outline>`
                 break;
             case 'MissionStepWinsThreshold':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>COLLECT ANOTHER {remaining} ${winString} <br/>OVER {threshold} ON SLOT {slotname} <br/>TO COMPLETE THIS STEP!</outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>COLLECT {remaining} MORE ${winString} <br/>OVER {threshold} IN {slotname} <br/>TO COMPLETE THIS STEP!</outline>`
                 break;
             case 'MissionStepWins':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>WIN {max} {currencyUpper} <br/>SPIN {spinCount} CONSECUTIVE SPINS ON SLOT {slotname}</outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>WIN {max} {currencyUpper} MORE<br/>SPIN {spinCount} CONSECUTIVE SPINS IN {slotname}</outline>`
                 break;
             case 'MissionStepBigWins':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>COLLECT {remaining} MORE BIG ${winString} <br/>ON SLOT {slotname} <br/>TO COMPLETE THIS STEP!</outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>COLLECT {remaining} MORE BIG ${winString} <br/>IN {slotname} <br/>TO COMPLETE THIS STEP!</outline>`
                 break;
             case 'MissionStepGiftGiving':
                 value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>GIVE {remaining} MORE {giftname} <br/>TO COMPLETE THIS STEP!</outline>`
 				break;
 			case 'MissionStepBingo':
-				value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>MARK BINGO BOARD ANOTHER {remaining} ${timeString} ON SLOT {slotname} <br/>TO COMPLETE THIS STEP!</outline>`
+				value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>MARK BINGO BOARD {remaining} MORE ${timeString} IN {slotname} <br/>TO COMPLETE THIS STEP!</outline>`
 				break;
             default:
-				value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>COMPLETE THIS STEP IN SLOT {slotname}!</outline>`
+				value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>COMPLETE THIS STEP IN {slotname}!</outline>`
                 break;
 		}
         return value;

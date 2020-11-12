@@ -1,6 +1,6 @@
 {
   "name": "self-aware-sync",
-  "version": "1.1.0",
+  "version": "1.2.1",
   "description": "Allows artists to pull new components without needing a repo.",
   "author": "Self Aware Games",
   "main": "main.js",
@@ -8,5 +8,8 @@
     "Self Aware/Download Shared": {
       "message": "self-aware-sync:download-shared"
     }
+  },
+  "packages": {
+    "pigbee-utils": "^1.0.0"
   }
 }

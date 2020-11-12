@@ -14,6 +14,7 @@ let app, server, serverHttps, watcher;
 const electron = require('electron');
 const ipcMain = electron.ipcMain;
 const bodyParser = require('./lib/body-parser.js');
+const {dialog} = require('electron');
 
 const ipcListener = new Editor.IpcListener();
 
@@ -22,13 +23,10 @@ const PREVIEW_PORT_HTTPS = 3458;
 const PREVIEW_DIR = path.join(Editor.projectInfo.path, 'temp', 'sakit-preview');
 const BUILD_DEBOUNCE_WAIT = 5e3;
 
-const SAVED_SETTINGS_PATH = Editor.url("profile://local/asset-zip-build-settings.json");
+const EnvProfile = Editor.Profile.load("profile://local/environment-settings.json");
 
-const PLATFORM_BASE_URLS = {
-	'sakit': 'https://sag-web-portal.qa.bigfishgames.com/web/casino/',
-	'sakit-jms': 'https://sag-web-portal.qa.bigfishgames.com/web/jms/',
-	'sakit-facebook': 'https://sag-web-portal.qa.bigfishgames.com/fb/stage/',
-};
+let lastBuiltManifest = null;
+let previewInGame = false;
 
 const startPreviewBuildImmediate = () => {
 	Editor.log("Start preview build");
@@ -45,6 +43,9 @@ const startPreviewBuildImmediate = () => {
 			minify: false,
 		};
 		AssetZipBuildUtil.sendToPackage('start-build', buildSettings)
+		.then((manifest) => {
+			lastBuiltManifest = manifest;
+		})
 		.catch(Editor.error);
 	} catch(e) {
 		Editor.error(e);
@@ -59,47 +60,32 @@ BUILD_DEBOUNCE_WAIT,
 	trailing: true,
 });
 
-function getPreviewServerFromBuildSettings() {
-	let prevEnv = 'casino-tools.qa';
-	try {
-		prevEnv = JSON.parse(fs.readFileSync(SAVED_SETTINGS_PATH)).previewEnv || prevEnv;
-	} catch (e) {
-		// No settings file found
-	}
-	return prevEnv + '.bigfishgames.com';
-}
-
-function getPreviewURLFromBuildSettings(platform, previewScene) {
-	const previewServer = getPreviewServerFromBuildSettings();
-	const baseURL = PLATFORM_BASE_URLS[platform];
-	if (!baseURL) {
-		Editor.warn("Unsupported preview platform: " + platform);
-		return;
-	}
-	let debugTestView = '';
+function getPreviewURL(previewScene) {
+	const env = EnvProfile.data.envs.dev;
+	const baseURL = EnvProfile.data.previewURL;
+	const previewServer = env.serverURL.replace('https://', '');
+	const urlParts = [
+		baseURL,
+		'?kServerURL=', previewServer,
+		'&kAssetServerURL=', previewServer,
+		'&kServerProtocol=https',
+	];
 	if (previewScene) {
-		debugTestView = `debugTestView=1&debugTestViewName=${previewScene}&`;
+		urlParts.push('&debugTestView=1');
+		urlParts.push(`&debugTestViewName=${previewScene}`);
 	}
-	const url = baseURL
-		+ `?kServerURL=${previewServer}&kAssetServerURL=${previewServer}&kServerProtocol=https&`
-		+ debugTestView;
-	return url;
+	return urlParts.join('');
 }
 
 function launchPreviewScene() {
-	const previewUrl = getPreviewURLFromBuildSettings(
-		Editor.App._profile.data['preview-platform'],
-		'server:creatorPreview'
-	);
+	const previewUrl = getPreviewURL('server:creatorPreview');
 	if (previewUrl) {
 		electron.shell.openExternal(previewUrl);
 	}
 }
 
 function launchGameScene() {
-	const previewUrl = getPreviewURLFromBuildSettings(
-		Editor.App._profile.data['preview-platform']
-	);
+	const previewUrl = getPreviewURL();
 	if (previewUrl) {
 		electron.shell.openExternal(previewUrl);
 	}
@@ -107,7 +93,7 @@ function launchGameScene() {
 
 function updateAssetWatcher() {
 	try {
-		const buildOnSave = JSON.parse(fs.readFileSync(SAVED_SETTINGS_PATH))["preview-build-on-save"];
+		const buildOnSave = EnvProfile.data.previewBuildOnSave;
 		if (buildOnSave) {
 			watcher = new AssetWatcher();
 			watcher.listen(startPreviewBuild);
@@ -120,14 +106,27 @@ function updateAssetWatcher() {
 	}
 }
 
+function onQuit() {
+	// Warn if preview is still serving in game
+	if (previewInGame) {
+		// Current version of electron only has synchronous API for dialog functions
+		//  but it's named like the async API of future versions, force the sync API
+		const showMessageBoxSync = dialog.showMessageBoxSync || dialog.showMessageBox;
+		showMessageBoxSync({
+			type: 'warning',
+			message: "In game preview is still enabled, don't forget to publish!",
+		});
+	}
+}
+
+function onEnvProfileChanged() {
+	// Notify scene script of change so updates to the client can trigger changes on the platform controls
+	Editor.Scene.callSceneScript('sakit-preview-server', 'env-profile-changed');
+}
+
 module.exports = {
 	load () {
 		PreviewLoadData.listenForMessages(ipcListener);
-		PreviewCharacters.listenAndInitialize(
-			ipcListener,
-			Editor.App._profile.data['preview-platform'],
-			getPreviewServerFromBuildSettings()
-		);
 		// Preview server
 		app = express();
 		app.disable('view cache');
@@ -165,6 +164,16 @@ module.exports = {
 				success: true,
 			});
 		});
+		app.get('/getPreviewScene', (req, res) => {
+			res.set('Cache-Control', 'no-store');
+			const response = {};
+			response.gamePreviewEnabled = previewInGame;
+			if (lastBuiltManifest) {
+				response.name = lastBuiltManifest.sceneName;
+				response.hash = lastBuiltManifest.bundle;
+			}
+			res.send(response);
+		});
 		app.get('/', function (req, res) {
 			res.sendFile(path.join(PREVIEW_DIR, 'preview.zip'));
 		});
@@ -179,6 +188,9 @@ module.exports = {
 
 		// Launch preview scene when play button is selected with 'sakit' as the platform
 		ipcMain.on('app:play-on-device', launchPreviewScene);
+
+		Editor.App.on('quit', onQuit);
+		EnvProfile.addListener('changed', onEnvProfileChanged);
 	},
 
 	unload () {
@@ -195,6 +207,8 @@ module.exports = {
 			delete require.cache[key];
 		});
 		ipcMain.removeListener('app:play-on-device', launchPreviewScene);
+		Editor.App.off('quit', onQuit);
+		EnvProfile.removeListener('changed', onEnvProfileChanged);
 	},
 
 	// register your ipc messages here
@@ -230,6 +244,9 @@ module.exports = {
 		'get-characters-for-environment'(evt) {
 			const characters = PreviewCharacters.getForCurrentEnvironment();
 			evt.reply && evt.reply(null, characters);
+		},
+		'change-preview-in-game'(evt, shouldPreview) {
+			previewInGame = shouldPreview;
 		},
 	},
 };

@@ -31,9 +31,7 @@ cc.Class({
 
 	// use this for initialization
 	onLoad: function () {
-		if (CC_EDITOR) {
-			this.missionStepInterface = this.missionStepInterface || MissionStepInterface.findInterfaceInScene(this);
-		}
+		this.missionStepInterface = this.missionStepInterface || MissionStepInterface.findInterfaceInScene(this, 'MissionStepInterface');
 		if (this.missionStepInterface) {
 			this.missionStepInterface.on('updateMissionStepDataEvent', this.onUpdateMissionStepData, this);
 		}

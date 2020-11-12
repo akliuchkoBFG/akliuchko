@@ -3,18 +3,6 @@
 const MissionInterface = require("MissionInterface");
 const PreviewCharacterProperty = require("PreviewCharacterProperty");
 
-// Running in-game needs these requires to not exist
-/* eslint-disable */
-let BuildSettings;
-let request;
-if (CC_EDITOR) {
-	BuildSettings = require(Editor.url('packages://asset-zip-build/BuildSettings.js'));
-	request = require("request");
-}
-/* eslint-enable */
-
-const INSTANTIATE_FROM_TEMPLATE_URL = '.bigfishgames.com:8080/cocos_creator/getEditorMissionFromTemplateAndCharacterID';
-const UPDATE_MISSION_PROGRESS_URL = '.bigfishgames.com:8080/cocos_creator/updateMissionForStepProgress';
 const FakeTemplateId = "CocosCreatorBogus";
 cc.Class({
 	extends: cc.Component,
@@ -24,7 +12,7 @@ cc.Class({
 		disallowMultiple: true,
 		executeInEditMode: true,
 		requireComponent:MissionInterface,
-		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SPP/pages/474907058/Mission+Server+Data+Component',
+		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/474907058/Mission+Server+Data+Component',
 		// Not sure we need to require an instantiated mission component, but that'd be nice to partition mission editing from retrieval/instantiation
 	},
 
@@ -121,20 +109,19 @@ cc.Class({
 	updateBackendMissionData: function (missionIndex, missionID, stepIndex, stepProgress) {
 		if (CC_EDITOR) {
 			Editor.log("updateBackendMissionData!");
-			const settings = BuildSettings.getSettings(); // These may have changed since this component was loaded
-			const postData = {
+			const formData = {
 				missionID: missionID,
 				stepID: stepIndex,
 				stepProgress: stepProgress,
 			};
 			Editor.log("mission ID:"+missionID+ " StepID:"+stepIndex+" Progress:"+stepProgress);
-			request.post({
-				url: 'https://' + settings.missionEnv + UPDATE_MISSION_PROGRESS_URL,
-				formData: postData,
-			}, (err, respObj, response) => {
-				if (err) {
-					return Editor.error("Can't connect with the environment to update mission progress");
-				}
+			Editor.SAG.PigbeeRequest.post({
+				env: 'dev',
+				controller: 'cocos_creator',
+				action: 'updateMissionForStepProgress',
+				formData,
+			})
+			.then((response) => {
 				try {
 					Editor.success("Instantiated Mission Retrieved:" + response + " status: "+response.statusCode);
 					var missionsArray = JSON.parse(response);
@@ -143,14 +130,16 @@ cc.Class({
 				} catch(e) {
 					Editor.error("Progress update Failed: " +e);
 				}
+			})
+			.catch((err) => {
+				Editor.error("Can't connect with the environment to update mission progress\n" + err);
 			});
 		}
 	},
 
 	updateInstantiatedMissionData: function (templateID, characterID, templateSource, missionIndex, getExisting) {
 		if (CC_EDITOR) {
-			const settings = BuildSettings.getSettings(); // These may have changed since this component was loaded
-			const postData = {
+			const formData = {
 				templateID: JSON.stringify(templateID),
 				characterID: characterID,
 				templateSource: templateSource,
@@ -162,18 +151,18 @@ cc.Class({
 				Editor.log("Please select a valid template id from the list");
 				return;
 			}
-			request.post({
-				url: 'https://' + settings.missionEnv + INSTANTIATE_FROM_TEMPLATE_URL,
-				formData: postData,
-			}, (err, respObj, response) => {
-				if (err) {
-					return Editor.error("Can't connect with the tools environment to update slots list");
-				}
+			Editor.SAG.PigbeeRequest.post({
+				env: 'dev',
+				controller: 'cocos_creator',
+				action: 'getEditorMissionFromTemplateAndCharacterID',
+				formData,
+			})
+			.then((response) => {
 				try {
-					if(response.statusCode !== 404) {
-						var missionsArray = JSON.parse(response);
+					var parsedMissionsResponse = JSON.parse(response);
+					if(parsedMissionsResponse.success == null) {
 						Editor.success("Instantiated Mission Retrieved:" + response);
-						const mission = this.boundedMissionArrayAccess(missionIndex, missionsArray);
+						const mission = this.boundedMissionArrayAccess(missionIndex, parsedMissionsResponse);
 						// Test against the template version, is the instantiated mission stale?
 						this.missionJSONString = JSON.stringify(mission);
 					} else {
@@ -182,11 +171,14 @@ cc.Class({
 					}
 				} catch(e) {
 					Editor.error([
-						"Can't instantiate or retrieve mission, unexpected error",
+						"Error while retrieving/instantiating mission",
 						"Response: " + response,
 						"Error: " + e,
 					].join("\n"));
 				}
+			})
+			.catch((err) => {
+				Editor.error("Can't connect with the environment to update instantiated mission data\n" + err);
 			});
 		}
 	},
@@ -199,8 +191,8 @@ cc.Class({
 	},
 
 	updatePreviewData: function() {
-		var dataArray = new Array(this.missionDataIndex+1);
 		var missionJSON = JSON.parse(this.missionJSONString);
+		var dataArray = new Array(this.missionDataIndex+1);
 		dataArray[this.missionDataIndex] = missionJSON;
 		Editor.SAG.provideLoadData("missionData", dataArray);
 	},

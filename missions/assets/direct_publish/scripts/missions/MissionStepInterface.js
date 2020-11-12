@@ -12,7 +12,7 @@ cc.Class({
 		menu: 'Add Mission Component/Mission Step Interface',
 		executeInEditMode: true,
 		disallowMultiple: true,
-		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SPP/pages/495452795/Mission+Step+Interface'
+		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/495452795/Mission+Step+Interface'
 	},
 
 	properties: {
@@ -61,11 +61,15 @@ cc.Class({
 
 		this._stepData = null;
 
-		if (CC_EDITOR) {
-			this.missionInterface = this.missionInterface || MissionInterface.findInterfaceInScene(this);
-		}
+		this.missionInterface = this.missionInterface || MissionInterface.findInterfaceInScene(this, 'MissionInterface');
 
-		this.missionInterface.on('updateMissionDataEvent', this.reloadStepData, this);
+		if (this.missionInterface) {
+			this.missionInterface.on('updateMissionDataEvent', this.reloadStepData, this);
+		}
+	},
+
+	start: function() {
+		this.reloadStepData();
 	},
 
 	isInitialized: function() {
@@ -105,14 +109,18 @@ cc.Class({
 	},
 
 	launchSlot: function(buyInID) {
-        const slotData = this.getSlotData(buyInID);
-        
-        if (!slotData || !slotData.customData) {
-        	this.log.e('Template does not contain slot information for buyInID ' + buyInID + ' cannot launch slot');
-        	SADispatchObject.performAction('close', {});
-        } else {
-        	SADispatchObject.performAction('launchSlots', slotData.customData);
-        }
+		const slotData = this.getSlotData(buyInID);
+		
+		if (!slotData || !slotData.customData) {
+			this.log.e('Template does not contain slot information for buyInID ' + buyInID + ' cannot launch slot');
+			SADispatchObject.performAction('close', {});
+		} else {
+			if (Game.getGameContextController) {
+				Game.getGameContextController().launchSlot(slotData.customData);
+			} else {
+				SADispatchObject.performAction('launchSlots', slotData.customData);
+			}
+		}
 	},
 
 	onStepComplete: function() {

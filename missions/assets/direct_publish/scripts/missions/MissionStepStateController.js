@@ -7,7 +7,7 @@ cc.Class({
 		requireComponent: cc.Animation,
 		menu: 'Add Mission Component/Step State Controller',
 		executeInEditMode: true,
-		// TODO: help: 'url/to/help/wikipage'
+		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/508428588/Mission+Step+State+Controller',
 	},
 
 	properties: {
@@ -54,6 +54,11 @@ cc.Class({
 	},
 
 	onUpdateMissionStepData: function() {
+		if (this._areAllStepsComplete()) {
+			// If the mission is complete, let the MissionStateController final animations take over
+			return;
+		}
+
 		const max = this.missionStepInterface.getProgressMax();
 		const progress = this.missionStepInterface.getProgressAmount();
 		if (progress === 0) {
@@ -96,6 +101,12 @@ cc.Class({
 	_play: function(anim) {
 		const comp = this.getComponent(cc.Animation);
 		comp.play(anim);
+	},
+
+	_areAllStepsComplete: function() {
+		return this.missionStepInterface &&
+			   this.missionStepInterface.missionInterface &&
+			   this.missionStepInterface.missionInterface.isAllStepsComplete();
 	},
 
 });
