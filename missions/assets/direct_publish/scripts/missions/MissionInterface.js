@@ -281,8 +281,9 @@ cc.Class({
 		}).then((result) => {
 			if (result.missionData) {
 				this._stepData = {};
-				var boundedIndex = Math.max(0, Math.min(this.missionDataIndex, result.missionData.length-1));
-				this.updateMissionData(result.missionData[boundedIndex]);
+				// TODO: the server will only ever return a single item array, should we fix this?
+				// var boundedIndex = Math.max(0, Math.min(this.missionDataIndex, result.missionData.length-1));
+				this.updateMissionData(result.missionData[0]);
 			}
 			// Send notice that claim request was completed
 			this.emit('claimedMissionAward', {});
@@ -308,8 +309,9 @@ cc.Class({
 			// Use the data returned to update missionData
 			if (result.missionData) {
 				this._stepData = {};
-				var boundedIndex = Math.max(0, Math.min(this.missionDataIndex, result.missionData.length-1));
-				this.updateMissionData(result.missionData[boundedIndex]);
+				// TODO: the server will only ever return a single item array, should we fix this?
+				// var boundedIndex = Math.max(0, Math.min(this.missionDataIndex, result.missionData.length-1));
+				this.updateMissionData(result.missionData[0]);
 			}
 			// Send notice that claim request was completed
 			this.emit('claimedStepAward', {});
