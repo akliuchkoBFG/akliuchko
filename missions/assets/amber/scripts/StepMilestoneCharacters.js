@@ -5,21 +5,21 @@ const charactersSpecs = {
         name: 'Daisy the Squid',
         redeemedStep: 0,
     },
-    milestone_3: {
+    milestone_2: {
         name: 'Bob the Crab',
-        redeemedStep: 3,
+        redeemedStep: 2,
     },
     milestone_5: {
         name: 'Lizzy the Fish',
-        redeemedStep: 3,
+        redeemedStep: 5,
     },
     milestone_9: {
         name: 'Stingray Sam',
-        redeemedStep: 3,
+        redeemedStep: 9,
     },
     milestone_13: {
         name: 'Laila the Whale',
-        redeemedStep: 3,
+        redeemedStep: 13,
     },
 }
 cc.Class({
