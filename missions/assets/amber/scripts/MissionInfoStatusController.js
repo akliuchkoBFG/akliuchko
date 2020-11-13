@@ -40,7 +40,8 @@ cc.Class({
         this.missionAnimationComp = this.missionInterface.node.getComponent(cc.Animation);
         if (this.missionInterface) {
             this.missionInterface.on('updateMissionDataEvent', this.toggleMissionInfoPopoup, this);
-            this.missionInterface.on('claimedMissionAward', this.onClaim, this);
+            // this.missionInterface.on('claimedMissionAward', this.onClaim, this);
+            this.missionAnimationComp.on('finished', this.onMissionAnimationFinished, this);
         }
 
         const missionStepInterfaceComp = this.missonStepNode.getComponent('MissionStepInterface');
@@ -49,18 +50,44 @@ cc.Class({
             this.missionStepAnimationComp = this.missonStepNode.getComponent(cc.Animation);
             this.missionStepInterface = missionStepInterfaceComp;
             missionStepInterfaceComp.on('updateMissionStepDataEvent', this.clearMissionStepAnimation, this);
+            this.missionStepAnimationComp.on('finished', this.onMissionStepAnimationFinished, this);
         }
     },
 
-    onClaim: function () {
+    onMissionAnimationFinished: function(e) {
+        if (!e.detail || !e.detail.name) {
+            return;
+        }
+
+        if (e.detail.name == 'step_mission_ended') {
+            return;
+        }
+
+        if (e.detail.name == 'step_mission_chest') {
+            this.playChest = false;
+            // this.missionAnimationComp.play('step_mission_ended');
+        }
+    },
+
+    onMissionStepAnimationFinished: function (e) {
+        if (!e.detail || !e.detail.name) {
+            return;
+        }
+        if (e.detail.name == 'step_milestone_13') {
+            this.playChestAnimation();
+        }
+    },
+
+    playChestAnimation: function () {
         if (this.isFinalStep) {
             this.finalStepClaimed = true;
             this.chestButton.toggleButtonInteractable();
+            this.playChest = true;
         }
     },
 
     onUpdateMissionData: function () {
-        if (this.finalStepClaimed && this.isFinalStep) {
+        if (this.isFinalStep) {
             this.finalAwardClaimed = true;
         }
     },
@@ -71,7 +98,10 @@ cc.Class({
         } else {
             let allAwarded = this.missionInterface.isAllStepsComplete();
             if (allAwarded) {
-                this.missionInterface.claimMissionAward();
+                // Something wrong here.
+                // ERR: [missionInterface] ClaimMissionAward failed, [object Object]
+                this.allAwarded = true;
+                // this.missionInterface.claimMissionAward();
             }
         }
     },
@@ -101,6 +131,11 @@ cc.Class({
 
         if (this.isFinalStep) {
             this.onFinalStepEvent();
+        }
+
+        if (this.isFinalStep && this.playChest) {
+            this.missionAnimationComp.play('step_mission_chest');
+            return;
         }
 
         if (firstStepData &&

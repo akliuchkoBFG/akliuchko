@@ -127,7 +127,7 @@ cc.Class({
 		const characterComp = this.getComponent('StepMilestoneCharacters');
 		if (characterComp) {
 			let character = characterComp.getCharacters(characterComp.stepMilestone);
-			return character && character.name ;
+			return character && character.name;
 		}
 	}
 });

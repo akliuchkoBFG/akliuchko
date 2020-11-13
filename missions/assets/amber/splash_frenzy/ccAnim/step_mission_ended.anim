@@ -202,28 +202,7 @@
         "props": {}
       },
       "mission_step/collect_container/splash_screen": {
-        "props": {
-          "active": [
-            {
-              "frame": 0.9833333333333333,
-              "value": true
-            },
-            {
-              "frame": 1.4833333333333334,
-              "value": false
-            }
-          ],
-          "opacity": [
-            {
-              "frame": 0.9833333333333333,
-              "value": 75
-            },
-            {
-              "frame": 1.4833333333333334,
-              "value": 0
-            }
-          ]
-        }
+        "props": {}
       },
       "mission_step/progress_container": {
         "props": {

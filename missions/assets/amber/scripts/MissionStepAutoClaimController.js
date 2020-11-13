@@ -198,7 +198,7 @@ cc.Class({
     togglePlayButton: function() {
         const buyInIDs = this.missionStepInterface.getBuyInIDs();
 
-        if (!buyInIDs && this.playButton.active) {
+        if (!buyInIDs && this.playButton.active || this.allStepsCompleted) {
             this.playButton.active = false;
         } else {
             this.playButton.active = true;

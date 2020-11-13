@@ -53,12 +53,15 @@ cc.Class({
                 const name = packageInfo.nameText;
                 const amount = packageInfo.amountText(packageData);
                 const slotName = this._getSlotName();
+                const stepID = this.missionStepInterface.stepID;
+                const character = stepID && this.getCharacterName(stepID);
 
                 // Set both the template data and test data for previewing
                 const data = {
                     name: name,
                     amount: amount,
                     slotname: slotName,
+                    character: character,
                 };
                 rtLabel.setData(data);
                 rtLabel.testData = JSON.stringify(data);
@@ -93,5 +96,14 @@ cc.Class({
 		}
 		
 		return slotData && slotData.name;
-	},
+    },
+
+    getCharacterName: function (id) {
+        let _id = id * 1;
+		const characterComp = this.getComponent('StepMilestoneCharacters');
+		if (characterComp) {
+			let character = characterComp.getCharacters(_id);
+			return character && character.name.toUpperCase();
+		}
+	}
 });
