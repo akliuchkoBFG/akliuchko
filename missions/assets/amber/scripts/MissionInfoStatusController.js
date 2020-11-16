@@ -25,7 +25,7 @@ cc.Class({
             default: null,
             type: cc.Component.EventHandler,
         },
-        finalAwardClaimed: {
+        playChest: {
             default: false,
             visible: false,
         },
@@ -40,7 +40,6 @@ cc.Class({
         this.missionAnimationComp = this.missionInterface.node.getComponent(cc.Animation);
         if (this.missionInterface) {
             this.missionInterface.on('updateMissionDataEvent', this.toggleMissionInfoPopoup, this);
-            // this.missionInterface.on('claimedMissionAward', this.onClaim, this);
             this.missionAnimationComp.on('finished', this.onMissionAnimationFinished, this);
         }
 
@@ -65,7 +64,6 @@ cc.Class({
 
         if (e.detail.name == 'step_mission_chest') {
             this.playChest = false;
-            // this.missionAnimationComp.play('step_mission_ended');
         }
     },
 
@@ -74,36 +72,20 @@ cc.Class({
             return;
         }
         if (e.detail.name == 'step_milestone_13') {
-            this.playChestAnimation();
+            this.setPlayChestAnimationOn();
         }
     },
 
-    playChestAnimation: function () {
+    setPlayChestAnimationOn: function () {
         if (this.isFinalStep) {
-            this.finalStepClaimed = true;
             this.chestButton.toggleButtonInteractable();
             this.playChest = true;
         }
+        this.allAwarded = this.missionInterface.isAllStepsComplete();
     },
 
     onUpdateMissionData: function () {
-        if (this.isFinalStep) {
-            this.finalAwardClaimed = true;
-        }
-    },
-
-    onFinalStepEvent: function () {
-        if (!this.isFinalStep) {
-            return;
-        } else {
-            let allAwarded = this.missionInterface.isAllStepsComplete();
-            if (allAwarded) {
-                // Something wrong here.
-                // ERR: [missionInterface] ClaimMissionAward failed, [object Object]
-                this.allAwarded = true;
-                // this.missionInterface.claimMissionAward();
-            }
-        }
+        this.isFinalStep = this.isFinalMissionStep();
     },
 
     clearMissionStepAnimation: function () {
@@ -127,13 +109,8 @@ cc.Class({
 
     toggleMissionInfoPopoup: function () {
         const firstStepData = this.missionInterface.getStepData(this.firstStep);
-        this.isFinalStep = this.isFinalMissionStep();
 
-        if (this.isFinalStep) {
-            this.onFinalStepEvent();
-        }
-
-        if (this.isFinalStep && this.playChest) {
+        if (this.playChest) {
             this.missionAnimationComp.play('step_mission_chest');
             return;
         }
