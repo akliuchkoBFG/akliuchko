@@ -95,32 +95,14 @@ cc.Class({
 	},
 
 	setStepInitailDescription: function (type) {
-		let value;
-		switch (type) {
-			case 'MissionStepWins':
-			case 'MissionStepWinsThreshold':
-				value = 'Win in';
-				break;
-			case 'MissionStepBet':
-				value = 'Bet in';
-				break;
-			case 'MissionStepSpin':
-				value = 'Spin in';
-				break;
-			case 'MissionStepBigWins':
-				value = 'Big Win in';
-				break;
-			case 'MissionStepGiftGiving':
-				value = 'Give Gift in';
-				break;
-			case 'MissionStepBingo':
-				value = 'Mark Bingo in';
-				break;
-			default:
-				value = 'Win in';
-				break;
-		}
-		return value;
+		const preText = {
+			completeIn: "Complete in",
+			stepIn: "Step in",
+		};
+
+		// This will need refactoring in future missions.
+
+		return type ? preText.completeIn : preText.stepIn;
 	},
 
 	getCharacterName: function () {
