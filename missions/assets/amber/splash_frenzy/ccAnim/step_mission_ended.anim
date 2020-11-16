@@ -3,7 +3,7 @@
   "_name": "step_mission_ended",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 1.4833333333333334,
+  "_duration": 1.48,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -233,6 +233,16 @@
         }
       },
       "mission_step/background_chest": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/buttons/play/button_play": {
         "props": {
           "active": [
             {
