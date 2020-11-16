@@ -71,9 +71,6 @@ cc.Class({
         if (!e.detail || !e.detail.name) {
             return;
         }
-        if (e.detail.name == 'step_milestone_13') {
-            this.setPlayChestAnimationOn();
-        }
     },
 
     setPlayChestAnimationOn: function () {
