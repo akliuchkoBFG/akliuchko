@@ -1,0 +1,22 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.orig",
+				"*.rej",
+				"*.min.js",
+				"*.min.css"
+			],
+			"folder_exclude_patterns":
+			[
+				"*/library/imports",
+				"*/temp",
+				"node_modules"
+			],
+			"follow_symlinks": false,
+			"path": "."
+		}
+	],
+}
