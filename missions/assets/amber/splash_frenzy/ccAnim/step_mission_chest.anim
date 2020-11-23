@@ -1,0 +1,351 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "step_mission_chest",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 10.02,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "mission_step/collect_container/static_jellyfish": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/static_crab": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/static_fish": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/static_mantaray": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/static_whale": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/static_whale/whale": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/static_mantaray/mantaray": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/static_fish/fish": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/static_crab/crab": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/static_jellyfish/jellyfish": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/award_container/reward_labels": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/award_container/reward_labels/award_label_steps": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container": {
+        "props": {
+          "active": []
+        }
+      },
+      "mission_step/award_container/reward_types": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/progress_container/progress_buttons/chest_info/chest_button": {
+        "props": {
+          "active": [
+            {
+              "frame": 0.48333333333333334,
+              "value": true
+            },
+            {
+              "frame": 1.4833333333333334,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.48333333333333334,
+              "value": 255
+            },
+            {
+              "frame": 1.4833333333333334,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "mission_step/award_container/final_labels": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/award_container/final_labels/award_label_final": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mission_step/award_container/final_labels/award_label_chest": {
+        "props": {
+          "active": [
+            {
+              "frame": 4.5,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 4.5,
+              "value": 0
+            },
+            {
+              "frame": 5,
+              "value": 255
+            },
+            {
+              "frame": 9.533333333333333,
+              "value": 255
+            },
+            {
+              "frame": 10.016666666666667,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/animated_items/chest_bounce": {
+        "props": {
+          "active": [
+            {
+              "frame": 0.48333333333333334,
+              "value": false
+            },
+            {
+              "frame": 1.5,
+              "value": true
+            },
+            {
+              "frame": 6,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 6,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/animated_items/chest_idle": {
+        "props": {
+          "active": [
+            {
+              "frame": 0.48333333333333334,
+              "value": false
+            },
+            {
+              "frame": 6,
+              "value": true
+            },
+            {
+              "frame": 10.016666666666667,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/collect_container/splash_screen": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.5,
+              "value": 0
+            },
+            {
+              "frame": 1,
+              "value": 145
+            },
+            {
+              "frame": 7.516666666666667,
+              "value": 145
+            },
+            {
+              "frame": 8,
+              "value": 0
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mission_step/progress_container": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.016666666666666666,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.016666666666666666,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "mission_step/background_chest/tapable_chest": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.5166666666666666,
+              "value": false
+            }
+          ]
+        },
+        "comps": {
+          "cc.Button": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": true
+              },
+              {
+                "frame": 1.5166666666666666,
+                "value": true
+              }
+            ]
+          }
+        }
+      },
+      "mission_step/background_chest": {
+        "props": {}
+      }
+    }
+  },
+  "events": []
+}

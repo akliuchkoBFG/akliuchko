@@ -4,9 +4,10 @@
 
 const MissionDataProvider = require('MissionDataProvider');
 const LoadData = require('LoadDataV2').mixinExpectedProperties([
-	'missionData'
+	'missionData', // we can optionally pass in a promise as missionData
 ]);
 
+const LoadingComponent = require('LoadingComponent');
 
 const TAG = "missionDataProviderLoadData";
 const ComponentLog = require('ComponentSALog')(TAG);
@@ -18,9 +19,8 @@ cc.Class({
 
 	editor: CC_EDITOR && {
 		menu: 'Add Mission Component/Mission Load Data',
-		executeInEditMode: true,
 		disallowMultiple: true,
-		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SPP/pages/495583779/Mission+Data+Provider+Load+Data'
+		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/495583779/Mission+Data+Provider+Load+Data'
 	},
 
 	properties: {
@@ -30,11 +30,23 @@ cc.Class({
 	},
 
 	getMissionData(missionDataIndex) {
-		if (this.loadData && this.loadData.missionData && this.loadData.missionData[missionDataIndex]) {
-			return Promise.resolve(this.loadData.missionData[missionDataIndex]);
-		} else {
-			this.log.e("Load data for mission " + missionDataIndex + " not found");
+		let loadingPromise = Promise.resolve(null);
+		if (!CC_EDITOR) {
+			if (this.loadData && this.loadData.missionData) {
+				loadingPromise = Promise.resolve(this.loadData.missionData);
+			} else {
+				this.log.e("Expected loadData was not found... is MissionDataProviderLoadData the expected data provider?");
+			}
+			LoadingComponent.addLoadingTask(this, loadingPromise);
 		}
-		return Promise.resolve(null);
+
+		return loadingPromise.then((missionData) => {
+			if (missionData && missionData[missionDataIndex]) {
+				return missionData[missionDataIndex];
+			} else {
+				this.log.e("Mission data for mission " + missionDataIndex + " not found");
+			}
+			return null;
+		});
 	},
 });

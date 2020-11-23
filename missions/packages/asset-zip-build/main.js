@@ -5,6 +5,8 @@ const Util = new PackageUtil(PACKAGE_NAME);
 const PackageAssetUtil = new PackageUtil('package-asset');
 const SceneArchiveUtil = new PackageUtil('scene-archive');
 const SyncPackageUtil = new PackageUtil('self-aware-sync');
+const PigbeeRequest = Editor.require('packages://pigbee-utils/PigbeeRequest.js');
+const EnvProfile = Editor.Profile.load('profile://local/environment-settings.json');
 const fs = require('fire-fs');
 const del = require('del');
 const path = require('path');
@@ -13,7 +15,6 @@ const archiver = require('./lib/archiver.js');
 const MAX_FILEIO_CONCURRENCY = 4;
 const AssetZip = require('./AssetZip.js');
 const BuildSettings = require('./BuildSettings.js');
-const request = require('request');
 const _ = require('lodash');
 const browserify = require('browserify');
 const through = require('through2');
@@ -219,71 +220,68 @@ function bundleJS(uuidList, bundlePathName, sourcePath, buildSettings) {
 }
 
 function uploadToPigbee(manifest, buildSettings, options) {
-
-	const uploadUrl = options.dev ?
-		`https://${buildSettings.pigbeeEnv}.qa.bigfishgames.com:8080/cocos_creator/publish` :
-		`https://casino-admin.sea.bigfishgames.com/cocos_creator/publish` ;
+	const env = options.dev ? 'dev' : 'live';
+	const publishOptions = {
+		env,
+		app: 'bfc',
+		controller: 'cocos_creator',
+		action: 'publish',
+	};
 
 	const zipPath = path.join(buildSettings.outputDir, manifest.fileName);
 	const uploadError = new Error('Pigbee upload failed!');
 	const user = process.env.USER || process.env.USERNAME || 'unknown_user';
-	return new Promise((resolve, reject) => {
-		const postData = _.assign({
-			bundle: fs.createReadStream(zipPath),
-			name: path.basename(manifest.fileName, '.zip'),
-			system: options.system ? options.system : 'marketing_popup',
-			hash: manifest.bundle,
-			user,
-		}, buildSettings.postData);
+	const postData = _.assign({
+		bundle: fs.createReadStream(zipPath),
+		name: path.basename(manifest.fileName, '.zip'),
+		system: options.system ? options.system : 'marketing_popup',
+		hash: manifest.bundle,
+		user,
+	}, buildSettings.postData);
 
-		if (manifest.archivePath && fs.existsSync(manifest.archivePath)) {
-			postData.archive = fs.createReadStream(manifest.archivePath);
+	if (manifest.archivePath && fs.existsSync(manifest.archivePath)) {
+		postData.archive = fs.createReadStream(manifest.archivePath);
+	}
+	publishOptions.formData = postData;
+
+	return PigbeeRequest.post(publishOptions)
+	.then((response) => {
+		let success = false;
+		try {
+			response = JSON.parse(response);
+			success = response.success;
+		} catch(e) {
+			Editor.error('Failed to parse JSON server response');
 		}
-
-		// Editor.log(_.omit(postData, 'bundle'));
-		request.post({
-			url: uploadUrl,
-			formData: postData,
-		}, (err, respObj, response) => {
-			if (err) return reject(err);
-			let success = false;
-			try {
-				response = JSON.parse(response);
-				success = response.success;
-			} catch(e) {
-				Editor.error('Failed to parse JSON server response');
+		if (success) {
+			const data = _.pick(postData, ['hash', 'name']);
+			data.url = response.url;
+			// This field should only be added to publishes intended for the direct publish pipeline
+			if (response.manifestExport) {
+				data.export = response.manifestExport;
 			}
-			if (success) {
-				const data = _.pick(postData, ['hash', 'name']);
-				data.url = response.url;
-				// This field should only be added to publishes intended for the direct publish pipeline
-				if (response.manifestExport) {
-					data.export = response.manifestExport;
-				}
-				resolve(data);
-			} else {
-				err = uploadError;
-				err.data = response;
-				reject(err);
-			}
-		});
+			return data;
+		} else {
+			const err = uploadError;
+			err.data = response;
+			return Promise.reject(err);
+		}
 	});
 }
 
 function importManifestToQA(manifestExport) {
-	const url = `https://casino-admin.qa.bigfishgames.com/cocos_creator/importManifest`;
-	const postData = {
-		manifestExport: JSON.stringify(manifestExport),
+	const importOptions = {
+		env: 'qa',
+		app: 'bfc',
+		controller: 'cocos_creator',
+		action: 'importManifest',
+		formData: {
+			manifestExport: JSON.stringify(manifestExport)
+		},
 	};
 
-	request.post({
-		url: url,
-		formData: postData,
-	}, (err, respObj, response) => {
-		if (err) {
-			Editor.error('Failed to import manifest to QA: network error ' + err);
-			return;
-		}
+	return PigbeeRequest.post(importOptions)
+	.then((response) => {
 		let success = false;
 		let error = '';
 		try {
@@ -296,6 +294,9 @@ function importManifestToQA(manifestExport) {
 		if (!success) {
 			Editor.error('Failed to import manifest to QA: ' + error);
 		}
+	})
+	.catch((err) => {
+		Editor.error('Failed to import manifest to QA (network error): ' + err);
 	});
 }
 
@@ -342,7 +343,7 @@ function updateIfRequired() {
 
 function startBuild(event, settings, options) {
 	const buildSettings = BuildSettings.getSettings(settings);
-	let sceneUuid, uuidList, bundleName, scenePath, sourcePath;
+	let sceneUuid, uuidList, bundleName, scenePath, sceneName, sourcePath;
 	const bundlePromises = [];
 	let bundlePathName = "";
 	Promise.resolve(Editor.currentSceneUuid)
@@ -356,7 +357,8 @@ function startBuild(event, settings, options) {
 		bundlePathName = path.relative(path.join(Editor.projectInfo.path, 'assets'), scenePath).replace('.fire', '');
 		const relativePath = buildSettings.bundleNameOverride || bundlePathName;
 		const escapedPathSep = path.sep.replace('\\', '\\\\');
-		bundleName = relativePath.replace(new RegExp(escapedPathSep, 'g'), '.');
+		sceneName = bundlePathName.replace(new RegExp(escapedPathSep, 'g'), '.');
+		bundleName = buildSettings.bundleNameOverride || sceneName;
 		const destDir = path.join(buildSettings.outputDir, bundleName);
 		sourcePath = path.join(destDir, relativePath);
 		// Remove temp files
@@ -455,6 +457,9 @@ function startBuild(event, settings, options) {
 		});
 	})
 	.then((manifest) => {
+		if (buildSettings.bundleNameOverride) {
+			manifest.sceneName = sceneName;
+		}
 		event.reply && event.reply(null, manifest);
 		if (buildSettings.skipUpload || buildSettings.skipZip) {
 			return;
@@ -471,7 +476,7 @@ function startBuild(event, settings, options) {
 			// The QA server will ignore the manifest if the same version was previously published there
 			const publishedToLive = !options.dev;
 			// Tools publishes create manifests on staging and should mirror to features
-			const publishedToTools = options.dev && buildSettings.pigbeeEnv === 'casino-tools';
+			const publishedToTools = options.dev && EnvProfile.data.envs.dev.id === 'tools';
 			if (publishedToLive || publishedToTools) {
 				importManifestToQA(manifestData.export);
 			}

@@ -15,8 +15,7 @@ const JSZip = require('./lib/jszip.min.js');
 const PackageUtil = Editor.require('packages://asset-zip-build/PackageUtil.js');
 const TEMP_DIR = path.join(Editor.projectInfo.path, 'temp', 'sag', 'self-aware-sync');
 const VERSION_MANIFEST_PATH = Editor.url('profile://local/shared-asset-versions.json');
-
-const BuildSettings = require(Editor.url('packages://asset-zip-build/BuildSettings.js'));
+const PigbeeRequest = Editor.require('packages://pigbee-utils/PigbeeRequest.js');
 
 // Loaded from secrets.json
 let secrets = {};
@@ -88,19 +87,14 @@ function loadSecrets() {
 }
 
 function getRemoteSharedAssetVersions() {
-	const buildSettings = BuildSettings.getSettings();
-	const url = `https://${buildSettings.pigbeeEnv}.qa.bigfishgames.com:8080/cocos_creator/getSharedAssetVersions`;
-
-	const getAsync = Promise.promisify(request.get);
-	return getAsync({
-		url,
+	return PigbeeRequest.get({
+		env: 'dev',
+		app: 'bfc',
+		controller: 'cocos_creator',
+		action: 'getSharedAssetVersions',
 	})
-	.then(([response, body]) => {
-		if (response.statusCode === 404) {
-			Editor.warn(`Version info is not available on the ${buildSettings.pigbeeEnv} environment. Ask an engineer in #sag-cocos-creator if this is expected`);
-			throw new LegacySync.LegacySyncRequired();
-		}
-		const versions = JSON.parse(body).versions;
+	.then((response) => {
+		const versions = JSON.parse(response).versions;
 		return versions;
 	});
 }

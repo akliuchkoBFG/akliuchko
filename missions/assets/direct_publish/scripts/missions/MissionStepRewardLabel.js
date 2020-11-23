@@ -9,7 +9,7 @@ cc.Class({
 		requireComponent: DataTemplateRichTextLabel,
 		executeInEditMode: true,
 		menu: 'Add Mission Component/Step Reward Label',
-		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SPP/pages/562528442/Mission+Step+Reward+Label'
+		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/562528442/Mission+Step+Reward+Label'
 	},
 
 	onUpdateMissionStepData: function() {

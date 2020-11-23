@@ -8,8 +8,12 @@ cc.Class({
 	editor: CC_EDITOR && {
 		requireComponent: DataTemplateRichTextLabel,
 		executeInEditMode: true,
-		menu: 'Add Mission Component/Step Description Label',
-		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SPP/pages/562692173/Mission+Step+Description+Label'
+	},
+
+	properties: {
+		textColor: '#fff447',
+		outlineColor: '#0b1336',
+		outlineWidth: '2',
 	},
 
 	_populateRTData: function(rtLabel) {
@@ -21,51 +25,83 @@ cc.Class({
 		progress = ProductPackageItemConfig.numberAsShortString(progress, '', true);
 		let max = this.missionStepInterface.getProgressMax();
 		max = ProductPackageItemConfig.numberAsShortString(max, '', true);
-		let minBet = this.missionStepInterface.getMinBet() || 0;
+		let minBet = this.missionStepInterface.getMinBet() || '1000';
 		minBet = ProductPackageItemConfig.numberAsShortString(minBet, '', true);
+		let remaining = this.setRemaining();
 
 		const data = {
 			progress: progress, 
-			max: max, 
-			slotname: slotName, 
+			max: max,
+			remaining: remaining,
+			slotname: slotName.toUpperCase(), 
 			giftname: giftName,
 			minbet: minBet, 
 			currencyUpper: currency,
-			currencyLower: currency.toLowerCase()
+			currencyLower: currency.toLowerCase(),
 		};
 		rtLabel.setData(data);
 		// Set the editor mode properties
 		rtLabel.testData = JSON.stringify(data);
 	},
 
+	setRemaining: function () {
+		let remainingAmount = 0;
+		let progress = this.missionStepInterface.getProgressAmount();
+		let max = this.missionStepInterface.getProgressMax();
+
+		remainingAmount = progress && max ? max - progress : max;
+		remainingAmount = ProductPackageItemConfig.numberAsShortString(remainingAmount, '', true);
+
+		return remainingAmount;
+	},
+
 	onUpdateMissionStepData: function() {
 		let rtLabel = this.getComponent('DataTemplateRichTextLabel');
-        let description = this.missionStepInterface.getFormatString();
+		let description = this.missionStepInterface.getFormatString();
         let templateClassType = this.missionStepInterface && 
                                 this.missionStepInterface._stepData &&
 								this.missionStepInterface._stepData.class;
-        let templateType = this.setTemplateString(templateClassType.toString());
+		this.isProgress = this.missionStepInterface &&
+						  this.missionStepInterface._stepData &&
+						  this.missionStepInterface._stepData.data.progress != 0;
 
-		if (!templateType && (!rtLabel.templateString || rtLabel.templateString == '')) {
-			rtLabel.templateString = description;
+		const templateClassTypeStr = templateClassType.toString();
+		let remaining = this.setRemaining();
+		this.singularAmount = remaining == 1;
+
+		let staticTemplateTypeString = this.isProgress ? 
+			this.setProgressTemplateString(templateClassTypeStr) : 
+			this.setTemplateString(templateClassTypeStr);
+
+		if (!this.isProgress && staticTemplateTypeString) {
+			let styledDescription = this.styleDescriptionAddMachine(description);
+			rtLabel.templateString = description ? styledDescription : staticTemplateTypeString;
         } else {
-            rtLabel.templateString = templateType;
-        }
+            rtLabel.templateString = staticTemplateTypeString;
+		}
 
 		this._populateRTData(rtLabel);
 	},
 
 	_getSlotName: function() {
 		const buyInIDs = this.missionStepInterface.getBuyInIDs();
+		const anySlotMachineLabel = 'Any Slot Machine';
 		let slotData;
-		
+
 		if (buyInIDs) {
 			slotData = buyInIDs && this.missionStepInterface.getSlotData(buyInIDs[0]);
 		} else {
-			const allSlotData = this.missionStepInterface.missionInterface._missionData && 
-				this.missionStepInterface.missionInterface._missionData.slotsData;
-			slotData = allSlotData && allSlotData[Object.keys(allSlotData)[0]];
+
+			// Get the first element that is available in missionInterface slotsData;
+
+			// const allSlotData = this.missionStepInterface.missionInterface._missionData && 
+			// 	this.missionStepInterface.missionInterface._missionData.slotsData;
+			// slotData = allSlotData && allSlotData[Object.keys(allSlotData)[0]];
+
+			// Set the label to 'Any Slot Machine' if no buyInID is configured on step.
+			return anySlotMachineLabel;
 		}
+		
 		return slotData && slotData.name;
 	},
 
@@ -78,32 +114,83 @@ cc.Class({
 		}
     },
 
-	// TO DO * refactor this;
+	styleDescriptionAddMachine: function (text) {
+		let color = this.textColor;
+		let outline = this.outlineColor;
+		let outlineWidth = this.outlineWidth;
+		const inSlotnameLabel = ' in {slotname} to win a reward!'
+		if (text) {
+			return `<color=${color}><b></color><outline color=${outline} width=${outlineWidth}>${text}${inSlotnameLabel}</outline>`;
+		}
+	},
+
+	// TO DO * refactor this hardcoded text;
     setTemplateString: function (type) {
 		let value = '';
-		const color = '#fff447';
-		const outlineColor = '#0b1336';
+		const color = this.textColor;
+		const outlineColor = this.outlineColor;
+		const outlineWidth = this.outlineWidth;
         switch (type) {
             case 'MissionStepBet':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>Bet a total of {max} on slot {slotname} </outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Bet a total of {max} {currencyUpper} in {slotname} to win a reward!</outline>`
                 break;
             case 'MissionStepSpin':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>Spin {max} times with a minimum bet of 125000 on slot {slotname} </outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Spin {max} times with a minimum bet of {minBet} in {slotname} to win a reward!</outline>`
                 break;
             case 'MissionStepWinsThreshold':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>Collect {max} wins over {threshold} on slot {slotname} </outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Collect {max} wins over {threshold} in {slotname} to win a reward!</outline>`
                 break;
             case 'MissionStepWins':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>Win {max} chipsin {spinCount} consecutive spins on slot {slotname} </outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Win {max} {currencyUpper} in {slotname} to win a reward!</outline>`
                 break;
             case 'MissionStepBigWins':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>Collect {max} big wins on slot {slotname}</outline>`
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Collect {max} big wins in {slotname} to win a reward!</outline>`
                 break;
             case 'MissionStepGiftGiving':
-                value = `<color=${color}><b></color><outline color=${outlineColor} width=2>Give {max} {giftname} </outline>`
-                break;
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Give {max} {giftname} to win a reward!</outline>`
+				break;
+			case 'MissionStepBingo':
+				value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Mark Bingo board {max} times in {slotname} to win a reward!</outline>`
+				break;
             default:
-				value = `<color=${color}><b></color><outline color=${outlineColor} width=2>Step in {slotname} </outline>`
+				value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>Step in {slotname} to win a reward!</outline>`
+                break;
+		}
+        return value;
+	},
+	
+	setProgressTemplateString: function (type) {
+		let value = '';
+		const color = this.textColor;
+		const outlineColor = this.outlineColor;
+		const outlineWidth = this.outlineWidth;
+		const timeString = this.singularAmount ? 'TIME' : 'TIMES';
+		const winString = this.singularAmount ? 'WIN' : 'WINS';
+
+        switch (type) {
+            case 'MissionStepBet':
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>BET {remaining} {currencyUpper} MORE<br/>IN {slotname} <br/>TO COMPLETE THIS STEP!</outline>`
+                break;
+            case 'MissionStepSpin':
+				value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>SPIN {remaining} MORE ${timeString} <br/>IN {slotname} <br/>TO COMPLETE THIS STEP!</outline>`
+                break;
+            case 'MissionStepWinsThreshold':
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>COLLECT {remaining} MORE ${winString} <br/>OVER {threshold} IN {slotname} <br/>TO COMPLETE THIS STEP!</outline>`
+                break;
+            case 'MissionStepWins':
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>WIN {max} {currencyUpper} MORE<br/>SPIN {spinCount} CONSECUTIVE SPINS IN {slotname}</outline>`
+                break;
+            case 'MissionStepBigWins':
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>COLLECT {remaining} MORE BIG ${winString} <br/>IN {slotname} <br/>TO COMPLETE THIS STEP!</outline>`
+                break;
+            case 'MissionStepGiftGiving':
+                value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>GIVE {remaining} MORE {giftname} <br/>TO COMPLETE THIS STEP!</outline>`
+				break;
+			case 'MissionStepBingo':
+				value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>MARK BINGO BOARD {remaining} MORE ${timeString} IN {slotname} <br/>TO COMPLETE THIS STEP!</outline>`
+				break;
+            default:
+				value = `<color=${color}><b></color><outline color=${outlineColor} width=${outlineWidth}>COMPLETE THIS STEP IN {slotname}!</outline>`
                 break;
 		}
         return value;

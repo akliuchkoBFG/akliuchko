@@ -24,19 +24,15 @@ cc.Class({
 		findMyInterface: {
 			visible: function() { return !this.missionInterface; },
 			get: function() { return !!this.missionInterface; },
-			set: function() { this.missionInterface = MissionInterface.findInterfaceInScene(this); },
+			set: function() { this.missionInterface = MissionInterface.findInterfaceInScene(this, "MissionInterface"); },
 			tooltip: "Toggle to find the MissionInterface in the hierarchy",
 		},
 	},
 
 	// use this for initialization
 	onLoad: function () {
-		if (CC_EDITOR) {
-			this.missionInterface = this.missionInterface || MissionInterface.findInterfaceInScene(this);
-			if(this.missionInterface) {
-				this.missionInterface.on('updateMissionDataEvent', this.onUpdateMissionData, this);
-			}
-		} else {
+		this.missionInterface = this.missionInterface || MissionInterface.findInterfaceInScene(this, "MissionInterface");
+		if (this.missionInterface) {
 			this.missionInterface.on('updateMissionDataEvent', this.onUpdateMissionData, this);
 		}
 	},

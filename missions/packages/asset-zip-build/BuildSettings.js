@@ -4,17 +4,15 @@ const path = require('path');
 
 const TEMP_DIR = path.join(Editor.projectInfo.path, 'temp', 'sag');
 const DEFAULT_BUILD_SETTINGS = {
-	pigbeeEnv: process.env.BF_ENG_USER ? process.env.BF_ENG_USER + 'vmpoc' : 'casino-tools',
 	outputDir: TEMP_DIR,
 	skipZip: false,
+	skipArchive: false,
 	skipUpload: false,
 	debug: false,
 	cleanup: true,
 	bundleNameOverride: '',
 	includeSource: false,
 	minify: true,
-	previewEnv: 'casino-tools.qa',
-	syncURL: "https://casino-admin.qa.bigfishgames.com/files",
 };
 
 const SAVED_SETTINGS_PATH = Editor.url("profile://local/asset-zip-build-settings.json");

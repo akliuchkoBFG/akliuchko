@@ -1,0 +1,25 @@
+<div id="wrap" class="wrap">
+	<header>
+		<h2>Environment Selection</h2>
+		<span>Select a development environment for Preview and Pigbee</span> 
+	</header>
+	<section>
+		<ui-prop name="App" class="box flex-1">
+			<ui-select v-value="clientID" class="box flex-1" @change="saveSettings">
+				<option v-for="client in previewClients" :value="client.id">{{client.displayName}}</option>
+			</ui-select>
+		</ui-prop>
+		<ui-prop name="Server" class="box flex-1">
+			<ui-select v-value="serverID" class="box flex-1" @change="saveSettings">
+				<option v-for="env in previewEnvironments" :value="env.id">{{env.displayName}}</option>
+			</ui-select>
+		</ui-prop>
+		<ui-prop v-if="serverID === 'localvm'" name="Dev" class="box flex-1">
+			<ui-input class="box flex-1" v-value="vmID" @confirm="saveSettings"></ui-input>
+		</ui-prop>
+		<div id="buttons" class="wrapper layout horizontal">
+			<ui-button @click="launchGame" class="flex-1">Launch Game</ui-button>
+			<ui-button @click="launchPigbee" class="flex-1">Launch Pigbee</ui-button>
+		</div>
+	</section>
+</div>

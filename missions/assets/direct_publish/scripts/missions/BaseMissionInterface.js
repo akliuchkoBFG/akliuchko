@@ -1,8 +1,13 @@
 
 // Base class for shared functionality in the mission and step interfaces
 
+const TAG = "baseMissionInterface";
+const ComponentLog = require('ComponentSALog')(TAG);
+
 const BaseMissionInterface = cc.Class({
 	extends: cc.Component,
+
+	mixins: [ComponentLog],
 
 	properties: {
 	},
@@ -19,19 +24,22 @@ const BaseMissionInterface = cc.Class({
 });
 
 // Components use this to smartly search for interface classes in the node hierarchy
-BaseMissionInterface.findInterfaceInScene = function(component) {
+BaseMissionInterface.findInterfaceInScene = function(component, type = 'BaseMissionInterface') {
 	let node = component.node;
 	let missionInterface = null;
-	if (CC_EDITOR) {
-		while ((missionInterface === null || node === null) && !(node instanceof cc.Scene)) {
-			missionInterface = node.getComponent(this.name);
-			if (!missionInterface) {
-				node = node.getParent();
-			}
-		}
 
+	while ((missionInterface === null || node === null) && !(node instanceof cc.Scene)) {
+		missionInterface = node.getComponent(type);
 		if (!missionInterface) {
-			Editor.error("Required Mission Interface NOT FOUND in scene and must be added to access Mission data");
+			node = node.getParent();
+		}
+	}
+
+	if (!missionInterface) {
+		if (CC_EDITOR) {
+			Editor.warn("Required Mission Interface NOT FOUND in scene and must be added to access Mission data");
+		} else {
+			this.log.e("Required Mission Interface NOT FOUND in scene and must be added to access Mission data");
 		}
 	}
 	return missionInterface;

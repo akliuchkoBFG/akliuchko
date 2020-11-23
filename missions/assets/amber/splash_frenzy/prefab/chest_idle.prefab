@@ -70,8 +70,8 @@
     "_enabled": true,
     "_paused": false,
     "defaultSkin": "chest7",
-    "defaultAnimation": "openIdle",
-    "loop": false,
+    "defaultAnimation": "chest_idle",
+    "loop": true,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
       "__uuid__": "56b8a25b-7c51-44c7-811b-dd8a969d8edb"

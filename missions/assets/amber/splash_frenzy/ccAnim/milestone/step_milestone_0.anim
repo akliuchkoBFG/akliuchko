@@ -21,18 +21,8 @@
               "value": true
             },
             {
-              "frame": 8.5,
+              "frame": 9.5,
               "value": false
-            }
-          ],
-          "opacity": [
-            {
-              "frame": 8.416666666666666,
-              "value": 255
-            },
-            {
-              "frame": 8.5,
-              "value": 0
             }
           ]
         }

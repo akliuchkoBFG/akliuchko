@@ -14,29 +14,13 @@
           "active": [
             {
               "frame": 0,
-              "value": true
-            }
-          ],
-          "opacity": [
-            {
-              "frame": 0,
-              "value": 0
-            },
-            {
-              "frame": 0.5,
-              "value": 255
+              "value": false
             }
           ]
         }
       },
       "buttons/play/button_play": {
         "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": true
-            }
-          ],
           "opacity": [
             {
               "frame": 0,
@@ -58,6 +42,96 @@
             ]
           }
         }
+      },
+      "progress_container/progress_buttons/block0_icon": {
+        "comps": {
+          "StepProgressIconFillComponent": {
+            "fillRange": [
+              {
+                "frame": 0,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "progress_container/progress_buttons/block1_icon": {
+        "comps": {
+          "StepProgressIconFillComponent": {
+            "fillRange": [
+              {
+                "frame": 0,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "progress_container/progress_buttons/block2_icon": {
+        "comps": {
+          "StepProgressIconFillComponent": {
+            "fillRange": [
+              {
+                "frame": 0,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "progress_container/progress_buttons/block3_icon": {
+        "comps": {
+          "StepProgressIconFillComponent": {
+            "fillRange": [
+              {
+                "frame": 0,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "progress_container/progress_buttons/block4_icon": {
+        "comps": {
+          "StepProgressIconFillComponent": {
+            "fillRange": [
+              {
+                "frame": 0,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "progress_container/progress_label": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            }
+          ]
+        }
+      }
+    },
+    "comps": {
+      "StepProgressBarFillComponent": {
+        "fillRange": [
+          {
+            "frame": 0,
+            "value": 0
+          }
+        ]
       }
     }
   },

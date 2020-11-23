@@ -22,19 +22,10 @@ cc.Class({
         },
     },
 
-    // use this for initialization
     onLoad: function () {
         if (CC_EDITOR) {
 			this.missionInterface = this.missionInterface || MissionInterface.findInterfaceInScene(this);
         }
-        if (this.missionInterface) {
-            this.missionInterface.on('updateMissionDataEvent', this.setStepData, this);
-        }
-    },
-
-    setStepData: function() {
-        const stepData = this.missionInterface._stepData;
-        // *TO DO
     },
 
     togglePopupWindow: function(jsonData) {

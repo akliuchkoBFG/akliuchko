@@ -22,11 +22,33 @@ cc.Class({
         },
     },
 
-    onLoad: function () {
+    onEnable: function () {
         const missionInterfaceComp = this.missionInterface;
+        this.boxDataUpdated = false;
         if (missionInterfaceComp) {
-            this.currentStep = missionInterfaceComp.getStepData(this.stepId);
-            this.updateStepStatus()
+            missionInterfaceComp.on('updateMissionDataEvent', this.onUpdateStepData, this);
+            this.updateIconInStepBox();
+        }
+    },
+
+    onDisable: function() {
+        this.boxUpdateNeeded = true;
+    },
+
+    update: function () { 
+        if (this.node.active && this.boxUpdateNeeded) {
+            this.updateIconInStepBox();
+        }
+    },
+
+    onUpdateStepData: function () {
+        this.boxUpdateNeeded = true;
+    }, 
+
+    updateIconInStepBox: function() {
+        this.currentStep = this.missionInterface.getStepData(this.stepId);
+        if (this.currentStep) {
+            this.updateStepStatus();
         }
     },
 
@@ -37,5 +59,6 @@ cc.Class({
             this.stepMax = this.currentStep.data.max || null;
             this.stepSlotName = this.currentStep.class || '';
         }
+        this.boxUpdateNeeded = false;
     },
 });

@@ -1,0 +1,20 @@
+{
+	"name": "pigbee-utils",
+	"version": "1.0.0",
+	"description": "Library for interfacing with Pigbee/Game Servers from within Cocos Creator",
+	"author": "Self Aware Games",
+	"main": "main.js",
+	"scene-script": "scene.js",
+	"panel": {
+		"main": "panel/environment-select.js",
+		"type": "dockable",
+		"title": "Environment Selection",
+		"width": 400,
+		"height": 300
+	},
+	"main-menu": {
+		"Panel/Self Aware/Environment Selection": {
+			"message": "pigbee-utils:open"
+		}
+	}
+}

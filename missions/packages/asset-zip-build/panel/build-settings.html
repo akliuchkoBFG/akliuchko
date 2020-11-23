@@ -7,16 +7,11 @@
         <div v-if="showDebugInPanel">{{userSettings | json}}</div>
         <ul>
             <li v-for="(key, value) in userSettings">
-                <ui-prop v-if="key !== 'previewEnv' && key !== 'missionEnv'" :name="key" class="box flex-1">
+                <ui-prop :name="key" class="box flex-1">
                     <ui-input class="box flex-1" v-if="typeof value === 'string'" v-value="value"></ui-input>
                     <ui-checkbox v-if="typeof value === 'boolean'" v-value="value"></ui-checkbox>
                 </ui-prop>
             </li>
-            <ui-prop name="Preview Environment" class="box flex-1">
-                <ui-select v-value="prevEnvSelected">
-                    <option v-for="env in prevEnvironments" v-bind:value="env.value">{{env.text}}</option>
-                </ui-select>
-            </ui-prop>
         </ul>
     </section>
     <div id="buttons" class="wrapper layout horizontal justified">

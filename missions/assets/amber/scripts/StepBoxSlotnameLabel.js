@@ -2,7 +2,6 @@ const BaseMissionStepComponent = require('BaseMissionStepComponent');
 const DataTemplateRichTextLabel = require('DataTemplateRichTextLabel');
 const StepBoxComponent = require('StepBoxComponent');
 
-
 cc.Class({
 	extends: BaseMissionStepComponent,
 
@@ -15,25 +14,42 @@ cc.Class({
 	properties: {
 		stepIdNode: {
 			default: null,
-            type: StepBoxComponent,
+			type: StepBoxComponent,
 		},
 		colorLock: '',
 		colorCompleted: '',
 	},
 
-	_populateRTData: function(rtLabel) {
+	onEnable: function () {
+		const stepBoxComp = this.stepIdNode;
+		if (stepBoxComp) {
+			this.updateStepDescriptionLabel();
+		}
+	},
+
+	update: function () {
+		if (this.stepIdNode && this.iconStatus !== this.stepIdNode.stepStatus) {
+			this.updateStepDescriptionLabel();
+		}
+	},
+
+	_populateRTData: function (rtLabel) {
 		let slotName = this.slotName;
 		let color = this.activeColor;
+		let type = this.stepType;
+		let characterName = this.characterName;
 		const data = {
 			slotname: slotName,
 			color: color,
+			stepType: type,
+			character: characterName,
 		};
 
 		rtLabel.setData(data);
 		rtLabel.testData = JSON.stringify(data);
 	},
 
-	onUpdateMissionStepData: function() {
+	updateStepDescriptionLabel: function () {
 		let rtLabel = this.getComponent('DataTemplateRichTextLabel');
 		let stepBoxComp = this.stepIdNode;
 		const stepId = stepBoxComp.stepId;
@@ -46,11 +62,13 @@ cc.Class({
 			const currentStepBuyInID = this._getStepBuyinId(this.stepBoxData);
 			this.slotName = this._getSlotName(currentStepBuyInID);
 			this.activeColor = stepBoxComp.stepStatus == 'locked' ? this.colorLock : this.colorCompleted;
+			this.stepType = this.setStepInitailDescription(this.stepIdNode.stepSlotName);
+			this.characterName = this.getCharacterName()
 
 			if (!rtLabel.templateString || rtLabel.templateString == '') {
 				rtLabel.templateString = this.slotName;
 			}
-	
+
 			this._populateRTData(rtLabel);
 		}
 	},
@@ -58,9 +76,9 @@ cc.Class({
 	_getStepBuyinId: function (stepData) {
 		let firstBuyInID = '';
 		const slotsData = this.missionStepInterface &&
-						this.missionStepInterface.missionInterface &&
-						this.missionStepInterface.missionInterface._missionData &&
-						this.missionStepInterface.missionInterface._missionData.slotsData;
+			this.missionStepInterface.missionInterface &&
+			this.missionStepInterface.missionInterface._missionData &&
+			this.missionStepInterface.missionInterface._missionData.slotsData;
 		if (stepData.hasOwnProperty('buyInIDs')) {
 			firstBuyInID = stepData.buyInIDs[0];
 		} else if (slotsData) {
@@ -71,8 +89,27 @@ cc.Class({
 		return firstBuyInID;
 	},
 
-	_getSlotName: function(buyInID) {
+	_getSlotName: function (buyInID) {
 		const slotData = buyInID && this.missionStepInterface.getSlotData(buyInID);
 		return slotData && slotData.name;
 	},
+
+	setStepInitailDescription: function (type) {
+		const preText = {
+			completeIn: "Complete in",
+			stepIn: "Step in",
+		};
+
+		// This will need refactoring in future missions.
+
+		return type ? preText.completeIn : preText.stepIn;
+	},
+
+	getCharacterName: function () {
+		const characterComp = this.getComponent('StepMilestoneCharacters');
+		if (characterComp) {
+			let character = characterComp.getCharacters(characterComp.stepMilestone);
+			return character && character.name;
+		}
+	}
 });

@@ -10,7 +10,7 @@ cc.Class({
 		menu: 'Add Mission Component/Mission Step Preview',
 		executeInEditMode: true,
 		disallowMultiple: true,
-		help: 'https://bigfishgames.atlassian.net/l/c/oC9APqHj'
+		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/562659476/Mission+Step+Preview'
 	},
 
 	properties: {
