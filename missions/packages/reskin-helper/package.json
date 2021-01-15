@@ -1,0 +1,22 @@
+{
+	"name": "reskin-helper",
+	"version": "1.1.0",
+	"description": "Utilities for streamlining Cocos Creator scene reskins alongside the ReskinElement components",
+	"author": "Self Aware Games",
+	"main": "main.js",
+	"scene-script": "scene.js",
+	"main-menu": {
+		"Self Aware/Reskins/Filter Node Tree": {
+			"message": "reskin-helper:add-node-tree-filter"
+		},
+		"Self Aware/Reskins/Check Reskin List": {
+			"message": "reskin-helper:list-pending-reskins"
+		},
+		"Self Aware/Reskins/Help": {
+			"message": "reskin-helper:open-help-wiki"
+		}
+	},
+	"packages": {
+		"scene-save-as": "^1.1.0"
+	}
+}

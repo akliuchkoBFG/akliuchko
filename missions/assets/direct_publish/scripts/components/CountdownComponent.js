@@ -18,19 +18,19 @@ cc.Class({
 	properties: {
 
 		hours: {
-			default: 0,
+			default: 4,
 			type: cc.Integer,
 			min:0,
 			notify: function(){ this._editorDisplay(); }
 		},
 		minutes: {
-			default: 10,
+			default: 4,
 			type: cc.Integer,
 			range:[0, 59, 1],
 			notify:function(){ this._editorDisplay(); }
 		},
 		seconds:{
-			default: 30,
+			default: 59,
 			type: cc.Integer,
 			range:[0, 59, 1],
 			notify:function(){ this._editorDisplay(); }

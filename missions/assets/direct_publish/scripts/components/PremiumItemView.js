@@ -186,7 +186,8 @@ cc.Class({
 			this.displayType.string = '';
 		}
 		if (this.displayCount) {
-			this.displayCount.node.active = false;
+			const countNode = this.displayCount.hideNode || this.displayCount.node;
+			countNode.active = false;
 		}
 		if (this.raritySelector) {
 			this.raritySelector.node.active = false;

@@ -7,8 +7,17 @@ cc.Class({
     editor: CC_EDITOR && {
         requireComponent: MissionPremiumItemView,
         // executeInEditMode: true,
-        menu: 'Add Mission Component/Step PremiumItem Generator',
-        // TODO: help: 'url/to/help/wikipage'
+    },
+
+    ctor() {
+        if (CC_EDITOR) {
+            Editor.warn([
+                "Using deprecated component MissionStepPremiumItemGenerator! Expand for details:",
+                "This component is no longer supported in favor of MissionStepRewardTeaser",
+                "To find usages of this component search the node tree for 't:MissionStepPremiumItemGenerator'",
+                "Please replace with MissionStepRewardTeaser and provide that component with reward prefabs",
+            ].join('\n'));
+        }
     },
 
     onUpdateMissionStepData: function() {

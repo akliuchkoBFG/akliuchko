@@ -21,7 +21,7 @@ cc.Class({
     mixins: [ComponentLog],
 
     editor: {
-        menu: 'Add Mission Component/Premium Item View',
+        menu: 'Add Mission Component/Rewards/Premium Item View',
         disallowMultiple: true,
     },
 
@@ -91,7 +91,7 @@ cc.Class({
 
             const displayName = itemModel.getClientConfigValue('displayName');
             if (displayName && this.displayName) {
-                this.displayName.templateString = displayName;
+                this.displayName.string = displayName;
             }
 
             const displayType = itemModel.get('displayType');
@@ -110,7 +110,7 @@ cc.Class({
                     this.raritySelector.node.active = true;
                 } else {
                     this.raritySelector.node.active = false;
-                    this.log.w('Unsupported rarity value for item: ' + rarity + '; ' + itemModel.getCompoundID());
+                    this.log.d('Unsupported rarity value for item: ' + rarity + '; ' + itemModel.getCompoundID());
                 }
             }
 
@@ -186,7 +186,8 @@ cc.Class({
             this.displayType.string = '';
         }
         if (this.displayCount) {
-            this.displayCount.node.active = false;
+            const countNode = this.displayCount.hideNode || this.displayCount.node;
+            countNode.active = false;
         }
         if (this.raritySelector) {
             this.raritySelector.node.active = false;

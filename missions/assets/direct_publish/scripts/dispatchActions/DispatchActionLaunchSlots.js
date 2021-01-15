@@ -5,7 +5,7 @@ const BaseDispatchAction = require('BaseDispatchAction');
 cc.Class({
 	extends: BaseDispatchAction,
 
-	editor: {
+	editor: CC_EDITOR && {
 		menu: 'Add Button Action/Launch Slots',
 		inspector: Editor.SAG.ComponentInspector('dispatch-action-launch-slots'),
 		disallowMultiple: true,

@@ -34,6 +34,14 @@ cc.Class({
 			type: HideStrategy,
 			tooltip: 'Optionally hide this label based on the numeric value of this label',
 		},
+		hideNode: {
+			default: null,
+			type: cc.Node,
+			visible() {
+				return this.hideStrategy !== HideStrategy.None;
+			},
+			tooltip: '(optional) Node to hide based on "Hide Strategy"\nDefaults to this node if not provided',
+		},
 	},
 
 	setNumber(value) {
@@ -64,7 +72,8 @@ cc.Class({
 				active = false;
 			}
 		}
-		this.node.active = active;
+		const node = this.hideNode || this.node;
+		node.active = active;
 	},
 
 	_tokenize(number) {

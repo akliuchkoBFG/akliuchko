@@ -1,4 +1,5 @@
 const BaseMissionStepComponent = require('BaseMissionStepComponent');
+const MissionStepRewardSequence = require('MissionStepRewardSequence');
 
 cc.Class({
 	extends: BaseMissionStepComponent,
@@ -25,7 +26,12 @@ cc.Class({
 		},
 		claimState: {
 			default: '',
-			tooltip: "cc.Anim clip name - this clip plays after the user clicks the 'claim' button"
+			tooltip: "cc.Anim clip name - this clip plays after the user clicks the 'claim' button\nIgnored if 'Claim Sequence' is defined"
+		},
+		claimSequence: {
+			default: null,
+			type: MissionStepRewardSequence,
+			tooltip: "Claim sequence controller for supporting multiple rewards and rich claim choreography\nIf present, ignores 'Claim State' property",
 		},
 		outroState: {
 			default: '',
@@ -78,7 +84,9 @@ cc.Class({
 
 		switch (event.detail.name) {
 			case this.claimState:
-				this.onClaimComplete();
+				if (!this.claimSequence) {
+					this.onClaimComplete();
+				}
 				break;
 			case this.outroState:
 				this.onOutroComplete();
@@ -87,7 +95,14 @@ cc.Class({
 	},
 
 	onClaim: function() {
-		this._play(this.claimState);
+		if (this.claimSequence) {
+			this.claimSequence.playSequence()
+			.then(() => {
+				this.onClaimComplete();
+			});
+		} else {
+			this._play(this.claimState);
+		}
 	},
 
 	onClaimComplete: function() {
