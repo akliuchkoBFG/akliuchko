@@ -149,6 +149,13 @@ cc.Class({
 		return this._stepData && this._stepData.data && this._stepData.data.award;
 	},
 
+	getAwardResultData: function() {
+		// the data might have been updated, but not progigated to this interface yet, 
+		// ...so call an update
+		this._updateStepData();
+		return this._stepData && this._stepData.data && this._stepData.data.awardResult;
+	},
+
 	getBuyInIDs: function() {
 		return this._stepData && this._stepData.data && this._stepData.data.buyInIDs;
 	},

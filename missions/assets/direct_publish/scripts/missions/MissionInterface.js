@@ -223,6 +223,10 @@ cc.Class({
 		return this._missionData && this._missionData.id;
 	},
 
+	getSecondsActive: function() {
+		return this._missionData && this._missionData.secondsActive;
+	},
+
 	getSecondsRemaining: function() {
 		return this._missionData && this._missionData.secondsRemaining;
 	},
