@@ -1,0 +1,13 @@
+
+avatar_frame.png
+size: 126,124
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+marbleFrame
+  rotate: false
+  xy: 2, 14
+  size: 122, 108
+  orig: 122, 108
+  offset: 0, 0
+  index: -1
