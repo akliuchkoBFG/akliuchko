@@ -178,9 +178,12 @@ module.exports = {
 			res.sendFile(path.join(PREVIEW_DIR, 'preview.zip'));
 		});
 		server = app.listen(PREVIEW_PORT, () => console.log('Preview server listening on port ' + PREVIEW_PORT));
+		// cert.pem is copied from tools/docker/casino/lighttpd/conf
+		// See https://bigfishgames.atlassian.net/wiki/spaces/sageng/pages/753729541/Updating+Docker+SSL+Certs
+		const credentials = fs.readFileSync(Editor.url('packages://sakit-preview-server/cert.pem', 'utf8'));
 		serverHttps = https.createServer({
-			key: fs.readFileSync(Editor.url('packages://sakit-preview-server/key.pem', 'utf8')), 
-			cert: fs.readFileSync(Editor.url('packages://sakit-preview-server/cert.pem', 'utf8')),
+			key: credentials,
+			cert: credentials,
 		}, app).listen(PREVIEW_PORT_HTTPS);
 
 		// Automatic preview builds

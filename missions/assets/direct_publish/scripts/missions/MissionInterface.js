@@ -237,10 +237,10 @@ cc.Class({
 
 	getTrayIcon() {
 		let iconName = '';
-		if (!this._missionData) {
+		const tags = this.getTags();
+		if (tags.length === 0) {
 			return Promise.resolve(iconName);
 		}
-		const tags = this._missionData.tags;
 		const ICON_IDENTIFIER = 'icon.';
 		tags.forEach((tag) => {
 			if (tag.indexOf(ICON_IDENTIFIER) === 0) {
@@ -259,6 +259,13 @@ cc.Class({
 		.then(() => {
 			return configLoader.getClientConfigValue('images.asset');
 		});
+	},
+
+	getTags: function() {
+		if (!this._missionData) {
+			return [];
+		}
+		return this._missionData.tags;
 	},
 
 	isMissionAwardClaimed: function() {
@@ -318,7 +325,9 @@ cc.Class({
 				this.updateMissionData(result.missionData[0]);
 			}
 			// Send notice that claim request was completed
-			this.emit('claimedStepAward', {});
+			this.emit('claimedStepAward', {
+				stepID,
+			});
 			
 			SANotificationCenter.getInstance().postNotification('lobby.shouldRequestLobbyData');
 		}).catch(function(error) {

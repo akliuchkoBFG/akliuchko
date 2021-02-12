@@ -311,8 +311,9 @@ function createSourceArchive(sceneUuid) {
 	return SceneArchiveUtil.sendToPackage('export-scene', sceneUuid);
 }
 
-function updateIfRequired() {
-	return SyncPackageUtil.sendToPackage('check-for-updates')
+function updateIfRequired(env) {
+	env = env || 'dev';
+	return SyncPackageUtil.sendToPackage('check-for-updates', env)
 	.then((updateRequired) => {
 		if (updateRequired.length === 0) {
 			return Promise.resolve();
@@ -524,7 +525,7 @@ module.exports = {
 			startBuild(event, settings, {system: 'marketing_popup', dev: true});
 		},
 		'start-build-marketing-prod' (event, settings) {
-			updateIfRequired()
+			updateIfRequired('live')
 			.then(() => {
 				startBuild(event, settings, {system: 'marketing_popup', dev: false});
 			})

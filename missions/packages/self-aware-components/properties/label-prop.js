@@ -8,7 +8,7 @@ return Vue.component('label-prop', {
 	dependencies: [],
 
 	template: `
-		<div :style=cssBlock>{{target.value.text.value}}</div>
+		<div :style=cssBlock><span v-html="multilineText"></span></div>
 	`,
 
 	data() {
@@ -27,6 +27,20 @@ return Vue.component('label-prop', {
 		target: {
 			twoWay: true,
 			type: Object,
+		},
+	},
+
+	computed: {
+		multilineText() {
+			return this.target.value.text.value
+				// Escape HTML values
+				.replace(/&/g, "&amp;")
+				.replace(/</g, "&lt;")
+				.replace(/>/g, "&gt;")
+				.replace(/"/g, "&quot;")
+				.replace(/'/g, "&#039;")
+				// Convert newlines to HTML line breaks
+				.replace(/\n/g, '<br>');
 		},
 	},
 });

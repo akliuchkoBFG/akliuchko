@@ -109,16 +109,16 @@ cc.Class({
 	},
 
 	launchSlot: function(buyInID) {
-		const slotData = this.getSlotData(buyInID);
-		
-		if (!slotData || !slotData.customData) {
-			this.log.e('Template does not contain slot information for buyInID ' + buyInID + ' cannot launch slot');
-			SADispatchObject.performAction('close', {});
-		} else {
-			if (Game.getGameContextController) {
-				Game.getGameContextController().launchSlot(slotData.customData);
+		if (buyInID) {
+			const slotData = this.getSlotData(buyInID);
+			if (slotData) {
+				if (Game.getGameContextController) {
+					Game.getGameContextController().launchSlot(slotData.customData);
+				} else {
+					SADispatchObject.performAction('launchSlots', slotData.customData);
+				}
 			} else {
-				SADispatchObject.performAction('launchSlots', slotData.customData);
+				this.log.w('Template does not contain slot information for buyInID: ' + buyInID);
 			}
 		}
 	},
