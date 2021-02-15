@@ -282,7 +282,7 @@ module.exports = {
 				restartPackageWatcher();
 			});
 		},
-		'check-for-updates' (event) {
+		'check-for-updates' (event, env) {
 			if (!event.reply) {
 				return Editor.error("Unable to provide update info, response callback not present");
 			}
@@ -294,6 +294,13 @@ module.exports = {
 				event.reply(null, updateRequired);
 			})
 			.catch(InvalidProjectError, (/* err */) => {
+				// Log a warning to merge default when publishing to production
+				if (env === 'live') {
+					Editor.warn([
+						'REMINDER: Merge default when publishing to production. If you forgot to do this, please merge and republish!',
+						'You may ignore this message if you are publishing from default or have recently merged default',
+					].join('\n'));
+				}
 				// Updates to shared assets are automatically applied through source control
 				event.reply(null, []);
 			})

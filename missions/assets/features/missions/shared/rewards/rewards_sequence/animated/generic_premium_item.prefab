@@ -898,9 +898,7 @@
     "defaultAnimation": "",
     "loop": true,
     "_premultipliedAlpha": true,
-    "_N$skeletonData": {
-      "__uuid__": "95d1e80a-5fc0-4a2f-8e1e-902692a86bf1"
-    },
+    "_N$skeletonData": null,
     "_N$timeScale": 1,
     "_N$debugSlots": false,
     "_N$debugBones": false

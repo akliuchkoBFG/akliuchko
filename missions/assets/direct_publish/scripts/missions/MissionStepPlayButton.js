@@ -32,7 +32,9 @@ cc.Class({
 	}),
 
 	performMissionStepAction: function() {
-		this.missionStepInterface.launchSlot(this.buyInID);
+		if (this.buyInID) {
+			this.missionStepInterface.launchSlot(this.buyInID);
+		}
 	},
 
 	onUpdateMissionStepData: function() {
@@ -46,7 +48,8 @@ cc.Class({
 					this.log.w('CTA buyInID index ' + this.index + ' is not available, using buyInID ' + this.buyInID);
 				}
 			} else {
-				this.log.w('No slot data for buyInID ' + this.buyInID);
+				// null out the buyin id so we don't attempt to launch slot w/ bad data
+				this.buyInID = 0;
 			}
 		}
 	}

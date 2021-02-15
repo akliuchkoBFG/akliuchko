@@ -45,7 +45,7 @@ cc.Class({
 	},
 
 	_getGridButtonData: function() {
-		const buyInIDs = this.missionStepInterface.getBuyInIDs();
+		const buyInIDs = this.missionStepInterface.getBuyInIDs() || [];
 		if (this.index < buyInIDs.length) {
 			const slotData = this.missionStepInterface.getSlotData(buyInIDs[this.index]);
 			if (slotData) {
