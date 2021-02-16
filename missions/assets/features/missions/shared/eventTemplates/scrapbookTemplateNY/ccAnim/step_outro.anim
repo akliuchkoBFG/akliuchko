@@ -84,7 +84,13 @@
           "active": [
             {
               "frame": 0,
-              "value": false
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
             }
           ]
         }
@@ -94,7 +100,42 @@
           "active": [
             {
               "frame": 0,
-              "value": false
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "buttons/button_close": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        },
+        "comps": {
+          "cc.Button": {}
+        }
+      },
+      "buttons": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
             }
           ]
         }
