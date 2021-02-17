@@ -82,8 +82,6 @@ cc.Class({
 			return;
 		}
 
-		cc.log('STEP STATE Finished:', event.detail.name);
-
 		switch (event.detail.name) {
 			case this.claimState:
 				if (!this.claimSequence) {
@@ -118,7 +116,6 @@ cc.Class({
 	_play: function(anim) {
 		const comp = this.getComponent(cc.Animation);
 		comp.play(anim);
-		cc.log('STEP', anim);
 	},
 
 	_areAllStepsComplete: function() {

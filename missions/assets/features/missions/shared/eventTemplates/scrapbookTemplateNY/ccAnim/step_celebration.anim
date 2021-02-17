@@ -3,9 +3,9 @@
   "_name": "step_celebration",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 3,
+  "_duration": 3.5,
   "sample": 60,
-  "speed": 1,
+  "speed": 0.5,
   "wrapMode": 1,
   "curveData": {
     "paths": {
@@ -285,7 +285,7 @@
               "value": true
             },
             {
-              "frame": 3,
+              "frame": 3.5,
               "value": false
             }
           ],
@@ -295,11 +295,11 @@
               "value": 255
             },
             {
-              "frame": 2.75,
+              "frame": 3.25,
               "value": 255
             },
             {
-              "frame": 3,
+              "frame": 3.5,
               "value": 0
             }
           ]
@@ -451,6 +451,16 @@
         }
       },
       "steps_final/mission_step/buttons/button_claim": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/background/step_descriptions": {
         "props": {
           "active": [
             {
