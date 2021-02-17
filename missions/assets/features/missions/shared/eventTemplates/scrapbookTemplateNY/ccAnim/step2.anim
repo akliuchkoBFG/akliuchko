@@ -150,7 +150,7 @@
           "active": [
             {
               "frame": 0,
-              "value": true
+              "value": false
             }
           ],
           "rotation": [
@@ -186,7 +186,7 @@
           "active": [
             {
               "frame": 0,
-              "value": true
+              "value": false
             }
           ],
           "opacity": [
@@ -206,7 +206,7 @@
           "active": [
             {
               "frame": 0,
-              "value": true
+              "value": false
             },
             {
               "frame": 2,
@@ -242,7 +242,7 @@
           "active": [
             {
               "frame": 0,
-              "value": true
+              "value": false
             }
           ]
         },
@@ -283,6 +283,28 @@
             {
               "frame": 0,
               "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/background/collection_items/mask/gold_coins": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": -11.2
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": -350
             }
           ]
         }

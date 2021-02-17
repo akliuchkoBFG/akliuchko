@@ -140,20 +140,7 @@
         }
       },
       "steps_final/mission_step/background/collection_items/item_rotation": {
-        "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": true
-            }
-          ],
-          "rotation": [
-            {
-              "frame": 0,
-              "value": 0
-            }
-          ]
-        }
+        "props": {}
       },
       "steps_final/mission_step/background/collection_items/bg": {
         "props": {
@@ -180,7 +167,7 @@
           "active": [
             {
               "frame": 0,
-              "value": true
+              "value": false
             }
           ],
           "opacity": [
@@ -234,23 +221,9 @@
         }
       },
       "steps_final/mission_step/background/collection_items/clock_gold": {
-        "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": true
-            }
-          ]
-        },
+        "props": {},
         "comps": {
-          "cc.Sprite": {
-            "fillRange": [
-              {
-                "frame": 0,
-                "value": 0
-              }
-            ]
-          }
+          "cc.Sprite": {}
         }
       },
       "steps_final/mission_step/completed_container/spine_animations/step7_complete_spine": {
@@ -269,6 +242,28 @@
             {
               "frame": 0,
               "value": true
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/background/collection_items/mask/gold_coins": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": -11.2
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": -470
             }
           ]
         }

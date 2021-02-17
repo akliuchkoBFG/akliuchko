@@ -79,6 +79,7 @@ cc.Class({
 			return;
 		}
 
+		cc.log('MISSION STEP Finished: ', event.detail.name);
 		switch (event.detail.name) {
 			case this.claimMissionAwardState:
 				this.onNextStep();
@@ -122,6 +123,7 @@ cc.Class({
 		if (anim !== '') {
 			const comp = this.getComponent(cc.Animation);
 			comp.play(anim);
+			cc.log('MISSION', anim);
 		}
 	}
 });

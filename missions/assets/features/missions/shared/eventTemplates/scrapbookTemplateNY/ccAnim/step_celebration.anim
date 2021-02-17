@@ -3,7 +3,7 @@
   "_name": "step_celebration",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0,
+  "_duration": 3,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -129,66 +129,6 @@
           ]
         }
       },
-      "steps_final/mission_step/background/progress_container/progress_icons/step1_icon": {
-        "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": false
-            }
-          ]
-        }
-      },
-      "steps_final/mission_step/background/progress_container/progress_icons/step2_icon": {
-        "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": false
-            }
-          ]
-        }
-      },
-      "steps_final/mission_step/background/progress_container/progress_icons/step3_icon": {
-        "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": false
-            }
-          ]
-        }
-      },
-      "steps_final/mission_step/background/progress_container/progress_icons/step4_icon": {
-        "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": false
-            }
-          ]
-        }
-      },
-      "steps_final/mission_step/background/progress_container/progress_icons/step5_icon": {
-        "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": true
-            }
-          ]
-        }
-      },
-      "steps_final/mission_step/background/progress_container/progress_icons/chip_icon_label": {
-        "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": false
-            }
-          ]
-        }
-      },
       "steps_final/mission_step/buttons/button_complete": {
         "props": {
           "active": [
@@ -204,7 +144,7 @@
           "active": [
             {
               "frame": 0,
-              "value": true
+              "value": false
             }
           ],
           "rotation": [
@@ -220,7 +160,7 @@
           "active": [
             {
               "frame": 0,
-              "value": true
+              "value": false
             }
           ]
         }
@@ -282,7 +222,7 @@
           "active": [
             {
               "frame": 0,
-              "value": true
+              "value": false
             }
           ],
           "opacity": [
@@ -298,7 +238,7 @@
           "active": [
             {
               "frame": 0,
-              "value": true
+              "value": false
             }
           ]
         },
@@ -317,7 +257,7 @@
         "props": {
           "active": [
             {
-              "frame": 0,
+              "frame": 0.08333333333333333,
               "value": true
             }
           ]
@@ -338,7 +278,29 @@
           "active": [
             {
               "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0,
               "value": true
+            },
+            {
+              "frame": 3,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 2.75,
+              "value": 255
+            },
+            {
+              "frame": 3,
+              "value": 0
             }
           ]
         }
@@ -359,8 +321,13 @@
             {
               "frame": 0,
               "value": true
+            },
+            {
+              "frame": 3,
+              "value": true
             }
-          ]
+          ],
+          "opacity": []
         }
       },
       "steps_final/mission_step/background/collection_items": {
@@ -368,6 +335,14 @@
           "active": [
             {
               "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 3,
               "value": true
             }
           ]
@@ -379,6 +354,108 @@
             {
               "frame": 0,
               "value": true
+            },
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 3,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/background/collection_items/mask": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 3,
+              "value": true
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/background/mission_description": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/background/collection_items/mask/gold_coins": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 3,
+              "value": true
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": -11.2
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": -200
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/buttons": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/buttons/button_claim": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
             }
           ]
         }

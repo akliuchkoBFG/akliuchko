@@ -111,6 +111,16 @@
             }
           ]
         }
+      },
+      "background/collection_items/mask/gold_coins": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
       }
     }
   },

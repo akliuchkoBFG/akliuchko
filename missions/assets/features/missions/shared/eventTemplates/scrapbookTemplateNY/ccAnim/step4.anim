@@ -3,7 +3,7 @@
   "_name": "step4",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 2,
+  "_duration": 0,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -144,7 +144,7 @@
           "active": [
             {
               "frame": 0,
-              "value": true
+              "value": false
             }
           ],
           "rotation": [
@@ -193,42 +193,14 @@
       },
       "steps_final/mission_step/background/bg_2": {
         "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": true
-            },
-            {
-              "frame": 2,
-              "value": false
-            }
-          ],
-          "opacity": [
-            {
-              "frame": 0,
-              "value": 255
-            }
-          ]
+          "active": [],
+          "opacity": []
         }
       },
       "steps_final/mission_step/background/bg_3": {
         "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": true
-            }
-          ],
-          "opacity": [
-            {
-              "frame": 0,
-              "value": 0
-            },
-            {
-              "frame": 2,
-              "value": 255
-            }
-          ]
+          "active": [],
+          "opacity": []
         }
       },
       "steps_final/mission_step/background/collection_items/clock_gold": {
@@ -236,7 +208,7 @@
           "active": [
             {
               "frame": 0,
-              "value": true
+              "value": false
             }
           ]
         },
@@ -277,6 +249,28 @@
             {
               "frame": 0,
               "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/background/collection_items/mask/gold_coins": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": -11.2
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": -250
             }
           ]
         }
