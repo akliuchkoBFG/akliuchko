@@ -114,7 +114,17 @@
           "active": [
             {
               "frame": 0,
-              "value": false
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.5,
+              "value": 255
             }
           ]
         }
@@ -465,7 +475,7 @@
           "active": [
             {
               "frame": 0,
-              "value": false
+              "value": true
             }
           ]
         }
