@@ -126,10 +126,13 @@ cc.Class({
 		return null;
 	},
 
+	getAllStepIDs: function() {
+		return _.sortBy(Object.keys(this._stepData), _.identity);
+	},
+
 	updateProgressForStep: function(stepID, stepProgress) {
-		if(this._stepData[stepID])
-		{
-			var boundedProgress = Math.min(this._stepData[stepID].data.max,stepProgress);
+		if (this._stepData[stepID]) {
+			var boundedProgress = Math.min(this._stepData[stepID].data.max, stepProgress);
 			this._stepData[stepID].data.progress = boundedProgress;
 		}
 	},
