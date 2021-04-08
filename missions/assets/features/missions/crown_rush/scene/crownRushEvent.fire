@@ -5688,7 +5688,7 @@
     "loop": false,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "94762b72-1064-4ceb-896a-a6537730625c"
+      "__uuid__": "c6f192f8-862c-484e-8f26-b06cdbb4a4ce"
     },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
@@ -5788,7 +5788,7 @@
     "loop": false,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "94762b72-1064-4ceb-896a-a6537730625c"
+      "__uuid__": "c6f192f8-862c-484e-8f26-b06cdbb4a4ce"
     },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
@@ -5888,7 +5888,7 @@
     "loop": false,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "94762b72-1064-4ceb-896a-a6537730625c"
+      "__uuid__": "c6f192f8-862c-484e-8f26-b06cdbb4a4ce"
     },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
@@ -5988,7 +5988,7 @@
     "loop": false,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "94762b72-1064-4ceb-896a-a6537730625c"
+      "__uuid__": "c6f192f8-862c-484e-8f26-b06cdbb4a4ce"
     },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
@@ -6088,7 +6088,7 @@
     "loop": false,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "94762b72-1064-4ceb-896a-a6537730625c"
+      "__uuid__": "c6f192f8-862c-484e-8f26-b06cdbb4a4ce"
     },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
@@ -6188,7 +6188,7 @@
     "loop": false,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "94762b72-1064-4ceb-896a-a6537730625c"
+      "__uuid__": "c6f192f8-862c-484e-8f26-b06cdbb4a4ce"
     },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
@@ -6288,7 +6288,7 @@
     "loop": false,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "94762b72-1064-4ceb-896a-a6537730625c"
+      "__uuid__": "c6f192f8-862c-484e-8f26-b06cdbb4a4ce"
     },
     "_N$timeScale": 0.5,
     "_N$debugSlots": false,
@@ -6861,8 +6861,8 @@
     "missionInterface": {
       "__id__": 7
     },
-    "_N$missionJSONString": "{\"templateID\":24,\"templateVersion\":1,\"id\":1909,\"source\":\"test01\",\"tags\":[\"AMBER\",\"crown.rush\"],\"mission\":{\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":0,\"id\":0,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":1000,\"state\":\"active\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"50000\",\"progress\":0,\"id\":1,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714],\"state\":\"locked\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":0,\"id\":2,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":5000,\"state\":\"locked\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"100000\",\"progress\":0,\"id\":3,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714],\"state\":\"locked\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":0,\"id\":4,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":10000,\"state\":\"locked\",\"edges\":[5],\"predecessors\":[3],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"500000\",\"progress\":0,\"id\":5,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714],\"state\":\"locked\",\"edges\":[],\"predecessors\":[4],\"formatString\":\"Win {max} chips\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[5],[]],\"predecessors\":[[],[0],[1],[2],[3],[4]]}},\"awardData\":null,\"requireAwarded\":true,\"awardResult\":[],\"awarded\":false},\"secondsActive\":1,\"secondsRemaining\":17999,\"slotsData\":{\"652\":{\"name\":\"Kodiak Wilds\",\"customData\":{\"buyInID\":652,\"theme2_1\":\"kodiakwilds\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"653\":{\"name\":\"Kodiak Wilds VIP\",\"customData\":{\"buyInID\":653,\"theme2_1\":\"kodiakwilds\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"654\":{\"name\":\"High Roller Gala - Kodiak Wilds VIP\",\"customData\":{\"buyInID\":654,\"theme2_1\":\"kodiakwilds\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"712\":{\"name\":\"Triple Fortune Bowls\",\"customData\":{\"buyInID\":712,\"theme2_1\":\"triplefortunebowl\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"713\":{\"name\":\"Triple Fortune Bowls VIP\",\"customData\":{\"buyInID\":713,\"theme2_1\":\"triplefortunebowl\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"714\":{\"name\":\"High Roller Gala - Triple Fortune Bowls VIP\",\"customData\":{\"buyInID\":714,\"theme2_1\":\"triplefortunebowl\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}}},\"giftsData\":[]}",
-    "_N$instantiateMissionTrigger": true,
+    "_N$missionJSONString": "{\"templateID\":24,\"templateVersion\":4,\"id\":88,\"source\":\"test01\",\"tags\":[\"AMBER\",\"crown.rush\"],\"mission\":{\"steps\":[{\"progress\":0,\"awarded\":false,\"awardResult\":[]},{\"progress\":0,\"awarded\":false,\"awardResult\":[]},{\"progress\":0,\"awarded\":false,\"awardResult\":[]},{\"progress\":0,\"awarded\":false,\"awardResult\":[]},{\"progress\":0,\"awarded\":false,\"awardResult\":[]},{\"progress\":0,\"awarded\":false,\"awardResult\":[]}],\"awardResult\":[],\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":0,\"id\":0,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":1000,\"state\":\"active\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"50000\",\"progress\":0,\"id\":1,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714],\"state\":\"locked\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":0,\"id\":2,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemFreeSpins\":[{\"buyInID\":618,\"betSize\":\"500\",\"amount\":5,\"order\":1,\"promoData\":{\"name\":\"Free Spins\",\"amount\":5,\"launchData\":{\"buyInID\":618,\"theme2_1\":\"kong\"},\"gridButton\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null},\"buyInID\":618,\"slotMachine\":\"Wrath of Kong\",\"betValue\":\"25,000\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":5000,\"state\":\"locked\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"100000\",\"progress\":0,\"id\":3,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714],\"state\":\"locked\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":0,\"id\":4,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":10000,\"state\":\"locked\",\"edges\":[5],\"predecessors\":[3],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"500000\",\"progress\":0,\"id\":5,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714],\"state\":\"locked\",\"edges\":[],\"predecessors\":[4],\"formatString\":\"Win {max} chips\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[5],[]],\"predecessors\":[[],[0],[1],[2],[3],[4]]}},\"requireAwarded\":true,\"awardData\":null,\"manifest\":[],\"awarded\":false},\"secondsActive\":3,\"secondsRemaining\":17997,\"slotsData\":{\"652\":{\"name\":\"Kodiak Wilds\",\"customData\":{\"buyInID\":652,\"theme2_1\":\"kodiakwilds\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"653\":{\"name\":\"Kodiak Wilds VIP\",\"customData\":{\"buyInID\":653,\"theme2_1\":\"kodiakwilds\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"654\":{\"name\":\"High Roller Gala - Kodiak Wilds VIP\",\"customData\":{\"buyInID\":654,\"theme2_1\":\"kodiakwilds\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"712\":{\"name\":\"Triple Fortune Bowls\",\"customData\":{\"buyInID\":712,\"theme2_1\":\"triplefortunebowl\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"713\":{\"name\":\"Triple Fortune Bowls VIP\",\"customData\":{\"buyInID\":713,\"theme2_1\":\"triplefortunebowl\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"714\":{\"name\":\"High Roller Gala - Triple Fortune Bowls VIP\",\"customData\":{\"buyInID\":714,\"theme2_1\":\"triplefortunebowl\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}}},\"giftsData\":[]}",
+    "_N$instantiateMissionTrigger": false,
     "_N$retrieveMissionTrigger": true,
     "_N$updatePreviewDataTrigger": false,
     "_N$componentUpdateCallbackTrigger": true
