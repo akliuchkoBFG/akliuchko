@@ -1,1 +1,1 @@
-{"version":"1.1.0","sourceCommitHash":"9988e5509fe8ca9882c9fa84ed3213762265eeb0","assets":{"package.json":"9c125ccc","main.js":"7437c2e6","scene.js":"97a0dd64"},"hash":"bc19db84","pathInProject":"packages/scene-save-as","bundleName":"extension___scene-save-as"}
+{"version":"1.2.0","sourceCommitHash":"6c090f00cf043fbfb1276a5834033fa4876f66dd","assets":{"package.json":"1c4722f1","scene.js":"97a0dd64","main.js":"3e74973c"},"hash":"4e9fb8f7","pathInProject":"packages/scene-save-as","bundleName":"extension___scene-save-as"}

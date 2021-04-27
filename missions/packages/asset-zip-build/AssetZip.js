@@ -1,6 +1,6 @@
 // Changing this string will cause the hash of all zips created using an AssetManifest
 // This effectively invalidates all previously downloaded Cocos Creator asset zips
-const MasterBundleHash = '2019_04_22';
+const MasterBundleHash = '2021_04_26';
 
 const Globby = require('globby');
 const Fs = require('fire-fs');

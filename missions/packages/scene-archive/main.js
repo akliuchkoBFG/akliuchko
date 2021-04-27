@@ -41,6 +41,11 @@ module.exports = {
 			.catch(event.reply);
 		},
 
+		'test-export' () {
+			Editor.log("Testing scene export on current scene " + Editor.currentSceneUuid);
+			exportScene(Editor.currentSceneUuid, path.join(Editor.projectInfo.path, 'temp', 'scene-archive', 'export.zip'));
+		},
+
 		// import files...
 		'import-archive' (event, url) {
 			Editor.log('Importing from ' + url);

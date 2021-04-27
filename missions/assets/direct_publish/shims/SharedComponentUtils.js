@@ -23,9 +23,9 @@ CC_EDITOR && (function() {
 			Editor.SAG._properties[componentName] = filterCallback;
 		},
 		getComponentType(prop) {
-			// TODO: better handling for custom properties in an array
+			// Force use of array property that checks for custom components
 			if (prop.compType === 'cc-array-prop') {
-				return 'cc-array-prop';
+				return 'custom-array-prop';
 			}
 			const type = prop.attrs.typename || prop.attrs.type || 'UnknownType';
 			const components = Object.entries(Editor.SAG._properties);

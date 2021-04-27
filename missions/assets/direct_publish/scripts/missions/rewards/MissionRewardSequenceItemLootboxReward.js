@@ -40,8 +40,8 @@ cc.Class({
 	setReward(itemData/* , premiumItemModel*/) {
 		this._itemData = itemData;
 		const awardedPackageIndex = itemData.awardResult.result.productPackageIndex;
-		const productPackageID = itemData.lootBox[awardedPackageIndex].productPackageID;
-		this._awardedProductPackage = itemData.promoData.lootBox[productPackageID];
+		const productPackageID = itemData.lootbox[awardedPackageIndex].productPackageID;
+		this._awardedProductPackage = itemData.promoData.lootbox[productPackageID];
 		const sequence = this.getComponent(MissionRewardSequence);
 		sequence.setRewardsFromProductPackage(this._awardedProductPackage);
 	},

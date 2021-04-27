@@ -4,7 +4,7 @@ cc.Class({
 	extends: MissionStepButton,
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Play Button',
+		menu: 'Add Mission Component/Buttons/Play',
 		requireComponent: cc.Button,
 		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/510984384/Mission+Step+Play+Button'
 	},
@@ -25,7 +25,7 @@ cc.Class({
 			readOnly: true,
 			tooltip: "The list of avaliable buyInIDs for launching a slot machine",
 			get() { 
-				const buyInIDs = this.missionStepInterface.getBuyInIDs() || [];
+				const buyInIDs = this.missionStepInterface ? this.missionStepInterface.getBuyInIDs() : [];
 				return buyInIDs.join('\n');
 			}
 		}

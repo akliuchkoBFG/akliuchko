@@ -126,10 +126,13 @@ cc.Class({
 		return null;
 	},
 
+	getAllStepIDs: function() {
+		return _.sortBy(Object.keys(this._stepData), (id) => +id);
+	},
+
 	updateProgressForStep: function(stepID, stepProgress) {
-		if(this._stepData[stepID])
-		{
-			var boundedProgress = Math.min(this._stepData[stepID].data.max,stepProgress);
+		if (this._stepData[stepID]) {
+			var boundedProgress = Math.min(this._stepData[stepID].data.max, stepProgress);
 			this._stepData[stepID].data.progress = boundedProgress;
 		}
 	},
@@ -150,6 +153,10 @@ cc.Class({
 		if (this._stepData[stepID]) {
 			this._stepData[stepID].data.awarded = true;
 		}
+	},
+
+	markMissionAwarded: function(){
+		this._missionData.mission.awarded = true;
 	},
 
 	getStepProgress: function(stepIndex) {
@@ -185,6 +192,14 @@ cc.Class({
 		});
 		return allStepsComplete;
 	},
+
+	
+	isMissionFinished: function() {
+		//On instantiation, the missionData may not be initialized.
+		//Only check mission.awarded if the mission type has a mission level award, otherwise ignore it.
+		return this.isAllStepsComplete() && ((!!this._missionData.mission.awardData && this._missionData.mission.awarded) || (!this._missionData.mission.awardData ));
+	},
+	
 
 	getActiveStepIDs: function() {
 		// TODO: handle mission complete state
@@ -344,5 +359,10 @@ cc.Class({
 		if (this._missionData && this._missionData.slotsData) {
 			return this._missionData.slotsData[buyInID];
 		}
-	}
+	},
+
+	getAwardData: function() {
+		return this._missionData && this._missionData.mission && this._missionData.mission.awardData;
+	},
+
 });

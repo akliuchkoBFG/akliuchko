@@ -1,13 +1,13 @@
 {
   "name": "scene-archive",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Extension for archiving and importing scene files and dependent assets",
   "author": "Self Aware Games",
   "main": "main.js",
   "scene-script": "scene.js",
   "main-menu": {
     "Self Aware/Import Scene Archive...": {
-    	"message": "scene-archive:open"
+      "message": "scene-archive:open"
     }
   },
   "panel": {

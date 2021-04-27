@@ -28,7 +28,7 @@ class AssetWatcher {
 		this.listeners = [];
 		this._ipcListeners = [];
 		this._interceptListeners = [];
-		this._assetsChanged = false;
+		this._assetsChanged = [];
 		this._pendingComiple = false;
 		this._registerForAssetEvents();
 	}
@@ -39,9 +39,11 @@ class AssetWatcher {
 
 	_emit() {
 		this.listeners.forEach(({listener, target}) => {
-			listener.call(target);
+			this._assetsChanged.forEach((asset) => {
+				listener.call(target, asset);
+			});
 		});
-		this._assetsChanged = false;
+		this._assetsChanged = [];
 	}
 
 	_registerForAssetEvents() {
@@ -73,19 +75,19 @@ class AssetWatcher {
 			this._pendingComiple = true;
 		} else {
 			this._pendingComiple = false;
-			if (this._assetsChanged) {
+			if (this._assetsChanged.length > 0) {
 				this._emit();
 			}
 		}
 	}
 
 	_onAssetChange(event, assetOrArray) {
-		this._assetsChanged = true;
 		// Check for scripts, which should defer notification until compiled
 		let hasScript = false;
 		if (!Array.isArray(assetOrArray)) {
 			assetOrArray = [assetOrArray];
 		}
+		this._assetsChanged = this._assetsChanged.concat(assetOrArray);
 		assetOrArray.forEach((asset) => {
 			hasScript |= (asset.type && Editor.QuickCompiler.isScript(asset.type));
 		});

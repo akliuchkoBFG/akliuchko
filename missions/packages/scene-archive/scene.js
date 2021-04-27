@@ -1,18 +1,44 @@
-const Electron = require("electron");
-const Fs = require("fire-fs");
+const fs = require("fire-fs");
 const Export = Editor.require("packages://package-asset/parse/export.js");
 const Import = Editor.require("packages://package-asset/parse/import.js");
 const JSZip = Editor.require("packages://package-asset/lib/jszip.min.js");
-const Path = require('path');
-const Request = require('request');
+const path = require('path');
+const request = require('request');
+const del = require('del');
 
 // _addImageAsset normally async loads up an thumbnail image that doesn't matter here
 // This only changes the normal panel display if it is docked to the same window as the scene
 Import._addImageAsset = function _addImageAsset(e, t) {
-	const r = Path.parse(e.name);
+	const r = path.parse(e.name);
 	Import._imgArr[r.name + r.ext] = "unpack://static/icon/assets/sprite-frame.png";
 	Import._addAsset(e.name, t);
 };
+
+function createZipFromAssets(assetList, destination, callback) {
+	const ASSET_BASE_DIR = Editor.url('db://assets/');
+	const jsZip = new JSZip();
+	const assetTypes = {};
+
+	for (let i = 0; i < assetList.length; ++i) {
+		const asset = assetList[i];
+		if ("directory" !== asset.type) {
+			const relativePath = path.relative(ASSET_BASE_DIR, asset.url);
+			jsZip.file(relativePath, fs.readFileSync(asset.url));
+			jsZip.file(relativePath + ".meta", fs.readFileSync(asset.url + ".meta"));
+			assetTypes[asset.name] = asset.type;
+		}
+	}
+
+	jsZip.file("&asset&type&.json", JSON.stringify(assetTypes));
+	jsZip.generateNodeStream({
+		type : "nodebuffer"
+	})
+	.pipe(fs.createWriteStream(destination))
+	.on("finish", function() {
+		Editor.log(`Finished exporting zip to ${destination}`);
+		callback(null, destination);
+	});
+}
 
 function exportScene(uuid, destination, callback) {
 	Editor.Scene.callSceneScript("package-asset", "query-depend-asset", uuid, (e, t) => {
@@ -32,63 +58,10 @@ function exportScene(uuid, destination, callback) {
 				return resInfo.url && resInfo.url.indexOf('assets/direct_publish') === -1;
 			});
 
-			exportAssets(allAssets, destination, callback);
+			createZipFromAssets(allAssets, destination, callback);
 		});
 	}, 3e4);
 }
-
-function exportAssets(assetList, destination, callback) {
-	const jsZip = new JSZip();
-	const processedDirectories = {};
-	const assetTypes = {};
-	function processDir(asset) {
-		if ("Assets" === asset.parent.name) {
-			const zip = jsZip.folder(asset.name);
-			jsZip.file(asset.name + ".meta", Fs.readFileSync(asset.url + ".meta"));
-			processedDirectories[asset.name] = zip;
-			return zip;
-		} else {
-			let zip = processedDirectories[asset.parent.name];
-			if (!zip) {
-				zip = processDir(asset.parent);
-				zip.file(asset.name + ".meta", Fs.readFileSync(asset.url + ".meta"));
-			}
-			processedDirectories[asset.name] = zip.folder(asset.name);
-			return processedDirectories[asset.name];
-		}
-	}
-	function processAsset(self) {
-		if ("Assets" === self.parent.name) {
-			jsZip.file(self.name, Fs.readFileSync(self.url));
-			jsZip.file(self.name + ".meta", Fs.readFileSync(self.url + ".meta"));
-		} else {
-			let res = processedDirectories[self.parent.name];
-			if (!res) {
-				res = processDir(self.parent);
-			}
-			res.file(self.name, Fs.readFileSync(self.url));
-			res.file(self.name + ".meta", Fs.readFileSync(self.url + ".meta"));
-		}
-	}
-
-	for (let i = 0; i < assetList.length; ++i) {
-		const asset = assetList[i];
-		if ("directory" === asset.type) {
-			processDir(asset);
-		} else {
-			processAsset(asset);
-			assetTypes[asset.name] = asset.type;
-		}
-	}
-	jsZip.file("&asset&type&.json", JSON.stringify(assetTypes));
-	jsZip.generateNodeStream({
-		type : "nodebuffer"
-	}).pipe(Fs.createWriteStream(destination)).on("finish", function() {
-		Editor.log(`Finished exporting zip to ${destination}`);
-		callback(null, destination);
-	});
-}
-
 
 function showImportProgressLog(progress) {
 	// {"curProgress":18,"total":18,"outStrLog":"Import complete..."}
@@ -103,12 +76,12 @@ function downloadAndImportArchive(url) {
 	// download the archive
 
 	return new Promise((resolve, reject) => {
-		const tempDir = Path.join(Editor.projectInfo.path, 'temp', 'scene-archive');
-		Fs.ensureDirSync(tempDir);
-		const zipPath = Path.join(tempDir, "import.zip");
+		const tempDir = path.join(Editor.projectInfo.path, 'temp', 'scene-archive');
+		fs.ensureDirSync(tempDir);
+		const zipPath = path.join(tempDir, "import.zip");
 
-		const fws = Fs.createWriteStream(zipPath);
-		const req = Request.get(url).pipe(fws);
+		const fws = fs.createWriteStream(zipPath);
+		const req = request.get(url).pipe(fws);
 		req.on('error', (err) => {
 			reject(err);
 		});

@@ -15,7 +15,7 @@ cc.Class({
 		},
 	},
 
-	onLoad() {
+	ctor() {
 		this._objFlags |= cc.Object.Flags.EditorOnly;
 		this._ipc = new Editor.IpcListener();
 		this._ipc.on('scene-save-as:scene-copied', this.onCopyScene.bind(this));

@@ -1,7 +1,7 @@
 {
 	"name": "scene-save-as",
-	"version": "1.1.0",
-	"description": "Save the current scene as a new scene",
+	"version": "1.2.0",
+	"description": "Save the current scene as a new scene and adds Duplicate to asset panel context menu",
 	"author": "Self Aware Games",
 	"main": "main.js",
 	"scene-script": "scene.js",

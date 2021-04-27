@@ -1,4 +1,4 @@
-const TAG = "MissionRewardSequence";
+const TAG = "MissionStepRewardSequence";
 const ComponentLog = require('ComponentSALog')(TAG);
 
 const BaseMissionStepComponent = require('BaseMissionStepComponent');

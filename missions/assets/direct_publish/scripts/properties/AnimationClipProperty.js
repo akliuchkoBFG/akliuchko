@@ -96,5 +96,9 @@ const AnimationClipProperty = cc.Class({
 		}
 		this._animation.sample(this._clipName);
 	},
+
+	isValid() {
+		return !!(this._animation && this._clipName);
+	},
 });
 module.exports = AnimationClipProperty;
