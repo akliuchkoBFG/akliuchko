@@ -127,7 +127,7 @@ cc.Class({
 	},
 
 	getAllStepIDs: function() {
-		return _.sortBy(Object.keys(this._stepData), _.identity);
+		return _.sortBy(Object.keys(this._stepData), (id) => +id);
 	},
 
 	updateProgressForStep: function(stepID, stepProgress) {
@@ -153,6 +153,10 @@ cc.Class({
 		if (this._stepData[stepID]) {
 			this._stepData[stepID].data.awarded = true;
 		}
+	},
+
+	markMissionAwarded: function(){
+		this._missionData.mission.awarded = true;
 	},
 
 	getStepProgress: function(stepIndex) {
@@ -188,6 +192,14 @@ cc.Class({
 		});
 		return allStepsComplete;
 	},
+
+	
+	isMissionFinished: function() {
+		//On instantiation, the missionData may not be initialized.
+		//Only check mission.awarded if the mission type has a mission level award, otherwise ignore it.
+		return this.isAllStepsComplete() && ((!!this._missionData.mission.awardData && this._missionData.mission.awarded) || (!this._missionData.mission.awardData ));
+	},
+	
 
 	getActiveStepIDs: function() {
 		// TODO: handle mission complete state
@@ -240,6 +252,12 @@ cc.Class({
 
 	getTrayIcon() {
 		let iconName = '';
+		// Check in the mission data manifest for the icon image
+		// The manifest may be empty and this._missionData.mission.manifest.tray_icon can be an empty string or undefined
+		if(!!this._missionData.mission.manifest.tray_icon){
+			iconName = this._missionData.mission.manifest.tray_icon;
+			return Promise.resolve(iconName);
+		}
 		const tags = this.getTags();
 		if (tags.length === 0) {
 			return Promise.resolve(iconName);
@@ -347,5 +365,10 @@ cc.Class({
 		if (this._missionData && this._missionData.slotsData) {
 			return this._missionData.slotsData[buyInID];
 		}
-	}
+	},
+
+	getAwardData: function() {
+		return this._missionData && this._missionData.mission && this._missionData.mission.awardData;
+	},
+
 });

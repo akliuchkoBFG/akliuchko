@@ -78,19 +78,21 @@ cc.Class({
 
 	reloadStepData: function() {
 		if (this.missionInterface) {
-			if (this.useActiveStepIDOnly) {
-				const activeStepIDs = this.missionInterface.getActiveStepIDs();
-				if (activeStepIDs.length === 1) {
-					this.stepID = activeStepIDs[0];
-				} else if (activeStepIDs.length === 0) {
-					this.stepID = this.missionInterface.getFinalStepID();
-				} else {
-					this.log.e("Found too many active steps.");
+			if (this.missionInterface.isInitialized()) {
+				if (this.useActiveStepIDOnly) {
+					const activeStepIDs = this.missionInterface.getActiveStepIDs();
+					if (activeStepIDs.length === 1) {
+						this.stepID = activeStepIDs[0];
+					} else if (activeStepIDs.length === 0) {
+						this.stepID = this.missionInterface.getFinalStepID();
+					} else {
+						this.log.e("Found too many active steps.");
+					}
 				}
+				this._updateStepData();
+				this._isInitialized = true;
+				this.emit('updateMissionStepDataEvent', null);
 			}
-			this._updateStepData();
-			this._isInitialized = true;
-			this.emit('updateMissionStepDataEvent', null);
 		} else {
 			this.log.e("Mission Interface Not Found");
 		}
@@ -157,7 +159,7 @@ cc.Class({
 	},
 
 	getBuyInIDs: function() {
-		return this._stepData && this._stepData.data && this._stepData.data.buyInIDs;
+		return this._stepData && this._stepData.data && this._stepData.data.buyInIDs || [];
 	},
 
 	getGiftIDs: function() {
@@ -179,4 +181,45 @@ cc.Class({
 	getState: function() {
 		return this._stepData && this._stepData.data && this._stepData.data.state;
 	},
+
+	// Get the data payload the is used for populating template strings
+	getTemplateStringData: function() {
+		const slotName = this._getSlotName() || '';
+		const giftName = this._getGiftName() || '';
+		const currency = (!CC_EDITOR && Game.isSlotzilla()) ? 'COINS' : 'CHIPS';
+		let progress = this.getProgressAmount();
+		progress = SAStringUtil.numberAsShortString(progress, '', true);
+		let max = this.getProgressMax();
+		max = SAStringUtil.numberAsShortString(max, '', true);
+		let minBet = this.getMinBet() || 0;
+		minBet = SAStringUtil.numberAsShortString(minBet, '', true);
+
+		const data = {
+			progress: progress,
+			max: max,
+			slotname: slotName,
+			giftname: giftName,
+			minbet: minBet,
+			currencyUpper: currency,
+			currencyLower: currency.toLowerCase(),
+			templateString: this.getFormatString(),
+		};
+
+		return data;
+	},
+
+	_getSlotName: function() {
+		const buyInIDs = this.getBuyInIDs();
+		const slotData = buyInIDs && this.getSlotData(buyInIDs[0]);
+		return slotData && slotData.name;
+	},
+
+	_getGiftName: function() {
+		const giftData = this.missionInterface.getGiftsData();
+		const giftIDs = this.getGiftIDs();
+		if (giftData && giftIDs) {
+			const id = giftIDs[0];
+			return giftData[id] && giftData[id].name.toUpperCase();
+		}
+	}
 });

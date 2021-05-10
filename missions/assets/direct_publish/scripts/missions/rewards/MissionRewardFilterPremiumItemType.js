@@ -1,3 +1,6 @@
+const TAG = "MissionRewardFilterPremiumItemType";
+const ComponentLog = require('ComponentSALog')(TAG);
+
 const MissionRewardFilter = require('MissionRewardFilter');
 const MissionRewardFilterIsPremiumItem = require('MissionRewardFilterIsPremiumItem');
 
@@ -10,10 +13,13 @@ const PremiumItemTypes = cc.Enum({
 	entrytext: 6,
 	gift: 7,
 	chips: 8,
+	booster: 9,
 });
 
 cc.Class({
 	extends: MissionRewardFilter,
+
+	mixins: [ComponentLog],
 
 	editor: CC_EDITOR && {
 		requireComponent: MissionRewardFilterIsPremiumItem,
@@ -33,5 +39,13 @@ cc.Class({
 	supportsItem(itemData, premiumItemModel) {
 		const typeName = PremiumItemTypes[this.type];
 		return typeName === premiumItemModel.get('type');
+	},
+
+	setItemType(type) {
+		if (PremiumItemTypes[type] == null) {
+			this.log.e("Unknown item type: " + type);
+			return;
+		}
+		this.type = PremiumItemTypes[type];
 	},
 });

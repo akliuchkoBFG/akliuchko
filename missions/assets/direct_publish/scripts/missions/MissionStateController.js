@@ -1,5 +1,6 @@
 const BaseMissionComponent = require('BaseMissionComponent');
 // const MissionStepController = require('MissionStepController');
+const MissionCompletionRewardSequence = require('MissionCompletionRewardSequence');
 
 
 const TAG = "missionStateController";
@@ -53,13 +54,14 @@ cc.Class({
 			tooltip: "cc.Anim clip names to animate/show/hide assets during for each mission step"
 			// TODO: add some safety/logs around notifying if steps don't line up to data
 		},
-		claimMissionAwardState: {
-			default: "",
-			tooltip: "cc.Anim clip name to animate/show/hide assets when all steps are complete and the mission reward can be claimed"
-		},
 		completedMissionState: {
 			default: "",
-			tooltip: "cc.Anim clip name to animate/show/hide assets when all steps are complete and the mission award has been claimed"
+			tooltip: "cc.Anim clip name - this clip shows the state when: all steps are complete"
+		},
+		claimMissionAwardSequence: {
+			default: null,
+			type: MissionCompletionRewardSequence,
+			tooltip: "Claim sequence controller for supporting multiple rewards and rich claim choreography",
 		},
 		finalMissionState: {
 			default: "",
@@ -70,20 +72,7 @@ cc.Class({
 	onLoad: function() {
 		this._super();
 		this.missionInterface.node.on('nextStep', this.onNextStep, this);
-		this.missionInterface.on('claimedMissionAward', this.onClaim, this);
-		this.getComponent(cc.Animation).on('finished', this.onAnimFinished, this);
-	},
-
-	onAnimFinished: function(event) {
-		if (!event.detail || !event.detail.name) {
-			return;
-		}
-
-		switch (event.detail.name) {
-			case this.claimMissionAwardState:
-				this.onNextStep();
-				break;
-		}
+		this.missionInterface.on('claimedMissionAward', this.onClaimMissionAward, this);
 	},
 
 	onNextStep: function() {
@@ -94,8 +83,16 @@ cc.Class({
 		this.playActiveSteps();
 	},
 
-	onClaim: function() {
-		this._play(this.completedMissionState);
+	onClaimMissionAward: function() {
+		// mission award has been awarded
+		if (this.claimMissionAwardSequence) {
+			this.claimMissionAwardSequence.playSequence()
+			.then(() => {
+				this._play(this.finalMissionState);
+			});
+		} else {
+			this._play(this.finalMissionState);
+		}
 	},
 
 	playActiveSteps: function() {
@@ -107,12 +104,13 @@ cc.Class({
 				this.log.w('stepID:' + stepID + ' not defined... even if unused, the the step should be defined when using this controller');
 			}
 		});
+
 		if (stepIDs.length === 0) {
 			if (this.missionInterface.isAllStepsComplete()) {
 				if (this.missionInterface.isMissionAwardClaimed()) {
 					this._play(this.finalMissionState);
 				} else {
-					this._play(this.claimMissionAwardState);
+					this._play(this.completedMissionState);
 				}
 			}
 		}

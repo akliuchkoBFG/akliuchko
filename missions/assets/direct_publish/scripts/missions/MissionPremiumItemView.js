@@ -13,7 +13,7 @@ const PremiumItemType = cc.Enum({
     'generic' : 0,
     'chips' : 1,
     'token' : 2,
-    'prestige' : 3
+    'prestige' : 3,
 });
 
 cc.Class({
