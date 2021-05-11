@@ -1,14 +1,14 @@
 {
   "ver": "1.0.0",
-  "uuid": "3816b4b5-288e-4e41-9755-5e2d6a4f750b",
+  "uuid": "1d976d5c-4b8b-401e-8a3f-f17a8c660711",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
     "CrownRush_pot2": {
       "ver": "1.0.3",
-      "uuid": "59bb0b7c-ecb9-49bb-be60-0ae366dc863a",
-      "rawTextureUuid": "3816b4b5-288e-4e41-9755-5e2d6a4f750b",
+      "uuid": "7bb79cb9-08dc-4bb7-a566-1fe158529f10",
+      "rawTextureUuid": "1d976d5c-4b8b-401e-8a3f-f17a8c660711",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
