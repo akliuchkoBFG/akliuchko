@@ -1,55 +1,55 @@
 
 CrownRush_pot.png
-size: 630,628
+size: 330,330
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
 crown_rush_coin_01
   rotate: false
-  xy: 335, 228
-  size: 79, 65
-  orig: 79, 67
-  offset: 0, 1
+  xy: 115, 17
+  size: 40, 34
+  orig: 40, 34
+  offset: 0, 0
   index: -1
 crown_rush_coin_02
   rotate: false
-  xy: 416, 237
-  size: 77, 56
-  orig: 77, 56
+  xy: 2, 2
+  size: 38, 28
+  orig: 38, 28
   offset: 0, 0
   index: -1
 crown_rush_coin_03
-  rotate: false
-  xy: 333, 165
-  size: 67, 61
-  orig: 67, 61
+  rotate: true
+  xy: 157, 18
+  size: 33, 31
+  orig: 33, 31
   offset: 0, 0
   index: -1
 crown_rush_coin_sparkles
   rotate: true
-  xy: 226, 81
-  size: 161, 105
-  orig: 161, 107
-  offset: 0, 1
+  xy: 115, 53
+  size: 81, 53
+  orig: 81, 53
+  offset: 0, 0
   index: -1
 crown_rush_pot_coins
   rotate: false
-  xy: 2, 38
-  size: 222, 204
-  orig: 222, 204
+  xy: 2, 32
+  size: 111, 102
+  orig: 111, 102
   offset: 0, 0
   index: -1
 crown_rush_rainbow
   rotate: false
-  xy: 2, 244
-  size: 331, 382
-  orig: 331, 384
-  offset: 0, 1
+  xy: 2, 136
+  size: 165, 192
+  orig: 165, 192
+  offset: 0, 0
   index: -1
 crown_rush_rainbow_sparkles
   rotate: true
-  xy: 335, 295
-  size: 331, 293
-  orig: 332, 293
+  xy: 169, 162
+  size: 166, 147
+  orig: 166, 147
   offset: 0, 0
   index: -1

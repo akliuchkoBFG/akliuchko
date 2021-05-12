@@ -63,7 +63,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 219
+        "__id__": 196
       },
       {
         "__id__": 8
@@ -122,16 +122,16 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 216
+        "__id__": 193
       },
       {
         "__id__": 7
       },
       {
-        "__id__": 217
+        "__id__": 194
       },
       {
-        "__id__": 218
+        "__id__": 195
       }
     ],
     "_prefab": null,
@@ -345,13 +345,13 @@
         "__id__": 11
       },
       {
-        "__id__": 129
+        "__id__": 122
       },
       {
-        "__id__": 141
+        "__id__": 134
       },
       {
-        "__id__": 169
+        "__id__": 162
       }
     ],
     "_tag": -1,
@@ -361,10 +361,10 @@
         "__id__": 34
       },
       {
-        "__id__": 137
+        "__id__": 130
       },
       {
-        "__id__": 215
+        "__id__": 192
       }
     ],
     "_prefab": null,
@@ -428,17 +428,17 @@
         "__id__": 108
       },
       {
-        "__id__": 121
+        "__id__": 114
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 127
+        "__id__": 120
       },
       {
-        "__id__": 128
+        "__id__": 121
       }
     ],
     "_prefab": null,
@@ -2439,7 +2439,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "2684969e-ba5f-4db5-bd13-a63158e8134b"
+      "__uuid__": "352c71fb-31ec-4c2e-b7e2-2b2bacee4ce9"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -3012,7 +3012,7 @@
       "y": 0
     },
     "_fillStart": 0,
-    "_fillRange": 0.6,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
@@ -3160,15 +3160,6 @@
     "_children": [
       {
         "__id__": 109
-      },
-      {
-        "__id__": 112
-      },
-      {
-        "__id__": 114
-      },
-      {
-        "__id__": 119
       }
     ],
     "_tag": -1,
@@ -3213,171 +3204,6 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "bg",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 108
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": false,
-    "_components": [
-      {
-        "__id__": 110
-      },
-      {
-        "__id__": 111
-      }
-    ],
-    "_prefab": null,
-    "_id": "cbj/AChN9C+4apR1LS96ed",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 826,
-      "height": 450
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 0.5,
-    "_scaleY": 0.5,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 14,
-      "y": 110.9
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "c9bfcy5lthF9YjdQZA2x0m3",
-    "_name": "",
-    "_objFlags": 16,
-    "node": {
-      "__id__": 109
-    },
-    "_enabled": true,
-    "isReskinned": true
-  },
-  {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 109
-    },
-    "_enabled": true,
-    "_spriteFrame": null,
-    "_type": 0,
-    "_sizeMode": 0,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_atlas": null
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "clock_gold",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 108
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": false,
-    "_components": [
-      {
-        "__id__": 113
-      }
-    ],
-    "_prefab": null,
-    "_id": "c810j+afdLu54FbNROa3iy",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 416,
-      "height": 416
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 1,
-      "y": 1.5
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 112
-    },
-    "_enabled": true,
-    "_spriteFrame": null,
-    "_type": 3,
-    "_sizeMode": 1,
-    "_fillType": 2,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_fillStart": 0.25,
-    "_fillRange": -1,
-    "_isTrimmedMode": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_atlas": null
-  },
-  {
-    "__type__": "cc.Node",
     "_name": "mask",
     "_objFlags": 0,
     "_parent": {
@@ -3385,14 +3211,14 @@
     },
     "_children": [
       {
-        "__id__": 115
+        "__id__": 110
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 118
+        "__id__": 113
       }
     ],
     "_prefab": null,
@@ -3437,17 +3263,17 @@
     "_name": "gold_coins",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 114
+      "__id__": 109
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 116
+        "__id__": 111
       },
       {
-        "__id__": 117
+        "__id__": 112
       }
     ],
     "_prefab": null,
@@ -3492,21 +3318,21 @@
     "_name": "",
     "_objFlags": 16,
     "node": {
-      "__id__": 115
+      "__id__": 110
     },
     "_enabled": true,
-    "isReskinned": false
+    "isReskinned": true
   },
   {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 115
+      "__id__": 110
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "21c68d71-0200-48da-8e90-72182b626abd"
+      "__uuid__": "30178e98-be2d-4ee1-b404-12dbeca05508"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -3528,94 +3354,16 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 114
+      "__id__": 109
     },
     "_enabled": true,
     "_type": 2,
     "_segements": 64,
     "_N$spriteFrame": {
-      "__uuid__": "acf97472-6327-4344-bbfb-a0bc66320ebb"
+      "__uuid__": "cff3d56e-3d9a-4113-a6da-c5548381a665"
     },
     "_N$alphaThreshold": 0,
     "_N$inverted": false
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "item_rotation",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 108
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": false,
-    "_components": [
-      {
-        "__id__": 120
-      }
-    ],
-    "_prefab": null,
-    "_id": "a5Rhku+vdALLeBT2Uji+nH",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.09
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 42,
-      "height": 168
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 1,
-      "y": 1
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 119
-    },
-    "_enabled": true,
-    "_spriteFrame": {
-      "__uuid__": "63fbcf32-a51d-43d2-820c-689e391fc805"
-    },
-    "_type": 0,
-    "_sizeMode": 1,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_atlas": null
   },
   {
     "__type__": "cc.Node",
@@ -3626,17 +3374,17 @@
     },
     "_children": [
       {
-        "__id__": 122
+        "__id__": 115
       },
       {
-        "__id__": 124
+        "__id__": 117
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 126
+        "__id__": 119
       }
     ],
     "_prefab": null,
@@ -3681,14 +3429,14 @@
     "_name": "highRoller",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 121
+      "__id__": 114
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 123
+        "__id__": 116
       }
     ],
     "_prefab": null,
@@ -3733,7 +3481,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 122
+      "__id__": 115
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -3759,14 +3507,14 @@
     "_name": "vip",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 121
+      "__id__": 114
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 125
+        "__id__": 118
       }
     ],
     "_prefab": null,
@@ -3811,7 +3559,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 124
+      "__id__": 117
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -3837,17 +3585,17 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 121
+      "__id__": 114
     },
     "_enabled": true,
     "missionInterface": {
       "__id__": 7
     },
     "badge_VIP": {
-      "__id__": 124
+      "__id__": 117
     },
     "badge_HR": {
-      "__id__": 122
+      "__id__": 115
     }
   },
   {
@@ -3858,7 +3606,7 @@
       "__id__": 11
     },
     "_enabled": true,
-    "isReskinned": false
+    "isReskinned": true
   },
   {
     "__type__": "cc.Sprite",
@@ -3869,7 +3617,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "77472fd4-d4bb-4f4a-b2fc-4c538e4a06a5"
+      "__uuid__": "a6e85e2d-29a9-492e-89ee-a2f2d35234d9"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -3895,20 +3643,20 @@
     },
     "_children": [
       {
-        "__id__": 130
+        "__id__": 123
       },
       {
-        "__id__": 132
+        "__id__": 125
       }
     ],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 135
+        "__id__": 128
       },
       {
-        "__id__": 140
+        "__id__": 133
       }
     ],
     "_prefab": null,
@@ -3953,14 +3701,14 @@
     "_name": "reward_bg",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 129
+      "__id__": 122
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 131
+        "__id__": 124
       }
     ],
     "_prefab": null,
@@ -4005,7 +3753,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 130
+      "__id__": 123
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -4031,11 +3779,11 @@
     "_name": "top_label",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 129
+      "__id__": 122
     },
     "_children": [
       {
-        "__id__": 133
+        "__id__": 126
       }
     ],
     "_tag": -1,
@@ -4083,14 +3831,14 @@
     "_name": "rewards_banner",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 132
+      "__id__": 125
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 134
+        "__id__": 127
       }
     ],
     "_prefab": null,
@@ -4135,7 +3883,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 133
+      "__id__": 126
     },
     "_enabled": true,
     "_paused": false,
@@ -4155,7 +3903,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 129
+      "__id__": 122
     },
     "_enabled": true,
     "rewardPrefabs": [
@@ -4164,23 +3912,23 @@
       }
     ],
     "intro": {
-      "__id__": 136
+      "__id__": 129
     },
     "transition": {
-      "__id__": 138
+      "__id__": 131
     },
     "outro": {
-      "__id__": 139
+      "__id__": 132
     },
     "_N$animation": {
-      "__id__": 137
+      "__id__": 130
     }
   },
   {
     "__type__": "AnimationClipProperty",
     "_clipName": "step_claim_intro",
     "_animation": {
-      "__id__": 137
+      "__id__": 130
     },
     "_clip": {
       "__uuid__": "e9179312-fed5-418c-80b7-847212069694"
@@ -4221,7 +3969,7 @@
     "__type__": "AnimationClipProperty",
     "_clipName": "",
     "_animation": {
-      "__id__": 137
+      "__id__": 130
     },
     "_clip": {
       "__uuid__": "755b181c-4d98-406c-8666-049895dc251e"
@@ -4231,7 +3979,7 @@
     "__type__": "AnimationClipProperty",
     "_clipName": "step_claim_outro",
     "_animation": {
-      "__id__": 137
+      "__id__": 130
     },
     "_clip": {
       "__uuid__": "18fc8f45-ea20-4930-9715-f012018a4579"
@@ -4242,7 +3990,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 129
+      "__id__": 122
     },
     "_enabled": true,
     "missionStepInterface": {
@@ -4258,16 +4006,16 @@
     },
     "_children": [
       {
-        "__id__": 142
+        "__id__": 135
       },
       {
-        "__id__": 148
+        "__id__": 141
       },
       {
-        "__id__": 154
+        "__id__": 147
       },
       {
-        "__id__": 163
+        "__id__": 156
       }
     ],
     "_tag": -1,
@@ -4315,23 +4063,23 @@
     "_name": "button_claim",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 141
+      "__id__": 134
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 143
+        "__id__": 136
       },
       {
-        "__id__": 144
+        "__id__": 137
       },
       {
-        "__id__": 145
+        "__id__": 138
       },
       {
-        "__id__": 147
+        "__id__": 140
       }
     ],
     "_prefab": null,
@@ -4376,7 +4124,7 @@
     "_name": "",
     "_objFlags": 16,
     "node": {
-      "__id__": 142
+      "__id__": 135
     },
     "_enabled": true,
     "isReskinned": true
@@ -4386,7 +4134,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 142
+      "__id__": 135
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -4412,7 +4160,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 142
+      "__id__": 135
     },
     "_enabled": true,
     "transition": 2,
@@ -4438,7 +4186,7 @@
     "hoverSprite": null,
     "clickEvents": [
       {
-        "__id__": 146
+        "__id__": 139
       }
     ],
     "_N$interactable": true,
@@ -4462,13 +4210,13 @@
     },
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 142
+      "__id__": 135
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 142
+      "__id__": 135
     },
     "component": "MissionStepClaimButton",
     "handler": "performMissionStepAction",
@@ -4479,7 +4227,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 142
+      "__id__": 135
     },
     "_enabled": true,
     "missionStepInterface": {
@@ -4491,23 +4239,23 @@
     "_name": "button_complete",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 141
+      "__id__": 134
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 149
+        "__id__": 142
       },
       {
-        "__id__": 150
+        "__id__": 143
       },
       {
-        "__id__": 151
+        "__id__": 144
       },
       {
-        "__id__": 153
+        "__id__": 146
       }
     ],
     "_prefab": null,
@@ -4552,7 +4300,7 @@
     "_name": "",
     "_objFlags": 16,
     "node": {
-      "__id__": 148
+      "__id__": 141
     },
     "_enabled": true,
     "isReskinned": true
@@ -4562,7 +4310,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 148
+      "__id__": 141
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -4588,7 +4336,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 148
+      "__id__": 141
     },
     "_enabled": true,
     "transition": 2,
@@ -4614,7 +4362,7 @@
     "hoverSprite": null,
     "clickEvents": [
       {
-        "__id__": 152
+        "__id__": 145
       }
     ],
     "_N$interactable": true,
@@ -4638,13 +4386,13 @@
     },
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 148
+      "__id__": 141
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 148
+      "__id__": 141
     },
     "component": "DispatchActionClose",
     "handler": "performAction",
@@ -4655,7 +4403,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 148
+      "__id__": 141
     },
     "_enabled": true,
     "_actionName": "close",
@@ -4666,11 +4414,11 @@
     "_name": "play",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 141
+      "__id__": 134
     },
     "_children": [
       {
-        "__id__": 155
+        "__id__": 148
       }
     ],
     "_tag": -1,
@@ -4718,26 +4466,26 @@
     "_name": "button_play",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 154
+      "__id__": 147
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 156
+        "__id__": 149
       },
       {
-        "__id__": 157
+        "__id__": 150
       },
       {
-        "__id__": 158
+        "__id__": 151
       },
       {
-        "__id__": 161
+        "__id__": 154
       },
       {
-        "__id__": 162
+        "__id__": 155
       }
     ],
     "_prefab": null,
@@ -4782,7 +4530,7 @@
     "_name": "",
     "_objFlags": 16,
     "node": {
-      "__id__": 155
+      "__id__": 148
     },
     "_enabled": true,
     "isReskinned": true
@@ -4792,7 +4540,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 155
+      "__id__": 148
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -4818,7 +4566,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 155
+      "__id__": 148
     },
     "_enabled": false,
     "transition": 2,
@@ -4844,10 +4592,10 @@
     "hoverSprite": null,
     "clickEvents": [
       {
-        "__id__": 159
+        "__id__": 152
       },
       {
-        "__id__": 160
+        "__id__": 153
       }
     ],
     "_N$interactable": true,
@@ -4871,13 +4619,13 @@
     },
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 155
+      "__id__": 148
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 155
+      "__id__": 148
     },
     "component": "MissionStepPlayButton",
     "handler": "performMissionStepAction",
@@ -4886,7 +4634,7 @@
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 155
+      "__id__": 148
     },
     "component": "DispatchActionClose",
     "handler": "performAction",
@@ -4897,7 +4645,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 155
+      "__id__": 148
     },
     "_enabled": true,
     "_actionName": "close",
@@ -4908,7 +4656,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 155
+      "__id__": 148
     },
     "_enabled": true,
     "missionStepInterface": {
@@ -4922,23 +4670,23 @@
     "_name": "button_close",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 141
+      "__id__": 134
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 164
+        "__id__": 157
       },
       {
-        "__id__": 165
+        "__id__": 158
       },
       {
-        "__id__": 166
+        "__id__": 159
       },
       {
-        "__id__": 168
+        "__id__": 161
       }
     ],
     "_prefab": null,
@@ -4983,7 +4731,7 @@
     "_name": "",
     "_objFlags": 16,
     "node": {
-      "__id__": 163
+      "__id__": 156
     },
     "_enabled": true,
     "isReskinned": true
@@ -4993,7 +4741,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 163
+      "__id__": 156
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -5019,7 +4767,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 163
+      "__id__": 156
     },
     "_enabled": true,
     "transition": 2,
@@ -5045,7 +4793,7 @@
     "hoverSprite": null,
     "clickEvents": [
       {
-        "__id__": 167
+        "__id__": 160
       }
     ],
     "_N$interactable": true,
@@ -5069,13 +4817,13 @@
     },
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 163
+      "__id__": 156
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 163
+      "__id__": 156
     },
     "component": "DispatchActionClose",
     "handler": "performAction",
@@ -5086,7 +4834,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 163
+      "__id__": 156
     },
     "_enabled": true,
     "_actionName": "close",
@@ -5101,10 +4849,7 @@
     },
     "_children": [
       {
-        "__id__": 170
-      },
-      {
-        "__id__": 199
+        "__id__": 163
       }
     ],
     "_tag": -1,
@@ -5152,29 +4897,29 @@
     "_name": "spine_animations",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 169
+      "__id__": 162
     },
     "_children": [
       {
-        "__id__": 171
+        "__id__": 164
       },
       {
-        "__id__": 175
+        "__id__": 168
       },
       {
-        "__id__": 179
+        "__id__": 172
       },
       {
-        "__id__": 183
+        "__id__": 176
       },
       {
-        "__id__": 187
+        "__id__": 180
       },
       {
-        "__id__": 191
+        "__id__": 184
       },
       {
-        "__id__": 195
+        "__id__": 188
       }
     ],
     "_tag": -1,
@@ -5222,20 +4967,20 @@
     "_name": "step1_complete_spine",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 170
+      "__id__": 163
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 172
+        "__id__": 165
       },
       {
-        "__id__": 173
+        "__id__": 166
       },
       {
-        "__id__": 174
+        "__id__": 167
       }
     ],
     "_prefab": null,
@@ -5280,7 +5025,7 @@
     "_name": "",
     "_objFlags": 16,
     "node": {
-      "__id__": 171
+      "__id__": 164
     },
     "_enabled": true,
     "isReskinned": true
@@ -5290,7 +5035,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 171
+      "__id__": 164
     },
     "_enabled": true,
     "_paused": false,
@@ -5299,7 +5044,7 @@
     "loop": false,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "c6f192f8-862c-484e-8f26-b06cdbb4a4ce"
+      "__uuid__": "997bcda6-f2a6-4ae2-b037-797a17b9ad92"
     },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
@@ -5310,7 +5055,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 171
+      "__id__": 164
     },
     "_enabled": true,
     "loadingView": null,
@@ -5322,20 +5067,20 @@
     "_name": "step2_complete_spine",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 170
+      "__id__": 163
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 176
+        "__id__": 169
       },
       {
-        "__id__": 177
+        "__id__": 170
       },
       {
-        "__id__": 178
+        "__id__": 171
       }
     ],
     "_prefab": null,
@@ -5380,7 +5125,7 @@
     "_name": "",
     "_objFlags": 16,
     "node": {
-      "__id__": 175
+      "__id__": 168
     },
     "_enabled": true,
     "isReskinned": true
@@ -5390,7 +5135,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 175
+      "__id__": 168
     },
     "_enabled": true,
     "_paused": false,
@@ -5399,7 +5144,7 @@
     "loop": false,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "c6f192f8-862c-484e-8f26-b06cdbb4a4ce"
+      "__uuid__": "997bcda6-f2a6-4ae2-b037-797a17b9ad92"
     },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
@@ -5410,7 +5155,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 175
+      "__id__": 168
     },
     "_enabled": true,
     "loadingView": null,
@@ -5422,20 +5167,20 @@
     "_name": "step3_complete_spine",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 170
+      "__id__": 163
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 180
+        "__id__": 173
       },
       {
-        "__id__": 181
+        "__id__": 174
       },
       {
-        "__id__": 182
+        "__id__": 175
       }
     ],
     "_prefab": null,
@@ -5480,7 +5225,7 @@
     "_name": "",
     "_objFlags": 16,
     "node": {
-      "__id__": 179
+      "__id__": 172
     },
     "_enabled": true,
     "isReskinned": true
@@ -5490,7 +5235,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 179
+      "__id__": 172
     },
     "_enabled": true,
     "_paused": false,
@@ -5499,7 +5244,7 @@
     "loop": false,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "c6f192f8-862c-484e-8f26-b06cdbb4a4ce"
+      "__uuid__": "997bcda6-f2a6-4ae2-b037-797a17b9ad92"
     },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
@@ -5510,7 +5255,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 179
+      "__id__": 172
     },
     "_enabled": true,
     "loadingView": null,
@@ -5522,20 +5267,20 @@
     "_name": "step4_complete_spine",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 170
+      "__id__": 163
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 184
+        "__id__": 177
       },
       {
-        "__id__": 185
+        "__id__": 178
       },
       {
-        "__id__": 186
+        "__id__": 179
       }
     ],
     "_prefab": null,
@@ -5580,7 +5325,7 @@
     "_name": "",
     "_objFlags": 16,
     "node": {
-      "__id__": 183
+      "__id__": 176
     },
     "_enabled": true,
     "isReskinned": true
@@ -5590,7 +5335,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 183
+      "__id__": 176
     },
     "_enabled": true,
     "_paused": false,
@@ -5599,7 +5344,7 @@
     "loop": false,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "c6f192f8-862c-484e-8f26-b06cdbb4a4ce"
+      "__uuid__": "997bcda6-f2a6-4ae2-b037-797a17b9ad92"
     },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
@@ -5610,7 +5355,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 183
+      "__id__": 176
     },
     "_enabled": true,
     "loadingView": null,
@@ -5622,20 +5367,20 @@
     "_name": "step5_complete_spine",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 170
+      "__id__": 163
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 188
+        "__id__": 181
       },
       {
-        "__id__": 189
+        "__id__": 182
       },
       {
-        "__id__": 190
+        "__id__": 183
       }
     ],
     "_prefab": null,
@@ -5680,7 +5425,7 @@
     "_name": "",
     "_objFlags": 16,
     "node": {
-      "__id__": 187
+      "__id__": 180
     },
     "_enabled": true,
     "isReskinned": true
@@ -5690,7 +5435,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 187
+      "__id__": 180
     },
     "_enabled": true,
     "_paused": false,
@@ -5699,7 +5444,7 @@
     "loop": false,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "c6f192f8-862c-484e-8f26-b06cdbb4a4ce"
+      "__uuid__": "997bcda6-f2a6-4ae2-b037-797a17b9ad92"
     },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
@@ -5710,7 +5455,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 187
+      "__id__": 180
     },
     "_enabled": true,
     "loadingView": null,
@@ -5722,20 +5467,20 @@
     "_name": "step6_complete_spine",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 170
+      "__id__": 163
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 192
+        "__id__": 185
       },
       {
-        "__id__": 193
+        "__id__": 186
       },
       {
-        "__id__": 194
+        "__id__": 187
       }
     ],
     "_prefab": null,
@@ -5780,7 +5525,7 @@
     "_name": "",
     "_objFlags": 16,
     "node": {
-      "__id__": 191
+      "__id__": 184
     },
     "_enabled": true,
     "isReskinned": true
@@ -5790,7 +5535,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 191
+      "__id__": 184
     },
     "_enabled": true,
     "_paused": false,
@@ -5799,7 +5544,7 @@
     "loop": false,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "c6f192f8-862c-484e-8f26-b06cdbb4a4ce"
+      "__uuid__": "997bcda6-f2a6-4ae2-b037-797a17b9ad92"
     },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
@@ -5810,7 +5555,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 191
+      "__id__": 184
     },
     "_enabled": true,
     "loadingView": null,
@@ -5822,20 +5567,20 @@
     "_name": "step7_complete_spine",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 170
+      "__id__": 163
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 196
+        "__id__": 189
       },
       {
-        "__id__": 197
+        "__id__": 190
       },
       {
-        "__id__": 198
+        "__id__": 191
       }
     ],
     "_prefab": null,
@@ -5880,7 +5625,7 @@
     "_name": "",
     "_objFlags": 16,
     "node": {
-      "__id__": 195
+      "__id__": 188
     },
     "_enabled": true,
     "isReskinned": true
@@ -5890,7 +5635,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 195
+      "__id__": 188
     },
     "_enabled": true,
     "_paused": false,
@@ -5899,7 +5644,7 @@
     "loop": false,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "c6f192f8-862c-484e-8f26-b06cdbb4a4ce"
+      "__uuid__": "997bcda6-f2a6-4ae2-b037-797a17b9ad92"
     },
     "_N$timeScale": 0.5,
     "_N$debugSlots": false,
@@ -5910,531 +5655,12 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 195
+      "__id__": 188
     },
     "_enabled": true,
     "loadingView": null,
     "skeleton": "",
     "atlas": ""
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "completed_messages",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 169
-    },
-    "_children": [
-      {
-        "__id__": 200
-      },
-      {
-        "__id__": 203
-      },
-      {
-        "__id__": 206
-      },
-      {
-        "__id__": 209
-      },
-      {
-        "__id__": 212
-      }
-    ],
-    "_tag": -1,
-    "_active": true,
-    "_components": [],
-    "_prefab": null,
-    "_id": "b08s9NMppDoawHBJkire5i",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 0,
-      "height": 0
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "completed_step1",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 199
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": false,
-    "_components": [
-      {
-        "__id__": 201
-      },
-      {
-        "__id__": 202
-      }
-    ],
-    "_prefab": null,
-    "_id": "fbjtEGxedDr4yppfW+cS6i",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 490,
-      "height": 160
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 273
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "c9bfcy5lthF9YjdQZA2x0m3",
-    "_name": "",
-    "_objFlags": 16,
-    "node": {
-      "__id__": 200
-    },
-    "_enabled": true,
-    "isReskinned": true
-  },
-  {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 200
-    },
-    "_enabled": true,
-    "_spriteFrame": {
-      "__uuid__": "ac5bff7d-da2d-4fac-893c-33cd180e4f05"
-    },
-    "_type": 0,
-    "_sizeMode": 1,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_atlas": null
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "completed_step2",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 199
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": false,
-    "_components": [
-      {
-        "__id__": 204
-      },
-      {
-        "__id__": 205
-      }
-    ],
-    "_prefab": null,
-    "_id": "8af4VmRN9PY5z8CiKF7ETv",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 490,
-      "height": 160
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 273
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "c9bfcy5lthF9YjdQZA2x0m3",
-    "_name": "",
-    "_objFlags": 16,
-    "node": {
-      "__id__": 203
-    },
-    "_enabled": true,
-    "isReskinned": true
-  },
-  {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 203
-    },
-    "_enabled": true,
-    "_spriteFrame": {
-      "__uuid__": "8e101dfe-4433-4f3d-8bf1-3253d447a240"
-    },
-    "_type": 0,
-    "_sizeMode": 1,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_atlas": null
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "completed_step3",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 199
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": false,
-    "_components": [
-      {
-        "__id__": 207
-      },
-      {
-        "__id__": 208
-      }
-    ],
-    "_prefab": null,
-    "_id": "b7WL1aIxRKYYdJgWTaQ6+W",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 490,
-      "height": 160
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 273
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "c9bfcy5lthF9YjdQZA2x0m3",
-    "_name": "",
-    "_objFlags": 16,
-    "node": {
-      "__id__": 206
-    },
-    "_enabled": true,
-    "isReskinned": true
-  },
-  {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 206
-    },
-    "_enabled": true,
-    "_spriteFrame": {
-      "__uuid__": "1a0356ae-6e5d-431e-b14b-d00fb5e50944"
-    },
-    "_type": 0,
-    "_sizeMode": 1,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_atlas": null
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "completed_step4",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 199
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": false,
-    "_components": [
-      {
-        "__id__": 210
-      },
-      {
-        "__id__": 211
-      }
-    ],
-    "_prefab": null,
-    "_id": "fbHs6aQOhCT6ostII81GIB",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 490,
-      "height": 159
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 273
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "c9bfcy5lthF9YjdQZA2x0m3",
-    "_name": "",
-    "_objFlags": 16,
-    "node": {
-      "__id__": 209
-    },
-    "_enabled": true,
-    "isReskinned": true
-  },
-  {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 209
-    },
-    "_enabled": true,
-    "_spriteFrame": {
-      "__uuid__": "7ef0bdbd-6df7-4e0f-9f70-e42c85825b03"
-    },
-    "_type": 0,
-    "_sizeMode": 1,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_atlas": null
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "completed_step5",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 199
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": false,
-    "_components": [
-      {
-        "__id__": 213
-      },
-      {
-        "__id__": 214
-      }
-    ],
-    "_prefab": null,
-    "_id": "899+RmdBZGNLmoC/zJcSKU",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 490,
-      "height": 160
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 273
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "c9bfcy5lthF9YjdQZA2x0m3",
-    "_name": "",
-    "_objFlags": 16,
-    "node": {
-      "__id__": 212
-    },
-    "_enabled": true,
-    "isReskinned": true
-  },
-  {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 212
-    },
-    "_enabled": true,
-    "_spriteFrame": {
-      "__uuid__": "b23f8b89-533c-4458-8f62-16a26e68c326"
-    },
-    "_type": 0,
-    "_sizeMode": 1,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_atlas": null
   },
   {
     "__type__": "34ac79kdttD9KGwxI30DFam",
@@ -6452,7 +5678,7 @@
     "completeState": "step_complete",
     "claimState": "step_claim",
     "claimSequence": {
-      "__id__": 140
+      "__id__": 133
     },
     "outroState": "step_outro"
   },
@@ -6472,7 +5698,7 @@
     "missionInterface": {
       "__id__": 7
     },
-    "_N$missionJSONString": "{\"templateID\":24,\"templateVersion\":4,\"id\":315,\"source\":\"test01\",\"tags\":[\"AMBER\",\"crown.rush\"],\"mission\":{\"steps\":[{\"progress\":3,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":1000},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714]},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":5000},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714]},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":10000},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714]}],\"awardResult\":[],\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":3,\"id\":0,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":1000,\"state\":\"active\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"50000\",\"progress\":0,\"id\":1,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714],\"state\":\"locked\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":0,\"id\":2,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemFreeSpins\":[{\"buyInID\":618,\"betSize\":\"500\",\"amount\":5,\"order\":1,\"promoData\":{\"name\":\"Free Spins\",\"amount\":5,\"launchData\":{\"buyInID\":618,\"theme2_1\":\"kong\"},\"gridButton\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null},\"buyInID\":618,\"slotMachine\":\"Wrath of Kong\",\"betValue\":\"25,000\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":5000,\"state\":\"locked\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"100000\",\"progress\":0,\"id\":3,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714],\"state\":\"locked\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":0,\"id\":4,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":10000,\"state\":\"locked\",\"edges\":[5],\"predecessors\":[3],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"500000\",\"progress\":0,\"id\":5,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714],\"state\":\"locked\",\"edges\":[],\"predecessors\":[4],\"formatString\":\"Win {max} chips\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[5],[]],\"predecessors\":[[],[0],[1],[2],[3],[4]]}},\"requireAwarded\":true,\"awardData\":null,\"manifest\":[],\"awarded\":false},\"secondsActive\":3991,\"secondsRemaining\":14009,\"slotsData\":{\"652\":{\"name\":\"Kodiak Wilds\",\"customData\":{\"buyInID\":652,\"theme2_1\":\"kodiakwilds\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"653\":{\"name\":\"Kodiak Wilds VIP\",\"customData\":{\"buyInID\":653,\"theme2_1\":\"kodiakwilds\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"654\":{\"name\":\"High Roller Gala - Kodiak Wilds VIP\",\"customData\":{\"buyInID\":654,\"theme2_1\":\"kodiakwilds\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"712\":{\"name\":\"Triple Fortune Bowls\",\"customData\":{\"buyInID\":712,\"theme2_1\":\"triplefortunebowl\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"713\":{\"name\":\"Triple Fortune Bowls VIP\",\"customData\":{\"buyInID\":713,\"theme2_1\":\"triplefortunebowl\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"714\":{\"name\":\"High Roller Gala - Triple Fortune Bowls VIP\",\"customData\":{\"buyInID\":714,\"theme2_1\":\"triplefortunebowl\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}}},\"giftsData\":[]}",
+    "_N$missionJSONString": "{\"templateID\":24,\"templateVersion\":4,\"id\":326,\"source\":\"test01\",\"tags\":[\"AMBER\",\"crown.rush\"],\"mission\":{\"steps\":[{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":1000},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714]},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":5000},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714]},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":10000},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714]}],\"awardResult\":[],\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":0,\"id\":0,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":1000,\"state\":\"active\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"50000\",\"progress\":0,\"id\":1,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714],\"state\":\"locked\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":0,\"id\":2,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemFreeSpins\":[{\"buyInID\":618,\"betSize\":\"500\",\"amount\":5,\"order\":1,\"promoData\":{\"name\":\"Free Spins\",\"amount\":5,\"launchData\":{\"buyInID\":618,\"theme2_1\":\"kong\"},\"gridButton\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null},\"buyInID\":618,\"slotMachine\":\"Wrath of Kong\",\"betValue\":\"25,000\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":5000,\"state\":\"locked\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"100000\",\"progress\":0,\"id\":3,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714],\"state\":\"locked\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":0,\"id\":4,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":10000,\"state\":\"locked\",\"edges\":[5],\"predecessors\":[3],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"500000\",\"progress\":0,\"id\":5,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714],\"state\":\"locked\",\"edges\":[],\"predecessors\":[4],\"formatString\":\"Win {max} chips\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[5],[]],\"predecessors\":[[],[0],[1],[2],[3],[4]]}},\"requireAwarded\":true,\"awardData\":null,\"manifest\":[],\"awarded\":false},\"secondsActive\":896,\"secondsRemaining\":17104,\"slotsData\":{\"652\":{\"name\":\"Kodiak Wilds\",\"customData\":{\"buyInID\":652,\"theme2_1\":\"kodiakwilds\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"653\":{\"name\":\"Kodiak Wilds VIP\",\"customData\":{\"buyInID\":653,\"theme2_1\":\"kodiakwilds\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"654\":{\"name\":\"High Roller Gala - Kodiak Wilds VIP\",\"customData\":{\"buyInID\":654,\"theme2_1\":\"kodiakwilds\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"712\":{\"name\":\"Triple Fortune Bowls\",\"customData\":{\"buyInID\":712,\"theme2_1\":\"triplefortunebowl\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"713\":{\"name\":\"Triple Fortune Bowls VIP\",\"customData\":{\"buyInID\":713,\"theme2_1\":\"triplefortunebowl\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"714\":{\"name\":\"High Roller Gala - Triple Fortune Bowls VIP\",\"customData\":{\"buyInID\":714,\"theme2_1\":\"triplefortunebowl\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}}},\"giftsData\":[]}",
     "_N$instantiateMissionTrigger": true,
     "_N$retrieveMissionTrigger": true,
     "_N$updatePreviewDataTrigger": false,
