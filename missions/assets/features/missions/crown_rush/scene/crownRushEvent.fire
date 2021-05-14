@@ -63,7 +63,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 196
+        "__id__": 191
       },
       {
         "__id__": 8
@@ -122,16 +122,16 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 193
+        "__id__": 188
       },
       {
         "__id__": 7
       },
       {
-        "__id__": 194
+        "__id__": 189
       },
       {
-        "__id__": 195
+        "__id__": 190
       }
     ],
     "_prefab": null,
@@ -292,12 +292,12 @@
     "missionInterface": {
       "__id__": 7
     },
-    "dependentSteps": [
-      1
+    "dependentSteps": [],
+    "predecessorSteps": [
+      4
     ],
-    "predecessorSteps": [],
     "useActiveStepIDOnly": false,
-    "_N$stepID": 0
+    "_N$stepID": 5
   },
   {
     "__type__": "47dfbesbERA9a42f9WJKo9X",
@@ -352,6 +352,9 @@
       },
       {
         "__id__": 162
+      },
+      {
+        "__id__": 185
       }
     ],
     "_tag": -1,
@@ -364,7 +367,7 @@
         "__id__": 130
       },
       {
-        "__id__": 192
+        "__id__": 187
       }
     ],
     "_prefab": null,
@@ -1089,7 +1092,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 378.35,
+      "width": 375.67,
       "height": 54
     },
     "_rotationX": 0,
@@ -1147,7 +1150,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 378.35,
+      "width": 375.67,
       "height": 54
     },
     "_rotationX": 0,
@@ -1174,7 +1177,7 @@
       "__id__": 30
     },
     "_enabled": true,
-    "_N$string": "<color=#ffee37>Spin 500K times with a 0 chips\nmin bet</color><color=#ffffff> to start the countdown!</color>",
+    "_N$string": "<color=#ffee37>Spin 500K times with a 0 chips\nmin bet</color><color=#ffffff> to start collecting crowns!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
@@ -1193,8 +1196,8 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#ffee37>Spin {max} times with a {minbet} {currencyLower}\nmin bet</color><color=#ffffff> to start the countdown!</color>",
-    "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\"\n}"
+    "_N$templateString": "<color=#ffee37>Spin {max} times with a {minbet} {currencyLower}\nmin bet</color><color=#ffffff> to start collecting crowns!</color>",
+    "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
     "__type__": "7fac4uD0npKXpWkApNeqDnt",
@@ -1220,12 +1223,12 @@
     "missionInterface": {
       "__id__": 7
     },
-    "dependentSteps": [
-      1
+    "dependentSteps": [],
+    "predecessorSteps": [
+      4
     ],
-    "predecessorSteps": [],
     "useActiveStepIDOnly": true,
-    "_N$stepID": "0"
+    "_N$stepID": "5"
   },
   {
     "__type__": "cc.RichText",
@@ -1235,7 +1238,7 @@
       "__id__": 29
     },
     "_enabled": true,
-    "_N$string": "<color=#b15200>Spin 500K times with a 0 chips\nmin bet</color><color=#82798a> to start the countdown!</color>",
+    "_N$string": "<color=#b15200>Spin 500K times with a 0 chips\nmin bet</color><color=#82798a> to start collecting crowns!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
@@ -1254,8 +1257,8 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#b15200>Spin {max} times with a {minbet} {currencyLower}\nmin bet</color><color=#82798a> to start the countdown!</color>",
-    "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\"\n}"
+    "_N$templateString": "<color=#b15200>Spin {max} times with a {minbet} {currencyLower}\nmin bet</color><color=#82798a> to start collecting crowns!</color>",
+    "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
     "__type__": "7fac4uD0npKXpWkApNeqDnt",
@@ -1313,7 +1316,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 330.64,
+      "width": 334.67,
       "height": 56
     },
     "_rotationX": 0,
@@ -1371,7 +1374,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 330.64,
+      "width": 334.67,
       "height": 56
     },
     "_rotationX": 0,
@@ -1398,7 +1401,7 @@
       "__id__": 39
     },
     "_enabled": true,
-    "_N$string": "<color=#ffee37>Win 500K chips</color>\n<color=#ffffff> to continue the countdown!</color>",
+    "_N$string": "<color=#ffee37>Win 500K chips</color>\n<color=#ffffff> to continue collecting crowns!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
@@ -1417,8 +1420,8 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#ffee37>Win {max} {currencyLower}</color>\n<color=#ffffff> to continue the countdown!</color>",
-    "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\"\n}"
+    "_N$templateString": "<color=#ffee37>Win {max} {currencyLower}</color>\n<color=#ffffff> to continue collecting crowns!</color>",
+    "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
     "__type__": "7fac4uD0npKXpWkApNeqDnt",
@@ -1441,7 +1444,7 @@
       "__id__": 38
     },
     "_enabled": true,
-    "_N$string": "<color=#b15200>Win 500K chips</color>\n<color=#82798a> to continue the countdown!</color>",
+    "_N$string": "<color=#b15200>Win 500K chips</color>\n<color=#82798a> to continue collecting crowns!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
@@ -1460,8 +1463,8 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#b15200>Win {max} {currencyLower}</color>\n<color=#82798a> to continue the countdown!</color>",
-    "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\"\n}"
+    "_N$templateString": "<color=#b15200>Win {max} {currencyLower}</color>\n<color=#82798a> to continue collecting crowns!</color>",
+    "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
     "__type__": "7fac4uD0npKXpWkApNeqDnt",
@@ -1519,7 +1522,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 330.64,
+      "width": 334.67,
       "height": 56
     },
     "_rotationX": 0,
@@ -1577,7 +1580,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 330.64,
+      "width": 334.67,
       "height": 56
     },
     "_rotationX": 0,
@@ -1604,7 +1607,7 @@
       "__id__": 47
     },
     "_enabled": true,
-    "_N$string": "<color=#ffee37>Bet a total of 1 chips</color>\n<color=#ffffff> to continue the countdown!</color>",
+    "_N$string": "<color=#ffee37>Bet a total of 500K chips</color>\n<color=#ffffff> to continue collecting crowns!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
@@ -1623,8 +1626,8 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#ffee37>Bet a total of {max} {currencyLower}</color>\n<color=#ffffff> to continue the countdown!</color>",
-    "_N$testData": "{\n\t\"progress\": \"0\",\n\t\"max\": \"1\",\n\t\"slotname\": \"Raging Reels\",\n\t\"minbet\": \"1\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\"\n}"
+    "_N$templateString": "<color=#ffee37>Bet a total of {max} {currencyLower}</color>\n<color=#ffffff> to continue collecting crowns!</color>",
+    "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
     "__type__": "7fac4uD0npKXpWkApNeqDnt",
@@ -1647,7 +1650,7 @@
       "__id__": 46
     },
     "_enabled": true,
-    "_N$string": "<color=#b15200>Bet a total of 1 chips</color>\n<color=#82798a> to continue the countdown!</color>",
+    "_N$string": "<color=#b15200>Bet a total of 500K chips</color>\n<color=#82798a> to continue collecting crowns!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
@@ -1666,8 +1669,8 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#b15200>Bet a total of {max} {currencyLower}</color>\n<color=#82798a> to continue the countdown!</color>",
-    "_N$testData": "{\n\t\"progress\": \"0\",\n\t\"max\": \"1\",\n\t\"slotname\": \"Raging Reels\",\n\t\"minbet\": \"1\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\"\n}"
+    "_N$templateString": "<color=#b15200>Bet a total of {max} {currencyLower}</color>\n<color=#82798a> to continue collecting crowns!</color>",
+    "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
     "__type__": "7fac4uD0npKXpWkApNeqDnt",
@@ -1725,7 +1728,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 420.03999999999996,
+      "width": 416.8,
       "height": 56
     },
     "_rotationX": 0,
@@ -1783,7 +1786,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 420.03999999999996,
+      "width": 416.8,
       "height": 56
     },
     "_rotationX": 0,
@@ -1810,7 +1813,7 @@
       "__id__": 55
     },
     "_enabled": true,
-    "_N$string": "<color=#ffee37>Spin 1 times with a 1 chips\nmin bet</color><color=#ffffff> to continue the countdown!</color>",
+    "_N$string": "<color=#ffee37>Spin 500K times with a 0 chips\nmin bet</color><color=#ffffff> to continue collecting crowns!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
@@ -1829,8 +1832,8 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#ffee37>Spin {max} times with a {minbet} {currencyLower}\nmin bet</color><color=#ffffff> to continue the countdown!</color>",
-    "_N$testData": "{\n\t\"progress\": \"0\",\n\t\"max\": \"1\",\n\t\"slotname\": \"Raging Reels\",\n\t\"minbet\": \"1\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\"\n}"
+    "_N$templateString": "<color=#ffee37>Spin {max} times with a {minbet} {currencyLower}\nmin bet</color><color=#ffffff> to continue collecting crowns!</color>",
+    "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
     "__type__": "7fac4uD0npKXpWkApNeqDnt",
@@ -1853,7 +1856,7 @@
       "__id__": 54
     },
     "_enabled": true,
-    "_N$string": "<color=#b15200>Spin 1 times with a 1 chips\nmin bet</color><color=#82798a> to continue the countdown!</color>",
+    "_N$string": "<color=#b15200>Spin 500K times with a 0 chips\nmin bet</color><color=#82798a> to continue collecting crowns!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
@@ -1872,8 +1875,8 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#b15200>Spin {max} times with a {minbet} {currencyLower}\nmin bet</color><color=#82798a> to continue the countdown!</color>",
-    "_N$testData": "{\n\t\"progress\": \"0\",\n\t\"max\": \"1\",\n\t\"slotname\": \"Raging Reels\",\n\t\"minbet\": \"1\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\"\n}"
+    "_N$templateString": "<color=#b15200>Spin {max} times with a {minbet} {currencyLower}\nmin bet</color><color=#82798a> to continue collecting crowns!</color>",
+    "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
     "__type__": "7fac4uD0npKXpWkApNeqDnt",
@@ -1931,7 +1934,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 330.64,
+      "width": 334.67,
       "height": 56
     },
     "_rotationX": 0,
@@ -1989,7 +1992,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 330.64,
+      "width": 334.67,
       "height": 56
     },
     "_rotationX": 0,
@@ -2016,7 +2019,7 @@
       "__id__": 63
     },
     "_enabled": true,
-    "_N$string": "<color=#ffee37>Win 1 chips</color>\n<color=#ffffff> to continue the countdown!</color>",
+    "_N$string": "<color=#ffee37>Win 500K chips</color>\n<color=#ffffff> to continue collecting crowns!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
@@ -2035,8 +2038,8 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#ffee37>Win {max} {currencyLower}</color>\n<color=#ffffff> to continue the countdown!</color>",
-    "_N$testData": "{\n\t\"progress\": \"0\",\n\t\"max\": \"1\",\n\t\"slotname\": \"Raging Reels\",\n\t\"minbet\": \"1\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\"\n}"
+    "_N$templateString": "<color=#ffee37>Win {max} {currencyLower}</color>\n<color=#ffffff> to continue collecting crowns!</color>",
+    "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
     "__type__": "7fac4uD0npKXpWkApNeqDnt",
@@ -2059,7 +2062,7 @@
       "__id__": 62
     },
     "_enabled": true,
-    "_N$string": "<color=#b15200>Win 1 chips</color>\n<color=#82798a> to continue the countdown!</color>",
+    "_N$string": "<color=#b15200>Win 500K chips</color>\n<color=#82798a> to continue collecting crowns!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
@@ -2078,8 +2081,8 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#b15200>Win {max} {currencyLower}</color>\n<color=#82798a> to continue the countdown!</color>",
-    "_N$testData": "{\n\t\"progress\": \"0\",\n\t\"max\": \"1\",\n\t\"slotname\": \"Raging Reels\",\n\t\"minbet\": \"1\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\"\n}"
+    "_N$templateString": "<color=#b15200>Win {max} {currencyLower}</color>\n<color=#82798a> to continue collecting crowns!</color>",
+    "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
     "__type__": "7fac4uD0npKXpWkApNeqDnt",
@@ -2137,7 +2140,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 315.02,
+      "width": 334.67,
       "height": 64
     },
     "_rotationX": 0,
@@ -2195,7 +2198,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 315.02,
+      "width": 334.67,
       "height": 64
     },
     "_rotationX": 0,
@@ -2222,7 +2225,7 @@
       "__id__": 71
     },
     "_enabled": true,
-    "_N$string": "<color=#ffee37>Gift </color>\n<color=#ffffff> to welcome the New Year!</color>",
+    "_N$string": "<color=#ffee37>Gift </color>\n<color=#ffffff> to continue collecting crowns!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
@@ -2241,8 +2244,8 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#ffee37>Gift {giftname}</color>\n<color=#ffffff> to welcome the New Year!</color>",
-    "_N$testData": "{\n\t\"progress\": \"0\",\n\t\"max\": \"5\",\n\t\"slotname\": \"Kodiak Wilds\",\n\t\"minbet\": \"1K\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\"\n}"
+    "_N$templateString": "<color=#ffee37>Gift {giftname}</color>\n<color=#ffffff> to continue collecting crowns!</color>",
+    "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
     "__type__": "7fac4uD0npKXpWkApNeqDnt",
@@ -2265,7 +2268,7 @@
       "__id__": 70
     },
     "_enabled": true,
-    "_N$string": "<color=#b15200>Gift </color>\n<color=#82798a> to welcome the New Year!</color>",
+    "_N$string": "<color=#b15200>Gift </color>\n<color=#82798a> to continue collecting crowns!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
@@ -2284,8 +2287,8 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#b15200>Gift {giftname}</color>\n<color=#82798a> to welcome the New Year!</color>",
-    "_N$testData": "{\n\t\"progress\": \"0\",\n\t\"max\": \"5\",\n\t\"slotname\": \"Kodiak Wilds\",\n\t\"minbet\": \"1K\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\"\n}"
+    "_N$templateString": "<color=#b15200>Gift {giftname}</color>\n<color=#82798a> to continue collecting crowns!</color>",
+    "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
     "__type__": "7fac4uD0npKXpWkApNeqDnt",
@@ -2401,8 +2404,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 327,
-      "height": 179
+      "width": 369,
+      "height": 202
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -2646,7 +2649,7 @@
       "__id__": 84
     },
     "_enabled": true,
-    "_N$string": "<color=#ff741c>You've completed your album!</color>",
+    "_N$string": "<color=#ff741c>You've completed collecting crowns!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 24,
     "_N$font": {
@@ -2665,7 +2668,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#ff741c>You've completed your album!</color>",
+    "_N$templateString": "<color=#ff741c>You've completed collecting crowns!</color>",
     "_N$testData": "{\n\t\"progress\": \"0\",\n\t\"max\": \"1\",\n\t\"slotname\": \"Jackpot City\",\n\t\"minbet\": \"1\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\"\n}"
   },
   {
@@ -2689,7 +2692,7 @@
       "__id__": 83
     },
     "_enabled": true,
-    "_N$string": "<color=#cc3700>You've completed your album!</color>",
+    "_N$string": "<color=#cc3700>You've completed collecting crowns!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 24,
     "_N$font": {
@@ -2708,7 +2711,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#cc3700>You've completed your album!</color>",
+    "_N$templateString": "<color=#cc3700>You've completed collecting crowns!</color>",
     "_N$testData": "{\n\t\"progress\": \"0\",\n\t\"max\": \"1\",\n\t\"slotname\": \"Jackpot City\",\n\t\"minbet\": \"1\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\"\n}"
   },
   {
@@ -2795,7 +2798,7 @@
     "_enabled": true,
     "_validPreview": true,
     "_N$templateString": "\n",
-    "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\"\n}"
+    "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
     "__type__": "7fac4uD0npKXpWkApNeqDnt",
@@ -3012,7 +3015,7 @@
       "y": 0
     },
     "_fillStart": 0,
-    "_fillRange": 0,
+    "_fillRange": 1,
     "_isTrimmedMode": true,
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
@@ -3467,7 +3470,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": 37
+      "y": 57
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -3545,7 +3548,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": 37
+      "y": 57
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -3945,22 +3948,25 @@
     "_defaultClip": null,
     "_clips": [
       {
-        "__uuid__": "04d18571-2149-4770-aaaf-a4567faf02c7"
+        "__uuid__": "b96200d7-5d39-44f0-8897-7c6745bb3c0c"
       },
       {
-        "__uuid__": "4115c6da-a861-4efe-b7fc-4a6d12f8c3b8"
+        "__uuid__": "657f42c1-dba0-4f6d-9613-ae59288b2b1a"
       },
       {
-        "__uuid__": "71ed7e1f-5489-4889-b37e-841152337fac"
+        "__uuid__": "6dd9f154-975a-4ca9-8584-e245fc108049"
       },
       {
-        "__uuid__": "8878ccca-133c-4969-981c-72a8df190197"
+        "__uuid__": "2f0e683a-7578-4731-aa17-8240d93e7815"
       },
       {
         "__uuid__": "e9179312-fed5-418c-80b7-847212069694"
       },
       {
         "__uuid__": "18fc8f45-ea20-4930-9715-f012018a4579"
+      },
+      {
+        "__uuid__": "3184392c-4c11-4b24-91cb-f0d162717d5a"
       }
     ],
     "playOnLoad": false
@@ -4904,22 +4910,22 @@
         "__id__": 164
       },
       {
-        "__id__": 168
+        "__id__": 167
       },
       {
-        "__id__": 172
+        "__id__": 170
+      },
+      {
+        "__id__": 173
       },
       {
         "__id__": 176
       },
       {
-        "__id__": 180
+        "__id__": 179
       },
       {
-        "__id__": 184
-      },
-      {
-        "__id__": 188
+        "__id__": 182
       }
     ],
     "_tag": -1,
@@ -4978,9 +4984,6 @@
       },
       {
         "__id__": 166
-      },
-      {
-        "__id__": 167
       }
     ],
     "_prefab": null,
@@ -5010,8 +5013,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -280,
-      "y": 600
+      "x": -312,
+      "y": 519
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -5040,27 +5043,15 @@
     "_enabled": true,
     "_paused": false,
     "defaultSkin": "",
-    "defaultAnimation": "Coins",
+    "defaultAnimation": "coins",
     "loop": false,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "997bcda6-f2a6-4ae2-b037-797a17b9ad92"
+      "__uuid__": "f2e531d5-d010-4573-b844-0f803ba5e4ff"
     },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
     "_N$debugBones": false
-  },
-  {
-    "__type__": "bfd5fmdeRlO56GlUyxWV6Qs",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 164
-    },
-    "_enabled": true,
-    "loadingView": null,
-    "skeleton": "",
-    "atlas": ""
   },
   {
     "__type__": "cc.Node",
@@ -5074,13 +5065,10 @@
     "_active": false,
     "_components": [
       {
+        "__id__": 168
+      },
+      {
         "__id__": 169
-      },
-      {
-        "__id__": 170
-      },
-      {
-        "__id__": 171
       }
     ],
     "_prefab": null,
@@ -5110,8 +5098,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -280,
-      "y": 600
+      "x": -312,
+      "y": 519
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -5125,7 +5113,7 @@
     "_name": "",
     "_objFlags": 16,
     "node": {
-      "__id__": 168
+      "__id__": 167
     },
     "_enabled": true,
     "isReskinned": true
@@ -5135,32 +5123,20 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 168
+      "__id__": 167
     },
     "_enabled": true,
     "_paused": false,
     "defaultSkin": "",
-    "defaultAnimation": "Coins",
+    "defaultAnimation": "coins",
     "loop": false,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "997bcda6-f2a6-4ae2-b037-797a17b9ad92"
+      "__uuid__": "f2e531d5-d010-4573-b844-0f803ba5e4ff"
     },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
     "_N$debugBones": false
-  },
-  {
-    "__type__": "bfd5fmdeRlO56GlUyxWV6Qs",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 168
-    },
-    "_enabled": true,
-    "loadingView": null,
-    "skeleton": "",
-    "atlas": ""
   },
   {
     "__type__": "cc.Node",
@@ -5174,13 +5150,10 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 173
+        "__id__": 171
       },
       {
-        "__id__": 174
-      },
-      {
-        "__id__": 175
+        "__id__": 172
       }
     ],
     "_prefab": null,
@@ -5210,8 +5183,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -280,
-      "y": 600
+      "x": -312,
+      "y": 519
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -5225,7 +5198,7 @@
     "_name": "",
     "_objFlags": 16,
     "node": {
-      "__id__": 172
+      "__id__": 170
     },
     "_enabled": true,
     "isReskinned": true
@@ -5235,32 +5208,20 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 172
+      "__id__": 170
     },
     "_enabled": true,
     "_paused": false,
     "defaultSkin": "",
-    "defaultAnimation": "Coins",
+    "defaultAnimation": "coins",
     "loop": false,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "997bcda6-f2a6-4ae2-b037-797a17b9ad92"
+      "__uuid__": "f2e531d5-d010-4573-b844-0f803ba5e4ff"
     },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
     "_N$debugBones": false
-  },
-  {
-    "__type__": "bfd5fmdeRlO56GlUyxWV6Qs",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 172
-    },
-    "_enabled": true,
-    "loadingView": null,
-    "skeleton": "",
-    "atlas": ""
   },
   {
     "__type__": "cc.Node",
@@ -5274,13 +5235,10 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 177
+        "__id__": 174
       },
       {
-        "__id__": 178
-      },
-      {
-        "__id__": 179
+        "__id__": 175
       }
     ],
     "_prefab": null,
@@ -5310,8 +5268,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -280,
-      "y": 600
+      "x": -312,
+      "y": 519
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -5325,7 +5283,7 @@
     "_name": "",
     "_objFlags": 16,
     "node": {
-      "__id__": 176
+      "__id__": 173
     },
     "_enabled": true,
     "isReskinned": true
@@ -5335,32 +5293,20 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 176
+      "__id__": 173
     },
     "_enabled": true,
     "_paused": false,
     "defaultSkin": "",
-    "defaultAnimation": "Coins",
+    "defaultAnimation": "coins",
     "loop": false,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "997bcda6-f2a6-4ae2-b037-797a17b9ad92"
+      "__uuid__": "f2e531d5-d010-4573-b844-0f803ba5e4ff"
     },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
     "_N$debugBones": false
-  },
-  {
-    "__type__": "bfd5fmdeRlO56GlUyxWV6Qs",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 176
-    },
-    "_enabled": true,
-    "loadingView": null,
-    "skeleton": "",
-    "atlas": ""
   },
   {
     "__type__": "cc.Node",
@@ -5374,13 +5320,10 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 181
+        "__id__": 177
       },
       {
-        "__id__": 182
-      },
-      {
-        "__id__": 183
+        "__id__": 178
       }
     ],
     "_prefab": null,
@@ -5410,8 +5353,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -280,
-      "y": 600
+      "x": -312,
+      "y": 519
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -5425,7 +5368,7 @@
     "_name": "",
     "_objFlags": 16,
     "node": {
-      "__id__": 180
+      "__id__": 176
     },
     "_enabled": true,
     "isReskinned": true
@@ -5435,32 +5378,20 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 180
+      "__id__": 176
     },
     "_enabled": true,
     "_paused": false,
     "defaultSkin": "",
-    "defaultAnimation": "Coins",
+    "defaultAnimation": "coins",
     "loop": false,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "997bcda6-f2a6-4ae2-b037-797a17b9ad92"
+      "__uuid__": "f2e531d5-d010-4573-b844-0f803ba5e4ff"
     },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
     "_N$debugBones": false
-  },
-  {
-    "__type__": "bfd5fmdeRlO56GlUyxWV6Qs",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 180
-    },
-    "_enabled": true,
-    "loadingView": null,
-    "skeleton": "",
-    "atlas": ""
   },
   {
     "__type__": "cc.Node",
@@ -5474,13 +5405,10 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 185
+        "__id__": 180
       },
       {
-        "__id__": 186
-      },
-      {
-        "__id__": 187
+        "__id__": 181
       }
     ],
     "_prefab": null,
@@ -5510,8 +5438,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -280,
-      "y": 600
+      "x": -312,
+      "y": 519
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -5525,7 +5453,7 @@
     "_name": "",
     "_objFlags": 16,
     "node": {
-      "__id__": 184
+      "__id__": 179
     },
     "_enabled": true,
     "isReskinned": true
@@ -5535,32 +5463,20 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 184
+      "__id__": 179
     },
     "_enabled": true,
     "_paused": false,
     "defaultSkin": "",
-    "defaultAnimation": "Coins",
+    "defaultAnimation": "coins",
     "loop": false,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "997bcda6-f2a6-4ae2-b037-797a17b9ad92"
+      "__uuid__": "f2e531d5-d010-4573-b844-0f803ba5e4ff"
     },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
     "_N$debugBones": false
-  },
-  {
-    "__type__": "bfd5fmdeRlO56GlUyxWV6Qs",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 184
-    },
-    "_enabled": true,
-    "loadingView": null,
-    "skeleton": "",
-    "atlas": ""
   },
   {
     "__type__": "cc.Node",
@@ -5574,13 +5490,10 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 189
+        "__id__": 183
       },
       {
-        "__id__": 190
-      },
-      {
-        "__id__": 191
+        "__id__": 184
       }
     ],
     "_prefab": null,
@@ -5610,8 +5523,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -320,
-      "y": 515
+      "x": -312,
+      "y": 519
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -5625,7 +5538,7 @@
     "_name": "",
     "_objFlags": 16,
     "node": {
-      "__id__": 188
+      "__id__": 182
     },
     "_enabled": true,
     "isReskinned": true
@@ -5635,32 +5548,98 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 188
+      "__id__": 182
     },
     "_enabled": true,
     "_paused": false,
     "defaultSkin": "",
-    "defaultAnimation": "Rainbow",
+    "defaultAnimation": "rainbow",
     "loop": false,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "997bcda6-f2a6-4ae2-b037-797a17b9ad92"
+      "__uuid__": "f2e531d5-d010-4573-b844-0f803ba5e4ff"
     },
     "_N$timeScale": 0.5,
     "_N$debugSlots": false,
     "_N$debugBones": false
   },
   {
-    "__type__": "bfd5fmdeRlO56GlUyxWV6Qs",
+    "__type__": "cc.Node",
+    "_name": "top_blue",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 10
+    },
+    "_children": [],
+    "_tag": -1,
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 186
+      }
+    ],
+    "_prefab": null,
+    "_id": "1aE1O4775J2ahkcUS74l07",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 340,
+      "height": 219
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 8.899999999999977,
+      "y": -100.50000000000003
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 188
+      "__id__": 185
     },
     "_enabled": true,
-    "loadingView": null,
-    "skeleton": "",
-    "atlas": ""
+    "_spriteFrame": {
+      "__uuid__": "5dfa3641-a48d-4783-8864-c023f7906ee4"
+    },
+    "_type": 0,
+    "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_atlas": null
   },
   {
     "__type__": "34ac79kdttD9KGwxI30DFam",
@@ -5698,11 +5677,11 @@
     "missionInterface": {
       "__id__": 7
     },
-    "_N$missionJSONString": "{\"templateID\":24,\"templateVersion\":4,\"id\":326,\"source\":\"test01\",\"tags\":[\"AMBER\",\"crown.rush\"],\"mission\":{\"steps\":[{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":1000},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714]},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":5000},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714]},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":10000},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714]}],\"awardResult\":[],\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":0,\"id\":0,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":1000,\"state\":\"active\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"50000\",\"progress\":0,\"id\":1,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714],\"state\":\"locked\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":0,\"id\":2,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemFreeSpins\":[{\"buyInID\":618,\"betSize\":\"500\",\"amount\":5,\"order\":1,\"promoData\":{\"name\":\"Free Spins\",\"amount\":5,\"launchData\":{\"buyInID\":618,\"theme2_1\":\"kong\"},\"gridButton\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null},\"buyInID\":618,\"slotMachine\":\"Wrath of Kong\",\"betValue\":\"25,000\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":5000,\"state\":\"locked\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"100000\",\"progress\":0,\"id\":3,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714],\"state\":\"locked\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":0,\"id\":4,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":10000,\"state\":\"locked\",\"edges\":[5],\"predecessors\":[3],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"500000\",\"progress\":0,\"id\":5,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714],\"state\":\"locked\",\"edges\":[],\"predecessors\":[4],\"formatString\":\"Win {max} chips\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[5],[]],\"predecessors\":[[],[0],[1],[2],[3],[4]]}},\"requireAwarded\":true,\"awardData\":null,\"manifest\":[],\"awarded\":false},\"secondsActive\":896,\"secondsRemaining\":17104,\"slotsData\":{\"652\":{\"name\":\"Kodiak Wilds\",\"customData\":{\"buyInID\":652,\"theme2_1\":\"kodiakwilds\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"653\":{\"name\":\"Kodiak Wilds VIP\",\"customData\":{\"buyInID\":653,\"theme2_1\":\"kodiakwilds\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"654\":{\"name\":\"High Roller Gala - Kodiak Wilds VIP\",\"customData\":{\"buyInID\":654,\"theme2_1\":\"kodiakwilds\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"712\":{\"name\":\"Triple Fortune Bowls\",\"customData\":{\"buyInID\":712,\"theme2_1\":\"triplefortunebowl\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"713\":{\"name\":\"Triple Fortune Bowls VIP\",\"customData\":{\"buyInID\":713,\"theme2_1\":\"triplefortunebowl\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"714\":{\"name\":\"High Roller Gala - Triple Fortune Bowls VIP\",\"customData\":{\"buyInID\":714,\"theme2_1\":\"triplefortunebowl\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}}},\"giftsData\":[]}",
+    "_N$missionJSONString": "{\"templateID\":24,\"templateVersion\":4,\"id\":334,\"source\":\"test01\",\"tags\":[\"AMBER\",\"crown.rush\"],\"mission\":{\"steps\":[{\"progress\":5,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000666\",\"newBalance\":3400293806}}],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":1000},{\"progress\":50000,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000666\",\"newBalance\":3410294472}}],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714]},{\"progress\":5,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000000\",\"newBalance\":3420294472}},{\"class\":\"ProductPackageItemFreeSpins\",\"result\":{\"buyInID\":618,\"config\":\"1x\",\"amount\":5,\"betSize\":\"500\",\"newBalance\":250}}],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":5000},{\"progress\":100000,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000666\",\"newBalance\":3430295138}}],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714]},{\"progress\":5,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000666\",\"newBalance\":3440295804}}],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":10000},{\"progress\":500000,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714]}],\"awardResult\":[],\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":5,\"id\":0,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000666\",\"newBalance\":3400293806}}],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":1000,\"state\":\"redeemed\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"50000\",\"progress\":50000,\"id\":1,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000666\",\"newBalance\":3410294472}}],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714],\"state\":\"redeemed\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":5,\"id\":2,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemFreeSpins\":[{\"buyInID\":618,\"betSize\":\"500\",\"amount\":5,\"order\":1,\"promoData\":{\"name\":\"Free Spins\",\"amount\":5,\"launchData\":{\"buyInID\":618,\"theme2_1\":\"kong\"},\"gridButton\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null},\"buyInID\":618,\"slotMachine\":\"Wrath of Kong\",\"betValue\":\"25,000\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000000\",\"newBalance\":3420294472}},{\"class\":\"ProductPackageItemFreeSpins\",\"result\":{\"buyInID\":618,\"config\":\"1x\",\"amount\":5,\"betSize\":\"500\",\"newBalance\":250}}],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":5000,\"state\":\"redeemed\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"100000\",\"progress\":100000,\"id\":3,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000666\",\"newBalance\":3430295138}}],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714],\"state\":\"redeemed\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":5,\"id\":4,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000666\",\"newBalance\":3440295804}}],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":10000,\"state\":\"redeemed\",\"edges\":[5],\"predecessors\":[3],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"500000\",\"progress\":500000,\"id\":5,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714],\"state\":\"complete\",\"edges\":[],\"predecessors\":[4],\"formatString\":\"Win {max} chips\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[5],[]],\"predecessors\":[[],[0],[1],[2],[3],[4]]}},\"requireAwarded\":true,\"awardData\":null,\"manifest\":[],\"awarded\":false},\"secondsActive\":22878,\"secondsRemaining\":-4878,\"slotsData\":{\"652\":{\"name\":\"Kodiak Wilds\",\"customData\":{\"buyInID\":652,\"theme2_1\":\"kodiakwilds\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"653\":{\"name\":\"Kodiak Wilds VIP\",\"customData\":{\"buyInID\":653,\"theme2_1\":\"kodiakwilds\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"654\":{\"name\":\"High Roller Gala - Kodiak Wilds VIP\",\"customData\":{\"buyInID\":654,\"theme2_1\":\"kodiakwilds\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"712\":{\"name\":\"Triple Fortune Bowls\",\"customData\":{\"buyInID\":712,\"theme2_1\":\"triplefortunebowl\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"713\":{\"name\":\"Triple Fortune Bowls VIP\",\"customData\":{\"buyInID\":713,\"theme2_1\":\"triplefortunebowl\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"714\":{\"name\":\"High Roller Gala - Triple Fortune Bowls VIP\",\"customData\":{\"buyInID\":714,\"theme2_1\":\"triplefortunebowl\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}}},\"giftsData\":[]}",
     "_N$instantiateMissionTrigger": true,
     "_N$retrieveMissionTrigger": true,
     "_N$updatePreviewDataTrigger": false,
-    "_N$componentUpdateCallbackTrigger": false
+    "_N$componentUpdateCallbackTrigger": true
   },
   {
     "__type__": "cc.Animation",
@@ -5715,28 +5694,28 @@
     "_defaultClip": null,
     "_clips": [
       {
-        "__uuid__": "50d25e56-013a-4f89-b337-0a6e395e9224"
+        "__uuid__": "739dd3dd-5a39-4edd-a363-31b4e61ae0c1"
       },
       {
-        "__uuid__": "fcee0edc-034b-47a7-9375-a643f786263e"
+        "__uuid__": "8db39d3f-cc13-4af4-99da-0706c5742b55"
       },
       {
-        "__uuid__": "12b76f6c-7bdf-47ae-b7af-47913524a1ef"
+        "__uuid__": "52452ac7-693d-4c47-b237-5c9e7645a991"
       },
       {
-        "__uuid__": "45432137-eee2-4200-844b-a04446287632"
+        "__uuid__": "7d31d45d-82a9-42bf-a096-a7f7ae12b243"
       },
       {
-        "__uuid__": "c0c5cccd-d3ef-4b3c-9c3d-6a34f0d895fb"
+        "__uuid__": "20a072bd-6fdb-46cd-9e2d-0509b4817947"
       },
       {
-        "__uuid__": "adf4141d-0a02-4f91-aab5-3145d19ea932"
+        "__uuid__": "e247a23c-9562-4b88-92d0-52dcc7e2032f"
       },
       {
-        "__uuid__": "9df12e3d-fd34-4909-a193-9892d246c502"
+        "__uuid__": "acb5258a-73f8-4578-804f-540728ecae12"
       },
       {
-        "__uuid__": "54fd867e-c7e4-44df-93d2-705212150154"
+        "__uuid__": "c14226d8-3425-4459-975e-d82b36c39f75"
       }
     ],
     "playOnLoad": false
@@ -5760,7 +5739,7 @@
       "step4",
       "step5"
     ],
-    "completedMissionState": "",
+    "completedMissionState": "step_celebration",
     "claimMissionAwardSequence": null,
     "finalMissionState": "step_celebration"
   },

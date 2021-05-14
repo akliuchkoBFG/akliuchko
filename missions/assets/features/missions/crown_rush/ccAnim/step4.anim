@@ -1,0 +1,198 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "step4",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "steps_final/mission_step/background/step_descriptions/how_to_play_step1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/background/step_descriptions/how_to_play_step2": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/background/step_descriptions/how_to_play_step3": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/background/step_descriptions/how_to_play_step4": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/background/step_descriptions/how_to_play_step5": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/completed_container/spine_animations/step1_complete_spine": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/completed_container/spine_animations/step2_complete_spine": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/completed_container/spine_animations/step3_complete_spine": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/completed_container/spine_animations/step4_complete_spine": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/completed_container/spine_animations/step5_complete_spine": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/background/step_descriptions/mission_completed": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/buttons/play": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/buttons/button_complete": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/completed_container/spine_animations/step6_complete_spine": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/completed_container/spine_animations/step7_complete_spine": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/background/collection_items": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/background/step_descriptions/how_to_play_step6": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/background/collection_items/mask/gold_coins": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -11.2,
+                -250
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

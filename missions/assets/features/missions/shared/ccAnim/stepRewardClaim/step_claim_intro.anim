@@ -56,7 +56,8 @@
             },
             {
               "frame": 1.5,
-              "value": 255
+              "value": 255,
+              "curve": "linear"
             },
             {
               "frame": 2,
@@ -245,40 +246,6 @@
         }
       },
       "background/collection_items": {
-        "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": true
-            },
-            {
-              "frame": 2,
-              "value": false
-            }
-          ],
-          "opacity": [
-            {
-              "frame": 0,
-              "value": 255
-            },
-            {
-              "frame": 1.4833333333333334,
-              "value": 255
-            },
-            {
-              "frame": 2,
-              "value": 0
-            }
-          ]
-        }
-      },
-      "background/collection_items/bg": {
-        "props": {}
-      },
-      "background/collection_items/clock_gold": {
-        "props": {}
-      },
-      "background/collection_items/item_rotation": {
         "props": {}
       },
       "background/progress_container": {
@@ -287,6 +254,26 @@
             {
               "frame": 0,
               "value": true
+            }
+          ]
+        }
+      },
+      "top_blue": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.5,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
             }
           ]
         }
