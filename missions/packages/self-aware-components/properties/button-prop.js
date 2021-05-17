@@ -9,7 +9,14 @@ return Vue.component('button-prop', {
 
 	template: `
 		<div :style=cssBlock>
-			<ui-button @click="buttonClick">{{target.value.title.value}}</ui-button>
+			<ui-button
+				@click="buttonClick"
+				:tooltip="target.attrs.tooltip"
+				@mouseenter="showTooltip"
+				@mouseleave="hideTooltip"
+			>
+				{{target.value.title.value}}
+			</ui-button>
 		</div>
 	`,
 
@@ -37,6 +44,12 @@ return Vue.component('button-prop', {
 				this.target.value.listener,
 				!this.target.value.listener.value
 			);
+		},
+		showTooltip(event) {
+			Editor.SAG.Tooltip.show(event.target, 'left');
+		},
+		hideTooltip(/* event */) {
+			Editor.SAG.Tooltip.hide();
 		},
 	}
 });

@@ -1,6 +1,6 @@
 {
   "name": "asset-zip-build",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "Build asset zips in editor",
   "author": "Self Aware Games",
   "main": "main.js",
