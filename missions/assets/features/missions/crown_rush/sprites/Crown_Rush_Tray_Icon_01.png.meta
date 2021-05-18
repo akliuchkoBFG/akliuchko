@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "e52eb497-b281-4f83-8a11-7912f7603917",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "Crown_Rush_Tray_Icon_01": {
+      "ver": "1.0.3",
+      "uuid": "e1019989-323a-4242-8a97-4dfebd5c73ca",
+      "rawTextureUuid": "e52eb497-b281-4f83-8a11-7912f7603917",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 198,
+      "height": 198,
+      "rawWidth": 200,
+      "rawHeight": 200,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

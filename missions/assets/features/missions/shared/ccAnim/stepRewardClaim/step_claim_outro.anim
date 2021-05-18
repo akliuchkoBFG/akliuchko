@@ -105,52 +105,6 @@
           ]
         }
       },
-      "completed_container/shutter_spine2": {
-        "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": false
-            }
-          ],
-          "opacity": [
-            {
-              "frame": 0,
-              "value": 0
-            }
-          ]
-        },
-        "comps": {
-          "sp.Skeleton": {
-            "enabled": [
-              {
-                "frame": 0,
-                "value": false
-              }
-            ]
-          }
-        }
-      },
-      "completed_container/shutter_spine": {
-        "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": false
-            }
-          ]
-        },
-        "comps": {
-          "sp.Skeleton": {
-            "enabled": [
-              {
-                "frame": 0,
-                "value": false
-              }
-            ]
-          }
-        }
-      },
       "buttons/button_claim": {
         "props": {},
         "comps": {
@@ -250,6 +204,16 @@
       },
       "background/progress_container": {
         "props": {}
+      },
+      "top_blue": {
+        "props": {
+          "active": [
+            {
+              "frame": 0.016666666666666666,
+              "value": false
+            }
+          ]
+        }
       }
     }
   },

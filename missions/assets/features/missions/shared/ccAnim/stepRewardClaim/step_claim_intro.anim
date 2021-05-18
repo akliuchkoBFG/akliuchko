@@ -3,7 +3,7 @@
   "_name": "step_claim_intro",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 5,
+  "_duration": 4,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -17,21 +17,21 @@
               "value": false
             },
             {
-              "frame": 2.9833333333333334,
+              "frame": 2,
               "value": true
             },
             {
-              "frame": 5,
+              "frame": 4,
               "value": true
             }
           ],
           "opacity": [
             {
-              "frame": 2.4833333333333334,
+              "frame": 1.4833333333333334,
               "value": 0
             },
             {
-              "frame": 2.9833333333333334,
+              "frame": 2,
               "value": 255
             }
           ]
@@ -45,7 +45,7 @@
               "value": true
             },
             {
-              "frame": 3,
+              "frame": 2,
               "value": false
             }
           ],
@@ -55,11 +55,12 @@
               "value": 255
             },
             {
-              "frame": 2.5,
-              "value": 255
+              "frame": 1.5,
+              "value": 255,
+              "curve": "linear"
             },
             {
-              "frame": 3,
+              "frame": 2,
               "value": 0
             }
           ]
@@ -93,17 +94,17 @@
               "value": true
             },
             {
-              "frame": 3,
+              "frame": 2,
               "value": false
             }
           ],
           "opacity": [
             {
-              "frame": 2.5,
+              "frame": 1.4833333333333334,
               "value": 255
             },
             {
-              "frame": 3,
+              "frame": 2,
               "value": 0
             }
           ]
@@ -127,7 +128,7 @@
               "value": true
             },
             {
-              "frame": 3,
+              "frame": 2,
               "value": false
             }
           ]
@@ -141,17 +142,17 @@
               "value": true
             },
             {
-              "frame": 3,
+              "frame": 2,
               "value": true
             }
           ],
           "opacity": [
             {
-              "frame": 2.5,
+              "frame": 1.5,
               "value": 255
             },
             {
-              "frame": 3,
+              "frame": 2,
               "value": 0
             }
           ]
@@ -165,7 +166,7 @@
               "value": true
             },
             {
-              "frame": 3,
+              "frame": 2,
               "value": false
             }
           ]
@@ -179,7 +180,7 @@
               "value": false
             },
             {
-              "frame": 2.5,
+              "frame": 1.4833333333333334,
               "value": true
             }
           ]
@@ -192,7 +193,7 @@
                 "value": false
               },
               {
-                "frame": 2.5,
+                "frame": 1.4833333333333334,
                 "value": true
               }
             ]
@@ -207,7 +208,7 @@
               "value": false
             },
             {
-              "frame": 2.4833333333333334,
+              "frame": 1.4833333333333334,
               "value": true
             }
           ]
@@ -221,11 +222,11 @@
               "value": true
             },
             {
-              "frame": 2.5,
+              "frame": 1.5,
               "value": true
             },
             {
-              "frame": 3,
+              "frame": 2,
               "value": false
             }
           ]
@@ -245,40 +246,6 @@
         }
       },
       "background/collection_items": {
-        "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": true
-            },
-            {
-              "frame": 3,
-              "value": false
-            }
-          ],
-          "opacity": [
-            {
-              "frame": 0,
-              "value": 255
-            },
-            {
-              "frame": 2.5,
-              "value": 255
-            },
-            {
-              "frame": 3,
-              "value": 0
-            }
-          ]
-        }
-      },
-      "background/collection_items/bg": {
-        "props": {}
-      },
-      "background/collection_items/clock_gold": {
-        "props": {}
-      },
-      "background/collection_items/item_rotation": {
         "props": {}
       },
       "background/progress_container": {
@@ -287,6 +254,26 @@
             {
               "frame": 0,
               "value": true
+            }
+          ]
+        }
+      },
+      "top_blue": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.5,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
             }
           ]
         }
