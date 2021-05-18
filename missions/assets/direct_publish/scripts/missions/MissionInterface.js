@@ -252,6 +252,12 @@ cc.Class({
 
 	getTrayIcon() {
 		let iconName = '';
+		// Check in the mission data manifest for the icon image
+		// The manifest may be empty and this._missionData.mission.manifest.tray_icon can be an empty string or undefined
+		if(!!this._missionData.mission.manifest.tray_icon){
+			iconName = this._missionData.mission.manifest.tray_icon;
+			return Promise.resolve(iconName);
+		}
 		const tags = this.getTags();
 		if (tags.length === 0) {
 			return Promise.resolve(iconName);

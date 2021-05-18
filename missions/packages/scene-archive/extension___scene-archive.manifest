@@ -1,1 +1,1 @@
-{"version":"1.1.1","sourceCommitHash":"22d91688d1e8a3af6fda981095013e6155b76a58","assets":{"main.js":"3ebf1fba","package.json":"c5a762e1","panel/index.js":"0aeb56bf","scene.js":"a7cbcd2a"},"hash":"cff89590","pathInProject":"packages/scene-archive","bundleName":"extension___scene-archive"}
+{"version":"1.2.0","sourceCommitHash":"889615406ed2c454882577b8e12190498183b6ad","assets":{"main.js":"3ebf1fba","package.json":"72d97370","panel/index.js":"0aeb56bf","scene.js":"a301ffcd"},"hash":"bea0af4e","pathInProject":"packages/scene-archive","bundleName":"extension___scene-archive"}

@@ -25,6 +25,16 @@ cc.Class({
 				}
 			}
 		},
+
+		
+		slotFallbackString: {
+			default: "",
+			visible: function(){
+				return this.stringType === StringType.SlotName;
+			},
+			tooltip: "What the text the label will fallback to  if this is a SlotName label but the mission step is an any machine type step"
+		},
+		
 	},
 
 	_formatLabel: function(string) {
@@ -44,7 +54,8 @@ cc.Class({
 				string = this.missionStepInterface.getFormatString(); 
 				break;
 			case StringType.SlotName: 
-				string = "{slotname}"; 
+				const data = this.missionStepInterface.getTemplateStringData();
+				string = data.slotname || this.slotFallbackString; 
 				break;
 		}
 		this._formatLabel(string);
