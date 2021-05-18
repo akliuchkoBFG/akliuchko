@@ -524,7 +524,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 379.05,
+      "width": 366.9,
       "height": 90
     },
     "_rotationX": 0,
@@ -579,7 +579,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 379.05,
+      "width": 366.9,
       "height": 90
     },
     "_rotationX": 0,
@@ -606,7 +606,7 @@
       "__id__": 13
     },
     "_enabled": true,
-    "_N$string": "<color=#ffffd7 >Play in</color> <color=#ffbe00 >The Zappening: Lucky\n Remix</color><color=#ffffd7 > to complete your puzzle \nand win</color> <color=#ffbe00 >club bonuses</color><color=#ffffd7 > and prizes!</color>",
+    "_N$string": "<color=#ffffd7 >Celebrate Father's Day by</color>\n<color=#ffbe00 >completing steps in any slot</color><color=#ffffd7 > to\nfinish the puzzle and </color><color=#ffbe00 >win prizes!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 25,
     "_N$font": {
@@ -627,7 +627,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#ffffd7 >Play in</color> <color=#ffbe00 >The Zappening: Lucky\n Remix</color><color=#ffffd7 > to complete your puzzle \nand win</color> <color=#ffbe00 >club bonuses</color><color=#ffffd7 > and prizes!</color>",
+    "_N$templateString": "<color=#ffffd7 >Celebrate Father's Day by</color>\n<color=#ffbe00 >completing steps in any slot</color><color=#ffffd7 > to\nfinish the puzzle and </color><color=#ffbe00 >win prizes!</color>",
     "_N$testData": "{}"
   },
   {
@@ -639,7 +639,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 17
@@ -767,7 +767,7 @@
       "__id__": 12
     },
     "_enabled": true,
-    "_N$string": "<color=#008000>Play in</color> <color=#753100>The Zappening: Lucky\n Remix</color><color=#008000> to complete your puzzle \nand win</color> <color=#753100>club bonuses</color><color=#008000> and prizes!</color>",
+    "_N$string": "<color=#008000>Celebrate Father's Day by</color>\n<color=#753100>completing steps in any slot</color><color=#008000> to\nfinish the puzzle and </color><color=#753100>win prizes!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 25,
     "_N$font": {
@@ -788,7 +788,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#008000>Play in</color> <color=#753100>The Zappening: Lucky\n Remix</color><color=#008000> to complete your puzzle \nand win</color> <color=#753100>club bonuses</color><color=#008000> and prizes!</color>",
+    "_N$templateString": "<color=#008000>Celebrate Father's Day by</color>\n<color=#753100>completing steps in any slot</color><color=#008000> to\nfinish the puzzle and </color><color=#753100>win prizes!</color>",
     "_N$testData": "{}"
   },
   {
@@ -834,7 +834,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 330.47,
+      "width": 366.9,
       "height": 90
     },
     "_rotationX": 0,
@@ -916,7 +916,7 @@
       "__id__": 23
     },
     "_enabled": true,
-    "_N$string": "<color=#ffffd7>Play in</color> <color=#ffbe00>any machine</color><color=#ffffd7> to \ncomplete your puzzle and \nwin</color> <color=#ffbe00>club bonuses</color><color=#ffffd7> and prizes!</color>",
+    "_N$string": "<color=#ffffd7 >Celebrate Father's Day by</color>\n<color=#ffbe00 >completing steps in any slot</color><color=#ffffd7 > to\nfinish the puzzle and </color><color=#ffbe00 >win prizes!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 25,
     "_N$font": {
@@ -937,7 +937,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#ffffd7>Play in</color> <color=#ffbe00>any machine</color><color=#ffffd7> to \ncomplete your puzzle and \nwin</color> <color=#ffbe00>club bonuses</color><color=#ffffd7> and prizes!</color>",
+    "_N$templateString": "<color=#ffffd7 >Celebrate Father's Day by</color>\n<color=#ffbe00 >completing steps in any slot</color><color=#ffffd7 > to\nfinish the puzzle and </color><color=#ffbe00 >win prizes!</color>",
     "_N$testData": "{}"
   },
   {
@@ -949,7 +949,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 27
@@ -1077,7 +1077,7 @@
       "__id__": 22
     },
     "_enabled": true,
-    "_N$string": "<color=#008000>Play in</color> <color=#753100>any machine</color><color=#008000> to \ncomplete your puzzle and \nwin</color> <color=#753100>club bonuses</color><color=#008000> and prizes!</color>",
+    "_N$string": "<color=#008000>Celebrate Father's Day by</color>\n<color=#753100>completing steps in any slot</color><color=#008000> to\nfinish the puzzle and </color><color=#753100>win prizes!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 25,
     "_N$font": {
@@ -1098,7 +1098,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#008000>Play in</color> <color=#753100>any machine</color><color=#008000> to \ncomplete your puzzle and \nwin</color> <color=#753100>club bonuses</color><color=#008000> and prizes!</color>",
+    "_N$templateString": "<color=#008000>Celebrate Father's Day by</color>\n<color=#753100>completing steps in any slot</color><color=#008000> to\nfinish the puzzle and </color><color=#753100>win prizes!</color>",
     "_N$testData": "{}"
   },
   {
@@ -1154,7 +1154,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 55,
-      "y": 307.8
+      "y": 311.8
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -1545,13 +1545,11 @@
       "__id__": 7
     },
     "dependentSteps": [
-      2
+      1
     ],
-    "predecessorSteps": [
-      0
-    ],
+    "predecessorSteps": [],
     "useActiveStepIDOnly": true,
-    "_N$stepID": "1"
+    "_N$stepID": "0"
   },
   {
     "__type__": "cc.RichText",
@@ -5000,7 +4998,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 214,
+      "x": 208,
       "y": 285
     },
     "_skewX": 0,
@@ -5097,7 +5095,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 172
@@ -5192,7 +5190,7 @@
       "__id__": 11
     },
     "_enabled": true,
-    "isReskinned": false
+    "isReskinned": true
   },
   {
     "__type__": "cc.Sprite",
@@ -5203,7 +5201,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "da476b10-d430-4225-b1ef-232ac7444a1a"
+      "__uuid__": "dcd74076-704a-4df0-af08-8f6ba65f2b65"
     },
     "_type": 0,
     "_sizeMode": 2,
@@ -7378,17 +7376,17 @@
     "_enabled": true,
     "editorOnly": true,
     "instantiationSource": "testThis1",
-    "templateID": 239,
-    "templateName": "St Pattys 2021 TA Test",
+    "templateID": 35,
+    "templateName": "Father's Day Rough Mission",
     "missionDataIndex": 0,
     "missionInterface": {
       "__id__": 7
     },
-    "_N$missionJSONString": "null",
+    "_N$missionJSONString": "{\"templateID\":35,\"templateVersion\":4,\"id\":\"353\",\"source\":\"testThis1\",\"tags\":[\"imported\",\"lucky_remix\",\"badge_vip\"],\"mission\":{\"steps\":[{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false}],\"awardResult\":[],\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepBet\",\"data\":{\"max\":894819659,\"progress\":0,\"id\":0,\"award\":{\"ProductPackageItemChips\":[{\"amount\":173240000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":173240000}}],\"ProductPackageItemCollectionChest\":[{\"tier\":4,\"amount\":1,\"order\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Massive\",\"tier\":4,\"chestID\":\"season5BFC.massive\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"active\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":823234087,\"progress\":0,\"id\":1,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}],\"ProductPackageItemClubChips\":[{\"order\":1,\"amount\":\"1500000\",\"title\":\"🍀 Club Bonus 🍀\",\"text\":\"scores BIG in the Puzzle Pursuit event!🍀✨\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"1500000\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1073783591,\"progress\":0,\"id\":2,\"award\":{\"ProductPackageItemChips\":[{\"amount\":259860000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":259860000}}],\"ProductPackageItemCollectionChest\":[{\"tier\":4,\"amount\":1,\"order\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Massive\",\"tier\":4,\"chestID\":\"season5BFC.massive\"}}],\"ProductPackageItemEntrytext\":[{\"order\":2,\"entrytextID\":\"promo2021BFC.stpatricks\",\"amount\":\"1\",\"promoData\":{\"name\":\"Entrytext\",\"amount\":\"1\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":13830332647,\"progress\":0,\"id\":3,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":8948196588,\"progress\":0,\"id\":4,\"award\":{\"ProductPackageItemCollectionChest\":[{\"tier\":5,\"amount\":1,\"order\":0,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":5,\"chestID\":\"season5BFC.colossal\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[5],\"predecessors\":[3],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":16464681722,\"progress\":0,\"id\":5,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}],\"ProductPackageItemCollectionTrophies\":[{\"order\":1,\"amount\":\"1\",\"trophyID\":\"promo2021BFC.stpatricks\",\"promoData\":{\"name\":\"Collection Trophies\",\"amount\":\"1\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[6],\"predecessors\":[4],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":16464681722,\"progress\":0,\"id\":6,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}],\"ProductPackageItemClubChips\":[{\"order\":1,\"title\":\"🍀 Club Bonus 🍀\",\"text\":\"scores BIG in the Puzzle Pursuit event!🍀🍀✨\",\"amount\":\"2500000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"2500000\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[7],\"predecessors\":[5],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":16464681722,\"progress\":0,\"id\":7,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}],\"ProductPackageItemCollectionChest\":[{\"tier\":5,\"amount\":2,\"order\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":2,\"chestName\":\"Colossal\",\"tier\":5,\"chestID\":\"season5BFC.colossal\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[8],\"predecessors\":[6],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":16464681722,\"progress\":0,\"id\":8,\"award\":{\"ProductPackageItemChips\":[{\"amount\":649640000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":649640000}}],\"ProductPackageItemCollectionChest\":[{\"tier\":5,\"amount\":3,\"order\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":3,\"chestName\":\"Colossal\",\"tier\":5,\"chestID\":\"season5BFC.colossal\"}}],\"ProductPackageItemCollectionFrames\":[{\"order\":3,\"amount\":\"1\",\"frameID\":\"promo2021BFC.stpatricks\",\"promoData\":{\"name\":\"Collection Frames\",\"amount\":\"1\"}}],\"ProductPackageItemClubChips\":[{\"order\":2,\"title\":\"🍀 Club Bonus 🍀\",\"text\":\"scores BIG in the Puzzle Pursuit event!🍀🍀🍀✨\",\"amount\":\"4000000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"4000000\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[],\"predecessors\":[7],\"formatString\":\"Win {max} chips\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[5],[6],[7],[8],[]],\"predecessors\":[[],[0],[1],[2],[3],[4],[5],[6],[7]]}},\"requireAwarded\":\"TRUE\",\"awardData\":null,\"manifest\":{\"tray_icon\":null},\"awarded\":false},\"secondsActive\":9111,\"secondsRemaining\":509289,\"slotsData\":[],\"giftsData\":[]}",
     "_N$instantiateMissionTrigger": true,
     "_N$retrieveMissionTrigger": false,
     "_N$updatePreviewDataTrigger": true,
-    "_N$componentUpdateCallbackTrigger": false
+    "_N$componentUpdateCallbackTrigger": true
   },
   {
     "__type__": "cc.Animation",

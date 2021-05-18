@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "269d37c6-da74-4f00-9035-379e2249cc29",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "father`s_day_background": {
+      "ver": "1.0.3",
+      "uuid": "dcd74076-704a-4df0-af08-8f6ba65f2b65",
+      "rawTextureUuid": "269d37c6-da74-4f00-9035-379e2249cc29",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 2.5,
+      "offsetY": 29.5,
+      "trimX": 20,
+      "trimY": 6,
+      "width": 605,
+      "height": 889,
+      "rawWidth": 640,
+      "rawHeight": 960,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
