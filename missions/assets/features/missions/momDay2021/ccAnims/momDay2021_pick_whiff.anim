@@ -1,0 +1,164 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "momDay2021_pick_whiff",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.5,
+  "sample": 60,
+  "speed": 0.5,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "pick_image": {
+        "props": {
+          "color": [
+            {
+              "frame": 0.06666666666666667,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 255
+              }
+            },
+            {
+              "frame": 0.15,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 127,
+                "g": 127,
+                "b": 127,
+                "a": 255
+              }
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.06666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.15,
+              "value": 255
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0.06666666666666667,
+              "value": 2
+            },
+            {
+              "frame": 0.15,
+              "value": 1.5
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0.06666666666666667,
+              "value": 2
+            },
+            {
+              "frame": 0.15,
+              "value": 1.5
+            }
+          ],
+          "y": [
+            {
+              "frame": 0.06666666666666667,
+              "value": -270
+            },
+            {
+              "frame": 0.15,
+              "value": -205
+            }
+          ]
+        }
+      },
+      "rewardTeaser": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.5,
+              "value": 127
+            }
+          ],
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 127,
+                "g": 127,
+                "b": 127,
+                "a": 255
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 127,
+                "g": 127,
+                "b": 127,
+                "a": 255
+              }
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 60
+            }
+          ]
+        }
+      },
+      "boxShadow": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0.06666666666666667,
+              "value": 2
+            },
+            {
+              "frame": 0.15,
+              "value": 1.4
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0.06666666666666667,
+              "value": 2
+            },
+            {
+              "frame": 0.15,
+              "value": 1.4
+            }
+          ]
+        }
+      }
+    },
+    "props": {}
+  },
+  "events": []
+}

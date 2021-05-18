@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "e1bb65ea-6a78-404e-80b4-876dfc0da23c",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "BigWinPickEmsBase": {
+      "ver": "1.0.3",
+      "uuid": "8a9808ab-ceba-4ae8-92ef-67dabb86db1b",
+      "rawTextureUuid": "e1bb65ea-6a78-404e-80b4-876dfc0da23c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 5,
+      "offsetY": -1.5,
+      "trimX": 12,
+      "trimY": 3,
+      "width": 1242,
+      "height": 1917,
+      "rawWidth": 1256,
+      "rawHeight": 1920,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

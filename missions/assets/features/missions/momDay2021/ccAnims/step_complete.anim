@@ -1,6 +1,6 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "step_outro",
+  "_name": "step_complete",
   "_objFlags": 0,
   "_rawFiles": null,
   "_duration": 0,
@@ -10,6 +10,26 @@
   "curveData": {
     "paths": {
       "buttons/button_claim": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        },
+        "comps": {
+          "cc.Button": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": true
+              }
+            ]
+          }
+        }
+      },
+      "buttons/play/button_play": {
         "props": {
           "active": [
             {
@@ -29,43 +49,12 @@
           }
         }
       },
-      "award_container": {
-        "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": true
-            }
-          ]
-        }
-      },
-      "buttons/play/button_play": {
-        "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": false
-            }
-          ]
-        },
-        "comps": {
-          "cc.Sprite": {},
-          "cc.Button": {
-            "enabled": [
-              {
-                "frame": 0,
-                "value": true
-              }
-            ]
-          }
-        }
-      },
       "completed_container": {
         "props": {
           "active": [
             {
               "frame": 0,
-              "value": false
+              "value": true
             }
           ]
         }
@@ -85,35 +74,61 @@
           "active": [
             {
               "frame": 0,
-              "value": false
+              "value": true
             }
           ]
         }
       },
-      "completed_container/shutter_spine": {
+      "award_container": {
         "props": {
           "active": [
             {
               "frame": 0,
-              "value": false
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
             }
           ]
         }
       },
-      "completed_container/shutter_spine2": {
+      "background/progress_container/progress_meter": {
+        "props": {}
+      },
+      "buttons/button_close": {
         "props": {
           "active": [
             {
               "frame": 0,
-              "value": false
+              "value": true
             }
           ]
         }
       },
       "background/collection_items": {
-        "props": {}
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
       },
-      "buttons/button_close": {
+      "background/step_descriptions": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "buttons/button_complete": {
         "props": {
           "active": [
             {
@@ -128,18 +143,11 @@
           "active": [
             {
               "frame": 0,
-              "value": false
+              "value": true
             }
           ]
         }
-      },
-      "background/progress_container/progress_meter": {
-        "props": {}
       }
-    },
-    "props": {},
-    "comps": {
-      "MissionProgressMeter": {}
     }
   },
   "events": []

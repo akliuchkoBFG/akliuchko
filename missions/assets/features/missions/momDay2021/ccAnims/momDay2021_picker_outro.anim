@@ -1,0 +1,126 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "momDay2021_picker_outro",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 3.3333333333333335,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "scaleX": [],
+      "scaleY": []
+    },
+    "paths": {
+      "Picks": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0.51
+            },
+            {
+              "frame": 3.0166666666666666,
+              "value": 0.51
+            },
+            {
+              "frame": 3.183333333333333,
+              "value": 0.58
+            },
+            {
+              "frame": 3.3333333333333335,
+              "value": 0.35
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0.51
+            },
+            {
+              "frame": 3.0166666666666666,
+              "value": 0.51
+            },
+            {
+              "frame": 3.183333333333333,
+              "value": 0.58
+            },
+            {
+              "frame": 3.3333333333333335,
+              "value": 0.35
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 3.183333333333333,
+              "value": 255
+            },
+            {
+              "frame": 3.3333333333333335,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Background": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 2.5
+            },
+            {
+              "frame": 3,
+              "value": 2.5
+            },
+            {
+              "frame": 3.1666666666666665,
+              "value": 2.58
+            },
+            {
+              "frame": 3.3333333333333335,
+              "value": 1.7
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 2.5
+            },
+            {
+              "frame": 3,
+              "value": 2.5
+            },
+            {
+              "frame": 3.1666666666666665,
+              "value": 2.58
+            },
+            {
+              "frame": 3.3333333333333335,
+              "value": 1.7
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 3.1666666666666665,
+              "value": 255
+            },
+            {
+              "frame": 3.3333333333333335,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Picks/pick_1": {
+        "props": {}
+      }
+    }
+  },
+  "events": []
+}

@@ -21,7 +21,7 @@
     "_active": true,
     "_components": [],
     "_prefab": null,
-    "_id": "469d72f5-444d-4779-8d6e-46358985bc39",
+    "_id": "23e72d69-b191-4cfa-ba11-bd4ca4f34d4d",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -63,7 +63,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 247
+        "__id__": 229
       },
       {
         "__id__": 8
@@ -122,16 +122,16 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 244
+        "__id__": 226
       },
       {
         "__id__": 7
       },
       {
-        "__id__": 245
+        "__id__": 227
       },
       {
-        "__id__": 246
+        "__id__": 228
       }
     ],
     "_prefab": null,
@@ -345,13 +345,13 @@
         "__id__": 11
       },
       {
-        "__id__": 176
+        "__id__": 166
       },
       {
-        "__id__": 188
+        "__id__": 178
       },
       {
-        "__id__": 212
+        "__id__": 202
       }
     ],
     "_tag": -1,
@@ -361,10 +361,10 @@
         "__id__": 44
       },
       {
-        "__id__": 184
+        "__id__": 174
       },
       {
-        "__id__": 243
+        "__id__": 225
       }
     ],
     "_prefab": null,
@@ -431,17 +431,14 @@
         "__id__": 140
       },
       {
-        "__id__": 168
+        "__id__": 159
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 174
-      },
-      {
-        "__id__": 175
+        "__id__": 165
       }
     ],
     "_prefab": null,
@@ -524,7 +521,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 366.9,
+      "width": 379.05,
       "height": 90
     },
     "_rotationX": 0,
@@ -579,7 +576,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 366.9,
+      "width": 379.05,
       "height": 90
     },
     "_rotationX": 0,
@@ -606,7 +603,7 @@
       "__id__": 13
     },
     "_enabled": true,
-    "_N$string": "<color=#ffffd7 >Celebrate Father's Day by</color>\n<color=#ffbe00 >completing steps in any slot</color><color=#ffffd7 > to\nfinish the puzzle and </color><color=#ffbe00 >win prizes!</color>",
+    "_N$string": "<color=#ffffd7 >Play in</color> <color=#ffbe00 >The Zappening: Lucky\n Remix</color><color=#ffffd7 > to complete your puzzle \nand win</color> <color=#ffbe00 >club bonuses</color><color=#ffffd7 > and prizes!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 25,
     "_N$font": {
@@ -627,7 +624,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#ffffd7 >Celebrate Father's Day by</color>\n<color=#ffbe00 >completing steps in any slot</color><color=#ffffd7 > to\nfinish the puzzle and </color><color=#ffbe00 >win prizes!</color>",
+    "_N$templateString": "<color=#ffffd7 >Play in</color> <color=#ffbe00 >The Zappening: Lucky\n Remix</color><color=#ffffd7 > to complete your puzzle \nand win</color> <color=#ffbe00 >club bonuses</color><color=#ffffd7 > and prizes!</color>",
     "_N$testData": "{}"
   },
   {
@@ -639,7 +636,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 17
@@ -767,7 +764,7 @@
       "__id__": 12
     },
     "_enabled": true,
-    "_N$string": "<color=#008000>Celebrate Father's Day by</color>\n<color=#753100>completing steps in any slot</color><color=#008000> to\nfinish the puzzle and </color><color=#753100>win prizes!</color>",
+    "_N$string": "<color=#008000>Play in</color> <color=#753100>The Zappening: Lucky\n Remix</color><color=#008000> to complete your puzzle \nand win</color> <color=#753100>club bonuses</color><color=#008000> and prizes!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 25,
     "_N$font": {
@@ -788,7 +785,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#008000>Celebrate Father's Day by</color>\n<color=#753100>completing steps in any slot</color><color=#008000> to\nfinish the puzzle and </color><color=#753100>win prizes!</color>",
+    "_N$templateString": "<color=#008000>Play in</color> <color=#753100>The Zappening: Lucky\n Remix</color><color=#008000> to complete your puzzle \nand win</color> <color=#753100>club bonuses</color><color=#008000> and prizes!</color>",
     "_N$testData": "{}"
   },
   {
@@ -834,7 +831,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 366.9,
+      "width": 330.47,
       "height": 90
     },
     "_rotationX": 0,
@@ -916,7 +913,7 @@
       "__id__": 23
     },
     "_enabled": true,
-    "_N$string": "<color=#ffffd7 >Celebrate Father's Day by</color>\n<color=#ffbe00 >completing steps in any slot</color><color=#ffffd7 > to\nfinish the puzzle and </color><color=#ffbe00 >win prizes!</color>",
+    "_N$string": "<color=#ffffd7>Play in</color> <color=#ffbe00>any machine</color><color=#ffffd7> to \ncomplete your puzzle and \nwin</color> <color=#ffbe00>club bonuses</color><color=#ffffd7> and prizes!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 25,
     "_N$font": {
@@ -937,7 +934,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#ffffd7 >Celebrate Father's Day by</color>\n<color=#ffbe00 >completing steps in any slot</color><color=#ffffd7 > to\nfinish the puzzle and </color><color=#ffbe00 >win prizes!</color>",
+    "_N$templateString": "<color=#ffffd7>Play in</color> <color=#ffbe00>any machine</color><color=#ffffd7> to \ncomplete your puzzle and \nwin</color> <color=#ffbe00>club bonuses</color><color=#ffffd7> and prizes!</color>",
     "_N$testData": "{}"
   },
   {
@@ -949,7 +946,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 27
@@ -1077,7 +1074,7 @@
       "__id__": 22
     },
     "_enabled": true,
-    "_N$string": "<color=#008000>Celebrate Father's Day by</color>\n<color=#753100>completing steps in any slot</color><color=#008000> to\nfinish the puzzle and </color><color=#753100>win prizes!</color>",
+    "_N$string": "<color=#008000>Play in</color> <color=#753100>any machine</color><color=#008000> to \ncomplete your puzzle and \nwin</color> <color=#753100>club bonuses</color><color=#008000> and prizes!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 25,
     "_N$font": {
@@ -1098,7 +1095,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#008000>Celebrate Father's Day by</color>\n<color=#753100>completing steps in any slot</color><color=#008000> to\nfinish the puzzle and </color><color=#753100>win prizes!</color>",
+    "_N$templateString": "<color=#008000>Play in</color> <color=#753100>any machine</color><color=#008000> to \ncomplete your puzzle and \nwin</color> <color=#753100>club bonuses</color><color=#008000> and prizes!</color>",
     "_N$testData": "{}"
   },
   {
@@ -1154,7 +1151,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 55,
-      "y": 311.8
+      "y": 307.8
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -1273,8 +1270,8 @@
     "_enabled": true,
     "onFinished": [],
     "_N$hours": 0,
-    "_N$minutes": 10,
-    "_N$seconds": 30,
+    "_N$minutes": 0,
+    "_N$seconds": 0,
     "_N$finishedAction": 0
   },
   {
@@ -1530,8 +1527,7 @@
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 44
-    },
-    "textConfiguration": null
+    }
   },
   {
     "__type__": "a3d129+YKJA1p6ETMEhW+tU",
@@ -1545,11 +1541,13 @@
       "__id__": 7
     },
     "dependentSteps": [
-      1
+      2
     ],
-    "predecessorSteps": [],
+    "predecessorSteps": [
+      0
+    ],
     "useActiveStepIDOnly": true,
-    "_N$stepID": "0"
+    "_N$stepID": "1"
   },
   {
     "__type__": "cc.RichText",
@@ -1593,8 +1591,7 @@
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 44
-    },
-    "textConfiguration": null
+    }
   },
   {
     "__type__": "cc.Node",
@@ -1756,8 +1753,7 @@
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 44
-    },
-    "textConfiguration": null
+    }
   },
   {
     "__type__": "cc.RichText",
@@ -1799,8 +1795,7 @@
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 44
-    },
-    "textConfiguration": null
+    }
   },
   {
     "__type__": "cc.Node",
@@ -1962,8 +1957,7 @@
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 44
-    },
-    "textConfiguration": null
+    }
   },
   {
     "__type__": "cc.RichText",
@@ -2005,8 +1999,7 @@
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 44
-    },
-    "textConfiguration": null
+    }
   },
   {
     "__type__": "cc.Node",
@@ -2168,8 +2161,7 @@
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 44
-    },
-    "textConfiguration": null
+    }
   },
   {
     "__type__": "cc.RichText",
@@ -2211,8 +2203,7 @@
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 44
-    },
-    "textConfiguration": null
+    }
   },
   {
     "__type__": "cc.Node",
@@ -2374,8 +2365,7 @@
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 44
-    },
-    "textConfiguration": null
+    }
   },
   {
     "__type__": "cc.RichText",
@@ -2417,8 +2407,7 @@
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 44
-    },
-    "textConfiguration": null
+    }
   },
   {
     "__type__": "cc.Node",
@@ -2580,8 +2569,7 @@
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 44
-    },
-    "textConfiguration": null
+    }
   },
   {
     "__type__": "cc.RichText",
@@ -2623,8 +2611,7 @@
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 44
-    },
-    "textConfiguration": null
+    }
   },
   {
     "__type__": "cc.Node",
@@ -2786,8 +2773,7 @@
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 44
-    },
-    "textConfiguration": null
+    }
   },
   {
     "__type__": "cc.RichText",
@@ -2829,8 +2815,7 @@
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 44
-    },
-    "textConfiguration": null
+    }
   },
   {
     "__type__": "cc.Node",
@@ -2992,8 +2977,7 @@
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 44
-    },
-    "textConfiguration": null
+    }
   },
   {
     "__type__": "cc.RichText",
@@ -3035,8 +3019,7 @@
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 44
-    },
-    "textConfiguration": null
+    }
   },
   {
     "__type__": "cc.Node",
@@ -3198,8 +3181,7 @@
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 44
-    },
-    "textConfiguration": null
+    }
   },
   {
     "__type__": "cc.RichText",
@@ -3241,8 +3223,7 @@
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 44
-    },
-    "textConfiguration": null
+    }
   },
   {
     "__type__": "cc.Node",
@@ -3459,8 +3440,7 @@
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 44
-    },
-    "textConfiguration": null
+    }
   },
   {
     "__type__": "cc.RichText",
@@ -3502,8 +3482,7 @@
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 44
-    },
-    "textConfiguration": null
+    }
   },
   {
     "__type__": "cc.Node",
@@ -3665,8 +3644,7 @@
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 44
-    },
-    "textConfiguration": null
+    }
   },
   {
     "__type__": "cc.RichText",
@@ -3708,8 +3686,7 @@
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 44
-    },
-    "textConfiguration": null
+    }
   },
   {
     "__type__": "cc.Node",
@@ -4066,28 +4043,28 @@
         "__id__": 141
       },
       {
-        "__id__": 144
+        "__id__": 143
+      },
+      {
+        "__id__": 145
       },
       {
         "__id__": 147
       },
       {
-        "__id__": 150
+        "__id__": 149
+      },
+      {
+        "__id__": 151
       },
       {
         "__id__": 153
       },
       {
-        "__id__": 156
+        "__id__": 155
       },
       {
-        "__id__": 159
-      },
-      {
-        "__id__": 162
-      },
-      {
-        "__id__": 165
+        "__id__": 157
       }
     ],
     "_tag": -1,
@@ -4143,9 +4120,6 @@
     "_components": [
       {
         "__id__": 142
-      },
-      {
-        "__id__": 143
       }
     ],
     "_prefab": null,
@@ -4186,16 +4160,6 @@
     "groupIndex": 0
   },
   {
-    "__type__": "c9bfcy5lthF9YjdQZA2x0m3",
-    "_name": "",
-    "_objFlags": 16,
-    "node": {
-      "__id__": 141
-    },
-    "_enabled": true,
-    "isReskinned": false
-  },
-  {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
@@ -4233,10 +4197,7 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 145
-      },
-      {
-        "__id__": 146
+        "__id__": 144
       }
     ],
     "_prefab": null,
@@ -4277,21 +4238,11 @@
     "groupIndex": 0
   },
   {
-    "__type__": "c9bfcy5lthF9YjdQZA2x0m3",
-    "_name": "",
-    "_objFlags": 16,
-    "node": {
-      "__id__": 144
-    },
-    "_enabled": true,
-    "isReskinned": false
-  },
-  {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 144
+      "__id__": 143
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -4324,10 +4275,7 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 148
-      },
-      {
-        "__id__": 149
+        "__id__": 146
       }
     ],
     "_prefab": null,
@@ -4368,21 +4316,11 @@
     "groupIndex": 0
   },
   {
-    "__type__": "c9bfcy5lthF9YjdQZA2x0m3",
-    "_name": "",
-    "_objFlags": 16,
-    "node": {
-      "__id__": 147
-    },
-    "_enabled": true,
-    "isReskinned": false
-  },
-  {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 147
+      "__id__": 145
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -4415,10 +4353,7 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 151
-      },
-      {
-        "__id__": 152
+        "__id__": 148
       }
     ],
     "_prefab": null,
@@ -4459,21 +4394,11 @@
     "groupIndex": 0
   },
   {
-    "__type__": "c9bfcy5lthF9YjdQZA2x0m3",
-    "_name": "",
-    "_objFlags": 16,
-    "node": {
-      "__id__": 150
-    },
-    "_enabled": true,
-    "isReskinned": false
-  },
-  {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 150
+      "__id__": 147
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -4506,10 +4431,7 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 154
-      },
-      {
-        "__id__": 155
+        "__id__": 150
       }
     ],
     "_prefab": null,
@@ -4550,21 +4472,11 @@
     "groupIndex": 0
   },
   {
-    "__type__": "c9bfcy5lthF9YjdQZA2x0m3",
-    "_name": "",
-    "_objFlags": 16,
-    "node": {
-      "__id__": 153
-    },
-    "_enabled": true,
-    "isReskinned": false
-  },
-  {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 153
+      "__id__": 149
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -4597,10 +4509,7 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 157
-      },
-      {
-        "__id__": 158
+        "__id__": 152
       }
     ],
     "_prefab": null,
@@ -4641,21 +4550,11 @@
     "groupIndex": 0
   },
   {
-    "__type__": "c9bfcy5lthF9YjdQZA2x0m3",
-    "_name": "",
-    "_objFlags": 16,
-    "node": {
-      "__id__": 156
-    },
-    "_enabled": true,
-    "isReskinned": false
-  },
-  {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 156
+      "__id__": 151
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -4688,10 +4587,7 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 160
-      },
-      {
-        "__id__": 161
+        "__id__": 154
       }
     ],
     "_prefab": null,
@@ -4732,21 +4628,11 @@
     "groupIndex": 0
   },
   {
-    "__type__": "c9bfcy5lthF9YjdQZA2x0m3",
-    "_name": "",
-    "_objFlags": 16,
-    "node": {
-      "__id__": 159
-    },
-    "_enabled": true,
-    "isReskinned": false
-  },
-  {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 159
+      "__id__": 153
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -4779,10 +4665,7 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 163
-      },
-      {
-        "__id__": 164
+        "__id__": 156
       }
     ],
     "_prefab": null,
@@ -4823,21 +4706,11 @@
     "groupIndex": 0
   },
   {
-    "__type__": "c9bfcy5lthF9YjdQZA2x0m3",
-    "_name": "",
-    "_objFlags": 16,
-    "node": {
-      "__id__": 162
-    },
-    "_enabled": true,
-    "isReskinned": false
-  },
-  {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 162
+      "__id__": 155
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -4870,10 +4743,7 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 166
-      },
-      {
-        "__id__": 167
+        "__id__": 158
       }
     ],
     "_prefab": null,
@@ -4914,21 +4784,11 @@
     "groupIndex": 0
   },
   {
-    "__type__": "c9bfcy5lthF9YjdQZA2x0m3",
-    "_name": "",
-    "_objFlags": 16,
-    "node": {
-      "__id__": 165
-    },
-    "_enabled": true,
-    "isReskinned": false
-  },
-  {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 165
+      "__id__": 157
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -4958,17 +4818,17 @@
     },
     "_children": [
       {
-        "__id__": 169
+        "__id__": 160
       },
       {
-        "__id__": 171
+        "__id__": 162
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 173
+        "__id__": 164
       }
     ],
     "_prefab": null,
@@ -4998,7 +4858,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 208,
+      "x": 214,
       "y": 285
     },
     "_skewX": 0,
@@ -5013,14 +4873,14 @@
     "_name": "highRoller",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 168
+      "__id__": 159
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 170
+        "__id__": 161
       }
     ],
     "_prefab": null,
@@ -5065,7 +4925,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 169
+      "__id__": 160
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -5091,14 +4951,14 @@
     "_name": "vip",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 168
+      "__id__": 159
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
-        "__id__": 172
+        "__id__": 163
       }
     ],
     "_prefab": null,
@@ -5143,7 +5003,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 171
+      "__id__": 162
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -5169,28 +5029,18 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 168
+      "__id__": 159
     },
     "_enabled": true,
     "missionInterface": {
       "__id__": 7
     },
     "badge_VIP": {
-      "__id__": 171
+      "__id__": 162
     },
     "badge_HR": {
-      "__id__": 169
+      "__id__": 160
     }
-  },
-  {
-    "__type__": "c9bfcy5lthF9YjdQZA2x0m3",
-    "_name": "",
-    "_objFlags": 16,
-    "node": {
-      "__id__": 11
-    },
-    "_enabled": true,
-    "isReskinned": true
   },
   {
     "__type__": "cc.Sprite",
@@ -5201,7 +5051,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "dcd74076-704a-4df0-af08-8f6ba65f2b65"
+      "__uuid__": "da476b10-d430-4225-b1ef-232ac7444a1a"
     },
     "_type": 0,
     "_sizeMode": 2,
@@ -5227,20 +5077,20 @@
     },
     "_children": [
       {
-        "__id__": 177
+        "__id__": 167
       },
       {
-        "__id__": 179
+        "__id__": 169
       }
     ],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 182
+        "__id__": 172
       },
       {
-        "__id__": 187
+        "__id__": 177
       }
     ],
     "_prefab": null,
@@ -5285,14 +5135,14 @@
     "_name": "reward_bg",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 176
+      "__id__": 166
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 178
+        "__id__": 168
       }
     ],
     "_prefab": null,
@@ -5337,7 +5187,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 177
+      "__id__": 167
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -5363,11 +5213,11 @@
     "_name": "top_label",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 176
+      "__id__": 166
     },
     "_children": [
       {
-        "__id__": 180
+        "__id__": 170
       }
     ],
     "_tag": -1,
@@ -5415,14 +5265,14 @@
     "_name": "rewards_banner",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 179
+      "__id__": 169
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 181
+        "__id__": 171
       }
     ],
     "_prefab": null,
@@ -5467,7 +5317,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 180
+      "__id__": 170
     },
     "_enabled": true,
     "_paused": false,
@@ -5487,7 +5337,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 176
+      "__id__": 166
     },
     "_enabled": true,
     "rewardPrefabs": [
@@ -5496,23 +5346,23 @@
       }
     ],
     "intro": {
-      "__id__": 183
+      "__id__": 173
     },
     "transition": {
-      "__id__": 185
+      "__id__": 175
     },
     "outro": {
-      "__id__": 186
+      "__id__": 176
     },
     "_N$animation": {
-      "__id__": 184
+      "__id__": 174
     }
   },
   {
     "__type__": "AnimationClipProperty",
     "_clipName": "claim_intro",
     "_animation": {
-      "__id__": 184
+      "__id__": 174
     },
     "_clip": {
       "__uuid__": "1a3bc009-f9b1-461c-828b-8e58be9add10"
@@ -5553,7 +5403,7 @@
     "__type__": "AnimationClipProperty",
     "_clipName": "",
     "_animation": {
-      "__id__": 184
+      "__id__": 174
     },
     "_clip": {
       "__uuid__": "755b181c-4d98-406c-8666-049895dc251e"
@@ -5563,7 +5413,7 @@
     "__type__": "AnimationClipProperty",
     "_clipName": "claim_outro",
     "_animation": {
-      "__id__": 184
+      "__id__": 174
     },
     "_clip": {
       "__uuid__": "2cb5b32e-afbc-4909-8ff4-90c42d5dc7c9"
@@ -5574,7 +5424,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 176
+      "__id__": 166
     },
     "_enabled": true,
     "missionStepInterface": {
@@ -5590,16 +5440,16 @@
     },
     "_children": [
       {
+        "__id__": 179
+      },
+      {
+        "__id__": 184
+      },
+      {
         "__id__": 189
       },
       {
-        "__id__": 194
-      },
-      {
-        "__id__": 199
-      },
-      {
-        "__id__": 207
+        "__id__": 197
       }
     ],
     "_tag": -1,
@@ -5647,20 +5497,20 @@
     "_name": "button_claim",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 188
+      "__id__": 178
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 190
+        "__id__": 180
       },
       {
-        "__id__": 191
+        "__id__": 181
       },
       {
-        "__id__": 193
+        "__id__": 183
       }
     ],
     "_prefab": null,
@@ -5705,7 +5555,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 189
+      "__id__": 179
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -5731,7 +5581,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 189
+      "__id__": 179
     },
     "_enabled": true,
     "transition": 2,
@@ -5757,7 +5607,7 @@
     "hoverSprite": null,
     "clickEvents": [
       {
-        "__id__": 192
+        "__id__": 182
       }
     ],
     "_N$interactable": true,
@@ -5781,13 +5631,13 @@
     },
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 189
+      "__id__": 179
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 189
+      "__id__": 179
     },
     "component": "MissionStepClaimButton",
     "handler": "performMissionStepAction",
@@ -5798,7 +5648,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 189
+      "__id__": 179
     },
     "_enabled": true,
     "missionStepInterface": {
@@ -5810,20 +5660,20 @@
     "_name": "button_complete",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 188
+      "__id__": 178
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 195
+        "__id__": 185
       },
       {
-        "__id__": 196
+        "__id__": 186
       },
       {
-        "__id__": 198
+        "__id__": 188
       }
     ],
     "_prefab": null,
@@ -5868,7 +5718,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 194
+      "__id__": 184
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -5894,7 +5744,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 194
+      "__id__": 184
     },
     "_enabled": true,
     "transition": 2,
@@ -5920,7 +5770,7 @@
     "hoverSprite": null,
     "clickEvents": [
       {
-        "__id__": 197
+        "__id__": 187
       }
     ],
     "_N$interactable": true,
@@ -5944,13 +5794,13 @@
     },
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 194
+      "__id__": 184
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 194
+      "__id__": 184
     },
     "component": "DispatchActionClose",
     "handler": "performAction",
@@ -5961,7 +5811,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 194
+      "__id__": 184
     },
     "_enabled": true,
     "_actionName": "close",
@@ -5972,11 +5822,11 @@
     "_name": "play",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 188
+      "__id__": 178
     },
     "_children": [
       {
-        "__id__": 200
+        "__id__": 190
       }
     ],
     "_tag": -1,
@@ -6024,23 +5874,23 @@
     "_name": "button_play",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 199
+      "__id__": 189
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 201
+        "__id__": 191
       },
       {
-        "__id__": 202
+        "__id__": 192
       },
       {
-        "__id__": 205
+        "__id__": 195
       },
       {
-        "__id__": 206
+        "__id__": 196
       }
     ],
     "_prefab": null,
@@ -6085,7 +5935,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 200
+      "__id__": 190
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -6111,7 +5961,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 200
+      "__id__": 190
     },
     "_enabled": false,
     "transition": 2,
@@ -6137,10 +5987,10 @@
     "hoverSprite": null,
     "clickEvents": [
       {
-        "__id__": 203
+        "__id__": 193
       },
       {
-        "__id__": 204
+        "__id__": 194
       }
     ],
     "_N$interactable": true,
@@ -6164,13 +6014,13 @@
     },
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 200
+      "__id__": 190
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 200
+      "__id__": 190
     },
     "component": "MissionStepPlayButton",
     "handler": "performMissionStepAction",
@@ -6179,7 +6029,7 @@
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 200
+      "__id__": 190
     },
     "component": "DispatchActionClose",
     "handler": "performAction",
@@ -6190,7 +6040,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 200
+      "__id__": 190
     },
     "_enabled": true,
     "_actionName": "close",
@@ -6201,7 +6051,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 200
+      "__id__": 190
     },
     "_enabled": true,
     "missionStepInterface": {
@@ -6215,20 +6065,20 @@
     "_name": "button_close",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 188
+      "__id__": 178
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 208
+        "__id__": 198
       },
       {
-        "__id__": 209
+        "__id__": 199
       },
       {
-        "__id__": 211
+        "__id__": 201
       }
     ],
     "_prefab": null,
@@ -6273,7 +6123,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 207
+      "__id__": 197
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -6299,7 +6149,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 207
+      "__id__": 197
     },
     "_enabled": true,
     "transition": 2,
@@ -6325,7 +6175,7 @@
     "hoverSprite": null,
     "clickEvents": [
       {
-        "__id__": 210
+        "__id__": 200
       }
     ],
     "_N$interactable": true,
@@ -6349,13 +6199,13 @@
     },
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 207
+      "__id__": 197
     }
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 207
+      "__id__": 197
     },
     "component": "DispatchActionClose",
     "handler": "performAction",
@@ -6366,7 +6216,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 207
+      "__id__": 197
     },
     "_enabled": true,
     "_actionName": "close",
@@ -6381,10 +6231,10 @@
     },
     "_children": [
       {
-        "__id__": 213
+        "__id__": 203
       },
       {
-        "__id__": 216
+        "__id__": 205
       }
     ],
     "_tag": -1,
@@ -6432,17 +6282,14 @@
     "_name": "puzzle_complete",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 212
+      "__id__": 202
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 214
-      },
-      {
-        "__id__": 215
+        "__id__": 204
       }
     ],
     "_prefab": null,
@@ -6483,21 +6330,11 @@
     "groupIndex": 0
   },
   {
-    "__type__": "c9bfcy5lthF9YjdQZA2x0m3",
-    "_name": "",
-    "_objFlags": 16,
-    "node": {
-      "__id__": 213
-    },
-    "_enabled": true,
-    "isReskinned": false
-  },
-  {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 213
+      "__id__": 203
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -6523,35 +6360,35 @@
     "_name": "spine_animations",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 212
+      "__id__": 202
     },
     "_children": [
+      {
+        "__id__": 206
+      },
+      {
+        "__id__": 209
+      },
+      {
+        "__id__": 211
+      },
+      {
+        "__id__": 213
+      },
+      {
+        "__id__": 215
+      },
       {
         "__id__": 217
       },
       {
-        "__id__": 220
+        "__id__": 219
+      },
+      {
+        "__id__": 221
       },
       {
         "__id__": 223
-      },
-      {
-        "__id__": 225
-      },
-      {
-        "__id__": 228
-      },
-      {
-        "__id__": 231
-      },
-      {
-        "__id__": 234
-      },
-      {
-        "__id__": 237
-      },
-      {
-        "__id__": 240
       }
     ],
     "_tag": -1,
@@ -6599,17 +6436,17 @@
     "_name": "step1_complete_spine",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 216
+      "__id__": 205
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 218
+        "__id__": 207
       },
       {
-        "__id__": 219
+        "__id__": 208
       }
     ],
     "_prefab": null,
@@ -6654,17 +6491,17 @@
     "_name": "",
     "_objFlags": 16,
     "node": {
-      "__id__": 217
+      "__id__": 206
     },
     "_enabled": true,
-    "isReskinned": false
+    "isReskinned": true
   },
   {
     "__type__": "sp.Skeleton",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 217
+      "__id__": 206
     },
     "_enabled": true,
     "_paused": false,
@@ -6684,17 +6521,14 @@
     "_name": "step2_complete_spine",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 216
+      "__id__": 205
     },
     "_children": [],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 221
-      },
-      {
-        "__id__": 222
+        "__id__": 210
       }
     ],
     "_prefab": null,
@@ -6735,21 +6569,11 @@
     "groupIndex": 0
   },
   {
-    "__type__": "19401iljp5BspU5la002XLd",
-    "_name": "",
-    "_objFlags": 16,
-    "node": {
-      "__id__": 220
-    },
-    "_enabled": true,
-    "isReskinned": false
-  },
-  {
     "__type__": "sp.Skeleton",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 220
+      "__id__": 209
     },
     "_enabled": true,
     "_paused": false,
@@ -6769,7 +6593,439 @@
     "_name": "step3_complete_spine",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 216
+      "__id__": 205
+    },
+    "_children": [],
+    "_tag": -1,
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 212
+      }
+    ],
+    "_prefab": null,
+    "_id": "89xsOM+KZON7pgBk2RUsAR",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 8
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "sp.Skeleton",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 211
+    },
+    "_enabled": true,
+    "_paused": false,
+    "defaultSkin": "",
+    "defaultAnimation": "piece3",
+    "loop": false,
+    "_premultipliedAlpha": true,
+    "_N$skeletonData": {
+      "__uuid__": "91b3c463-9f29-4276-9258-4fe58eecbc9f"
+    },
+    "_N$timeScale": 1,
+    "_N$debugSlots": false,
+    "_N$debugBones": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "step4_complete_spine",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 205
+    },
+    "_children": [],
+    "_tag": -1,
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 214
+      }
+    ],
+    "_prefab": null,
+    "_id": "b5o3uma+RMraVXGSwvpASm",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 8
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "sp.Skeleton",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 213
+    },
+    "_enabled": true,
+    "_paused": false,
+    "defaultSkin": "",
+    "defaultAnimation": "piece4",
+    "loop": false,
+    "_premultipliedAlpha": true,
+    "_N$skeletonData": {
+      "__uuid__": "91b3c463-9f29-4276-9258-4fe58eecbc9f"
+    },
+    "_N$timeScale": 1,
+    "_N$debugSlots": false,
+    "_N$debugBones": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "step5_complete_spine",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 205
+    },
+    "_children": [],
+    "_tag": -1,
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 216
+      }
+    ],
+    "_prefab": null,
+    "_id": "42yf+ZJQNMJLVR/21OSQXd",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 8
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "sp.Skeleton",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 215
+    },
+    "_enabled": true,
+    "_paused": false,
+    "defaultSkin": "",
+    "defaultAnimation": "piece5",
+    "loop": false,
+    "_premultipliedAlpha": true,
+    "_N$skeletonData": {
+      "__uuid__": "91b3c463-9f29-4276-9258-4fe58eecbc9f"
+    },
+    "_N$timeScale": 1,
+    "_N$debugSlots": false,
+    "_N$debugBones": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "step6_complete_spine",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 205
+    },
+    "_children": [],
+    "_tag": -1,
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 218
+      }
+    ],
+    "_prefab": null,
+    "_id": "2fQK3I7kpGEoz3PrywvoX6",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 8
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "sp.Skeleton",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 217
+    },
+    "_enabled": true,
+    "_paused": false,
+    "defaultSkin": "",
+    "defaultAnimation": "piece6",
+    "loop": false,
+    "_premultipliedAlpha": true,
+    "_N$skeletonData": {
+      "__uuid__": "91b3c463-9f29-4276-9258-4fe58eecbc9f"
+    },
+    "_N$timeScale": 1,
+    "_N$debugSlots": false,
+    "_N$debugBones": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "step7_complete_spine",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 205
+    },
+    "_children": [],
+    "_tag": -1,
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 220
+      }
+    ],
+    "_prefab": null,
+    "_id": "ceRIN35WJNZ72vq5Qdnliv",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 8
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "sp.Skeleton",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 219
+    },
+    "_enabled": true,
+    "_paused": false,
+    "defaultSkin": "",
+    "defaultAnimation": "piece7",
+    "loop": false,
+    "_premultipliedAlpha": true,
+    "_N$skeletonData": {
+      "__uuid__": "91b3c463-9f29-4276-9258-4fe58eecbc9f"
+    },
+    "_N$timeScale": 1,
+    "_N$debugSlots": false,
+    "_N$debugBones": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "step8_complete_spine",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 205
+    },
+    "_children": [],
+    "_tag": -1,
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 222
+      }
+    ],
+    "_prefab": null,
+    "_id": "19MEVtG6xMsJUOL2tz5BJN",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 8
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "sp.Skeleton",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 221
+    },
+    "_enabled": true,
+    "_paused": false,
+    "defaultSkin": "",
+    "defaultAnimation": "piece8",
+    "loop": false,
+    "_premultipliedAlpha": true,
+    "_N$skeletonData": {
+      "__uuid__": "91b3c463-9f29-4276-9258-4fe58eecbc9f"
+    },
+    "_N$timeScale": 1,
+    "_N$debugSlots": false,
+    "_N$debugBones": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "step9_complete_spine",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 205
     },
     "_children": [],
     "_tag": -1,
@@ -6780,7 +7036,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "89xsOM+KZON7pgBk2RUsAR",
+    "_id": "43InKI7cBPUqfQd1GgWTKN",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -6826,516 +7082,6 @@
     "_enabled": true,
     "_paused": false,
     "defaultSkin": "",
-    "defaultAnimation": "piece3",
-    "loop": false,
-    "_premultipliedAlpha": true,
-    "_N$skeletonData": {
-      "__uuid__": "91b3c463-9f29-4276-9258-4fe58eecbc9f"
-    },
-    "_N$timeScale": 1,
-    "_N$debugSlots": false,
-    "_N$debugBones": false
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "step4_complete_spine",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 216
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": false,
-    "_components": [
-      {
-        "__id__": 226
-      },
-      {
-        "__id__": 227
-      }
-    ],
-    "_prefab": null,
-    "_id": "b5o3uma+RMraVXGSwvpASm",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 0,
-      "height": 0
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 8
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "19401iljp5BspU5la002XLd",
-    "_name": "",
-    "_objFlags": 16,
-    "node": {
-      "__id__": 225
-    },
-    "_enabled": true,
-    "isReskinned": false
-  },
-  {
-    "__type__": "sp.Skeleton",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 225
-    },
-    "_enabled": true,
-    "_paused": false,
-    "defaultSkin": "",
-    "defaultAnimation": "piece4",
-    "loop": false,
-    "_premultipliedAlpha": true,
-    "_N$skeletonData": {
-      "__uuid__": "91b3c463-9f29-4276-9258-4fe58eecbc9f"
-    },
-    "_N$timeScale": 1,
-    "_N$debugSlots": false,
-    "_N$debugBones": false
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "step5_complete_spine",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 216
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": false,
-    "_components": [
-      {
-        "__id__": 229
-      },
-      {
-        "__id__": 230
-      }
-    ],
-    "_prefab": null,
-    "_id": "42yf+ZJQNMJLVR/21OSQXd",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 0,
-      "height": 0
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 8
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "19401iljp5BspU5la002XLd",
-    "_name": "",
-    "_objFlags": 16,
-    "node": {
-      "__id__": 228
-    },
-    "_enabled": true,
-    "isReskinned": false
-  },
-  {
-    "__type__": "sp.Skeleton",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 228
-    },
-    "_enabled": true,
-    "_paused": false,
-    "defaultSkin": "",
-    "defaultAnimation": "piece5",
-    "loop": false,
-    "_premultipliedAlpha": true,
-    "_N$skeletonData": {
-      "__uuid__": "91b3c463-9f29-4276-9258-4fe58eecbc9f"
-    },
-    "_N$timeScale": 1,
-    "_N$debugSlots": false,
-    "_N$debugBones": false
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "step6_complete_spine",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 216
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": false,
-    "_components": [
-      {
-        "__id__": 232
-      },
-      {
-        "__id__": 233
-      }
-    ],
-    "_prefab": null,
-    "_id": "2fQK3I7kpGEoz3PrywvoX6",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 0,
-      "height": 0
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 8
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "19401iljp5BspU5la002XLd",
-    "_name": "",
-    "_objFlags": 16,
-    "node": {
-      "__id__": 231
-    },
-    "_enabled": true,
-    "isReskinned": false
-  },
-  {
-    "__type__": "sp.Skeleton",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 231
-    },
-    "_enabled": true,
-    "_paused": false,
-    "defaultSkin": "",
-    "defaultAnimation": "piece6",
-    "loop": false,
-    "_premultipliedAlpha": true,
-    "_N$skeletonData": {
-      "__uuid__": "91b3c463-9f29-4276-9258-4fe58eecbc9f"
-    },
-    "_N$timeScale": 1,
-    "_N$debugSlots": false,
-    "_N$debugBones": false
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "step7_complete_spine",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 216
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": false,
-    "_components": [
-      {
-        "__id__": 235
-      },
-      {
-        "__id__": 236
-      }
-    ],
-    "_prefab": null,
-    "_id": "ceRIN35WJNZ72vq5Qdnliv",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 0,
-      "height": 0
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 8
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "19401iljp5BspU5la002XLd",
-    "_name": "",
-    "_objFlags": 16,
-    "node": {
-      "__id__": 234
-    },
-    "_enabled": true,
-    "isReskinned": false
-  },
-  {
-    "__type__": "sp.Skeleton",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 234
-    },
-    "_enabled": true,
-    "_paused": false,
-    "defaultSkin": "",
-    "defaultAnimation": "piece7",
-    "loop": false,
-    "_premultipliedAlpha": true,
-    "_N$skeletonData": {
-      "__uuid__": "91b3c463-9f29-4276-9258-4fe58eecbc9f"
-    },
-    "_N$timeScale": 1,
-    "_N$debugSlots": false,
-    "_N$debugBones": false
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "step8_complete_spine",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 216
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": false,
-    "_components": [
-      {
-        "__id__": 238
-      },
-      {
-        "__id__": 239
-      }
-    ],
-    "_prefab": null,
-    "_id": "19MEVtG6xMsJUOL2tz5BJN",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 0,
-      "height": 0
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 8
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "19401iljp5BspU5la002XLd",
-    "_name": "",
-    "_objFlags": 16,
-    "node": {
-      "__id__": 237
-    },
-    "_enabled": true,
-    "isReskinned": false
-  },
-  {
-    "__type__": "sp.Skeleton",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 237
-    },
-    "_enabled": true,
-    "_paused": false,
-    "defaultSkin": "",
-    "defaultAnimation": "piece8",
-    "loop": false,
-    "_premultipliedAlpha": true,
-    "_N$skeletonData": {
-      "__uuid__": "91b3c463-9f29-4276-9258-4fe58eecbc9f"
-    },
-    "_N$timeScale": 1,
-    "_N$debugSlots": false,
-    "_N$debugBones": false
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "step9_complete_spine",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 216
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": false,
-    "_components": [
-      {
-        "__id__": 241
-      },
-      {
-        "__id__": 242
-      }
-    ],
-    "_prefab": null,
-    "_id": "43InKI7cBPUqfQd1GgWTKN",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 0,
-      "height": 0
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 8
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "19401iljp5BspU5la002XLd",
-    "_name": "",
-    "_objFlags": 16,
-    "node": {
-      "__id__": 240
-    },
-    "_enabled": true,
-    "isReskinned": false
-  },
-  {
-    "__type__": "sp.Skeleton",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 240
-    },
-    "_enabled": true,
-    "_paused": false,
-    "defaultSkin": "",
     "defaultAnimation": "piece9",
     "loop": false,
     "_premultipliedAlpha": true,
@@ -7362,7 +7108,7 @@
     "completeState": "step_complete",
     "claimState": "step_claim",
     "claimSequence": {
-      "__id__": 187
+      "__id__": 177
     },
     "outroState": "step_outro"
   },
@@ -7376,17 +7122,17 @@
     "_enabled": true,
     "editorOnly": true,
     "instantiationSource": "testThis1",
-    "templateID": 35,
-    "templateName": "Father's Day Rough Mission",
+    "templateID": 239,
+    "templateName": "St Pattys 2021 TA Test",
     "missionDataIndex": 0,
     "missionInterface": {
       "__id__": 7
     },
-    "_N$missionJSONString": "{\"templateID\":35,\"templateVersion\":4,\"id\":362,\"source\":\"testThis1\",\"tags\":[\"imported\",\"lucky_remix\",\"badge_vip\"],\"mission\":{\"steps\":[{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false}],\"awardResult\":[],\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepBet\",\"data\":{\"max\":894819659,\"progress\":0,\"id\":0,\"award\":{\"ProductPackageItemChips\":[{\"amount\":173240000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":173240000}}],\"ProductPackageItemCollectionChest\":[{\"tier\":4,\"amount\":1,\"order\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Massive\",\"tier\":4,\"chestID\":\"season5BFC.massive\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"active\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":823234087,\"progress\":0,\"id\":1,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}],\"ProductPackageItemClubChips\":[{\"order\":1,\"amount\":\"1500000\",\"title\":\"🍀 Club Bonus 🍀\",\"text\":\"scores BIG in the Puzzle Pursuit event!🍀✨\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"1500000\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1073783591,\"progress\":0,\"id\":2,\"award\":{\"ProductPackageItemChips\":[{\"amount\":259860000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":259860000}}],\"ProductPackageItemCollectionChest\":[{\"tier\":4,\"amount\":1,\"order\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Massive\",\"tier\":4,\"chestID\":\"season5BFC.massive\"}}],\"ProductPackageItemEntrytext\":[{\"order\":2,\"entrytextID\":\"promo2021BFC.stpatricks\",\"amount\":\"1\",\"promoData\":{\"name\":\"Entrytext\",\"amount\":\"1\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":13830332647,\"progress\":0,\"id\":3,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":8948196588,\"progress\":0,\"id\":4,\"award\":{\"ProductPackageItemCollectionChest\":[{\"tier\":5,\"amount\":1,\"order\":0,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":5,\"chestID\":\"season5BFC.colossal\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[5],\"predecessors\":[3],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":16464681722,\"progress\":0,\"id\":5,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}],\"ProductPackageItemCollectionTrophies\":[{\"order\":1,\"amount\":\"1\",\"trophyID\":\"promo2021BFC.stpatricks\",\"promoData\":{\"name\":\"Collection Trophies\",\"amount\":\"1\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[6],\"predecessors\":[4],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":16464681722,\"progress\":0,\"id\":6,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}],\"ProductPackageItemClubChips\":[{\"order\":1,\"title\":\"🍀 Club Bonus 🍀\",\"text\":\"scores BIG in the Puzzle Pursuit event!🍀🍀✨\",\"amount\":\"2500000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"2500000\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[7],\"predecessors\":[5],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":16464681722,\"progress\":0,\"id\":7,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}],\"ProductPackageItemCollectionChest\":[{\"tier\":5,\"amount\":2,\"order\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":2,\"chestName\":\"Colossal\",\"tier\":5,\"chestID\":\"season5BFC.colossal\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[8],\"predecessors\":[6],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":16464681722,\"progress\":0,\"id\":8,\"award\":{\"ProductPackageItemChips\":[{\"amount\":649640000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":649640000}}],\"ProductPackageItemCollectionChest\":[{\"tier\":5,\"amount\":3,\"order\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":3,\"chestName\":\"Colossal\",\"tier\":5,\"chestID\":\"season5BFC.colossal\"}}],\"ProductPackageItemCollectionFrames\":[{\"order\":3,\"amount\":\"1\",\"frameID\":\"promo2021BFC.stpatricks\",\"promoData\":{\"name\":\"Collection Frames\",\"amount\":\"1\"}}],\"ProductPackageItemClubChips\":[{\"order\":2,\"title\":\"🍀 Club Bonus 🍀\",\"text\":\"scores BIG in the Puzzle Pursuit event!🍀🍀🍀✨\",\"amount\":\"4000000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"4000000\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[],\"predecessors\":[7],\"formatString\":\"Win {max} chips\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[5],[6],[7],[8],[]],\"predecessors\":[[],[0],[1],[2],[3],[4],[5],[6],[7]]}},\"requireAwarded\":\"TRUE\",\"awardData\":null,\"manifest\":{\"tray_icon\":null},\"awarded\":false},\"secondsActive\":1001,\"secondsRemaining\":517399,\"slotsData\":[],\"giftsData\":[]}",
+    "_N$missionJSONString": "{\"templateID\":239,\"templateVersion\":5,\"id\":\"3355\",\"source\":\"testThis1\",\"tags\":[\"this is a test\"],\"mission\":{\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepSpin\",\"data\":{\"max\":3,\"progress\":3,\"id\":0,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"12345\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"12345\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"12345\",\"newBalance\":98806521339}}],\"includeReelRivals\":false,\"buyInIDs\":[621],\"minBet\":1,\"state\":\"redeemed\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":3,\"progress\":0,\"id\":1,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"12345\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"12345\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[621],\"minBet\":1,\"state\":\"active\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":1,\"progress\":0,\"id\":2,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"12345\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"12345\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[621],\"minBet\":1,\"state\":\"locked\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":1,\"progress\":0,\"id\":3,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"12345\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"12345\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"minBet\":1,\"state\":\"locked\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":1,\"progress\":0,\"id\":4,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"5000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"5000000\"}}],\"ProductPackageItemCollectionChest\":[{\"order\":3,\"tier\":\"3\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Enormous\",\"tier\":\"3\",\"chestID\":\"season5BFC.enormous\"}}],\"ProductPackageItemFreeSpins\":[{\"order\":1,\"buyInID\":399,\"betSize\":\"12000\",\"amount\":10,\"promoData\":{\"name\":\"Free Spins\",\"amount\":10,\"launchData\":{\"buyInID\":399,\"theme2_1\":\"dogtowntwo\"},\"gridButton\":{\"buttonImage\":\"direct_publish___slot_grid_button___dogtownTwo-2x2___dogtownTwo-2x2.png\",\"buttonBundle\":{\"name\":\"direct_publish___slot_grid_button___dogtownTwo-2x2\",\"hash\":\"fd618545\",\"urls\":{\"s\":\"https://sagnetstorage-a.akamaihd.net/bundles_dev/direct_publish___slot_grid_button___dogtownTwo-2x2-fd618545.s.assetbundle.zip\",\"s2x\":\"https://sagnetstorage-a.akamaihd.net/bundles_dev/direct_publish___slot_grid_button___dogtownTwo-2x2-fd618545.s2x.assetbundle.zip\"}},\"buttonImageLoose\":\"https://sagnetstorage-a.akamaihd.net/bundles_dev/direct_publish___slot_grid_button___dogtownTwo-2x2-fd618545.s2x.assetbundle.zip\"},\"buyInID\":399,\"slotMachine\":\"Dogtown 2: Paw and Order\",\"betValue\":\"108,000\"}}],\"ProductPackageItemCollectionFrames\":[{\"order\":2,\"amount\":\"1\",\"frameID\":\"promo2020BFC.nye21\",\"promoData\":{\"name\":\"Collection Frames\",\"amount\":\"1\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"minBet\":1,\"state\":\"locked\",\"edges\":[5],\"predecessors\":[3],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":1,\"progress\":0,\"id\":5,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"12345\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"12345\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"minBet\":1,\"state\":\"locked\",\"edges\":[6],\"predecessors\":[4],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":1,\"progress\":0,\"id\":6,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"12345\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"12345\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"minBet\":1,\"state\":\"locked\",\"edges\":[7],\"predecessors\":[5],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":1,\"progress\":0,\"id\":7,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"12345\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"12345\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"minBet\":1,\"state\":\"locked\",\"edges\":[8],\"predecessors\":[6],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":1,\"progress\":0,\"id\":8,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"12345\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"12345\"}}]},\"awarded\":false,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"12345\",\"newBalance\":98806410234}}],\"includeReelRivals\":false,\"minBet\":1,\"state\":\"locked\",\"edges\":[],\"predecessors\":[7],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[5],[6],[7],[8],[]],\"predecessors\":[[],[0],[1],[2],[3],[4],[5],[6],[7]]}},\"awardData\":null,\"requireAwarded\":true,\"awardResult\":[],\"awarded\":\"0\"},\"secondsActive\":1033755,\"secondsRemaining\":175845,\"slotsData\":{\"621\":{\"name\":\"Mad Mouse: The Zappening\",\"customData\":{\"buyInID\":621,\"theme2_1\":\"prizedisc\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}}},\"giftsData\":[]}",
     "_N$instantiateMissionTrigger": true,
     "_N$retrieveMissionTrigger": false,
     "_N$updatePreviewDataTrigger": true,
-    "_N$componentUpdateCallbackTrigger": true
+    "_N$componentUpdateCallbackTrigger": false
   },
   {
     "__type__": "cc.Animation",

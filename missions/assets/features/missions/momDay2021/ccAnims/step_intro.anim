@@ -1,6 +1,6 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "step_outro",
+  "_name": "step_intro",
   "_objFlags": 0,
   "_rawFiles": null,
   "_duration": 0,
@@ -29,7 +29,7 @@
           }
         }
       },
-      "award_container": {
+      "buttons/play/button_play": {
         "props": {
           "active": [
             {
@@ -37,19 +37,8 @@
               "value": true
             }
           ]
-        }
-      },
-      "buttons/play/button_play": {
-        "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": false
-            }
-          ]
         },
         "comps": {
-          "cc.Sprite": {},
           "cc.Button": {
             "enabled": [
               {
@@ -85,45 +74,12 @@
           "active": [
             {
               "frame": 0,
-              "value": false
+              "value": true
             }
           ]
         }
       },
-      "completed_container/shutter_spine": {
-        "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": false
-            }
-          ]
-        }
-      },
-      "completed_container/shutter_spine2": {
-        "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": false
-            }
-          ]
-        }
-      },
-      "background/collection_items": {
-        "props": {}
-      },
-      "buttons/button_close": {
-        "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": false
-            }
-          ]
-        }
-      },
-      "background/progress_container": {
+      "award_container": {
         "props": {
           "active": [
             {
@@ -135,9 +91,78 @@
       },
       "background/progress_container/progress_meter": {
         "props": {}
+      },
+      "buttons/button_close": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "background/collection_items": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "background/step_descriptions": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "background/progress_container": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "buttons/button_complete": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
       }
     },
-    "props": {},
+    "props": {
+      "scaleX": [
+        {
+          "frame": 0,
+          "value": 1
+        }
+      ],
+      "scaleY": [
+        {
+          "frame": 0,
+          "value": 1
+        }
+      ],
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 255
+        }
+      ]
+    },
     "comps": {
       "MissionProgressMeter": {}
     }

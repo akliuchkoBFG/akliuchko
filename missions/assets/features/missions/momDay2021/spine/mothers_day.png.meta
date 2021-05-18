@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "7d309608-0e6f-454e-9c15-e1fbec56e9a6",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "mothers_day": {
+      "ver": "1.0.3",
+      "uuid": "b3184095-99e8-43ce-8442-b4f822c20219",
+      "rawTextureUuid": "7d309608-0e6f-454e-9c15-e1fbec56e9a6",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 2044,
+      "height": 2044,
+      "rawWidth": 2048,
+      "rawHeight": 2048,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
