@@ -521,7 +521,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 321.22,
+      "width": 381.72999999999996,
       "height": 60
     },
     "_rotationX": 0,
@@ -576,7 +576,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 321.22,
+      "width": 381.72999999999996,
       "height": 60
     },
     "_rotationX": 0,
@@ -603,7 +603,7 @@
       "__id__": 13
     },
     "_enabled": true,
-    "_N$string": "<color=#ffffff>Play in</color> <color=#ffee37>any machine</color><color=#ffffff> to collect</color>\n<color=#ffee37> Crown Boosts </color> <color=#ffffff>& prizes!</color>",
+    "_N$string": "<color=#ffffff>Earn crowns by playing in</color><color=#ffee37> <u>your club</color> \n<color=#ffffff>to win Boosts, bonuses, and prizes</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
@@ -624,7 +624,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#ffffff>Play in</color> <color=#ffee37>any machine</color><color=#ffffff> to collect</color>\n<color=#ffee37> Crown Boosts </color> <color=#ffffff>& prizes!</color>",
+    "_N$templateString": "<color=#ffffff>Earn crowns by playing in</color><color=#ffee37> <u>your club</color> \n<color=#ffffff>to win Boosts, bonuses, and prizes</color>",
     "_N$testData": "{}"
   },
   {
@@ -635,7 +635,7 @@
       "__id__": 12
     },
     "_enabled": true,
-    "_N$string": "<color=#82798a>Play in</color> <color=#b15200>any machine</color><color=#82798a> to collect</color>\n<color=#b15200> Crown Boosts </color> <color=#82798a>& prizes!</color>",
+    "_N$string": "<color=#82789a>Earn crowns by playing in</color><color=#b15200> <u>your club</color> \n<color=#82789a>to win Boosts, bonuses, and prizes</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
@@ -656,7 +656,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#82798a>Play in</color> <color=#b15200>any machine</color><color=#82798a> to collect</color>\n<color=#b15200> Crown Boosts </color> <color=#82798a>& prizes!</color>",
+    "_N$templateString": "<color=#82789a>Earn crowns by playing in</color><color=#b15200> <u>your club</color> \n<color=#82789a>to win Boosts, bonuses, and prizes</color>",
     "_N$testData": "{}"
   },
   {
@@ -960,8 +960,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 256.83,
-      "height": 64
+      "width": 227.92,
+      "height": 32
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -1018,8 +1018,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 256.83,
-      "height": 64
+      "width": 227.92,
+      "height": 32
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -1045,7 +1045,7 @@
       "__id__": 26
     },
     "_enabled": true,
-    "_N$string": "<color=#ffee37>Collect 500K Crowns</color>\n<color=#ffffff> to win Crown Boosters!</color>",
+    "_N$string": "<color=#ffee37>Collect 500K Crowns</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
@@ -1064,7 +1064,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#ffee37>Collect {max} Crowns</color>\n<color=#ffffff> to win Crown Boosters!</color>",
+    "_N$templateString": "<color=#ffee37>Collect {max} Crowns</color>",
     "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -1106,7 +1106,7 @@
       "__id__": 25
     },
     "_enabled": true,
-    "_N$string": "<color=#b15200>Collect 500K Crowns</color>\n<color=#82798a> to win Crown Boosters!</color>",
+    "_N$string": "<color=#b15200>Collect 500K Crowns</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
@@ -1125,7 +1125,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#b15200>Collect {max} Crowns</color>\n<color=#82798a> to win Crown Boosters!</color>",
+    "_N$templateString": "<color=#b15200>Collect {max} Crowns</color>",
     "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -1167,7 +1167,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "9fciuO/29MCquEKrMQRnS6",
+    "_id": "18n8wgTH5B44WHoFPPldHA",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -1184,8 +1184,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 256.83,
-      "height": 64
+      "width": 227.92,
+      "height": 32
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -1225,7 +1225,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "fakPsfL4JM+5cIiG8DzAHw",
+    "_id": "4clXZETBNCBYgOOPe72QxR",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -1242,8 +1242,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 256.83,
-      "height": 64
+      "width": 227.92,
+      "height": 32
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -1269,7 +1269,7 @@
       "__id__": 35
     },
     "_enabled": true,
-    "_N$string": "<color=#ffee37>Collect 500K Crowns</color>\n<color=#ffffff> to win Crown Boosters!</color>",
+    "_N$string": "<color=#ffee37>Collect 500K Crowns</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
@@ -1288,7 +1288,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#ffee37>Collect {max} Crowns</color>\n<color=#ffffff> to win Crown Boosters!</color>",
+    "_N$templateString": "<color=#ffee37>Collect {max} Crowns</color>",
     "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -1312,7 +1312,7 @@
       "__id__": 34
     },
     "_enabled": true,
-    "_N$string": "<color=#b15200>Collect 500K Crowns</color>\n<color=#82798a> to win Crown Boosters!</color>",
+    "_N$string": "<color=#b15200>Collect 500K Crowns</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
@@ -1331,7 +1331,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#b15200>Collect {max} Crowns</color>\n<color=#82798a> to win Crown Boosters!</color>",
+    "_N$templateString": "<color=#b15200>Collect {max} Crowns</color>",
     "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -1373,7 +1373,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "37gz3j85RAuZfXzgnchKuH",
+    "_id": "92WtC8mUtAI6y9mA9Mmbp4",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -1390,8 +1390,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 256.83,
-      "height": 64
+      "width": 227.92,
+      "height": 32
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -1431,7 +1431,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "7bO1q6PDBIaJc8+bB8dFth",
+    "_id": "38vmXK9jtJfJl3GpxC9rGj",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -1448,8 +1448,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 256.83,
-      "height": 64
+      "width": 227.92,
+      "height": 32
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -1475,7 +1475,7 @@
       "__id__": 43
     },
     "_enabled": true,
-    "_N$string": "<color=#ffee37>Collect 500K Crowns</color>\n<color=#ffffff> to win Crown Boosters!</color>",
+    "_N$string": "<color=#ffee37>Collect 500K Crowns</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
@@ -1494,7 +1494,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#ffee37>Collect {max} Crowns</color>\n<color=#ffffff> to win Crown Boosters!</color>",
+    "_N$templateString": "<color=#ffee37>Collect {max} Crowns</color>",
     "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -1518,7 +1518,7 @@
       "__id__": 42
     },
     "_enabled": true,
-    "_N$string": "<color=#b15200>Collect 500K Crowns</color>\n<color=#82798a> to win Crown Boosters!</color>",
+    "_N$string": "<color=#b15200>Collect 500K Crowns</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
@@ -1537,7 +1537,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#b15200>Collect {max} Crowns</color>\n<color=#82798a> to win Crown Boosters!</color>",
+    "_N$templateString": "<color=#b15200>Collect {max} Crowns</color>",
     "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -1579,7 +1579,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "38FC5NAvFE2Kx5VoIJeyvO",
+    "_id": "abuZ6dOUpE2qSmfvvBH5ht",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -1596,8 +1596,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 256.83,
-      "height": 64
+      "width": 227.92,
+      "height": 32
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -1637,7 +1637,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "17/XvLLttEB4CAltMvcGIa",
+    "_id": "fdPlbL12VFA6SKXqKtjth9",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -1654,8 +1654,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 256.83,
-      "height": 64
+      "width": 227.92,
+      "height": 32
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -1681,7 +1681,7 @@
       "__id__": 51
     },
     "_enabled": true,
-    "_N$string": "<color=#ffee37>Collect 500K Crowns</color>\n<color=#ffffff> to win Crown Boosters!</color>",
+    "_N$string": "<color=#ffee37>Collect 500K Crowns</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
@@ -1700,7 +1700,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#ffee37>Collect {max} Crowns</color>\n<color=#ffffff> to win Crown Boosters!</color>",
+    "_N$templateString": "<color=#ffee37>Collect {max} Crowns</color>",
     "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -1724,7 +1724,7 @@
       "__id__": 50
     },
     "_enabled": true,
-    "_N$string": "<color=#b15200>Collect 500K Crowns</color>\n<color=#82798a> to win Crown Boosters!</color>",
+    "_N$string": "<color=#b15200>Collect 500K Crowns</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
@@ -1743,7 +1743,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#b15200>Collect {max} Crowns</color>\n<color=#82798a> to win Crown Boosters!</color>",
+    "_N$templateString": "<color=#b15200>Collect {max} Crowns</color>",
     "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -1785,7 +1785,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "e1iFQ77gJHELrkoeh/TCsJ",
+    "_id": "51qwq+mX1BlKqJio9M2gnv",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -1802,8 +1802,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 256.83,
-      "height": 64
+      "width": 227.92,
+      "height": 32
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -1843,7 +1843,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "ddaHLp62hMvLZuj3JV3gcv",
+    "_id": "7eoYHBAZJOeogYKXdsnClX",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -1860,8 +1860,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 256.83,
-      "height": 64
+      "width": 227.92,
+      "height": 32
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -1887,7 +1887,7 @@
       "__id__": 59
     },
     "_enabled": true,
-    "_N$string": "<color=#ffee37>Collect 500K Crowns</color>\n<color=#ffffff> to win Crown Boosters!</color>",
+    "_N$string": "<color=#ffee37>Collect 500K Crowns</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
@@ -1906,7 +1906,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#ffee37>Collect {max} Crowns</color>\n<color=#ffffff> to win Crown Boosters!</color>",
+    "_N$templateString": "<color=#ffee37>Collect {max} Crowns</color>",
     "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -1930,7 +1930,7 @@
       "__id__": 58
     },
     "_enabled": true,
-    "_N$string": "<color=#b15200>Collect 500K Crowns</color>\n<color=#82798a> to win Crown Boosters!</color>",
+    "_N$string": "<color=#b15200>Collect 500K Crowns</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
@@ -1949,7 +1949,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#b15200>Collect {max} Crowns</color>\n<color=#82798a> to win Crown Boosters!</color>",
+    "_N$templateString": "<color=#b15200>Collect {max} Crowns</color>",
     "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -1991,7 +1991,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "f0/hu7MklFUp58PQL9sl6K",
+    "_id": "3aEqvd9X9L1bvx708M5L5/",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -2008,8 +2008,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 256.83,
-      "height": 64
+      "width": 227.92,
+      "height": 32
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -2049,7 +2049,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "607a6j69lN35zDkInGIuVN",
+    "_id": "feaRF0h1JJQYoK3G01vYwk",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -2066,8 +2066,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 256.83,
-      "height": 64
+      "width": 227.92,
+      "height": 32
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -2093,7 +2093,7 @@
       "__id__": 67
     },
     "_enabled": true,
-    "_N$string": "<color=#ffee37>Collect 500K Crowns</color>\n<color=#ffffff> to win Crown Boosters!</color>",
+    "_N$string": "<color=#ffee37>Collect 500K Crowns</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
@@ -2112,7 +2112,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#ffee37>Collect {max} Crowns</color>\n<color=#ffffff> to win Crown Boosters!</color>",
+    "_N$templateString": "<color=#ffee37>Collect {max} Crowns</color>",
     "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -2136,7 +2136,7 @@
       "__id__": 66
     },
     "_enabled": true,
-    "_N$string": "<color=#b15200>Collect 500K Crowns</color>\n<color=#82798a> to win Crown Boosters!</color>",
+    "_N$string": "<color=#b15200>Collect 500K Crowns</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
@@ -2155,7 +2155,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#b15200>Collect {max} Crowns</color>\n<color=#82798a> to win Crown Boosters!</color>",
+    "_N$templateString": "<color=#b15200>Collect {max} Crowns</color>",
     "_N$testData": "{\n\t\"progress\": \"500K\",\n\t\"max\": \"500K\",\n\t\"slotname\": \"Triple Fortune Bowls\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -5649,7 +5649,7 @@
     "missionInterface": {
       "__id__": 7
     },
-    "_N$missionJSONString": "{\"templateID\":24,\"templateVersion\":4,\"id\":363,\"source\":\"test01\",\"tags\":[\"AMBER\",\"crown.rush\"],\"mission\":{\"steps\":[{\"progress\":5,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000666\",\"newBalance\":3790315118}}],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":1000},{\"progress\":50000,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000666\",\"newBalance\":3800315784}}],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714]},{\"progress\":5,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000000\",\"newBalance\":3810315784}},{\"class\":\"ProductPackageItemFreeSpins\",\"result\":{\"buyInID\":618,\"config\":\"1x\",\"amount\":5,\"betSize\":\"500\",\"newBalance\":285}}],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":5000},{\"progress\":100000,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000666\",\"newBalance\":3820316450}}],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714]},{\"progress\":5,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000666\",\"newBalance\":3830317116}}],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":10000},{\"progress\":500000,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000666\",\"newBalance\":3840317782}}],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714]}],\"awardResult\":[],\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":5,\"id\":0,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000666\",\"newBalance\":3790315118}}],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":1000,\"state\":\"redeemed\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"50000\",\"progress\":50000,\"id\":1,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000666\",\"newBalance\":3800315784}}],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714],\"state\":\"redeemed\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":5,\"id\":2,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemFreeSpins\":[{\"buyInID\":618,\"betSize\":\"500\",\"amount\":5,\"order\":1,\"promoData\":{\"name\":\"Free Spins\",\"amount\":5,\"launchData\":{\"buyInID\":618,\"theme2_1\":\"kong\"},\"gridButton\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null},\"buyInID\":618,\"slotMachine\":\"Wrath of Kong\",\"betValue\":\"25,000\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000000\",\"newBalance\":3810315784}},{\"class\":\"ProductPackageItemFreeSpins\",\"result\":{\"buyInID\":618,\"config\":\"1x\",\"amount\":5,\"betSize\":\"500\",\"newBalance\":285}}],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":5000,\"state\":\"redeemed\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"100000\",\"progress\":100000,\"id\":3,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000666\",\"newBalance\":3820316450}}],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714],\"state\":\"redeemed\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":5,\"id\":4,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000666\",\"newBalance\":3830317116}}],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":10000,\"state\":\"redeemed\",\"edges\":[5],\"predecessors\":[3],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"500000\",\"progress\":500000,\"id\":5,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000666\",\"newBalance\":3840317782}}],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714],\"state\":\"redeemed\",\"edges\":[],\"predecessors\":[4],\"formatString\":\"Win {max} chips\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[5],[]],\"predecessors\":[[],[0],[1],[2],[3],[4]]}},\"requireAwarded\":true,\"awardData\":null,\"manifest\":[],\"awarded\":false},\"secondsActive\":413,\"secondsRemaining\":17587,\"slotsData\":{\"652\":{\"name\":\"Kodiak Wilds\",\"customData\":{\"buyInID\":652,\"theme2_1\":\"kodiakwilds\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"653\":{\"name\":\"Kodiak Wilds VIP\",\"customData\":{\"buyInID\":653,\"theme2_1\":\"kodiakwilds\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"654\":{\"name\":\"High Roller Gala - Kodiak Wilds VIP\",\"customData\":{\"buyInID\":654,\"theme2_1\":\"kodiakwilds\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"712\":{\"name\":\"Triple Fortune Bowls\",\"customData\":{\"buyInID\":712,\"theme2_1\":\"triplefortunebowl\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"713\":{\"name\":\"Triple Fortune Bowls VIP\",\"customData\":{\"buyInID\":713,\"theme2_1\":\"triplefortunebowl\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"714\":{\"name\":\"High Roller Gala - Triple Fortune Bowls VIP\",\"customData\":{\"buyInID\":714,\"theme2_1\":\"triplefortunebowl\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}}},\"giftsData\":[]}",
+    "_N$missionJSONString": "{\"templateID\":24,\"templateVersion\":4,\"id\":363,\"source\":\"test01\",\"tags\":[\"AMBER\",\"crown.rush\"],\"mission\":{\"steps\":[{\"progress\":5,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000666\",\"newBalance\":3850318448}}],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":1000},{\"progress\":50000,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000666\",\"newBalance\":3860319114}}],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714]},{\"progress\":5,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000000\",\"newBalance\":3870319114}},{\"class\":\"ProductPackageItemFreeSpins\",\"result\":{\"buyInID\":618,\"config\":\"1x\",\"amount\":5,\"betSize\":\"500\",\"newBalance\":290}}],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":5000},{\"progress\":100000,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000666\",\"newBalance\":3880319780}}],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714]},{\"progress\":5,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000666\",\"newBalance\":3890320446}}],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":10000},{\"progress\":500000,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714]}],\"awardResult\":[],\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":5,\"id\":0,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000666\",\"newBalance\":3850318448}}],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":1000,\"state\":\"redeemed\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"50000\",\"progress\":50000,\"id\":1,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000666\",\"newBalance\":3860319114}}],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714],\"state\":\"redeemed\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":5,\"id\":2,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000000\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemFreeSpins\":[{\"buyInID\":618,\"betSize\":\"500\",\"amount\":5,\"order\":1,\"promoData\":{\"name\":\"Free Spins\",\"amount\":5,\"launchData\":{\"buyInID\":618,\"theme2_1\":\"kong\"},\"gridButton\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null},\"buyInID\":618,\"slotMachine\":\"Wrath of Kong\",\"betValue\":\"25,000\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000000\",\"newBalance\":3870319114}},{\"class\":\"ProductPackageItemFreeSpins\",\"result\":{\"buyInID\":618,\"config\":\"1x\",\"amount\":5,\"betSize\":\"500\",\"newBalance\":290}}],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":5000,\"state\":\"redeemed\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"100000\",\"progress\":100000,\"id\":3,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000666\",\"newBalance\":3880319780}}],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714],\"state\":\"redeemed\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepSpin\",\"data\":{\"max\":\"5\",\"progress\":5,\"id\":4,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000666\",\"newBalance\":3890320446}}],\"includeReelRivals\":false,\"buyInIDs\":[652,653,654],\"minBet\":10000,\"state\":\"redeemed\",\"edges\":[5],\"predecessors\":[3],\"formatString\":\"Spin {max} times with a min bet of {minbet}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":\"500000\",\"progress\":500000,\"id\":5,\"award\":{\"ProductPackageItemChips\":[{\"amount\":\"10000666\",\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000666\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"buyInIDs\":[712,713,714],\"state\":\"complete\",\"edges\":[],\"predecessors\":[4],\"formatString\":\"Win {max} chips\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[5],[]],\"predecessors\":[[],[0],[1],[2],[3],[4]]}},\"requireAwarded\":true,\"awardData\":null,\"manifest\":[],\"awarded\":false},\"secondsActive\":5511,\"secondsRemaining\":12489,\"slotsData\":{\"652\":{\"name\":\"Kodiak Wilds\",\"customData\":{\"buyInID\":652,\"theme2_1\":\"kodiakwilds\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"653\":{\"name\":\"Kodiak Wilds VIP\",\"customData\":{\"buyInID\":653,\"theme2_1\":\"kodiakwilds\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"654\":{\"name\":\"High Roller Gala - Kodiak Wilds VIP\",\"customData\":{\"buyInID\":654,\"theme2_1\":\"kodiakwilds\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"712\":{\"name\":\"Triple Fortune Bowls\",\"customData\":{\"buyInID\":712,\"theme2_1\":\"triplefortunebowl\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"713\":{\"name\":\"Triple Fortune Bowls VIP\",\"customData\":{\"buyInID\":713,\"theme2_1\":\"triplefortunebowl\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}},\"714\":{\"name\":\"High Roller Gala - Triple Fortune Bowls VIP\",\"customData\":{\"buyInID\":714,\"theme2_1\":\"triplefortunebowl\"},\"gridButtonData\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null}}},\"giftsData\":[]}",
     "_N$instantiateMissionTrigger": false,
     "_N$retrieveMissionTrigger": true,
     "_N$updatePreviewDataTrigger": false,
