@@ -1,0 +1,656 @@
+
+puzzle.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+frameGlow/frameGlow00
+  rotate: false
+  xy: 1721, 89
+  size: 234, 238
+  orig: 235, 238
+  offset: 1, 0
+  index: -1
+particles/particles00
+  rotate: false
+  xy: 2, 902
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles01
+  rotate: false
+  xy: 254, 1475
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles02
+  rotate: false
+  xy: 2, 329
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles03
+  rotate: false
+  xy: 254, 902
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles04
+  rotate: false
+  xy: 506, 1475
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles05
+  rotate: false
+  xy: 254, 329
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles06
+  rotate: false
+  xy: 506, 902
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles07
+  rotate: false
+  xy: 758, 1475
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles08
+  rotate: false
+  xy: 506, 329
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles09
+  rotate: true
+  xy: 2, 77
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles10
+  rotate: false
+  xy: 758, 902
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles11
+  rotate: false
+  xy: 1010, 1475
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles12
+  rotate: false
+  xy: 758, 329
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles13
+  rotate: false
+  xy: 1010, 902
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles14
+  rotate: false
+  xy: 1262, 1475
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles15
+  rotate: false
+  xy: 1010, 329
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles16
+  rotate: true
+  xy: 575, 77
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles17
+  rotate: false
+  xy: 1262, 902
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles18
+  rotate: false
+  xy: 1514, 1475
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles19
+  rotate: false
+  xy: 1262, 329
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles20
+  rotate: false
+  xy: 1514, 902
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles21
+  rotate: false
+  xy: 1766, 1475
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles22
+  rotate: false
+  xy: 1514, 329
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles23
+  rotate: true
+  xy: 1148, 77
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles24
+  rotate: false
+  xy: 1766, 902
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles25
+  rotate: false
+  xy: 1766, 329
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles37
+  rotate: false
+  xy: 2, 1475
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+piece3
+  rotate: false
+  xy: 1957, 61
+  size: 86, 87
+  orig: 140, 140
+  offset: 27, 33
+  index: -1
+piece4
+  rotate: true
+  xy: 1721, 2
+  size: 85, 88
+  orig: 140, 140
+  offset: 29, 32
+  index: -1
+piece6
+  rotate: false
+  xy: 1957, 239
+  size: 89, 88
+  orig: 140, 140
+  offset: 24, 22
+  index: -1
+piece7
+  rotate: false
+  xy: 1957, 150
+  size: 89, 87
+  orig: 140, 140
+  offset: 23, 20
+  index: -1
+sheen/sheen0001
+  rotate: true
+  xy: 2018, 1919
+  size: 44, 18
+  orig: 173, 173
+  offset: 123, 151
+  index: -1
+sheen/sheen0002
+  rotate: false
+  xy: 764, 51
+  size: 81, 24
+  orig: 173, 173
+  offset: 86, 145
+  index: -1
+sheen/sheen0003
+  rotate: false
+  xy: 1811, 51
+  size: 144, 36
+  orig: 173, 173
+  offset: 23, 133
+  index: -1
+sheen/sheen0004
+  rotate: false
+  xy: 166, 9
+  size: 162, 66
+  orig: 173, 173
+  offset: 5, 103
+  index: -1
+sheen/sheen0010
+  rotate: false
+  xy: 2, 5
+  size: 162, 70
+  orig: 173, 173
+  offset: 5, 3
+  index: -1
+sheen/sheen0011
+  rotate: false
+  xy: 1811, 18
+  size: 110, 31
+  orig: 173, 173
+  offset: 5, 3
+  index: -1
+sparkle/sparkles0001
+  rotate: false
+  xy: 764, 15
+  size: 34, 34
+  orig: 160, 128
+  offset: 90, 60
+  index: -1
+sparkle/sparkles0002
+  rotate: false
+  xy: 697, 10
+  size: 65, 65
+  orig: 160, 128
+  offset: 74, 45
+  index: -1
+sparkle/sparkles0013
+  rotate: false
+  xy: 531, 5
+  size: 86, 70
+  orig: 160, 128
+  offset: 29, 25
+  index: -1
+sparkle/sparkles0016
+  rotate: false
+  xy: 442, 4
+  size: 87, 71
+  orig: 160, 128
+  offset: 50, 31
+  index: -1
+sparkle/sparkles0017
+  rotate: false
+  xy: 619, 14
+  size: 76, 61
+  orig: 160, 128
+  offset: 49, 42
+  index: -1
+sparkle/sparkles0020
+  rotate: true
+  xy: 330, 18
+  size: 57, 110
+  orig: 160, 128
+  offset: 39, 2
+  index: -1
+sparkle/sparkles0021
+  rotate: true
+  xy: 1957, 25
+  size: 34, 89
+  orig: 160, 128
+  offset: 50, 14
+  index: -1
+sparkle/sparkles0022
+  rotate: false
+  xy: 2018, 1965
+  size: 27, 81
+  orig: 160, 128
+  offset: 51, 20
+  index: -1
+sparkle/sparkles0023
+  rotate: false
+  xy: 1923, 34
+  size: 15, 15
+  orig: 160, 128
+  offset: 60, 23
+  index: -1
+
+puzzle2.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+frameGlow/frameGlow01
+  rotate: false
+  xy: 758, 1235
+  size: 234, 238
+  orig: 235, 238
+  offset: 1, 0
+  index: -1
+frameGlow/frameGlow02
+  rotate: false
+  xy: 1736, 1808
+  size: 234, 238
+  orig: 235, 238
+  offset: 1, 0
+  index: -1
+frameGlow/frameGlow03
+  rotate: false
+  xy: 575, 89
+  size: 233, 238
+  orig: 235, 238
+  offset: 2, 0
+  index: -1
+frameGlow/frameGlow04
+  rotate: true
+  xy: 1010, 1410
+  size: 234, 237
+  orig: 235, 238
+  offset: 1, 0
+  index: -1
+frameGlow/frameGlow05
+  rotate: false
+  xy: 758, 995
+  size: 234, 238
+  orig: 235, 238
+  offset: 1, 0
+  index: -1
+frameGlow/frameGlow06
+  rotate: false
+  xy: 758, 755
+  size: 234, 238
+  orig: 235, 238
+  offset: 1, 0
+  index: -1
+frameGlow/frameGlow07
+  rotate: false
+  xy: 758, 515
+  size: 234, 238
+  orig: 235, 238
+  offset: 1, 0
+  index: -1
+godray
+  rotate: false
+  xy: 1010, 1646
+  size: 400, 400
+  orig: 400, 400
+  offset: 0, 0
+  index: -1
+miniScrim
+  rotate: false
+  xy: 758, 345
+  size: 164, 168
+  orig: 164, 168
+  offset: 0, 0
+  index: -1
+particles/particles26
+  rotate: false
+  xy: 2, 1475
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles27
+  rotate: false
+  xy: 2, 902
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles28
+  rotate: false
+  xy: 254, 1475
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles29
+  rotate: false
+  xy: 2, 329
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles30
+  rotate: false
+  xy: 254, 902
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles31
+  rotate: false
+  xy: 506, 1475
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles32
+  rotate: false
+  xy: 254, 329
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles33
+  rotate: false
+  xy: 506, 902
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles34
+  rotate: false
+  xy: 758, 1475
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles35
+  rotate: false
+  xy: 506, 329
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+particles/particles36
+  rotate: true
+  xy: 2, 77
+  size: 250, 571
+  orig: 250, 571
+  offset: 0, 0
+  index: -1
+piece1
+  rotate: false
+  xy: 1158, 1175
+  size: 108, 115
+  orig: 140, 140
+  offset: 25, 18
+  index: -1
+piece2
+  rotate: true
+  xy: 1529, 1603
+  size: 111, 113
+  orig: 140, 140
+  offset: 5, 20
+  index: -1
+piece5
+  rotate: false
+  xy: 1644, 1603
+  size: 110, 111
+  orig: 140, 140
+  offset: 26, 7
+  index: -1
+piece8
+  rotate: false
+  xy: 1756, 1607
+  size: 110, 111
+  orig: 140, 140
+  offset: 5, 8
+  index: -1
+piece9
+  rotate: false
+  xy: 994, 998
+  size: 133, 138
+  orig: 140, 140
+  offset: 5, 2
+  index: -1
+puzzleComplete
+  rotate: false
+  xy: 1412, 1716
+  size: 322, 330
+  orig: 322, 330
+  offset: 0, 0
+  index: -1
+sheen/sheen0005
+  rotate: false
+  xy: 1736, 1720
+  size: 162, 86
+  orig: 173, 173
+  offset: 5, 83
+  index: -1
+sheen/sheen0006
+  rotate: true
+  xy: 994, 834
+  size: 162, 108
+  orig: 173, 173
+  offset: 5, 61
+  index: -1
+sheen/sheen0007
+  rotate: true
+  xy: 1249, 1482
+  size: 162, 141
+  orig: 173, 173
+  offset: 5, 24
+  index: -1
+sheen/sheen0008
+  rotate: false
+  xy: 994, 1267
+  size: 162, 141
+  orig: 173, 173
+  offset: 5, 7
+  index: -1
+sheen/sheen0009
+  rotate: false
+  xy: 994, 1138
+  size: 162, 127
+  orig: 173, 173
+  offset: 5, 3
+  index: -1
+sparkle/sparkles0003
+  rotate: true
+  xy: 810, 2
+  size: 102, 101
+  orig: 160, 128
+  offset: 56, 27
+  index: -1
+sparkle/sparkles0004
+  rotate: false
+  xy: 1507, 1495
+  size: 108, 106
+  orig: 160, 128
+  offset: 52, 22
+  index: -1
+sparkle/sparkles0005
+  rotate: false
+  xy: 1412, 1608
+  size: 115, 106
+  orig: 160, 128
+  offset: 45, 22
+  index: -1
+sparkle/sparkles0006
+  rotate: false
+  xy: 810, 106
+  size: 117, 115
+  orig: 160, 128
+  offset: 36, 13
+  index: -1
+sparkle/sparkles0007
+  rotate: false
+  xy: 994, 706
+  size: 106, 126
+  orig: 160, 128
+  offset: 36, 1
+  index: -1
+sparkle/sparkles0008
+  rotate: false
+  xy: 994, 584
+  size: 115, 120
+  orig: 160, 128
+  offset: 19, 0
+  index: -1
+sparkle/sparkles0009
+  rotate: false
+  xy: 810, 223
+  size: 118, 120
+  orig: 160, 128
+  offset: 6, 0
+  index: -1
+sparkle/sparkles0010
+  rotate: false
+  xy: 1392, 1500
+  size: 113, 106
+  orig: 160, 128
+  offset: 0, 0
+  index: -1
+sparkle/sparkles0011
+  rotate: true
+  xy: 924, 417
+  size: 96, 93
+  orig: 160, 128
+  offset: 8, 3
+  index: -1
+sparkle/sparkles0012
+  rotate: true
+  xy: 1972, 1967
+  size: 79, 74
+  orig: 160, 128
+  offset: 18, 13
+  index: -1
+sparkle/sparkles0014
+  rotate: false
+  xy: 1617, 1503
+  size: 99, 98
+  orig: 160, 128
+  offset: 27, 13
+  index: -1
+sparkle/sparkles0015
+  rotate: false
+  xy: 1868, 1634
+  size: 82, 78
+  orig: 160, 128
+  offset: 42, 17
+  index: -1
+sparkle/sparkles0018
+  rotate: false
+  xy: 1900, 1714
+  size: 76, 92
+  orig: 160, 128
+  offset: 42, 18
+  index: -1
+sparkle/sparkles0019
+  rotate: false
+  xy: 1158, 1292
+  size: 96, 116
+  orig: 160, 128
+  offset: 24, 11
+  index: -1

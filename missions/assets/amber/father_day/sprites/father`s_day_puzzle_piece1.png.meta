@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "ef8f7603-873e-4a3a-93f3-9c64fda2b785",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "father`s_day_puzzle_piece1": {
+      "ver": "1.0.3",
+      "uuid": "018d1bdc-32b4-416a-b012-64003d5e2a69",
+      "rawTextureUuid": "ef8f7603-873e-4a3a-93f3-9c64fda2b785",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -1,
+      "trimX": 0,
+      "trimY": 2,
+      "width": 140,
+      "height": 148,
+      "rawWidth": 140,
+      "rawHeight": 150,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

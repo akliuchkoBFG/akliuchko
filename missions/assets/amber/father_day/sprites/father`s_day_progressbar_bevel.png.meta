@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "6938f40a-29ec-4606-8275-ac01bdabb809",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "father`s_day_progressbar_bevel": {
+      "ver": "1.0.3",
+      "uuid": "458310cc-de3a-4219-a50a-7f26d36fd1c0",
+      "rawTextureUuid": "6938f40a-29ec-4606-8275-ac01bdabb809",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 343,
+      "height": 29,
+      "rawWidth": 344,
+      "rawHeight": 30,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
