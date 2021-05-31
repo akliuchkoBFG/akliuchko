@@ -44,14 +44,6 @@ cc.Class({
             event.stopPropagation();
             this._tapToContinue(event.detail.pickIndex);
         });
-
-        const pickerLayout = this.node.getComponent(MissionPickerLayout);
-        if(pickerLayout) {
-            this._layoutNode = pickerLayout.setPickerFromProductPackage(this._itemData);
-            if(this._layoutNode) {
-                this._setPickItems(this._layoutNode);
-            }
-        }
         return this._loadingPromise || Promise.resolve();
     },
 
@@ -65,6 +57,14 @@ cc.Class({
         this._itemProductPackageIDs = _.map(itemData.lootbox, (item) => {
             return item.productPackageID;
         });
+        // Setup layout if the layout component is included
+        const pickerLayout = this.node.getComponent(MissionPickerLayout);
+        if(pickerLayout) {
+            this._layoutNode = pickerLayout.setPickerFromProductPackage(this._itemData);
+            if(this._layoutNode) {
+                this._setPickItems(this._layoutNode);
+            }
+        }
     },
 
     supportsItem(itemData, premiumItemModel) {

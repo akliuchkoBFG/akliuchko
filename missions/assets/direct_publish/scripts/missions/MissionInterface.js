@@ -371,4 +371,23 @@ cc.Class({
 		return this._missionData && this._missionData.mission && this._missionData.mission.awardData;
 	},
 
+	getAnyStepClaimable: function(){
+		const claimableSteps = [];
+		const stepData = this._stepData;
+		
+		const stepDataArray = Object.keys(stepData).map((index) => {
+			return stepData[index];
+		});
+		
+		stepDataArray.forEach((step) => {
+			const max = step.data.max || 1;
+			const newProgress = step.data.progress || 0;
+			const stepAwarded = step.data.awarded || false;
+			if(newProgress >= max && !stepAwarded){
+				claimableSteps.push(step);
+			}
+		});
+		return claimableSteps;
+	}
+
 });
