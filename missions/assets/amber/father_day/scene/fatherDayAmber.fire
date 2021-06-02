@@ -3002,7 +3002,7 @@
     "_enabled": true,
     "_validPreview": true,
     "_N$templateString": "<color=#ffbe00>CONGRATULATIONS!</color>",
-    "_N$testData": "{\n\t\"progress\": \"0\",\n\t\"max\": \"3\",\n\t\"slotname\": \"Mad Mouse: The Zappening\",\n\t\"minbet\": \"1\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\"\n}"
+    "_N$testData": "{\n\t\"progress\": \"0\",\n\t\"max\": \"894M\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
     "__type__": "7fac4uD0npKXpWkApNeqDnt",
@@ -3045,7 +3045,7 @@
     "_enabled": true,
     "_validPreview": true,
     "_N$templateString": "<color=#753100>CONGRATULATIONS!</color>",
-    "_N$testData": "{\n\t\"progress\": \"0\",\n\t\"max\": \"3\",\n\t\"slotname\": \"Mad Mouse: The Zappening\",\n\t\"minbet\": \"1\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\"\n}"
+    "_N$testData": "{\n\t\"progress\": \"0\",\n\t\"max\": \"894M\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
     "__type__": "7fac4uD0npKXpWkApNeqDnt",
@@ -3208,7 +3208,7 @@
     "_enabled": true,
     "_validPreview": true,
     "_N$templateString": "<color=#ffffd7>You’ve completed the puzzle!</color>",
-    "_N$testData": "{\n\t\"progress\": \"0\",\n\t\"max\": \"3\",\n\t\"slotname\": \"Mad Mouse: The Zappening\",\n\t\"minbet\": \"1\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\"\n}"
+    "_N$testData": "{\n\t\"progress\": \"0\",\n\t\"max\": \"894M\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
     "__type__": "7fac4uD0npKXpWkApNeqDnt",
@@ -3251,7 +3251,7 @@
     "_enabled": true,
     "_validPreview": true,
     "_N$templateString": "<color=#008000>You’ve completed the puzzle!</color>",
-    "_N$testData": "{\n\t\"progress\": \"0\",\n\t\"max\": \"3\",\n\t\"slotname\": \"Mad Mouse: The Zappening\",\n\t\"minbet\": \"1\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\"\n}"
+    "_N$testData": "{\n\t\"progress\": \"0\",\n\t\"max\": \"894M\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
     "__type__": "7fac4uD0npKXpWkApNeqDnt",
@@ -3770,7 +3770,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": -18
+      "y": -19
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -3788,7 +3788,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 131
@@ -3879,7 +3879,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 134
@@ -3970,7 +3970,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 137
@@ -4061,7 +4061,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 140
@@ -4152,7 +4152,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 143
@@ -4243,7 +4243,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 146
@@ -4334,7 +4334,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 149
@@ -4425,7 +4425,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 152
@@ -4516,7 +4516,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 155
@@ -6112,8 +6112,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 322,
-      "height": 330
+      "width": 320,
+      "height": 329
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -6121,8 +6121,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 1,
-      "y": 1
+      "x": 2,
+      "y": 0.5
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -6153,7 +6153,7 @@
       "__uuid__": "3b74ac1a-6b90-4594-8b38-9b67c7e452ae"
     },
     "_type": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -6234,7 +6234,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": -1,
-      "y": -0.5
+      "y": -1.5
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -7044,7 +7044,7 @@
     "missionInterface": {
       "__id__": 7
     },
-    "_N$missionJSONString": "{\"templateID\":35,\"templateVersion\":4,\"id\":378,\"source\":\"testThis1\",\"tags\":[\"imported\",\"lucky_remix\",\"badge_vip\"],\"mission\":{\"steps\":[{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false}],\"awardResult\":[],\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepBet\",\"data\":{\"max\":894819659,\"progress\":0,\"id\":0,\"award\":{\"ProductPackageItemChips\":[{\"amount\":173240000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":173240000}}],\"ProductPackageItemCollectionChest\":[{\"tier\":4,\"amount\":1,\"order\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Massive\",\"tier\":4,\"chestID\":\"season5BFC.massive\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"active\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":823234087,\"progress\":0,\"id\":1,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}],\"ProductPackageItemClubChips\":[{\"order\":1,\"amount\":\"1500000\",\"title\":\"🍀 Club Bonus 🍀\",\"text\":\"scores BIG in the Puzzle Pursuit event!🍀✨\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"1500000\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1073783591,\"progress\":0,\"id\":2,\"award\":{\"ProductPackageItemChips\":[{\"amount\":259860000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":259860000}}],\"ProductPackageItemCollectionChest\":[{\"tier\":4,\"amount\":1,\"order\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Massive\",\"tier\":4,\"chestID\":\"season5BFC.massive\"}}],\"ProductPackageItemEntrytext\":[{\"order\":2,\"entrytextID\":\"promo2021BFC.stpatricks\",\"amount\":\"1\",\"promoData\":{\"name\":\"Entrytext\",\"amount\":\"1\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":13830332647,\"progress\":0,\"id\":3,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":8948196588,\"progress\":0,\"id\":4,\"award\":{\"ProductPackageItemCollectionChest\":[{\"tier\":5,\"amount\":1,\"order\":0,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":5,\"chestID\":\"season5BFC.colossal\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[5],\"predecessors\":[3],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":16464681722,\"progress\":0,\"id\":5,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}],\"ProductPackageItemCollectionTrophies\":[{\"order\":1,\"amount\":\"1\",\"trophyID\":\"promo2021BFC.stpatricks\",\"promoData\":{\"name\":\"Collection Trophies\",\"amount\":\"1\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[6],\"predecessors\":[4],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":16464681722,\"progress\":0,\"id\":6,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}],\"ProductPackageItemClubChips\":[{\"order\":1,\"title\":\"🍀 Club Bonus 🍀\",\"text\":\"scores BIG in the Puzzle Pursuit event!🍀🍀✨\",\"amount\":\"2500000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"2500000\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[7],\"predecessors\":[5],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":16464681722,\"progress\":0,\"id\":7,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}],\"ProductPackageItemCollectionChest\":[{\"tier\":5,\"amount\":2,\"order\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":2,\"chestName\":\"Colossal\",\"tier\":5,\"chestID\":\"season5BFC.colossal\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[8],\"predecessors\":[6],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":16464681722,\"progress\":0,\"id\":8,\"award\":{\"ProductPackageItemChips\":[{\"amount\":649640000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":649640000}}],\"ProductPackageItemCollectionChest\":[{\"tier\":5,\"amount\":3,\"order\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":3,\"chestName\":\"Colossal\",\"tier\":5,\"chestID\":\"season5BFC.colossal\"}}],\"ProductPackageItemCollectionFrames\":[{\"order\":3,\"amount\":\"1\",\"frameID\":\"promo2021BFC.stpatricks\",\"promoData\":{\"name\":\"Collection Frames\",\"amount\":\"1\"}}],\"ProductPackageItemClubChips\":[{\"order\":2,\"title\":\"🍀 Club Bonus 🍀\",\"text\":\"scores BIG in the Puzzle Pursuit event!🍀🍀🍀✨\",\"amount\":\"4000000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"4000000\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[],\"predecessors\":[7],\"formatString\":\"Win {max} chips\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[5],[6],[7],[8],[]],\"predecessors\":[[],[0],[1],[2],[3],[4],[5],[6],[7]]}},\"requireAwarded\":\"TRUE\",\"awardData\":null,\"manifest\":{\"tray_icon\":null},\"awarded\":false},\"secondsActive\":110,\"secondsRemaining\":518290,\"slotsData\":[],\"giftsData\":[]}",
+    "_N$missionJSONString": "{\"templateID\":35,\"templateVersion\":4,\"id\":406,\"source\":\"testThis1\",\"tags\":[\"imported\",\"lucky_remix\",\"badge_vip\"],\"mission\":{\"steps\":[{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false}],\"awardResult\":[],\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepBet\",\"data\":{\"max\":894819659,\"progress\":0,\"id\":0,\"award\":{\"ProductPackageItemChips\":[{\"amount\":173240000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":173240000}}],\"ProductPackageItemCollectionChest\":[{\"tier\":4,\"amount\":1,\"order\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Massive\",\"tier\":4,\"chestID\":\"season5BFC.massive\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"active\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":823234087,\"progress\":0,\"id\":1,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}],\"ProductPackageItemClubChips\":[{\"order\":1,\"amount\":\"1500000\",\"title\":\"🍀 Club Bonus 🍀\",\"text\":\"scores BIG in the Puzzle Pursuit event!🍀✨\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"1500000\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1073783591,\"progress\":0,\"id\":2,\"award\":{\"ProductPackageItemChips\":[{\"amount\":259860000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":259860000}}],\"ProductPackageItemCollectionChest\":[{\"tier\":4,\"amount\":1,\"order\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Massive\",\"tier\":4,\"chestID\":\"season5BFC.massive\"}}],\"ProductPackageItemEntrytext\":[{\"order\":2,\"entrytextID\":\"promo2021BFC.stpatricks\",\"amount\":\"1\",\"promoData\":{\"name\":\"Entrytext\",\"amount\":\"1\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":13830332647,\"progress\":0,\"id\":3,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":8948196588,\"progress\":0,\"id\":4,\"award\":{\"ProductPackageItemCollectionChest\":[{\"tier\":5,\"amount\":1,\"order\":0,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":5,\"chestID\":\"season5BFC.colossal\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[5],\"predecessors\":[3],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":16464681722,\"progress\":0,\"id\":5,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}],\"ProductPackageItemCollectionTrophies\":[{\"order\":1,\"amount\":\"1\",\"trophyID\":\"promo2021BFC.stpatricks\",\"promoData\":{\"name\":\"Collection Trophies\",\"amount\":\"1\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[6],\"predecessors\":[4],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":16464681722,\"progress\":0,\"id\":6,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}],\"ProductPackageItemClubChips\":[{\"order\":1,\"title\":\"🍀 Club Bonus 🍀\",\"text\":\"scores BIG in the Puzzle Pursuit event!🍀🍀✨\",\"amount\":\"2500000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"2500000\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[7],\"predecessors\":[5],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":16464681722,\"progress\":0,\"id\":7,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}],\"ProductPackageItemCollectionChest\":[{\"tier\":5,\"amount\":2,\"order\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":2,\"chestName\":\"Colossal\",\"tier\":5,\"chestID\":\"season5BFC.colossal\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[8],\"predecessors\":[6],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":16464681722,\"progress\":0,\"id\":8,\"award\":{\"ProductPackageItemChips\":[{\"amount\":649640000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":649640000}}],\"ProductPackageItemCollectionChest\":[{\"tier\":5,\"amount\":3,\"order\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":3,\"chestName\":\"Colossal\",\"tier\":5,\"chestID\":\"season5BFC.colossal\"}}],\"ProductPackageItemCollectionFrames\":[{\"order\":3,\"amount\":\"1\",\"frameID\":\"promo2021BFC.stpatricks\",\"promoData\":{\"name\":\"Collection Frames\",\"amount\":\"1\"}}],\"ProductPackageItemClubChips\":[{\"order\":2,\"title\":\"🍀 Club Bonus 🍀\",\"text\":\"scores BIG in the Puzzle Pursuit event!🍀🍀🍀✨\",\"amount\":\"4000000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"4000000\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[],\"predecessors\":[7],\"formatString\":\"Win {max} chips\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[5],[6],[7],[8],[]],\"predecessors\":[[],[0],[1],[2],[3],[4],[5],[6],[7]]}},\"requireAwarded\":\"TRUE\",\"awardData\":null,\"manifest\":{\"tray_icon\":null},\"awarded\":false},\"secondsActive\":0,\"secondsRemaining\":518400,\"slotsData\":[],\"giftsData\":[]}",
     "_N$instantiateMissionTrigger": true,
     "_N$retrieveMissionTrigger": false,
     "_N$updatePreviewDataTrigger": true,
