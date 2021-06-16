@@ -83,16 +83,6 @@
               "value": false
             }
           ]
-        },
-        "comps": {
-          "cc.Button": {
-            "enabled": [
-              {
-                "frame": 0,
-                "value": false
-              }
-            ]
-          }
         }
       },
       "buttons/button_close": {

@@ -41,17 +41,6 @@
               "value": false
             }
           ]
-        },
-        "comps": {
-          "cc.Sprite": {},
-          "cc.Button": {
-            "enabled": [
-              {
-                "frame": 0,
-                "value": false
-              }
-            ]
-          }
         }
       },
       "buttons/button_close": {
