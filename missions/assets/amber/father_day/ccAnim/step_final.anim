@@ -389,7 +389,7 @@
           "active": [
             {
               "frame": 0,
-              "value": true
+              "value": false
             }
           ]
         }
