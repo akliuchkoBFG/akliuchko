@@ -1202,7 +1202,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 215.86,
+      "width": 252.31,
       "height": 52
     },
     "_rotationX": 0,
@@ -1372,7 +1372,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 252.31,
+      "width": 247.18,
       "height": 52
     },
     "_rotationX": 0,
@@ -1430,7 +1430,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 252.31,
+      "width": 247.18,
       "height": 52
     },
     "_rotationX": 0,
@@ -1457,7 +1457,7 @@
       "__id__": 41
     },
     "_enabled": true,
-    "_N$string": "<color=#fde366>Bet a total of 16.4B chips</color> \n<color=#ffffff>to start collecting!</color>",
+    "_N$string": "<color=#fde366>Bet a total of 16.4B chips</color>\n<color=#ffffff>to keep collecting!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 23,
     "_N$font": {
@@ -1476,7 +1476,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#fde366>Bet a total of {max} {currencyLower}</color> \n<color=#ffffff>to start collecting!</color>",
+    "_N$templateString": "<color=#fde366>Bet a total of {max} {currencyLower}</color>\n<color=#ffffff>to keep collecting!</color>",
     "_N$testData": "{\n\t\"progress\": \"16.4B\",\n\t\"max\": \"16.4B\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -1500,7 +1500,7 @@
       "__id__": 40
     },
     "_enabled": true,
-    "_N$string": "<color=#a74d11>Bet a total of 16.4B chips</color> \n<color=#c92eff>to start collecting!</color>",
+    "_N$string": "<color=#a74d11>Bet a total of 16.4B chips</color>\n<color=#c92eff>to keep collecting!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 23,
     "_N$font": {
@@ -1519,7 +1519,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#a74d11>Bet a total of {max} {currencyLower}</color> \n<color=#c92eff>to start collecting!</color>",
+    "_N$templateString": "<color=#a74d11>Bet a total of {max} {currencyLower}</color>\n<color=#c92eff>to keep collecting!</color>",
     "_N$testData": "{\n\t\"progress\": \"16.4B\",\n\t\"max\": \"16.4B\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -1578,7 +1578,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 215.86,
+      "width": 252.31,
       "height": 52
     },
     "_rotationX": 0,
@@ -1636,7 +1636,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 215.86,
+      "width": 252.31,
       "height": 52
     },
     "_rotationX": 0,
@@ -1663,7 +1663,7 @@
       "__id__": 49
     },
     "_enabled": true,
-    "_N$string": "<color=#fde366>Bet a total of 16.4B chips</color> \n<color=#ffffff>to start collecting!</color>",
+    "_N$string": "<color=#fde366>Bet a total of 16.4B chips</color> \n<color=#ffffff>to keep collecting!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 23,
     "_N$font": {
@@ -1682,7 +1682,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#fde366>Bet a total of {max} {currencyLower}</color> \n<color=#ffffff>to start collecting!</color>",
+    "_N$templateString": "<color=#fde366>Bet a total of {max} {currencyLower}</color> \n<color=#ffffff>to keep collecting!</color>",
     "_N$testData": "{\n\t\"progress\": \"16.4B\",\n\t\"max\": \"16.4B\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -1706,7 +1706,7 @@
       "__id__": 48
     },
     "_enabled": true,
-    "_N$string": "<color=#753100>Bet a total of 16.4B chips</color> \n<color=#008000>to keep collecting!</color>",
+    "_N$string": "<color=#a74d11>Bet a total of 16.4B chips</color> \n<color=#c92eff>to keep collecting!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 23,
     "_N$font": {
@@ -1725,7 +1725,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#753100>Bet a total of {max} {currencyLower}</color> \n<color=#008000>to keep collecting!</color>",
+    "_N$templateString": "<color=#a74d11>Bet a total of {max} {currencyLower}</color> \n<color=#c92eff>to keep collecting!</color>",
     "_N$testData": "{\n\t\"progress\": \"16.4B\",\n\t\"max\": \"16.4B\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -1784,7 +1784,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 223.22000000000003,
+      "width": 252.31,
       "height": 52
     },
     "_rotationX": 0,
@@ -1842,7 +1842,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 223.22000000000003,
+      "width": 252.31,
       "height": 52
     },
     "_rotationX": 0,
@@ -1869,7 +1869,7 @@
       "__id__": 57
     },
     "_enabled": true,
-    "_N$string": "<color=#fde366>Bet a total of 16.4B chips</color> \n<color=#ffffff>to start collecting!</color>",
+    "_N$string": "<color=#fde366>Bet a total of 16.4B chips</color> \n<color=#ffffff>to keep collecting!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 23,
     "_N$font": {
@@ -1888,7 +1888,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#fde366>Bet a total of {max} {currencyLower}</color> \n<color=#ffffff>to start collecting!</color>",
+    "_N$templateString": "<color=#fde366>Bet a total of {max} {currencyLower}</color> \n<color=#ffffff>to keep collecting!</color>",
     "_N$testData": "{\n\t\"progress\": \"16.4B\",\n\t\"max\": \"16.4B\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -1912,7 +1912,7 @@
       "__id__": 56
     },
     "_enabled": true,
-    "_N$string": "<color=#a74d11>Bet a total of 16.4B chips</color> \n<color=#c92eff>to start collecting!</color>",
+    "_N$string": "<color=#a74d11>Bet a total of 16.4B chips</color> \n<color=#c92eff>to keep collecting!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 23,
     "_N$font": {
@@ -1931,7 +1931,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#a74d11>Bet a total of {max} {currencyLower}</color> \n<color=#c92eff>to start collecting!</color>",
+    "_N$templateString": "<color=#a74d11>Bet a total of {max} {currencyLower}</color> \n<color=#c92eff>to keep collecting!</color>",
     "_N$testData": "{\n\t\"progress\": \"16.4B\",\n\t\"max\": \"16.4B\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -1990,7 +1990,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 215.86,
+      "width": 252.31,
       "height": 52
     },
     "_rotationX": 0,
@@ -2048,7 +2048,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 215.86,
+      "width": 252.31,
       "height": 52
     },
     "_rotationX": 0,
@@ -2075,7 +2075,7 @@
       "__id__": 65
     },
     "_enabled": true,
-    "_N$string": "<color=#fde366>Bet a total of 16.4B chips</color> \n<color=#ffffff>to start collecting!</color>",
+    "_N$string": "<color=#fde366>Bet a total of 16.4B chips</color> \n<color=#ffffff>to keep collecting!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 23,
     "_N$font": {
@@ -2094,7 +2094,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#fde366>Bet a total of {max} {currencyLower}</color> \n<color=#ffffff>to start collecting!</color>",
+    "_N$templateString": "<color=#fde366>Bet a total of {max} {currencyLower}</color> \n<color=#ffffff>to keep collecting!</color>",
     "_N$testData": "{\n\t\"progress\": \"16.4B\",\n\t\"max\": \"16.4B\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -2118,7 +2118,7 @@
       "__id__": 64
     },
     "_enabled": true,
-    "_N$string": "<color=#a74d11>Bet a total of 16.4B chips</color> \n<color=#c92eff>to start collecting!</color>",
+    "_N$string": "<color=#a74d11>Bet a total of 16.4B chips</color> \n<color=#c92eff>to keep collecting!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 23,
     "_N$font": {
@@ -2137,7 +2137,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#a74d11>Bet a total of {max} {currencyLower}</color> \n<color=#c92eff>to start collecting!</color>",
+    "_N$templateString": "<color=#a74d11>Bet a total of {max} {currencyLower}</color> \n<color=#c92eff>to keep collecting!</color>",
     "_N$testData": "{\n\t\"progress\": \"16.4B\",\n\t\"max\": \"16.4B\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -2196,7 +2196,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 223.22000000000003,
+      "width": 247.18,
       "height": 52
     },
     "_rotationX": 0,
@@ -2254,7 +2254,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 215.86,
+      "width": 247.18,
       "height": 52
     },
     "_rotationX": 0,
@@ -2281,7 +2281,7 @@
       "__id__": 73
     },
     "_enabled": true,
-    "_N$string": "<color=#fde366>Bet a total of 16.4B chips</color> \n<color=#ffffff>to start collecting!</color>",
+    "_N$string": "<color=#fde366>Bet a total of 16.4B chips</color>\n<color=#ffffff>to keep collecting!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 23,
     "_N$font": {
@@ -2300,7 +2300,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#fde366>Bet a total of {max} {currencyLower}</color> \n<color=#ffffff>to start collecting!</color>",
+    "_N$templateString": "<color=#fde366>Bet a total of {max} {currencyLower}</color>\n<color=#ffffff>to keep collecting!</color>",
     "_N$testData": "{\n\t\"progress\": \"16.4B\",\n\t\"max\": \"16.4B\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -2324,7 +2324,7 @@
       "__id__": 72
     },
     "_enabled": true,
-    "_N$string": "<color=#a74d11>Bet a total of 16.4B chips</color> \n<color=#c92eff>to start collecting!</color>",
+    "_N$string": "<color=#a74d11>Bet a total of 16.4B chips</color>\n<color=#c92eff>to keep collecting!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 23,
     "_N$font": {
@@ -2343,7 +2343,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#a74d11>Bet a total of {max} {currencyLower}</color> \n<color=#c92eff>to start collecting!</color>",
+    "_N$templateString": "<color=#a74d11>Bet a total of {max} {currencyLower}</color>\n<color=#c92eff>to keep collecting!</color>",
     "_N$testData": "{\n\t\"progress\": \"16.4B\",\n\t\"max\": \"16.4B\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -2402,7 +2402,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 223.22000000000003,
+      "width": 252.31,
       "height": 52
     },
     "_rotationX": 0,
@@ -2460,7 +2460,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 223.22000000000003,
+      "width": 252.31,
       "height": 52
     },
     "_rotationX": 0,
@@ -2487,7 +2487,7 @@
       "__id__": 81
     },
     "_enabled": true,
-    "_N$string": "<color=#fde366>Bet a total of 16.4B chips</color> \n<color=#ffffff>to start collecting!</color>",
+    "_N$string": "<color=#fde366>Bet a total of 16.4B chips</color> \n<color=#ffffff>to keep collecting!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 23,
     "_N$font": {
@@ -2506,7 +2506,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#fde366>Bet a total of {max} {currencyLower}</color> \n<color=#ffffff>to start collecting!</color>",
+    "_N$templateString": "<color=#fde366>Bet a total of {max} {currencyLower}</color> \n<color=#ffffff>to keep collecting!</color>",
     "_N$testData": "{\n\t\"progress\": \"16.4B\",\n\t\"max\": \"16.4B\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -2530,7 +2530,7 @@
       "__id__": 80
     },
     "_enabled": true,
-    "_N$string": "<color=#a74d11>Bet a total of 16.4B chips</color> \n<color=#c92eff>to start collecting!</color>",
+    "_N$string": "<color=#a74d11>Bet a total of 16.4B chips</color> \n<color=#c92eff>to keep collecting!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 23,
     "_N$font": {
@@ -2549,7 +2549,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#a74d11>Bet a total of {max} {currencyLower}</color> \n<color=#c92eff>to start collecting!</color>",
+    "_N$templateString": "<color=#a74d11>Bet a total of {max} {currencyLower}</color> \n<color=#c92eff>to keep collecting!</color>",
     "_N$testData": "{\n\t\"progress\": \"16.4B\",\n\t\"max\": \"16.4B\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -2608,7 +2608,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 223.22000000000003,
+      "width": 252.31,
       "height": 52
     },
     "_rotationX": 0,
@@ -2666,7 +2666,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 215.86,
+      "width": 252.31,
       "height": 52
     },
     "_rotationX": 0,
@@ -2693,7 +2693,7 @@
       "__id__": 89
     },
     "_enabled": true,
-    "_N$string": "<color=#fde366>Bet a total of 16.4B chips</color> \n<color=#ffffff>to start collecting!</color>",
+    "_N$string": "<color=#fde366>Bet a total of 16.4B chips</color> \n<color=#ffffff>to keep collecting!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 23,
     "_N$font": {
@@ -2712,7 +2712,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#fde366>Bet a total of {max} {currencyLower}</color> \n<color=#ffffff>to start collecting!</color>",
+    "_N$templateString": "<color=#fde366>Bet a total of {max} {currencyLower}</color> \n<color=#ffffff>to keep collecting!</color>",
     "_N$testData": "{\n\t\"progress\": \"16.4B\",\n\t\"max\": \"16.4B\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -2736,7 +2736,7 @@
       "__id__": 88
     },
     "_enabled": true,
-    "_N$string": "<color=#a74d11>Bet a total of 16.4B chips</color> \n<color=#c92eff>to start collecting!</color>",
+    "_N$string": "<color=#a74d11>Bet a total of 16.4B chips</color> \n<color=#c92eff>to keep collecting!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 23,
     "_N$font": {
@@ -2755,7 +2755,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#a74d11>Bet a total of {max} {currencyLower}</color> \n<color=#c92eff>to start collecting!</color>",
+    "_N$templateString": "<color=#a74d11>Bet a total of {max} {currencyLower}</color> \n<color=#c92eff>to keep collecting!</color>",
     "_N$testData": "{\n\t\"progress\": \"16.4B\",\n\t\"max\": \"16.4B\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -2814,7 +2814,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 223.22000000000003,
+      "width": 252.31,
       "height": 52
     },
     "_rotationX": 0,
@@ -2872,7 +2872,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 223.22000000000003,
+      "width": 252.31,
       "height": 52
     },
     "_rotationX": 0,
@@ -2899,7 +2899,7 @@
       "__id__": 97
     },
     "_enabled": true,
-    "_N$string": "<color=#fde366>Bet a total of 16.4B chips</color> \n<color=#ffffff>to start collecting!</color>",
+    "_N$string": "<color=#fde366>Bet a total of 16.4B chips</color> \n<color=#ffffff>to finish collecting!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 23,
     "_N$font": {
@@ -2918,7 +2918,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#fde366>Bet a total of {max} {currencyLower}</color> \n<color=#ffffff>to start collecting!</color>",
+    "_N$templateString": "<color=#fde366>Bet a total of {max} {currencyLower}</color> \n<color=#ffffff>to finish collecting!</color>",
     "_N$testData": "{\n\t\"progress\": \"16.4B\",\n\t\"max\": \"16.4B\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -2942,7 +2942,7 @@
       "__id__": 96
     },
     "_enabled": true,
-    "_N$string": "<color=#a74d11>Bet a total of 16.4B chips</color> \n<color=#c92eff>to start collecting!</color>",
+    "_N$string": "<color=#a74d11>Bet a total of 16.4B chips</color> \n<color=#c92eff>to finish collecting!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 23,
     "_N$font": {
@@ -2961,7 +2961,7 @@
     },
     "_enabled": true,
     "_validPreview": true,
-    "_N$templateString": "<color=#a74d11>Bet a total of {max} {currencyLower}</color> \n<color=#c92eff>to start collecting!</color>",
+    "_N$templateString": "<color=#a74d11>Bet a total of {max} {currencyLower}</color> \n<color=#c92eff>to finish collecting!</color>",
     "_N$testData": "{\n\t\"progress\": \"16.4B\",\n\t\"max\": \"16.4B\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -3075,8 +3075,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 299.37,
-      "height": 30
+      "width": 292.08,
+      "height": 26
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -3133,8 +3133,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 299.37,
-      "height": 30
+      "width": 292.08,
+      "height": 26
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -3281,7 +3281,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 305.78,
+      "width": 298.95,
       "height": 26
     },
     "_rotationX": 0,
@@ -3339,7 +3339,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 305.78,
+      "width": 298.95,
       "height": 26
     },
     "_rotationX": 0,
@@ -7101,7 +7101,7 @@
     "missionInterface": {
       "__id__": 7
     },
-    "_N$missionJSONString": "{\"templateID\":35,\"templateVersion\":4,\"id\":434,\"source\":\"testThis1\",\"tags\":[\"imported\",\"lucky_remix\",\"badge_vip\"],\"mission\":{\"steps\":[{\"progress\":894819659,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":173240000,\"newBalance\":50908487762}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":1,\"tier\":4,\"finalCount\":93,\"chestID\":\"season5BFC.massive\"}}],\"includeReelRivals\":false},{\"progress\":823234087,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":216550000,\"newBalance\":51125037762}},{\"class\":\"ProductPackageItemClubChips\",\"result\":[]}],\"includeReelRivals\":false},{\"progress\":1073783591,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":259860000,\"newBalance\":51384897762}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":1,\"tier\":4,\"finalCount\":94,\"chestID\":\"season5BFC.massive\"}},{\"class\":\"ProductPackageItemEntrytext\",\"result\":{\"entrytextID\":\"promo2021BFC.stpatricks\"}}],\"includeReelRivals\":false},{\"progress\":13830332647,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":216550000,\"newBalance\":51601447762}}],\"includeReelRivals\":false},{\"progress\":8948196588,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":1,\"tier\":5,\"finalCount\":55,\"chestID\":\"season5BFC.colossal\"}}],\"includeReelRivals\":false},{\"progress\":16464681722,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":216550000,\"newBalance\":51817997762}},{\"class\":\"ProductPackageItemCollectionTrophies\",\"result\":{\"grantedCount\":\"1\",\"trophyID\":\"promo2021BFC.stpatricks\",\"finalCount\":19}}],\"includeReelRivals\":false},{\"progress\":16464681722,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":216550000,\"newBalance\":52034547762}},{\"class\":\"ProductPackageItemClubChips\",\"result\":[]}],\"includeReelRivals\":false},{\"progress\":16464681722,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":216550000,\"newBalance\":52251097762}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":2,\"tier\":5,\"finalCount\":57,\"chestID\":\"season5BFC.colossal\"}}],\"includeReelRivals\":false},{\"progress\":16464681722,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":649640000,\"newBalance\":52900737762}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":3,\"tier\":5,\"finalCount\":60,\"chestID\":\"season5BFC.colossal\"}},{\"class\":\"ProductPackageItemCollectionFrames\",\"result\":{\"frameID\":\"promo2021BFC.stpatricks\"}},{\"class\":\"ProductPackageItemClubChips\",\"result\":[]}],\"includeReelRivals\":false}],\"awardResult\":[],\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepBet\",\"data\":{\"max\":894819659,\"progress\":894819659,\"id\":0,\"award\":{\"ProductPackageItemChips\":[{\"amount\":173240000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":173240000}}],\"ProductPackageItemCollectionChest\":[{\"tier\":4,\"amount\":1,\"order\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Massive\",\"tier\":4,\"chestID\":\"season5BFC.massive\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":173240000,\"newBalance\":50908487762}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":1,\"tier\":4,\"finalCount\":93,\"chestID\":\"season5BFC.massive\"}}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":823234087,\"progress\":823234087,\"id\":1,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}],\"ProductPackageItemClubChips\":[{\"order\":1,\"amount\":\"1500000\",\"title\":\"🍀 Club Bonus 🍀\",\"text\":\"scores BIG in the Puzzle Pursuit event!🍀✨\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"1500000\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":216550000,\"newBalance\":51125037762}},{\"class\":\"ProductPackageItemClubChips\",\"result\":[]}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1073783591,\"progress\":1073783591,\"id\":2,\"award\":{\"ProductPackageItemChips\":[{\"amount\":259860000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":259860000}}],\"ProductPackageItemCollectionChest\":[{\"tier\":4,\"amount\":1,\"order\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Massive\",\"tier\":4,\"chestID\":\"season5BFC.massive\"}}],\"ProductPackageItemEntrytext\":[{\"order\":2,\"entrytextID\":\"promo2021BFC.stpatricks\",\"amount\":\"1\",\"promoData\":{\"name\":\"Entrytext\",\"amount\":\"1\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":259860000,\"newBalance\":51384897762}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":1,\"tier\":4,\"finalCount\":94,\"chestID\":\"season5BFC.massive\"}},{\"class\":\"ProductPackageItemEntrytext\",\"result\":{\"entrytextID\":\"promo2021BFC.stpatricks\"}}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":13830332647,\"progress\":13830332647,\"id\":3,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":216550000,\"newBalance\":51601447762}}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":8948196588,\"progress\":8948196588,\"id\":4,\"award\":{\"ProductPackageItemCollectionChest\":[{\"tier\":5,\"amount\":1,\"order\":0,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":5,\"chestID\":\"season5BFC.colossal\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":1,\"tier\":5,\"finalCount\":55,\"chestID\":\"season5BFC.colossal\"}}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[5],\"predecessors\":[3],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":16464681722,\"progress\":16464681722,\"id\":5,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}],\"ProductPackageItemCollectionTrophies\":[{\"order\":1,\"amount\":\"1\",\"trophyID\":\"promo2021BFC.stpatricks\",\"promoData\":{\"name\":\"Collection Trophies\",\"amount\":\"1\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":216550000,\"newBalance\":51817997762}},{\"class\":\"ProductPackageItemCollectionTrophies\",\"result\":{\"grantedCount\":\"1\",\"trophyID\":\"promo2021BFC.stpatricks\",\"finalCount\":19}}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[6],\"predecessors\":[4],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":16464681722,\"progress\":16464681722,\"id\":6,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}],\"ProductPackageItemClubChips\":[{\"order\":1,\"title\":\"🍀 Club Bonus 🍀\",\"text\":\"scores BIG in the Puzzle Pursuit event!🍀🍀✨\",\"amount\":\"2500000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"2500000\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":216550000,\"newBalance\":52034547762}},{\"class\":\"ProductPackageItemClubChips\",\"result\":[]}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[7],\"predecessors\":[5],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":16464681722,\"progress\":16464681722,\"id\":7,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}],\"ProductPackageItemCollectionChest\":[{\"tier\":5,\"amount\":2,\"order\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":2,\"chestName\":\"Colossal\",\"tier\":5,\"chestID\":\"season5BFC.colossal\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":216550000,\"newBalance\":52251097762}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":2,\"tier\":5,\"finalCount\":57,\"chestID\":\"season5BFC.colossal\"}}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[8],\"predecessors\":[6],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":16464681722,\"progress\":16464681722,\"id\":8,\"award\":{\"ProductPackageItemChips\":[{\"amount\":649640000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":649640000}}],\"ProductPackageItemCollectionChest\":[{\"tier\":5,\"amount\":3,\"order\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":3,\"chestName\":\"Colossal\",\"tier\":5,\"chestID\":\"season5BFC.colossal\"}}],\"ProductPackageItemCollectionFrames\":[{\"order\":3,\"amount\":\"1\",\"frameID\":\"promo2021BFC.stpatricks\",\"promoData\":{\"name\":\"Collection Frames\",\"amount\":\"1\"}}],\"ProductPackageItemClubChips\":[{\"order\":2,\"title\":\"🍀 Club Bonus 🍀\",\"text\":\"scores BIG in the Puzzle Pursuit event!🍀🍀🍀✨\",\"amount\":\"4000000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"4000000\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":649640000,\"newBalance\":52900737762}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":3,\"tier\":5,\"finalCount\":60,\"chestID\":\"season5BFC.colossal\"}},{\"class\":\"ProductPackageItemCollectionFrames\",\"result\":{\"frameID\":\"promo2021BFC.stpatricks\"}},{\"class\":\"ProductPackageItemClubChips\",\"result\":[]}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[],\"predecessors\":[7],\"formatString\":\"Win {max} chips\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[5],[6],[7],[8],[]],\"predecessors\":[[],[0],[1],[2],[3],[4],[5],[6],[7]]}},\"requireAwarded\":\"TRUE\",\"awardData\":null,\"manifest\":{\"tray_icon\":null},\"awarded\":false},\"secondsActive\":3105,\"secondsRemaining\":515295,\"slotsData\":[],\"giftsData\":[]}",
+    "_N$missionJSONString": "{\"templateID\":35,\"templateVersion\":4,\"id\":434,\"source\":\"testThis1\",\"tags\":[\"imported\",\"lucky_remix\",\"badge_vip\"],\"mission\":{\"steps\":[{\"progress\":894819659,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":173240000,\"newBalance\":50908487762}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":1,\"tier\":4,\"finalCount\":93,\"chestID\":\"season5BFC.massive\"}}],\"includeReelRivals\":false},{\"progress\":823234087,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":216550000,\"newBalance\":51125037762}},{\"class\":\"ProductPackageItemClubChips\",\"result\":[]}],\"includeReelRivals\":false},{\"progress\":1073783591,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":259860000,\"newBalance\":51384897762}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":1,\"tier\":4,\"finalCount\":94,\"chestID\":\"season5BFC.massive\"}},{\"class\":\"ProductPackageItemEntrytext\",\"result\":{\"entrytextID\":\"promo2021BFC.stpatricks\"}}],\"includeReelRivals\":false},{\"progress\":13830332647,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":216550000,\"newBalance\":51601447762}}],\"includeReelRivals\":false},{\"progress\":8948196588,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":1,\"tier\":5,\"finalCount\":55,\"chestID\":\"season5BFC.colossal\"}}],\"includeReelRivals\":false},{\"progress\":16464681722,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":216550000,\"newBalance\":51817997762}},{\"class\":\"ProductPackageItemCollectionTrophies\",\"result\":{\"grantedCount\":\"1\",\"trophyID\":\"promo2021BFC.stpatricks\",\"finalCount\":19}}],\"includeReelRivals\":false},{\"progress\":16464681722,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":216550000,\"newBalance\":52034547762}},{\"class\":\"ProductPackageItemClubChips\",\"result\":[]}],\"includeReelRivals\":false},{\"progress\":16464681722,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":216550000,\"newBalance\":52251097762}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":2,\"tier\":5,\"finalCount\":57,\"chestID\":\"season5BFC.colossal\"}}],\"includeReelRivals\":false},{\"progress\":16464681722,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":649640000,\"newBalance\":52900737762}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":3,\"tier\":5,\"finalCount\":60,\"chestID\":\"season5BFC.colossal\"}},{\"class\":\"ProductPackageItemCollectionFrames\",\"result\":{\"frameID\":\"promo2021BFC.stpatricks\"}},{\"class\":\"ProductPackageItemClubChips\",\"result\":[]}],\"includeReelRivals\":false}],\"awardResult\":[],\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepBet\",\"data\":{\"max\":894819659,\"progress\":894819659,\"id\":0,\"award\":{\"ProductPackageItemChips\":[{\"amount\":173240000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":173240000}}],\"ProductPackageItemCollectionChest\":[{\"tier\":4,\"amount\":1,\"order\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Massive\",\"tier\":4,\"chestID\":\"season5BFC.massive\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":173240000,\"newBalance\":50908487762}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":1,\"tier\":4,\"finalCount\":93,\"chestID\":\"season5BFC.massive\"}}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":823234087,\"progress\":823234087,\"id\":1,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}],\"ProductPackageItemClubChips\":[{\"order\":1,\"amount\":\"1500000\",\"title\":\"🍀 Club Bonus 🍀\",\"text\":\"scores BIG in the Puzzle Pursuit event!🍀✨\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"1500000\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":216550000,\"newBalance\":51125037762}},{\"class\":\"ProductPackageItemClubChips\",\"result\":[]}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1073783591,\"progress\":1073783591,\"id\":2,\"award\":{\"ProductPackageItemChips\":[{\"amount\":259860000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":259860000}}],\"ProductPackageItemCollectionChest\":[{\"tier\":4,\"amount\":1,\"order\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Massive\",\"tier\":4,\"chestID\":\"season5BFC.massive\"}}],\"ProductPackageItemEntrytext\":[{\"order\":2,\"entrytextID\":\"promo2021BFC.stpatricks\",\"amount\":\"1\",\"promoData\":{\"name\":\"Entrytext\",\"amount\":\"1\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":259860000,\"newBalance\":51384897762}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":1,\"tier\":4,\"finalCount\":94,\"chestID\":\"season5BFC.massive\"}},{\"class\":\"ProductPackageItemEntrytext\",\"result\":{\"entrytextID\":\"promo2021BFC.stpatricks\"}}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":13830332647,\"progress\":13830332647,\"id\":3,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":216550000,\"newBalance\":51601447762}}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":8948196588,\"progress\":8948196588,\"id\":4,\"award\":{\"ProductPackageItemCollectionChest\":[{\"tier\":5,\"amount\":1,\"order\":0,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":5,\"chestID\":\"season5BFC.colossal\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":1,\"tier\":5,\"finalCount\":55,\"chestID\":\"season5BFC.colossal\"}}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[5],\"predecessors\":[3],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":16464681722,\"progress\":16464681722,\"id\":5,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}],\"ProductPackageItemCollectionTrophies\":[{\"order\":1,\"amount\":\"1\",\"trophyID\":\"promo2021BFC.stpatricks\",\"promoData\":{\"name\":\"Collection Trophies\",\"amount\":\"1\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":216550000,\"newBalance\":51817997762}},{\"class\":\"ProductPackageItemCollectionTrophies\",\"result\":{\"grantedCount\":\"1\",\"trophyID\":\"promo2021BFC.stpatricks\",\"finalCount\":19}}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[6],\"predecessors\":[4],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":16464681722,\"progress\":16464681722,\"id\":6,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}],\"ProductPackageItemClubChips\":[{\"order\":1,\"title\":\"🍀 Club Bonus 🍀\",\"text\":\"scores BIG in the Puzzle Pursuit event!🍀🍀✨\",\"amount\":\"2500000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"2500000\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":216550000,\"newBalance\":52034547762}},{\"class\":\"ProductPackageItemClubChips\",\"result\":[]}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[7],\"predecessors\":[5],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":16464681722,\"progress\":16464681722,\"id\":7,\"award\":{\"ProductPackageItemChips\":[{\"amount\":216550000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":216550000}}],\"ProductPackageItemCollectionChest\":[{\"tier\":5,\"amount\":2,\"order\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":2,\"chestName\":\"Colossal\",\"tier\":5,\"chestID\":\"season5BFC.colossal\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":216550000,\"newBalance\":52251097762}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":2,\"tier\":5,\"finalCount\":57,\"chestID\":\"season5BFC.colossal\"}}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[8],\"predecessors\":[6],\"formatString\":\"Win {max} chips\"}},{\"class\":\"MissionStepWins\",\"data\":{\"max\":16464681722,\"progress\":16464681722,\"id\":8,\"award\":{\"ProductPackageItemChips\":[{\"amount\":649640000,\"order\":0,\"promoData\":{\"name\":\"Chips\",\"amount\":649640000}}],\"ProductPackageItemCollectionChest\":[{\"tier\":5,\"amount\":3,\"order\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":3,\"chestName\":\"Colossal\",\"tier\":5,\"chestID\":\"season5BFC.colossal\"}}],\"ProductPackageItemCollectionFrames\":[{\"order\":3,\"amount\":\"1\",\"frameID\":\"promo2021BFC.stpatricks\",\"promoData\":{\"name\":\"Collection Frames\",\"amount\":\"1\"}}],\"ProductPackageItemClubChips\":[{\"order\":2,\"title\":\"🍀 Club Bonus 🍀\",\"text\":\"scores BIG in the Puzzle Pursuit event!🍀🍀🍀✨\",\"amount\":\"4000000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"4000000\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":649640000,\"newBalance\":52900737762}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":3,\"tier\":5,\"finalCount\":60,\"chestID\":\"season5BFC.colossal\"}},{\"class\":\"ProductPackageItemCollectionFrames\",\"result\":{\"frameID\":\"promo2021BFC.stpatricks\"}},{\"class\":\"ProductPackageItemClubChips\",\"result\":[]}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[],\"predecessors\":[7],\"formatString\":\"Win {max} chips\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[5],[6],[7],[8],[]],\"predecessors\":[[],[0],[1],[2],[3],[4],[5],[6],[7]]}},\"requireAwarded\":\"TRUE\",\"awardData\":null,\"manifest\":{\"tray_icon\":null},\"awarded\":false},\"secondsActive\":4366,\"secondsRemaining\":514034,\"slotsData\":[],\"giftsData\":[]}",
     "_N$instantiateMissionTrigger": true,
     "_N$retrieveMissionTrigger": false,
     "_N$updatePreviewDataTrigger": true,
