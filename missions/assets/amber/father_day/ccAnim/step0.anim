@@ -488,6 +488,16 @@
             }
           ]
         }
+      },
+      "steps_final/mission_step/background/mission_description_alt": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
       }
     }
   },
