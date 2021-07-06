@@ -30,6 +30,9 @@ cc.Class({
 	// Combines award and awardResult into a single data payload
 	_getProductPackageRewards() {
 		const productPackageRewards = _.cloneDeep(this.missionStepInterface.getAwardData());
+		if (!productPackageRewards) {
+			return productPackageRewards;
+		}
 		const awardResults = this.missionStepInterface.getAwardResultData();
 		if (awardResults.length === 0) {
 			// Award has not been claimed, result data not yet available

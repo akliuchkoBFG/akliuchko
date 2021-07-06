@@ -44,6 +44,8 @@ cc.Class({
 		this._isInitialized = false;
 		this._stepData = {};
 
+		SANotificationCenter.getInstance().postNotification('InitializeProgressUI');
+
 		if (CC_EDITOR) {
 			this.findOrAddDataProvider();
 		} else {
@@ -370,6 +372,9 @@ cc.Class({
 	getAwardData: function() {
 		return this._missionData && this._missionData.mission && this._missionData.mission.awardData;
 	},
+	getAwardResultData: function() {
+		return this._missionData && this._missionData.mission && this._missionData.mission.awardResult;
+	},
 
 	getAnyStepClaimable: function(){
 		const claimableSteps = [];
@@ -388,6 +393,6 @@ cc.Class({
 			}
 		});
 		return claimableSteps;
-	}
+	},
 
 });

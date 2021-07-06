@@ -10,6 +10,7 @@ cc.Class({
 
 	editor: CC_EDITOR && {
 		menu: 'Add Mission Component/Rewards/Sequence/Sequence Item Data Template',
+		inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
 	},
 
 	properties: {

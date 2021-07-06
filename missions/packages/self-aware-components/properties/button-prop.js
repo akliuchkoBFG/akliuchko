@@ -24,7 +24,8 @@ return Vue.component('button-prop', {
 		return {
 			cssBlock: {
 				margin: "10px",
-				padding: "10px"
+				padding: "10px",
+				paddingLeft: 10 + 13 * this.indent + "px",
 			},
 		};
 	},
@@ -33,6 +34,10 @@ return Vue.component('button-prop', {
 		target: {
 			twoWay: true,
 			type: Object,
+		},
+		indent: {
+			type: Number,
+			default: 0
 		},
 	},
 

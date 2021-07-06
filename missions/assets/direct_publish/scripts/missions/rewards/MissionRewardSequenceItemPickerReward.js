@@ -39,19 +39,12 @@ cc.Class({
         },
     },
 
-    loadItem() {
-        this.node.on('lootbox_pickeritem.selected', (event) => {
-            event.stopPropagation();
-            this._tapToContinue(event.detail.pickIndex);
-        });
-        return this._loadingPromise || Promise.resolve();
-    },
-
     // Set up itemData and product Package for filling out Reward Teasers later to reveal/whiff awards
     setReward(itemData, premiumItemModel) { // eslint-disable-line no-unused-vars
         this._itemData = itemData;
         const awardedPackageIndex = itemData.awardResult.result.productPackageIndex;
         const productPackageID = itemData.lootbox[awardedPackageIndex].productPackageID;
+        this._lootboxSize = itemData.lootbox.length;
         this._awardedProductPackage = itemData.promoData.lootbox[productPackageID];
         // Build a map of product package IDs to shuffle
         this._itemProductPackageIDs = _.map(itemData.lootbox, (item) => {
@@ -65,6 +58,20 @@ cc.Class({
                 this._setPickItems(this._layoutNode);
             }
         }
+        // Check the size of the lootbox and remove excess picks by default if there are less items in the lootbox than expected.
+        if(this.pickItems.length > this._lootboxSize) {
+            this.log.d("Lootbox provided in mission data is smaller than the picks configured in the layout, some pick items will not be shown.");
+            for (let index = this._lootboxSize; index < this.pickItems.length; index++) {
+                this.pickItems[index].node.opacity = 0;
+                this.pickItems[index].node.active = false;
+            }
+        }
+        // initialize the event for input of pick items
+        this.node.on('lootbox_pickeritem.selected', (event) => {
+            event.stopPropagation();
+            this._tapToContinue(event.detail.pickIndex);
+        });
+        this._setupPickIndices();
     },
 
     supportsItem(itemData, premiumItemModel) {
@@ -98,17 +105,11 @@ cc.Class({
         let index = 1;
         const sortedPicks = _.sortBy(picks, (pick) => {
             const nodeName = pick.node.name = "pick_" + index;
-            // Check if this is beyond the number of lootbox items we expect and mark out of bound nodes inactive
-            if(!CC_EDITOR && index > this._lootboxSize) {
-                pick.node.opacity = 0;
-                pick.node.active = false;
-            }
             index++;
             // Strip out all non-numeric characters for sorting
             return +nodeName.replace(/[^\d]+/g, '');
         });
         this.pickItems = sortedPicks;
-        this._setupPickIndices();
     },
 
     _setupPickIndices() {
@@ -124,7 +125,14 @@ cc.Class({
         }
     },
 
+    _startIdle() {
+        for (let i = 0; i < this.pickItems.length; i++) {
+            this.pickItems[i].startIdle();
+        }
+    },
+
     _waitForInput() {
+        this._startIdle();
         const waitForInput = new Promise((resolve) => {
             this._tapToContinue = resolve;
         });

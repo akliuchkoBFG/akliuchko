@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "9018bce7-134e-4a33-98d3-85bf6bd3615b",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "desert_journey_tiles": {
+      "ver": "1.0.3",
+      "uuid": "b159f3e2-c503-46ca-9baa-395cffa05191",
+      "rawTextureUuid": "9018bce7-134e-4a33-98d3-85bf6bd3615b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 575,
+      "height": 479,
+      "rawWidth": 576,
+      "rawHeight": 480,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

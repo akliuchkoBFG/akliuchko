@@ -1,16 +1,3 @@
-
-/*
-
-This is a demo of how loot box data might drive a board game themed event
-
-Each space is represented by a loot box items.  
-It uses a 3 step mission, the first 2 stepes are loot boxes (with 4 items), the last is just a coin reward
-- When completing step 1, the "die" is rolled and the player will be moved to the item they've recieved
-- When completing step 2, the "die" is rolled again and the player moves to the next item
-- When completing step 3, the "die" is rolled, and will move them to the finish
-
-*/
-
 const BaseMissionStepComponent = require('BaseMissionStepComponent');
 
 const TAG = "BoardGameController";
@@ -289,6 +276,11 @@ cc.Class({
 	},
 
 	claimAward() {
+		if (this._claimInProgress) {
+			this.log.d("Attempted to claim step award multiple times");
+			return;
+		}
+		this._claimInProgress = true;
 		this.missionStepInterface.claimAward();
 		if (this.progressRandomizer) {
 			this.progressRandomizer.startSequence();
@@ -345,18 +337,20 @@ cc.Class({
 			this.missionStepInterface.onStepComplete();
 		})
 		.then(() => {
-			// Show UI that was hidden during claim sequence
-			return this.stepOutro.play();
-		})
-		.then(() => {
-			// Play mission complete animation upon finishing the last step
 			const stepID = this.missionStepInterface.stepID;
 			const finalStepID = this.missionStepInterface.missionInterface.getFinalStepID();
 
 			const missionStepState = this.missionStepInterface.getState();
 			if (stepID === finalStepID && missionStepState === 'redeemed') {
-				this.missionComplete.play();
+				// Play mission complete animation upon finishing the last step
+				return this.missionComplete.play();
+			} else {
+				// Show UI that was hidden during claim sequence
+				return this.stepOutro.play();
 			}
+		})
+		.finally(() => {
+			this._claimInProgress = false;
 		});
 	},
 });

@@ -18,9 +18,10 @@ CC_EDITOR && (function() {
 				},
 			});
 		},
-		registerPropertyInspector(componentName, filterCallback) {
+		registerPropertyInspector(componentName, filterCallback, identifier) {
+			identifier = identifier || componentName;
 			Editor.SAG._properties = Editor.SAG._properties || {};
-			Editor.SAG._properties[componentName] = filterCallback;
+			Editor.SAG._properties[identifier] = {componentName, filterCallback};
 		},
 		getComponentType(prop) {
 			// Force use of array property that checks for custom components
@@ -29,7 +30,17 @@ CC_EDITOR && (function() {
 			}
 			const type = prop.attrs.typename || prop.attrs.type || 'UnknownType';
 			const components = Object.entries(Editor.SAG._properties);
-			for (const [compType, filterFn] of components) {
+			for (const [identifier, propertyData] of components) {
+				let filterFn, compType;
+				if (typeof propertyData === 'function') {
+					// Old property data format mapped from component name to filter function
+					filterFn = propertyData;
+					compType = identifier;
+				} else {
+					// New property data format has an object that includes component name and filter function
+					filterFn = propertyData.filterCallback;
+					compType = propertyData.componentName;
+				}
 				try {
 					if (filterFn(type, prop)) {
 						return compType;
@@ -41,6 +52,10 @@ CC_EDITOR && (function() {
 						"Prop: " + JSON.stringify(prop, null, '\t'),
 					].join('\n'));
 				}
+			}
+			// Object properties not handled by a custom property component should check for nested custom properties
+			if (prop.compType === 'cc-object-prop') {
+				return 'custom-object-prop';
 			}
 			return prop.compType;
 		},

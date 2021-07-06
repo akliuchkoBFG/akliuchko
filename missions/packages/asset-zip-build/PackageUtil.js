@@ -4,7 +4,7 @@ class PackageUtil {
 	}
 	callSceneScript(message, ...args) {
 		return new Promise((resolve, reject) => {
-			const timeout = 30e3;
+			const timeout = 120e3;
 			Editor.Scene.callSceneScript(this.packageName, message, ...args, (err, result) => {
 				if (err) {
 					if (!(err instanceof Error)) {
@@ -20,7 +20,7 @@ class PackageUtil {
 	}
 	sendToPackage(message, ...args) {
 		return new Promise((resolve, reject) => {
-			const timeout = 30e3;
+			const timeout = 120e3;
 			Editor.Ipc.sendToMain(`${this.packageName}:${message}`, ...args, (err, result) => {
 				if (err) {
 					if (!(err instanceof Error)) {

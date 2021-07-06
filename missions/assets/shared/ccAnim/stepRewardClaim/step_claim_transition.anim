@@ -1,0 +1,59 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "step_claim_transition",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "award_container": {
+        "props": {
+          "active": [],
+          "opacity": []
+        }
+      },
+      "background": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "buttons/play/button_play": {
+        "props": {}
+      },
+      "buttons/button_claim": {
+        "props": {}
+      },
+      "completed_container": {
+        "props": {}
+      },
+      "buttons/button_close": {
+        "props": {}
+      },
+      "buttons": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "award_container/shutter_spine": {
+        "props": {},
+        "comps": {
+          "sp.Skeleton": {}
+        }
+      }
+    }
+  },
+  "events": []
+}

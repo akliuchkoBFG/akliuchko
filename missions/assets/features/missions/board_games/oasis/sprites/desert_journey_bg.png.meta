@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "56d5a1ec-5dea-4c7f-9e58-1e3674a81463",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "desert_journey_bg": {
+      "ver": "1.0.3",
+      "uuid": "27f80667-bf2b-4b91-b2ee-7a60ee64093d",
+      "rawTextureUuid": "56d5a1ec-5dea-4c7f-9e58-1e3674a81463",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": -13,
+      "trimX": 8,
+      "trimY": 42,
+      "width": 558,
+      "height": 822,
+      "rawWidth": 576,
+      "rawHeight": 880,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

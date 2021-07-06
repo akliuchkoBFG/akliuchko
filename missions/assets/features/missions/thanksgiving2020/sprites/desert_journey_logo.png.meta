@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "65621764-8cee-4e78-8362-f7443489e34a",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "desert_journey_logo": {
+      "ver": "1.0.3",
+      "uuid": "dbb17b17-801d-4e06-a7be-ae8682d4fc15",
+      "rawTextureUuid": "65621764-8cee-4e78-8362-f7443489e34a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": 0,
+      "trimX": 73,
+      "trimY": 16,
+      "width": 451,
+      "height": 74,
+      "rawWidth": 596,
+      "rawHeight": 106,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

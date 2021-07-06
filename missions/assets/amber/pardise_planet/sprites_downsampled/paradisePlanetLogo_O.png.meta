@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "3253a967-1bb2-4351-9393-fd77a8280763",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "paradisePlanetLogo_O": {
+      "ver": "1.0.3",
+      "uuid": "3ce47952-5666-4f77-a00b-64f2f00c71da",
+      "rawTextureUuid": "3253a967-1bb2-4351-9393-fd77a8280763",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 452,
+      "height": 81,
+      "rawWidth": 454,
+      "rawHeight": 82,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
