@@ -1,14 +1,14 @@
 {
   "ver": "1.0.0",
-  "uuid": "d7198532-ab64-4990-80cc-0c065e30a4a2",
+  "uuid": "b6a28811-36cc-4a07-990a-35a1f3618eb3",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
     "button_did_it_orange_press": {
       "ver": "1.0.3",
-      "uuid": "13b45cef-ed41-4b5b-98ef-86a6517e0289",
-      "rawTextureUuid": "d7198532-ab64-4990-80cc-0c065e30a4a2",
+      "uuid": "836312ee-30af-4337-aeb9-b160125d87b1",
+      "rawTextureUuid": "b6a28811-36cc-4a07-990a-35a1f3618eb3",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
