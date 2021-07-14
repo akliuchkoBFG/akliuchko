@@ -1,0 +1,153 @@
+
+ambients.png
+size: 218,218
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Ocean_patch
+  rotate: false
+  xy: 2, 172
+  size: 139, 44
+  orig: 139, 44
+  offset: 0, 0
+  index: -1
+Waves/Wave0
+  rotate: false
+  xy: 2, 127
+  size: 132, 21
+  orig: 133, 21
+  offset: 0, 0
+  index: -1
+Waves/Wave1k
+  rotate: false
+  xy: 2, 150
+  size: 136, 20
+  orig: 137, 20
+  offset: 1, 0
+  index: -1
+Waves/Wave2
+  rotate: false
+  xy: 2, 48
+  size: 87, 16
+  orig: 88, 17
+  offset: 0, 0
+  index: -1
+Waves/Wave3
+  rotate: true
+  xy: 135, 39
+  size: 86, 14
+  orig: 86, 14
+  offset: 0, 0
+  index: -1
+Waves/Wave4K
+  rotate: true
+  xy: 151, 65
+  size: 84, 12
+  orig: 84, 12
+  offset: 0, 0
+  index: -1
+Waves/Wave5
+  rotate: true
+  xy: 165, 69
+  size: 80, 11
+  orig: 81, 11
+  offset: 1, 0
+  index: -1
+Waves/Wave6
+  rotate: true
+  xy: 178, 78
+  size: 71, 11
+  orig: 72, 12
+  offset: 1, 1
+  index: -1
+Waves/Wave7k
+  rotate: true
+  xy: 191, 83
+  size: 66, 11
+  orig: 67, 11
+  offset: 1, 0
+  index: -1
+Waves/Wave8
+  rotate: true
+  xy: 204, 104
+  size: 63, 9
+  orig: 63, 9
+  offset: 0, 0
+  index: -1
+Waves/Wave9
+  rotate: true
+  xy: 206, 169
+  size: 47, 10
+  orig: 47, 10
+  offset: 0, 0
+  index: -1
+fountain
+  rotate: false
+  xy: 2, 66
+  size: 83, 59
+  orig: 83, 59
+  offset: 0, 0
+  index: -1
+fountain ripple/fontain_ripple_01
+  rotate: false
+  xy: 34, 2
+  size: 52, 21
+  orig: 52, 21
+  offset: 0, 0
+  index: -1
+fountain ripple/fontain_ripple_02
+  rotate: false
+  xy: 34, 25
+  size: 54, 21
+  orig: 55, 22
+  offset: 1, 1
+  index: -1
+fountain ripple/fontain_ripple_03
+  rotate: true
+  xy: 111, 68
+  size: 57, 22
+  orig: 58, 22
+  offset: 1, 0
+  index: -1
+fountain ripple/fontain_ripple_04
+  rotate: true
+  xy: 87, 67
+  size: 58, 22
+  orig: 58, 23
+  offset: 0, 0
+  index: -1
+fountain ripple/fontain_ripple_05
+  rotate: false
+  xy: 143, 193
+  size: 61, 23
+  orig: 61, 23
+  offset: 0, 0
+  index: -1
+fountain ripple/fontain_ripple_06
+  rotate: false
+  xy: 151, 39
+  size: 50, 24
+  orig: 50, 28
+  offset: 0, 1
+  index: -1
+fountain ripple/fontain_ripple_07
+  rotate: false
+  xy: 140, 151
+  size: 53, 19
+  orig: 55, 20
+  offset: 0, 0
+  index: -1
+fountain ripple/fontain_ripple_08
+  rotate: false
+  xy: 143, 172
+  size: 55, 19
+  orig: 55, 20
+  offset: 0, 0
+  index: -1
+fountain_animated
+  rotate: false
+  xy: 2, 2
+  size: 30, 44
+  orig: 30, 44
+  offset: 0, 0
+  index: -1
