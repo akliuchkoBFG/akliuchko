@@ -29,7 +29,7 @@ cc.Class({
 		this._objFlags |= cc.Object.Flags.EditorOnly;
 	},
 
-	onLoad() {
+	onEnable() {
 		if (!this._previewNode) {
 			this._updatePreviewNode();
 		}
@@ -68,7 +68,7 @@ cc.Class({
 		this.node.addChild(this._previewNode);
 	},
 
-	onDestroy() {
+	onDisable() {
 		if (this._previewNode) {
 			this._previewNode.removeFromParent();
 			this._previewNode = null;

@@ -14,7 +14,7 @@ const exec = require('child_process').exec;
 const JSZip = require('./lib/jszip.min.js');
 const PackageUtil = Editor.require('packages://asset-zip-build/PackageUtil.js');
 const TEMP_DIR = path.join(Editor.projectInfo.path, 'temp', 'sag', 'self-aware-sync');
-const VERSION_MANIFEST_PATH = Editor.url('profile://local/shared-asset-versions.json');
+const VERSION_MANIFEST_PATH = path.join(Editor.projectInfo.path, 'shared-asset-versions.json');
 const PigbeeRequest = Editor.require('packages://pigbee-utils/PigbeeRequest.js');
 
 // Loaded from secrets.json
@@ -245,6 +245,19 @@ function runSharedAssetZipSync({remoteVersions, updateRequired}) {
 	});
 }
 
+function deleteDeprecatedManifest() {
+	// Version manifest previously was stored in the editor profile directory
+	//  but this location is ignored by version control which allows developers
+	//  to switch branches and change the shared asset contents to older versions
+	//  than what is listed in the manifest file
+	// Remove the deprecated manifest so branches with the old version of the sync package will update
+	const DEPRECATED_MANIFEST_PATH = Editor.url('profile://local/shared-asset-versions.json');
+	if (fs.existsSync(DEPRECATED_MANIFEST_PATH)) {
+		fs.removeSync(DEPRECATED_MANIFEST_PATH);
+	}
+	return Promise.resolve();
+}
+
 module.exports = {
 	messages: {
 		'download-shared' (event) {
@@ -256,6 +269,7 @@ module.exports = {
 			.then(getRemoteSharedAssetVersions)
 			.then(filterForNewVersions)
 			.then(runSharedAssetZipSync)
+			.then(deleteDeprecatedManifest)
 			// Use legacy sync when the current preview environment doesn't know about SharedAssetZips
 			.catch(LegacySync.LegacySyncRequired, () => {
 				Editor.log("Running legacy sync from default");

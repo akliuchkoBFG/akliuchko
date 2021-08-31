@@ -69,7 +69,9 @@ cc.Class({
 	},
 
 	start: function() {
-		this.reloadStepData();
+		if (!this._isInitialized) {
+			this.reloadStepData();
+		}
 	},
 
 	isInitialized: function() {
@@ -107,7 +109,7 @@ cc.Class({
 	},
 
 	claimAward: function() {
-		this.missionInterface.claimStepAward(this.stepID);
+		return this.missionInterface.claimStepAward(this.stepID);
 	},
 
 	launchSlot: function(buyInID) {

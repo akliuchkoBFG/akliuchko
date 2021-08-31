@@ -1,3 +1,13 @@
+const Promise = require('bluebird');
+
+// Create an error type that's more resilient than the standard error object to being serialized over IPC
+function IPCError(message, type, data) {
+	this.message = message;
+	this.type = type;
+	this.data = data;
+}
+IPCError.prototype = Object.create(Error.prototype);
+
 class PackageUtil {
 	constructor(packageName, timeout) {
 		this.packageName = packageName;
@@ -8,9 +18,9 @@ class PackageUtil {
 			Editor.Scene.callSceneScript(this.packageName, message, ...args, (err, result) => {
 				if (err) {
 					if (!(err instanceof Error)) {
-						const errData = err;
-						err = new Error('PackageUtil.callSceneScript error');
-						err.data = errData;
+						// Fix up errors that get lost across the IPC bridge
+						const msg = err.message || 'PackageUtil.callSceneScript unknown error. Use PackageUtil.IPCError';
+						err = new IPCError(msg, err.type, err);
 					}
 					reject(err);
 				}
@@ -23,9 +33,9 @@ class PackageUtil {
 			Editor.Ipc.sendToMain(`${this.packageName}:${message}`, ...args, (err, result) => {
 				if (err) {
 					if (!(err instanceof Error)) {
-						const errData = err;
-						err = new Error('PackageUtil.sendToPackage error');
-						err.data = errData;
+						// Fix up errors that get lost across the IPC bridge
+						const msg = err.message || 'PackageUtil.sendToPackage unknown error. Use PackageUtil.IPCError';
+						err = new IPCError(msg, err.type, err);
 					}
 					reject(err);
 				}
@@ -34,4 +44,5 @@ class PackageUtil {
 		});
 	}
 }
+PackageUtil.IPCError = IPCError;
 module.exports = PackageUtil;

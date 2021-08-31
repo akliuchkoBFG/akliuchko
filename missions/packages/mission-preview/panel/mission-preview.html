@@ -1,0 +1,51 @@
+<div id="wrap" class="wrap">
+	<section class="wrapper layout vertical" v-if="missionID != null">
+		<ui-prop name="Mission"><span>{{missionHumanReadable}}</span></ui-prop>
+		<ui-prop name="Step">
+			<ui-select v-value="selectedStepID" @change="selectStep">
+				<option v-for="stepID in stepIDs" :value="stepID">{{stepID}}</option>
+			</ui-select>
+		</ui-prop>
+		<div v-show="selectedStepData != null">
+			<ui-prop name="Progress">
+				<ui-slider v-el:progress-slider v-value="stepProgress"></ui-slider>
+				<span>{{progressPercent}}%</span>
+			</ui-prop>
+		</div>
+		<div class="layout horizontal justified">
+			<span
+				tooltip="Force current mission progress to the step and progress amount selected above"
+				tooltip-target="left"
+				@confirm="updateMissionProgress"
+				@mouseenter="showTooltip"
+				@mouseleave="hideTooltip"
+			>
+				<ui-button
+					@confirm="updateMissionProgress"
+				>
+					Simulate Progress
+				</ui-button>
+			</span>
+			<span
+				tooltip="Reset mission state to the last simulated progress point to repeat testing the same mission state (like after claiming)"
+				tooltip-target="right"
+				@confirm="updateMissionProgress"
+				@mouseenter="showTooltip"
+				@mouseleave="hideTooltip"
+			>
+				<ui-button
+					v-el:reupdate-button
+					@confirm="reupdateMissionProgress"
+					disabled
+				>
+					Resimulate Progress
+				</ui-button>
+			</span>
+		</div>
+	</section>
+	<section class="wrapper layout vertical" v-if="missionID == null">
+		<span>Mission data not found in scene, verify that this scene has a MissionServerDataComponent and your character has a valid mission</span>
+		<ui-button @confirm="findMSDC">Find MissionServerDataComponent</ui-button>
+		<ui-button @confirm="loadFromScene">Load Mission</ui-button>
+	</section>
+</div>

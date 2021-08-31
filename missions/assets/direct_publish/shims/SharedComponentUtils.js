@@ -122,9 +122,13 @@ CC_EDITOR && (function() {
 			}
 
 			const elem = this._sharedEl;
+			arrowSide = arrowSide || el.getAttribute('tooltip-target');
 			const config = TOOLTIP_CONFIG[arrowSide] || TOOLTIP_CONFIG.left;
 			elem.style.display = 'none';
 			elem.innerText = text;
+			// Clear out existing arrow style to allow for switching between right and left tooltips
+			elem.$arrow.style.left = '';
+			elem.$arrow.style.right = '';
 			elem.position = config.position;
 			this._timeout = setTimeout(() => {
 				this._timeout = null;

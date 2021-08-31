@@ -114,8 +114,49 @@ function getEnvironment(id, inputData) {
 	return env;
 }
 
+function _validateEnvInfo(envInfo) {
+	if (!envInfo) {
+		return false;
+	}
+	const requiredProperties = [
+		"displayName",
+		"id",
+		"pigbeeURLs.bfc",
+		"pigbeeURLs.jms",
+		"serverURL",
+	];
+	let hasRequiredProps = true;
+	requiredProperties.forEach((prop) => {
+		if (!_.has(envInfo, prop)) {
+			hasRequiredProps = false;
+		}
+	});
+	if (!hasRequiredProps) {
+		return false;
+	}
+	return true;
+}
+
+// Add a custom environment to the environment list
+function addCustomEnvironment(id, envInfo) {
+	// Validate environment info
+	const isValid = _validateEnvInfo(envInfo);
+	if (!isValid) {
+		throw new Error('Unable to add invalid dynamic environment to environment list');
+	}
+	let envIndex = _.findIndex(ENVIRONMENTS, _.matchesProperty('id', id));
+	if (envIndex === -1) {
+		// Add to list after live
+		envIndex = _.findIndex(ENVIRONMENTS, _.matchesProperty('id', 'live')) + 1;
+		ENVIRONMENTS.splice(envIndex, 0, envInfo);
+	} else {
+		ENVIRONMENTS[envIndex] = envInfo;
+	}
+}
+
 module.exports = {
 	LIST: ENVIRONMENTS,
 	makeDevEnvironment,
 	getEnvironment,
+	addCustomEnvironment,
 };

@@ -37,6 +37,11 @@ cc.Class({
             type: [MissionPickerItem],
             default: [],
         },
+
+        layoutNode: {
+            type: MissionPickerLayout,
+            default: null,
+        },
     },
 
     // Set up itemData and product Package for filling out Reward Teasers later to reveal/whiff awards
@@ -51,9 +56,8 @@ cc.Class({
             return item.productPackageID;
         });
         // Setup layout if the layout component is included
-        const pickerLayout = this.node.getComponent(MissionPickerLayout);
-        if(pickerLayout) {
-            this._layoutNode = pickerLayout.setPickerFromProductPackage(this._itemData);
+        if(this.layoutNode) {
+            this._layoutNode = this.layoutNode.setPickerFromProductPackage(this._itemData);
             if(this._layoutNode) {
                 this._setPickItems(this._layoutNode);
             }
@@ -77,10 +81,9 @@ cc.Class({
     supportsItem(itemData, premiumItemModel) {
         let supported = this._super(itemData, premiumItemModel);
         if (supported) {
-            const pickerLayout = this.node.getComponent(MissionPickerLayout);
-            if(pickerLayout) {
+            if(this.layoutNode) {
                 // Check the supportsItem of the layout
-                supported = pickerLayout.supportsItem(itemData, premiumItemModel);
+                supported = this.layoutNode.supportsItem(itemData, premiumItemModel);
             } else if (this.pickItems.length > 0) {
                 // No layout, check for picks from a pickerHelper (added in Editor)
                 supported = true;

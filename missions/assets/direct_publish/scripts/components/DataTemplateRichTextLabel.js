@@ -39,8 +39,12 @@ cc.Class({
 	},
 
 	setData(data) {
+		let combinedData = data;
+		if(this.sceneDataAggregator) {
+			combinedData = _.merge({}, this.sceneDataAggregator.getSceneData(), data);
+		}
 		this._tokenizedString = this.templateString.replace(PROPERTY_REGEX, (match, propertyName) => {
-			return (data[propertyName] == null) ? '' : data[propertyName];
+			return (combinedData[propertyName] == null) ? '' : combinedData[propertyName];
 		});
 
 		const styleComponent = this.getComponent('RichTextStyle');

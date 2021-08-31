@@ -36,6 +36,12 @@ const AnimationClipProperty = cc.Class({
 		_clipName: {
 			default: '',
 		},
+		clipName: {
+			get() {
+				return this._clipName;
+			},
+			visible: false,
+		},
 		_animation: {
 			default: null,
 			type: cc.Animation,

@@ -96,5 +96,10 @@ module.exports = {
 		open() {
 			Editor.Panel.open('pigbee-utils');
 		},
+		'reload-environment-profile'() {
+			if (profile) {
+				profile.reload();
+			}
+		},
 	},
 };

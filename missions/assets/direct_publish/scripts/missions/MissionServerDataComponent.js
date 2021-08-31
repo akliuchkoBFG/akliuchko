@@ -113,6 +113,7 @@ cc.Class({
 				missionID: missionID,
 				stepID: stepIndex,
 				stepProgress: stepProgress,
+				characterID: this.previewCharacter.characterID,
 			};
 			Editor.log("mission ID:"+missionID+ " StepID:"+stepIndex+" Progress:"+stepProgress);
 			Editor.SAG.PigbeeRequest.post({
@@ -125,6 +126,9 @@ cc.Class({
 				try {
 					Editor.success("Instantiated Mission Retrieved:" + response + " status: "+response.statusCode);
 					var missionsArray = JSON.parse(response);
+					if (missionsArray.success === false) {
+						throw new Error(missionsArray.error || 'Unknown server error');
+					}
 					const mission = this.boundedMissionArrayAccess(missionIndex, missionsArray);
 					this.missionJSONString = JSON.stringify(mission);
 				} catch(e) {

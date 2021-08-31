@@ -1,5 +1,7 @@
 const PROPERTY_REGEX = /{(.*?)}/g;
 
+const SceneDataAggregator = require('SceneDataAggregator');
+
 cc.Class({
 	extends: cc.Component,
 	editor: CC_EDITOR && {
@@ -15,6 +17,11 @@ cc.Class({
 			notify() {
 				this._previewTestData();
 			},
+		},
+
+		sceneDataAggregator: {
+			default: null,
+			type: SceneDataAggregator,
 		},
 
 		// Preview properties
@@ -41,8 +48,12 @@ cc.Class({
 	},
 
 	setData(data) {
+		let combinedData = data;
+		if(this.sceneDataAggregator) {
+			combinedData = _.merge({}, this.sceneDataAggregator.getSceneData(), data);
+		}
 		const tokenizedString = this.templateString.replace(PROPERTY_REGEX, (match, propertyName) => {
-			return data[propertyName] || '';
+			return combinedData[propertyName] || '';
 		});
 		this.getComponent(cc.Label).string = tokenizedString;
 	},

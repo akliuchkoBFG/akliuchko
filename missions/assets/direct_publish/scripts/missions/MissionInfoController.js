@@ -66,7 +66,7 @@ cc.Class({
 		if (!this.intro.isValid()) {
 			this.log.e("Invalid intro animation clip");
 		}
-		this.intro.play();
+		return this.intro.play();
 	},
 
 	hide() {
@@ -74,7 +74,7 @@ cc.Class({
 		if (!this.outro.isValid()) {
 			this.log.e("Invalid outro animation clip");
 		}
-		this.outro.play();
+		return this.outro.play();
 	},
 
 	toggle() {

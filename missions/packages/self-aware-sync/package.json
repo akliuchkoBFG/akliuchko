@@ -1,6 +1,6 @@
 {
   "name": "self-aware-sync",
-  "version": "1.3.0",
+  "version": "1.3.3",
   "description": "Allows artists to pull new components without needing a repo.",
   "author": "Self Aware Games",
   "main": "main.js",

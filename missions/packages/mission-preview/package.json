@@ -1,0 +1,24 @@
+{
+  "name": "mission-preview",
+  "version": "1.0.0",
+  "description": "A panel for selecting and previewing mission state",
+  "author": "Self Aware Games",
+  "main": "main.js",
+  "scene-script": "scene.js",
+  "main-menu": {
+    "Panel/Self Aware/Mission Preview": {
+      "message": "mission-preview:open"
+    }
+  },
+  "panel": {
+    "main": "panel/mission-preview.js",
+    "type": "dockable",
+    "title": "Mission Preview",
+    "width": 400,
+    "height": 300
+  },
+  "packages": {
+    "pigbee-utils": "^1.0.0",
+    "package-utils": "^1.1.0"
+  }
+}

@@ -45,6 +45,8 @@ return Editor.Panel.extend({
 					this.profile = profile;
 					// Trigger an initialization update
 					this._onProfileChanged();
+					// Add listener for watching for profile updates
+					this._addProfileListener();
 				});
 			},
 			methods: {
@@ -75,13 +77,35 @@ return Editor.Panel.extend({
 						this.profile.data[setting] = this[setting];
 					});
 					this.profile.data.envs.dev = Environments.getEnvironment(this.serverID, this.vmID);
+					this._removeProfileListener();
 					this.profile.save();
+					this._addProfileListener();
+				},
+				_addProfileListener() {
+					this._currentListener = this._onProfileChanged.bind(this);
+					this.profile.addListener('changed', this._currentListener);
+				},
+				_removeProfileListener() {
+					if (this._currentListener) {
+						this.profile.removeListener('changed', this._currentListener);
+						this._currentListener = null;
+					}
 				},
 				_onProfileChanged() {
 					const settings = this.profile.data;
 					RAW_SETTINGS_KEYS.forEach((setting) => {
 						this[setting] = settings[setting];
 					});
+					let envListDirty = false;
+					_.forOwn(settings.envs, (envInfo) => {
+						if (envInfo.custom) {
+							envListDirty = true;
+							Environments.addCustomEnvironment(envInfo.id, envInfo);
+						}
+					});
+					if (envListDirty) {
+						this.previewEnvironments = _.cloneDeep(_.filter(Environments.LIST, (env) => { return env.id !== 'live'; }));
+					}
 				},
 			},
 		});

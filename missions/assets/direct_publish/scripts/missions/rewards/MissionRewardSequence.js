@@ -8,7 +8,7 @@ const MissionRewardSequenceItem = require('MissionRewardSequenceItem');
 
 cc.Class({
 	extends: cc.Component,
-	mixins: [ComponentLog],
+	mixins: [ComponentLog, cc.EventTarget],
 
 	editor: CC_EDITOR && {
 		menu: 'Add Mission Component/Rewards/Sequence/Reward Sequence',
@@ -116,9 +116,11 @@ cc.Class({
 	playSequence() {
 		return this.intro.play()
 		.then(() => {
+			this.emit('reward-sequence.intro-complete');
 			return this._playItems();
 		})
 		.then(() => {
+			this.emit('reward-sequence.items-complete');
 			return this.outro.play();
 		});
 	},

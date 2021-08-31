@@ -12,6 +12,13 @@ cc.Class({
 		menu: 'Add Mission Component/Step Count Label',
 	},
 
+	properties: {
+		showNumCompleted: {
+			default: false,
+			tooltip: "Setting this to true will show num steps completed instead of the active step"
+		}
+	},
+
 	onUpdateMissionData: function() {
 		const rtLabel = this.getComponent('DataTemplateRichTextLabel');
 		if (!rtLabel.templateString || rtLabel.templateString == '') {
@@ -21,8 +28,7 @@ cc.Class({
 	},
 
 	_populateRTData: function(rtLabel) {
-		// TODO: we might want to have the option of 0 based (num complete)
-		let count = 1;
+		let count = this.showNumCompleted ? 0 : 1;
 		let max = 0;
 
 		const steps = this.missionInterface._stepData;

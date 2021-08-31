@@ -395,4 +395,77 @@ cc.Class({
 		return claimableSteps;
 	},
 
+	// Command Data //
+
+	// get a copy of the command data
+	getPublicCommandData: function() {
+		const commandData = this._missionData.mission.commandData;
+		let publicData = commandData.public || {};
+		publicData = Object.assign({}, publicData);
+
+		return publicData;
+	},
+
+	// sets a local copy of the command data, send an event to notify other components
+	setPublicCommandData: function(data, notify) {
+		this._missionData.mission.commandData.public = data;
+		if (notify) {
+			this.emit('publicCommandDataUpdated', data);
+		}
+	},
+
+	// update specific fields in the local copy of the command data, send an event to notify other components
+	updatePublicCommandData: function(data, notify) {
+		const publicData = this.getPublicCommandData();
+		_.forOwn(data, (value, key) => {
+			publicData[key] = value;
+		});
+		
+		this.setPublicCommandData(publicData, notify);
+		return publicData;
+	},
+
+	// send the public command data to the server, saving it to the mission data
+	sendPublicCommandData: function(data, notify) {
+		return this.callCommand("updatePublicCommandData", data, notify);
+	},
+
+	// call a specific command, notify to update components on return
+	callCommand: function(command, data, notify) {
+		const comboID = CasinoCharacterService.playerCharacter.getComboID();
+		const missionID = this.getMissionID();
+
+		// this returns a few peices of data...
+		return SANetworkInterface.serverRequest({
+			controller: "mission",
+			method: "processCommand",
+			params: [comboID, missionID],
+			postObject: {
+				commandData: {
+					command: command,
+					args: data,
+				}
+			},
+		}).then((result) => {
+			if (result.missionData) {
+				if (notify) {
+					this.updateMissionDataWithNotice(result.missionData);
+				} else {
+					this.updateMissionData(result.missionData);
+				}
+			} else {
+				// TODO: error
+			}
+		});
+	},
+
+	// ClientSide Metrics
+	sendMetricsEvent: function(name, data) {
+		const jsonData = Object.assign({}, data);
+		jsonData.missionID = this._missionData.id;
+		jsonData.templateID = this._missionData.templateID;
+		jsonData.tags = this._missionData.tags;
+
+		SAMetrics.sendEvent({eventName: name, st1: 'missions', jsonData: jsonData});
+	}
 });

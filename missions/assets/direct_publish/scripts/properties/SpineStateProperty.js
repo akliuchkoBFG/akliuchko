@@ -153,5 +153,13 @@ const SpineStateProperty = cc.Class({
 		}
 		return SpinePromise.loopUntil(skeleton, this._stateName, loopCondition, animationOpts);
 	},
+
+	sample(animationOpts) {
+		let skeleton = this._skeleton;
+		if (!this._skeleton || !this._stateName) {
+			skeleton = SpinePromise.NullSpineComponent;
+		}
+		return SpinePromise.sample(skeleton, this._stateName, animationOpts);
+	},
 });
 module.exports = SpineStateProperty;

@@ -1,5 +1,6 @@
 const BaseMissionStepComponent = require('BaseMissionStepComponent');
 const MissionStepRewardSequence = require('MissionStepRewardSequence');
+const MissionStepUserSelectionSequence = require('MissionStepUserSelectionSequence');
 
 cc.Class({
 	extends: BaseMissionStepComponent,
@@ -23,6 +24,11 @@ cc.Class({
 		completeState: {
 			default: '',
 			tooltip: "cc.Anim clip name - this clip shows the state when: progress equals max amount"
+		},
+		selectionSequence: {
+			default: null,
+			type: MissionStepUserSelectionSequence,
+			tooltip: "SelectionSequence for selecting different options before the claim sequence"
 		},
 		claimState: {
 			default: '',
@@ -70,7 +76,11 @@ cc.Class({
 		if (progress === 0) {
 			this._play(this.introState);
 		} else if (progress >= max) {
-			this._play(this.completeState);
+			if (!CC_EDITOR && this.selectionSequence) {
+				this._playUserSelectionSequence();
+			} else {
+				this._play(this.completeState);
+			}
 		} else {
 			// TODO: Need checks for complete / claim states(?)
 			this._play(this.progressState);
@@ -118,10 +128,25 @@ cc.Class({
 		comp.play(anim);
 	},
 
+	_playUserSelectionSequence() {
+		// Don't restart the chain if we still have an active promise
+		// 	This avoids the problem of this state getting hit multiple
+		if (!this._selectionSequencePromise) {
+			this._selectionSequencePromise = this.selectionSequence.playSequence().then(() => {
+				this._selectionSequencePromise = null;
+				// if claimAward is selected, the state controller will respond to onClaim
+				if (!this.selectionSequence.claimAward) {
+					// otherwise, move to the complete state
+					this._play(this.completeState);
+				}
+			});
+		}
+	},
+
 	_areAllStepsComplete: function() {
 		return this.missionStepInterface &&
-			   this.missionStepInterface.missionInterface &&
-			   this.missionStepInterface.missionInterface.isAllStepsComplete();
+			this.missionStepInterface.missionInterface &&
+			this.missionStepInterface.missionInterface.isAllStepsComplete();
 	},
 
 });
