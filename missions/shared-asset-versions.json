@@ -1,0 +1,119 @@
+{
+	"assets___direct_publish": {
+		"version": "1.15.0",
+		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/assets___direct_publish/1.15.0.zip",
+		"pathInProject": "assets/direct_publish",
+		"encryption": {
+			"version": "1.0.0",
+			"iv": "9169d97d69ecf2c3bdf78a63c9bfa69a"
+		}
+	},
+	"extension___asset-import": {
+		"version": "2.1.0",
+		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___asset-import/2.1.0.zip",
+		"pathInProject": "packages/asset-import",
+		"encryption": {
+			"version": "1.0.0",
+			"iv": "b97f5758c915a44ca4e5bde6226da7d0"
+		}
+	},
+	"extension___asset-zip-build": {
+		"version": "1.5.3",
+		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___asset-zip-build/1.5.3.zip",
+		"pathInProject": "packages/asset-zip-build",
+		"encryption": {
+			"version": "1.0.0",
+			"iv": "5cb765ed1e1fdf5c0cc6769351460db7"
+		}
+	},
+	"extension___mission-preview": {
+		"version": "1.0.0",
+		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___mission-preview/1.0.0.zip",
+		"pathInProject": "packages/mission-preview",
+		"encryption": {
+			"version": "1.0.0",
+			"iv": "8cf5b84d693b881e6774c079cc1dfcfd"
+		}
+	},
+	"extension___package-utils": {
+		"version": "1.1.0",
+		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___package-utils/1.1.0.zip",
+		"pathInProject": "packages/package-utils",
+		"encryption": {
+			"version": "1.0.0",
+			"iv": "9db8b80ef7b28a3e19c15efd3b50da02"
+		}
+	},
+	"extension___pigbee-utils": {
+		"version": "1.1.0",
+		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___pigbee-utils/1.1.0.zip",
+		"pathInProject": "packages/pigbee-utils",
+		"encryption": {
+			"version": "1.0.0",
+			"iv": "bb28b3a47e82d5b6da479c255540189f"
+		}
+	},
+	"extension___reskin-helper": {
+		"version": "1.1.0",
+		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___reskin-helper/1.1.0.zip",
+		"pathInProject": "packages/reskin-helper",
+		"encryption": {
+			"version": "1.0.0",
+			"iv": "7c8ad9ec7d157b7de3e1c95a22d018c0"
+		}
+	},
+	"extension___sakit-preview-server": {
+		"version": "1.5.0",
+		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___sakit-preview-server/1.5.0.zip",
+		"pathInProject": "packages/sakit-preview-server",
+		"encryption": {
+			"version": "1.0.0",
+			"iv": "7dde0a67b4cd0ea4c051763ba49a2226"
+		}
+	},
+	"extension___scene-archive": {
+		"version": "1.2.0",
+		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___scene-archive/1.2.0.zip",
+		"pathInProject": "packages/scene-archive",
+		"encryption": {
+			"version": "1.0.0",
+			"iv": "a195bec3268f6cab338a04a2f806e581"
+		}
+	},
+	"extension___scene-save-as": {
+		"version": "1.2.0",
+		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___scene-save-as/1.2.0.zip",
+		"pathInProject": "packages/scene-save-as",
+		"encryption": {
+			"version": "1.0.0",
+			"iv": "56337bc7f87426f957adb4e30b35f59d"
+		}
+	},
+	"extension___scene-template": {
+		"version": "1.0.0",
+		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___scene-template/1.0.0.zip",
+		"pathInProject": "packages/scene-template",
+		"encryption": {
+			"version": "1.0.0",
+			"iv": "99623b39cf291d1c9c179d20739cc205"
+		}
+	},
+	"extension___self-aware-components": {
+		"version": "1.6.0",
+		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___self-aware-components/1.6.0.zip",
+		"pathInProject": "packages/self-aware-components",
+		"encryption": {
+			"version": "1.0.0",
+			"iv": "aca1a132833ab8b331b4a4c8eddb8036"
+		}
+	},
+	"extension___self-aware-sync": {
+		"version": "1.3.3",
+		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___self-aware-sync/1.3.3.zip",
+		"pathInProject": "packages/self-aware-sync",
+		"encryption": {
+			"version": "1.0.0",
+			"iv": "b291fe1286a8ac37f6e20fa69291901e"
+		}
+	}
+}
