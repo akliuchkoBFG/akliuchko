@@ -494,6 +494,7 @@
       "__id__": 12
     },
     "_enabled": true,
+    "sceneDataAggregator": null,
     "_validPreview": true,
     "_N$templateString": "Bet a total of {max} in any machine",
     "_N$testData": "{\n\t\"progress\": \"20.8M\",\n\t\"max\": \"20.8M\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
@@ -9823,7 +9824,7 @@
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
-      "__uuid__": "1ff8c720-4805-41c8-be95-41adbcb800f0"
+      "__uuid__": "bfaa5c7c-0e6d-459e-8ed7-4ddb99eb4e3b"
     },
     "_N$maxWidth": 500,
     "_N$lineHeight": 30,
@@ -9837,6 +9838,7 @@
       "__id__": 417
     },
     "_enabled": true,
+    "sceneDataAggregator": null,
     "_validPreview": true,
     "_N$templateString": "Bet a total of {max} in any machine",
     "_N$testData": "{\n\t\"progress\": \"20.8M\",\n\t\"max\": \"20.8M\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
@@ -9943,7 +9945,7 @@
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
-      "__uuid__": "1ff8c720-4805-41c8-be95-41adbcb800f0"
+      "__uuid__": "bfaa5c7c-0e6d-459e-8ed7-4ddb99eb4e3b"
     },
     "_N$maxWidth": 500,
     "_N$lineHeight": 30,
@@ -9957,6 +9959,7 @@
       "__id__": 416
     },
     "_enabled": true,
+    "sceneDataAggregator": null,
     "_validPreview": true,
     "_N$templateString": "Bet a total of {max} in any machine",
     "_N$testData": "{\n\t\"progress\": \"20.8M\",\n\t\"max\": \"20.8M\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
@@ -10102,7 +10105,7 @@
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
-      "__uuid__": "1ff8c720-4805-41c8-be95-41adbcb800f0"
+      "__uuid__": "bfaa5c7c-0e6d-459e-8ed7-4ddb99eb4e3b"
     },
     "_N$maxWidth": 500,
     "_N$lineHeight": 30,
@@ -10116,6 +10119,7 @@
       "__id__": 431
     },
     "_enabled": true,
+    "sceneDataAggregator": null,
     "_validPreview": true,
     "_N$templateString": "Journey Complete! ",
     "_N$testData": "{}"
@@ -10132,7 +10136,7 @@
     "_N$horizontalAlign": 1,
     "_N$fontSize": 26,
     "_N$font": {
-      "__uuid__": "1ff8c720-4805-41c8-be95-41adbcb800f0"
+      "__uuid__": "bfaa5c7c-0e6d-459e-8ed7-4ddb99eb4e3b"
     },
     "_N$maxWidth": 500,
     "_N$lineHeight": 30,
@@ -10146,6 +10150,7 @@
       "__id__": 430
     },
     "_enabled": true,
+    "sceneDataAggregator": null,
     "_validPreview": true,
     "_N$templateString": "Journey Complete! ",
     "_N$testData": "{}"
@@ -10991,7 +10996,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "85aabe48-fb0e-4164-86ad-c63b4ef62c32"
+      "__uuid__": "1b64c204-dfaa-40fa-9ff1-20668b0590d0"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -11034,7 +11039,7 @@
     "duration": 0.1,
     "zoomScale": 1.2,
     "pressedSprite": {
-      "__uuid__": "4f346c95-8ee9-4283-a7e4-98f1518b1dd0"
+      "__uuid__": "dc822859-4780-4148-9aa9-777493d6e984"
     },
     "hoverSprite": null,
     "clickEvents": [
@@ -11059,7 +11064,7 @@
       "a": 255
     },
     "_N$normalSprite": {
-      "__uuid__": "85aabe48-fb0e-4164-86ad-c63b4ef62c32"
+      "__uuid__": "1b64c204-dfaa-40fa-9ff1-20668b0590d0"
     },
     "_N$disabledSprite": null,
     "_N$target": {
@@ -11608,7 +11613,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "62344425-c940-480f-8305-175bf422a05c"
+      "__uuid__": "4e354849-3e87-4feb-a933-4c20f7601851"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -11651,7 +11656,7 @@
     "duration": 0.1,
     "zoomScale": 1.2,
     "pressedSprite": {
-      "__uuid__": "1cb61fa2-fb6d-44c3-a8aa-c06adb0c7959"
+      "__uuid__": "63ca91ed-0e84-4fe2-9b2e-c3b3feff7e4d"
     },
     "hoverSprite": null,
     "clickEvents": [
@@ -11679,7 +11684,7 @@
       "a": 255
     },
     "_N$normalSprite": {
-      "__uuid__": "62344425-c940-480f-8305-175bf422a05c"
+      "__uuid__": "4e354849-3e87-4feb-a933-4c20f7601851"
     },
     "_N$disabledSprite": null,
     "_N$target": {
@@ -11939,8 +11944,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 277.6,
-      "y": 396.6
+      "x": 278,
+      "y": 419
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -11958,7 +11963,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "7b76652f-bd0b-4e4e-8b87-c806e68c0315"
+      "__uuid__": "3bee5870-9eb3-4da8-acdc-82190c8cc583"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -12001,7 +12006,7 @@
     "duration": 0.1,
     "zoomScale": 1.2,
     "pressedSprite": {
-      "__uuid__": "d62c6cdf-482d-45e0-a8e5-f0cc3354b32b"
+      "__uuid__": "6c7bbf1f-c548-4fb9-b2e6-d5ff35e7cc22"
     },
     "hoverSprite": null,
     "clickEvents": [
@@ -12026,7 +12031,7 @@
       "a": 255
     },
     "_N$normalSprite": {
-      "__uuid__": "7b76652f-bd0b-4e4e-8b87-c806e68c0315"
+      "__uuid__": "3bee5870-9eb3-4da8-acdc-82190c8cc583"
     },
     "_N$disabledSprite": null,
     "_N$target": {
@@ -12216,16 +12221,16 @@
         "__uuid__": "eacbbb91-30d8-4f73-9fc3-b0581d96b61b"
       },
       {
-        "__uuid__": "6a3ef788-de47-406b-bc25-9218dfadae60"
+        "__uuid__": "4eebf5d8-f10e-4a9d-b169-a8b45ec25c0e"
       },
       {
         "__uuid__": "c58f8282-0cef-4283-9ce7-e3b34604c16e"
       },
       {
-        "__uuid__": "80682e82-fac6-47b6-a403-9fa64e0014e6"
+        "__uuid__": "5aa55fe7-6a65-465d-9317-623534256723"
       },
       {
-        "__uuid__": "579a2c44-5aac-4aee-882f-bab946a028d3"
+        "__uuid__": "e0c2cda8-183d-46d9-97cd-b180078b92ab"
       }
     ],
     "playOnLoad": false
@@ -12237,7 +12242,7 @@
       "__id__": 497
     },
     "_clip": {
-      "__uuid__": "6a3ef788-de47-406b-bc25-9218dfadae60"
+      "__uuid__": "4eebf5d8-f10e-4a9d-b169-a8b45ec25c0e"
     }
   },
   {
@@ -12247,7 +12252,7 @@
       "__id__": 497
     },
     "_clip": {
-      "__uuid__": "80682e82-fac6-47b6-a403-9fa64e0014e6"
+      "__uuid__": "5aa55fe7-6a65-465d-9317-623534256723"
     }
   },
   {
@@ -12257,7 +12262,7 @@
       "__id__": 497
     },
     "_clip": {
-      "__uuid__": "579a2c44-5aac-4aee-882f-bab946a028d3"
+      "__uuid__": "e0c2cda8-183d-46d9-97cd-b180078b92ab"
     }
   },
   {
@@ -12562,7 +12567,7 @@
         "__uuid__": "9ba8b918-203c-489e-9edd-287ac0376a9e"
       },
       {
-        "__uuid__": "5b723a7a-3c97-4668-a9f3-7396884a84da"
+        "__uuid__": "5366bc46-533b-4116-b9d6-14a30b681b29"
       }
     ],
     "playOnLoad": false
@@ -12574,7 +12579,7 @@
       "__id__": 511
     },
     "_clip": {
-      "__uuid__": "5b723a7a-3c97-4668-a9f3-7396884a84da"
+      "__uuid__": "5366bc46-533b-4116-b9d6-14a30b681b29"
     }
   },
   {
@@ -14033,7 +14038,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "6f82e7c0-c10e-4897-911a-f6444b3fbe19"
+      "__uuid__": "3ad6e596-8d8d-440c-a515-02a104a0d4c3"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -14076,7 +14081,7 @@
     "duration": 0.1,
     "zoomScale": 1.2,
     "pressedSprite": {
-      "__uuid__": "7f5803e2-1b24-4cbe-847b-07c6e2cdd6f7"
+      "__uuid__": "bbe66cd7-ac7b-4767-9b52-0289b9de04cf"
     },
     "hoverSprite": null,
     "clickEvents": [
@@ -14101,7 +14106,7 @@
       "a": 255
     },
     "_N$normalSprite": {
-      "__uuid__": "6f82e7c0-c10e-4897-911a-f6444b3fbe19"
+      "__uuid__": "3ad6e596-8d8d-440c-a515-02a104a0d4c3"
     },
     "_N$disabledSprite": null,
     "_N$target": {
@@ -14200,7 +14205,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "7b76652f-bd0b-4e4e-8b87-c806e68c0315"
+      "__uuid__": "3bee5870-9eb3-4da8-acdc-82190c8cc583"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -14243,7 +14248,7 @@
     "duration": 0.1,
     "zoomScale": 1.2,
     "pressedSprite": {
-      "__uuid__": "d62c6cdf-482d-45e0-a8e5-f0cc3354b32b"
+      "__uuid__": "6c7bbf1f-c548-4fb9-b2e6-d5ff35e7cc22"
     },
     "hoverSprite": null,
     "clickEvents": [
@@ -14268,7 +14273,7 @@
       "a": 255
     },
     "_N$normalSprite": {
-      "__uuid__": "7b76652f-bd0b-4e4e-8b87-c806e68c0315"
+      "__uuid__": "3bee5870-9eb3-4da8-acdc-82190c8cc583"
     },
     "_N$disabledSprite": null,
     "_N$target": {
@@ -14311,7 +14316,7 @@
     "missionInterface": {
       "__id__": 8
     },
-    "_N$missionJSONString": "{\"templateID\":274,\"templateVersion\":6,\"id\":\"3893\",\"source\":\"cocos_creator\",\"tags\":[\"boardgame\",\"playtest\",\"qa\"],\"mission\":{\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepBet\",\"data\":{\"max\":\"41645404\",\"progress\":41645404,\"id\":0,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"2236\",\"weight\":20},{\"productPackageID\":\"2236\",\"weight\":50},{\"productPackageID\":\"2236\",\"weight\":30}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"2236\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"75000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"75000000\"}}]}}}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemLootBox\",\"result\":{\"items\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"75000000\",\"newBalance\":2338453745}}],\"productPackageIndex\":2}}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":\"41645404\",\"progress\":41645404,\"id\":1,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"2240\",\"weight\":45},{\"productPackageID\":\"2243\",\"weight\":45},{\"productPackageID\":\"2247\",\"weight\":10}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"2240\":{\"ProductPackageItemCollectionChest\":[{\"order\":0,\"tier\":\"4\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Massive\",\"tier\":\"4\",\"chestID\":\"season5BFC.massive\"}}]},\"2243\":{\"ProductPackageItemFreeSpins\":[{\"order\":0,\"buyInID\":779,\"betSize\":\"84000\",\"amount\":60,\"promoData\":{\"name\":\"Free Spins\",\"amount\":60,\"launchData\":{\"buyInID\":779,\"theme2_1\":\"toucandoit\"},\"gridButton\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null},\"buyInID\":779,\"slotMachine\":\"Toucan Do It VIP\",\"betValue\":\"2,520,000\"}}]},\"2247\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"1000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"1000000\"}}],\"ProductPackageItemClubChips\":[{\"order\":1,\"title\":\"Board Game Club Bonus\",\"text\":\"won a Club Bonus from the Board Game event!\",\"amount\":\"1000000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"1000000\"}}]}}}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemLootBox\",\"result\":{\"items\":[{\"class\":\"ProductPackageItemFreeSpins\",\"result\":{\"buyInID\":779,\"config\":\"1x\",\"amount\":60,\"betSize\":\"84000\",\"newBalance\":420}}],\"productPackageIndex\":1}}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":\"41645404\",\"progress\":41645404,\"id\":2,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"2236\",\"weight\":33},{\"productPackageID\":\"2240\",\"weight\":34},{\"productPackageID\":\"2245\",\"weight\":33}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"2236\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"75000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"75000000\"}}]},\"2240\":{\"ProductPackageItemCollectionChest\":[{\"order\":0,\"tier\":\"4\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Massive\",\"tier\":\"4\",\"chestID\":\"season5BFC.massive\"}}]},\"2245\":{\"ProductPackageItemFreeSpins\":[{\"order\":0,\"buyInID\":713,\"betSize\":\"50000\",\"amount\":60,\"promoData\":{\"name\":\"Free Spins\",\"amount\":60,\"launchData\":{\"buyInID\":713,\"theme2_1\":\"triplefortunebowl\"},\"gridButton\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null},\"buyInID\":713,\"slotMachine\":\"Triple Fortune Bowls VIP\",\"betValue\":\"2,500,000\"}}]}}}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemLootBox\",\"result\":{\"items\":[{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":1,\"tier\":4,\"finalCount\":9,\"chestID\":\"season5BFC.massive\"}}],\"productPackageIndex\":1}}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":\"41645404\",\"progress\":41645404,\"id\":3,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"2236\",\"weight\":10},{\"productPackageID\":\"2244\",\"weight\":50},{\"productPackageID\":\"2236\",\"weight\":40}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"2236\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"75000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"75000000\"}}]},\"2244\":{\"ProductPackageItemFreeSpins\":[{\"order\":0,\"buyInID\":740,\"betSize\":\"25000\",\"amount\":60,\"promoData\":{\"name\":\"Free Spins\",\"amount\":60,\"launchData\":{\"buyInID\":740,\"theme2_1\":\"tiarastreasures\"},\"gridButton\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null},\"buyInID\":740,\"slotMachine\":\"Tiara's Treasure VIP\",\"betValue\":\"2,500,000\"}}]}}}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemLootBox\",\"result\":{\"items\":[{\"class\":\"ProductPackageItemFreeSpins\",\"result\":{\"buyInID\":740,\"config\":\"1x\",\"amount\":60,\"betSize\":\"25000\",\"newBalance\":180}}],\"productPackageIndex\":1}}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":\"41645404\",\"progress\":41645404,\"id\":4,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"2236\",\"weight\":45},{\"productPackageID\":\"2240\",\"weight\":45},{\"productPackageID\":\"2248\",\"weight\":10}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"2236\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"75000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"75000000\"}}]},\"2240\":{\"ProductPackageItemCollectionChest\":[{\"order\":0,\"tier\":\"4\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Massive\",\"tier\":\"4\",\"chestID\":\"season5BFC.massive\"}}]},\"2248\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"2000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"2000000\"}}],\"ProductPackageItemClubChips\":[{\"order\":1,\"amount\":\"2000000\",\"title\":\"Board Game Club Bonus\",\"text\":\"won a Club Bonus from the Board Game event!\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"2000000\"}}]}}}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemLootBox\",\"result\":{\"items\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"75000000\",\"newBalance\":2413453745}}],\"productPackageIndex\":0}}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[5],\"predecessors\":[3],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":\"41645404\",\"progress\":41645404,\"id\":5,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"2237\",\"weight\":33},{\"productPackageID\":\"2241\",\"weight\":34},{\"productPackageID\":\"2237\",\"weight\":33}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"2237\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"100000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"100000000\"}}]},\"2241\":{\"ProductPackageItemCollectionChest\":[{\"order\":0,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season5BFC.colossal\"}}]}}}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemLootBox\",\"result\":{\"items\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"100000000\",\"newBalance\":2513453745}}],\"productPackageIndex\":2}}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[6],\"predecessors\":[4],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":\"41645404\",\"progress\":41645404,\"id\":6,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"2237\",\"weight\":60},{\"productPackageID\":\"2246\",\"weight\":20},{\"productPackageID\":\"2237\",\"weight\":20}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"2237\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"100000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"100000000\"}}]},\"2246\":{\"ProductPackageItemFreeSpins\":[{\"order\":0,\"buyInID\":631,\"betSize\":\"50000\",\"amount\":80,\"promoData\":{\"name\":\"Free Spins\",\"amount\":80,\"launchData\":{\"buyInID\":631,\"theme2_1\":\"tigercoins\"},\"gridButton\":{\"buttonImage\":\"direct_publish___slot_grid_button___tigerCoinWilds-2x2___tigerCoinWilds-2x2.png\",\"buttonBundle\":{\"name\":\"direct_publish___slot_grid_button___tigerCoinWilds-2x2\",\"hash\":\"e9cc3ba0\",\"urls\":{\"s\":\"https://sagnetstorage-a.akamaihd.net/bundles_dev/direct_publish___slot_grid_button___tigerCoinWilds-2x2-e9cc3ba0.s.assetbundle.zip\",\"s2x\":\"https://sagnetstorage-a.akamaihd.net/bundles_dev/direct_publish___slot_grid_button___tigerCoinWilds-2x2-e9cc3ba0.s2x.assetbundle.zip\"}},\"buttonImageLoose\":\"https://sagnetstorage-a.akamaihd.net/bundles_dev/direct_publish___slot_grid_button___tigerCoinWilds-2x2-e9cc3ba0.s2x.assetbundle.zip\"},\"buyInID\":631,\"slotMachine\":\"Tiger Coin Wilds VIP\",\"betValue\":\"2,500,000\"}}]}}}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemLootBox\",\"result\":{\"items\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"100000000\",\"newBalance\":2613453745}}],\"productPackageIndex\":0}}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[7],\"predecessors\":[5],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":\"41645404\",\"progress\":41645404,\"id\":7,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"2238\",\"weight\":50},{\"productPackageID\":\"2249\",\"weight\":10},{\"productPackageID\":\"2238\",\"weight\":40}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"2238\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"150000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"150000000\"}}]},\"2249\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"5000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"5000000\"}}],\"ProductPackageItemClubChips\":[{\"order\":1,\"amount\":\"5000000\",\"title\":\"Board Game Club Bonus\",\"text\":\"won a Club Bonus from the Board Game event!\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"5000000\"}}]}}}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemLootBox\",\"result\":{\"items\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"150000000\",\"newBalance\":2763453745}}],\"productPackageIndex\":2}}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[8],\"predecessors\":[6],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":\"41645404\",\"progress\":41645404,\"id\":8,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"2246\",\"weight\":50},{\"productPackageID\":\"2238\",\"weight\":25},{\"productPackageID\":\"2238\",\"weight\":25}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"2238\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"150000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"150000000\"}}]},\"2246\":{\"ProductPackageItemFreeSpins\":[{\"order\":0,\"buyInID\":631,\"betSize\":\"50000\",\"amount\":80,\"promoData\":{\"name\":\"Free Spins\",\"amount\":80,\"launchData\":{\"buyInID\":631,\"theme2_1\":\"tigercoins\"},\"gridButton\":{\"buttonImage\":\"direct_publish___slot_grid_button___tigerCoinWilds-2x2___tigerCoinWilds-2x2.png\",\"buttonBundle\":{\"name\":\"direct_publish___slot_grid_button___tigerCoinWilds-2x2\",\"hash\":\"e9cc3ba0\",\"urls\":{\"s\":\"https://sagnetstorage-a.akamaihd.net/bundles_dev/direct_publish___slot_grid_button___tigerCoinWilds-2x2-e9cc3ba0.s.assetbundle.zip\",\"s2x\":\"https://sagnetstorage-a.akamaihd.net/bundles_dev/direct_publish___slot_grid_button___tigerCoinWilds-2x2-e9cc3ba0.s2x.assetbundle.zip\"}},\"buttonImageLoose\":\"https://sagnetstorage-a.akamaihd.net/bundles_dev/direct_publish___slot_grid_button___tigerCoinWilds-2x2-e9cc3ba0.s2x.assetbundle.zip\"},\"buyInID\":631,\"slotMachine\":\"Tiger Coin Wilds VIP\",\"betValue\":\"2,500,000\"}}]}}}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemLootBox\",\"result\":{\"items\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"150000000\",\"newBalance\":2913453745}}],\"productPackageIndex\":2}}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[9],\"predecessors\":[7],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":\"62468106\",\"progress\":62468106,\"id\":9,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"2239\",\"weight\":33},{\"productPackageID\":\"2242\",\"weight\":34},{\"productPackageID\":\"2242\",\"weight\":33}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"2239\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"500000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"500000000\"}}]},\"2242\":{\"ProductPackageItemCollectionChest\":[{\"order\":0,\"tier\":\"5\",\"amount\":2,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":2,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season5BFC.colossal\"}}]}}}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemLootBox\",\"result\":{\"items\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"500000000\",\"newBalance\":3413453745}}],\"productPackageIndex\":0}}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[10],\"predecessors\":[8],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":\"20822702\",\"progress\":20822702,\"id\":10,\"award\":{\"ProductPackageItemCollectionFrames\":[{\"order\":0,\"amount\":\"1\",\"frameID\":\"promo2021BFC.desert\",\"promoData\":{\"name\":\"Collection Frames\",\"amount\":\"1\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemCollectionFrames\",\"result\":{\"frameID\":\"promo2021BFC.desert\"}}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[],\"predecessors\":[9],\"formatString\":\"Bet a total of {max}\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[]],\"predecessors\":[[],[0],[1],[2],[3],[4],[5],[6],[7],[8],[9]]}},\"awardData\":null,\"requireAwarded\":true,\"awardResult\":[],\"manifest\":{\"mission_icon\":null},\"awarded\":\"0\"},\"secondsActive\":504604,\"secondsRemaining\":100196,\"slotsData\":[],\"giftsData\":[]}",
+    "_N$missionJSONString": "null",
     "_N$instantiateMissionTrigger": false,
     "_N$retrieveMissionTrigger": false,
     "_N$updatePreviewDataTrigger": false,
