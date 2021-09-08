@@ -127,7 +127,7 @@
         "__id__": 17
       },
       {
-        "__id__": 514
+        "__id__": 509
       }
     ],
     "_tag": -1,
@@ -140,7 +140,7 @@
         "__id__": 578
       },
       {
-        "__id__": 502
+        "__id__": 497
       }
     ],
     "_prefab": null,
@@ -366,10 +366,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 507
+        "__id__": 502
       },
       {
-        "__id__": 513
+        "__id__": 508
       }
     ],
     "_prefab": null,
@@ -430,7 +430,7 @@
         "__id__": 15
       },
       {
-        "__id__": 506
+        "__id__": 501
       }
     ],
     "_prefab": null,
@@ -499,7 +499,7 @@
     "sceneDataAggregator": null,
     "_validPreview": true,
     "_N$templateString": "Bet a total of {max} in any machine",
-    "_N$testData": "{\n\t\"progress\": \"0\",\n\t\"max\": \"47.3M\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
+    "_N$testData": "{\n\t\"progress\": \"47.3M\",\n\t\"max\": \"47.3M\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
     "__type__": "7fac4uD0npKXpWkApNeqDnt",
@@ -526,11 +526,13 @@
       "__id__": 8
     },
     "dependentSteps": [
+      3
+    ],
+    "predecessorSteps": [
       1
     ],
-    "predecessorSteps": [],
     "useActiveStepIDOnly": true,
-    "_N$stepID": "0"
+    "_N$stepID": "2"
   },
   {
     "__type__": "cc.Node",
@@ -575,9 +577,6 @@
       },
       {
         "__id__": 489
-      },
-      {
-        "__id__": 495
       }
     ],
     "_tag": -1,
@@ -587,7 +586,7 @@
         "__id__": 16
       },
       {
-        "__id__": 500
+        "__id__": 495
       },
       {
         "__id__": 478
@@ -9560,7 +9559,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 19.220000000000027,
-      "y": 143.0250000000001
+      "y": 143.02499999999998
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -10038,7 +10037,7 @@
     "sceneDataAggregator": null,
     "_validPreview": true,
     "_N$templateString": "Bet a total of {max} in any machine",
-    "_N$testData": "{\n\t\"progress\": \"0\",\n\t\"max\": \"47.3M\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
+    "_N$testData": "{\n\t\"progress\": \"47.3M\",\n\t\"max\": \"47.3M\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
     "__type__": "7fac4uD0npKXpWkApNeqDnt",
@@ -10082,7 +10081,7 @@
     "sceneDataAggregator": null,
     "_validPreview": true,
     "_N$templateString": "Bet a total of {max} in any machine",
-    "_N$testData": "{\n\t\"progress\": \"0\",\n\t\"max\": \"47.3M\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
+    "_N$testData": "{\n\t\"progress\": \"47.3M\",\n\t\"max\": \"47.3M\",\n\t\"slotname\": \"\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"0\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
     "__type__": "7fac4uD0npKXpWkApNeqDnt",
@@ -10475,7 +10474,7 @@
       "y": 0
     },
     "_fillStart": 0,
-    "_fillRange": 0,
+    "_fillRange": 1,
     "_isTrimmedMode": true,
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
@@ -10873,7 +10872,7 @@
     "loop": false,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "d0cefbf9-4f6c-4593-9a42-e92e92173fd5"
+      "__uuid__": "45e90534-1947-43ab-99b9-8f0faa7863e8"
     },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
@@ -11884,168 +11883,6 @@
     "_dataPropertyKeys": []
   },
   {
-    "__type__": "cc.Node",
-    "_name": "button_close",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 17
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 496
-      },
-      {
-        "__id__": 497
-      },
-      {
-        "__id__": 499
-      }
-    ],
-    "_prefab": null,
-    "_id": "8dolvwdyxFsY2V5ZuWypcI",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 70,
-      "height": 68
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 277.6,
-      "y": 401.9
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 495
-    },
-    "_enabled": true,
-    "_spriteFrame": {
-      "__uuid__": "b322b132-ac1c-4ce1-b2d4-3848dbc0507e"
-    },
-    "_type": 0,
-    "_sizeMode": 1,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_atlas": null
-  },
-  {
-    "__type__": "cc.Button",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 495
-    },
-    "_enabled": true,
-    "transition": 2,
-    "pressedColor": {
-      "__type__": "cc.Color",
-      "r": 211,
-      "g": 211,
-      "b": 211,
-      "a": 255
-    },
-    "hoverColor": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "duration": 0.1,
-    "zoomScale": 1.2,
-    "pressedSprite": {
-      "__uuid__": "d5940ce6-42f9-4090-b1c8-3a85662dd145"
-    },
-    "hoverSprite": null,
-    "clickEvents": [
-      {
-        "__id__": 498
-      }
-    ],
-    "_N$interactable": true,
-    "_N$enableAutoGrayEffect": false,
-    "_N$normalColor": {
-      "__type__": "cc.Color",
-      "r": 214,
-      "g": 214,
-      "b": 214,
-      "a": 255
-    },
-    "_N$disabledColor": {
-      "__type__": "cc.Color",
-      "r": 124,
-      "g": 124,
-      "b": 124,
-      "a": 255
-    },
-    "_N$normalSprite": {
-      "__uuid__": "b322b132-ac1c-4ce1-b2d4-3848dbc0507e"
-    },
-    "_N$disabledSprite": null,
-    "_N$target": {
-      "__id__": 495
-    }
-  },
-  {
-    "__type__": "cc.ClickEvent",
-    "target": {
-      "__id__": 495
-    },
-    "component": "DispatchActionClose",
-    "handler": "performAction",
-    "customEventData": ""
-  },
-  {
-    "__type__": "78b7f4smgxB4Z2sQ4vOwiUh",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 495
-    },
-    "_enabled": true,
-    "_actionName": "close",
-    "_dataPropertyKeys": []
-  },
-  {
     "__type__": "71e9eLFJUtAKIoH0KXBEWQ8",
     "_name": "",
     "_objFlags": 0,
@@ -12057,16 +11894,16 @@
       "__id__": 16
     },
     "stepComplete": {
-      "__id__": 501
+      "__id__": 496
     },
     "stepClaim": {
-      "__id__": 503
+      "__id__": 498
     },
     "stepOutro": {
-      "__id__": 504
+      "__id__": 499
     },
     "missionComplete": {
-      "__id__": 505
+      "__id__": 500
     },
     "claimSequence": {
       "__id__": 481
@@ -12179,7 +12016,7 @@
       }
     ],
     "_N$animation": {
-      "__id__": 502
+      "__id__": 497
     },
     "_N$tileHelper": null,
     "_N$tilePrefabReplacement": null
@@ -12188,7 +12025,7 @@
     "__type__": "AnimationClipProperty",
     "_clipName": "step_complete",
     "_animation": {
-      "__id__": 502
+      "__id__": 497
     },
     "_clip": {
       "__uuid__": "eacbbb91-30d8-4f73-9fc3-b0581d96b61b"
@@ -12226,7 +12063,7 @@
     "__type__": "AnimationClipProperty",
     "_clipName": "step_claim_start",
     "_animation": {
-      "__id__": 502
+      "__id__": 497
     },
     "_clip": {
       "__uuid__": "76789be1-a018-4cfe-bd94-73bcc58df0e5"
@@ -12236,7 +12073,7 @@
     "__type__": "AnimationClipProperty",
     "_clipName": "step_outro",
     "_animation": {
-      "__id__": 502
+      "__id__": 497
     },
     "_clip": {
       "__uuid__": "45581ef5-b672-44a7-a2b0-ac4db5477bc3"
@@ -12246,7 +12083,7 @@
     "__type__": "AnimationClipProperty",
     "_clipName": "",
     "_animation": {
-      "__id__": 502
+      "__id__": 497
     },
     "_clip": {
       "__uuid__": "64abb974-b6a2-4b94-8e9a-0224fc052e8a"
@@ -12274,19 +12111,19 @@
     },
     "configs": [
       {
-        "__id__": 508
+        "__id__": 503
       },
       {
-        "__id__": 509
+        "__id__": 504
       },
       {
-        "__id__": 510
+        "__id__": 505
       },
       {
-        "__id__": 511
+        "__id__": 506
       },
       {
-        "__id__": 512
+        "__id__": 507
       }
     ],
     "_N$previewStepID": 3
@@ -12363,6 +12200,9 @@
     },
     "_children": [
       {
+        "__id__": 510
+      },
+      {
         "__id__": 515
       },
       {
@@ -12418,10 +12258,172 @@
   },
   {
     "__type__": "cc.Node",
+    "_name": "button_close",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 509
+    },
+    "_children": [],
+    "_tag": -1,
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 511
+      },
+      {
+        "__id__": 512
+      },
+      {
+        "__id__": 514
+      }
+    ],
+    "_prefab": null,
+    "_id": "8dolvwdyxFsY2V5ZuWypcI",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 70,
+      "height": 68
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 277.6,
+      "y": 401.9
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 510
+    },
+    "_enabled": true,
+    "_spriteFrame": {
+      "__uuid__": "b322b132-ac1c-4ce1-b2d4-3848dbc0507e"
+    },
+    "_type": 0,
+    "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_atlas": null
+  },
+  {
+    "__type__": "cc.Button",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 510
+    },
+    "_enabled": true,
+    "transition": 2,
+    "pressedColor": {
+      "__type__": "cc.Color",
+      "r": 211,
+      "g": 211,
+      "b": 211,
+      "a": 255
+    },
+    "hoverColor": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "duration": 0.1,
+    "zoomScale": 1.2,
+    "pressedSprite": {
+      "__uuid__": "d5940ce6-42f9-4090-b1c8-3a85662dd145"
+    },
+    "hoverSprite": null,
+    "clickEvents": [
+      {
+        "__id__": 513
+      }
+    ],
+    "_N$interactable": true,
+    "_N$enableAutoGrayEffect": false,
+    "_N$normalColor": {
+      "__type__": "cc.Color",
+      "r": 214,
+      "g": 214,
+      "b": 214,
+      "a": 255
+    },
+    "_N$disabledColor": {
+      "__type__": "cc.Color",
+      "r": 124,
+      "g": 124,
+      "b": 124,
+      "a": 255
+    },
+    "_N$normalSprite": {
+      "__uuid__": "b322b132-ac1c-4ce1-b2d4-3848dbc0507e"
+    },
+    "_N$disabledSprite": null,
+    "_N$target": {
+      "__id__": 510
+    }
+  },
+  {
+    "__type__": "cc.ClickEvent",
+    "target": {
+      "__id__": 510
+    },
+    "component": "DispatchActionClose",
+    "handler": "performAction",
+    "customEventData": ""
+  },
+  {
+    "__type__": "78b7f4smgxB4Z2sQ4vOwiUh",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 510
+    },
+    "_enabled": true,
+    "_actionName": "close",
+    "_dataPropertyKeys": []
+  },
+  {
+    "__type__": "cc.Node",
     "_name": "button_info",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 514
+      "__id__": 509
     },
     "_children": [],
     "_tag": -1,
@@ -12588,7 +12590,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 514
+      "__id__": 509
     },
     "_enabled": true,
     "missionStepInterface": {
@@ -12620,7 +12622,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 514
+      "__id__": 509
     },
     "_enabled": true,
     "_defaultClip": null,
@@ -12649,7 +12651,7 @@
     "_name": "info_container",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 514
+      "__id__": 509
     },
     "_children": [
       {
@@ -14047,8 +14049,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 639,
-      "height": 901
+      "width": 636,
+      "height": 894
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -14075,7 +14077,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "a8dfd71a-4744-429a-99dc-f19311871ee4"
+      "__uuid__": "e61bb9ca-c830-4ff7-8ef8-221fb687fb5a"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -14437,8 +14439,8 @@
     "missionInterface": {
       "__id__": 8
     },
-    "_N$missionJSONString": "{\"templateID\":33,\"templateVersion\":15,\"id\":64,\"source\":\"cocos_creator\",\"tags\":[\"badge_hr\",\"planet_paradise\"],\"mission\":{\"steps\":[{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false}],\"awardResult\":[],\"commandData\":[],\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepBet\",\"data\":{\"max\":47338669,\"progress\":0,\"id\":0,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"345\",\"weight\":34},{\"productPackageID\":\"346\",\"weight\":33},{\"productPackageID\":\"347\",\"weight\":33}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"345\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"750000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"750000\"}}]},\"346\":{\"ProductPackageItemCollectionChest\":[{\"order\":0,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season5BFC.colossal\"}}]},\"347\":{\"ProductPackageItemFreeSpins\":[{\"order\":0,\"buyInID\":603,\"betSize\":\"1000\",\"amount\":20,\"promoData\":{\"name\":\"Free Spins\",\"amount\":20,\"launchData\":{\"buyInID\":603,\"theme2_1\":\"billionaire\"},\"gridButton\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null},\"buyInID\":603,\"slotMachine\":\"Raging Reels\",\"betValue\":\"50,000\"}}]}}}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"active\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":47338669,\"progress\":0,\"id\":1,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"345\",\"weight\":34},{\"productPackageID\":\"348\",\"weight\":33},{\"productPackageID\":\"346\",\"weight\":33}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"345\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"750000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"750000\"}}]},\"346\":{\"ProductPackageItemCollectionChest\":[{\"order\":0,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season5BFC.colossal\"}}]},\"348\":{\"ProductPackageItemClubChips\":[{\"order\":0,\"title\":\"✨ Club Bonus ✨\",\"text\":\"scores BIG in the Planet Paradise event!✨\",\"amount\":\"10000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"10000\"}}]}}}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":47338669,\"progress\":0,\"id\":2,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"345\",\"weight\":34},{\"productPackageID\":\"346\",\"weight\":33},{\"productPackageID\":\"347\",\"weight\":33}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"345\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"750000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"750000\"}}]},\"346\":{\"ProductPackageItemCollectionChest\":[{\"order\":0,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season5BFC.colossal\"}}]},\"347\":{\"ProductPackageItemFreeSpins\":[{\"order\":0,\"buyInID\":603,\"betSize\":\"1000\",\"amount\":20,\"promoData\":{\"name\":\"Free Spins\",\"amount\":20,\"launchData\":{\"buyInID\":603,\"theme2_1\":\"billionaire\"},\"gridButton\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null},\"buyInID\":603,\"slotMachine\":\"Raging Reels\",\"betValue\":\"50,000\"}}]}}}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":47338669,\"progress\":0,\"id\":3,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"345\",\"weight\":34},{\"productPackageID\":\"348\",\"weight\":33},{\"productPackageID\":\"346\",\"weight\":33}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"345\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"750000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"750000\"}}]},\"346\":{\"ProductPackageItemCollectionChest\":[{\"order\":0,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season5BFC.colossal\"}}]},\"348\":{\"ProductPackageItemClubChips\":[{\"order\":0,\"title\":\"✨ Club Bonus ✨\",\"text\":\"scores BIG in the Planet Paradise event!✨\",\"amount\":\"10000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"10000\"}}]}}}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":47338669,\"progress\":0,\"id\":4,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"345\",\"weight\":34},{\"productPackageID\":\"346\",\"weight\":33},{\"productPackageID\":\"347\",\"weight\":33}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"345\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"750000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"750000\"}}]},\"346\":{\"ProductPackageItemCollectionChest\":[{\"order\":0,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season5BFC.colossal\"}}]},\"347\":{\"ProductPackageItemFreeSpins\":[{\"order\":0,\"buyInID\":603,\"betSize\":\"1000\",\"amount\":20,\"promoData\":{\"name\":\"Free Spins\",\"amount\":20,\"launchData\":{\"buyInID\":603,\"theme2_1\":\"billionaire\"},\"gridButton\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null},\"buyInID\":603,\"slotMachine\":\"Raging Reels\",\"betValue\":\"50,000\"}}]}}}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[5],\"predecessors\":[3],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":47338669,\"progress\":0,\"id\":5,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"345\",\"weight\":34},{\"productPackageID\":\"348\",\"weight\":33},{\"productPackageID\":\"346\",\"weight\":33}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"345\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"750000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"750000\"}}]},\"346\":{\"ProductPackageItemCollectionChest\":[{\"order\":0,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season5BFC.colossal\"}}]},\"348\":{\"ProductPackageItemClubChips\":[{\"order\":0,\"title\":\"✨ Club Bonus ✨\",\"text\":\"scores BIG in the Planet Paradise event!✨\",\"amount\":\"10000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"10000\"}}]}}}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[6],\"predecessors\":[4],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":47338669,\"progress\":0,\"id\":6,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"345\",\"weight\":34},{\"productPackageID\":\"346\",\"weight\":33},{\"productPackageID\":\"347\",\"weight\":33}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"345\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"750000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"750000\"}}]},\"346\":{\"ProductPackageItemCollectionChest\":[{\"order\":0,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season5BFC.colossal\"}}]},\"347\":{\"ProductPackageItemFreeSpins\":[{\"order\":0,\"buyInID\":603,\"betSize\":\"1000\",\"amount\":20,\"promoData\":{\"name\":\"Free Spins\",\"amount\":20,\"launchData\":{\"buyInID\":603,\"theme2_1\":\"billionaire\"},\"gridButton\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null},\"buyInID\":603,\"slotMachine\":\"Raging Reels\",\"betValue\":\"50,000\"}}]}}}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[7],\"predecessors\":[5],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":47338669,\"progress\":0,\"id\":7,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"345\",\"weight\":34},{\"productPackageID\":\"348\",\"weight\":33},{\"productPackageID\":\"346\",\"weight\":33}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"345\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"750000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"750000\"}}]},\"346\":{\"ProductPackageItemCollectionChest\":[{\"order\":0,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season5BFC.colossal\"}}]},\"348\":{\"ProductPackageItemClubChips\":[{\"order\":0,\"title\":\"✨ Club Bonus ✨\",\"text\":\"scores BIG in the Planet Paradise event!✨\",\"amount\":\"10000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"10000\"}}]}}}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[8],\"predecessors\":[6],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":47338669,\"progress\":0,\"id\":8,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"345\",\"weight\":34},{\"productPackageID\":\"346\",\"weight\":33},{\"productPackageID\":\"347\",\"weight\":33}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"345\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"750000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"750000\"}}]},\"346\":{\"ProductPackageItemCollectionChest\":[{\"order\":0,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season5BFC.colossal\"}}]},\"347\":{\"ProductPackageItemFreeSpins\":[{\"order\":0,\"buyInID\":603,\"betSize\":\"1000\",\"amount\":20,\"promoData\":{\"name\":\"Free Spins\",\"amount\":20,\"launchData\":{\"buyInID\":603,\"theme2_1\":\"billionaire\"},\"gridButton\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null},\"buyInID\":603,\"slotMachine\":\"Raging Reels\",\"betValue\":\"50,000\"}}]}}}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[9],\"predecessors\":[7],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":47338669,\"progress\":0,\"id\":9,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"345\",\"weight\":34},{\"productPackageID\":\"348\",\"weight\":33},{\"productPackageID\":\"346\",\"weight\":33}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"345\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"750000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"750000\"}}]},\"346\":{\"ProductPackageItemCollectionChest\":[{\"order\":0,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season5BFC.colossal\"}}]},\"348\":{\"ProductPackageItemClubChips\":[{\"order\":0,\"title\":\"✨ Club Bonus ✨\",\"text\":\"scores BIG in the Planet Paradise event!✨\",\"amount\":\"10000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"10000\"}}]}}}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[10],\"predecessors\":[8],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":47338669,\"progress\":0,\"id\":10,\"award\":{\"ProductPackageItemCollectionFrames\":[{\"order\":0,\"frameID\":\"promo2021BFC.desert\",\"amount\":\"1\",\"promoData\":{\"name\":\"Collection Frames\",\"amount\":\"1\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[],\"predecessors\":[9],\"formatString\":\"Bet a total of {max}\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[]],\"predecessors\":[[],[0],[1],[2],[3],[4],[5],[6],[7],[8],[9]]}},\"requireAwarded\":true,\"awardData\":null,\"manifest\":{\"tray_icon\":\"\"},\"commandDataTemplate\":[],\"awarded\":false},\"secondsActive\":792,\"secondsRemaining\":517608,\"slotsData\":[],\"giftsData\":[]}",
-    "_N$instantiateMissionTrigger": false,
+    "_N$missionJSONString": "{\"templateID\":33,\"templateVersion\":15,\"id\":66,\"source\":\"cocos_creator\",\"tags\":[\"badge_hr\",\"planet_paradise\"],\"mission\":{\"steps\":[{\"progress\":47338669,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemLootBox\",\"result\":{\"items\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"750000\",\"newBalance\":9920006444}}],\"productPackageIndex\":0}}],\"includeReelRivals\":false},{\"progress\":47338669,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemLootBox\",\"result\":{\"items\":[{\"class\":\"ProductPackageItemClubChips\",\"result\":[]}],\"productPackageIndex\":1}}],\"includeReelRivals\":false},{\"progress\":47338669,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false}],\"awardResult\":[],\"commandData\":[],\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepBet\",\"data\":{\"max\":47338669,\"progress\":47338669,\"id\":0,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"345\",\"weight\":34},{\"productPackageID\":\"346\",\"weight\":33},{\"productPackageID\":\"347\",\"weight\":33}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"345\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"750000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"750000\"}}]},\"346\":{\"ProductPackageItemCollectionChest\":[{\"order\":0,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season5BFC.colossal\"}}]},\"347\":{\"ProductPackageItemFreeSpins\":[{\"order\":0,\"buyInID\":603,\"betSize\":\"1000\",\"amount\":20,\"promoData\":{\"name\":\"Free Spins\",\"amount\":20,\"launchData\":{\"buyInID\":603,\"theme2_1\":\"billionaire\"},\"gridButton\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null},\"buyInID\":603,\"slotMachine\":\"Raging Reels\",\"betValue\":\"50,000\"}}]}}}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemLootBox\",\"result\":{\"items\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"750000\",\"newBalance\":9920006444}}],\"productPackageIndex\":0}}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":47338669,\"progress\":47338669,\"id\":1,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"345\",\"weight\":34},{\"productPackageID\":\"348\",\"weight\":33},{\"productPackageID\":\"346\",\"weight\":33}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"345\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"750000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"750000\"}}]},\"346\":{\"ProductPackageItemCollectionChest\":[{\"order\":0,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season5BFC.colossal\"}}]},\"348\":{\"ProductPackageItemClubChips\":[{\"order\":0,\"title\":\"✨ Club Bonus ✨\",\"text\":\"scores BIG in the Planet Paradise event!✨\",\"amount\":\"10000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"10000\"}}]}}}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemLootBox\",\"result\":{\"items\":[{\"class\":\"ProductPackageItemClubChips\",\"result\":[]}],\"productPackageIndex\":1}}],\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":47338669,\"progress\":47338669,\"id\":2,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"345\",\"weight\":34},{\"productPackageID\":\"346\",\"weight\":33},{\"productPackageID\":\"347\",\"weight\":33}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"345\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"750000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"750000\"}}]},\"346\":{\"ProductPackageItemCollectionChest\":[{\"order\":0,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season5BFC.colossal\"}}]},\"347\":{\"ProductPackageItemFreeSpins\":[{\"order\":0,\"buyInID\":603,\"betSize\":\"1000\",\"amount\":20,\"promoData\":{\"name\":\"Free Spins\",\"amount\":20,\"launchData\":{\"buyInID\":603,\"theme2_1\":\"billionaire\"},\"gridButton\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null},\"buyInID\":603,\"slotMachine\":\"Raging Reels\",\"betValue\":\"50,000\"}}]}}}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"complete\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":47338669,\"progress\":0,\"id\":3,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"345\",\"weight\":34},{\"productPackageID\":\"348\",\"weight\":33},{\"productPackageID\":\"346\",\"weight\":33}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"345\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"750000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"750000\"}}]},\"346\":{\"ProductPackageItemCollectionChest\":[{\"order\":0,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season5BFC.colossal\"}}]},\"348\":{\"ProductPackageItemClubChips\":[{\"order\":0,\"title\":\"✨ Club Bonus ✨\",\"text\":\"scores BIG in the Planet Paradise event!✨\",\"amount\":\"10000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"10000\"}}]}}}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":47338669,\"progress\":0,\"id\":4,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"345\",\"weight\":34},{\"productPackageID\":\"346\",\"weight\":33},{\"productPackageID\":\"347\",\"weight\":33}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"345\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"750000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"750000\"}}]},\"346\":{\"ProductPackageItemCollectionChest\":[{\"order\":0,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season5BFC.colossal\"}}]},\"347\":{\"ProductPackageItemFreeSpins\":[{\"order\":0,\"buyInID\":603,\"betSize\":\"1000\",\"amount\":20,\"promoData\":{\"name\":\"Free Spins\",\"amount\":20,\"launchData\":{\"buyInID\":603,\"theme2_1\":\"billionaire\"},\"gridButton\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null},\"buyInID\":603,\"slotMachine\":\"Raging Reels\",\"betValue\":\"50,000\"}}]}}}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[5],\"predecessors\":[3],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":47338669,\"progress\":0,\"id\":5,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"345\",\"weight\":34},{\"productPackageID\":\"348\",\"weight\":33},{\"productPackageID\":\"346\",\"weight\":33}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"345\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"750000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"750000\"}}]},\"346\":{\"ProductPackageItemCollectionChest\":[{\"order\":0,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season5BFC.colossal\"}}]},\"348\":{\"ProductPackageItemClubChips\":[{\"order\":0,\"title\":\"✨ Club Bonus ✨\",\"text\":\"scores BIG in the Planet Paradise event!✨\",\"amount\":\"10000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"10000\"}}]}}}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[6],\"predecessors\":[4],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":47338669,\"progress\":0,\"id\":6,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"345\",\"weight\":34},{\"productPackageID\":\"346\",\"weight\":33},{\"productPackageID\":\"347\",\"weight\":33}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"345\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"750000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"750000\"}}]},\"346\":{\"ProductPackageItemCollectionChest\":[{\"order\":0,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season5BFC.colossal\"}}]},\"347\":{\"ProductPackageItemFreeSpins\":[{\"order\":0,\"buyInID\":603,\"betSize\":\"1000\",\"amount\":20,\"promoData\":{\"name\":\"Free Spins\",\"amount\":20,\"launchData\":{\"buyInID\":603,\"theme2_1\":\"billionaire\"},\"gridButton\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null},\"buyInID\":603,\"slotMachine\":\"Raging Reels\",\"betValue\":\"50,000\"}}]}}}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[7],\"predecessors\":[5],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":47338669,\"progress\":0,\"id\":7,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"345\",\"weight\":34},{\"productPackageID\":\"348\",\"weight\":33},{\"productPackageID\":\"346\",\"weight\":33}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"345\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"750000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"750000\"}}]},\"346\":{\"ProductPackageItemCollectionChest\":[{\"order\":0,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season5BFC.colossal\"}}]},\"348\":{\"ProductPackageItemClubChips\":[{\"order\":0,\"title\":\"✨ Club Bonus ✨\",\"text\":\"scores BIG in the Planet Paradise event!✨\",\"amount\":\"10000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"10000\"}}]}}}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[8],\"predecessors\":[6],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":47338669,\"progress\":0,\"id\":8,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"345\",\"weight\":34},{\"productPackageID\":\"346\",\"weight\":33},{\"productPackageID\":\"347\",\"weight\":33}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"345\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"750000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"750000\"}}]},\"346\":{\"ProductPackageItemCollectionChest\":[{\"order\":0,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season5BFC.colossal\"}}]},\"347\":{\"ProductPackageItemFreeSpins\":[{\"order\":0,\"buyInID\":603,\"betSize\":\"1000\",\"amount\":20,\"promoData\":{\"name\":\"Free Spins\",\"amount\":20,\"launchData\":{\"buyInID\":603,\"theme2_1\":\"billionaire\"},\"gridButton\":{\"buttonImage\":null,\"buttonBundle\":null,\"buttonImageLoose\":null},\"buyInID\":603,\"slotMachine\":\"Raging Reels\",\"betValue\":\"50,000\"}}]}}}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[9],\"predecessors\":[7],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":47338669,\"progress\":0,\"id\":9,\"award\":{\"ProductPackageItemLootBox\":[{\"order\":0,\"amount\":1,\"lootbox\":[{\"productPackageID\":\"345\",\"weight\":34},{\"productPackageID\":\"348\",\"weight\":33},{\"productPackageID\":\"346\",\"weight\":33}],\"promoData\":{\"name\":\"Loot Box\",\"amount\":1,\"lootbox\":{\"345\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"750000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"750000\"}}]},\"346\":{\"ProductPackageItemCollectionChest\":[{\"order\":0,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season5BFC.colossal\"}}]},\"348\":{\"ProductPackageItemClubChips\":[{\"order\":0,\"title\":\"✨ Club Bonus ✨\",\"text\":\"scores BIG in the Planet Paradise event!✨\",\"amount\":\"10000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"10000\"}}]}}}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[10],\"predecessors\":[8],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":47338669,\"progress\":0,\"id\":10,\"award\":{\"ProductPackageItemCollectionFrames\":[{\"order\":0,\"frameID\":\"promo2021BFC.desert\",\"amount\":\"1\",\"promoData\":{\"name\":\"Collection Frames\",\"amount\":\"1\"}}]},\"awarded\":false,\"awardResult\":[],\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[],\"predecessors\":[9],\"formatString\":\"Bet a total of {max}\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[]],\"predecessors\":[[],[0],[1],[2],[3],[4],[5],[6],[7],[8],[9]]}},\"requireAwarded\":true,\"awardData\":null,\"manifest\":{\"tray_icon\":\"\"},\"commandDataTemplate\":[],\"awarded\":false},\"secondsActive\":98,\"secondsRemaining\":518302,\"slotsData\":[],\"giftsData\":[]}",
+    "_N$instantiateMissionTrigger": true,
     "_N$retrieveMissionTrigger": true,
     "_N$updatePreviewDataTrigger": false,
     "_N$componentUpdateCallbackTrigger": true
