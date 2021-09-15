@@ -1,6 +1,6 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "step_complete",
+  "_name": "mission_complete",
   "_objFlags": 0,
   "_rawFiles": null,
   "_duration": 0,
@@ -9,7 +9,17 @@
   "wrapMode": 1,
   "curveData": {
     "paths": {
-      "game_controller/wheel": {
+      "game_controller/button_play": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "game_controller/description_container/mission_complete": {
         "props": {
           "active": [
             {
@@ -19,7 +29,17 @@
           ]
         }
       },
-      "game_controller/button_play": {
+      "game_controller/description_container": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "game_controller/description_container/step_description": {
         "props": {
           "active": [
             {
@@ -39,17 +59,27 @@
           ]
         }
       },
-      "game_controller/description_container": {
+      "game_controller/button_complete": {
         "props": {
           "active": [
             {
               "frame": 0,
-              "value": false
+              "value": true
             }
           ]
+        },
+        "comps": {
+          "cc.Button": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": true
+              }
+            ]
+          }
         }
       },
-      "circle_step_complete": {
+      "game_controller/description_container/scrim": {
         "props": {
           "active": [
             {
@@ -59,7 +89,12 @@
           ]
         }
       },
-      "game_controller/button_complete": {
+      "circle_mission_complete": {
+        "props": {
+          "active": []
+        }
+      },
+      "game_controller/wheel/intro_anim/button_spin": {
         "props": {
           "active": [
             {
@@ -69,12 +104,7 @@
           ]
         }
       },
-      "info_overlay/info_container/button_play": {
-        "props": {
-          "active": []
-        }
-      },
-      "info_overlay/button_close": {
+      "block_toasts": {
         "props": {
           "active": [
             {

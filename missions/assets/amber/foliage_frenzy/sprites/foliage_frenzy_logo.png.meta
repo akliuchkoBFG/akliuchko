@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "d95c28ca-f334-419c-8366-495439e30a36",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "foliage_frenzy_logo": {
+      "ver": "1.0.3",
+      "uuid": "22e1652e-09da-4c57-a595-98b5a2cbac99",
+      "rawTextureUuid": "d95c28ca-f334-419c-8366-495439e30a36",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 392,
+      "height": 158,
+      "rawWidth": 398,
+      "rawHeight": 162,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
