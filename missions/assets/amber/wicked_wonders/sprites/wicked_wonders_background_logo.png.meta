@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "e44a073e-41c9-4fb0-8e22-5811f260c380",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "wicked_wonders_background_logo": {
+      "ver": "1.0.3",
+      "uuid": "cc12d962-16e5-425d-bafa-787de44cd446",
+      "rawTextureUuid": "e44a073e-41c9-4fb0-8e22-5811f260c380",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": 44.5,
+      "trimX": 0,
+      "trimY": 36,
+      "width": 640,
+      "height": 983,
+      "rawWidth": 642,
+      "rawHeight": 1144,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
