@@ -1,5 +1,5 @@
 {
-"skeleton": { "hash": "h2HfmizJziHN/e+te81U8waOHAs", "spine": "3.6.53", "width": 1338.94, "height": 2008.41, "images": "./images/" },
+"skeleton": { "hash": "1bnptYXa1khJpg+38GAiqxgTvsE", "spine": "3.6.53", "width": 935.17, "height": 576.37, "images": "./images/" },
 "bones": [
 	{ "name": "root", "scaleX": 1.046, "scaleY": 1.046 },
 	{ "name": "arrow", "parent": "root", "x": -1.8, "y": 461.08 },
@@ -56,13 +56,7 @@
 	{ "name": "outerCircleSheen/outerCircleSheen0001", "bone": "outerCircleSheen", "blend": "additive" },
 	{ "name": "innerHighlight", "bone": "centerPiece", "blend": "additive" },
 	{ "name": "shadow", "bone": "root" },
-	{
-		"name": "spinSaber/spinSaber01",
-		"bone": "spinSaber",
-		"color": "ffa3fdff",
-		"attachment": "spinSaber/spinSaber13",
-		"blend": "additive"
-	},
+	{ "name": "spinSaber/spinSaber01", "bone": "spinSaber", "color": "ffa3fdff", "blend": "additive" },
 	{ "name": "topWheelBase", "bone": "topWheelBase" },
 	{ "name": "arrow", "bone": "arrow" },
 	{ "name": "intro/intro0001", "bone": "intro" },

@@ -1,0 +1,55 @@
+
+ambients.png
+size: 439,437
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Pit_Glow
+  rotate: false
+  xy: 323, 358
+  size: 114, 77
+  orig: 118, 79
+  offset: 1, 2
+  index: -1
+ghost_01
+  rotate: false
+  xy: 323, 248
+  size: 112, 108
+  orig: 112, 108
+  offset: 0, 0
+  index: -1
+ghost_02
+  rotate: true
+  xy: 231, 32
+  size: 69, 126
+  orig: 69, 126
+  offset: 0, 0
+  index: -1
+ghost_03
+  rotate: true
+  xy: 323, 106
+  size: 140, 78
+  orig: 140, 78
+  offset: 0, 0
+  index: -1
+pink_fog
+  rotate: false
+  xy: 2, 39
+  size: 227, 62
+  orig: 228, 62
+  offset: 1, 0
+  index: -1
+pink_lava_fog
+  rotate: false
+  xy: 2, 103
+  size: 319, 332
+  orig: 323, 340
+  offset: 2, 3
+  index: -1
+pumpkin_light
+  rotate: true
+  xy: 403, 155
+  size: 91, 28
+  orig: 97, 28
+  offset: 1, 0
+  index: -1
