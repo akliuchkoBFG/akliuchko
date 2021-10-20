@@ -1,0 +1,139 @@
+
+ambients.png
+size: 430,428
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Petals/Petals0001
+  rotate: true
+  xy: 364, 175
+  size: 79, 44
+  orig: 84, 46
+  offset: 1, 1
+  index: -1
+Petals/Petals0002
+  rotate: true
+  xy: 186, 47
+  size: 79, 43
+  orig: 84, 46
+  offset: 1, 1
+  index: -1
+Petals/Petals0003
+  rotate: false
+  xy: 231, 43
+  size: 79, 43
+  orig: 84, 46
+  offset: 1, 1
+  index: -1
+Petals/Petals0004
+  rotate: true
+  xy: 312, 53
+  size: 79, 42
+  orig: 84, 46
+  offset: 1, 1
+  index: -1
+Petals/Petals0005
+  rotate: false
+  xy: 194, 134
+  size: 80, 42
+  orig: 84, 46
+  offset: 1, 1
+  index: -1
+Petals/Petals0006
+  rotate: false
+  xy: 104, 128
+  size: 81, 42
+  orig: 84, 46
+  offset: 1, 1
+  index: -1
+Petals/Petals0007
+  rotate: false
+  xy: 2, 16
+  size: 82, 42
+  orig: 84, 46
+  offset: 1, 1
+  index: -1
+Petals/Petals0008
+  rotate: false
+  xy: 103, 84
+  size: 81, 42
+  orig: 84, 46
+  offset: 1, 1
+  index: -1
+Petals/Petals0009
+  rotate: false
+  xy: 103, 40
+  size: 81, 42
+  orig: 84, 46
+  offset: 1, 1
+  index: -1
+Petals/Petals0010
+  rotate: false
+  xy: 276, 134
+  size: 80, 42
+  orig: 84, 46
+  offset: 1, 1
+  index: -1
+Petals/Petals0011
+  rotate: true
+  xy: 356, 54
+  size: 78, 42
+  orig: 84, 46
+  offset: 1, 1
+  index: -1
+Petals/Petals0012
+  rotate: false
+  xy: 312, 8
+  size: 78, 43
+  orig: 84, 46
+  offset: 1, 1
+  index: -1
+Petals/Petals0013
+  rotate: false
+  xy: 231, 88
+  size: 79, 44
+  orig: 84, 46
+  offset: 1, 1
+  index: -1
+candle light
+  rotate: false
+  xy: 2, 155
+  size: 100, 99
+  orig: 101, 101
+  offset: 1, 1
+  index: -1
+paper_01
+  rotate: false
+  xy: 104, 172
+  size: 88, 82
+  orig: 88, 82
+  offset: 0, 0
+  index: -1
+paper_02
+  rotate: false
+  xy: 2, 60
+  size: 99, 93
+  orig: 99, 93
+  offset: 0, 0
+  index: -1
+paper_03
+  rotate: false
+  xy: 194, 178
+  size: 84, 76
+  orig: 84, 76
+  offset: 0, 0
+  index: -1
+paper_04
+  rotate: false
+  xy: 280, 178
+  size: 82, 76
+  orig: 82, 76
+  offset: 0, 0
+  index: -1
+rope
+  rotate: false
+  xy: 2, 256
+  size: 426, 170
+  orig: 426, 170
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "c1187d13-d090-4429-8534-14a61bc665f5",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "undying_adventures_pawn": {
+      "ver": "1.0.3",
+      "uuid": "5de51744-6d72-4c7a-bad3-1fce81d6fe69",
+      "rawTextureUuid": "c1187d13-d090-4429-8534-14a61bc665f5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 86,
+      "height": 143,
+      "rawWidth": 88,
+      "rawHeight": 144,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

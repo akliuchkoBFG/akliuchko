@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "ff372330-de20-467c-b934-32a3869c5e39",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "undying_adventures_background_shadow": {
+      "ver": "1.0.3",
+      "uuid": "e99db6b6-144a-43ea-ae82-73962918f493",
+      "rawTextureUuid": "ff372330-de20-467c-b934-32a3869c5e39",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 2.5,
+      "trimX": 3,
+      "trimY": 0,
+      "width": 581,
+      "height": 837,
+      "rawWidth": 588,
+      "rawHeight": 842,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
