@@ -1,14 +1,14 @@
 {
   "ver": "1.0.0",
-  "uuid": "3b16c2bb-3e5d-444b-a6ea-66fb1aff1f9d",
+  "uuid": "723fd9d1-ba36-44d9-8d00-2ee1e8b81038",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
     "undying_adventures_logo": {
       "ver": "1.0.3",
-      "uuid": "7bfbdfc5-b26a-4a63-b344-fe25b6b4697f",
-      "rawTextureUuid": "3b16c2bb-3e5d-444b-a6ea-66fb1aff1f9d",
+      "uuid": "9f64f517-1f75-46fd-b295-7b4f8096397b",
+      "rawTextureUuid": "723fd9d1-ba36-44d9-8d00-2ee1e8b81038",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
