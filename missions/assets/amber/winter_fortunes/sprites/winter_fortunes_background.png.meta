@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "d183a64b-e327-400b-a174-6c4be33b2649",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "winter_fortunes_background": {
+      "ver": "1.0.3",
+      "uuid": "e4396dfb-df22-49ef-9a0c-57d3bcf0b8ed",
+      "rawTextureUuid": "d183a64b-e327-400b-a174-6c4be33b2649",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -4,
+      "offsetY": -5.5,
+      "trimX": 9,
+      "trimY": 129,
+      "width": 616,
+      "height": 897,
+      "rawWidth": 642,
+      "rawHeight": 1144,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
