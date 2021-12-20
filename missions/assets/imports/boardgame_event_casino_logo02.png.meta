@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "eace4692-a99a-49a8-97eb-0de8a0c31d1d",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "boardgame_event_casino_logo02": {
+      "ver": "1.0.3",
+      "uuid": "f59ba4ef-5efb-4fda-9908-9f82fdb8a599",
+      "rawTextureUuid": "eace4692-a99a-49a8-97eb-0de8a0c31d1d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": 1,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 424,
+      "height": 118,
+      "rawWidth": 426,
+      "rawHeight": 120,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
