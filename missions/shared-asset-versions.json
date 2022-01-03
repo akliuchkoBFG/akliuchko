@@ -1,11 +1,11 @@
 {
 	"assets___direct_publish": {
-		"version": "1.15.0",
-		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/assets___direct_publish/1.15.0.zip",
+		"version": "1.16.0",
+		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/assets___direct_publish/1.16.0.zip",
 		"pathInProject": "assets/direct_publish",
 		"encryption": {
 			"version": "1.0.0",
-			"iv": "9169d97d69ecf2c3bdf78a63c9bfa69a"
+			"iv": "098f08c7513d9514d50256c4b74ff065"
 		}
 	},
 	"extension___asset-import": {
@@ -18,21 +18,21 @@
 		}
 	},
 	"extension___asset-zip-build": {
-		"version": "1.5.3",
-		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___asset-zip-build/1.5.3.zip",
+		"version": "1.5.4",
+		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___asset-zip-build/1.5.4.zip",
 		"pathInProject": "packages/asset-zip-build",
 		"encryption": {
 			"version": "1.0.0",
-			"iv": "5cb765ed1e1fdf5c0cc6769351460db7"
+			"iv": "e314e08c7bfab6fd37107459af420601"
 		}
 	},
 	"extension___mission-preview": {
-		"version": "1.0.0",
-		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___mission-preview/1.0.0.zip",
+		"version": "1.1.0",
+		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___mission-preview/1.1.0.zip",
 		"pathInProject": "packages/mission-preview",
 		"encryption": {
 			"version": "1.0.0",
-			"iv": "8cf5b84d693b881e6774c079cc1dfcfd"
+			"iv": "0ea578d997c1c9e544186df8c879553d"
 		}
 	},
 	"extension___package-utils": {
@@ -45,12 +45,12 @@
 		}
 	},
 	"extension___pigbee-utils": {
-		"version": "1.1.0",
-		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___pigbee-utils/1.1.0.zip",
+		"version": "1.1.1",
+		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___pigbee-utils/1.1.1.zip",
 		"pathInProject": "packages/pigbee-utils",
 		"encryption": {
 			"version": "1.0.0",
-			"iv": "bb28b3a47e82d5b6da479c255540189f"
+			"iv": "c0ba42c8b1ee1bb3583df50484d4ed6a"
 		}
 	},
 	"extension___reskin-helper": {
@@ -63,12 +63,12 @@
 		}
 	},
 	"extension___sakit-preview-server": {
-		"version": "1.5.0",
-		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___sakit-preview-server/1.5.0.zip",
+		"version": "1.5.1",
+		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___sakit-preview-server/1.5.1.zip",
 		"pathInProject": "packages/sakit-preview-server",
 		"encryption": {
 			"version": "1.0.0",
-			"iv": "7dde0a67b4cd0ea4c051763ba49a2226"
+			"iv": "ac78f41a75eb898d32c16a608213373c"
 		}
 	},
 	"extension___scene-archive": {

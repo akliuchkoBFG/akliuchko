@@ -18,6 +18,12 @@ cc.Class({
         fillRange: {
             default: 0
         },
+        progressTransition: {
+            default: 1,
+            min: 0,
+            max: 1,
+            slider: true,
+        },
         stepEndPoints: {
             default: [],
             type: [cc.Float],

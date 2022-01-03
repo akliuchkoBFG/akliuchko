@@ -199,16 +199,19 @@ cc.Class({
 		max = SAStringUtil.numberAsShortString(max, '', true);
 		let minBet = this.getMinBet() || 0;
 		minBet = SAStringUtil.numberAsShortString(minBet, '', true);
+		let chestName = this._getChestName() || '';
 
 		const data = {
 			progress: progress,
 			max: max,
 			slotname: slotName,
+			slotnameUpper: slotName.toUpperCase(),
 			giftname: giftName,
 			minbet: minBet,
 			currencyUpper: currency,
 			currencyLower: currency.toLowerCase(),
 			templateString: this.getFormatString(),
+			chestName: chestName,
 		};
 
 		return data;
@@ -227,5 +230,18 @@ cc.Class({
 			const id = giftIDs[0];
 			return giftData[id] && giftData[id].name.toUpperCase();
 		}
-	}
+	},
+
+	_getChestName: function() {
+		return this._stepData && this._stepData.data && this._stepData.data.chestName;
+	},
+
+	getSecondsToUnlock: function getSecondsToUnlock() {
+		return this._stepData && this._stepData.data && this._stepData.data.secondsToUnlock;
+	},
+
+	getSecondsRemaining: function getSecondsRemaining() {
+		return this._stepData && this._stepData.data && this._stepData.data.secondsRemaining;
+	},
+
 });

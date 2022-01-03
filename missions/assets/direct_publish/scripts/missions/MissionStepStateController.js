@@ -39,6 +39,10 @@ cc.Class({
 			type: MissionStepRewardSequence,
 			tooltip: "Claim sequence controller for supporting multiple rewards and rich claim choreography\nIf present, ignores 'Claim State' property",
 		},
+		claimedState: {
+			default: '',
+			tooltip: "(optional) cc.Anim clip name – this clip plays when entering a scene with a claimed step reward\nUnused on active step only missions",
+		},
 		outroState: {
 			default: '',
 			tooltip: "cc.Anim clip name - this clip shows the outro state of the step"
@@ -66,7 +70,7 @@ cc.Class({
 	},
 
 	onUpdateMissionStepData: function() {
-		if (this._areAllStepsComplete()) {
+		if (this._areAllStepsComplete() && !this.claimedState) {
 			// If the mission is complete, let the MissionStateController final animations take over
 			return;
 		}
@@ -76,7 +80,9 @@ cc.Class({
 		if (progress === 0) {
 			this._play(this.introState);
 		} else if (progress >= max) {
-			if (!CC_EDITOR && this.selectionSequence) {
+			if (this.missionStepInterface.getAwarded() && this.claimedState) {
+				this._play(this.claimedState);
+			} else if (!CC_EDITOR && this.selectionSequence) {
 				this._playUserSelectionSequence();
 			} else {
 				this._play(this.completeState);
@@ -104,7 +110,13 @@ cc.Class({
 		}
 	},
 
-	onClaim: function() {
+	onClaim: function(event) {
+		if (event && event.detail && event.detail.stepID != null) {
+			const stepID = +event.detail.stepID;
+			if (+this.missionStepInterface.stepID !== stepID) {
+				return;
+			}
+		}
 		if (this.claimSequence) {
 			this.claimSequence.playSequence()
 			.then(() => {

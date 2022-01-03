@@ -1,6 +1,6 @@
 {
   "name": "sakit-preview-server",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "A package for running a preview build server on localhost:3457",
   "author": "Self Aware Games",
   "main": "main.js",

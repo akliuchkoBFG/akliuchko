@@ -35,21 +35,28 @@ cc.Class({
 
 	onUpdateMissionStepData: function() {
 		// Grid buttons can only be loaded in game
-		if (!CC_EDITOR) {
-			const gridButtonData = this._getGridButtonData();
-			if (gridButtonData && (!this._loadingPromise || this._loadingPromise.isResolved())) {
-				const loader = this.getComponent(GridButtonLoader);
-				this._loadingPromise = loader.loadGridButton(gridButtonData);
-			}
+		if (CC_EDITOR) {
+			return;
+		}
+		const gridButtonData = this._getGridButtonData();
+		if (gridButtonData && (!this._loadingPromise || this._loadingPromise.isResolved())) {
+			const loader = this.getComponent(GridButtonLoader);
+			this._loadingPromise = loader.loadGridButton(gridButtonData)
+			.catch(() => {
+				this.log.e("Error loading grid button for buy in id: " + this._buyInID);
+			});
 		}
 	},
 
 	_getGridButtonData: function() {
 		const buyInIDs = this.missionStepInterface.getBuyInIDs() || [];
 		if (this.index < buyInIDs.length) {
-			const slotData = this.missionStepInterface.getSlotData(buyInIDs[this.index]);
+			this._buyInID = buyInIDs[this.index];
+			const slotData = this.missionStepInterface.getSlotData(this._buyInID);
 			if (slotData) {
 				return slotData.gridButtonData;
+			} else {
+				this.log.w("No slot data found for buy in id: " + this._buyInID);
 			}
 		} else {
 			this.log.w("No buyInID found at index " + this.index);

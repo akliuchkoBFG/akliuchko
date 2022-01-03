@@ -1,0 +1,125 @@
+
+ambients.png
+size: 643,641
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fountain/Fountain
+  rotate: false
+  xy: 2, 328
+  size: 386, 311
+  orig: 386, 311
+  offset: 0, 0
+  index: -1
+fountain/ripple 01
+  rotate: false
+  xy: 155, 15
+  size: 117, 66
+  orig: 118, 66
+  offset: 1, 0
+  index: -1
+fountain/ripple 02
+  rotate: false
+  xy: 2, 6
+  size: 151, 75
+  orig: 152, 76
+  offset: 0, 0
+  index: -1
+fountain/ripple 03
+  rotate: true
+  xy: 622, 237
+  size: 81, 19
+  orig: 83, 21
+  offset: 1, 1
+  index: -1
+fountain/ripple 04
+  rotate: false
+  xy: 343, 6
+  size: 52, 16
+  orig: 54, 18
+  offset: 1, 1
+  index: -1
+fountain/ripple 05
+  rotate: true
+  xy: 484, 26
+  size: 77, 29
+  orig: 79, 30
+  offset: 1, 0
+  index: -1
+fountain/ripple 06
+  rotate: true
+  xy: 588, 234
+  size: 84, 32
+  orig: 86, 34
+  offset: 1, 1
+  index: -1
+fountain/water 01
+  rotate: false
+  xy: 515, 40
+  size: 41, 65
+  orig: 111, 70
+  offset: 5, 5
+  index: -1
+fountain/water 02
+  rotate: false
+  xy: 588, 175
+  size: 31, 57
+  orig: 111, 70
+  offset: 80, 8
+  index: -1
+fountain/water 03
+  rotate: true
+  xy: 497, 169
+  size: 149, 89
+  orig: 171, 91
+  offset: 0, 1
+  index: -1
+fountain/water 04
+  rotate: false
+  xy: 274, 3
+  size: 67, 78
+  orig: 171, 91
+  offset: 33, 1
+  index: -1
+fountain/water 05
+  rotate: false
+  xy: 343, 24
+  size: 74, 79
+  orig: 171, 91
+  offset: 97, 11
+  index: -1
+fountain/water 06
+  rotate: false
+  xy: 419, 18
+  size: 63, 85
+  orig: 228, 92
+  offset: 1, 3
+  index: -1
+fountain/water 07
+  rotate: true
+  xy: 497, 107
+  size: 60, 90
+  orig: 228, 92
+  offset: 167, 1
+  index: -1
+neon_01
+  rotate: true
+  xy: 390, 320
+  size: 319, 243
+  orig: 320, 250
+  offset: 1, 7
+  index: -1
+neon_02
+  rotate: false
+  xy: 2, 83
+  size: 319, 243
+  orig: 320, 250
+  offset: 1, 7
+  index: -1
+palm
+  rotate: false
+  xy: 323, 105
+  size: 172, 213
+  orig: 172, 213
+  offset: 0, 0
+  index: -1

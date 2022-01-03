@@ -224,6 +224,18 @@ cc.Class({
 		return activeStepIDs;
 	},
 
+	getStepIDsByState: function(state) {
+		return _(this._stepData)
+		.filter({
+			data: {state}
+		})
+		.map((stepData) => {
+			// String cast for consistency with other methods that return stepIDs
+			return "" + stepData.data.id;
+		})
+		.value();
+	},
+
 	getFinalStepID: function() {
 		let lastFoundID = 0;
 		_(this._stepData).forOwn((step, id) => {
@@ -252,12 +264,20 @@ cc.Class({
 		return this._missionData && this._missionData.giftsData;
 	},
 
+	getManifestEntry: function(manifestKey) {
+		let entry = null;
+		if (this._missionData && this._missionData.mission.manifest) {
+			entry = this._missionData.mission.manifest[manifestKey];
+		}
+		return entry;
+	},
+
 	getTrayIcon() {
 		let iconName = '';
 		// Check in the mission data manifest for the icon image
 		// The manifest may be empty and this._missionData.mission.manifest.tray_icon can be an empty string or undefined
-		if(!!this._missionData.mission.manifest.tray_icon){
-			iconName = this._missionData.mission.manifest.tray_icon;
+		iconName = this.getManifestEntry('tray_icon') || '';
+		if (iconName) {
 			return Promise.resolve(iconName);
 		}
 		const tags = this.getTags();
@@ -282,6 +302,18 @@ cc.Class({
 		.then(() => {
 			return configLoader.getClientConfigValue('images.asset');
 		});
+	},
+
+	// Get mission popup, optionally providing input popup data sourced from a promotion layout
+	getMainPopup(promoPopup) {
+		if (promoPopup && promoPopup.name) {
+			// Input promo popup takes priority over manifest.main_popup until we have tools to edit a live mission template version
+			// See SCX-3238 for tooling ticket status
+			return promoPopup;
+		} else {
+			const popup = this.getManifestEntry('main_popup');
+			return popup;
+		}
 	},
 
 	getTags: function() {
@@ -363,6 +395,11 @@ cc.Class({
 		this.emit('updateMissionDataEvent', null);
 	},
 
+	onCommandComplete: function() {
+		// Trigger a data update for all MissionStepInterfaces and components
+		this.emit('updateMissionDataEvent', null);
+	},
+
 	getSlotData: function(buyInID) {
 		if (this._missionData && this._missionData.slotsData) {
 			return this._missionData.slotsData[buyInID];
@@ -425,6 +462,16 @@ cc.Class({
 		return publicData;
 	},
 
+	getMissionCommandData: function (missionKey) {
+		const commandData = this._missionData.mission.commandData || {};
+		const missionData = commandData[missionKey];
+		if (!missionData) {
+			this.log.e("No mission command data found for " + missionKey);
+		}
+
+		return _.assign({}, missionData);
+	},
+
 	// send the public command data to the server, saving it to the mission data
 	sendPublicCommandData: function(data, notify) {
 		return this.callCommand("updatePublicCommandData", data, notify);
@@ -456,6 +503,7 @@ cc.Class({
 			} else {
 				// TODO: error
 			}
+			return result;
 		});
 	},
 

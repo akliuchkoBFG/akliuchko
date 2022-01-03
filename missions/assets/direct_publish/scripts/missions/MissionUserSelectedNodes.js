@@ -20,6 +20,12 @@ cc.Class({
 			tooltip: "Adds this animation to each child, and plays said animation on selection",
 		},
 
+		swapDelay: {
+			default: 0,
+			type: cc.Float,
+			tooltip: "Adds a delay to switching items to allow timing not accounted for in the animation before showing the new selection."
+		},
+
 		dataKey: {
 			default: "default_key",
 			tooltip: "Data is stored as key:value pair, this is the KEY for this selection",
@@ -67,7 +73,7 @@ cc.Class({
 
 	onPublicCommandDataUpdated: function() {
 		// command data has been updated "locally", refresh the state
-		this._toggleNodes();
+		this.scheduleOnce(this._toggleNodes, this.swapDelay);
 	},
 
 	_toggleNodes: function() {
@@ -81,6 +87,7 @@ cc.Class({
 		for (let i= 0; i < this.node.children.length; ++i) {
 			let child = this.node.children[i];
 			if (selection === this.selectionValues[i]) {
+				// Schedule the animation to play after the swap delay. This will also add a 1 frame delay for the schedule to execute.
 				this._playReveal(child);
 				child.active = true; 
 				childToggled = true;

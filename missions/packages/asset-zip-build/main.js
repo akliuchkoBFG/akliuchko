@@ -343,6 +343,11 @@ function updateIfRequired(env) {
 }
 
 function startBuild(event, settings, options) {
+	// Deselect nodes from the node tree panel to avoid erroneous IPC timeout warnings while a build is running
+	const nodeSelection = Editor.Selection.curSelection('node');
+	Editor.Selection.clear('node');
+
+	// Start build
 	const buildSettings = BuildSettings.getSettings(settings);
 	let sceneUuid, uuidList, bundleName, scenePath, sceneName, sourcePath;
 	const bundlePromises = [];
@@ -413,6 +418,12 @@ function startBuild(event, settings, options) {
 		return zip.build();
 	})
 	.then((manifest) => {
+		// Now that heavy scene script work is done, restore node selection that was cleared at build start
+		if (Editor.Selection.curSelection('node').length === 0) {
+			Editor.Selection.select('node', nodeSelection);
+		}
+
+		// Create zip archive
 		if (buildSettings.skipZip) {
 			return manifest;
 		}

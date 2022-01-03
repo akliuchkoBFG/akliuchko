@@ -13,6 +13,12 @@ const AnimationClipProperty = cc.Class({
 						clipPropNames.forEach((animProp) => {
 							if (this[animProp] instanceof AnimationClipProperty) {
 								this[animProp]._animation = this[propName];
+							} else if (Array.isArray(this[animProp])) {
+								this[animProp].forEach((prop) => {
+									if (prop instanceof AnimationClipProperty) {
+										prop._animation = this[propName];
+									}
+								});
 							}
 						});
 					}
@@ -28,6 +34,22 @@ const AnimationClipProperty = cc.Class({
 				tooltip: tooltip,
 				visible() {
 					return this[ccAnimName] instanceof cc.Animation;
+				},
+			};
+		},
+		arrayPropertyDefinition(propName, ccAnimName, tooltip) {
+			return {
+				default: [],
+				type: AnimationClipProperty,
+				tooltip: tooltip,
+				visible() {
+					return this[ccAnimName] instanceof cc.Animation;
+				},
+				notify() {
+					CC_EDITOR && Editor.log("Notify array prop");
+					this[propName].forEach((animProp) => {
+						animProp._animation = this[ccAnimName];
+					});
 				},
 			};
 		},
@@ -101,6 +123,16 @@ const AnimationClipProperty = cc.Class({
 			return;
 		}
 		this._animation.sample(this._clipName);
+	},
+
+	sampleEnd() {
+		if (!this._animation || !this._clipName) {
+			return;
+		}
+		const animState = this._animation.getAnimationState(this._clipName);
+		if (animState) {
+			this._animation.setCurrentTime(animState.duration, this._clipName);
+		}
 	},
 
 	isValid() {

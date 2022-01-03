@@ -59,6 +59,19 @@ module.exports = {
 			}
 		}
 	},
+	'update-mission-json'(event, missionJSON) {
+		const scene = _Scene.currentScene();
+		// TODO multiple MSDC?
+		const msdc = scene.getComponentInChildren('MissionServerDataComponent');
+
+		if (msdc) {
+			msdc.missionJSONString = missionJSON;
+			event.reply(null);
+		} else {
+			const err = new IPCError('No misison interface', 'msdc_not_found');
+			event.reply(err);
+		}
+	},
 	'simulate-mission-progress'(event, postData) {
 		const scene = _Scene.currentScene();
 		// TODO multiple MSDC?
@@ -69,7 +82,21 @@ module.exports = {
 				msdc.updateBackendMissionData(0, postData.missionID, postData.stepID, postData.stepProgress);
 				event.reply(null);
 			} else {
-				const err = new IPCError('No misison interface', 'msdc_not_found');
+				const err = new IPCError('No mission interface', 'msdc_not_found');
+				event.reply(err);
+			}
+		}
+	},
+	'reset-mission-progress'(event, postData) {
+		const scene = _Scene.currentScene();
+		// TODO multiple MSDC?
+		const msdc = scene.getComponentInChildren('MissionServerDataComponent');
+		if (event && event.reply) {
+			if (msdc) {
+				msdc.resetBackendMissionData(postData.missionID);
+				event.reply(null);
+			} else {
+				const err = new IPCError('No mission interface', 'msdc_not_found');
 				event.reply(err);
 			}
 		}

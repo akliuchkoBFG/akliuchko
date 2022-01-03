@@ -1,10 +1,32 @@
 <div id="wrap" class="wrap">
 	<section class="wrapper layout vertical" v-if="missionID != null">
-		<ui-prop name="Mission"><span>{{missionHumanReadable}}</span></ui-prop>
+		<ui-prop name="Mission" @click="findMSDC">
+			<span>{{missionHumanReadable}}</span>
+		</ui-prop>
+		<ui-prop name="Timeline" tooltip="Adjust mission timeline for time locked steps">
+			<ui-select v-value="timeOffset">
+				<option v-for="option in timeOptions" :value="option.value">{{option.display}}</option>
+			</ui-select>
+			<ui-button
+				@confirm="adjustMissionTime"
+			>
+				Adjust Time
+			</ui-button>
+		</ui-prop>
 		<ui-prop name="Step">
 			<ui-select v-value="selectedStepID" @change="selectStep">
 				<option v-for="stepID in stepIDs" :value="stepID">{{stepID}}</option>
 			</ui-select>
+			<ui-button
+				class="red"
+				tooltip="Reset current mission progress to start"
+				tooltip-target="left"
+				@confirm="resetMissionProgress"
+				@mouseenter="showTooltip"
+				@mouseleave="hideTooltip"
+			>
+				Reset
+			</ui-button>
 		</ui-prop>
 		<div v-show="selectedStepData != null">
 			<ui-prop name="Progress">

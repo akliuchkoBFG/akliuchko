@@ -141,6 +141,36 @@ cc.Class({
 		}
 	},
 
+	resetBackendMissionData: function(missionID) {
+		if (!CC_EDITOR) {
+			return;
+		}
+		const formData = {
+			missionID: missionID,
+			characterID: this.previewCharacter.characterID,
+		};
+		Editor.SAG.PigbeeRequest.post({
+			env: 'dev',
+			controller: 'cocos_creator',
+			action: 'resetMissionProgress',
+			formData,
+		})
+		.then((response) => {
+			try {
+				const mission = JSON.parse(response);
+				if (mission.success === false) {
+					throw new Error(mission.error || 'Unknown server error');
+				}
+				this.missionJSONString = JSON.stringify(mission);
+			} catch(e) {
+				Editor.error("Progress reset Failed: " +e);
+			}
+		})
+		.catch((err) => {
+			Editor.error("Can't connect with the environment to reset mission progress\n" + err);
+		});
+	},
+
 	updateInstantiatedMissionData: function (templateID, characterID, templateSource, missionIndex, getExisting) {
 		if (CC_EDITOR) {
 			const formData = {

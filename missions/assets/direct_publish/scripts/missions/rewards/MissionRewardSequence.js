@@ -56,6 +56,7 @@ cc.Class({
 		if (CC_EDITOR) {
 			return; // Dynamic rewards displays are not supported in-editor
 		}
+
 		if (_.isEqual(this._productPackage, rewardItems)) {
 			return; // Attempting to configure this component multiple times with the same product package
 		} else if (this._rewardItems) {
@@ -89,6 +90,21 @@ cc.Class({
 				}
 			});
 		});
+	},
+
+	setRewardsFromAwardAndResult(award, awardResults) {
+		const productPackageRewards = _.cloneDeep(award);
+		const indexByClass = _.mapValues(productPackageRewards, () => { return 0; });
+		awardResults.forEach((awardResult) => {
+			const className = awardResult.class;
+			const currentIndex = indexByClass[className]++;
+			productPackageRewards[className][currentIndex].awardResult = awardResult;
+		});
+		this.setRewardsFromProductPackage(productPackageRewards);
+	},
+
+	hasItems() {
+		return this._rewardItems && this._rewardItems.length > 0;
 	},
 
 	_createRewardNode(rewardItem) {

@@ -13,6 +13,19 @@ const FILES = {
 	style: Editor.url('packages://mission-preview/panel/mission-preview.css'),
 };
 
+const TIME_OPTIONS = [
+	{value: '', display:"No Change"},
+	{value: 'reset', display: "Reset to Start"},
+	// Actual time offsets are moving the start/end dates of the mission
+	// Moving the mission ahead needs a negative offset and back needs a positive offset
+	{value: '-1 hour', display: "Ahead 1 Hour"},
+	{value: '-12 hours', display: "Ahead 12 Hours"},
+	{value: '-1 day', display: "Ahead 1 Day"},
+	{value: '+1 hour', display: "Back 1 Hour"},
+	{value: '+12 hours', display: "Back 12 Hours"},
+	{value: '+1 day', display: "Back 1 Day"},
+];
+
 // panel/index.js, this filename needs to match the one registered in package.json
 return Editor.Panel.extend({
 	// css style for panel
@@ -42,6 +55,8 @@ return Editor.Panel.extend({
 				stepProgress: 0,
 				compileFinished: false,
 				lastUpdate: null,
+				timeOptions: TIME_OPTIONS,
+				timeOffset: "",
 			},
 			computed: {
 				missionHumanReadable() {
@@ -118,6 +133,35 @@ return Editor.Panel.extend({
 					});
 				},
 
+				adjustMissionTime() {
+					if (this.timeOffset === '') {
+						Editor.log("Skipped timeline update, please select a valid timeline offset");
+						return;
+					}
+					const postData = {
+						missionID: this.missionID,
+						characterID: this.characterID,
+						timeOffset: this.timeOffset,
+					};
+					PigbeeRequest.post({
+						controller: 'cocos_creator',
+						action: 'adjustMissionTime',
+						formData: postData,
+						env: 'dev',
+					})
+					.then((result) => {
+						if (SAStringUtil && SAStringUtil.formatTimeToWords) {
+							const missionData = JSON.parse(result);
+							const readableTimeActive = SAStringUtil.formatTimeToWords(missionData.secondsActive * 1e3, 2);
+							const readableTimeRemaining = SAStringUtil.formatTimeToWords(missionData.secondsRemaining * 1e3, 2);
+							Editor.success(`Mission time adjusted; Time active: ${readableTimeActive}; Time remaining: ${readableTimeRemaining}`);
+						} else {
+							Editor.success("Mission time adjusted");
+						}
+						return MissionPreviewUtil.callSceneScript('update-mission-json', result);
+					});
+				},
+
 				updateMissionProgress() {
 					const postData = {
 						missionID: this.missionID,
@@ -141,6 +185,16 @@ return Editor.Panel.extend({
 					MissionPreviewUtil.callSceneScript('simulate-mission-progress', this.lastUpdate)
 					.then(() => {
 						Editor.success("Forced mission progress");
+					});
+				},
+
+				resetMissionProgress() {
+					const postData = {
+						missionID: this.missionID,
+					};
+					MissionPreviewUtil.callSceneScript('reset-mission-progress', postData)
+					.then(() => {
+						Editor.success("Reset mission progress");
 					});
 				},
 
