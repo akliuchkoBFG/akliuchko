@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "f952e40d-6e21-4dfb-81dd-7ae1cf9822a1",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "boardgame_event_casino_background_new_01": {
+      "ver": "1.0.3",
+      "uuid": "6f71dfba-b51a-443e-a6ab-16728cfe7e1e",
+      "rawTextureUuid": "f952e40d-6e21-4dfb-81dd-7ae1cf9822a1",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": -9,
+      "trimX": 4,
+      "trimY": 51,
+      "width": 631,
+      "height": 876,
+      "rawWidth": 640,
+      "rawHeight": 960,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
