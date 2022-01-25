@@ -94,7 +94,7 @@ cc.Class({
 		if (this.pointsLabels.length === 0) {
 			return;
 		}
-		if (this._labelPointValue === displayPointValue) {
+		if (this._labelPointValue === displayPointValue && !CC_EDITOR) {
 			// No change
 			return;
 		}
@@ -142,6 +142,13 @@ cc.Class({
 		this._from = this._currentPoints;
 		this._to = finalValue;
 		this.progressDisplay = 0;
+	},
+
+	completeProgressTransition() {
+		if (this._to != null) {
+			this._currentPoints = this._to;
+			this._from = this._to = null;
+		}
 	},
 
 	// Calculate the overall progress bar percent based on a specific point value by determining which segment the point value falls within

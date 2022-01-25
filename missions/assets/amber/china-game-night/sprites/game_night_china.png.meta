@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "e74ca8dd-8fe7-4c27-a068-67494be8c27a",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "game_night_china": {
+      "ver": "1.0.3",
+      "uuid": "5f02ccbe-a569-458d-ae59-a00732e4c457",
+      "rawTextureUuid": "e74ca8dd-8fe7-4c27-a068-67494be8c27a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": -14.5,
+      "trimX": 10,
+      "trimY": 61,
+      "width": 621,
+      "height": 867,
+      "rawWidth": 640,
+      "rawHeight": 960,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

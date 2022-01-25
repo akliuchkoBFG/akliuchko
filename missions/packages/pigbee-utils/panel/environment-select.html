@@ -17,6 +17,9 @@
 		<ui-prop v-if="serverID === 'localvm'" name="Dev" class="box flex-1">
 			<ui-input class="box flex-1" v-value="vmID" @confirm="saveSettings"></ui-input>
 		</ui-prop>
+		<ui-prop name="Pigbee User" class="box flex-1">
+			<ui-input class="box flex-1" v-value="pigbeeUser" @confirm="saveSettings"></ui-input>
+		</ui-prop>
 		<div id="buttons" class="wrapper layout horizontal">
 			<ui-button @click="launchGame" class="flex-1">Launch Game</ui-button>
 			<ui-button @click="launchPigbee" class="flex-1">Launch Pigbee</ui-button>

@@ -1,6 +1,6 @@
 {
   "name": "asset-zip-build",
-  "version": "1.5.4",
+  "version": "1.6.0",
   "description": "Build asset zips in editor",
   "author": "Self Aware Games",
   "main": "main.js",
@@ -27,6 +27,6 @@
     "height": 600
   },
   "packages": {
-    "pigbee-utils": "^1.0.0"
+    "pigbee-utils": "^1.2.0"
   }
 }

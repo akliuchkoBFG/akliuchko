@@ -184,6 +184,10 @@ cc.Class({
 		return this._stepData && this._stepData.data && this._stepData.data.minBet;
 	},
 
+	getThreshold: function() {
+		return this._stepData && this._stepData.data && this._stepData.data.threshold;
+	},
+
 	getState: function() {
 		return this._stepData && this._stepData.data && this._stepData.data.state;
 	},
@@ -191,7 +195,7 @@ cc.Class({
 	// Get the data payload the is used for populating template strings
 	getTemplateStringData: function() {
 		const slotName = this._getSlotName() || '';
-		const giftName = this._getGiftName() || '';
+		const giftName = this._getGiftName() || 'gifts';
 		const currency = (!CC_EDITOR && Game.isSlotzilla()) ? 'COINS' : 'CHIPS';
 		let progress = this.getProgressAmount();
 		progress = SAStringUtil.numberAsShortString(progress, '', true);
@@ -199,7 +203,10 @@ cc.Class({
 		max = SAStringUtil.numberAsShortString(max, '', true);
 		let minBet = this.getMinBet() || 0;
 		minBet = SAStringUtil.numberAsShortString(minBet, '', true);
-		let chestName = this._getChestName() || '';
+		let threshold = this.getThreshold();
+		threshold = SAStringUtil.numberAsShortString(threshold, '', true);
+		const chestName = this._getChestName() || '';
+		const vault = this._getVault() || '';
 
 		const data = {
 			progress: progress,
@@ -208,10 +215,12 @@ cc.Class({
 			slotnameUpper: slotName.toUpperCase(),
 			giftname: giftName,
 			minbet: minBet,
+			threshold: threshold,
 			currencyUpper: currency,
 			currencyLower: currency.toLowerCase(),
 			templateString: this.getFormatString(),
 			chestName: chestName,
+			vault: vault,
 		};
 
 		return data;
@@ -234,6 +243,10 @@ cc.Class({
 
 	_getChestName: function() {
 		return this._stepData && this._stepData.data && this._stepData.data.chestName;
+	},
+
+	_getVault: function() {
+		return this._stepData && this._stepData.data && this._stepData.data.vault;
 	},
 
 	getSecondsToUnlock: function getSecondsToUnlock() {

@@ -82,6 +82,10 @@ cc.Class({
 			// None of the logic here is editor safe
 			return;
 		}
+		if (this._activeClaim && !this._activeClaim.isResolved()) {
+			// Skip updating if a claim is currently in progress
+			return;
+		}
 		// Setup state for claimed rewards
 		const redeemed = this.getMilestonesAwarded();
 		redeemed.forEach((milestoneTier) => {
@@ -96,6 +100,7 @@ cc.Class({
 		if (redeemable.length > 0) {
 			const nextMilestoneTier = redeemable[0];
 			if (this.autoClaim) {
+				this.log.d("Starting milestone claim for tier: " + nextMilestoneTier);
 				this._claimMilestoneWithChoreography(nextMilestoneTier);
 			} else {
 				this.emit('points_milestones.redeemable', {
@@ -109,7 +114,7 @@ cc.Class({
 		const claimStartAnim = this.milestoneClaimStart[milestoneTier];
 		// Start playing milestone animation if available for latency hiding
 		const milestoneAnimation = claimStartAnim ? claimStartAnim.play() : Promise.resolve();
-		return this.claimMilestoneTier(milestoneTier, false)
+		this._activeClaim = this.claimMilestoneTier(milestoneTier, false)
 		.then((response) => {
 			// Wait for milestone animation if it is still playing
 			return milestoneAnimation.then(() => {
@@ -130,8 +135,9 @@ cc.Class({
 			if (claimEndAnim) {
 				return claimEndAnim.play();
 			}
-		})
-		.then(() => {
+		});
+		// Intentionally separates primary claim choreography from triggering data updates
+		return this._activeClaim.then(() => {
 			this.missionInterface.onCommandComplete();
 			this.emit('points_milestones.claim_complete', null);
 		});

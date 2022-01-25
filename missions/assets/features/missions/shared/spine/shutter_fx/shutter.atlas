@@ -1,0 +1,20 @@
+
+shutter.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gradient
+  rotate: false
+  xy: 2, 2
+  size: 87, 87
+  orig: 90, 91
+  offset: 1, 0
+  index: -1
+shutterFlap
+  rotate: false
+  xy: 2, 91
+  size: 396, 387
+  orig: 404, 395
+  offset: 3, 4
+  index: -1

@@ -1,0 +1,111 @@
+
+ambients.png
+size: 873,871
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Group 69
+  rotate: false
+  xy: 698, 568
+  size: 30, 143
+  orig: 30, 143
+  offset: 0, 0
+  index: -1
+candle light
+  rotate: false
+  xy: 771, 770
+  size: 100, 99
+  orig: 101, 101
+  offset: 1, 1
+  index: -1
+fdvfdv
+  rotate: true
+  xy: 625, 200
+  size: 94, 74
+  orig: 94, 74
+  offset: 0, 0
+  index: -1
+flying_lamp@4x
+  rotate: false
+  xy: 625, 296
+  size: 77, 99
+  orig: 77, 100
+  offset: 0, 0
+  index: -1
+frame@4x
+  rotate: false
+  xy: 2, 2
+  size: 621, 867
+  orig: 621, 867
+  offset: 0, 0
+  index: -1
+hang_hny_lamp01@4x
+  rotate: false
+  xy: 625, 713
+  size: 71, 156
+  orig: 71, 156
+  offset: 0, 0
+  index: -1
+hang_hny_lamp02.png
+  rotate: false
+  xy: 625, 555
+  size: 71, 156
+  orig: 71, 156
+  offset: 0, 0
+  index: -1
+hang_hny_lamp03.png
+  rotate: false
+  xy: 698, 713
+  size: 71, 156
+  orig: 71, 156
+  offset: 0, 0
+  index: -1
+hang_hny_lamp04.png
+  rotate: false
+  xy: 625, 397
+  size: 71, 156
+  orig: 71, 156
+  offset: 0, 0
+  index: -1
+house_lamp@4x
+  rotate: true
+  xy: 771, 719
+  size: 15, 29
+  orig: 15, 29
+  offset: 0, 0
+  index: -1
+lotus@4x
+  rotate: true
+  xy: 625, 116
+  size: 82, 79
+  orig: 82, 79
+  offset: 0, 0
+  index: -1
+lotus_leaf01@4x
+  rotate: true
+  xy: 698, 524
+  size: 42, 29
+  orig: 42, 29
+  offset: 0, 0
+  index: -1
+lotus_leaf02@4x
+  rotate: false
+  xy: 625, 90
+  size: 35, 24
+  orig: 35, 24
+  offset: 0, 0
+  index: -1
+lotus_leaf03@4x
+  rotate: true
+  xy: 730, 668
+  size: 43, 30
+  orig: 43, 30
+  offset: 0, 0
+  index: -1
+lotus_leaf04@4x
+  rotate: false
+  xy: 771, 736
+  size: 46, 32
+  orig: 46, 32
+  offset: 0, 0
+  index: -1

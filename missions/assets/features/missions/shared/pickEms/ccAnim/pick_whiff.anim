@@ -1,0 +1,316 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "pick_whiff",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.5,
+  "sample": 60,
+  "speed": 0.5,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "pick_image": {
+        "props": {
+          "color": [
+            {
+              "frame": 0.06666666666666667,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 255
+              }
+            },
+            {
+              "frame": 0.15,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 127,
+                "g": 127,
+                "b": 127,
+                "a": 255
+              }
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.06666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.15,
+              "value": 255
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0.06666666666666667,
+              "value": 2
+            },
+            {
+              "frame": 0.15,
+              "value": 1.5
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0.06666666666666667,
+              "value": 2
+            },
+            {
+              "frame": 0.15,
+              "value": 1.5
+            }
+          ],
+          "y": [
+            {
+              "frame": 0.06666666666666667,
+              "value": -270
+            },
+            {
+              "frame": 0.15,
+              "value": -205
+            }
+          ]
+        }
+      },
+      "rewardTeaser": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.5,
+              "value": 127
+            }
+          ],
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 127,
+                "g": 127,
+                "b": 127,
+                "a": 255
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 127,
+                "g": 127,
+                "b": 127,
+                "a": 255
+              }
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 60
+            }
+          ]
+        }
+      },
+      "boxShadow": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0.06666666666666667,
+              "value": 2
+            },
+            {
+              "frame": 0.15,
+              "value": 1.4
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0.06666666666666667,
+              "value": 2
+            },
+            {
+              "frame": 0.15,
+              "value": 1.4
+            }
+          ]
+        }
+      },
+      "pick_box/picker_spine_idle": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": 1
+            },
+            {
+              "frame": 0.5,
+              "value": 0.85
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": 1
+            },
+            {
+              "frame": 0.5,
+              "value": 0.85
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 255
+              }
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 255
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 80,
+                "g": 80,
+                "b": 80,
+                "a": 255
+              }
+            }
+          ]
+        },
+        "comps": {
+          "sp.Skeleton": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": true
+              }
+            ]
+          }
+        }
+      },
+      "pick_box/picker_spine_open": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        },
+        "comps": {
+          "sp.Skeleton": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": false
+              }
+            ]
+          }
+        }
+      },
+      "pick_box/rewardTeaser": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0.25
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": 0.25
+            },
+            {
+              "frame": 0.5,
+              "value": 0.5
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0.25
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": 0.25
+            },
+            {
+              "frame": 0.5,
+              "value": 0.5
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": 0
+            },
+            {
+              "frame": 0.5,
+              "value": 128
+            }
+          ]
+        }
+      },
+      "pick_box": {
+        "comps": {
+          "cc.Sprite": {}
+        },
+        "props": {}
+      }
+    },
+    "props": {}
+  },
+  "events": []
+}

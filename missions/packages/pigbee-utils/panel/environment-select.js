@@ -9,7 +9,7 @@ const {shell:{openExternal}} = require('electron');
 /* eslint-enable global-require */
 
 const PROFILE = "profile://local/environment-settings.json";
-const RAW_SETTINGS_KEYS = ['serverID', 'clientID', 'vmID'];
+const RAW_SETTINGS_KEYS = ['serverID', 'clientID', 'vmID', 'pigbeeUser'];
 const ENVIRONMENTS_LIST = _.cloneDeep(_.filter(Environments.LIST, (env) => { return env.id !== 'live'; }));
 const CLIENTS_LIST = _.cloneDeep(Clients.LIST);
 const FILES = {
@@ -34,6 +34,7 @@ return Editor.Panel.extend({
 				serverID: 'tools',
 				clientID: 'sakit',
 				vmID: '',
+				pigbeeUser: '',
 			},
 			compiled() {
 				// Load existing profile

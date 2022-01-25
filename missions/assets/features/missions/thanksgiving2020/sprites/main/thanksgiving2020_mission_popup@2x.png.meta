@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "b883384e-ee87-4c0b-ac44-0a9ba3507513",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "thanksgiving2020_mission_popup@2x": {
+      "ver": "1.0.3",
+      "uuid": "f795b87b-ba5e-4896-8877-39301ffbd64d",
+      "rawTextureUuid": "b883384e-ee87-4c0b-ac44-0a9ba3507513",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -4,
+      "offsetY": 7.5,
+      "trimX": 10,
+      "trimY": 14,
+      "width": 612,
+      "height": 917,
+      "rawWidth": 640,
+      "rawHeight": 960,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

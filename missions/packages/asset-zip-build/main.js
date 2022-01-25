@@ -230,7 +230,7 @@ function uploadToPigbee(manifest, buildSettings, options) {
 
 	const zipPath = path.join(buildSettings.outputDir, manifest.fileName);
 	const uploadError = new Error('Pigbee upload failed!');
-	const user = process.env.USER || process.env.USERNAME || 'unknown_user';
+	const user = EnvProfile.data.pigbeeUser;
 	const postData = _.assign({
 		bundle: fs.createReadStream(zipPath),
 		name: path.basename(manifest.fileName, '.zip'),

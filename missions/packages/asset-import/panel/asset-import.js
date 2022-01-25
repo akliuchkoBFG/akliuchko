@@ -8,6 +8,8 @@ const async = require('async');
 const _ = require('lodash');
 const AssetProcessors = Editor.require('packages://asset-import/AssetProcessors.js');
 const PigbeeRequest = Editor.require('packages://pigbee-utils/PigbeeRequest.js');
+// Use the sync api to load the profile with environment settings
+const EnvProfile = Editor.remote.Profile.load("profile://local/environment-settings.json");
 /* eslint-enable global-require */
 
 const PIGBEE_REQUEST_PARAMS = Object.freeze({
@@ -88,7 +90,7 @@ return Editor.Panel.extend({
 					this.downloads = [];
 					this.files = files;
 					this.state = STATES.UPLOADING;
-					const username = process.env.USER || process.env.USERNAME || 'unknown.user';
+					const username = EnvProfile.data.pigbeeUser;
 					const userNamespace = username.replace(/\./g, '-');
 					const directoryName = 'aaaa-' + userNamespace;
 					const dirPostData = {
@@ -268,15 +270,16 @@ return Editor.Panel.extend({
 					// onComplete
 					(err) => {
 						if (err) {
-							Editor.error("Error while importing assets:");
-							return Editor.error(err);
+							this.state = STATES.READY;
+							Editor.failed("Error while importing assets:");
+							return Editor.failed(err);
 						}
 						// Update the asset db with the newly imported assets
 						Editor.assetdb.refresh('db://assets/imports', (err) => {
 							this.state = STATES.READY;
 							if (err) {
-								Editor.error("Error while importing assets: ");
-								return Editor.error(err);
+								Editor.failed("Error while importing assets: ");
+								return Editor.failed(err);
 							}
 						});
 						Editor.success('Processed assets downloaded to assets/imports');

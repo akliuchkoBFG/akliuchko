@@ -1,0 +1,299 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "step_claim_intro_shutterFX",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 7.15,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "award_container": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1,
+              "value": true
+            },
+            {
+              "frame": 2.0166666666666666,
+              "value": true
+            }
+          ]
+        }
+      },
+      "background": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "buttons/play/button_play": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        },
+        "comps": {
+          "cc.Button": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": false
+              }
+            ]
+          }
+        }
+      },
+      "buttons/button_claim": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        },
+        "comps": {
+          "cc.Button": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": false
+              }
+            ]
+          }
+        }
+      },
+      "completed_container": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "buttons/button_close": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "buttons": {
+        "props": {}
+      },
+      "award_container/top_label/rewards_banner": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 2.033333333333333,
+              "value": false
+            },
+            {
+              "frame": 5.283333333333333,
+              "value": true
+            }
+          ]
+        },
+        "comps": {
+          "sp.Skeleton": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": false
+              },
+              {
+                "frame": 2.033333333333333,
+                "value": true
+              }
+            ]
+          }
+        }
+      },
+      "award_container/reward_bg": {
+        "props": {
+          "active": [
+            {
+              "frame": 0.9833333333333333,
+              "value": false
+            },
+            {
+              "frame": 2.033333333333333,
+              "value": false
+            },
+            {
+              "frame": 5.283333333333333,
+              "value": true
+            }
+          ]
+        }
+      },
+      "completed_container/spine_animations": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1.6666666666666667,
+              "value": true
+            },
+            {
+              "frame": 5.516666666666667,
+              "value": false
+            }
+          ]
+        }
+      },
+      "completed_container/shutter_spine": {
+        "props": {
+          "active": [
+            {
+              "frame": 0.6666666666666666,
+              "value": true
+            },
+            {
+              "frame": 2.6666666666666665,
+              "value": false
+            }
+          ]
+        },
+        "comps": {
+          "sp.Skeleton": {
+            "enabled": [
+              {
+                "frame": 0.6666666666666666,
+                "value": true
+              },
+              {
+                "frame": 2.6666666666666665,
+                "value": false
+              }
+            ]
+          }
+        }
+      },
+      "completed_container/shutter_spine2": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 5.15,
+              "value": true
+            },
+            {
+              "frame": 7.15,
+              "value": false
+            }
+          ]
+        },
+        "comps": {
+          "sp.Skeleton": {
+            "enabled": [
+              {
+                "frame": 0,
+                "value": false
+              },
+              {
+                "frame": 5.15,
+                "value": true
+              },
+              {
+                "frame": 7.15,
+                "value": false
+              }
+            ]
+          }
+        }
+      },
+      "background/step_descriptions": {
+        "props": {}
+      },
+      "background/progress_container/progress_meter": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1,
+              "value": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

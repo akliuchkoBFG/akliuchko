@@ -1,29 +1,29 @@
 {
 	"assets___direct_publish": {
-		"version": "1.16.0",
-		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/assets___direct_publish/1.16.0.zip",
+		"version": "1.17.0",
+		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/assets___direct_publish/1.17.0.zip",
 		"pathInProject": "assets/direct_publish",
 		"encryption": {
 			"version": "1.0.0",
-			"iv": "098f08c7513d9514d50256c4b74ff065"
+			"iv": "cdbe62ffdb5f20195f944aca6742fa1f"
 		}
 	},
 	"extension___asset-import": {
-		"version": "2.1.0",
-		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___asset-import/2.1.0.zip",
+		"version": "2.2.1",
+		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___asset-import/2.2.1.zip",
 		"pathInProject": "packages/asset-import",
 		"encryption": {
 			"version": "1.0.0",
-			"iv": "b97f5758c915a44ca4e5bde6226da7d0"
+			"iv": "3e5752765715d6a32c962d0a54ee9d78"
 		}
 	},
 	"extension___asset-zip-build": {
-		"version": "1.5.4",
-		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___asset-zip-build/1.5.4.zip",
+		"version": "1.6.0",
+		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___asset-zip-build/1.6.0.zip",
 		"pathInProject": "packages/asset-zip-build",
 		"encryption": {
 			"version": "1.0.0",
-			"iv": "e314e08c7bfab6fd37107459af420601"
+			"iv": "8c894279ab614b7dfb28d7ed6b2d4834"
 		}
 	},
 	"extension___mission-preview": {
@@ -45,12 +45,12 @@
 		}
 	},
 	"extension___pigbee-utils": {
-		"version": "1.1.1",
-		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___pigbee-utils/1.1.1.zip",
+		"version": "1.2.0",
+		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___pigbee-utils/1.2.0.zip",
 		"pathInProject": "packages/pigbee-utils",
 		"encryption": {
 			"version": "1.0.0",
-			"iv": "c0ba42c8b1ee1bb3583df50484d4ed6a"
+			"iv": "a283724a154e8f51a82d54d0a5b07398"
 		}
 	},
 	"extension___reskin-helper": {

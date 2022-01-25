@@ -109,6 +109,10 @@ cc.Class({
 
 	updateMissionDataWithNotice(missionData) {
 		this.updateMissionData(missionData);
+		this.triggerMissionUpdateNotice();
+	},
+
+	triggerMissionUpdateNotice() {
 		this.emit('updateMissionDataEvent', null);
 	},
 
@@ -141,13 +145,13 @@ cc.Class({
 
 	updateProgressForStepWithNotice: function(stepID, stepProgress) {
 		this.updateProgressForStep(stepID, stepProgress);
-		this.emit('updateMissionDataEvent', null);
+		this.triggerMissionUpdateNotice();
 	},
 
 	updateStepStateWithNotice: function(stepID, stepState) {
 		if (this._stepData[stepID]) {
 			this._stepData[stepID].data.state = stepState;
-			this.emit('updateMissionDataEvent', null);
+			this.triggerMissionUpdateNotice();
 		}
 	},
 
@@ -391,13 +395,15 @@ cc.Class({
 	},
 
 	onStepComplete: function() {
-		// Trigger a data update for all MissionStepInterfaces and components
-		this.emit('updateMissionDataEvent', null);
+		if (this.isSequential()) {
+			// Trigger a data update for all MissionStepInterfaces and components
+			this.triggerMissionUpdateNotice();
+		} // Allow non-sequential step graphs more control over when mission data updates
 	},
 
 	onCommandComplete: function() {
 		// Trigger a data update for all MissionStepInterfaces and components
-		this.emit('updateMissionDataEvent', null);
+		this.triggerMissionUpdateNotice();
 	},
 
 	getSlotData: function(buyInID) {

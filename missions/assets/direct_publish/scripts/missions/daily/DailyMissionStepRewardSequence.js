@@ -76,13 +76,30 @@ cc.Class({
 		const productPackageRewards = this._getProductPackageRewards();
 		const sequence = this.getComponent(MissionRewardSequence);
 		sequence.setRewardsFromProductPackage(productPackageRewards);
-		return Promise.resolve()
+		this._claimChoreography = Promise.resolve()
 		.then(() => {
 			// Play step claim choreography
 			if (this.missionController) {
 				return this.missionController.playStepClaim(stepID);
 			}
 		})
+		.then(() => {
+			return this._playSceneEffects(stepID, productPackageRewards, sequence);
+		});
+		this._claimChoreography.then(() => {
+			// This might now be pointing at choreography for a subsequent claim sequence
+			// The final sequence must complete before updating mission data
+			if (this._claimChoreography.isResolved()) {
+				this.missionStepInterface.missionInterface.triggerMissionUpdateNotice();
+			}
+		});
+		return this._claimChoreography;
+	},
+
+	_playSceneEffects(stepID, productPackageRewards, sequence) {
+		// Wait for active scene effects to complete before starting new scene effects
+		const currentSequence = this._activeSceneEffects || Promise.resolve();
+		this._activeSceneEffects = currentSequence
 		.then(() => {
 			if (this.pointsProgress.isValid()) {
 				// Progress animation clip is configured, setup progress animation pieces like point progress bar and doobers
@@ -108,12 +125,18 @@ cc.Class({
 			}
 		})
 		.then(() => {
+			// Finalize progress values to allow future transitions to play correctly
+			if (this.milestonesProgress) {
+				this.milestonesProgress.completeProgressTransition();
+			}
+
 			// For daily mission steps the traditional step reward sequence is optional, but if it's configured play it here.
 			const shouldPlaySequence = sequence.hasItems();
 			if (shouldPlaySequence) {
 				return sequence.playSequence();
 			}
 		});
+		return this._activeSceneEffects;
 	},
 
 	_getPointRewardFromProductPackage(productPackageRewards) {

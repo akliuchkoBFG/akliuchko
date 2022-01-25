@@ -14,6 +14,9 @@ const DEFAULT_PROFILE = Object.freeze({
 	previewURL: DEFAULT_CLIENT.baseURL,
 	previewBuildOnSave: false,
 	vmID: '',
+	// Try to pull pigbee user from environment variables, this works well for SAG's IT stack, but is hit/miss for partners
+	// They will need to configure this value manually in environment settings
+	pigbeeUser: process.env.USER || process.env.USERNAME || 'unknown.user',
 	envs: {
 		// Development environment
 		// This can be changed through tooling and is the primary environment used in Cocos Creator
@@ -80,6 +83,11 @@ module.exports = {
 					profileDirty = true;
 				}
 			});
+			// Roll forward logic for pigbee user profile variable
+			if (!profile.data.pigbeeUser) {
+				profile.data.pigbeeUser = DEFAULT_PROFILE.pigbeeUser;
+				profileDirty = true;
+			}
 		}
 		if (profileDirty) {
 			profile.save();

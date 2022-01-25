@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "938f1251-c261-4c4d-a17a-8d2b1c4635f8",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "celebrity": {
+      "ver": "1.0.3",
+      "uuid": "2d05682d-218c-484d-85a6-9dac835472f6",
+      "rawTextureUuid": "938f1251-c261-4c4d-a17a-8d2b1c4635f8",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 847,
+      "height": 849,
+      "rawWidth": 853,
+      "rawHeight": 853,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
