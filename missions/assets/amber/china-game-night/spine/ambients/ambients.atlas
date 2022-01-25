@@ -46,21 +46,21 @@ hang_hny_lamp01@4x
   orig: 71, 156
   offset: 0, 0
   index: -1
-hang_hny_lamp02.png
+hang_hny_lamp02@4x
   rotate: false
   xy: 625, 555
   size: 71, 156
   orig: 71, 156
   offset: 0, 0
   index: -1
-hang_hny_lamp03.png
+hang_hny_lamp03@4x
   rotate: false
   xy: 698, 713
   size: 71, 156
   orig: 71, 156
   offset: 0, 0
   index: -1
-hang_hny_lamp04.png
+hang_hny_lamp04@4x
   rotate: false
   xy: 625, 397
   size: 71, 156
