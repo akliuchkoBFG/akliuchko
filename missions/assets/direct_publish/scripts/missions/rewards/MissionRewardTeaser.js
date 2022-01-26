@@ -21,6 +21,10 @@ cc.Class({
 				"Rewards without a valid prefab will be skipped",
 			].join('\n'),
 		},
+		debugLogging: {
+			default: false,
+			tooltip: "Enables extra console logging that identifies which reward was selected or skipped and which prefab is used",
+		},
 	},
 
 	setRewardsFromProductPackage(rewardItems) {
@@ -66,10 +70,10 @@ cc.Class({
 			rewardNode = this._createRewardNode(rewardItem);
 			if (rewardNode) {
 				break;
-			} else {
+			} else if (this.debugLogging) {
 				// Could not find a prefab that supports this reward
 				// This may be expected depending on the sequence configuration and reward type
-				this.log.d("Skipping unsupported reward: " + JSON.stringify(rewardItem.itemData));
+				this.log.d(this.node.name + " Skipping unsupported reward: " + JSON.stringify(rewardItem.itemData));
 			}
 		}
 		if (rewardNode) {
@@ -99,6 +103,9 @@ cc.Class({
 				continue;
 			}
 			if (sequenceItemTemplate.supportsItem(rewardItem.itemData, rewardItem.premiumItem)) {
+				if (this.debugLogging) {
+					this.log.d(`${this.node.name} Selected prefab '${prefab.name}' to display reward: ` + JSON.stringify(rewardItem.itemData));
+				}
 				rewardNode = cc.instantiate(prefab);
 				const sequenceItem = rewardNode.getComponent(MissionRewardSequenceItem);
 				sequenceItem.setReward(rewardItem.itemData, rewardItem.premiumItem);

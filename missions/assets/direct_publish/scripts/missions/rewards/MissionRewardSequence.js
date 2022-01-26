@@ -22,6 +22,11 @@ cc.Class({
 			tooltip: "MissionRewardSequenceItem prefabs. Each reward will select the last prefab in the list that satisfies all filters for the reward data"
 		},
 
+		debugLogging: {
+			default: false,
+			tooltip: "Enables extra console logging that identifies rewards that are skipped and which prefabs are used for which rewards",
+		},
+
 		// Property name must match ANIM_COMPONENT_PROPERTY
 		animation: AnimationClipProperty.ccAnimationForProperties(
 			ANIM_COMPONENT_PROPERTY,
@@ -83,10 +88,10 @@ cc.Class({
 					this.node.addChild(itemNode);
 					rewardItem.rewardNode = itemNode;
 					this._rewardItems.push(rewardItem);
-				} else {
+				} else if (this.debugLogging) {
 					// Could not find a prefab that supports this reward
 					// This may be expected depending on the sequence configuration and reward type
-					this.log.d("Skipping unsupported reward: " + JSON.stringify(rewardItem.itemData));
+					this.log.d(this.node.name + " Skipping unsupported reward: " + JSON.stringify(rewardItem.itemData));
 				}
 			});
 		});
@@ -121,6 +126,9 @@ cc.Class({
 				continue;
 			}
 			if (sequenceItemTemplate.supportsItem(rewardItem.itemData, rewardItem.premiumItem)) {
+				if (this.debugLogging) {
+					this.log.d(`${this.node.name} Selected prefab '${prefab.name}' to display reward: ` + JSON.stringify(rewardItem.itemData));
+				}
 				rewardNode = cc.instantiate(prefab);
 				const sequenceItem = rewardNode.getComponent(MissionRewardSequenceItem);
 				sequenceItem.setReward(rewardItem.itemData, rewardItem.premiumItem);

@@ -1,0 +1,31 @@
+<div id="wrap" class="wrap">
+	<h2>Import Scene from Archive</h2>
+	<hr />
+	Environment:
+	<ui-select v-value="env" @change="refreshSceneList">
+		<option value="live">Live</option>
+		<option value="tools">Tools</option>
+		<option value="dev">Dev</option>
+	</ui-select>
+	<hr />
+	<div v-if="state === 'complete'">
+		Scene Select:
+		<ui-prop name="Search">
+			<ui-input v-value="searchValue" @confirm="refreshSceneList"></ui-input>
+		</ui-prop>
+		<ui-select v-value="selectedZipPath">
+			<option value=''>Select scene to import...</option>
+			<option v-for="archive in displayedArchives" v-value="archive.zipPath">{{archive.name}}</option>
+		</ui-select>
+	</div>
+	<div v-if="state === 'loading'">Loading...</div>
+	<div v-if="state === 'error'">
+		<ui-box-container class="flex-1 shadow">
+			Error loading archives from Pigbee:
+			<br />{{lastError}}
+		</ui-box-container>
+	</div>
+	<hr />
+	<ui-button @confirm="doImport" :disabled="validScene">Import</ui-button>
+	<ui-button @confirm="refreshSceneList">Refresh</ui-button>
+</div>

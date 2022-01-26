@@ -1,6 +1,6 @@
 {
   "name": "scene-archive",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Extension for archiving and importing scene files and dependent assets",
   "author": "Self Aware Games",
   "main": "main.js",
@@ -11,14 +11,15 @@
     }
   },
   "panel": {
-    "main": "panel/index.js",
+    "main": "panel/archive-import.js",
     "type": "dockable",
-    "title": "scene-archive",
+    "title": "Import Archive",
     "width": 400,
     "height": 300
   },
   "packages": {
     "package-asset": "^0.0.1",
+    "pigbee-utils": "^1.2.0",
     "asset-zip-build": "^1.0.0"
   }
 }
