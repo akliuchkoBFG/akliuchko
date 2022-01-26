@@ -1,5 +1,5 @@
 {
-"skeleton": { "hash": "A2ioZyrECBRoaTy0ZlgHwaswtTc", "spine": "3.6.53", "width": 0, "height": 0, "images": "./images/" },
+"skeleton": { "hash": "0R086G7OwzD138H1iPI6esq22xs", "spine": "3.6.53", "width": 0, "height": 0, "images": "./images/" },
 "bones": [
 	{ "name": "root", "scaleX": 1.046, "scaleY": 1.046 },
 	{ "name": "arrow", "parent": "root", "x": -1.8, "y": 461.08 },
@@ -29,7 +29,7 @@
 	{ "name": "spinSaber", "parent": "root", "x": -6.97, "y": 241.34, "color": "00ff20ff" },
 	{ "name": "topWheelBase", "parent": "root", "x": -2.22, "y": -18.83 },
 	{ "name": "wedge", "parent": "root", "x": 15.58, "y": -212.21 },
-	{ "name": "wheel", "parent": "root", "rotation": 0.77, "x": -1.18, "y": 69.47, "color": "00ff20ff" },
+	{ "name": "wheel", "parent": "root", "rotation": 0.77, "y": 68.83, "color": "00ff20ff" },
 	{ "name": "wheelBase", "parent": "root", "x": -0.39, "y": -14.27 },
 	{ "name": "wheelSaber1", "parent": "root", "x": 793.12, "y": -465, "color": "fd8502ff" },
 	{ "name": "wheelSaber2", "parent": "root", "x": 793.12, "y": -465, "color": "fd8502ff" },
@@ -314,7 +314,7 @@
 	},
 	"result_1": {
 		"outer_frame": {
-			"wheelFlattened1": { "rotation": -0.14, "width": 900, "height": 900 }
+			"wheelFlattened1": { "rotation": -0.77, "width": 900, "height": 900 }
 		}
 	},
 	"result_2": {
@@ -1547,7 +1547,7 @@
 					{ "time": 0, "angle": 90.95 }
 				],
 				"translate": [
-					{ "time": 0, "x": -884.77, "y": 532.3 }
+					{ "time": 0, "x": -888.91, "y": 532.3 }
 				],
 				"scale": [
 					{ "time": 0, "x": 1.17, "y": 1.17 }
@@ -1558,7 +1558,7 @@
 					{ "time": 0, "angle": -88.91 }
 				],
 				"translate": [
-					{ "time": 0, "x": -694.81, "y": 534.31 }
+					{ "time": 0, "x": -698.95, "y": 534.31 }
 				],
 				"scale": [
 					{ "time": 0, "x": 1.17, "y": 1.17 }
@@ -1569,7 +1569,7 @@
 					{ "time": 0, "angle": 57.99 }
 				],
 				"translate": [
-					{ "time": 0, "x": -870.44, "y": 583.76 }
+					{ "time": 0, "x": -874.58, "y": 583.76 }
 				],
 				"scale": [
 					{ "time": 0, "x": 1.17, "y": 1.17 }
@@ -1580,7 +1580,7 @@
 					{ "time": 0, "angle": 31.08 }
 				],
 				"translate": [
-					{ "time": 0, "x": -837.83, "y": 615.27 }
+					{ "time": 0, "x": -841.97, "y": 615.27 }
 				],
 				"scale": [
 					{ "time": 0, "x": 1.17, "y": 1.17 }
@@ -1591,7 +1591,7 @@
 					{ "time": 0, "angle": 1.08 }
 				],
 				"translate": [
-					{ "time": 0, "x": -787.46, "y": 627.43 }
+					{ "time": 0, "x": -791.6, "y": 627.43 }
 				],
 				"scale": [
 					{ "time": 0, "x": 1.17, "y": 1.17 }
@@ -1602,7 +1602,7 @@
 					{ "time": 0, "angle": -28.92 }
 				],
 				"translate": [
-					{ "time": 0, "x": -743.13, "y": 615.72 }
+					{ "time": 0, "x": -747.27, "y": 615.72 }
 				],
 				"scale": [
 					{ "time": 0, "x": 1.17, "y": 1.17 }
@@ -1613,7 +1613,7 @@
 					{ "time": 0, "angle": -58.92 }
 				],
 				"translate": [
-					{ "time": 0, "x": -706.86, "y": 578.71 }
+					{ "time": 0, "x": -710.99, "y": 578.71 }
 				],
 				"scale": [
 					{ "time": 0, "x": 1.17, "y": 1.17 }
@@ -1836,7 +1836,7 @@
 					{ "time": 6.5, "color": "ffffff00" }
 				],
 				"attachment": [
-					{ "time": 0, "name": "wheelFlattened2" }
+					{ "time": 0, "name": "wheelFlattened1" }
 				]
 			},
 			"shadow": {
@@ -2402,10 +2402,10 @@
 			},
 			"wheelSaber1": {
 				"rotate": [
-					{ "time": 4.2, "angle": 13.55 }
+					{ "time": 4.2, "angle": 14.75 }
 				],
 				"translate": [
-					{ "time": 4.2, "x": -818.5, "y": 625.45 }
+					{ "time": 4.2, "x": -820.75, "y": 625.41 }
 				],
 				"scale": [
 					{ "time": 4.2, "x": 1.17, "y": 1.17 }
@@ -2416,7 +2416,7 @@
 					{ "time": 4.2, "angle": -13.44 }
 				],
 				"translate": [
-					{ "time": 4.2, "x": -763.72, "y": 625.45 }
+					{ "time": 4.2, "x": -769.21, "y": 625.41 }
 				],
 				"scale": [
 					{ "time": 4.2, "x": 1.17, "y": 1.17 }
@@ -2433,8 +2433,11 @@
 				]
 			},
 			"wedge": {
+				"rotate": [
+					{ "time": 4.3333, "angle": 1.2 }
+				],
 				"translate": [
-					{ "time": 4.3333, "x": -15.26, "y": 462.84 }
+					{ "time": 4.3333, "x": -15.16, "y": 462.84 }
 				]
 			},
 			"sparkle2": {
