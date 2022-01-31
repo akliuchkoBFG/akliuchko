@@ -15938,7 +15938,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0.8,
-      "y": -437.4
+      "y": -437
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -15966,7 +15966,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "28dd410e-6812-4cea-ba86-a3ae8013b459"
+      "__uuid__": "efd3a1ff-5a82-42ab-90f4-21bc29747ede"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -16009,7 +16009,7 @@
     "duration": 0.1,
     "zoomScale": 1.2,
     "pressedSprite": {
-      "__uuid__": "8e6d3a4c-7a83-491e-be52-d29083e699a8"
+      "__uuid__": "03b315f5-5352-45f0-b7ae-eb9e45de386e"
     },
     "hoverSprite": null,
     "clickEvents": [
@@ -16034,7 +16034,7 @@
       "a": 255
     },
     "_N$normalSprite": {
-      "__uuid__": "28dd410e-6812-4cea-ba86-a3ae8013b459"
+      "__uuid__": "efd3a1ff-5a82-42ab-90f4-21bc29747ede"
     },
     "_N$disabledSprite": null,
     "_N$target": {
@@ -16752,8 +16752,8 @@
     },
     "_rotationX": 0,
     "_rotationY": 0,
-    "_scaleX": 0.8,
-    "_scaleY": 0.8,
+    "_scaleX": 0.83,
+    "_scaleY": 0.91,
     "_position": {
       "__type__": "cc.Vec2",
       "x": 1,
