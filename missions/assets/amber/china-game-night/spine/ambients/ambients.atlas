@@ -1,110 +1,103 @@
 
 ambients.png
-size: 873,871
+size: 323,321
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
 Group 69
-  rotate: false
-  xy: 698, 568
+  rotate: true
+  xy: 148, 3
   size: 30, 143
   orig: 30, 143
   offset: 0, 0
   index: -1
 candle light
   rotate: false
-  xy: 771, 770
+  xy: 148, 220
   size: 100, 99
   orig: 101, 101
   offset: 1, 1
   index: -1
 fdvfdv
-  rotate: true
-  xy: 625, 200
+  rotate: false
+  xy: 227, 144
   size: 94, 74
   orig: 94, 74
   offset: 0, 0
   index: -1
 flying_lamp@4x
   rotate: false
-  xy: 625, 296
+  xy: 148, 119
   size: 77, 99
   orig: 77, 100
   offset: 0, 0
   index: -1
-frame@4x
-  rotate: false
-  xy: 2, 2
-  size: 621, 867
-  orig: 621, 867
-  offset: 0, 0
-  index: -1
 hang_hny_lamp01@4x
   rotate: false
-  xy: 625, 713
+  xy: 2, 163
   size: 71, 156
   orig: 71, 156
   offset: 0, 0
   index: -1
 hang_hny_lamp02@4x
   rotate: false
-  xy: 625, 555
+  xy: 2, 5
   size: 71, 156
   orig: 71, 156
   offset: 0, 0
   index: -1
 hang_hny_lamp03@4x
   rotate: false
-  xy: 698, 713
+  xy: 75, 163
   size: 71, 156
   orig: 71, 156
   offset: 0, 0
   index: -1
 hang_hny_lamp04@4x
   rotate: false
-  xy: 625, 397
+  xy: 75, 5
   size: 71, 156
   orig: 71, 156
   offset: 0, 0
   index: -1
 house_lamp@4x
   rotate: true
-  xy: 771, 719
+  xy: 227, 127
   size: 15, 29
   orig: 15, 29
   offset: 0, 0
   index: -1
 lotus@4x
   rotate: true
-  xy: 625, 116
+  xy: 148, 35
   size: 82, 79
   orig: 82, 79
   offset: 0, 0
   index: -1
 lotus_leaf01@4x
-  rotate: true
-  xy: 698, 524
+  rotate: false
+  xy: 250, 224
   size: 42, 29
   orig: 42, 29
   offset: 0, 0
   index: -1
 lotus_leaf02@4x
-  rotate: false
-  xy: 625, 90
+  rotate: true
+  xy: 229, 90
   size: 35, 24
   orig: 35, 24
   offset: 0, 0
   index: -1
 lotus_leaf03@4x
-  rotate: true
-  xy: 730, 668
+  rotate: false
+  xy: 250, 255
   size: 43, 30
   orig: 43, 30
   offset: 0, 0
   index: -1
 lotus_leaf04@4x
   rotate: false
-  xy: 771, 736
+  xy: 250, 287
   size: 46, 32
   orig: 46, 32
   offset: 0, 0
