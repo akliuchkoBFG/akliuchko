@@ -113,6 +113,16 @@
             }
           ]
         }
+      },
+      "game_controller/description_container/step_descriptions": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
       }
     }
   },
