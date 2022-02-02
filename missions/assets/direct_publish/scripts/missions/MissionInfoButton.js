@@ -16,7 +16,7 @@ cc.Class({
 	mixins: [ComponentLog],
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Buttons/Info',
+		menu: 'Buttons/Missions/Info',
 		requireComponent: cc.Button,
 		executeInEditMode: true,
 	},

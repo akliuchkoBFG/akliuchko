@@ -11,7 +11,7 @@ cc.Class({
     mixins: [ComponentLog],
 
     editor: CC_EDITOR && {
-        menu: 'Add Mission Component/Scene Data/Aggregator',
+        menu: 'Labels/Flavor Text/Aggregator',
         executeInEditMode: true,
         disallowMultiple: true,
     },

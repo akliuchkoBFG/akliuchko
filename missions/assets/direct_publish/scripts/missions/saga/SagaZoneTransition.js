@@ -12,7 +12,7 @@ cc.Class({
 	extends: cc.Component,
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Saga/Zone Transition',
+		menu: 'Missions/Types/Saga/Zone Transition',
 		inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
 		executeInEditMode: false,
 	},

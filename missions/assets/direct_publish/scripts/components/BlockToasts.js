@@ -6,7 +6,7 @@ cc.Class({
 	extends: cc.Component,
 
 	editor: CC_EDITOR && {
-		menu: 'Add SAG Component/Block Toasts',
+		menu: 'Miscellaneous/Block Toasts',
 		inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
 	},
 

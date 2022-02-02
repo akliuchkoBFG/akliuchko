@@ -8,7 +8,7 @@ cc.Class({
 	mixins: [ComponentLog],
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Rewards/Reward Teaser',
+		menu: 'Rewards/Reward Teaser',
 	},
 
 	properties: {

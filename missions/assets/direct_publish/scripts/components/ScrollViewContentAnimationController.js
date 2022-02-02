@@ -10,7 +10,7 @@ cc.Class({
 
 	editor: CC_EDITOR && {
 		inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
-		menu: 'Add SAG Component/Scroll Content Animation Controller',
+		menu: 'Miscellaneous/Scroll Content Animation Controller',
 		executeInEditMode: true,
 	},
 

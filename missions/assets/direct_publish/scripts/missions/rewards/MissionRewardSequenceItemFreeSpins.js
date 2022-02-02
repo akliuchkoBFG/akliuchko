@@ -12,7 +12,7 @@ cc.Class({
 	mixins: [ComponentLog],
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Rewards/Sequence/Sequence Item Free Spins',
+		menu: 'Rewards/Items/Free Spins Item',
 		executeInEditMode: true,
 		inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
 	},

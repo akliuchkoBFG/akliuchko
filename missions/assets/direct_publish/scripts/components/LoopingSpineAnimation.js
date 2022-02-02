@@ -20,7 +20,7 @@ cc.Class({
 	extends: cc.Component,
 
 	editor: CC_EDITOR && {
-		menu: 'Add Custom Component/LoopingSpineAnimation',
+		menu: 'Miscellaneous/Looping Spine Animation',
 		inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
 		executeInEditMode: false,
 	},

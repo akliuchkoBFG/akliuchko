@@ -7,7 +7,7 @@ cc.Class({
 	mixins: [cc.EventTarget],
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Mission Step Preview',
+		// Deprecated in favor of Mission Preview Panel, no menu path needed
 		executeInEditMode: true,
 		disallowMultiple: true,
 		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/562659476/Mission+Step+Preview'

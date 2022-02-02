@@ -7,7 +7,7 @@ cc.Class({
 
 	editor: CC_EDITOR && {
 		requireComponent: cc.Animation,
-		menu: 'Add Mission Component/Step State Controller',
+		menu: 'Missions/Core/Step State Controller',
 		executeInEditMode: true,
 		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/508428588/Mission+Step+State+Controller',
 	},

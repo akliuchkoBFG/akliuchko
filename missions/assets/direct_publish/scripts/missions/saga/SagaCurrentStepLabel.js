@@ -14,7 +14,7 @@ cc.Class({
 	mixins: [ComponentLog],
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Saga/Zone Step Label',
+		menu: 'Missions/Types/Saga/Zone Step Label',
 		executeInEditMode: true,
 		requireComponent: DataTemplateLabel,
 	},

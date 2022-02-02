@@ -31,7 +31,7 @@ cc.Class({
 	mixins: [ComponentLog, cc.EventTarget],
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Saga/Step – Zone Reward',
+		menu: 'Missions/Types/Saga/Step – Zone Reward',
 		executeInEditMode: false,
 		inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
 	},

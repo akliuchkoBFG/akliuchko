@@ -9,7 +9,7 @@ cc.Class({
 	editor: CC_EDITOR && {
 		requireComponent: DataTemplateRichTextLabel,
 		executeInEditMode: true,
-		menu: 'Add Mission Component/Step Count Label',
+		menu: 'Labels/Missions/Step Count Label',
 	},
 
 	properties: {

@@ -23,7 +23,7 @@ cc.Class({
 
 	editor: CC_EDITOR && {
 		executeInEditMode: true,
-		menu: 'Add Style Component/Rich Text Style',
+		menu: 'Labels/Style/Rich Text Style',
 		inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
 		requireComponent: cc.RichText,
 	},

@@ -20,7 +20,7 @@ cc.Class({
 	mixins: [LoadData],
 
 	editor: {
-		menu: 'Add Button Action/Promotion CTA',
+		menu: 'Buttons/Promotion CTA',
 		disallowMultiple: true,
 	},
 

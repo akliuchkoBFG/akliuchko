@@ -6,7 +6,7 @@ cc.Class({
 	extends: cc.Component,
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Rewards/Reward Editor Preview',
+		menu: 'Tools/Debug/Reward Editor Preview',
 		executeInEditMode: true,
 	},
 

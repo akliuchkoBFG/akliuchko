@@ -46,7 +46,7 @@ cc.Class({
 	mixins: [ComponentLog],
 
 	editor: CC_EDITOR && {
-		menu: 'Add SAComponent/Animation Debugger',
+		menu: 'Tools/Debug/Animation Debugger',
 		executeInEditMode: true,
 		disallowMultiple: true,
 	},

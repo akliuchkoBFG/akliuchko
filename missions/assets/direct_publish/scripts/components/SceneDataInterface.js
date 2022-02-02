@@ -9,7 +9,7 @@ cc.Class({
     mixins: [ComponentLog],
 
     editor: CC_EDITOR && {
-        menu: 'Add Mission Component/Scene Data/Interface',
+        menu: 'Labels/Flavor Text/Basic Flavor Text',
     },
 
     properties: {

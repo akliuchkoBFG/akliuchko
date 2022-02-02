@@ -16,7 +16,7 @@ cc.Class({
 	mixins: [ComponentLog],
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Mission Info Controller',
+		menu: 'Missions/Core/Info Controller',
 		inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
 		// TODO: help: 'url/to/help/wikipage'
 	},

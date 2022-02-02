@@ -1,11 +1,11 @@
 {
 	"assets___direct_publish": {
-		"version": "1.18.0",
-		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/assets___direct_publish/1.18.0.zip",
+		"version": "2.0.0",
+		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/assets___direct_publish/2.0.0.zip",
 		"pathInProject": "assets/direct_publish",
 		"encryption": {
 			"version": "1.0.0",
-			"iv": "f20dcd4833b9f3febdd9e6dc361c67bf"
+			"iv": "35f825370dcf17646bfdd99719485022"
 		}
 	},
 	"extension___asset-import": {

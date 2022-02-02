@@ -8,7 +8,7 @@ cc.Class({
 	editor: CC_EDITOR && {
 		requireComponent: DataTemplateRichTextLabel,
 		executeInEditMode: true,
-		menu: 'Add Mission Component/Step Reward Label',
+		// Deprecated in favor of rewards framework, no menu path needed
 		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/562528442/Mission+Step+Reward+Label'
 	},
 

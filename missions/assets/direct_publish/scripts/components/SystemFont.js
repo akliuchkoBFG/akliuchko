@@ -11,7 +11,7 @@ cc.Class({
 		disallowMultiple: true,
 		requireComponent: cc.Label,
 		executeInEditMode: true,
-		menu: 'Add SAG Component/SystemFont',
+		menu: 'Labels/System Font',
 	},
 	properties: {
 		font: {

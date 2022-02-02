@@ -4,7 +4,7 @@ cc.Class({
 	extends: MissionStepButton,
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Buttons/Step Claim',
+		menu: 'Buttons/Missions/Step Claim',
 		requireComponent: cc.Button,
 		executeInEditMode: true,
 		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/519635201/Mission+Step+Claim+Button'

@@ -4,7 +4,7 @@ cc.Class({
     extends: BaseMissionStepComponent,
 
     editor: CC_EDITOR && {
-        menu: 'Add Mission Component/Step Progress Meter',
+        menu: 'Missions/Progress/Step Progress Meter',
         executeInEditMode: true,
         // TODO: help: 'url/to/help/wikipage'
     },

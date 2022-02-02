@@ -12,7 +12,7 @@ cc.Class({
 	mixins: [ComponentLog],
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Daily/Step Cell',
+		menu: 'Missions/Types/Daily/Step Cell',
 		inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
 		disallowMultiple: true,
 	},

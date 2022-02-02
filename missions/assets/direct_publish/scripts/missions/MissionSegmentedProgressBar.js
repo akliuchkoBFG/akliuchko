@@ -10,7 +10,7 @@ cc.Class({
 
     editor: CC_EDITOR && {
         requireComponent: cc.Animation,
-        menu: 'Add Mission Component/Mission Segmented Progress Bar',
+        menu: 'Missions/Progress/Segmented Progress Bar',
     },
 
     properties: {

@@ -6,7 +6,7 @@ const ComponentLog = require('ComponentSALog')(TAG);
 cc.Class({
 	extends: BaseMissionStepComponent,
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Time-Lock Step Countdown Timer',
+		menu: 'Missions/Miscellaneous/Time-Lock Step Countdown',
 		requireComponent: CountdownComponent,
 		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/4065689693/Mission+Step+Countdown+Component',
 	},

@@ -10,7 +10,7 @@ const BaseStyle = cc.Class({
 
 	editor: CC_EDITOR && {
 		executeInEditMode: true,
-		menu: 'Add Style Component/Base Style',
+		menu: 'Labels/Style/Base Style',
 		inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
 	},
 

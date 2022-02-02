@@ -22,7 +22,7 @@ cc.Class({
     extends: cc.Component,
 
     editor: CC_EDITOR && {
-        menu: 'Add Mission Component/Saga/SagaMapScrollControl',
+        menu: 'Missions/Types/Saga/Scroll To Current Button',
         inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
         executeInEditMode: false,
     },

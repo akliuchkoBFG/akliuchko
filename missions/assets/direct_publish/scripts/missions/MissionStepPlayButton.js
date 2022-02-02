@@ -4,7 +4,7 @@ cc.Class({
 	extends: MissionStepButton,
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Buttons/Play',
+		menu: 'Buttons/Missions/Play',
 		requireComponent: cc.Button,
 		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/510984384/Mission+Step+Play+Button'
 	},

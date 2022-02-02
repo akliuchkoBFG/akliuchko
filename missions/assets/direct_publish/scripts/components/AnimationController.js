@@ -10,7 +10,7 @@ cc.Class({
 	editor: CC_EDITOR && {
 		disallowMultiple: true,
 		requireComponent: cc.Animation,
-		menu: 'Add SAG Component/Animation Controller',
+		menu: 'Miscellaneous/Animation Controller',
 	},
 
 	properties: {

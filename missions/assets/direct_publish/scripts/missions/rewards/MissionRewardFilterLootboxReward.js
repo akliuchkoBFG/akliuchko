@@ -8,7 +8,7 @@ cc.Class({
 	extends: MissionRewardFilter,
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Rewards/Filters/Lootbox Reward',
+		menu: 'Rewards/Filters/Lootbox Reward',
 		inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
 	},
 

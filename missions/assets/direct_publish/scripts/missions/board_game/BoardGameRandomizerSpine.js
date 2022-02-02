@@ -14,7 +14,7 @@ cc.Class({
 	extends: BoardGameRandomizer,
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Board Game/Randomizer – Spine',
+		menu: 'Missions/Types/Board Game/Randomizer – Spine',
 		executeInEditMode: true,
 		inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
 	},

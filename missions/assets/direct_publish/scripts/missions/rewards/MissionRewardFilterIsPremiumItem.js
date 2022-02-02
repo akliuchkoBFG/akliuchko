@@ -3,7 +3,7 @@ cc.Class({
 	extends: MissionRewardFilter,
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Rewards/Filters/Is Premium Item',
+		menu: 'Rewards/Filters/Is Premium Item',
 	},
 
 	properties: {

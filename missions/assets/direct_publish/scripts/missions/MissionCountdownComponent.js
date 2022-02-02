@@ -4,7 +4,7 @@ const CountdownComponent = require('CountdownComponent');
 cc.Class({
 	extends: BaseMissionComponent,
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Countdown Timer',
+		menu: 'Missions/Core/Countdown Timer',
 		requireComponent: CountdownComponent,
 		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/562659403/Mission+Countdown+Component',
 	},

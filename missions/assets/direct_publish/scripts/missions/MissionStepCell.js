@@ -10,7 +10,8 @@ cc.Class({
 	mixins: [ComponentLog],
 
 	editor: {
-		menu: 'Add Mission Component/Step Table View Cell',
+		// Re-evaluate if this ever gets used without being subclassed
+		// menu: 'Missions/Miscellaneous/Table View Step Cell',
 		disallowMultiple: true,
 	},
 

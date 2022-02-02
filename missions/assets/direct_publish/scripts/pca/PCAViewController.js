@@ -2,6 +2,7 @@ const LoadData = require('LoadDataV2')
 .mixinProperty({
 	numEntries: 0,
 	entryWeight: 0,
+	entryPayout: "",
 	overrideForPreview: true,
 });
 
@@ -11,13 +12,13 @@ cc.Class({
 	mixins: [LoadData],
 
 	properties: {
-		previewSpinsPerEntry: {
-			default: 100,
-			tooltip: 'Test number of spins required for 1 entry',
+		previewTotalEntries: {
+			default: 10,
+			tooltip: 'Number of individual entries (i.e. total spins)',
 		},
-		previewNumEntries: {
-			default: 0,
-			tooltip: 'Test number of entries to preview pop up',
+		previewEntryWeight: {
+			default: 1,
+			tooltip: 'Number of entries required (i.e. spins required to be entered in the drawing)',
 		},
 		previewFreeSpinsImage: {
 			default: '',
@@ -38,16 +39,12 @@ cc.Class({
 	},
 
 	onLoad: function () {
-		this.loadData.spinsPerEntry = this.loadData.entryWeight;
 		if(this.loadData.overrideForPreview){
-			this.loadData.weightedEntries =  Math.floor(this.previewNumEntries/ this.previewSpinsPerEntry);
-			this.loadData.spinsPerEntry      = this.previewSpinsPerEntry     ;
-			this.loadData.numEntries         = this.previewNumEntries % this.previewSpinsPerEntry;
-			if(this.previewNumEntries === this.previewSpinsPerEntry){
-				this.loadData.numEntries = this.previewSpinsPerEntry;
-			}
-			this.loadData.freeSpinsImage     = this.previewFreeSpinsImage    ;
-			this.loadData.freeSpinsCopy      = this.previewFreeSpinsCopy     ;
+			this.loadData.numEntries = this.previewTotalEntries;
+			this.loadData.entryWeight = this.previewEntryWeight;
+
+			this.loadData.freeSpinsImage     = this.previewFreeSpinsImage;
+			this.loadData.freeSpinsCopy      = this.previewFreeSpinsCopy;
 			this.loadData.productPackageCopy = this.previewProductPackageCopy;
 		}
 

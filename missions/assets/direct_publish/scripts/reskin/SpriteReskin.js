@@ -8,7 +8,7 @@ cc.Class({
 	editor: CC_EDITOR && {
 		executeInEditMode: true,
 		requireComponent: cc.Sprite,
-		menu: 'Add Reskin Component/Sprite',
+		menu: 'Tools/Reskin/Sprite',
 	},
 
 	properties: {

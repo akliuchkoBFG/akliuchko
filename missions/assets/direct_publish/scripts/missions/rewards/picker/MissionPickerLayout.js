@@ -9,7 +9,7 @@ cc.Class({
     mixins: [ComponentLog],
 
     editor: CC_EDITOR && {
-        menu: 'Add Mission Component/Picker/Layout Filtering',
+        menu: 'Rewards/Picker/Layout Filtering',
     },
 
     properties: {

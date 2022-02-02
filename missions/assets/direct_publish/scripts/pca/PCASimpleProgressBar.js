@@ -3,7 +3,7 @@ const PCABaseComponent = require('PCABaseComponent');
 cc.Class({
 	extends: PCABaseComponent,
 	editor: CC_EDITOR && {
-		menu: 'Add PCA Component/Simple Progress Bar',
+		menu: 'Marketing/PCA/Simple Progress Bar',
 		requireComponent: cc.ProgressBar,
 	},
 

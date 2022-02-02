@@ -6,7 +6,7 @@ cc.Class({
 	extends: BaseDispatchAction,
 
 	editor: {
-		menu: 'Add Button Action/Open Reel Rivals Lobby',
+		menu: 'Buttons/Open Reel Rivals Lobby',
 		disallowMultiple: true,
 	},
 

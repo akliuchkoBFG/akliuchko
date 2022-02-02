@@ -11,7 +11,7 @@ var EventMap = ["", "closeEvent", "metricsEvent", ""];
 cc.Class({
 	extends: cc.Component,
 	editor: {
-		menu: 'Add SAComponent/Countdown',
+		// To avoid confusion with components that set a countdown from scene data, do not set menu path
 		disallowMultiple: true,
 		requireComponent: cc.Label,
 	},

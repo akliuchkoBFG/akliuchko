@@ -26,7 +26,7 @@ cc.Class({
 	extends: BaseMissionStepComponent,
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Saga/Controller',
+		menu: 'Missions/Types/Saga/Controller',
 		inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
 		executeInEditMode: false,
 	},

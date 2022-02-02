@@ -16,7 +16,7 @@ cc.Class({
 	editor: CC_EDITOR && {
 		requireComponent: cc.Animation,
 		inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
-		menu: 'Add SAG Component/Scroll Content Animation',
+		menu: 'Miscellaneous/Scroll Content Animation',
 	},
 
 	properties: {

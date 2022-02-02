@@ -4,7 +4,7 @@ cc.Class({
 	extends: BaseDispatchAction,
 
 	editor: {
-		menu: 'Add Button Action/Open Creator Popup',
+		menu: 'Buttons/Open Creator Popup',
 		disallowMultiple: true,
 	},
 

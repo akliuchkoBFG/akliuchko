@@ -6,7 +6,7 @@ cc.Class({
 	extends: BaseDispatchAction,
 
 	editor: {
-		menu: 'Add Button Action/Open Store',
+		menu: 'Buttons/Open Store',
 		disallowMultiple: true,
 	},
 

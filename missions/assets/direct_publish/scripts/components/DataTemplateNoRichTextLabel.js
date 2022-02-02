@@ -9,6 +9,7 @@ cc.Class({
 		requireComponent: cc.Label,
 		executeInEditMode: true,
 		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/619675711/Data+Template+Rich+Text+Label',
+		menu: 'Labels/Data Template Strip Rich Text',
 	},
 
 	onLoad() {

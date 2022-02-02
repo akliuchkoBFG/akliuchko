@@ -6,7 +6,7 @@ cc.Class({
 	extends: BaseDispatchAction,
 
 	editor: {
-		menu: 'Add Button Action/Open Club Menu',
+		menu: 'Buttons/Open Club Menu',
 		disallowMultiple: true,
 	},
 

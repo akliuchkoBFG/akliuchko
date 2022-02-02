@@ -10,7 +10,7 @@ cc.Class({
 
     editor: CC_EDITOR && {
         executeInEditMode: true,
-        menu: 'Add Mission Component/Rewards/Pick Animation Helper',
+        menu: 'Rewards/Picker/Pick Animation Helper',
         inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
     },
  

@@ -10,7 +10,7 @@ cc.Class({
 	mixins: [LoadData],
 
 	editor: {
-		menu: 'Add SAComponent/ProductPackageItemLabel',
+		menu: 'Labels/Product Package Label',
 		disallowMultiple: true,
 		requireComponent: cc.Label,
 	},

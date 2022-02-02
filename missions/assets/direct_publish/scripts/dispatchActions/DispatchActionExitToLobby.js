@@ -16,7 +16,7 @@ cc.Class({
 	extends: BaseDispatchAction,
 
 	editor: {
-		menu: 'Add Button Action/Exit To Lobby',
+		menu: 'Buttons/Exit To Lobby',
 		disallowMultiple: true,
 	},
 

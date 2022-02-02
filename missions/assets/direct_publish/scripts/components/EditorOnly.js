@@ -4,6 +4,7 @@ cc.Class({
 	editor: CC_EDITOR && {
 		executeInEditMode: true,
 		disallowMultiple: true,
+		menu: 'Tools/Edtior Only',
 	},
 	properties: {
 	},

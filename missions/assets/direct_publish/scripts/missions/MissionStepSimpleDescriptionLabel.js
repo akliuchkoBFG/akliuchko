@@ -11,7 +11,7 @@ cc.Class({
 	editor: CC_EDITOR && {
 		requireComponent: cc.Label,
 		executeInEditMode: true,
-		menu: 'Add Mission Component/Simple Step Description Label',
+		menu: 'Labels/Missions/Simple Step Description Label',
 		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/562692173/Mission+Step+Description+Label'
 	},
 

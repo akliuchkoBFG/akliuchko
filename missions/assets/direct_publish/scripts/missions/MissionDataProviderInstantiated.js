@@ -13,7 +13,7 @@ cc.Class({
 	mixins: [ComponentLog],
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Mission Intantiated Data',
+		menu: 'Missions/Core/Intantiated Data',
 		disallowMultiple: true,
 		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/495583770/Mission+Data+Provider'
 	},

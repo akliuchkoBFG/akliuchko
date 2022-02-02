@@ -23,7 +23,7 @@ cc.Class({
 
 	editor: CC_EDITOR && {
 		requireComponent: MissionRewardFilterIsPremiumItem,
-		menu: 'Add Mission Component/Rewards/Filters/Premium Item Type',
+		menu: 'Rewards/Filters/Premium Item Type',
 	},
 
 	properties: {

@@ -18,7 +18,7 @@ cc.Class({
 
 	editor: CC_EDITOR && {
 		requireComponent: MissionRewardTeaser,
-		menu: 'Add Mission Component/Type Extensions/Points Milestones Reward Teaser',
+		menu: 'Missions/Types/Points Milestones/Reward Teaser',
 	},
 
 	properties: {

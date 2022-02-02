@@ -6,7 +6,7 @@ cc.Class({
 	extends: BaseMissionComponent,
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Buttons/CTAAssetSwap',
+		menu: 'Buttons/Missions/VIP Button Asset Swap',
 		requireComponent: cc.Button,
 		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/4024008705/Mission+Button+Asset+Swap'
 	},

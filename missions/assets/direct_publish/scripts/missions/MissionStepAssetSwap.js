@@ -8,7 +8,7 @@ cc.Class({
     editor: CC_EDITOR && {
         requireComponent: cc.Sprite,
         executeInEditMode: true,
-        menu: 'Add Mission Component/Mission Step Asset Swap',
+        menu: 'Missions/Miscellaneous/Step Asset Swap',
         // TODO help: make a wiki url
     },
 

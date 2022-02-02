@@ -13,7 +13,7 @@ const ProgressBarType = cc.Enum({
 cc.Class({
 	extends: PCABaseComponent,
 	editor: CC_EDITOR && {
-		menu: 'Add PCA Component/Animated Progress Bar',
+		menu: 'Marketing/PCA/Animated Progress Bar',
 	},
 
 	properties: {

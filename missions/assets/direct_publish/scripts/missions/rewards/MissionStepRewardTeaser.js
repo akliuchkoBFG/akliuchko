@@ -10,7 +10,7 @@ cc.Class({
 
 	editor: CC_EDITOR && {
 		requireComponent: MissionRewardTeaser,
-		menu: 'Add Mission Component/Rewards/Teaser/Step Teaser',
+		menu: 'Rewards/Missions/Step Teaser',
 	},
 
 	onUpdateMissionStepData() {

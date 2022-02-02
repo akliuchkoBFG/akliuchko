@@ -15,7 +15,7 @@ cc.Class({
 	mixins: [ComponentLog, cc.EventTarget],
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Saga/SagaStepBannerBehavior'
+		menu: 'Missions/Types/Saga/Step Banner Behavior'
 	},
 
 	properties: {

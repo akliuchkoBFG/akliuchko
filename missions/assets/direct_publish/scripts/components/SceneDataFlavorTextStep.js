@@ -10,7 +10,7 @@ cc.Class({
     mixins: [ComponentLog],
 
     editor: CC_EDITOR && {
-        menu: 'Add Mission Component/Scene Data/Step ID Flavor Text',
+        menu: 'Labels/Flavor Text/Step ID Flavor Text',
         requireComponent: SceneDataInterface,
     },
 

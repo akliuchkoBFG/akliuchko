@@ -1,6 +1,11 @@
 // Ensure that shared component utilities get included before compiling other script components
 // This script is marked as a plugin script that executes in the Editor to guarantee execution prior to components
 CC_EDITOR && (function() {
+	/* global
+		_Scene
+	*/
+	const JS = cc.js;
+	const lodash = Editor.require('lodash');
 
 	// Create a Self Aware specific namespace for shared editor functionality
 	Editor.SAG = Editor.SAG || {};
@@ -161,5 +166,41 @@ CC_EDITOR && (function() {
 	Editor.SAG._cacheListener.on('self-aware-components:clear-inspector-cache', function() {
 		Editor.SAG._inspectors = {};
 	});
+
+	// Change the component menu sorting behavior. This is a modified version of a function pulled from
+	// editor/page/scene-utils/utils.js
+	// This prioritizes our top level component groups over builtin components and sorts groups above loose components
+	//  for groups with a mix of components and groups in the same list
+	_Scene.updateComponentMenu = function() {
+		cc._componentMenuItems = lodash.sortBy(cc._componentMenuItems, (menuItem) => {
+			const menuPath = menuItem.menuPath;
+			const parts = menuPath.split('/');
+			// Lowercase class name so it sorts below groups
+			parts[parts.length - 1] = parts[parts.length - 1].toLowerCase();
+			// Capitalize groups to prioritize over loose components
+			for (let i = parts.length - 2; i >= 1; --i) {
+				parts[i] = parts[i].toUpperCase();
+			}
+			// Separate base Cocos components from custom menu paths
+			if (parts[0].indexOf('i18n:MAIN_MENU.component') === 0) {
+				parts[0] = parts[0].toLowerCase();
+			} else {
+				parts[0] = parts[0].toUpperCase();
+			}
+			return parts.join('/');
+		});
+		for (var e = [], n = 0; n < cc._componentMenuItems.length; ++n) {
+			var t = cc._componentMenuItems[n],
+				o = t.menuPath;
+			e.push({
+				path: Editor.i18n.formatPath(o),
+				panel: "scene",
+				message: "scene:add-component",
+				params: [JS._getClassId(t.component)]
+			});
+		}
+		Editor.Menu.register("add-component", e, !0);
+		Editor.MainMenu.update(Editor.T("MAIN_MENU.component.title"), e);
+	};
 
 })();

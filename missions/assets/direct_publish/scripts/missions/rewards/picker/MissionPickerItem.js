@@ -11,7 +11,7 @@ cc.Class({
     mixins: [ComponentLog],
 
     editor: CC_EDITOR && {
-        menu: 'Add Mission Component/Rewards/Picker Item',
+        menu: 'Rewards/Picker/Picker Item Choice',
         inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
     },
  

@@ -14,7 +14,7 @@ cc.Class({
 	editor: CC_EDITOR && {
 		requireComponent: MissionStepInterface,
 		executeInEditMode: true,
-		menu: 'Add Mission Component/Rich Text Configuration',
+		menu: 'Labels/Missions/Step Text Configuration',
 		inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
 	},
 

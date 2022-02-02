@@ -34,7 +34,7 @@ cc.Class({
 	extends: BaseDispatchAction,
 
 	editor: {
-		menu: 'Add Button Action/Open Profile',
+		menu: 'Buttons/Open Profile',
 		disallowMultiple: true,
 	},
 

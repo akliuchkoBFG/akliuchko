@@ -12,7 +12,7 @@ cc.Class({
     mixins: [ComponentLog],
 
     editor: CC_EDITOR && {
-        menu: 'Add Mission Component/Rewards/Sequence/Sequence Item Picker Reward',
+        menu: 'Rewards/Picker/Picker Reward Item',
         inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
         requireComponent: MissionRewardFilterLootboxReward,
     },

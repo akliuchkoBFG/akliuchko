@@ -23,7 +23,7 @@ cc.Class({
 	mixins: [ComponentLog],
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Type Extensions/Points Milestones Progress',
+		menu: 'Missions/Types/Points Milestones/Progress',
 	},
 
 	properties: {

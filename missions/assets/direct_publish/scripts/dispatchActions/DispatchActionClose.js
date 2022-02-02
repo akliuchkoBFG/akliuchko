@@ -6,7 +6,7 @@ cc.Class({
 	extends: BaseDispatchAction,
 
 	editor: {
-		menu: 'Add Button Action/Close',
+		menu: 'Buttons/Close',
 		disallowMultiple: true,
 	},
 

@@ -5,7 +5,6 @@ cc.Class({
 
     editor: CC_EDITOR && {
         requireComponent: cc.Animation,
-        menu: 'Add Mission Component/Step State Controller',
         executeInEditMode: true,
     },
 

@@ -11,7 +11,7 @@ cc.Class({
 	mixins: [ComponentLog, cc.EventTarget],
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Rewards/Sequence/Reward Sequence',
+		menu: 'Rewards/Reward Sequence',
 		inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
 	},
 

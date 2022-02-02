@@ -5,9 +5,7 @@ cc.Class({
 
     editor: CC_EDITOR && {
         requireComponent: cc.Animation,
-        menu: 'Add Mission Component/Mission Progress Meter',
-        // executeInEditMode: true,
-        // TODO: help: 'url/to/help/wikipage'
+        // No menu entry, deprecated in favor of MissionSegmentedProgressBar
     },
 
     properties: {

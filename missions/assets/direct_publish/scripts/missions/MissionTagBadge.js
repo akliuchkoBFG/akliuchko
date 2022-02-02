@@ -8,7 +8,7 @@ cc.Class({
 
 		editor: CC_EDITOR && {
 				executeInEditMode: true,
-				menu: 'Add Mission Component/Mission Badge',
+				menu: 'Missions/Miscellaneous/Mission Badge',
 		},
 
 		properties: {

@@ -13,7 +13,7 @@ cc.Class({
     extends: BaseMissionStepComponent,
 
     editor: CC_EDITOR && {
-        menu: 'Add Mission Component/Mission Animated Progress Bar',
+        menu: 'Missions/Progress/Animated Progress Bar',
         help: 'https://bigfishgames.atlassian.net/wiki/spaces/SAG/pages/4008083522/Creator+Progress+Bar+Curved',
     },
 

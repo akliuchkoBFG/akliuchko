@@ -24,7 +24,7 @@ cc.Class({
 	extends: BaseMissionStepComponent,
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Board Game/Controller',
+		menu: 'Missions/Types/Board Game/Controller',
 		inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
 	},
 
@@ -295,30 +295,22 @@ cc.Class({
 		const stepData = this.missionStepInterface.missionInterface.getStepData(claimedStepID);
 		// Update tile group with award result info
 		this._tileGroupsByStepID[claimedStepID].setStepData(stepData);
-
 		const targetTile = this._tileGroupsByStepID[claimedStepID].getAwardTile();
+		const targetTileIndex = this.tiles.indexOf(targetTile);
 		const previousGroup = this._tileGroupsByStepID[claimedStepID - 1];
 		let previousTileIndex = -1; // -1 represents the value of the start tile
-		const targetTileIndex = this.tiles.indexOf(targetTile);
 		if (previousGroup) {
 			const previousTile = previousGroup.getAwardTile();
 			previousTileIndex = this.tiles.indexOf(previousTile);
 		}
-		const spacesToMove = targetTileIndex - previousTileIndex;
-		const intermediateTiles = _.range(previousTileIndex, targetTileIndex - 1).map((index) => {
-			if (index === -1) {
-				return this.startTile;
-			} else {
-				return this.tiles[index];
-			}
-		});
+		const intermediateTiles = this.tiles.slice(previousTileIndex + 1, targetTileIndex);
 
 		// Claim sequence
 		Promise.resolve()
 		.then(() => {
 			// Resolve randomizer
 			if (this.progressRandomizer) {
-				return this.progressRandomizer.finishSequence(targetTile, spacesToMove);
+				return this.progressRandomizer.finishSequence(targetTile, targetTileIndex - previousTileIndex);
 			}
 		})
 		.then(() => {

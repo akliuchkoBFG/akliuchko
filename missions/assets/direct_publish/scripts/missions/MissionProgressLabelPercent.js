@@ -6,7 +6,7 @@ cc.Class({
     editor: CC_EDITOR && {
         requireComponent: DataTemplateRichTextLabel,
         executeInEditMode: true,
-        menu: 'Add Mission Component/Progress Label Percent',
+        menu: 'Labels/Missions/Progress Label Percent',
         help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/562593870/Mission+Progress+Label'
     },
 

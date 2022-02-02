@@ -8,6 +8,7 @@ cc.Class({
 		disallowMultiple: true,
 		requireComponent: cc.Label,
 		executeInEditMode: true,
+		menu: "Labels/Data Template Label",
 	},
 	properties: {
 		templateString: {

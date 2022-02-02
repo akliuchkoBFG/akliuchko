@@ -8,7 +8,6 @@ cc.Class({
 	editor: CC_EDITOR && {
 		requireComponent: DataTemplateRichTextLabel,
 		executeInEditMode: true,
-		menu: 'Slotname Label',
 	},
 
 	properties: {

@@ -21,7 +21,7 @@ cc.Class({
     mixins: [ComponentLog],
 
     editor: {
-        menu: 'Add Mission Component/Rewards/Premium Item View',
+        menu: 'Rewards/Items/Premium Item View',
         disallowMultiple: true,
     },
 

@@ -23,7 +23,7 @@ cc.Class({
 	extends: MissionRewardFilter,
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Rewards/Filters/Product Package Type',
+		menu: 'Rewards/Filters/Product Package Type',
 	},
 
 	properties: {

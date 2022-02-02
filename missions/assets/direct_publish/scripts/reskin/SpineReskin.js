@@ -8,7 +8,7 @@ cc.Class({
 	editor: CC_EDITOR && {
 		executeInEditMode: true,
 		requireComponent: sp.Skeleton,
-		menu: 'Add Reskin Component/Spine',
+		menu: 'Tools/Reskin/Spine',
 	},
 
 	properties: {

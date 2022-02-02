@@ -1,8 +1,8 @@
-const TAG = "BoardGamePlayerTeleport";
+const TAG = "TeleportBehavior";
 const ComponentLog = require('ComponentSALog')(TAG);
-
-const BoardGamePlayer = require('BoardGamePlayer');
 const SpineStateProperty = require('SpineStateProperty');
+const MoveBehavior = require('MoveBehavior');
+
 const SPINE_STATE_NAMES = [
 	'appear',
 	'vanish',
@@ -10,10 +10,10 @@ const SPINE_STATE_NAMES = [
 const SKELETON_COMPONENT_PROP = 'skeleton';
 
 cc.Class({
-	extends: BoardGamePlayer,
+    extends: MoveBehavior,
 
-	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Board Game/Player – Teleport',
+    editor: CC_EDITOR && {
+		menu: 'Missions/Types/Board Game/Player Behavior – Teleport',
 		executeInEditMode: true,
 		inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
 	},
@@ -38,10 +38,10 @@ cc.Class({
 		),
 	},
 
-	__preload:SpineStateProperty.createPreloadFunction(SPINE_STATE_NAMES),
+    __preload:SpineStateProperty.createPreloadFunction(SPINE_STATE_NAMES),
 
-	move(targetTile, intermediateTiles) {
-		// Disappear, move the player node while off screen and then reappear
+    move(player, targetTile, intermediateTiles) {
+        this.player = player
 		const animOpts = {
 			setToSetupPose: false,
 		};
@@ -52,4 +52,5 @@ cc.Class({
 			return this.appear.play(animOpts);
 		});
 	},
+
 });

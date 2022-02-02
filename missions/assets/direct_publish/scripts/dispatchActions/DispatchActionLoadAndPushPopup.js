@@ -6,7 +6,7 @@ cc.Class({
 	extends: BaseDispatchAction,
 
 	editor: {
-		menu: 'Add Button Action/Open Melonpig Popup',
+		menu: 'Buttons/Open Melonpig Popup',
 		disallowMultiple: true,
 	},
 

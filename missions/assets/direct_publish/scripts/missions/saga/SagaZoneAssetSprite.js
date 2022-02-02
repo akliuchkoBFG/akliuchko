@@ -30,7 +30,7 @@ cc.Class({
 
 	editor: CC_EDITOR && {
 		requireComponent: cc.Sprite,
-		menu: 'Add Mission Component/Saga/Zone Assset – Sprite',
+		menu: 'Missions/Types/Saga/Zone Assset – Sprite',
 	},
 
 	properties: () => ({

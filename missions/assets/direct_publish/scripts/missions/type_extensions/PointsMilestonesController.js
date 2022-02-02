@@ -46,7 +46,7 @@ cc.Class({
 	mixins: [ComponentLog, cc.EventTarget],
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Type Extensions/Points Milestones Controller',
+		menu: 'Missions/Types/Points Milestones/Controller',
 		inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
 	},
 

@@ -9,7 +9,7 @@ cc.Class({
 	mixins: [ComponentLog, cc.EventTarget],
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Mission Step Interface',
+		menu: 'Missions/Core/Step Interface',
 		executeInEditMode: true,
 		disallowMultiple: true,
 		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/495452795/Mission+Step+Interface'

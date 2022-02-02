@@ -36,7 +36,7 @@ cc.Class({
     extends: cc.Component,
 
     editor: CC_EDITOR && {
-        menu: 'Add Mission Component/Saga/SagaStepBannerController',
+        menu: 'Missions/Types/Saga/Step Banner Controller',
         executeInEditMode: true,
         inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
     },

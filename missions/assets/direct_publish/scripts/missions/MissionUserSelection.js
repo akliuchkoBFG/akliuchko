@@ -9,7 +9,7 @@ cc.Class({
 	mixins: [ComponentLog],
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Command Data/User Selection',
+		menu: 'Missions/Types/User Selection/User Selection',
 	},
 
 	properties: {

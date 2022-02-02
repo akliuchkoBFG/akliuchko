@@ -9,7 +9,7 @@ cc.Class({
 	extends: CountdownComponent,
 	mixins: [LoadData],
 	editor: CC_EDITOR && {
-		menu: 'Add Marketing Component/PromoCountdown',
+		menu: 'Marketing/Promo Countdown',
 	},
 
 	properties: {

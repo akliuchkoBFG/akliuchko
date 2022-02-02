@@ -8,7 +8,7 @@ cc.Class({
 	editor: CC_EDITOR && {
 		requireComponent: DataTemplateRichTextLabel,
 		executeInEditMode: true,
-		menu: 'Add Mission Component/Step Description Label',
+		menu: 'Labels/Missions/Step Description Label',
 		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/562692173/Mission+Step+Description+Label'
 	},
 

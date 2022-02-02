@@ -28,7 +28,7 @@ cc.Class({
 
 	editor: CC_EDITOR && {
 		requireComponent: cc.Animation,
-		menu: 'Add Mission Component/Mission State Controller',
+		menu: 'Missions/Core/Mission State Controller',
 		// TODO: help: 'url/to/help/wikipage'
 	},
 

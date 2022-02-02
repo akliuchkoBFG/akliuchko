@@ -11,7 +11,7 @@ cc.Class({
 	mixins: [ComponentLog, cc.EventTarget],
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Mission Interface',
+		menu: 'Missions/Core/Mission Interface',
 		executeInEditMode: true,
 		disallowMultiple: true,
 		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/495616500/Mission+Interface'

@@ -9,7 +9,7 @@ cc.Class({
 	mixins: [ComponentLog],
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Rewards/Sequence/Sequence Item Data Template',
+		menu: 'Rewards/Items/Data Template Item',
 		inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
 	},
 

@@ -13,7 +13,7 @@ cc.Class({
 	mixins: [ComponentLog],
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Rewards/Sequence/Sequence Item',
+		menu: 'Rewards/Items/Base Item',
 		inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
 	},
 

@@ -41,7 +41,7 @@ cc.Class({
 	mixins: [ComponentLog, cc.EventTarget],
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Saga/Step – Normal',
+		menu: 'Missions/Types/Saga/Step – Normal',
 		executeInEditMode: false,
 		inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
 	},

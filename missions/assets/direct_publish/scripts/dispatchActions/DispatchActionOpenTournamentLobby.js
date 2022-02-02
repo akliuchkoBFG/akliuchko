@@ -6,7 +6,7 @@ cc.Class({
 	extends: BaseDispatchAction,
 
 	editor: {
-		menu: 'Add Button Action/Open Tournament Lobby',
+		menu: 'Buttons/Open Tournament Lobby',
 		disallowMultiple: true,
 	},
 

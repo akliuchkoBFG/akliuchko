@@ -7,7 +7,7 @@ const FakeTemplateId = "CocosCreatorBogus";
 cc.Class({
 	extends: cc.Component,
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Select Template',
+		menu: 'Missions/Core/Select Template',
 		inspector: Editor.SAG.ComponentInspector('mission-template-select'),
 		disallowMultiple: true,
 		executeInEditMode: true,

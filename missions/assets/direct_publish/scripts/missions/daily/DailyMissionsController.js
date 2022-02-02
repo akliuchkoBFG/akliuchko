@@ -8,7 +8,7 @@ cc.Class({
 	extends: BaseMissionComponent,
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Daily/Controller',
+		menu: 'Missions/Types/Daily/Controller',
 		inspector: Editor.SAG.ComponentInspector('custom-property-inspector'),
 		executeInEditMode: false,
 	},

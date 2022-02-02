@@ -2,7 +2,7 @@
 cc.Class({
 	extends: cc.Component,
 	editor: CC_EDITOR && {
-		menu: 'Add SAG Component/RollupLabel',
+		menu: 'Labels/Rollup Label',
 		requireComponent: cc.Label,
 	},
 

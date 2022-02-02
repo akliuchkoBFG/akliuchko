@@ -18,7 +18,7 @@ cc.Class({
 	mixins: [LoadData, ComponentLog],
 
 	editor: CC_EDITOR && {
-		menu: 'Add Mission Component/Mission Load Data',
+		menu: 'Missions/Core/Load Data',
 		disallowMultiple: true,
 		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/495583779/Mission+Data+Provider+Load+Data'
 	},

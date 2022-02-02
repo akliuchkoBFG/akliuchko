@@ -9,7 +9,7 @@ cc.Class({
     mixins: [ComponentLog],
 
     editor: CC_EDITOR && {
-        menu: 'Add Mission Component/Rewards/Filters/Lootbox Size',
+        menu: 'Rewards/Filters/Lootbox Size',
     },
 
     properties: {

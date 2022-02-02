@@ -10,7 +10,7 @@ cc.Class({
 	mixins: [ComponentLog],
 
 	editor: {
-		menu: 'Add Mission Component/Saga/Step Cell',
+		menu: 'Missions/Types/Saga/Step Cell',
 		disallowMultiple: true,
 	},
 

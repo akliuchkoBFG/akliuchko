@@ -6,7 +6,7 @@ cc.Class({
 	extends: BaseDispatchAction,
 
 	editor: {
-		menu: 'Add Button Action/Open Inbox',
+		menu: 'Buttons/Open Inbox',
 		disallowMultiple: true,
 	},
 

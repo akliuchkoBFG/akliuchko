@@ -2,7 +2,7 @@
 cc.Class({
 	extends: cc.Component,
 	editor: CC_EDITOR && {
-		menu: 'Add SAG Component/Pokeable',
+		menu: 'Marketing/Pokeable',
 		requireComponent: cc.Button,
 	},
 

@@ -10,7 +10,7 @@ cc.Class({
 
 	editor: CC_EDITOR && {
 		requireComponent: MissionRewardSequence,
-		menu: 'Add Mission Component/Rewards/Sequence/Step Sequence',
+		menu: 'Rewards/Missions/Step Sequence',
 	},
 
 	onUpdateMissionStepData() {

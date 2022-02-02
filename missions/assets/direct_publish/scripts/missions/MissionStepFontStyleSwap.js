@@ -5,7 +5,7 @@ cc.Class({
 
     editor: CC_EDITOR && {
         executeInEditMode: true,
-        menu: 'Add Mission Component/Mission Step Font Style Swap',
+        // Experimental component, add appropriate menu path if this is ever used
         // TODO help: make a wiki url
     },
 

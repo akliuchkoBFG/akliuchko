@@ -13,7 +13,7 @@ cc.Class({
 	mixins: [LoadData],
 
 	editor: {
-		menu: 'Add Button Action/Link Direct Publish Creator Popup',
+		menu: 'Buttons/Link Direct Publish Creator Popup',
 		disallowMultiple: true,
 	},
 

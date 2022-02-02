@@ -8,7 +8,7 @@ cc.Class({
 	editor: CC_EDITOR && {
 		requireComponent: DataTemplateRichTextLabel,
 		executeInEditMode: true,
-		menu: 'Add Mission Component/Progress Label',
+		menu: 'Labels/Missions/Progress Label',
 		help: 'https://bigfishgames.atlassian.net/wiki/spaces/SMS/pages/562593870/Mission+Progress+Label'
 	},
 

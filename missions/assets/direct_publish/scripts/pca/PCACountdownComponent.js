@@ -4,7 +4,7 @@ const CountdownComponent = require('CountdownComponent');
 cc.Class({
     extends: PCABaseComponent,
     editor: CC_EDITOR && {
-        menu: 'Add PCA Component/Simple Countdown',
+        menu: 'Marketing/PCA/Simple Countdown',
         requireComponent: CountdownComponent,
     },
 
