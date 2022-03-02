@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "660aa0ec-b2d7-45ae-be6c-0da5a7fc9163",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "game_night_buffalo_illustration": {
+      "ver": "1.0.3",
+      "uuid": "b883cfa3-3d7b-4467-b913-01c430ebebd7",
+      "rawTextureUuid": "660aa0ec-b2d7-45ae-be6c-0da5a7fc9163",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -4,
+      "offsetY": -7.5,
+      "trimX": 26,
+      "trimY": 55,
+      "width": 580,
+      "height": 865,
+      "rawWidth": 640,
+      "rawHeight": 960,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

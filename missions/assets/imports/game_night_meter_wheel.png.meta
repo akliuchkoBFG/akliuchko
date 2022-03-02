@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "92540287-ea3e-4aba-8d9f-307ac5438649",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "game_night_meter_wheel": {
+      "ver": "1.0.3",
+      "uuid": "090a7f12-0bf0-4c54-83af-40ab2af9c501",
+      "rawTextureUuid": "92540287-ea3e-4aba-8d9f-307ac5438649",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 1,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 69,
+      "height": 70,
+      "rawWidth": 70,
+      "rawHeight": 72,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
