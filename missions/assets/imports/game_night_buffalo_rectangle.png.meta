@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "c6f0c372-53fa-4403-a781-9712f6982806",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "game_night_buffalo_rectangle": {
+      "ver": "1.0.3",
+      "uuid": "95386c04-aeda-4c44-a80d-553c95c46008",
+      "rawTextureUuid": "c6f0c372-53fa-4403-a781-9712f6982806",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 541,
+      "height": 69,
+      "rawWidth": 542,
+      "rawHeight": 70,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

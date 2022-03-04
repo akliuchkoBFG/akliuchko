@@ -1,0 +1,76 @@
+
+ambients.png
+size: 921,921
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Buffalo_01
+  rotate: true
+  xy: 636, 692
+  size: 107, 91
+  orig: 107, 91
+  offset: 0, 0
+  index: -1
+Buffalo_02
+  rotate: false
+  xy: 636, 801
+  size: 106, 118
+  orig: 106, 118
+  offset: 0, 0
+  index: -1
+Horn_01
+  rotate: true
+  xy: 2, 2
+  size: 11, 19
+  orig: 11, 19
+  offset: 0, 0
+  index: -1
+Horn_02
+  rotate: false
+  xy: 729, 780
+  size: 13, 19
+  orig: 13, 19
+  offset: 0, 0
+  index: -1
+Skull
+  rotate: true
+  xy: 744, 847
+  size: 72, 119
+  orig: 72, 119
+  offset: 0, 0
+  index: -1
+Tail_01
+  rotate: false
+  xy: 636, 584
+  size: 40, 23
+  orig: 40, 23
+  offset: 0, 0
+  index: -1
+Tail_02
+  rotate: false
+  xy: 865, 886
+  size: 44, 33
+  orig: 44, 33
+  offset: 0, 0
+  index: -1
+frame2@4x
+  rotate: false
+  xy: 2, 15
+  size: 632, 904
+  orig: 632, 904
+  offset: 0, 0
+  index: -1
+game_night_buffalo_tumbleweed@4x
+  rotate: false
+  xy: 636, 609
+  size: 74, 81
+  orig: 74, 81
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 744, 816
+  size: 56, 29
+  orig: 58, 29
+  offset: 1, 0
+  index: -1
