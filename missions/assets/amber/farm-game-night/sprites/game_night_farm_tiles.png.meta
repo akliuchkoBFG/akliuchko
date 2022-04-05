@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "e608bd78-856e-49fc-a3df-5d1289f08826",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "game_night_farm_tiles": {
+      "ver": "1.0.3",
+      "uuid": "8a09065c-7e70-48e5-9211-0bee5e9639e7",
+      "rawTextureUuid": "e608bd78-856e-49fc-a3df-5d1289f08826",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 539,
+      "height": 461,
+      "rawWidth": 540,
+      "rawHeight": 462,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

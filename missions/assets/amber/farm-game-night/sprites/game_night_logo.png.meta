@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "e82c1712-f992-4b7c-bec8-95720d854cc3",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "game_night_logo": {
+      "ver": "1.0.3",
+      "uuid": "01892afb-9b5b-4bbc-a89c-86073e8a12d7",
+      "rawTextureUuid": "e82c1712-f992-4b7c-bec8-95720d854cc3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 503,
+      "height": 79,
+      "rawWidth": 504,
+      "rawHeight": 80,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

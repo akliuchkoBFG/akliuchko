@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "40106514-b99d-41b9-bee0-56dad5c9de60",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "game_night_farm_illustration": {
+      "ver": "1.0.3",
+      "uuid": "5f9d2a8c-2812-408b-91bd-ad37fc5d8d6b",
+      "rawTextureUuid": "40106514-b99d-41b9-bee0-56dad5c9de60",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1.5,
+      "offsetY": -2,
+      "trimX": 30,
+      "trimY": 56,
+      "width": 577,
+      "height": 852,
+      "rawWidth": 640,
+      "rawHeight": 960,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
