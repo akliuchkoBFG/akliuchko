@@ -13,6 +13,7 @@ const AnimationClipProperty = require('AnimationClipProperty');
 const MissionRewardSequence = require('MissionRewardSequence');
 const SagaZoneTransition = require('SagaZoneTransition');
 const MissionInfoController = require('MissionInfoController');
+const MissionTextConfiguration = require('MissionTextConfiguration');
 
 const ANIM_COMPONENT_PROPERTY = 'animation';
 const ANIM_CLIP_NAMES = [
@@ -47,6 +48,11 @@ cc.Class({
 			default: null,
 			type: TableView,
 			tooltip: 'Reference to the table view that creates step nodes',
+		},
+		textConfiguration: {
+			default: null,
+			type: MissionTextConfiguration,
+			tooltip: 'Global text configuration to use with daily mission step prefabs',
 		},
 		stepClaimSequence: {
 			default: null,
@@ -274,6 +280,7 @@ cc.Class({
 			const data = {
 				stepID,
 				missionInterface,
+				textConfiguration: this.textConfiguration,
 				pageView: this.pageView,
 			};
 			const stepData = missionInterface.getStepData(stepID);

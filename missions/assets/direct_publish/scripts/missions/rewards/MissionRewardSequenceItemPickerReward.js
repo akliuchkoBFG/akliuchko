@@ -64,17 +64,12 @@ cc.Class({
         }
         // Check the size of the lootbox and remove excess picks by default if there are less items in the lootbox than expected.
         if(this.pickItems.length > this._lootboxSize) {
-            this.log.d("Lootbox provided in mission data is smaller than the picks configured in the layout, some pick items will not be shown.");
             for (let index = this._lootboxSize; index < this.pickItems.length; index++) {
                 this.pickItems[index].node.opacity = 0;
                 this.pickItems[index].node.active = false;
             }
         }
-        // initialize the event for input of pick items
-        this.node.on('lootbox_pickeritem.selected', (event) => {
-            event.stopPropagation();
-            this._tapToContinue(event.detail.pickIndex);
-        });
+        
         this._setupPickIndices();
     },
 
@@ -98,13 +93,7 @@ cc.Class({
     _setPickItems(pickHelper) {
         // Setup picks based either on an editor node or a layout node
         const picks = pickHelper.getComponentsInChildren(MissionPickerItem);
-        if (picks.length === 0) {
-            this.log.d("MissionPickerItem components not found in Node " + pickHelper.name);
-            if(CC_EDITOR) {
-                this.log.d("MissionPickerItem components not found in Node " + pickHelper.name + ". Please add to component before using the helper.");
-            }
-            return;
-        }
+        
         let index = 1;
         const sortedPicks = _.sortBy(picks, (pick) => {
             const nodeName = pick.node.name = "pick_" + index;
@@ -138,6 +127,11 @@ cc.Class({
         this._startIdle();
         const waitForInput = new Promise((resolve) => {
             this._tapToContinue = resolve;
+        });
+        // initialize the event for input of pick items
+        this.node.on('lootbox_pickeritem.selected', (event) => {
+            this._tapToContinue(event.detail.pickIndex);
+            event.stopPropagation();
         });
         return waitForInput;
     },
@@ -201,7 +195,6 @@ cc.Class({
             return this.outro.play();
         }).catch((err) => {
             this.log.e("playItem failure: " + err);
-            this.log.d("Reward item data: " + JSON.stringify(this._itemData));
             this.node.active = false;
         });
     },

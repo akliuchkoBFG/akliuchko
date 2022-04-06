@@ -73,7 +73,7 @@ function exportScene(uuid, destination, callback) {
 
 			createZipFromAssets(allAssets, destination, callback);
 		});
-	}, 3e4);
+	}, 120e4);
 }
 
 function showImportProgressLog(progress) {

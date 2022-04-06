@@ -62,6 +62,10 @@ cc.Class({
             default: null,
             type: NumericLabel,
         },
+        displayNextSeason: {
+            default: null,
+            type: cc.Label,
+        },
         raritySelector: {
             default: null,
             type: NodeSelector,
@@ -112,6 +116,10 @@ cc.Class({
                     this.raritySelector.node.active = false;
                     this.log.d('Unsupported rarity value for item: ' + rarity + '; ' + itemModel.getCompoundID());
                 }
+            }
+
+            if (this.displayNextSeason) {
+                this.displayNextSeason.node.active = itemModel.get('nextSeason');
             }
 
             if (SPINE_DISPLAY_TYPES.indexOf(type) !== -1) {
@@ -191,6 +199,9 @@ cc.Class({
         }
         if (this.raritySelector) {
             this.raritySelector.node.active = false;
+        }
+        if(this.displayNextSeason) {
+            this.displayNextSeason.node.active = false;
         }
     },
 });

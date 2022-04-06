@@ -77,7 +77,6 @@ cc.Class({
     },
 
     animateReveal() {
-        this.log.d("Revealing pick item (" + this.node.name + ")");
         if (this.pick_reveal && !this._animating) {
             this._animating = true;
             return this.pick_reveal.play()
@@ -89,7 +88,6 @@ cc.Class({
     },
 
     animateWhiff() {
-        this.log.d("Whiffing pick item (" + this.node.name + ")");
         if (this.pick_whiff && !this._animating) {
             this._animating = true;
             return this.pick_whiff.play()

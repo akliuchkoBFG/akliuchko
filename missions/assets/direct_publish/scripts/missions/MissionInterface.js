@@ -420,22 +420,36 @@ cc.Class({
 	},
 
 	getAnyStepClaimable: function(){
+		//Check for blast stuff
+		const hasBlast = this.hasMissionCommandData("blast");
 		const claimableSteps = [];
-		const stepData = this._stepData;
-		
-		const stepDataArray = Object.keys(stepData).map((index) => {
-			return stepData[index];
-		});
-		
-		stepDataArray.forEach((step) => {
-			const max = step.data.max || 1;
-			const newProgress = step.data.progress || 0;
-			const stepAwarded = step.data.awarded || false;
-			if(newProgress >= max && !stepAwarded){
-				claimableSteps.push(step);
+		//BLAST HACK
+		if(!hasBlast){
+			const stepData = this._stepData;
+			const stepDataArray = Object.keys(stepData).map((index) => {
+				return stepData[index];
+			});
+
+			stepDataArray.forEach((step) => {
+				const max = step.data.max || 1;
+				const newProgress = step.data.progress || 0;
+				const stepAwarded = step.data.awarded || false;
+				const hasAward = !!step.data.award || false;
+				if(newProgress >= max && !stepAwarded && hasAward){
+					claimableSteps.push(step);
+				}
+			});
+			return claimableSteps;
+		}
+		//Blast type mission
+		else {
+			const blastCommandData = this.getMissionCommandData("blast");
+			// If you have any remaining tokens then push something onto claimable steps so it isn't empty
+			if(blastCommandData.tokens !== 0){
+				claimableSteps.push(-1);
 			}
-		});
-		return claimableSteps;
+			return claimableSteps;
+		}
 	},
 
 	// Command Data //
@@ -476,6 +490,16 @@ cc.Class({
 		}
 
 		return _.assign({}, missionData);
+	},
+
+	hasMissionCommandData: function(missionKey){
+		const commandData = this._missionData.mission.commandData || {};
+		const missionData = commandData[missionKey];
+		return !!missionData;
+	},
+
+	setCommandDataLocal: function(data){
+		_.merge(this._missionData.mission.commandData, data);
 	},
 
 	// send the public command data to the server, saving it to the mission data

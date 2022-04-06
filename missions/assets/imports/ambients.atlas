@@ -1,0 +1,139 @@
+
+ambients.png
+size: 903,901
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Cat_Body
+  rotate: false
+  xy: 638, 685
+  size: 40, 47
+  orig: 60, 61
+  offset: 20, 0
+  index: -1
+Cat_Head
+  rotate: false
+  xy: 694, 761
+  size: 44, 38
+  orig: 60, 61
+  offset: 0, 2
+  index: -1
+Cat_Head_blink
+  rotate: true
+  xy: 863, 855
+  size: 44, 38
+  orig: 60, 61
+  offset: 0, 2
+  index: -1
+Cat_Tail
+  rotate: false
+  xy: 807, 820
+  size: 45, 12
+  orig: 45, 12
+  offset: 0, 0
+  index: -1
+Duck01
+  rotate: false
+  xy: 638, 646
+  size: 33, 37
+  orig: 33, 37
+  offset: 0, 0
+  index: -1
+Duck01_Head01
+  rotate: false
+  xy: 638, 620
+  size: 23, 24
+  orig: 23, 24
+  offset: 0, 0
+  index: -1
+Duck01_Head02
+  rotate: false
+  xy: 775, 775
+  size: 23, 24
+  orig: 23, 24
+  offset: 0, 0
+  index: -1
+Duck01_Wing
+  rotate: false
+  xy: 807, 802
+  size: 22, 16
+  orig: 22, 16
+  offset: 0, 0
+  index: -1
+Duck02_head01
+  rotate: false
+  xy: 638, 597
+  size: 20, 21
+  orig: 20, 21
+  offset: 0, 0
+  index: -1
+Duck02_head02
+  rotate: false
+  xy: 638, 574
+  size: 20, 21
+  orig: 20, 21
+  offset: 0, 0
+  index: -1
+Duck02_wing01
+  rotate: false
+  xy: 863, 837
+  size: 25, 16
+  orig: 25, 16
+  offset: 0, 0
+  index: -1
+Duck02_wing02
+  rotate: false
+  xy: 638, 529
+  size: 19, 20
+  orig: 19, 20
+  offset: 0, 0
+  index: -1
+Pig_Ear
+  rotate: true
+  xy: 638, 551
+  size: 21, 20
+  orig: 22, 20
+  offset: 0, 0
+  index: -1
+Pig_tail
+  rotate: false
+  xy: 694, 742
+  size: 32, 17
+  orig: 32, 17
+  offset: 0, 0
+  index: -1
+Pond
+  rotate: false
+  xy: 638, 801
+  size: 167, 98
+  orig: 199, 102
+  offset: 12, 4
+  index: -1
+duck02
+  rotate: false
+  xy: 740, 765
+  size: 33, 34
+  orig: 33, 34
+  offset: 0, 0
+  index: -1
+frame@4x
+  rotate: false
+  xy: 2, 8
+  size: 634, 891
+  orig: 634, 891
+  offset: 0, 0
+  index: -1
+pig
+  rotate: false
+  xy: 638, 734
+  size: 54, 65
+  orig: 54, 66
+  offset: 0, 0
+  index: -1
+pig_blink
+  rotate: false
+  xy: 807, 834
+  size: 54, 65
+  orig: 54, 66
+  offset: 0, 0
+  index: -1

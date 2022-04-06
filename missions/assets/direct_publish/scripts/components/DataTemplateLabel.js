@@ -54,7 +54,7 @@ cc.Class({
 			combinedData = _.merge({}, this.sceneDataAggregator.getSceneData(), data);
 		}
 		const tokenizedString = this.templateString.replace(PROPERTY_REGEX, (match, propertyName) => {
-			return combinedData[propertyName] || '';
+			return combinedData[propertyName] != null ? combinedData[propertyName] : '';
 		});
 		this.getComponent(cc.Label).string = tokenizedString;
 	},
