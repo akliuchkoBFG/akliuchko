@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "defce996-59a9-49d6-9a70-cd47f990a75d",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "rollercoaster_progressbar_fill": {
+      "ver": "1.0.3",
+      "uuid": "e37bc682-1af8-40e5-8f03-5dfed7fa111e",
+      "rawTextureUuid": "defce996-59a9-49d6-9a70-cd47f990a75d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 343,
+      "height": 29,
+      "rawWidth": 344,
+      "rawHeight": 30,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

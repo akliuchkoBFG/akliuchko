@@ -178,7 +178,8 @@ cc.Class({
 			this._missionData.mission.stepsNetworkData &&
 			this._missionData.mission.stepsNetworkData.graph &&
 			this._missionData.mission.stepsNetworkData.graph.type) {
-			if (this._missionData.mission.stepsNetworkData.graph.type === "sequential") {
+			if (this._missionData.mission.stepsNetworkData.graph.type === "sequential" ||
+				this._missionData.mission.stepsNetworkData.graph.type === "loopingSequential") {
 				return true;
 			}
 		} else {
@@ -212,8 +213,8 @@ cc.Class({
 		let activeStepIDs = [];
 		const isSequential = this.isSequential();
 		_(this._stepData).forOwn((step, id) => {
-			// states: locked | active | complete | redeemed
-			if (step.data.state !== 'locked' && step.data.state !== 'redeemed') {
+			// states: locked | active | complete | redeemed | skipped
+			if (step.data.state !== 'locked' && step.data.state !== 'redeemed' && step.data.state !== 'skipped') {
 				if (isSequential) {
 					// only send one step if sequential, 
 					// keep overwriting until we get to the last one
@@ -545,5 +546,11 @@ cc.Class({
 		jsonData.tags = this._missionData.tags;
 
 		SAMetrics.sendEvent({eventName: name, st1: 'missions', jsonData: jsonData});
-	}
+	},
+
+	// mission IAP
+	getMissionIapData: function () {
+		return this._missionData.missionIap || {};
+	},
+
 });

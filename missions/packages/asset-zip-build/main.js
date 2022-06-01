@@ -359,6 +359,9 @@ function startBuild(event, settings, options) {
 		if (!scenePath) {
 			throw(new Error("No Preview/Upload Available: Scene must be saved"));
 		}
+		if(scenePath.indexOf(' ') !== -1) {
+			throw new Error("Folders and scene names cannot have spaces");
+		}
 
 		bundlePathName = path.relative(path.join(Editor.projectInfo.path, 'assets'), scenePath).replace('.fire', '');
 		const relativePath = buildSettings.bundleNameOverride || bundlePathName;
@@ -503,6 +506,10 @@ function startBuild(event, settings, options) {
 	})
 	.then(() => {
 		if (!buildSettings.cleanup) {
+			return;
+		}
+		if (!bundleName) {
+			// Build failed before starting, no temp files to cleanup
 			return;
 		}
 		// Remove temp files

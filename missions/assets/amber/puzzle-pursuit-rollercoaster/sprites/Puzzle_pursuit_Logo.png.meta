@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "e70c906c-6a9d-47bb-93d6-e6f3600b2c9e",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "Puzzle_pursuit_Logo": {
+      "ver": "1.0.3",
+      "uuid": "1ca9092e-5fb4-42b2-a26f-ca7ae0c5c274",
+      "rawTextureUuid": "e70c906c-6a9d-47bb-93d6-e6f3600b2c9e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 1,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 277,
+      "height": 128,
+      "rawWidth": 278,
+      "rawHeight": 130,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

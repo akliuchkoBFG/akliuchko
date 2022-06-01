@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "70be265a-2b4e-47e5-8fad-9c1191c42211",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "rollercoaster_background_popup": {
+      "ver": "1.0.3",
+      "uuid": "f4054542-748d-4e43-bd1e-67b608ae02ba",
+      "rawTextureUuid": "70be265a-2b4e-47e5-8fad-9c1191c42211",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 2.5,
+      "offsetY": -20.5,
+      "trimX": 20,
+      "trimY": 109,
+      "width": 605,
+      "height": 783,
+      "rawWidth": 640,
+      "rawHeight": 960,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

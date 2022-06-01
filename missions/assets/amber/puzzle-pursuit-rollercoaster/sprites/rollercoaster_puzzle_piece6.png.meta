@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "ef3b7407-9a9c-49ab-9561-22fbdfd2f69c",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "rollercoaster_puzzle_piece6": {
+      "ver": "1.0.3",
+      "uuid": "16644742-301f-41fe-86bf-55946d6bba37",
+      "rawTextureUuid": "ef3b7407-9a9c-49ab-9561-22fbdfd2f69c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 110,
+      "height": 113,
+      "rawWidth": 112,
+      "rawHeight": 114,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

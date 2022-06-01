@@ -27,6 +27,15 @@ cc.Class({
 		},
 	},
 
+	loadItem() {
+		if (this._rewardNode) {
+			return this._rewardNode.getComponent(MissionRewardSequenceItem).loadItem();
+		} else {
+			this.log.w("Tried to load reward prefab before it has been selected");
+			return Promise.resolve();
+		}
+	},
+
 	setRewardsFromProductPackage(rewardItems) {
 		if (CC_EDITOR) {
 			return; // Dynamic rewards displays are not supported in-editor

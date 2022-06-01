@@ -102,6 +102,18 @@ const AnimationClipProperty = cc.Class({
 		},
 	},
 
+	// Reinitialize animation state from animation clip to reset node targets and other animation data that can become cached
+	// Useful for if node names/paths have changed since the clip was initialized
+	reloadClip() {
+		if (!this._animation || !this._clipName) {
+			return;
+		}
+		const animState = this._animation.getAnimationState(this._clipName);
+		if (animState) {
+			this._animation._animator._reloadClip(animState);
+		}
+	},
+
 	play(startTime) {
 		let animation = this._animation;
 		if (!this._animation || !this._clipName) {

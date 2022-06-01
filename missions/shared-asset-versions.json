@@ -1,11 +1,11 @@
 {
 	"assets___direct_publish": {
-		"version": "2.1.0",
-		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/assets___direct_publish/2.1.0.zip",
+		"version": "2.6.0",
+		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/assets___direct_publish/2.6.0.zip",
 		"pathInProject": "assets/direct_publish",
 		"encryption": {
 			"version": "1.0.0",
-			"iv": "2293a5783c0fcd8840e54a119811d976"
+			"iv": "a923e6fbc7467ee39e4efffbc99ddb7d"
 		}
 	},
 	"extension___asset-import": {
@@ -18,12 +18,12 @@
 		}
 	},
 	"extension___asset-zip-build": {
-		"version": "1.6.0",
-		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___asset-zip-build/1.6.0.zip",
+		"version": "1.6.1",
+		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___asset-zip-build/1.6.1.zip",
 		"pathInProject": "packages/asset-zip-build",
 		"encryption": {
 			"version": "1.0.0",
-			"iv": "8c894279ab614b7dfb28d7ed6b2d4834"
+			"iv": "a73e44aee64b3107afef2eddd5df56cf"
 		}
 	},
 	"extension___mission-preview": {
