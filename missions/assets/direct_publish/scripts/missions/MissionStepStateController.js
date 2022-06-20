@@ -34,6 +34,10 @@ cc.Class({
 			default: '',
 			tooltip: "cc.Anim clip name - this clip plays after the user clicks the 'claim' button\nIgnored if 'Claim Sequence' is defined"
 		},
+		bulkClaimable: {
+			default: '',
+			tooltip: "cc.Anim clip name - this clip shows when 1 or more steps are bulk claimable"
+		},
 		claimSequence: {
 			default: null,
 			type: MissionStepRewardSequence,
@@ -66,6 +70,7 @@ cc.Class({
 	onLoad: function () {
 		this._super();
 		this.missionStepInterface.missionInterface.on('claimedStepAward', this.onClaim, this);
+		this.missionStepInterface.missionInterface.on('bulkClaimStepAward', this.onBulkClaim, this);
 		this.getComponent(cc.Animation).on('finished', this.onAnimFinished, this);
 	},
 
@@ -77,8 +82,12 @@ cc.Class({
 
 		const max = this.missionStepInterface.getProgressMax();
 		const progress = this.missionStepInterface.getProgressAmount();
-		if (progress === 0) {
+		//Account for previous steps being claimable
+		const claimableStepIDs = this.missionStepInterface.missionInterface.getClaimableStepIDs();
+		if (progress === 0 && claimableStepIDs.length === 0) {
 			this._play(this.introState);
+		} else if(progress < max && claimableStepIDs.length > 0 && this.bulkClaimable){
+			this._play(this.bulkClaimable);
 		} else if (progress >= max) {
 			if (this.missionStepInterface.getAwarded() && this.claimedState) {
 				this._play(this.claimedState);
@@ -117,6 +126,17 @@ cc.Class({
 				return;
 			}
 		}
+		if (this.claimSequence) {
+			this.claimSequence.playSequence()
+			.then(() => {
+				this.onClaimComplete();
+			});
+		} else {
+			this._play(this.claimState);
+		}
+	},
+
+	onBulkClaim: function(event){
 		if (this.claimSequence) {
 			this.claimSequence.playSequence()
 			.then(() => {

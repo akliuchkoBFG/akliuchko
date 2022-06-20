@@ -6,11 +6,16 @@ const MissionRewardSequence = require('MissionRewardSequence');
 
 cc.Class({
 	extends: BaseMissionStepComponent,
-	mixins: [ComponentLog],
+	mixins: [ComponentLog, cc.EventTarget],
 
 	editor: CC_EDITOR && {
 		requireComponent: MissionRewardSequence,
 		menu: 'Rewards/Missions/Step Sequence',
+	},
+
+	onLoad(){
+		this._super();
+		this.missionStepInterface.missionInterface.on('bulkClaimStepAward', this.onBulkClaim, this);
 	},
 
 	onUpdateMissionStepData() {
@@ -22,7 +27,7 @@ cc.Class({
 	onClaim(evt) {
 		if (evt.detail && evt.detail.stepID === this.missionStepInterface.stepID) {
 			// Claim results may affect sequence, refresh sequence data
-			this.missionStepInterface.missionInterface.targetOff(this);
+			this.missionStepInterface.missionInterface.off('claimedStepAward', this.onClaim, this);
 			this.onUpdateMissionStepData();
 		}
 	},
@@ -56,7 +61,31 @@ cc.Class({
 
 	onDestroy() {
 		try {
-			this.missionStepInterface.missionInterface.targetOff(this);
+			this.missionStepInterface.missionInterface.off('claimedStepAward', this.onClaim, this);
 		} catch (e) {/* Intentionally empty */}
 	},
+
+	onBulkClaim(evt) {
+		let productPackage = {};
+		evt.detail.stepIDs.forEach(function(stepID){
+			let awardData = this.missionStepInterface.missionInterface.getStepAwardPackageData(stepID);
+			//For each award in the product package
+			Object.keys(awardData).forEach(function(awardType){
+				//If we do not have this award type, add it
+				if(!productPackage.hasOwnProperty(awardType)){
+					productPackage[awardType] = [];
+				}
+				awardData[awardType].forEach(function(rewardOfType){
+					productPackage[awardType].push(rewardOfType);
+				});
+			});
+		}, this);
+		this.getComponent(MissionRewardSequence).setRewardsFromProductPackage(productPackage);
+		//Now do the bulk sequence play
+		this.playSequence().bind(this).then(function(){
+			//This update notice gets skipped in this flow, so trigger it manually
+			this.missionStepInterface.missionInterface.triggerMissionUpdateNotice();
+		});
+
+	}
 });

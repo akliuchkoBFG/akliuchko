@@ -1,11 +1,11 @@
 {
 	"assets___direct_publish": {
-		"version": "2.6.0",
-		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/assets___direct_publish/2.6.0.zip",
+		"version": "2.7.0",
+		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/assets___direct_publish/2.7.0.zip",
 		"pathInProject": "assets/direct_publish",
 		"encryption": {
 			"version": "1.0.0",
-			"iv": "a923e6fbc7467ee39e4efffbc99ddb7d"
+			"iv": "02e776790655c818523f2b4040e2c136"
 		}
 	},
 	"extension___asset-import": {
@@ -45,12 +45,12 @@
 		}
 	},
 	"extension___pigbee-utils": {
-		"version": "1.2.0",
-		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___pigbee-utils/1.2.0.zip",
+		"version": "1.2.1",
+		"cloudURL": "https://casinoinbox-a.akamaihd.net/cocosCreatorInternal/sharedAssets/extension___pigbee-utils/1.2.1.zip",
 		"pathInProject": "packages/pigbee-utils",
 		"encryption": {
 			"version": "1.0.0",
-			"iv": "a283724a154e8f51a82d54d0a5b07398"
+			"iv": "8158e4a67981c4967160776a29925b28"
 		}
 	},
 	"extension___reskin-helper": {

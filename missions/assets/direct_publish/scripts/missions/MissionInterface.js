@@ -328,6 +328,10 @@ cc.Class({
 		return this._missionData.tags;
 	},
 
+	getRequireRewarded: function(){
+		return this._missionData.mission.requireAwarded;
+	},
+
 	isMissionAwardClaimed: function() {
 		if (this._missionData && this._missionData.mission) {
 			if (!this._missionData.mission.awardData) {
@@ -395,6 +399,37 @@ cc.Class({
 		});
 	},
 
+	/*
+	 * Claim all steps currently in claimable state
+	 */
+	bulkClaimSteps: function(){
+		const comboID = CasinoCharacterService.playerCharacter.getComboID();
+		const missionID = this.getMissionID();
+		const type = 'player';  // default type for missions
+		const params = [comboID, type, missionID];
+		return SANetworkInterface.serverRequest({
+			controller: 'mission',
+			method: 'awardAllClaimableSteps',
+			params: params,
+			encoding: 'Params',
+		}).bind(this).then(function(result){
+			let stepIDs = result.claimedSteps;
+			let missionData = result.missionData[0];
+			this.updateMissionData(missionData);
+			this.emit('bulkClaimStepAward', {
+				stepIDs,
+			});
+
+			//What does this do?
+			SANotificationCenter.getInstance().postNotification('lobby.shouldRequestLobbyData');
+
+		}).catch(function(error) {
+			this.log.e('BulkClaimSteps failed, ' + error);
+		});
+
+
+	},
+
 	onStepComplete: function() {
 		if (this.isSequential()) {
 			// Trigger a data update for all MissionStepInterfaces and components
@@ -453,6 +488,41 @@ cc.Class({
 		}
 	},
 
+	getClaimableStepIDs: function(){
+		let claimableStepIDs = [];
+		const stepData = this._stepData;
+		const stepDataArray = Object.keys(stepData).map((index) => {
+			return stepData[index];
+		});
+
+		stepDataArray.forEach((step) => {
+			const max = step.data.max || 1;
+			const newProgress = step.data.progress || 0;
+			const stepAwarded = step.data.awarded || false;
+			const hasAward = !!step.data.award || false;
+			if(newProgress >= max && !stepAwarded && hasAward){
+				claimableStepIDs.push(step.id);
+			}
+		});
+		return claimableStepIDs;
+	},
+
+	getStepAwardPackageData: function(stepID){
+		const stepData = this._stepData[stepID];
+		const productPackageRewards = _.cloneDeep(stepData.data.award);
+		if (!productPackageRewards) {
+			return productPackageRewards;
+		}
+		const awardResults = stepData.data.awardResult;
+		const indexByClass = _.mapValues(productPackageRewards, () => { return 0; });
+		awardResults.forEach((awardResult) => {
+			const className = awardResult.class;
+			const currentIndex = indexByClass[className]++;
+			productPackageRewards[className][currentIndex].awardResult = awardResult;
+		});
+		return productPackageRewards;
+	},
+
 	// Command Data //
 
 	// get a copy of the command data
@@ -497,6 +567,11 @@ cc.Class({
 		const commandData = this._missionData.mission.commandData || {};
 		const missionData = commandData[missionKey];
 		return !!missionData;
+	},
+
+	getMissionCommandDataTemplateValue(templateKey) {
+		const commandDataTemplate = this._missionData.mission.commandDataTemplate || {};
+		return commandDataTemplate[templateKey];
 	},
 
 	setCommandDataLocal: function(data){

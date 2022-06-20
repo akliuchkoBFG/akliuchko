@@ -207,6 +207,7 @@ cc.Class({
 		threshold = SAStringUtil.numberAsShortString(threshold, '', true);
 		const chestName = this._getChestName() || '';
 		const vault = this._getVault() || '';
+		const missionToken = this._getMissionToken() || 'Tokens';
 
 		const data = {
 			progress: progress,
@@ -221,6 +222,7 @@ cc.Class({
 			templateString: this.getFormatString(),
 			chestName: chestName,
 			vault: vault,
+			missionToken: missionToken,
 		};
 
 		return data;
@@ -247,6 +249,10 @@ cc.Class({
 
 	_getVault: function() {
 		return this._stepData && this._stepData.data && this._stepData.data.vault;
+	},
+
+	_getMissionToken: function () {
+		return this.missionInterface.getMissionCommandDataTemplateValue('tokenName');
 	},
 
 	getSecondsToUnlock: function getSecondsToUnlock() {

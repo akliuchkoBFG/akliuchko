@@ -88,6 +88,7 @@ cc.Class({
 
 		// on claim
 		this.missionStepInterface.missionInterface.on('claimedStepAward', this.onClaim, this);
+		this.missionStepInterface.missionInterface.on('bulkClaimStepAward', this.onClaim, this);
 	},
 
 	onUpdateMissionStepData: function() {

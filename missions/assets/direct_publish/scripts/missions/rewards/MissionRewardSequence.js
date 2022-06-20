@@ -6,6 +6,8 @@ const ANIM_COMPONENT_PROPERTY = 'animation';
 
 const MissionRewardSequenceItem = require('MissionRewardSequenceItem');
 
+const PRODUCT_PACKAGE_ITEM_CHIPS_TYPE = 'ProductPackageItemChips';
+
 cc.Class({
 	extends: cc.Component,
 	mixins: [ComponentLog, cc.EventTarget],
@@ -55,6 +57,10 @@ cc.Class({
 			ANIM_COMPONENT_PROPERTY,
 			'Animation state for after individual rewards have completed'
 		),
+
+		combineRewards:{
+			default: true,
+		}
 	},
 
 	setRewardsFromProductPackage(rewardItems) {
@@ -71,6 +77,10 @@ cc.Class({
 			.forEach((rewardNode) => {
 				rewardNode.removeFromParent();
 			});
+		}
+		//Combine rewards of the same type if this reward sequence is configured to do so
+		if(this.combineRewards){
+			rewardItems = this.consolidateProductPackageRewards(rewardItems);
 		}
 		this._rewardItems = [];
 		this._productPackage = rewardItems;
@@ -173,5 +183,26 @@ cc.Class({
 				}
 			});
 		});
-	}
+	},
+
+	consolidateProductPackageRewards(rewardItems){
+		//consolidate chips
+		if(!!rewardItems[PRODUCT_PACKAGE_ITEM_CHIPS_TYPE]){
+			let chipItem = {
+				amount:0,
+				order:0,
+				productPackageType: "ProductPackageItemChips",
+				promoData:{
+					amount:0,
+					name: "Chips"
+				}
+			};
+			rewardItems[PRODUCT_PACKAGE_ITEM_CHIPS_TYPE].forEach(function(rewardItem){
+				chipItem.amount += +rewardItem.amount;
+				chipItem.promoData.amount += +rewardItem.promoData.amount
+			});
+			rewardItems[PRODUCT_PACKAGE_ITEM_CHIPS_TYPE] = [chipItem];
+		}
+		return rewardItems;
+	},
 });
