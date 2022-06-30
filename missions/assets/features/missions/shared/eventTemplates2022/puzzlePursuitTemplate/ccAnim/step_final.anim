@@ -389,7 +389,7 @@
           "active": [
             {
               "frame": 0,
-              "value": false
+              "value": true
             }
           ]
         }
@@ -460,6 +460,16 @@
             {
               "frame": 0,
               "value": true
+            }
+          ]
+        }
+      },
+      "steps_final/mission_step/background/step_descriptions/how_to_play_config": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
             }
           ]
         }

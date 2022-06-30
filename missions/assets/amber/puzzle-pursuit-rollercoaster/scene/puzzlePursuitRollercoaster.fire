@@ -192,7 +192,7 @@
         "__id__": 13
       },
       {
-        "__id__": 49
+        "__id__": 43
       }
     ],
     "_tag": -1,
@@ -389,14 +389,14 @@
         "__id__": 14
       },
       {
-        "__id__": 42
+        "__id__": 36
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 40
+        "__id__": 34
       }
     ],
     "_prefab": null,
@@ -508,7 +508,7 @@
   {
     "__type__": "SceneDataMapping",
     "dataKey": "flavorText",
-    "dataText": "to collect a photo 5!"
+    "dataText": "in any slot!"
   },
   {
     "__type__": "84d4bOQw89HLp+VLJrIjHfk",
@@ -523,7 +523,7 @@
     },
     "flavorKey": "flavorText",
     "stepTextValues": [
-      "to begin collecting!",
+      "in any slot!",
       "to collect a photo 2!",
       "to collect a photo 3!",
       "to collect a photo 4!",
@@ -542,12 +542,14 @@
     "missionInterface": {
       "__id__": 23
     },
-    "dependentSteps": [],
-    "predecessorSteps": [
+    "dependentSteps": [
       7
     ],
+    "predecessorSteps": [
+      5
+    ],
     "useActiveStepIDOnly": true,
-    "_N$stepID": "8"
+    "_N$stepID": "6"
   },
   {
     "__type__": "cc.Node",
@@ -797,10 +799,10 @@
         "__id__": 29
       },
       {
-        "__id__": 35
+        "__id__": 71
       },
       {
-        "__id__": 77
+        "__id__": 81
       },
       {
         "__id__": 87
@@ -936,190 +938,6 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "mission_description",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 26
-    },
-    "_children": [
-      {
-        "__id__": 30
-      }
-    ],
-    "_tag": -1,
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 33
-      },
-      {
-        "__id__": 34
-      }
-    ],
-    "_prefab": null,
-    "_id": "6d7l9lwqNIg7cw6HNZwmAZ",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 358,
-      "height": 60
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 2,
-      "y": 231
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "mission_description",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 29
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 31
-      },
-      {
-        "__id__": 32
-      }
-    ],
-    "_prefab": null,
-    "_id": "03C6siVchIb4Xhfa5TeCpY",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 358,
-      "height": 60
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": -0.9,
-      "y": 1.9
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.RichText",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 30
-    },
-    "_enabled": true,
-    "_N$string": "<color=#ffffff>Play in any slot to complete your puzzle and win prizes!</color>",
-    "_N$horizontalAlign": 1,
-    "_N$fontSize": 24,
-    "_N$font": {
-      "__uuid__": "1170fbc2-24a6-4613-99e6-bf019c9b1972"
-    },
-    "_N$maxWidth": 358,
-    "_N$lineHeight": 30,
-    "_N$imageAtlas": {
-      "__uuid__": "1170fbc2-24a6-4613-99e6-bf019c9b1972"
-    }
-  },
-  {
-    "__type__": "9a543mUiaVNGrhvrK+8Urny",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 30
-    },
-    "_enabled": true,
-    "styles": [],
-    "_N$parentStyle": {
-      "__id__": 6
-    },
-    "_N$labelType": 1,
-    "_N$styleString": "<style-primary>Play in</style-primary> <style-highlight>Tiara's Treasure: Summer Remix</style-highlight> <style-primary>to collect photos and win prizes!</style-primary>"
-  },
-  {
-    "__type__": "cc.RichText",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 29
-    },
-    "_enabled": true,
-    "_N$string": "<color=#000000>Play in any slot to complete your puzzle and win prizes!</color>",
-    "_N$horizontalAlign": 1,
-    "_N$fontSize": 24,
-    "_N$font": {
-      "__uuid__": "1170fbc2-24a6-4613-99e6-bf019c9b1972"
-    },
-    "_N$maxWidth": 358,
-    "_N$lineHeight": 30,
-    "_N$imageAtlas": {
-      "__uuid__": "1170fbc2-24a6-4613-99e6-bf019c9b1972"
-    }
-  },
-  {
-    "__type__": "9a543mUiaVNGrhvrK+8Urny",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 29
-    },
-    "_enabled": true,
-    "styles": [],
-    "_N$parentStyle": {
-      "__id__": 6
-    },
-    "_N$labelType": 2,
-    "_N$styleString": "<style-primary>Play in</style-primary> <style-highlight>Tiara's Treasure: Summer Remix</style-highlight> <style-primary>to collect photos and win prizes!</style-primary>"
-  },
-  {
-    "__type__": "cc.Node",
     "_name": "step_descriptions",
     "_objFlags": 0,
     "_parent": {
@@ -1127,10 +945,10 @@
     },
     "_children": [
       {
-        "__id__": 36
+        "__id__": 30
       },
       {
-        "__id__": 65
+        "__id__": 59
       }
     ],
     "_tag": -1,
@@ -1178,27 +996,27 @@
     "_name": "how_to_play_config",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 35
+      "__id__": 29
     },
     "_children": [
       {
-        "__id__": 37
+        "__id__": 31
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 61
+        "__id__": 55
       },
       {
-        "__id__": 62
+        "__id__": 56
       },
       {
-        "__id__": 63
+        "__id__": 57
       },
       {
-        "__id__": 64
+        "__id__": 58
       }
     ],
     "_prefab": null,
@@ -1220,7 +1038,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 350,
-      "height": 54
+      "height": 27
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -1243,23 +1061,23 @@
     "_name": "how_to_play_config",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 36
+      "__id__": 30
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 38
+        "__id__": 32
       },
       {
-        "__id__": 39
+        "__id__": 33
       },
       {
-        "__id__": 46
+        "__id__": 40
       },
       {
-        "__id__": 47
+        "__id__": 41
       }
     ],
     "_prefab": null,
@@ -1281,7 +1099,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 350,
-      "height": 54
+      "height": 27
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -1304,10 +1122,10 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 37
+      "__id__": 31
     },
     "_enabled": true,
-    "_N$string": "<color=#f5ff00>Bet a total of 1M</color><color=#ffffff> to collect a photo 5!</color>",
+    "_N$string": "<color=#f5ff00>Bet a total of 1M</color><color=#ffffff> in any slot!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 24,
     "_N$font": {
@@ -1322,11 +1140,11 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 37
+      "__id__": 31
     },
     "_enabled": true,
     "sceneDataAggregator": {
-      "__id__": 40
+      "__id__": 34
     },
     "_validPreview": true,
     "_N$templateString": "<style-highlight>Bet a total of {max}</style-highlight><style-primary> {flavorText}</style-primary>",
@@ -1345,11 +1163,11 @@
         "__id__": 15
       },
       {
-        "__id__": 41
+        "__id__": 35
       }
     ],
     "sceneDataMap": {
-      "flavorText": "to collect a photo 5!",
+      "flavorText": "in any slot!",
       "flavorAccent": "Accent 5"
     }
   },
@@ -1358,15 +1176,15 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 42
+      "__id__": 36
     },
     "_enabled": true,
     "sceneData": [
       {
-        "__id__": 44
+        "__id__": 38
       },
       {
-        "__id__": 45
+        "__id__": 39
       }
     ]
   },
@@ -1382,10 +1200,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 41
+        "__id__": 35
       },
       {
-        "__id__": 43
+        "__id__": 37
       }
     ],
     "_prefab": null,
@@ -1430,7 +1248,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 42
+      "__id__": 36
     },
     "_enabled": true,
     "missionStepInterface": {
@@ -1461,7 +1279,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 37
+      "__id__": 31
     },
     "_enabled": true,
     "styles": [],
@@ -1469,21 +1287,21 @@
       "__id__": 6
     },
     "_N$labelType": 1,
-    "_N$styleString": "<style-highlight>Bet a total of 1M</style-highlight><style-primary> to collect a photo 5!</style-primary>"
+    "_N$styleString": "<style-highlight>Bet a total of 1M</style-highlight><style-primary> in any slot!</style-primary>"
   },
   {
     "__type__": "7fac4uD0npKXpWkApNeqDnt",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 37
+      "__id__": 31
     },
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 18
     },
     "textConfiguration": {
-      "__id__": 48
+      "__id__": 42
     }
   },
   {
@@ -1491,27 +1309,27 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 49
+      "__id__": 43
     },
     "_enabled": true,
     "previewLabel": {
-      "__id__": 52
+      "__id__": 46
     },
     "configs": [
       {
-        "__id__": 56
+        "__id__": 50
       },
       {
-        "__id__": 57
+        "__id__": 51
       },
       {
-        "__id__": 58
+        "__id__": 52
       },
       {
-        "__id__": 59
+        "__id__": 53
       },
       {
-        "__id__": 60
+        "__id__": 54
       }
     ],
     "_N$previewStepID": 0
@@ -1525,17 +1343,17 @@
     },
     "_children": [
       {
-        "__id__": 50
+        "__id__": 44
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 55
+        "__id__": 49
       },
       {
-        "__id__": 48
+        "__id__": 42
       }
     ],
     "_prefab": null,
@@ -1580,23 +1398,23 @@
     "_name": "editor_preview",
     "_objFlags": 16,
     "_parent": {
-      "__id__": 49
+      "__id__": 43
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 51
+        "__id__": 45
       },
       {
-        "__id__": 52
+        "__id__": 46
       },
       {
-        "__id__": 53
+        "__id__": 47
       },
       {
-        "__id__": 54
+        "__id__": 48
       }
     ],
     "_prefab": null,
@@ -1641,10 +1459,10 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 50
+      "__id__": 44
     },
     "_enabled": true,
-    "_N$string": "<color=#f5ff00>Bet a total of 10</color><color=#ffffff> to finish your collection! Accent 6</color>",
+    "_N$string": "<color=#f5ff00>Bet a total of 10 coins</color><color=#ffffff> in any slot! Accent 5</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 24,
     "_N$font": {
@@ -1659,14 +1477,14 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 50
+      "__id__": 44
     },
     "_enabled": true,
     "sceneDataAggregator": {
-      "__id__": 40
+      "__id__": 34
     },
     "_validPreview": true,
-    "_N$templateString": "<style-highlight>Bet a total of {max}</style-highlight><style-primary> {flavorText} {flavorAccent}</style-primary>",
+    "_N$templateString": "<style-highlight>Bet a total of {max} coins</style-highlight><style-primary> {flavorText} {flavorAccent}</style-primary>",
     "_N$testData": "{\n\t\"progress\": \"0\",\n\t\"max\": \"10\",\n\t\"slotname\": \"Tiara's Treasure Summer Remix\",\n\t\"giftname\": \"\",\n\t\"minbet\": \"500K\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null\n}"
   },
   {
@@ -1674,7 +1492,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 50
+      "__id__": 44
     },
     "_enabled": true,
     "styles": [],
@@ -1682,14 +1500,14 @@
       "__id__": 6
     },
     "_N$labelType": 1,
-    "_N$styleString": "<style-highlight>Bet a total of 10</style-highlight><style-primary> to finish your collection! Accent 6</style-primary>"
+    "_N$styleString": "<style-highlight>Bet a total of 10 coins</style-highlight><style-primary> in any slot! Accent 5</style-primary>"
   },
   {
     "__type__": "87f56mqWQ9J6q39c1oX0JhU",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 50
+      "__id__": 44
     },
     "_enabled": true
   },
@@ -1698,7 +1516,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 49
+      "__id__": 43
     },
     "_enabled": true,
     "missionInterface": {
@@ -1761,10 +1579,10 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 36
+      "__id__": 30
     },
     "_enabled": true,
-    "_N$string": "<color=#5102fa>Bet a total of 1M</color><color=#000000> to collect a photo 5!</color>",
+    "_N$string": "<color=#5102fa>Bet a total of 1M</color><color=#000000> in any slot!</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 24,
     "_N$font": {
@@ -1779,11 +1597,11 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 36
+      "__id__": 30
     },
     "_enabled": true,
     "sceneDataAggregator": {
-      "__id__": 40
+      "__id__": 34
     },
     "_validPreview": true,
     "_N$templateString": "<style-highlight>Bet a total of {max}</style-highlight><style-primary> {flavorText}</style-primary>",
@@ -1794,7 +1612,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 36
+      "__id__": 30
     },
     "_enabled": true,
     "styles": [],
@@ -1802,21 +1620,21 @@
       "__id__": 6
     },
     "_N$labelType": 2,
-    "_N$styleString": "<style-highlight>Bet a total of 1M</style-highlight><style-primary> to collect a photo 5!</style-primary>"
+    "_N$styleString": "<style-highlight>Bet a total of 1M</style-highlight><style-primary> in any slot!</style-primary>"
   },
   {
     "__type__": "7fac4uD0npKXpWkApNeqDnt",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 36
+      "__id__": 30
     },
     "_enabled": true,
     "missionStepInterface": {
       "__id__": 18
     },
     "textConfiguration": {
-      "__id__": 48
+      "__id__": 42
     }
   },
   {
@@ -1824,24 +1642,24 @@
     "_name": "mission_completed",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 35
+      "__id__": 29
     },
     "_children": [
       {
-        "__id__": 66
+        "__id__": 60
       },
       {
-        "__id__": 69
+        "__id__": 63
       }
     ],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 75
+        "__id__": 69
       },
       {
-        "__id__": 76
+        "__id__": 70
       }
     ],
     "_prefab": null,
@@ -1886,17 +1704,17 @@
     "_name": "mission_completed",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 65
+      "__id__": 59
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 67
+        "__id__": 61
       },
       {
-        "__id__": 68
+        "__id__": 62
       }
     ],
     "_prefab": null,
@@ -1941,7 +1759,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 66
+      "__id__": 60
     },
     "_enabled": true,
     "_N$string": "<color=#f5ff00>Congratulations!</color>\n",
@@ -1959,7 +1777,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 66
+      "__id__": 60
     },
     "_enabled": true,
     "styles": [],
@@ -1974,21 +1792,21 @@
     "_name": "mission_completed_subheader",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 65
+      "__id__": 59
     },
     "_children": [
       {
-        "__id__": 70
+        "__id__": 64
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 73
+        "__id__": 67
       },
       {
-        "__id__": 74
+        "__id__": 68
       }
     ],
     "_prefab": null,
@@ -2033,17 +1851,17 @@
     "_name": "mission_completed_subheader",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 69
+      "__id__": 63
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 71
+        "__id__": 65
       },
       {
-        "__id__": 72
+        "__id__": 66
       }
     ],
     "_prefab": null,
@@ -2088,7 +1906,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 70
+      "__id__": 64
     },
     "_enabled": true,
     "_N$string": "<color=#ff0000>You've completed the album!</color>",
@@ -2106,7 +1924,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 70
+      "__id__": 64
     },
     "_enabled": true,
     "styles": [],
@@ -2121,7 +1939,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 69
+      "__id__": 63
     },
     "_enabled": true,
     "_N$string": "<color=#000000>You've completed the album!</color>",
@@ -2139,7 +1957,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 69
+      "__id__": 63
     },
     "_enabled": true,
     "styles": [],
@@ -2154,7 +1972,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 65
+      "__id__": 59
     },
     "_enabled": true,
     "_N$string": "<color=#000000>Congratulations!</color>\n",
@@ -2172,7 +1990,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 65
+      "__id__": 59
     },
     "_enabled": true,
     "styles": [],
@@ -2191,14 +2009,14 @@
     },
     "_children": [
       {
-        "__id__": 78
+        "__id__": 72
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 86
+        "__id__": 80
       }
     ],
     "_prefab": null,
@@ -2243,21 +2061,21 @@
     "_name": "mission_timer",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 77
+      "__id__": 71
     },
     "_children": [
       {
-        "__id__": 79
+        "__id__": 73
       },
       {
-        "__id__": 81
+        "__id__": 75
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 85
+        "__id__": 79
       }
     ],
     "_prefab": null,
@@ -2287,8 +2105,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -4,
-      "y": -0.2
+      "x": -0.1,
+      "y": -0.6
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -2302,14 +2120,14 @@
     "_name": "timer_label",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 78
+      "__id__": 72
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 80
+        "__id__": 74
       }
     ],
     "_prefab": null,
@@ -2354,7 +2172,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 79
+      "__id__": 73
     },
     "_enabled": true,
     "_useOriginalSize": false,
@@ -2378,20 +2196,20 @@
     "_name": "mission_timer",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 78
+      "__id__": 72
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 82
+        "__id__": 76
       },
       {
-        "__id__": 83
+        "__id__": 77
       },
       {
-        "__id__": 84
+        "__id__": 78
       }
     ],
     "_prefab": null,
@@ -2436,7 +2254,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 81
+      "__id__": 75
     },
     "_enabled": true,
     "_useOriginalSize": false,
@@ -2460,7 +2278,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 81
+      "__id__": 75
     },
     "_enabled": true,
     "onFinished": [],
@@ -2474,7 +2292,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 81
+      "__id__": 75
     },
     "_enabled": true,
     "missionInterface": {
@@ -2486,7 +2304,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 78
+      "__id__": 72
     },
     "_enabled": true,
     "_layoutSize": {
@@ -2517,7 +2335,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 77
+      "__id__": 71
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -2537,6 +2355,190 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_atlas": null
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "mission_description",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 26
+    },
+    "_children": [
+      {
+        "__id__": 82
+      }
+    ],
+    "_tag": -1,
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 85
+      },
+      {
+        "__id__": 86
+      }
+    ],
+    "_prefab": null,
+    "_id": "6d7l9lwqNIg7cw6HNZwmAZ",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 358,
+      "height": 60
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 2,
+      "y": 231
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "mission_description",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 81
+    },
+    "_children": [],
+    "_tag": -1,
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 83
+      },
+      {
+        "__id__": 84
+      }
+    ],
+    "_prefab": null,
+    "_id": "03C6siVchIb4Xhfa5TeCpY",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 358,
+      "height": 60
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -0.9,
+      "y": 1.9
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.RichText",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 82
+    },
+    "_enabled": true,
+    "_N$string": "<color=#ffffff>Play</color> <color=#f5ff00>in any slot</color> <color=#ffffff>to complete your puzzle and </color><color=#f5ff00>win prizes!</color>",
+    "_N$horizontalAlign": 1,
+    "_N$fontSize": 24,
+    "_N$font": {
+      "__uuid__": "1170fbc2-24a6-4613-99e6-bf019c9b1972"
+    },
+    "_N$maxWidth": 358,
+    "_N$lineHeight": 30,
+    "_N$imageAtlas": {
+      "__uuid__": "1170fbc2-24a6-4613-99e6-bf019c9b1972"
+    }
+  },
+  {
+    "__type__": "9a543mUiaVNGrhvrK+8Urny",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 82
+    },
+    "_enabled": true,
+    "styles": [],
+    "_N$parentStyle": {
+      "__id__": 6
+    },
+    "_N$labelType": 1,
+    "_N$styleString": "<style-primary>Play in</style-primary> <style-highlight>Tiara's Treasure: Summer Remix</style-highlight> <style-primary>to collect photos and win prizes!</style-primary>"
+  },
+  {
+    "__type__": "cc.RichText",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 81
+    },
+    "_enabled": true,
+    "_N$string": "<color=#000000>Play in any slot to complete your puzzle and win prizes!</color>",
+    "_N$horizontalAlign": 1,
+    "_N$fontSize": 24,
+    "_N$font": {
+      "__uuid__": "1170fbc2-24a6-4613-99e6-bf019c9b1972"
+    },
+    "_N$maxWidth": 358,
+    "_N$lineHeight": 30,
+    "_N$imageAtlas": {
+      "__uuid__": "1170fbc2-24a6-4613-99e6-bf019c9b1972"
+    }
+  },
+  {
+    "__type__": "9a543mUiaVNGrhvrK+8Urny",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 81
+    },
+    "_enabled": true,
+    "styles": [],
+    "_N$parentStyle": {
+      "__id__": 6
+    },
+    "_N$labelType": 2,
+    "_N$styleString": "<style-primary>Play in</style-primary> <style-highlight>Tiara's Treasure: Summer Remix</style-highlight> <style-primary>to collect photos and win prizes!</style-primary>"
   },
   {
     "__type__": "cc.Node",
@@ -4469,7 +4471,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "17fede28-4393-4768-8df6-17f5d8125b0e"
+      "__uuid__": "0ad93ad4-78e8-4ca8-99a4-020875af0d07"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -4512,7 +4514,7 @@
     "duration": 0.1,
     "zoomScale": 1.2,
     "pressedSprite": {
-      "__uuid__": "5332ee7a-7076-4ffc-addf-e878a8098a58"
+      "__uuid__": "f8ee4faf-a402-4aa4-a1a3-32c30628f0a3"
     },
     "hoverSprite": null,
     "clickEvents": [
@@ -4537,7 +4539,7 @@
       "a": 255
     },
     "_N$normalSprite": {
-      "__uuid__": "17fede28-4393-4768-8df6-17f5d8125b0e"
+      "__uuid__": "0ad93ad4-78e8-4ca8-99a4-020875af0d07"
     },
     "_N$disabledSprite": null,
     "_N$target": {
@@ -4807,7 +4809,7 @@
     "missionStepInterface": {
       "__id__": 18
     },
-    "buyInID": 782,
+    "buyInID": 0,
     "index": 0
   },
   {
@@ -6028,7 +6030,7 @@
     "missionInterface": {
       "__id__": 23
     },
-    "_N$missionJSONString": "{\"templateID\":52,\"templateVersion\":12,\"id\":420,\"source\":\"testThis1\",\"tags\":[\"tech art test\"],\"secondsActive\":5577,\"secondsRemaining\":1204023,\"mission\":{\"steps\":[{\"progress\":1000000,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"109690000\",\"newBalance\":10852663576}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":1,\"tier\":5,\"finalCount\":13,\"chestID\":\"season9BFC.colossal\",\"nextSeason\":false}}],\"loopStep\":-1,\"includeReelRivals\":false},{\"progress\":1000000,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000000\",\"newBalance\":10862663576}},{\"class\":\"ProductPackageItemClubChips\",\"result\":[]}],\"loopStep\":-1,\"includeReelRivals\":false},{\"progress\":1000000,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"182820000\",\"newBalance\":11411123576}}],\"loopStep\":-1,\"includeReelRivals\":false},{\"progress\":1000000,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"182820000\",\"newBalance\":11776763576}}],\"loopStep\":-1,\"includeReelRivals\":false},{\"progress\":1000000,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000000\",\"newBalance\":11786763576}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":1,\"tier\":5,\"finalCount\":14,\"chestID\":\"season9BFC.colossal\",\"nextSeason\":false}},{\"class\":\"ProductPackageItemClubChips\",\"result\":[]}],\"loopStep\":-1,\"includeReelRivals\":false},{\"progress\":1000000,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"182820000\",\"newBalance\":11969583576}}],\"loopStep\":-1,\"includeReelRivals\":false},{\"progress\":1000000,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"182820000\",\"newBalance\":12152403576}}],\"loopStep\":-1,\"includeReelRivals\":false},{\"progress\":1000000,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"109690000\",\"newBalance\":12262093576}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":1,\"tier\":5,\"finalCount\":15,\"chestID\":\"season9BFC.colossal\",\"nextSeason\":false}}],\"loopStep\":-1,\"includeReelRivals\":false},{\"progress\":1000000,\"awarded\":false,\"awardResult\":[],\"loopStep\":-1,\"includeReelRivals\":false}],\"awardResult\":[],\"commandData\":{\"public\":[]},\"stepTemplateMap\":[],\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepBet\",\"data\":{\"max\":1000000,\"progress\":1000000,\"id\":0,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"109690000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"109690000\"}}],\"ProductPackageItemCollectionChest\":[{\"order\":1,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season9BFC.colossal\",\"nextSeason\":false}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"109690000\",\"newBalance\":10852663576}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":1,\"tier\":5,\"finalCount\":13,\"chestID\":\"season9BFC.colossal\",\"nextSeason\":false}}],\"loopStep\":-1,\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1000000,\"progress\":1000000,\"id\":1,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemClubChips\":[{\"order\":1,\"title\":\"Beach Town Bonus\",\"text\":\"has won a bonus for playing Beach Town!\",\"amount\":\"10000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"10000\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000000\",\"newBalance\":10862663576}},{\"class\":\"ProductPackageItemClubChips\",\"result\":[]}],\"loopStep\":-1,\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1000000,\"progress\":1000000,\"id\":2,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"182820000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"182820000\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"182820000\",\"newBalance\":11411123576}}],\"loopStep\":-1,\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1000000,\"progress\":1000000,\"id\":3,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"182820000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"182820000\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"182820000\",\"newBalance\":11776763576}}],\"loopStep\":-1,\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1000000,\"progress\":1000000,\"id\":4,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemCollectionChest\":[{\"order\":2,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season9BFC.colossal\",\"nextSeason\":false}}],\"ProductPackageItemClubChips\":[{\"order\":1,\"title\":\"Beach Town Bonus\",\"text\":\"has won a bonus for playing Beach Town!\",\"amount\":\"10000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"10000\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000000\",\"newBalance\":11786763576}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":1,\"tier\":5,\"finalCount\":14,\"chestID\":\"season9BFC.colossal\",\"nextSeason\":false}},{\"class\":\"ProductPackageItemClubChips\",\"result\":[]}],\"loopStep\":-1,\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[5],\"predecessors\":[3],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1000000,\"progress\":1000000,\"id\":5,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"182820000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"182820000\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"182820000\",\"newBalance\":11969583576}}],\"loopStep\":-1,\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[6],\"predecessors\":[4],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1000000,\"progress\":1000000,\"id\":6,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"182820000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"182820000\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"182820000\",\"newBalance\":12152403576}}],\"loopStep\":-1,\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[7],\"predecessors\":[5],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1000000,\"progress\":1000000,\"id\":7,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"109690000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"109690000\"}}],\"ProductPackageItemCollectionChest\":[{\"order\":1,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season9BFC.colossal\",\"nextSeason\":false}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"109690000\",\"newBalance\":12262093576}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":1,\"tier\":5,\"finalCount\":15,\"chestID\":\"season9BFC.colossal\",\"nextSeason\":false}}],\"loopStep\":-1,\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[8],\"predecessors\":[6],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1000000,\"progress\":1000000,\"id\":8,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"182820000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"182820000\"}}],\"ProductPackageItemCollectionChest\":[{\"order\":1,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season9BFC.colossal\",\"nextSeason\":false}}],\"ProductPackageItemClubChips\":[{\"order\":2,\"title\":\"Beach Town Bonus\",\"text\":\"has won a bonus for playing Beach Town!\",\"amount\":\"10000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"10000\"}}]},\"awarded\":false,\"awardResult\":[],\"loopStep\":-1,\"includeReelRivals\":false,\"state\":\"complete\",\"edges\":[],\"predecessors\":[7],\"formatString\":\"Bet a total of {max}\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[5],[6],[7],[8],[]],\"predecessors\":[[],[0],[1],[2],[3],[4],[5],[6],[7]]}},\"requireAwarded\":true,\"awardData\":null,\"manifest\":{\"tray_icon\":\"https://sagnetstorage-a.akamaihd.net/images_st/direct_publish/missions/tray_icons/Beach_Town_Tray_Icon@2x.png\",\"main_popup\":{\"name\":\"\",\"url\":\"\",\"hash\":\"\"}},\"commandDataTemplate\":[],\"awarded\":false},\"slotsData\":[],\"giftsData\":[],\"missionIap\":[]}",
+    "_N$missionJSONString": "{\"templateID\":52,\"templateVersion\":12,\"id\":\"420\",\"source\":\"testThis1\",\"tags\":[\"tech art test\"],\"secondsActive\":70789,\"secondsRemaining\":1138811,\"mission\":{\"steps\":[{\"progress\":1000000,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"109690000\",\"newBalance\":10852663576}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":1,\"tier\":5,\"finalCount\":13,\"chestID\":\"season9BFC.colossal\",\"nextSeason\":false}}],\"loopStep\":-1,\"includeReelRivals\":false},{\"progress\":1000000,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000000\",\"newBalance\":10862663576}},{\"class\":\"ProductPackageItemClubChips\",\"result\":[]}],\"loopStep\":-1,\"includeReelRivals\":false},{\"progress\":1000000,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"182820000\",\"newBalance\":11411123576}}],\"loopStep\":-1,\"includeReelRivals\":false},{\"progress\":1000000,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"182820000\",\"newBalance\":11776763576}}],\"loopStep\":-1,\"includeReelRivals\":false},{\"progress\":1000000,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000000\",\"newBalance\":11786763576}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":1,\"tier\":5,\"finalCount\":14,\"chestID\":\"season9BFC.colossal\",\"nextSeason\":false}},{\"class\":\"ProductPackageItemClubChips\",\"result\":[]}],\"loopStep\":-1,\"includeReelRivals\":false},{\"progress\":1000000,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"182820000\",\"newBalance\":11969583576}}],\"loopStep\":-1,\"includeReelRivals\":false},{\"progress\":1000000,\"awarded\":false,\"awardResult\":[],\"loopStep\":-1,\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"loopStep\":-1,\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"loopStep\":-1,\"includeReelRivals\":false}],\"awardResult\":[],\"commandData\":{\"public\":[]},\"stepTemplateMap\":[],\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepBet\",\"data\":{\"max\":1000000,\"progress\":1000000,\"id\":0,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"109690000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"109690000\"}}],\"ProductPackageItemCollectionChest\":[{\"order\":1,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season9BFC.colossal\",\"nextSeason\":false}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"109690000\",\"newBalance\":10852663576}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":1,\"tier\":5,\"finalCount\":13,\"chestID\":\"season9BFC.colossal\",\"nextSeason\":false}}],\"loopStep\":-1,\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1000000,\"progress\":1000000,\"id\":1,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemClubChips\":[{\"order\":1,\"title\":\"Beach Town Bonus\",\"text\":\"has won a bonus for playing Beach Town!\",\"amount\":\"10000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"10000\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000000\",\"newBalance\":10862663576}},{\"class\":\"ProductPackageItemClubChips\",\"result\":[]}],\"loopStep\":-1,\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1000000,\"progress\":1000000,\"id\":2,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"182820000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"182820000\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"182820000\",\"newBalance\":11411123576}}],\"loopStep\":-1,\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1000000,\"progress\":1000000,\"id\":3,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"182820000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"182820000\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"182820000\",\"newBalance\":11776763576}}],\"loopStep\":-1,\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1000000,\"progress\":1000000,\"id\":4,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemCollectionChest\":[{\"order\":2,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season9BFC.colossal\",\"nextSeason\":false}}],\"ProductPackageItemClubChips\":[{\"order\":1,\"title\":\"Beach Town Bonus\",\"text\":\"has won a bonus for playing Beach Town!\",\"amount\":\"10000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"10000\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000000\",\"newBalance\":11786763576}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":1,\"tier\":5,\"finalCount\":14,\"chestID\":\"season9BFC.colossal\",\"nextSeason\":false}},{\"class\":\"ProductPackageItemClubChips\",\"result\":[]}],\"loopStep\":-1,\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[5],\"predecessors\":[3],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1000000,\"progress\":1000000,\"id\":5,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"182820000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"182820000\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"182820000\",\"newBalance\":11969583576}}],\"loopStep\":-1,\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[6],\"predecessors\":[4],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1000000,\"progress\":1000000,\"id\":6,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"182820000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"182820000\"}}]},\"awarded\":false,\"awardResult\":[],\"loopStep\":-1,\"includeReelRivals\":false,\"state\":\"complete\",\"edges\":[7],\"predecessors\":[5],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1000000,\"progress\":0,\"id\":7,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"109690000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"109690000\"}}],\"ProductPackageItemCollectionChest\":[{\"order\":1,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season9BFC.colossal\",\"nextSeason\":false}}]},\"awarded\":false,\"awardResult\":[],\"loopStep\":-1,\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[8],\"predecessors\":[6],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1000000,\"progress\":0,\"id\":8,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"182820000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"182820000\"}}],\"ProductPackageItemCollectionChest\":[{\"order\":1,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season9BFC.colossal\",\"nextSeason\":false}}],\"ProductPackageItemClubChips\":[{\"order\":2,\"title\":\"Beach Town Bonus\",\"text\":\"has won a bonus for playing Beach Town!\",\"amount\":\"10000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"10000\"}}]},\"awarded\":false,\"awardResult\":[],\"loopStep\":-1,\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[],\"predecessors\":[7],\"formatString\":\"Bet a total of {max}\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[5],[6],[7],[8],[]],\"predecessors\":[[],[0],[1],[2],[3],[4],[5],[6],[7]]}},\"requireAwarded\":true,\"awardData\":null,\"manifest\":{\"tray_icon\":\"https://sagnetstorage-a.akamaihd.net/images_st/direct_publish/missions/tray_icons/Beach_Town_Tray_Icon@2x.png\",\"main_popup\":{\"name\":\"\",\"url\":\"\",\"hash\":\"\"}},\"commandDataTemplate\":[],\"awarded\":\"0\"},\"slotsData\":[],\"giftsData\":[],\"missionIap\":[]}",
     "_N$instantiateMissionTrigger": true,
     "_N$retrieveMissionTrigger": false,
     "_N$updatePreviewDataTrigger": true,
