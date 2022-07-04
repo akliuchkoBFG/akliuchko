@@ -528,6 +528,9 @@
       "in any slot!",
       "in any slot!",
       "in any slot!",
+      "in any slot!",
+      "in any slot!",
+      "in any slot!",
       "to finish your collection!"
     ]
   },
@@ -542,12 +545,14 @@
     "missionInterface": {
       "__id__": 23
     },
-    "dependentSteps": [],
-    "predecessorSteps": [
+    "dependentSteps": [
       7
     ],
+    "predecessorSteps": [
+      5
+    ],
     "useActiveStepIDOnly": true,
-    "_N$stepID": "8"
+    "_N$stepID": "6"
   },
   {
     "__type__": "cc.Node",
@@ -1146,7 +1151,7 @@
     },
     "_validPreview": true,
     "_N$templateString": "<style-highlight>Bet a total of {max} {currencyLower}</style-highlight>\n<style-primary> {flavorText}</style-primary>",
-    "_N$testData": "{\n\t\"progress\": \"1M\",\n\t\"max\": \"1M\",\n\t\"slotname\": \"\",\n\t\"slotnameUpper\": \"\",\n\t\"giftname\": \"gifts\",\n\t\"minbet\": \"0\",\n\t\"threshold\": \"\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null,\n\t\"chestName\": \"\",\n\t\"vault\": \"\",\n\t\"missionToken\": \"Tokens\"\n}"
+    "_N$testData": "{\n\t\"progress\": \"0\",\n\t\"max\": \"1M\",\n\t\"slotname\": \"\",\n\t\"slotnameUpper\": \"\",\n\t\"giftname\": \"gifts\",\n\t\"minbet\": \"0\",\n\t\"threshold\": \"\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null,\n\t\"chestName\": \"\",\n\t\"vault\": \"\",\n\t\"missionToken\": \"Tokens\"\n}"
   },
   {
     "__type__": "42021Vb/mtMl6YCfmxL36jf",
@@ -1603,7 +1608,7 @@
     },
     "_validPreview": true,
     "_N$templateString": "<style-highlight>Bet a total of {max} {currencyLower}</style-highlight>\n<style-primary> {flavorText}</style-primary>",
-    "_N$testData": "{\n\t\"progress\": \"1M\",\n\t\"max\": \"1M\",\n\t\"slotname\": \"\",\n\t\"slotnameUpper\": \"\",\n\t\"giftname\": \"gifts\",\n\t\"minbet\": \"0\",\n\t\"threshold\": \"\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null,\n\t\"chestName\": \"\",\n\t\"vault\": \"\",\n\t\"missionToken\": \"Tokens\"\n}"
+    "_N$testData": "{\n\t\"progress\": \"0\",\n\t\"max\": \"1M\",\n\t\"slotname\": \"\",\n\t\"slotnameUpper\": \"\",\n\t\"giftname\": \"gifts\",\n\t\"minbet\": \"0\",\n\t\"threshold\": \"\",\n\t\"currencyUpper\": \"CHIPS\",\n\t\"currencyLower\": \"chips\",\n\t\"templateString\": null,\n\t\"chestName\": \"\",\n\t\"vault\": \"\",\n\t\"missionToken\": \"Tokens\"\n}"
   },
   {
     "__type__": "9a543mUiaVNGrhvrK+8Urny",
@@ -2740,7 +2745,7 @@
       "y": 0
     },
     "_fillStart": 0,
-    "_fillRange": 1,
+    "_fillRange": 0,
     "_isTrimmedMode": true,
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
@@ -6034,7 +6039,7 @@
     "missionInterface": {
       "__id__": 23
     },
-    "_N$missionJSONString": "null",
+    "_N$missionJSONString": "{\"templateID\":52,\"templateVersion\":12,\"id\":363,\"source\":\"testThis1\",\"tags\":[\"tech art test\"],\"secondsActive\":15702,\"secondsRemaining\":1193898,\"mission\":{\"steps\":[{\"progress\":1000000,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"109690000\",\"newBalance\":3570230000}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":1,\"tier\":5,\"finalCount\":13,\"chestID\":\"season9BFC.colossal\",\"nextSeason\":false}}],\"loopStep\":-1,\"includeReelRivals\":false},{\"progress\":1000000,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000000\",\"newBalance\":3580230000}},{\"class\":\"ProductPackageItemClubChips\",\"result\":[]}],\"loopStep\":-1,\"includeReelRivals\":false},{\"progress\":1000000,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"182820000\",\"newBalance\":3763050000}}],\"loopStep\":-1,\"includeReelRivals\":false},{\"progress\":1000000,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"182820000\",\"newBalance\":3945870000}}],\"loopStep\":-1,\"includeReelRivals\":false},{\"progress\":1000000,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000000\",\"newBalance\":6070010000}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":1,\"tier\":5,\"finalCount\":22,\"chestID\":\"season9BFC.colossal\",\"nextSeason\":false}},{\"class\":\"ProductPackageItemClubChips\",\"result\":[]}],\"loopStep\":-1,\"includeReelRivals\":false},{\"progress\":1000000,\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"182820000\",\"newBalance\":6252830000}}],\"loopStep\":-1,\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"loopStep\":-1,\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"loopStep\":-1,\"includeReelRivals\":false},{\"progress\":0,\"awarded\":false,\"awardResult\":[],\"loopStep\":-1,\"includeReelRivals\":false}],\"awardResult\":[],\"commandData\":{\"public\":[]},\"stepTemplateMap\":[],\"stepsNetworkData\":{\"data\":[{\"class\":\"MissionStepBet\",\"data\":{\"max\":1000000,\"progress\":1000000,\"id\":0,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"109690000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"109690000\"}}],\"ProductPackageItemCollectionChest\":[{\"order\":1,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season9BFC.colossal\",\"nextSeason\":false}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"109690000\",\"newBalance\":3570230000}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":1,\"tier\":5,\"finalCount\":13,\"chestID\":\"season9BFC.colossal\",\"nextSeason\":false}}],\"loopStep\":-1,\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[1],\"predecessors\":[],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1000000,\"progress\":1000000,\"id\":1,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemClubChips\":[{\"order\":1,\"title\":\"Beach Town Bonus\",\"text\":\"has won a bonus for playing Beach Town!\",\"amount\":\"10000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"10000\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000000\",\"newBalance\":3580230000}},{\"class\":\"ProductPackageItemClubChips\",\"result\":[]}],\"loopStep\":-1,\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[2],\"predecessors\":[0],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1000000,\"progress\":1000000,\"id\":2,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"182820000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"182820000\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"182820000\",\"newBalance\":3763050000}}],\"loopStep\":-1,\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[3],\"predecessors\":[1],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1000000,\"progress\":1000000,\"id\":3,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"182820000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"182820000\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"182820000\",\"newBalance\":3945870000}}],\"loopStep\":-1,\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[4],\"predecessors\":[2],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1000000,\"progress\":1000000,\"id\":4,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"10000000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"10000000\"}}],\"ProductPackageItemCollectionChest\":[{\"order\":2,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season9BFC.colossal\",\"nextSeason\":false}}],\"ProductPackageItemClubChips\":[{\"order\":1,\"title\":\"Beach Town Bonus\",\"text\":\"has won a bonus for playing Beach Town!\",\"amount\":\"10000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"10000\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"10000000\",\"newBalance\":6070010000}},{\"class\":\"ProductPackageItemCollectionChest\",\"result\":{\"grantedCount\":1,\"tier\":5,\"finalCount\":22,\"chestID\":\"season9BFC.colossal\",\"nextSeason\":false}},{\"class\":\"ProductPackageItemClubChips\",\"result\":[]}],\"loopStep\":-1,\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[5],\"predecessors\":[3],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1000000,\"progress\":1000000,\"id\":5,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"182820000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"182820000\"}}]},\"awarded\":true,\"awardResult\":[{\"class\":\"ProductPackageItemChips\",\"result\":{\"amount\":\"182820000\",\"newBalance\":6252830000}}],\"loopStep\":-1,\"includeReelRivals\":false,\"state\":\"redeemed\",\"edges\":[6],\"predecessors\":[4],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1000000,\"progress\":0,\"id\":6,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"182820000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"182820000\"}}]},\"awarded\":false,\"awardResult\":[],\"loopStep\":-1,\"includeReelRivals\":false,\"state\":\"active\",\"edges\":[7],\"predecessors\":[5],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1000000,\"progress\":0,\"id\":7,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"109690000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"109690000\"}}],\"ProductPackageItemCollectionChest\":[{\"order\":1,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season9BFC.colossal\",\"nextSeason\":false}}]},\"awarded\":false,\"awardResult\":[],\"loopStep\":-1,\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[8],\"predecessors\":[6],\"formatString\":\"Bet a total of {max}\"}},{\"class\":\"MissionStepBet\",\"data\":{\"max\":1000000,\"progress\":0,\"id\":8,\"award\":{\"ProductPackageItemChips\":[{\"order\":0,\"amount\":\"182820000\",\"promoData\":{\"name\":\"Chips\",\"amount\":\"182820000\"}}],\"ProductPackageItemCollectionChest\":[{\"order\":1,\"tier\":\"5\",\"amount\":1,\"promoData\":{\"name\":\"Collection Chest\",\"amount\":1,\"chestName\":\"Colossal\",\"tier\":\"5\",\"chestID\":\"season9BFC.colossal\",\"nextSeason\":false}}],\"ProductPackageItemClubChips\":[{\"order\":2,\"title\":\"Beach Town Bonus\",\"text\":\"has won a bonus for playing Beach Town!\",\"amount\":\"10000\",\"promoData\":{\"name\":\"Club Chips\",\"amount\":\"10000\"}}]},\"awarded\":false,\"awardResult\":[],\"loopStep\":-1,\"includeReelRivals\":false,\"state\":\"locked\",\"edges\":[],\"predecessors\":[7],\"formatString\":\"Bet a total of {max}\"}}],\"graph\":{\"type\":\"sequential\",\"edges\":[[1],[2],[3],[4],[5],[6],[7],[8],[]],\"predecessors\":[[],[0],[1],[2],[3],[4],[5],[6],[7]]}},\"requireAwarded\":true,\"awardData\":null,\"manifest\":{\"tray_icon\":\"https://sagnetstorage-a.akamaihd.net/images_st/direct_publish/missions/tray_icons/Beach_Town_Tray_Icon@2x.png\",\"main_popup\":{\"name\":\"\",\"url\":\"\",\"hash\":\"\"}},\"commandDataTemplate\":[],\"awarded\":false},\"slotsData\":[],\"giftsData\":[],\"missionIap\":[]}",
     "_N$instantiateMissionTrigger": false,
     "_N$retrieveMissionTrigger": false,
     "_N$updatePreviewDataTrigger": true,
