@@ -104,6 +104,24 @@
             ]
           }
         }
+      },
+      "background/picksContainer": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 90
+            },
+            {
+              "frame": 1.5166666666666666,
+              "value": 90
+            },
+            {
+              "frame": 2,
+              "value": 255
+            }
+          ]
+        }
       }
     }
   },

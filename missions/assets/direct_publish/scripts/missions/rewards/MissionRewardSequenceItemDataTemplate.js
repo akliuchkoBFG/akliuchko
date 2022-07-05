@@ -22,6 +22,10 @@ cc.Class({
 				'Valid data keys are product package data values in addition to: amountShort, amountFormat, currencyUpper, currencyLower',
 			].join('\n'),
 		},
+		usePromoData: {
+			default: false,
+			tooltip: "Pass the promotion data instead of reward item data to the DataTemplateLabel(s)"
+		}
 	},
 
 	setReward(itemData, premiumItemModel) {
@@ -33,7 +37,11 @@ cc.Class({
 		itemData.currencyLower = itemData.currencyUpper.toLowerCase();
 		this._super(itemData, premiumItemModel);
 		this.templateLabels.forEach((templateLabel) => {
-			templateLabel.setData(itemData);
+			if(this.usePromoData){
+				templateLabel.setData(itemData.promoData);
+			} else {
+				templateLabel.setData(itemData);
+			}
 		});
 	},
 });

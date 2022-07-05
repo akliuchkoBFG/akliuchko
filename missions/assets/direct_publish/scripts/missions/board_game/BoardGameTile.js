@@ -5,8 +5,8 @@ const MissionRewardTeaser = require('MissionRewardTeaser');
 
 cc.Class({
 	extends: cc.Component,
-
 	mixins: [ComponentLog],
+
 	properties: {
 		teaser: {
 			default: null,
@@ -23,6 +23,14 @@ cc.Class({
 			this.teaser.setRewardsFromProductPackage(productPackageConfig);
 		}
 		this._lootboxIndex = lootboxIndex;
+	},
+
+	// Show / Reset reward to default state
+	unclaimReward() {
+		this._claimed = false;
+		if (this.teaser) {
+			this.teaser.node.opacity = 255;
+		}
 	},
 
 	// Hide reward when first claimed by the player

@@ -17,6 +17,7 @@ const ProductPackageTypes = cc.Enum({
 	ProductPackageItemMysteryPrize: 14,
 	ProductPackageItemBooster: 15,
 	ProductPackageItemMissionPoints: 16,
+	ProductPackageItemBoardGameMissionReward: 17,
 });
 
 cc.Class({
